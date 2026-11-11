@@ -138,6 +138,15 @@ all years. Rebuild after drafts/translations change: `.venv/bin/python -I site/b
 (add `--images` once to cut the page images from the scans). Serve with
 `python3 -m http.server 8742 --bind 100.107.252.39 --directory site/book`.
 
+**Adding a book:** download scans to `data/<book>/pages` (with `page_urls.txt`), then
+`pipeline/run_book.sh data/<book> plunge-v4` (layout → drafts → years → entries → side-column
+sheets). Agent stages (side columns, reading rounds, translation) use the generic workflow
+scripts; `pipeline/reading_sheets.py` picks entries for a reading round;
+`site/make_book_site.py` creates the book's reading GUI.
+
+Published: GitHub release `htr-v4`; Hugging Face model `brezgis/samogitia-plunge-htr`, dataset
+`brezgis/samogitia-plunge-lines`.
+
 Review site (working view): `pipeline/build_review_site.py` -> `site/review/` (scan + draft + fields per entry).
 Serve with `python3 -m http.server 8741 --bind 100.107.252.39 --directory site/review`.
 

@@ -2,10 +2,12 @@
   "dataset_id": "29b261aec9a2a146",
   "directory": "data/plunge-1886-1890/training/exports/29b261aec9a2a146",
   "annotation_files": [
+    "data/plunge-1827-1-22/training/annotations.json",
     "data/plunge-1827-1-24/training/annotations.json",
+    "data/plunge-1827-1-25/training/annotations.json",
     "data/plunge-1886-1890/training/annotations.json"
   ],
-  "annotations_sha256": "f39d1475f0ca891b99369a1941d92a91f33681215edc8e45f860569c46548b7f",
+  "annotations_sha256": "e309a46426034d657adc9c00a41ec3be13bf805d822c8cd117b9ff82f1cf68b5",
   "approved_labels": 1726,
   "draft_labels": 1925,
   "counts": {

@@ -3,10 +3,10 @@ const SPREADS = window.SPREADS, INDEX = window.INDEX, $ = (s, r = document) => r
 const body = document.body, book = $('#book'), block = $('#block');
 const LOCALE = { en: 'en-GB', lt: 'lt-LT', ru: 'ru-RU' };
 const T = {
-  en: { title: 'Žemaičių metrikai', sub: 'Parish registers of Samogitia. Plungė, baptisms, January 1888',
+  en: { title: 'Žemaičių metrikai', sub: 'Parish registers of Samogitia. Plungė, baptisms, 1896–1902',
     aboutH: 'About these registers',
     about1: 'From baptism to burial, a Catholic life in Samogitia was written into the parish books. Every parish kept registers, metrikai in Lithuanian, of baptisms, marriages and deaths. This is one of them: the baptisms of Plungė parish, in the diocese of Samogitia, for 1896 to 1902.',
-    about2: 'In the 1890s Plungė lay in the Russian Empire, in Telšiai county of Kovno governorate, and the registers had to be kept in Russian. So the priest wrote Lithuanian and Polish names in Russian letters, into a printed Russian form, and dated them by the old Julian calendar, twelve days behind the one we use.',
+    about2: 'In these years Plungė lay in the Russian Empire, in Telšiai county of Kovno governorate, and the registers had to be kept in Russian. So the priest wrote Lithuanian and Polish names in Russian letters, into a printed Russian form, and dated them by the old Julian calendar, twelve days behind the one we use.',
     readH: 'Reading an entry',
     read1: 'Every entry repeats one formula across three columns: when, where and by whom the child was baptised; who the parents were, their estate and district, and when and where the child was born; and who the godparents were. Family names stand as the formula puts them, “of the Takiovs”, so here they often end in -ov where the family itself would have said -is, -as or -us.',
     read2: "The handwriting was read by a recognition model trained on about 1,700 lines of these registers, each read independently by two AI readers and checked against each other, then translated by machine. No person has checked the result. Ordinary words come out well; names and villages often do not.",
@@ -25,14 +25,14 @@ const T = {
     museum: 'National Museum of Lithuania', showR: 'Show the right-hand page', showL: 'Show the left-hand page',
     none: 'Nothing close to that. Try fewer letters; spellings in the register vary a lot.', noName: 'name not read', noDate: 'date not read',
     found: n => n === 1 ? '1 entry' : `${n} entries`, more: n => `Showing the first ${n}.`, away: 'Greyed entries are on pages not bound into this sample yet.',
-    tips: 'Try a name in any spelling, a village, or a date such as “10 January 1898”, “03.1897” or “#8”.',
+    tips: 'Try a name in any spelling, a village, or a date such as “10 January 1899”, “03.1898” or “#8”.',
     no: 'no.', scan: 'scan', onDate: 'baptised or born', anyText: 'matching', entryNo: 'entry number', and: 'and',
     cloth: { plunge: 'Cover cloth: wool and linen bedspread (divonas), late 19th century, Palūščiai village, Plungė district', kretinga: 'Cover cloth: striped wool shawl, second half of the 19th century, Budriai village, Kretinga district', telsiai: 'Cover cloth: tapestry-woven bedspread (divonas), late 19th century, Vaštakiai village, Telšiai district' },
     ribbon: { mazeikiai: 'Ribbon: braided wool sash, 1930, Meinoriai village, Mažeikiai district', taurage: 'Ribbon: round-braided wool sash, late 19th century, Tauragė district', ukrinai: 'Ribbon: braided wool garter sash, about 1940, Ukrinai village, Mažeikiai district' } },
   lt: { title: 'Žemaičių metrikai', sub: 'Žemaitijos parapijų knygos. Plungė, krikštai, 1888 m. sausis',
     aboutH: 'Apie šias knygas',
     about1: 'Nuo krikšto iki laidotuvių Žemaitijos kataliko gyvenimas buvo užrašomas parapijos knygose. Kiekviena parapija vedė krikšto, santuokos ir mirties metrikus. Čia viena tokių knygų: Žemaičių vyskupijos Plungės parapijos krikšto metrikai, 1896–1902 m.',
-    about2: 'XIX a. pabaigoje Plungė priklausė Rusijos imperijai, Kauno gubernijos Telšių apskričiai, ir metrikus reikėjo rašyti rusiškai. Todėl kunigas lietuviškus ir lenkiškus vardus rašė rusiškomis raidėmis į spausdintą rusišką formą, o datas žymėjo pagal senąjį Julijaus kalendorių, dvylika dienų atsiliekantį nuo dabartinio.',
+    about2: 'Šiais metais Plungė priklausė Rusijos imperijai, Kauno gubernijos Telšių apskričiai, ir metrikus reikėjo rašyti rusiškai. Todėl kunigas lietuviškus ir lenkiškus vardus rašė rusiškomis raidėmis į spausdintą rusišką formą, o datas žymėjo pagal senąjį Julijaus kalendorių, dvylika dienų atsiliekantį nuo dabartinio.',
     readH: 'Kaip skaityti įrašą',
     read1: 'Kiekvienas įrašas kartoja tą pačią formulę trijose skiltyse: kada, kur ir kas pakrikštijo vaiką; kas tėvai, koks jų luomas ir valsčius, kada ir kur vaikas gimė; kas buvo krikštatėviai. Pavardės užrašytos taip, kaip reikalauja formulė, daugiskaitos kilmininku, todėl čia jos dažnai baigiasi -ov, nors pati šeima būtų sakiusi -is, -as ar -us.',
     read2: "Rankraštį perskaitė atpažinimo modelis, apmokytas maždaug 1 700 šių knygų eilučių, kurias nepriklausomai perskaitė ir sulygino du dirbtinio intelekto skaitytojai; vertimas – mašininis. Žmogus rezultato netikrino. Įprasti žodžiai perskaitomi gerai, vardai ir kaimai – dažnai klaidingai.",
@@ -51,14 +51,14 @@ const T = {
     museum: 'Lietuvos nacionalinis muziejus', showR: 'Rodyti dešinįjį puslapį', showL: 'Rodyti kairįjį puslapį',
     none: 'Nieko panašaus nerasta. Pabandykite mažiau raidžių: rašyba knygoje labai įvairuoja.', noName: 'vardas neperskaitytas', noDate: 'data neperskaityta',
     found: n => `Įrašų: ${n}`, more: n => `Rodoma pirmi ${n}.`, away: 'Pilki įrašai yra puslapiuose, kurie dar neįrišti į šį pavyzdį.',
-    tips: 'Rašykite vardą bet kokia rašyba, kaimą arba datą, pvz., „1898 sausio 10“, „03.1897“ ar „#8“.',
+    tips: 'Rašykite vardą bet kokia rašyba, kaimą arba datą, pvz., „1899 sausio 10“, „03.1898“ ar „#8“.',
     no: 'nr.', scan: 'skenas', onDate: 'krikštyta arba gimė', anyText: 'atitinka', entryNo: 'įrašo numeris', and: 'ir',
     cloth: { plunge: 'Viršelio audinys: vilnos ir lino lovatiesė (divonas), XIX a. pab., Palūščių k., Plungės r.', kretinga: 'Viršelio audinys: dryžuota vilnonė skara, XIX a. II p., Budrių k., Kretingos r.', telsiai: 'Viršelio audinys: kiliminio audimo lovatiesė (divonas), XIX a. pab., Vaštakių k., Telšių r.' },
     ribbon: { mazeikiai: 'Juostelė: pintinė vilnonė juosta, 1930 m., Meinorių k., Mažeikių r.', taurage: 'Juostelė: apvaliai pinta vilnonė juosta, XIX a. pab., Tauragės r.', ukrinai: 'Juostelė: pintinė vilnonė juosta-keliaraištis, apie 1940 m., Ukrinų k., Mažeikių r.' } },
   ru: { title: 'Žemaičių metrikai', sub: 'Приходские книги Жемайтии. Плунге, крещения, январь 1888 года',
     aboutH: 'Об этих книгах',
     about1: 'От крещения до погребения жизнь католика в Жемайтии записывалась в приходские книги. Каждый приход вёл метрические книги о крещениях, браках и смертях. Перед вами одна из них: книга о крещениях Плунгянского прихода Жемайтской епархии за 1896–1902 годы.',
-    about2: 'В конце XIX века Плунге входило в Российскую империю, в Тельшевский уезд Ковенской губернии, и метрики полагалось вести по-русски. Поэтому священник вписывал литовские и польские имена русскими буквами в печатный русский бланк, а даты ставил по старому юлианскому календарю, который отстаёт от нынешнего на двенадцать дней.',
+    about2: 'В эти годы Плунге входило в Российскую империю, в Тельшевский уезд Ковенской губернии, и метрики полагалось вести по-русски. Поэтому священник вписывал литовские и польские имена русскими буквами в печатный русский бланк, а даты ставил по старому юлианскому календарю, который отстаёт от нынешнего на двенадцать дней.',
     readH: 'Как читать запись',
     read1: 'Каждая запись повторяет одну формулу в трёх графах: когда, где и кем крещён младенец; кто его родители, какого они сословия и волости, когда и где он родился; кто были восприемники. Фамилии стоят так, как требует формула, в родительном падеже множественного числа, поэтому здесь они часто оканчиваются на «-овъ», хотя сама семья сказала бы «-ис», «-ас» или «-ус».',
     read2: "Рукопись прочитана моделью распознавания, обученной примерно на 1 700 строках этих книг, каждую из которых независимо прочли и сверили два ИИ-читателя; перевод сделан машиной. Человек результат не проверял. Обычные слова читаются хорошо, имена и деревни часто с ошибками.",
@@ -77,7 +77,7 @@ const T = {
     museum: 'Национальный музей Литвы', showR: 'Показать правую страницу', showL: 'Показать левую страницу',
     none: 'Ничего похожего не найдено. Попробуйте меньше букв: написание в книге сильно разнится.', noName: 'имя не прочитано', noDate: 'дата не прочитана',
     found: n => `Записей: ${n}`, more: n => `Показаны первые ${n}.`, away: 'Серые записи находятся на страницах, которых пока нет в этом образце.',
-    tips: 'Введите имя в любом написании, деревню или дату, например «10 января 1898», «03.1897» или «#8».',
+    tips: 'Введите имя в любом написании, деревню или дату, например «10 января 1899», «03.1898» или «#8».',
     no: '№', scan: 'скан', onDate: 'крещение или рождение', anyText: 'совпадает с', entryNo: 'номер записи', and: 'и',
     cloth: { plunge: 'Ткань переплёта: покрывало из шерсти и льна (дивонас), конец XIX в., дер. Палушчяй, Плунгеский район', kretinga: 'Ткань переплёта: полосатый шерстяной платок, вторая половина XIX в., дер. Будряй, Кретингский район', telsiai: 'Ткань переплёта: покрывало ковровой техники (дивонас), конец XIX в., дер. Ваштакяй, Тельшяйский район' },
     ribbon: { mazeikiai: 'Закладка: плетёный шерстяной пояс, 1930 г., дер. Мейноряй, Мажейкский район', taurage: 'Закладка: шерстяной пояс круглого плетения, конец XIX в., Таурагский район', ukrinai: 'Закладка: плетёный шерстяной пояс-подвязка, около 1940 г., дер. Укринай, Мажейкский район' } },
@@ -112,7 +112,7 @@ function showDate(d, noYear) {
 /* the open spread */
 let S = null, pages = {}, byRow = {}, slip = null;
 let pinned = null, hovered = null;
-let marked = (() => { try { return JSON.parse(store.get('ribbon')) || null; } catch { return null; } })() || { row: '0046_L5', scan: 46 };
+let marked = (() => { try { return JSON.parse(store.get('ribbon')) || null; } catch { return null; } })() || { row: '', scan: 46 };
 const params = new URLSearchParams(location.hash.slice(1));
 const cache = {};
 const loadSpread = scan => cache[scan] || (cache[scan] = fetch(`spreads/${pad(scan)}.json`).then(r => r.json()));
@@ -358,10 +358,10 @@ function parse(q) {
     let m;
     const b = bare(tok).replace(/\.$/, '');
     if ((m = b.match(/^(?:#|no\.?|nr\.?|№)(\d{1,3})$/))) want.n = +m[1];
-    else if ((m = b.match(/^(18[89]\d|19[0-2]\d)-(\d{1,2})(?:-(\d{1,2}))?$/))) { want.y = +m[1]; want.m = +m[2]; if (m[3]) want.d = +m[3]; }
-    else if ((m = b.match(/^(\d{1,2})[./](\d{1,2})[./](18[89]\d|19[0-2]\d)$/))) { want.d = +m[1]; want.m = +m[2]; want.y = +m[3]; }
-    else if ((m = b.match(/^(\d{1,2})[./](18[89]\d|19[0-2]\d)$/))) { want.m = +m[1]; want.y = +m[2]; }
-    else if (/^(189[6-9]|190[0-2])$/.test(b)) want.y = +b;
+    else if ((m = b.match(/^(1[789]\d\d)-(\d{1,2})(?:-(\d{1,2}))?$/))) { want.y = +m[1]; want.m = +m[2]; if (m[3]) want.d = +m[3]; }
+    else if ((m = b.match(/^(\d{1,2})[./](\d{1,2})[./](1[789]\d\d)$/))) { want.d = +m[1]; want.m = +m[2]; want.y = +m[3]; }
+    else if ((m = b.match(/^(\d{1,2})[./](1[789]\d\d)$/))) { want.m = +m[1]; want.y = +m[2]; }
+    else if (/^(1896|1897|1898|1899|1900|1901|1902)$/.test(b)) want.y = +b;
     else if (MON[b]) want.m = MON[b];
     else if ((m = b.match(/^(\d{1,2})(?:st|nd|rd|th|d|го|е)?$/)) && +m[1] >= 1 && +m[1] <= 31) want.d = +m[1];
     else if (!/^(m|г|год|года|metu|d|of|the)$/.test(b)) want.words.push(tok);
@@ -390,7 +390,7 @@ function describe(w) {
   const L = t(), parts = [];
   if (hasDate(w)) {
     const opt = {}; if (w.d) opt.day = 'numeric'; if (w.m) opt.month = 'long'; if (w.y) opt.year = 'numeric';
-    parts.push(`${L.onDate} ${w.m || w.y ? new Intl.DateTimeFormat(LOCALE[lang], { ...opt, timeZone: 'UTC' }).format(new Date(Date.UTC(w.y || 1898, (w.m || 1) - 1, w.d || 1))) : w.d}`);
+    parts.push(`${L.onDate} ${w.m || w.y ? new Intl.DateTimeFormat(LOCALE[lang], { ...opt, timeZone: 'UTC' }).format(new Date(Date.UTC(w.y || 1899, (w.m || 1) - 1, w.d || 1))) : w.d}`);
   }
   if (w.n != null) parts.push(`${L.entryNo} ${w.n}`);
   if (w.words.length) parts.push(`${L.anyText} “${esc(w.words.join(' '))}”`);
