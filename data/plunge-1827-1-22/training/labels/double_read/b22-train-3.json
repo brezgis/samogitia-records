@@ -1,0 +1,1272 @@
+{
+ "batch": "b22-train-3",
+ "A": [
+  {
+   "id": "0079_R2_baptism_01",
+   "text": "Тысяча в[а?]семс[о?]тъ шес",
+   "sure": false,
+   "crop_ok": true,
+   "note": "clerk writes а for unstressed о (гада, прихада); а/о in васемсотъ ambiguous. X-shaped mark on the right rule is a stroke, not a letter"
+  },
+  {
+   "id": "0079_R2_baptism_02",
+   "text": "есятъ девятаго гада и Б",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'и Б' is beyond the column rule, an unmasked start of parents line 'и Б...'; transcribed because the glyphs are whole"
+  },
+  {
+   "id": "0079_R2_baptism_03",
+   "text": "Декабря двадцатаго",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_04",
+   "text": "ня въ Плунгянск[а?]мъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_05",
+   "text": "Р.К. прих[а?]дскомъ Кас-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_06",
+   "text": "тел[ѣ?] мѣстнымъ Кс.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_07",
+   "text": "[П?]ацевичемъ окреще-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "initial capital is blotted"
+  },
+  {
+   "id": "0079_R2_baptism_08",
+   "text": "на дитя именемъ Лю Д",
+   "sure": false,
+   "crop_ok": true,
+   "note": "the 'Д' past the rule belongs to the neighbouring cell"
+  },
+  {
+   "id": "0079_R2_baptism_09",
+   "text": "довика са всѣми абр[я?]-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_10",
+   "text": "ами Таинства. -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "no д visible at the start (обря-/ами)"
+  },
+  {
+   "id": "0079_R2_parents_01",
+   "text": "Крестьянъ Яна",
+   "sure": true,
+   "crop_ok": true,
+   "note": "stray stroke at the right is not transcribed"
+  },
+  {
+   "id": "0079_R2_parents_02",
+   "text": "и Б[арбара?] урож-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "mother's name unclear, could be Бандарас"
+  },
+  {
+   "id": "0079_R2_parents_03",
+   "text": "[з?]енная Мил[аш?]ов",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_04",
+   "text": "на Ор[л?]овскихъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_05",
+   "text": "заканныхъ супру-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "а/о in закан- ambiguous"
+  },
+  {
+   "id": "0079_R2_parents_06",
+   "text": "говъ дочь радивша-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "а/о ambiguous in гавъ/радивша"
+  },
+  {
+   "id": "0079_R2_parents_07",
+   "text": "яся сего 1869. гада",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_08",
+   "text": "Декабря 20. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_09",
+   "text": "въ дер. Видейка[хъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village name; the ending touches the rule"
+  },
+  {
+   "id": "0079_R2_parents_10",
+   "text": "сего прихада. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_01",
+   "text": "Воспріемника",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_02",
+   "text": "ми были: Юзефъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_03",
+   "text": "Петр[а?]вскій",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_04",
+   "text": "съ Розаліею",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_05",
+   "text": "Давлен[на?]го",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_06",
+   "text": "дѣвицею. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча в[а?]семс[о?]тъ семьде Кресть",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'Кресть' past the rule is unmasked parents text and is cut by the right edge; possibly crop_ok=false"
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "сятаго гада Апрѣля ади-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "а/о in ади- ambiguous"
+  },
+  {
+   "id": "0091_L1_baptism_03",
+   "text": "надцатаго дня въ Плун-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "гянскамъ Р.К. прихад-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "скамъ Кастел[ѣ?] мѣст",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_06",
+   "text": "нымъ Кс. Пацевичемъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "акрещена дитя име-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_08",
+   "text": "немъ Домицеля",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_09",
+   "text": "са всѣми абрядами",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_10",
+   "text": "Таинства. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_01",
+   "text": "Крестьянъ Осипа",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_02",
+   "text": "и Розаліи урожден-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "ная Клаб[о?]вна",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_04",
+   "text": "Лявданскихъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "заканныхъ супру",
+   "sure": false,
+   "crop_ok": true,
+   "note": "no hyphen visible before the rule"
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "гавъ дачь радивша-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "а/о ambiguous"
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "яся сего 1870. гада",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_08",
+   "text": "Апрѣля 11. дня въ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_09",
+   "text": "дер. Юдейкахъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_10",
+   "text": "сего прихада. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_01",
+   "text": "Воспріемника",
+   "sure": true,
+   "crop_ok": true,
+   "note": "+ at the right is where the rules cross"
+  },
+  {
+   "id": "0091_L1_godparents_02",
+   "text": "ми были: До-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_03",
+   "text": "миникъ Шаки-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_04",
+   "text": "нисъ съ Анною",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_05",
+   "text": "Осипа Шакин[и?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "the last glyph is partly hidden at the rule"
+  },
+  {
+   "id": "0091_L1_godparents_06",
+   "text": "супругою. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_01",
+   "text": "Тысяча в[а?]семс[о?]тъ семьде-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_02",
+   "text": "сятаго гада Іюня девять-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_03",
+   "text": "надцатаго дня въ Плун",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_04",
+   "text": "гянскамъ Р.К. прихад-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_05",
+   "text": "ск[о?]мъ Кастел[ѣ?] мѣс[т?]-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_06",
+   "text": "нымъ Кс. Па[ц?]евичемъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_07",
+   "text": "акрещена дитя именемъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_08",
+   "text": "Винцента са всѣм[и?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "the end of the line runs into the rule"
+  },
+  {
+   "id": "0102_L3_baptism_09",
+   "text": "абрядами Таинства.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_01",
+   "text": "Крестьянъ Нико-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_02",
+   "text": "дима и Еле[а?]нары",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_03",
+   "text": "урожденной Мин-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_04",
+   "text": "гелавна Янов-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_05",
+   "text": "скихъ заканныхъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_06",
+   "text": "супруговъ сынъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_07",
+   "text": "радившійся сего",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_08",
+   "text": "1870. гада Іюля 19.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_09",
+   "text": "дня въ дер. [Ольке?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_10",
+   "text": "нянахъ сего прихада.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_02",
+   "text": "были: Янъ Рома",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_03",
+   "text": "навскій съ До-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_04",
+   "text": "мицелею Пет-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_05",
+   "text": "рил[о?]вн[а?]ю дѣ-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_06",
+   "text": "вицею. -",
+   "sure": true,
+   "crop_ok": true
+  }
+ ],
+ "B": [
+  {
+   "id": "0079_R2_baptism_01",
+   "text": "Тысяча восемьсотъ шес",
+   "sure": false,
+   "crop_ok": true,
+   "note": "line-end hyphen unclear; stray 'ь' doubt"
+  },
+  {
+   "id": "0079_R2_baptism_02",
+   "text": "есятъ девятаго года",
+   "sure": false,
+   "crop_ok": true,
+   "note": "right of rule has stray ink from neighbour cell, not transcribed"
+  },
+  {
+   "id": "0079_R2_baptism_03",
+   "text": "Декабря двадцатаго",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_04",
+   "text": "ня въ Плунгянскомъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_05",
+   "text": "Р.К. приходскомъ Кос-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_06",
+   "text": "тел[ѣ?] мѣстнымъ Кс.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_07",
+   "text": "[Л?]ацевичемъ окреще-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname initial doubtful"
+  },
+  {
+   "id": "0079_R2_baptism_08",
+   "text": "на дитя именемъ Лю-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "name split Лю-/довика; stray D flourish at right"
+  },
+  {
+   "id": "0079_R2_baptism_09",
+   "text": "довика со всѣми обря-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_baptism_10",
+   "text": "дами Таинства. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_01",
+   "text": "Крестьянъ Яна",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_02",
+   "text": "и Барбары урож-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "stray ink right of rule not transcribed"
+  },
+  {
+   "id": "0079_R2_parents_03",
+   "text": "денная [Милайтов?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_04",
+   "text": "на Ормовскихъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful"
+  },
+  {
+   "id": "0079_R2_parents_05",
+   "text": "законныхъ супру-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_06",
+   "text": "говъ дочь родивша-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_07",
+   "text": "яся сего 1869. года",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_08",
+   "text": "Декабря 20. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_parents_09",
+   "text": "въ дер. [Видейка?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village doubtful, last glyph at edge"
+  },
+  {
+   "id": "0079_R2_parents_10",
+   "text": "сего прихода. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_01",
+   "text": "Воспріемника",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_02",
+   "text": "ми были: Юзефъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_03",
+   "text": "Петравскій",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful"
+  },
+  {
+   "id": "0079_R2_godparents_04",
+   "text": "съ [Розалиею?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_05",
+   "text": "[Давленаго?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0079_R2_godparents_06",
+   "text": "дѣвицею. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча восемьсотъ семьде",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'Крест' from neighbouring cell at right edge, cut, not transcribed"
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "сятаго года Апрѣля еди-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_03",
+   "text": "надцатаго дня въ Плун-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "гянскомъ Р.К. приход-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "flourish above Р.К. not transcribed"
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "скимъ Костелѣ мѣст",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_06",
+   "text": "нымъ Кс. Пацевичемъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "окрещена дитя име-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_08",
+   "text": "немъ Домицеля",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_09",
+   "text": "со всѣми обрядами",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_10",
+   "text": "Таинства. -",
+   "sure": true,
+   "crop_ok": true,
+   "note": "stray stroke top right not transcribed"
+  },
+  {
+   "id": "0091_L1_parents_01",
+   "text": "Крестьянъ Осипа",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_02",
+   "text": "и Розаліи урожден-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "ная Кл[а?]бовна",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_04",
+   "text": "Лявданскихъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful"
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "законныхъ супру-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "говъ дочь родивша",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "яся сего 1870. года",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_08",
+   "text": "Апрѣля 11. дня въ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_09",
+   "text": "дер. Юдейкахъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_10",
+   "text": "сего прихода. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_01",
+   "text": "Воспріемника",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_02",
+   "text": "ми были: До-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_03",
+   "text": "миникъ Шаки-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_04",
+   "text": "нисъ съ Анною",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_05",
+   "text": "Осипа Шакин[ис?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ending overlaps rule"
+  },
+  {
+   "id": "0091_L1_godparents_06",
+   "text": "супругою. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_01",
+   "text": "Тысяча восемьсотъ семьде-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_02",
+   "text": "сятаго года [Іюля?] девять-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_03",
+   "text": "надцатаго дня въ Плун-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_04",
+   "text": "гянскомъ Р.К. приход-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_05",
+   "text": "скомъ Костелѣ мѣст-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_06",
+   "text": "нымъ Кс. Пацевичемъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_07",
+   "text": "окрещена дитя именемъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "final glyph near edge"
+  },
+  {
+   "id": "0102_L3_baptism_08",
+   "text": "Винцентія со всѣми",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_baptism_09",
+   "text": "обрядами Таинства.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_01",
+   "text": "Крестьянъ Нико-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_02",
+   "text": "дема и Елеонары",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_03",
+   "text": "урожденной Мин-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_04",
+   "text": "[гелавна?] Янов-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_05",
+   "text": "скихъ законныхъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_06",
+   "text": "супруговъ сынъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_07",
+   "text": "родившійся сего",
+   "sure": false,
+   "crop_ok": true,
+   "note": "top of crop clipped by line above"
+  },
+  {
+   "id": "0102_L3_parents_08",
+   "text": "1870. года Іюля 19.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_09",
+   "text": "дня въ дер. Ольке",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_parents_10",
+   "text": "нянахъ сего прихода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "last word touches rule"
+  },
+  {
+   "id": "0102_L3_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_02",
+   "text": "были: Янъ Рома-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_03",
+   "text": "новскій съ До-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_04",
+   "text": "мицелею Пет-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_05",
+   "text": "[риновною?] дѣ-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0102_L3_godparents_06",
+   "text": "вицею. -",
+   "sure": false,
+   "crop_ok": true
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0079_R2_baptism_01",
+   "text": "Тысяча в[а?]семсатъ шес",
+   "status": "draft",
+   "note": "Second vowel of васемсатъ is clearly а (loop with stem). The first, after в, is ambiguous between а and о. No ь. The X-shaped mark at the right rule is a stroke, not a letter."
+  },
+  {
+   "id": "0079_R2_baptism_02",
+   "text": "есятъ девятаго гада и Б",
+   "status": "image_checked",
+   "note": "'и Б' past the rule is unmasked whole text from the parents cell and is transcribed per the rule for whole visible glyphs. гада has a stemmed а twice."
+  },
+  {
+   "id": "0079_R2_baptism_04",
+   "text": "ня въ Плунгянскамъ",
+   "status": "image_checked",
+   "note": "The vowel after к is clearly а with a stem, as is usual for this clerk."
+  },
+  {
+   "id": "0079_R2_baptism_05",
+   "text": "Р.К. прихадск[о?]мъ Кас-",
+   "status": "draft",
+   "note": "прихад has a clear а. The vowel after к is a round loop with no stem, so probably о. A short hyphen sits at the rule."
+  },
+  {
+   "id": "0079_R2_baptism_06",
+   "text": "тел[ѣ?] мѣстнымъ Кс.",
+   "status": "draft",
+   "note": "The final glyph of тел- looks like ъ. A descender from the line above crosses where the tall ѣ stem would be, so ѣ vs ъ is unresolved."
+  },
+  {
+   "id": "0079_R2_baptism_07",
+   "text": "Пацевичемъ окреще-",
+   "status": "image_checked",
+   "note": "The blotted capital has two legs and a top bar: cursive П, the same form as in 0102_L3_baptism_06 Пацевичемъ."
+  },
+  {
+   "id": "0079_R2_baptism_08",
+   "text": "на дитя именемъ Лю[-?] Д",
+   "status": "draft",
+   "note": "Past the rule there is a whole large Д (the Д of Декабря in the parents cell), so it is transcribed. A short stroke after Лю at the rule may be a hyphen or the start of the Д flourish."
+  },
+  {
+   "id": "0079_R2_baptism_09",
+   "text": "довика са всѣми абря-",
+   "status": "image_checked",
+   "note": "The apostrophe-like stroke after довика is a descender from the line above."
+  },
+  {
+   "id": "0079_R2_baptism_10",
+   "text": "ами Таинства. -",
+   "status": "image_checked",
+   "note": "No д at the line start: the first glyph is а, not д (no loop or descender)."
+  },
+  {
+   "id": "0079_R2_parents_02",
+   "text": "и Ба[рбары?] урож-",
+   "status": "draft",
+   "note": "The mother's name could also be read Бандар-; the third glyph has no clear descender. The hyphen after урож is at the rule. The partial glyph right of the rule is neighbour ink and is not transcribed."
+  },
+  {
+   "id": "0079_R2_parents_03",
+   "text": "[д?]енна[й?] Ми[лайд?]ов",
+   "status": "draft",
+   "note": "First glyph is з-like, expected д (урож-/денн-). The ending looks like и with a breve (й), as in 0091_L1_parents_03 'най', not я. Surname letters after Ми are uncertain (tall-loop letters). The dash under the line belongs to the line below."
+  },
+  {
+   "id": "0079_R2_parents_04",
+   "text": "на Ор[л?]овскихъ",
+   "status": "draft",
+   "note": "л vs м after Ор is unclear. The mark above и is a stray stroke shared with the line above, not a breve."
+  },
+  {
+   "id": "0079_R2_parents_05",
+   "text": "зак[о?]нныхъ супру-",
+   "status": "draft",
+   "note": "The vowel after к is a round loop joined at the top with no stem, unlike the stemmed а in за-, so probably о."
+  },
+  {
+   "id": "0079_R2_parents_06",
+   "text": "говъ дочь радивша-",
+   "status": "image_checked",
+   "note": "го and до have stemless о. The а in ра- has a stem. The hyphen is at the rule."
+  },
+  {
+   "id": "0079_R2_parents_07",
+   "text": "яся сего 1869. гада",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0079_R2_parents_09",
+   "text": "въ дер. Видейка[хъ?]",
+   "status": "draft",
+   "note": "The final glyph is partly hidden by the rule. The blot below belongs to the next line."
+  },
+  {
+   "id": "0079_R2_parents_10",
+   "text": "сего прих[а?]да. -",
+   "status": "draft",
+   "note": "An ink blot from above overlaps the vowel after х. The clerk writes прихад- elsewhere."
+  },
+  {
+   "id": "0079_R2_godparents_03",
+   "text": "Петр[а?]вскій",
+   "status": "draft",
+   "note": "The tall stroke after й is its breve."
+  },
+  {
+   "id": "0079_R2_godparents_04",
+   "text": "съ Р[а?]заліею",
+   "status": "draft",
+   "note": "I read Разаліею: stemmed а after з, ambiguous vowel after Р, dotted і."
+  },
+  {
+   "id": "0079_R2_godparents_05",
+   "text": "Давленн[а?]го",
+   "status": "draft",
+   "note": "Two н are visible. The vowel before го is ambiguous."
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча в[а?]семс[а?]тъ семьде Крест",
+   "status": "rejected_crop",
+   "note": "Unmasked parents text 'Крест…' past the rule is cut by the right crop edge mid-glyph (the next letter is unidentifiable). The cell text reads Тысяча в?семс?тъ семьде with a ь."
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "сятаго гада Апрѣля [а?]ди-",
+   "status": "draft",
+   "note": "Stemmed а before ди, consistent with the clerk's а for о. A small з-like mark above я looks like a stray stroke and is not transcribed. The hyphen is at the rule."
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "гянскамъ Р.К. прихад-",
+   "status": "image_checked",
+   "note": "The flourish above Р.К. is not transcribed."
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "скамъ Кастел[ѣ?] мѣст",
+   "status": "draft",
+   "note": "A tall stroke over the final glyph of Кастел- may be ѣ's stem or a stroke from the line above. The underline is not transcribed."
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "акрещена дитя име-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_baptism_09",
+   "text": "са всѣми абрядами",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "на[й?] Клаб[о?]вна",
+   "status": "draft",
+   "note": "The first word ends in an и-form with a clear breve above (й), not the 8-shaped я this clerk uses. The vowel after б is ambiguous."
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "зак[о?]нныхъ супру",
+   "status": "draft",
+   "note": "No hyphen is visible before the rule. The vowel after к is a stemless loop, probably о."
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "гавъ дочь радивша[-?]",
+   "status": "draft",
+   "note": "The га- vowel has a stem. A possible tiny hyphen merges with the rule."
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "яся сего 1870. гада",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_parents_10",
+   "text": "сего прихада. -",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_godparents_05",
+   "text": "Осипа Шакин[я?]",
+   "status": "draft",
+   "note": "The last glyph crosses the rule: a top loop with a tail descending left, like this clerk's я. It could be ъ."
+  },
+  {
+   "id": "0102_L3_baptism_01",
+   "text": "Тысяча в[а?]семс[а?]тъ семьде-",
+   "status": "draft",
+   "note": "ь is present in семьде. The hyphen is at the rule."
+  },
+  {
+   "id": "0102_L3_baptism_02",
+   "text": "сятаго гада Ію[л?]я девять-",
+   "status": "draft",
+   "note": "The month letter matches the form of Іюля in parents_08 (no н crossbar). Birth is 19 July, so Іюля fits."
+  },
+  {
+   "id": "0102_L3_baptism_03",
+   "text": "надцатаго дня въ Плун",
+   "status": "image_checked",
+   "note": "No hyphen visible: the word ends at the rule."
+  },
+  {
+   "id": "0102_L3_baptism_04",
+   "text": "гянскамъ Р.К. прихад-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0102_L3_baptism_05",
+   "text": "скомъ Кастел[ѣ?] мѣст-",
+   "status": "draft",
+   "note": "ском- has a stemless о. In this hand ѣ is written close to ъ, so the ending of Кастел- is uncertain."
+  },
+  {
+   "id": "0102_L3_baptism_06",
+   "text": "нымъ Кс. Пацевичемъ",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0102_L3_baptism_07",
+   "text": "акрещена дитя именемъ",
+   "status": "image_checked",
+   "note": "The final ъ is whole."
+  },
+  {
+   "id": "0102_L3_baptism_08",
+   "text": "Винцент[а?] са всѣми",
+   "status": "draft",
+   "note": "т is the tall-loop form (as in мѣст- in baptism_05). The final glyph is an open а or и. No 8-shaped я, so not Винцентія. The и of всѣми touches the rule."
+  },
+  {
+   "id": "0102_L3_baptism_09",
+   "text": "[а?]брядами Таинства.",
+   "status": "draft",
+   "note": "The first glyph is a loop with an entry stroke, а or о."
+  },
+  {
+   "id": "0102_L3_parents_02",
+   "text": "дема и Елеанары",
+   "status": "image_checked",
+   "note": "дема has a looped е, not и. The vowel after Еле is a stemmed а."
+  },
+  {
+   "id": "0102_L3_parents_04",
+   "text": "гел[а?]вна Янов-",
+   "status": "draft",
+   "note": "The tall strokes above are descenders from урожденной on the line above."
+  },
+  {
+   "id": "0102_L3_parents_05",
+   "text": "скихъ зак[а?]нныхъ",
+   "status": "draft",
+   "note": "The ending хъ is partly behind the rule."
+  },
+  {
+   "id": "0102_L3_parents_07",
+   "text": "радившійся сего",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0102_L3_parents_08",
+   "text": "1870. гада Іюля 19.",
+   "status": "image_checked",
+   "note": "The hook below at the bottom edge belongs to the next line."
+  },
+  {
+   "id": "0102_L3_parents_09",
+   "text": "дня въ дер. Ольке",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0102_L3_parents_10",
+   "text": "нянахъ сего прих[ада?]",
+   "status": "draft",
+   "note": "The letters after х are crossed by a stroke from above and by the rule; a final а is visible just past the rule. No period is visible."
+  },
+  {
+   "id": "0102_L3_godparents_02",
+   "text": "были: Янъ Рома[-?]",
+   "status": "draft",
+   "note": "A short tick crosses the rule after Рома and may be a hyphen (the word continues as -навскій)."
+  },
+  {
+   "id": "0102_L3_godparents_03",
+   "text": "навскій съ До-",
+   "status": "image_checked",
+   "note": "The vowel in на- has a stem. The dot above н is a speck."
+  },
+  {
+   "id": "0102_L3_godparents_05",
+   "text": "рил[о?]вна[ю?] дѣ-",
+   "status": "draft",
+   "note": "The last glyph of the first word has a descender-like blot (ю vs ц)."
+  }
+ ]
+}

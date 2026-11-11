@@ -97,3 +97,13 @@ translation, model training ... as you can"). Entries are appended as work compl
 - Book 25 processed with run_book.sh (v4): 2,301 entries, years 1902–1907. Drafts weak on a new
   clerk/formula (birth dates and fathers rarely parsed). Reading round (30 entries) and side columns
   (48 agents) running. Book 22 pipeline running.
+- Book 25: side columns 2,300 (740 later notes); reading round 394 checked lines (259 blind).
+- Book 22 (1867–1874, 2,114 entries): side columns complete (9 chunks lost in a usage-limit gap,
+  re-run); reading round 420 checked lines (270 blind).
+- Files 20 and 18 downloaded and identified: file 18 = **1849–1854** (1,816 entries, processed;
+  reading round + side columns running). File 20 (1850s) uses a two-page form: each entry spans
+  the spread (left: No., counts, dates, baptism text; right: parents, godparents). The pipeline
+  assumes three text columns per page side, so book 20 is set aside for a two-page layout pass.
+- Files 16 and earlier are in **Polish** (pre-1848); they need a Polish model and rules.
+- Disk: freed ~8 GB of regenerable crops/overlays; run_book.sh now cleans them up.
+- v5 training on 4 books' labels: 1,816 train / 361 val / 363 test.
