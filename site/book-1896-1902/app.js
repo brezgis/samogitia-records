@@ -124,7 +124,10 @@ function buildPages() {
   block.style.gridTemplateColumns = `${S.pages.L.w}fr ${S.pages.R.w}fr`;
   for (const side of ['L', 'R']) {
     const p = el('div', 'page'); p.dataset.side = side; p.style.aspectRatio = `${S.pages[side].w} / ${S.pages[side].h}`;
-    const img = el('img'); img.src = S.pages[side].img; img.alt = side === 'L' ? 'Left-hand page of the register' : 'Right-hand page of the register'; img.draggable = false;
+    const img = el('img'), src = S.pages[side].img;
+    // a page image that fails to arrive is asked for again (three times) instead of leaving its caption
+    img.onerror = () => { const n = +(img.dataset.retry || 0); if (n < 3) { img.dataset.retry = n + 1; setTimeout(() => { img.src = `${src}?retry=${n + 1}`; }, 500 * (n + 1)); } };
+    img.src = src; img.alt = side === 'L' ? 'Left-hand page of the register' : 'Right-hand page of the register'; img.draggable = false;
     p.append(img, el('div', 'tint'), el('div', 'fold'));
     pages[side] = p; block.append(p);
   }
@@ -434,5 +437,8 @@ document.addEventListener('click', ev => { if (!ev.target.closest('.find')) clos
 
 lang = T[params.get('lang')] ? params.get('lang') : T[store.get('lang')] ? store.get('lang') : 'en';
 closeHits(); applyLook(); setLang(lang);
-go(+params.get('s') || marked.scan || 46, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } });
+// open at a random spread that has entries (a link with #s=… still opens where it points;
+// the ribbon's tail leads back to the marked entry)
+const randomScan = () => { const full = SPREADS.filter(m => m.n > 0); return full.length ? full[Math.floor(Math.random() * full.length)].scan : 0; };
+go(+params.get('s') || randomScan() || marked.scan || 46, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } });
 })();
