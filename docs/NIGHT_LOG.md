@@ -89,3 +89,11 @@ translation, model training ... as you can"). Entries are appended as work compl
 - Book 24 GUI: http://100.107.252.39:8743/ (site/book-1896-1902).
 - Pushed to GitHub brezgis/samogitia-records (first commit; images excluded) and released the
   v4 model as release `htr-v4`. Hugging Face not touched: waiting for Anna to confirm repo names.
+- Hugging Face: model brezgis/samogitia-plunge-htr (v4) and dataset brezgis/samogitia-plunge-lines
+  (1,726 lines, train/validation/test by spread) published with cards (CC BY-NC 4.0).
+- Books 1827/1/25 (271 scans) and 1827/1/22 (249 scans) downloaded. File 25 is **1902 (2nd half)
+  –1907**, not 1891–95; file 22 is the **1860s** (older, simpler printed form). 1891–95 is not in
+  inventory 1 files 22–25.
+- Book 25 processed with run_book.sh (v4): 2,301 entries, years 1902–1907. Drafts weak on a new
+  clerk/formula (birth dates and fathers rarely parsed). Reading round (30 entries) and side columns
+  (48 agents) running. Book 22 pipeline running.

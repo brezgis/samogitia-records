@@ -1,0 +1,26 @@
+{
+ "rows": 2278,
+ "by_year": {
+  "1902": 189,
+  "1903": 423,
+  "1904": 490,
+  "1905": 449,
+  "1906": 565,
+  "1907": 162
+ },
+ "first_row_of_year": {
+  "1902": "0004_R1",
+  "1903": "0029_L1",
+  "1904": "0085_L1",
+  "1905": "0149_R1",
+  "1906": "0202_L1",
+  "1907": "0254_L1"
+ },
+ "order_conflicts": 0,
+ "status": {
+  "inferred_from_birth_digits_and_page": 1272,
+  "inferred_from_page_majority": 685,
+  "inferred_monotone_page_fit": 88,
+  "inferred_from_baptism_words": 233
+ }
+}

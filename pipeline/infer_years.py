@@ -46,6 +46,12 @@ def word_year(text):
     m = re.search(r'семьдес[яа]т\w{0,3}?(' + units + r')', s)
     if m and not re.search(r'восемьдес', s):
         return 1870 + UNITS[m.group(1)]
+    m = re.search(r'шест[ьъ]?дес[яа]т\w{0,3}?(' + units + r')', s)
+    if m:
+        return 1860 + UNITS[m.group(1)]
+    m = re.search(r'пят[ьъ]?дес[яа]т\w{0,3}?(' + units + r')', s)
+    if m:
+        return 1850 + UNITS[m.group(1)]
     m = re.search(r'восемьдес[яа]т\w{0,3}?(' + units + r')', s) or \
         re.search(r'дес[яа]т\w{0,2}(' + units + r')\w{0,3}года', s)
     return 1880 + UNITS[m.group(1)] if m else None
@@ -56,7 +62,7 @@ def digit_year(text):
     if not m:
         return None
     y = int(m.group(0).replace(' ', '')[:4]) if m else None
-    return y if 1870 <= y <= 1915 else None
+    return y if 1840 <= y <= 1915 else None
 
 
 def main():

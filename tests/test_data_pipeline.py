@@ -158,3 +158,10 @@ class YearInference(unittest.TestCase):
         self.assertEqual(iy.word_year('Тысяча девятьсотъ третьяго года'), 1903)
         self.assertEqual(iy.word_year('Тысяча восемьсотъ семьдесятъ девятаго года'), 1879)
         self.assertEqual(iy.digit_year('родившійся 1893 года'), 1893)
+
+    def test_year_words_1850s_1860s(self):
+        iy = module('infer_years')
+        self.assertEqual(iy.word_year('Тысяча восемьсотъ шестьдесятъ седьмаго года Декабря'), 1867)
+        self.assertEqual(iy.word_year('Тысяча восемьсотъ пятьдесятъ девятаго года'), 1859)
+        self.assertEqual(iy.word_year('Тысяча девятьсотъ третьяго года Января'), 1903)
+        self.assertEqual(iy.digit_year('родившаяся 1867 года'), 1867)
