@@ -1,0 +1,6667 @@
+{
+ "source": "data/rietavas-1828-1-12/processed/year_draft_1892_plunge-v7.json",
+ "model": "/mnt/ssd240gb/anna/samogitia-htr/models/plunge-v7/model.safetensors",
+ "note": "Machine-extracted fields from machine drafts. Unverified.",
+ "entries": [
+  {
+   "row_id": "0002_L1",
+   "register_year": 1892,
+   "scan": 2,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0002_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": null,
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-.  . .. . . . -..",
+    "parents": "",
+    "godparents": "д-"
+   }
+  },
+  {
+   "row_id": "0002_L2",
+   "register_year": 1892,
+   "scan": 2,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0002_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": ".",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "",
+    "parents": ". -",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0002_L3",
+   "register_year": 1892,
+   "scan": 2,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0002_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": ".",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-.-. .. . .. ... . .. . ...",
+    "parents": ".  .",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0002_L4",
+   "register_year": 1892,
+   "scan": 2,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0002_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": ".",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-м - - . . .. -. . .",
+    "parents": ". ",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0002_L5",
+   "register_year": 1892,
+   "scan": 2,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0002_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": ".",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": ". .. ... . .. . . ... - . Іsьсь m 18",
+    "parents": ". .  уве5 сыуvа 8 1 -",
+    "godparents": "2"
+   }
+  },
+  {
+   "row_id": "0003_L1",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "бьъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "во им снн, прозвавосріепннбм прсв.крещен вто прнсуТство вамъ?-й",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-исюКоста, съ, хто п одвою-м во дою вя всьши обрядами ча окресщенъ - -",
+    "parents": "бьъ, Какихъ роднтеден явъ в кому сословію нн общестъ онн прннадлесжатъ, косда щства щѣ, т. с. въ Какомъ пр ходъ родняся Кретаемыи",
+    "godparents": "-Рто был во им снн, прозвавосріепннбм прсв.крещен вто прнсуТство вамъ?-й -"
+   }
+  },
+  {
+   "row_id": "0003_L2",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ка",
+     "source": "model"
+    },
+    "estate": {
+     "value": "щстъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "СКродлях зиміръ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Франкъ въ Даргунъ консъ Маріян ынъ ною Конгу пяб совною дѣда вицаю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "19дъ1ѣъ Тосята восим девяносто вт ди Сентября д цатого дня в скомъ Р.К. Пр комъ Костеле нымъ викарнь кс: Гушсомъ щенъ младнѣ именемъ Ка со всѣми обря Таинства",
+    "parents": "щстъ Крестьянѣ Конеи орого го антино вскон вол врстав вики изъ Гарбисо иходе- Лятукаговъ за мѣст ныхъ супруговъс имъродившися 11 Сенъ окре- ря 1892 года въ ицъ ревнѣ СКродлях зиміръ Ретовскаго пр дами хода",
+    "godparents": "-Воскріем ос- никами ода были Франкъ въ Даргунъ консъ Маріян ынъ ною Конгу пяб совною дѣда вицаю -"
+   }
+  },
+  {
+   "row_id": "0003_L3",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 9,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "К гяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Адии схов Яссасъ в-съ Марілн кон ного Рубъшлавкисо 2 го-ною дѣаля вицѣюо ца",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "193 5 1 Тысяча восемь девяносто вто да Сентября шес гатого дня въ Екомъ Р.К. при Костеле мѣст викарномъ К гяломъ окрещ денемъ имене ріянна со всѣ обрядами таинс",
+    "parents": "сотъ Крестьянъ Констрогого Тинавскон воо рстнов- Сянно изъ Воик обдскомскихъ Рубмла щнымъ кисовъ Бочь за сДыр- ныхъ супруов енъ мла родившаясла 189 мъ Ма-да Сренвня Гпран тва Ротовскаго прихо",
+    "godparents": "сти Носаре -были Адии схов Яссасъ в-съ Марілн кон ного Рубъшлавкисо 2 го-ною дѣаля вицѣюо ца -"
+   }
+  },
+  {
+   "row_id": "0003_L4",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "мьсотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Леонъ - Мисевичъ ини съ Петроне нміегАн атона Рва бу-ло вича съ ов-ругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "1 Тысяча восе девяносто в го года Сентеяб шеснадщатог въ Ретовско Приходскомъ темъ мьстъ викарнымъ гяломъ окре младенецъ г Владниславъ ми обрмдаи инства",
+    "parents": "мьсотъ Дворянъ Фрагн торо-и бузанны изъ ря скихъ Даниловичем однязаконныхъ су пр, иъ РК. говъ сонъ родив кос ся десятого Се тяоря 892 год ко Ды въ Имѣніи Нар тынскахъ Рет менъмъ ского приход со всисй та",
+    "godparents": "ща Воспріем Быль-никами были Леонъ - Мисевичъ ини съ Петроне нміегАн атона Рва бу-ло вича съ ов-ругою"
+   }
+  },
+  {
+   "row_id": "0003_L5",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Сиесенмеиаред",
+     "source": "model"
+    },
+    "estate": {
+     "value": "семь",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лаб ста- діевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Паг амикяхъ Рстовско",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "195 120 тысяча во сотъ девяно вигорого года ря двадщаѣ въ Ротовско Приходском лс мѣстныи рнымъ Кс- До крещенъ мл иенемъ Сие сенмеи аред",
+    "parents": "семь- Крестьянъ Лаб ста- діевской волос Сентя Франна и Ме тогодна янны гузъ Сав мъ Р.К. рисом Дрнол иКостесо въ законны вика супруговъ, сынъ пгялатъ Роднвшиися 16 Се адѣнещъ тавря 182 г монъ въдеревнѣ Паг амикяхъ Рстовско прихода -..",
+    "godparents": "ар-Воспріем ти никами чр-бочго -Кучынъ и-Съ Барба хъ рою ень серго н-вес ода ри г"
+   }
+  },
+  {
+   "row_id": "0003_R1",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "нина",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Рота, Ръ, то ь на, схъ, жто я бьъ, Каяи днод-м водок нла со кому всвии обрадами таннства ожв, ожрсшсенъ. кодъ",
+    "parents": "нина тднтсясм и жъ ва-Кто бж въ роднтслсм яъ ва-Кго бн сосяовіюо нан овществу нніс В, сПр рннадлсжатъ, сога иннками прн ч. е. въ какомъ прн- крещени родняся жренасмын? со. Вадс?",
+    "godparents": "о гаг-  виоо"
+   }
+  },
+  {
+   "row_id": "0003_R2",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 9,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ІосифъсаРетмиобрядомитада",
+     "source": "model"
+    },
+    "estate": {
+     "value": "стьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Вевкр- Воспріел кон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "чынсача восемисотъ Кре вяносто второго анс да Сентября два Вике атто дня въщзъ стовскомъ Р.К. Іоцъ ияодскомъ косте супу мѣстнамъ Ви-диыъ нымъ Кс. Гугусем ря ещенъ млаупнем Ревъ инемъ Іосифъ са Рет ми обрядоми та да",
+    "parents": "стьянъ Вевкр- Воспріел кон волести ками был нтія и Анели Ксендзъ Аукискамънисовъ шсъ съ щовъ соконныхъ Виктор жгодъ сянъ ро-сго Анд штся 20 Сентаб ункевиче 892 года въ де- ного деви ш Будрокасъ цею годского приха",
+    "godparents": "мии и гу -"
+   }
+  },
+  {
+   "row_id": "0003_R3",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 9,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "нянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар- Воспріел кон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Паниками",
+     "source": "model"
+    },
+    "mother": {
+     "value": "тосанны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "оссяча восемьсотъ Крес яносто второго діевс Сентября Твад-вла ъ второго дня Андр Рстовскомъ Р.К. драКе иходскомъ Костемь нохъ стнымъ Викар-роднъ Кс. Дыргяломъ ок-ябро енъ млуенецъ ими дерев Петръ со всѣми Бет ами таинствъ ходо",
+    "parents": "нянъ Лабар- Воспріел кон волости Па никами и тосанны изъ были: Пеж жес вскихъ Ан-Вонгѣлевскихъ Закон-съ Емим супруговъ сынъ барембовійся 2 Сект-ного дѣв 1892 года въ цего вни Пивоварахъ овскаго при",
+    "godparents": "ръ ис ю"
+   }
+  },
+  {
+   "row_id": "0003_R4",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "семенко",
+     "source": "model"
+    },
+    "estate": {
+     "value": "танъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "оран- Воспріе",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "на Арма ихъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "сяча восемьсотъ Крес гяносто второо ской сеснтября дводніт пъ четвертагоуна изъ Ко стовскомъ Р.К. Трлис ходскомхъ посте-супру мосннм Ви- тссъ мъ каси-1892г крещенъ Гудел щецъ именемъсеме нко со вснм. дмтпаинсъ",
+    "parents": "танъ оран- Воспріе волости Иг- никами а и Маріянны были Ви таусовъ Бер-кентіи зъ законныхъ Бертумъ говъ дочь родив съ Магда а 2. Сентября ленон Ле бда въ деревнѣ на Арма ихъ Ротов-лиса суп оприхода ругог",
+    "godparents": "не"
+   }
+  },
+  {
+   "row_id": "0003_R5",
+   "register_year": 1892,
+   "scan": 3,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0003_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": "л. нъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "вянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "сяча жоемьсКрсст сто Бторого чоалосн ря двазцат и Реѣсовска мъ Косъ викарныл. нъ окрещен -",
+    "parents": "вянъ Жоранскем Воспріемн. ти Пвана и Бар-ками дылъ ѣ Толисовъ Ваи Доминихъ нхъ секонны Бунвидъ ъъ роунъв-съ Франун тябряшкоюо Всл кнѣ Ги-вичевного",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0004_L1",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Камихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ицжВосда, гдъ, ято н бвнъ одною-м водсю пяв со всьми обрадам таннств: окрешеснь.",
+    "parents": "Камихъ роднтсцесй явь бакому сословію нан обществу онн прннадлежатъ, косда и нѣ, Т. с. въ баконъ прнходь родиося КрешастТ.",
+    "godparents": "во б ск н вос иивреш Рто. ц ствОВ"
+   }
+  },
+  {
+   "row_id": "0004_L2",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 9,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 20,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Станнела",
+     "source": "model"
+    },
+    "estate": {
+     "value": "де",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Жармаиа кои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Элкахъ Ретовсьаго тъа",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "тій Въ Бар Гир наф цѣю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-09-20",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "2527 Тьсяча восемнсотъ ваносто второго год Сентября двадцатъ мого дня въ Рстов Р.К. присеодскомъ Кос лѣмѣстнымъ Вис нымъ Кс. Д ыргямамъ окрещенъ младѣнесъ именемъ Станнела со всѣсми обрядами",
+    "parents": "де Крестьянъ Жармаиа кои восости Масаа ьсесъ и Унны иъ Фредамеоа скомъ Моравлоиъ законныхъ те супруговъ сынъ родпьзо шйся 25 Сентября 1892 года въ деревн Элкахъ Ретовсьаго тъа прихода",
+    "godparents": "Восп ника был: тій Въ Бар Гир наф цѣю-"
+   }
+  },
+  {
+   "row_id": "0004_L3",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 9,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Миха",
+     "source": "model"
+    },
+    "estate": {
+     "value": "де",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабардоссв ен ски",
+     "source": "model"
+    },
+    "father": {
+     "value": "Соломологона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "ЯнК.тинсовъ Каутисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "хлъ Калакутошкахъ на",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Аявдонч съ Барбароюо Миха или Струмилы супругого",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "2728 Тьссяча воссмьсстъ вяносто второго года С тября двадцатъ вось дня въ Ретовскомъ К. приходскгомъ Костемъ стнымъ виКарномъ Гугисомъ окрещенъ ми нецъ именемъ Миха со всѣми обрядами инства",
+    "parents": "де- Крестьянъ Лабардоссв ен ски восгости Соломолого на и Анны изъ ЯнК.тинсовъ Каутисовъ за омъ конныхъ супруго въ сынъ Кс- родивиися 2 Сентяблади ра 1892 года въ деревнѣ хлъ Калакутошкахъ на Ретовскаго прихо -",
+    "godparents": "Воспріемниками были Антонъ Аявдонч съ Барбароюо Миха или Струмилы супругого -"
+   }
+  },
+  {
+   "row_id": "0004_L4",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барра",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ева",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабардзев Сен скоя",
+     "source": "model"
+    },
+    "father": {
+     "value": "тъІосифиня",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агаты",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Киняснъ и-со въ Павникасовъ мѣс",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Іимогимти рахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "2830 Тысяча восемьсотъ9 носто второго года тядря тридцатаго д въ Ретовскомъ Р.К. пр ходскомъ Костемѣ тнымъ викарнм Гугсомъ окрещенъл дѣненъ именемъ Бар ра со всѣми обряда Таинства",
+    "parents": "ева- Крестьянъ Лабардзев Сен скоя волосттъІосифи ня и Агаты изъ Киняснъ и-со въ Павникасовъ мѣс зако ннылъ су ругевъ ъ Кс. дочь родившаяся 28 ша Сентября 1892 г ода ба- въ деревни- Іимогимти рахъ Ресвссдагоприхода",
+    "godparents": "Воспреминиками быт Антонъ Лутыа ски съ вллимею Знимо со вно ж див"
+   }
+  },
+  {
+   "row_id": "0004_L5",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "пея",
+     "source": "model"
+    },
+    "estate": {
+     "value": "цъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Мѣся 22 Тысяча воемсот вяносто второо од Октября втарог въ РетовскомъР. приходакомъ Ко мистнымъ Насп телемъ Кс. Карон Завкевичеммъ од младѣнемъ пея",
+    "parents": "цъ Октаиъ вѣе- Кресоцнъ а контиодна и Кпре Лн К. винааПавецкинъ стелиъ заъ супруговъ гоа совшися 2 пе Атонскаго",
+    "godparents": "писнавъ Кобецаійа Петронем Ковицго"
+   }
+  },
+  {
+   "row_id": "0004_R1",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Каянхъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "хи Тогда, Рдъ, кто н жьнъ однот-л водою мл со осьни орадамн таннства окрещснъ.",
+    "parents": "Каянхъ родитедсй икъ ва кому сословію нлн общестъ она прннаддежатъ, когда иъ гдъ, ч. с. въ каяомъ прн ходъ родняся крещаемын?",
+    "godparents": "имнь, про3во воспріетрстснСП. . стоа"
+   }
+  },
+  {
+   "row_id": "0004_R2",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыргяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Андреевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "З Тысяча восемьсотъ девяносто вторпо года Октября третъ яго дня въ Рстовскомъ Р.К. приходскомъ Косте лѣмѣстнымъ Викар номъ Кс. Дыргяломъ окрещенъ младѣнецъ именемъ Маріянна со всѣми обрядами та инства",
+    "parents": "Крестьянки Андреевской волости -Марцгянны Люты ковной не законноро жкденная дочь роднь шаяся З Октября 1892 года Бвъ Савсатаъ вкахъ Ретовского прихода",
+    "godparents": "Воспріемни ки высл Домникъ Гальднкас съ Петронелею Андрея Вонткуса супругою"
+   }
+  },
+  {
+   "row_id": "0004_R3",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыргяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Іоганъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабардзевско",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "ов илаляхъ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Расисъ съ Магдаленого Игнатія Грикилы супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыслча восемьсотъ девяносто второ го года Октября пятего дня въ Рстовскомъ Р.К. при ходскомъ костемьмѣтнымъ Викарномъ Кс. Дыргяломъ окрешъ енъ младѣнецъ именемъ Іоганъ со всѣми Д обрядами таинства",
+    "parents": "Крестьянъ Лабардзевско волости тософа и Юліанныщъ Венцкусовъ Гризжѣи ловъ законныхъсун руговъ сынъ родньшйся 4 Октабря 1892 года въ деревнѣ ов илаляхъ Ретовскаго прихода",
+    "godparents": "-Воспріемникали выли Петръ Расисъ съ Магдаленого Игнатія Грикилы супругою"
+   }
+  },
+  {
+   "row_id": "0004_R4",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыргяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ладардзевскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Бубянахъ Ретовского",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ка знтръ Ронисъ съ Людови кого Навна Пендикаса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто вс орого года Октябра десятого дня въ Ретовскомъ Р.К. приходскомъ Костем мѣстнымъ Викарнымъ Кс. Дыргяломъ окрещенъ млодеѣнецъ именемъ Петронеля со всѣми об ряд ами таннства",
+    "parents": "Крестьянъ Ладардзевскон волости Антона и Катерины щъ Контовтов зоцисовъ законныхъ супруговъ дочь родив таяся 10 октября 1892 года Бъ деревнѣ Бубянахъ Ретовского прихода",
+    "godparents": "Воспріемниками были ка знтръ Ронисъ съ Людови кого Навна Пендикаса супругою"
+   }
+  },
+  {
+   "row_id": "0004_R5",
+   "register_year": 1892,
+   "scan": 4,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0004_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дырга ги ломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Франнъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ладардзевскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Ивана",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Стонкусовъ Зеимисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "х Дронстаъ Ре-д",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Михаммъ Зисисъ съ Петронееѣ миаловскоа свицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто второго года Октября десатого дня въ Рстовс комъ Р.К. приходскомъ Костелѣ мѣстнымър Викарнымъ Кс Дырга ги ломъ окрещенъ младѣ немъ именемъ Франнъ со всѣми обрядами таинства",
+    "parents": "Крестьянъ Ладардзевскои волости Ива на и Анны изъ Стонкусовъ Зеимисовъ законныхъ супуговъ сынъ родиьйся 9 Октабря 1892 года въ деревнѣ х Дронстаъ Ре-д товскаго прихо-",
+    "godparents": "Воспріемниками были Михаммъ Зисисъ съ Петронееѣ миаловскоа свицею"
+   }
+  },
+  {
+   "row_id": "0005_L1",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "цъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "я во имсни, прозвано воспріемнивамн прн св.крещенни то, прсуТство вавъ? П",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "тисвн- Роста, сь, жто ж одною-лв водою нав ясьми ообрядамь таннсть. оКРеценъ.",
+    "parents": "цъ, Какихъ родитедсй в въ касокому сословію нан обшеству они прннадлесжатъ, босда в атѣ, т. е. въ какомъ прнходъ роднося КрещаетП.",
+    "godparents": "Ксо быля во имсни, прозвано воспріемнивамн прн св.крещенни то, прсуТство вавъ? П"
+   }
+  },
+  {
+   "row_id": "0005_L2",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыр ломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "тъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Жороне го кон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Са Ведегянахъ Ретовоб-скаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Павелъ Милевскій съ Маріян ног Юріеновног довиуею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "81212 Тысяча восемиьсо девяносто второго да Октября двѣ цатогодня въ Ротов комъ Р.К. приходско костелѣ мѣстныи Викарнымъ Кс. Дыр ломъ окрещенъ екла дѣненъ именемъ ріянна со всѣми рядами таинсть",
+    "parents": "тъ Крестьянъ Жороне го кон волости Казили гад ря и Марузіянны щзъ е Ашмонтовъ Мимъ левскихъ законнах супруговъ дочь роднв га шаяся 12 Октября 1892 годъ въ деревнѣ Са Ведегянахъ Ретовоб-скаго прихода",
+    "godparents": "Воспріемникам были Павелъ Милевскій съ Маріян ног Юріеновног довиуею"
+   }
+  },
+  {
+   "row_id": "0005_L3",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 16,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "арціянна,совеобрядамитаннстъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "тъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Андреев го скон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Плункяѣми нахъ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іостъ Касперовиъ съ Розаміен Буувидасов ню дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-16",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "95516 Тисяча восемісо девяносто второ года Октября тес надцатого дня въ товскомъ Р.К. Прихо комъ Костелѣ, м нымъ Викарнымъ Гугисомъ окрещенъ младѣнецъ имен Марціянна, со ве обрядами таннстъ",
+    "parents": "тъ Крестьянъ Андреев го скон восгости, Козит- мря и Петронеми Ре- щъ Контримасовъ де= Кунейко въ законѣст ныхъ супруговъ дочъ Кс. родившаяся 15 Октабря 1892 года въ емъ деревнѣ Плункяѣми нахъ Ретовскаго а приода",
+    "godparents": "Воспріем никами были Іостъ Касперовиъ съ Розаміен Буувидасов ню дѣвицею"
+   }
+  },
+  {
+   "row_id": "0005_L4",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Котантинъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар дадзевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пубями нахъ Ретовскаг",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ИванъВенцкусъ ъсъ Кульхеріего Кучинского дѣвицен",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "0К16 Тысяча восемьсотъ девяносто второго го Октября шеснад того дня въ Рето комъ Р.К. приходско Костем мѣстнымъ Викарнымъ Кс. Гу сомъ окрещенъ м нецъ именемъ Ко тантинъ со всѣ обрядамъ таинст",
+    "parents": "Крестьянъ Лабар дадзевской волости ца- Юлана и Филоме вс- ны щзъ Кучинских смъ Гедвилловъ закон ныхъ супруговъ сын ги- родившийся 15 Ок лада тября 1892 года не- въ деревнѣ Пубями нахъ Ретовскаг ва Прихода",
+    "godparents": "Воспріемнцкамид были: ИванъВенцкусъ ъсъ Кульхеріего Кучинского дѣвицен"
+   }
+  },
+  {
+   "row_id": "0005_L5",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьяръ Лабар зого дзевскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "семъІоспфа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "МареянвъРе-ны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лавокахъ ми Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "11К18 Тосяча восемъ девяносто Бто года Октября во надцатого дня товскомъ Р.К. пр скомъ Костелѣ тныхъ Викарнымъ Кс. Дыргяломъ щенъ младѣнецъ немъ Анна совсѣ обрядали тан",
+    "parents": "сотъ Крестьяръ Лабар зого дзевскои вослости семъ Іоспфа и Мареян въ Ре-ны изъ Венцкусов нход Кучинскихъ зокон мѣ ныхъ супруговъ дочь родившаяся окре 16 Октября 1892го име- въ деревнѣ Лавокахъ ми Ретовскаго прихо",
+    "godparents": "-Воспріес никами бныи: Антонъ Войшвилосъ Ан ного 7оси дифата За ведскаюо супругою -"
+   }
+  },
+  {
+   "row_id": "0005_R1",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыргяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Юмянъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Дворянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Элкахъ Ретов скаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-18",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тосяча восемьсотъ девяносто Вто рого года Октября восемьнад цатого дня въ Ретов скомъ Р.К. Приходском Костелѣ, мѣстньмъ Викарнымъ Кс. Дыргяломъ окрещенъ мла дѣнецъ именемъ Юмянъ со всѣми обрядами таинства",
+    "parents": "Дворянъ Викентія и Домицѣли изъ Петровскихъ Видмонтовъ законныхъ суп руговъ сынъ роднвшійся 16 Октября 1892 года 6ъ деревнѣ Элкахъ Ретов скаго прихода",
+    "godparents": "Воспремниками бол: Ра фалъ Гинентъ съ Миріяног казимьра Іпрконта супругою"
+   }
+  },
+  {
+   "row_id": "0005_R2",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыгяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Андресь ской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Справ дзяхъ Ретовска",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Иванъ Пакамьнишкисъ съ Маріянног па камьниикеовнѣ дѣовицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-18",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто второго года Октября восемъ надцотого дня въ Рстов скомъ Р.К. приходскомъ Костелѣ мѣстнымъ Викарнымъ Кс. Дыгяломъ окрещенъмми дѣнецъ именемъ Ма ріянна со всѣми обря дами таинства.",
+    "parents": "Крестьянъ Андресь ской волости Іосифа и Юліянны щъ Дегутисовъ Венцкусо въ законныхъ супруговъ дочь родившаяся 17 Ок тября 1892 года въ деревнѣ Справ дзяхъ Ретовска го прихода",
+    "godparents": "Воспріем- никами бнли: Иванъ Пакамьнишкисъ съ Маріянног па камьниикеовнѣ дѣовицею"
+   }
+  },
+  {
+   "row_id": "0005_R3",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гушсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Владисяавъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъи",
+     "source": "model"
+    },
+    "township": {
+     "value": "Жоранской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Довгядахъ Ре товскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Фор тунатъ Киреновскіи съ Іеленаю Грамала совною дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто второго го да Октября дводцатъ перваго дня въ Ретовскомъ Р.К. приходекомъ Костелѣ мѣст нымъ Викарнымъ Кс Гушсомъ окрещенъмла дѣнецъ именемъ Вла дисяавъ со всѣми обрядама таинства",
+    "parents": "Крестьянъи Жоранской волости Домицели иъ Тома шевскихъ Бочкусовой не законно рожѣденныо сынъ роднв шнйся 21 Октября 1892 года въ деревнѣ Довгядахъ Ре товскаго прихода",
+    "godparents": "Воспріем никами были: Фор тунатъ Киреновскіи съ Іеленаю Грамала совною дѣвицею"
+   }
+  },
+  {
+   "row_id": "0005_R4",
+   "register_year": 1892,
+   "scan": 5,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0005_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Іосифъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабардзевскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мацѣяхъ Ретовскяго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Михаимъ Гаилосъ съ Азатог Гедвилавною дѣ вицю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-23",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто Бторого года Октября двадцать третьяго дня Въ Рстовскомъ Р.К. при ходскомъ Костелѣмнетнымъ Викарнымъ Кс. Гугисомъ окрещенъ младѣненъ именемъ Іосифъ со всѣми обрядами таинства",
+    "parents": "Крестьянъ Лабардзевскон волости Навла и Марціянны пъ Геовилловъ Купетисовъ закон ныхъ супруго въ сынъ родившіійся 21 Октября 1892 года въ деревнѣ Мацѣяхъ Ретовскяго прихода",
+    "godparents": "Воспріемниками был Михаимъ Гаилосъ съ Азатог Гедвилавною дѣ вицю"
+   }
+  },
+  {
+   "row_id": "0006_L1",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "янна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ьсотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Андре рогого евскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пя обря ляхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Исидоръ Венн-цкусъ съ очь Анною Ок- Михан а ла Даршиса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "216 2527 Тысяча восем девяносто вто да Октября дв седымого дня в вскомъ Р.К. прихо Костелѣ мѣстныл Викарнымъ Кс. сомъ окрещенъ ми нецъ именемъ янна со всѣми дами таинсть",
+    "parents": "ьсотъ Крестьянъ Андре рогого евскон Болости Ан одцать дрея и Розаліи ъРесо-Венцкусовъ Іоку дскомъ бан Тисовъ зако сныхъ супруговъд Гуги- родившаяся 25 Ок адѣ тября 1892 год арі-въ деревнѣ Пя обря ляхъ Ретовска а го прихода",
+    "godparents": "-Воспріем мниками изъ были: Исидоръ Венн-цкусъ съ очь Анною Ок- Михан а ла Даршиса супругою"
+   }
+  },
+  {
+   "row_id": "0006_L2",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "ендз. Гу",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Бард",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Ану рого евской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Тадв зясо няяъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "21 2829 Тосяча восемь девяносто вто года Октября цать девятого Бъ Ретовскомъ ходскомъ костелѣ мѣстнымъ Викар нымъ Ксендз. Гу окрещенъмладе именемъ Бардар всѣми обрядам инства",
+    "parents": "сотъ Крестьянъ Ану рого евской волост дваа Георгія и Евы и дня Пешкусовъ ДаухР.К. при совъ законнылъ с руговъ дочь род -шаяся 28 Окт шсомъ ря 1892 года въ ецъ деревнѣ Тадв зясо няяъ Ретовска ита - прихода",
+    "godparents": "ре Воспріемниками зъ бнем: Зошни-ма Іокніуп-осъ съ Евоюо ив-Франца гб-хонуша са супруой-гою г"
+   }
+  },
+  {
+   "row_id": "0006_L3",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гуг",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръсовобрядомитаинств",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пиво цъ име",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Па велъ Андреевскій съ а Барбарою ва Антона Зарембы супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "218 2830 Тысяча восемь девяносто вто года Октября п цатого дня въ скомъ Р.К. прихо костемъмѣстнъ карнымъ Кс. Гуг окрещенъ младѣне немъ Петръ сов обрядоми таинств",
+    "parents": "сотъ Дворянки Пульхе рого ри тосифовны Каргид-воиневны незакон Ретов но рооденныи сынъ дскомъ родившійся 28 Ок имъ Ви тября 1892 год исомъ въ деревнѣ Пиво цъ име рахъ Ротовъ каго сѣмни прихода а",
+    "godparents": "-Воспріем никам были: Па велъ Андреевскій съ а Барбарою ва Антона Зарембы супругою"
+   }
+  },
+  {
+   "row_id": "0006_L4",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "ьсотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лада гогода дзевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "гва Поюрже Ретов",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "кихъ Франъ Вонцаусъ -съ Барба реюо токубайтисовнѣ ною дѣвиодй цею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "219 2930 Тысяча восем девяносто второ Октября тридцъ дня въ Ретовско приходскомъ кос мѣстнымъ Ви Кс Гугисемъ окрещъ младѣнецъ им Антонъ со всѣ обрядами таинсѣ",
+    "parents": "ьсотъ Крестьянъ Лада гогода дзевской волости затого си фа и Емими мъ Р.К. иъ Филинковс темъ Кокубаи тисовъ карным законныхъ супру рещенъ говъ сынъ родиь онел шіися 29 Октября ми 1892 года въ дерев гва Поюрже Ретов. прих",
+    "godparents": "р-Воспріем та никамтбыли: кихъ Франъ Вонцаусъ -съ Барба реюо токубайтисовнѣ ною дѣвиодй цею"
+   }
+  },
+  {
+   "row_id": "0006_R1",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "мхъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Когда, гъ, ято нжьъ, Тая однот-  водою няя со оон всьма обрядана чанястса гъ ожрешенъ?о",
+    "parents": "мхъ роднтеясин въ Ка- нсоб,Тр усосьовію нн оощесьвуню воса прннадлсжатъ, богда вннками в Т. с. въ какомъ прн-Крещен дъ родняся врещасмьТ? сѣвовая ноябръ",
+    "godparents": "овармсв. ъ-="
+   }
+  },
+  {
+   "row_id": "0006_R2",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "боляръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспрі ско",
+     "source": "model"
+    },
+    "father": {
+     "value": "До-никамника",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Евы",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пьяв-товска хъ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Мѣсяцъ Пыслча восемѣсотъ Кр евяносто второго го-дзев а Ноября второго ми ня въ Ретовскомъ Ляв К. приходскомъ Кос- нен чемѣ мѣстнымъны астоятелемъ Кс.сы Каноникомъ Завке- 2 Н ичемъ окрещенъмла въ ѣнецъ именемъ боля ръ, со всѣми обра при ми таинства",
+    "parents": "естьянъ Лабар-Воспрі ско волости До-никам ника и Евы изъ были: К донскихъ Ку-лиръ К повскихъ закон товски хъ супруговъ съ Мар съ родившійся ного 7о оября 1892 года фя Къ деревнѣ Пьяв-товска хъ Ретовскаго супруг лода",
+    "godparents": "сн аднунегян сѣ пе ою -"
+   }
+  },
+  {
+   "row_id": "0006_R3",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Бардарасо-689сѣмиобрядамитатъинстваРет",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар. Воспри скои",
+     "source": "model"
+    },
+    "father": {
+     "value": "никамидовика",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агбыли:шки",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Разу-хаилъ ро совъ тонушеве- нушевсі ъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "цего Пиво варахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-11-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Пысяча восемсотъ де Кр яноста вто рого года дзев ября четвертаго дна Лю Ретовскомъ Р.К. при-нѣ дскомъ костемъ ти стнымъ Викар-ких нымъ Кс. Гугисомъ руговрещенъ младѣнецъ ша енемъ Бардара со-689 сѣми обря дами та тъ инства Рет",
+    "parents": "естьянъ Лабар. Воспри скои волостиниками довика и Агбыли: шки изъ Разу-хаилъ ро совъ тонушеве- нушевсі ъ законныхъ суп съ Агато ъ дочь роднв-Швеико яся З Ноября ского дѣви 2 года въ дерев цего Пиво варахъ овскаго прихода",
+    "godparents": "ем ми к -"
+   }
+  },
+  {
+   "row_id": "0006_R4",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "priest": {
+     "value": "ны госомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "189иимя",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Андре- Воспри и",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "ровског Лабардзахъ Ре",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-11-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "гысяча восемьсотъ де Кр яносто второго года евско ября пято го дня въ вла стовскомъ Р.К. приход По мъ Костелѣ мѣст-кусов ъ Викарнымъ Кс. ны госомъ окрещенъ див адѣнещъ именемъ 189 иимя со всѣми нѣ рядами таинства тов",
+    "parents": "естьянъ Андре- Воспри и волости Па никал и Емнили щъ был: Ка цюсовъ Венц- зилиръ ъ дочъ закон-Ясса съ супруговъ ро-съ Баръ таяся У Ноября рого Пег 2 года въ дерев-ровског Лабардзахъ Ре дѣвик оскаго прихода",
+    "godparents": "еми касъ и сю"
+   }
+  },
+  {
+   "row_id": "0006_R5",
+   "register_year": 1892,
+   "scan": 6,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0006_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": "суп огяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "рядамъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Жоране-Воспр",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "супруКунгахъ Ве вскаг",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-10-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "нсяча восемьсотъ де Кр носто второго года Кой ября восьмого дня те Рстовскомъ Р.К. при-За дскомъ костелѣмѣс-Кус нымъ Викарнымъ Кс. суп огяломъ окрещенъ див денецъ именемъря дамъ со всѣми об-вне адами таинства То",
+    "parents": "естьянъ Жоране-Воспр волости Игна никал а и Веронихатъ были: веденхъ Моц-сифъ овъ законннхъга съ хуговъ сынъ ро- тогъ тися 8 Нояо-ра го 1892 года въ дере супруКунгахъ Ве вскаг прихода",
+    "godparents": "ем т дг пет цнса гою"
+   }
+  },
+  {
+   "row_id": "0007_L1",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "блъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "аво именн, прозва-ню воспріемннкамн прнсв.кпрещПрісутствовадъ?-й",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ансво-Ропда, Рв, тто Пж одною-мв водою ни ссЕжи обрядамн таня окрещенъ.",
+    "parents": "блъ, Какихъ родитедсй я въ ва совону сословію нн обществу онн прннадлежатъ, косда и стса нѣ, тТ. с. въ каконъ при ходъ родияся жрещаеми?",
+    "godparents": "-Кто былаво именн, прозва-ню воспріемннкамн прнсв.кпрещПрісутствовадъ?-й"
+   }
+  },
+  {
+   "row_id": "0007_L2",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "софъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "отъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабар ога- дзевскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "7госифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Юлаинымъ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Ваичѣсовъ Рач с- ковскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Богдиновѣ обра Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Донми -никъ Вайчюсъ съ -Теодорою -Симеона -Барбитса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "245 8 Тосяча восемьс девяносто втора да Ноября восьмо дня въ Ретовско Р.К. приходсколѣ Ко телѣ мѣстныл карнылѣ Кс. Дыргя ломъ окрещенъ м дѣнецъ именемъ софъ со всѣми дами таинств",
+    "parents": "отъ Крестьянъ Лабар ога- дзевскои волоспи7 го сифа и Юлаины мъ изъ Ваичѣсовъ Рач с- ковскихъ законныхъ с Ви супруговъ сынъ ро -дившійся 5 Нояб ла ря 1892 года въ де хо-ревнѣ Богдиновѣ обра Ретовскаго прия",
+    "godparents": "-Воспріем -никами боли: Донми -никъ Вайчюсъ съ -Теодорою -Симеона -Барбитса супругою"
+   }
+  },
+  {
+   "row_id": "0007_L3",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Владис",
+     "source": "model"
+    },
+    "estate": {
+     "value": "хъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Жоран гогода скон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Довгя дахъ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Доси никъ Вени-цкусъ съ Агатою 7оциговноюо дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "2548 Тосяча восемгсон девяносто второ Ноября восьмого въ Ретовскомъ прихо бскомъ Костемь мистнымъ Виѣ кеендзомъ Дыргаи окрещенъ младг именемъ Владис со всѣми обрядами таинства.",
+    "parents": "хъ Крестьянъ Жоран гогода скон волости Ина дня тія и Емими гуъ Р.К. Пукисовъ 7оісо въ законныхьсу марномъ руговъ сынъ родивомъ ши ся четвертаго ьнецъ Коября 1892 года лавъ въ деревнѣ Довгя дахъ Ретовскаго прихода",
+    "godparents": "Воспріеми никами были: Доси никъ Вени-цкусъ съ Агатою 7оциговноюо дѣвицею"
+   }
+  },
+  {
+   "row_id": "0007_L4",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Д гяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "тъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Жоран го скои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Витке амѣ ляхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Томамъ Моцкусъ съ Людви -кою 7оси Фа Гриса моса го супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "265 8 Тысяча восемьсог девяносто второ года, Ноября во го дня въ Рето Р.К. приходском Телѣ мѣстнамъ Викарнымъ Кс. Д гяломъ окрещенъ дѣнецъ именемъ со всѣми обряд таинства.",
+    "parents": "тъ Крестьянъ Жоран го скои волости Игна сьмо-тя и Барбары г вскомъ 7онунтсовъ Моц чКос кусовъ законныхъ супру говъ сынъ ы-родившйся 5 Но млаябра 1892 года въ Адамъ деревнѣ Витке амѣ ляхъ Ротовска прихода",
+    "godparents": "-Воспріем никами цъ были: -Томамъ Моцкусъ съ Людви -кою 7оси Фа Гриса моса го супругою"
+   }
+  },
+  {
+   "row_id": "0007_L5",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "ѣ Кс Дыря ломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестѣянъ ЖСоранъ го-скои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Гомонтлавкахъ тва Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "276 8 Тысяча восем девяносто второго да Ноября вось дня въ Ретевся К. приходскомъ Ко м мѣстнымъ карнымѣ Кс Дыря ломъ окрещенъ мла дѣнецъ именемъ со всѣми обрядамти тамнсъ",
+    "parents": "сотъ Крестѣянъ ЖСоранъ го-скои воло сти хоси мого Фа и Каромны иъ вомъ Р. Ваи чюмсовъ Бамьсте-сосо въ законныхъ Вѣ супруговъ сынъ ро дившся 6 Нохо - -ря 1842года въ де Петръ ревнѣ Гомонтлавкахъ тва Ретовскаго приссода",
+    "godparents": "Воспріем ннками бойл: Адамъ Пубыевскй съ Барбарою -Бамьомсов -ною дѣвицего"
+   }
+  },
+  {
+   "row_id": "0007_R1",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "нкъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Косда, Ръ, ято нжьнъ, Кая однот-ли водою нли со ком всьми обрядамя чаннстьа ожъ окрещснъ:ок",
+    "parents": "нкъ родителея жкъ да- Тто бмя у состовю нн обшесту нре В, со прннадлесжатъ, кодда ввнками пр ч. е. въ какомъ при- ѣрещен родняся КрещаемыН? сѣв овая",
+    "godparents": "оввадж-. 2-"
+   }
+  },
+  {
+   "row_id": "0007_R2",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Иг-скагони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сстьани",
+     "source": "model"
+    },
+    "township": {
+     "value": "Кол Воспрі нскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Тумаса ссяналъ Ретов",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяга восемьсотъ Кр евяносто втораго го-тыня Ноября восьмого т ня въ Ретовскомъмо К приходскомъ Кос=но р мѣстнимърод ным Кс. Дыр- 189 гяломъ окрещенъмли Вед нецъ именемъ Иг-скаго ни со всѣми аами таинства",
+    "parents": "сстьани Кол Воспрі нскои волос-никами -Павлины Го-ли: Геро левской не закон Янчев ожеденныисынъ съ Бар нвиися 8 Ноябра Косифа ггода въ деревнѣ Тумаса ссяналъ Ретов су пру прихода",
+    "godparents": "м иба немъ ск барою гою"
+   }
+  },
+  {
+   "row_id": "0007_R3",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар- Воспри скои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "ы Івахда ляхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ча восемьсотъ Кр яносто второгодев да Ноября девя- Игн ого дня въ Ретов щъ омъ Р.К. приходе- чел мъ Костелѣмис- су пру щнымъ Викарнымъ див Дыряломъ окре 189 енъ младѣнецъ име Изку ъИгнатій со всѣ-ско и обрядами та ства",
+    "parents": "естьянъ Лабар- Воспри скои волостиникам атія и Анны боли: Иг Дашкусовъ Га тій сав асовъ законныхъ рисъ съ говъ сынъ ро- Теод шійся 8 Ноябра Доминтъ 2года въ деревны Івахда ляхъ Ретов-ругог го прихода.",
+    "godparents": "ем на орею су-"
+   }
+  },
+  {
+   "row_id": "0007_R4",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "мъ ру Дыргаломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "189аріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сстьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабардзіев- Воспри",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "чевнон Ретов-девицѣю",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Гысяа восемьсотѣ Кр вяность второго года скыи яоря десятого дня тія Ретььском Р.К. при Чедвиговъ дскомъ Костелѣ товъ ѣстномъ Викарныммъ ру Дыргаломъ окрещен таяся снецъ именемъ 189 аріянна со всѣ-тѣ Явняни обрядами таинста скаго",
+    "parents": "сстьянъ Лабардзіев- Воспри волости Игна никами и Маріанны иъ были Д - Виржкинминикъ законныхъ суп-Вграынтъ говъ дечь роднв съ Емимъ Коябра Мицнеь 2 года въ дерев-чевнон Ретов-девицѣю прихода",
+    "godparents": "емъ игою"
+   }
+  },
+  {
+   "row_id": "0007_R5",
+   "register_year": 1892,
+   "scan": 7,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0007_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Даревнѣ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ванъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Торан Воспри",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Госслча восемьсотъ Крест яносто второго скон да Ноября десато рени дня въ Ретовскомъ изъ приходскомъ Кос-Моомъ мстнымъныхъ карномъ Кс. Ды-род мъ окрещенъмла ря ъ именемъ Да ревнѣ со всѣми обря Рето ми таинствада",
+    "parents": "ванъ Торан Воспри вослости Лав-никамѣ тія и Барбары быми: Витневскихъ сануръ тѣковъ закон Мотѣ супруговъ сонъ съ Маръъ инйся дНоло Фран 1892 грда въ де МотѣКи Доведахъ су пругого вскаго прихо",
+    "godparents": "м Амент"
+   }
+  },
+  {
+   "row_id": "0008_L1",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "кѣьнъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "исен- Котда, въ, дто одною-м водою ѣсьми обрядани та окрещенъ.",
+    "parents": "кѣьнъ, Бакихъ родитеден я къ ка сокому сословію нан общес они прннаддлежатъ, когда ннстсанѣ, ч. с. вь Каконъ и ходъ родняся ярецаемы",
+    "godparents": "ва- ниснь, прозвятвуно воспріеминиками прн св.ри-Кко-Терісутствова дъ?"
+   }
+  },
+  {
+   "row_id": "0008_L2",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "хосифъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар го- дзевскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "гогореифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "БарбаримъР",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Виктасовъ Р Косте-вичевъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мѣшкахъ ми об-Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "232 910 Тосма восемьсотъ девяносто второго да Ноября десат дня въ Ретовско К. присходскомѣъ лѣ мѣстнымъ ятелелѣ Кс. Кано Завкевичемъ Окрещъ младенецъ именем хосифъ со всѣ рядами таннсп",
+    "parents": "Крестьянъ Лабар го- дзевскои волости гого реифа и Барбари мъ Р. изъ Виктасовъ Р Косте-вичевъ законныхъ Наста супруговъ сынъ ро никомъ дившііса 9 Нос рещенъ ря 1892 года въ9 ъревнѣ Мѣшкахъ ми об-Ретовскаго прихогва да",
+    "godparents": "Воспріемникаи бонт: Пре-Францзъ Юревичъ -съ Барбагб-роюо Касовскоюо ахъ дѣвнцею"
+   }
+  },
+  {
+   "row_id": "0008_L3",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "лна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Вор рого скон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Вудри обря кахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "29 1.П2 Тоссага восем деваносто вто года Ноябра двѣ цатого дня въ скомъ Р.К. прихо Костелѣ мѣсн Викарномъ Кс. сомъ окрещенъ дѣнецъ именел на со всѣми дами таинсть",
+    "parents": "сотъ Крестьянъ Вор рого скон вомости А над-сандра и Анн Ротов щъ Заведзскихъ декомъ Мютасовъ закон тылѣ ныхъ супруговъ д Гуги родившаяся 11 Номла ябра 1892 года ѣ Аи деревнѣ Вудри обря кахъ Ретовскаго а прихода",
+    "godparents": "нен Воспріемллек ннками. ы бым: Игнати Грыгусла очь съ Петронеміею Чаи въ мосовною -дѣвинеюо гю"
+   }
+  },
+  {
+   "row_id": "0008_L4",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "остиъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "цъ нѣ Янкаицахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "24912 Тосяча восемъ сотъ девяност рого года Нояб двъъ надцатого въ Ретовскомъ приходскомъ Ко м мѣстнымъ тоятемемъ Кс. никомъ Завкев окрещенъ млад именемъ остиъ со всѣми обря",
+    "parents": "- Крестьянъ Лаб. овса- дзевской восости ря роспфа и Лн дня вики щзъ Домибро сифъ Р.К. скхъ Велима сте-со въ законныхъсу нас-руговъ дечъ родив Кано-тамся Гноябра ичемъ 1892 года въ дер ѣнецъ нѣ Янкаицахъ маКетовскаго прихоъ дами",
+    "godparents": "пр-Воспріем никами до-бонт: Іоро сифъ Пушинскй и-съ Елиміею -Эитминовра ного дѣвиев-цею а"
+   }
+  },
+  {
+   "row_id": "0008_L5",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу",
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "ѣдева",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабару аНо-евскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Иъюоднянатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петропгиходенели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Рушики стнымъ Лясутисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Встуние Рсто вскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Маріянны: Доминикъ совъ Ваичесъ съ Бароче- рисявнаго вдаАнтонъ Вааи: баросао нидосупрупоюо",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "5 9 К. Тысма восемисон носто второго год ября двѣнадцато въ Ротовскомъ Р.К. комъ Костелимѣ викарнымъ Кс. Гу оррещены биизнецы ми: 1. Маріянна кадра со всѣмн обрло таинства",
+    "parents": "ѣдева Крестьянъ Лабару аНо-евскои волости Иъ юодня натія и Петро пгиходенели изъ Рушики стнымъ Лясутисовъ закон нсомъ ныхъ супруговъ д имена ри родивнеся 9 Но 2. Лгоября 18 9года въ амѣ деревнѣ Встуние Рсто вскаго прикода",
+    "godparents": "ц-Воспріемниками были Маріянны: Доминикъ совъ Ваичесъ съ Бароче- рисявнаго вдаАнтонъ Вааи: баросао нидосупрупоюо"
+   }
+  },
+  {
+   "row_id": "0008_R1",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "вихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Косда, съ, жто жжьнъ, Ка однот-и водою нля со ком всьни обрадамн чаннства ожъ окрещенъ",
+    "parents": "вихъ родитедея икъ ка- Рто бя у сословію нан обшеству нне В, С прннадлсжатъ, когда вннкамн п ,Т. с. въ какомъ при-крещен ожъ родияся жрещаемьн? соѣ о ва",
+    "godparents": "розвапріем. -="
+   }
+  },
+  {
+   "row_id": "0008_R2",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гуги ро мъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Еслидермя",
+     "source": "model"
+    },
+    "estate": {
+     "value": "гыянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Констан Воспръ но вской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "у ря 1892",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Госяча восемьсотъ де Кресп яносто второго года ти ября четырнадцата Доминъ дня въ Ретовскомъ мц К. приходскомъ Ко Бу мѣстнымъныхъ икарнымъ Кс Гуги ро мъ окрещенъмла ября ѣнецъ именемъ Если дер мя со всѣмнобра Рен ами таинства",
+    "parents": "гыянъ Констан Воспръ но вской волостикалтб оминика и вми-Иванъ Агщъ Лукошсо въ монтъ ковецкихъ законбарого супруговъ дочъ мосовногѣ дившамся В3 Но- девну ря 1892 года въ евнѣ Узкупахъ говскаго прихода",
+    "godparents": "емни ои исъ Бари сюо"
+   }
+  },
+  {
+   "row_id": "0008_R3",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугиъ род мъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбарар",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспріемни оской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "яча восемьсотъ Кр овяносто второго го-дзе Ноября пятнад- Па того дня въ Ретов-щъ мъ Р.К. приходскомъ Су стелѣ, еиѣстнымъ ныхъ икарнымъ Кс. Гугиъ род мъ окрещенъ младѣяб) зъ именемъ Барбара рев всѣми обрядами Реѣ наинства",
+    "parents": "естьянъ Лабар-Воспріемни оской вослости камтиб внла п Енмлт Стание Турскихъ Ясасъ нгаило въ закон Барбарого супруговъ дочь свосюсу ившаясе К440-гог гя 1892 года въ де нѣ Довгелали говскаго прихода",
+    "godparents": "омн: лавъ -ъ пую."
+   }
+  },
+  {
+   "row_id": "0008_R4",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "сонъ шсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "деревранцъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспри ыского",
+     "source": "model"
+    },
+    "father": {
+     "value": "камибміра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "ФранПетръи",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Пугпри снсъ съ Сунгаисговъ мего",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "восемьсотѣ Кр евяносто второго дзе да Ноября тят Кази надцатого дня въ унтѣъ етовскомъ Р.К. прихъ со въ мъ костем мѣст-за нымъ Викарномъ Кс. сонъ шсомъ окрещенъ Ном ладѣнецъ именемъ дерев ранцъ со всѣми Рето рядамн татнства",
+    "parents": "естьянъ Лабар-Воспри ыского волостиками б міра и Фран Петръ и изъ Пугпри снсъ съ Сунгаисговъ мего Су конныхъ супруговъ ло вного роднвшійся 12 внуего бря 1892 годавъ нѣ Довгелами векаго прихода",
+    "godparents": "еити р вист наи дѣ"
+   }
+  },
+  {
+   "row_id": "0008_R5",
+   "register_year": 1892,
+   "scan": 8,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0008_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугирод мъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Герт-деруда",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естѣанъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспр ской",
+     "source": "model"
+    },
+    "father": {
+     "value": "ниамира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петронми:Казии",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысма восемьсотъ Кр яносто вто рого го- дзев Ноябра пятнад-Іосне атого дня въ Ретов ли смъ Р.К. приходскосмъ ГРы стемъ мѣстнмъныхъ икарнымъ Кс. Гугирод мъ окрещенъмладѣ ябра цъ именемъ Герт-дер уда со всѣми обра вит ами таинства го п",
+    "parents": "естѣанъ Лабар-Воспр ской волости ниами ра и Петрон ми: Казии изъ Юревичевъ Юревичъ самосовъ закон съ Кан супруговъ дочь риног нвшаяся 14Но- миника 1892 года въ хаго вс евнѣ Норгамъ-су пругог кахъ Ретовска рихода",
+    "godparents": "быръ ми паю"
+   }
+  },
+  {
+   "row_id": "0009_L1",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "жѣнъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "я до именн, прозва-вуно воспріеминнками при св.п-пое ерісутство валъ?",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "исн-Косда, тъ, вто ж одною-ми во дою и ѣсѣн обрядамн таь оКреценъ.",
+    "parents": "жѣнъ, Какихъ родитедси ввъ в и со кому сословію нан оощест они прннадлежатъ, когда щѣства гв, г. с. въ каконъ пр ходъ роднося крещцаемыйо",
+    "godparents": "а-Рсо быля до именн, прозва-вуно воспріеминнками при св.п-пое ерісутство валъ?-"
+   }
+  },
+  {
+   "row_id": "0009_L2",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "окадія",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъде",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабар года дзевскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "е Ле-ляхъ Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ -Балондасъ ун съ Карбарою та Симсона 92 Скудаса пред супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "2410 К 18 Тысяча восемь вяносто второго Ноября восемьнад того дня въ Рет Комъ Р.К. приход костемъ мѣстнымъ Викарномъ Кс. сомъ окрещенъ дѣнецъ именемъ окадія со всѣми рядами таинс",
+    "parents": "сотъде Крестьянъ Лабар года дзевскон волости ца мы и Анны щъ овс Мицкусовъ Клен скомъ бовъ законннхъо руговъ дочь родивта Гуги яся 1 Ноабря 18 мла года въ деревнѣе Ле-ляхъ Ретовскаго твб-прихода",
+    "godparents": "-ВѣпріемОо-никами бы ли: Петръ -Балондасъ ун съ Карбарою та Симсона 92 Скудаса пред супругою"
+   }
+  },
+  {
+   "row_id": "0009_L3",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ан",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Жоранго-ской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "нъ ео дескахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "241 1820 Тосяча восемь девяносто вто рого да Ноября двад годня въ Рето Р.К. приходскомъ телѣ мѣстныл тоятелемъ Кс. никомъ Завке окрещенъ млад именемъ Анто всѣми обрядами та",
+    "parents": "сотъ Крестьянъ Жоранго-ской вогости Анцато-тона и Маріян вскемъ ны щъ Росодыка ко совъ Гравелисо ѣ Нас- законныхъ супру кано-говъ сынъ родиыши виемъся 18 Нолора 18 ѣнецъ года Бъ дереьнѣ нъ ео дескахъ Рстов инстьа скаго прихода",
+    "godparents": "Воспріеи -никами бочм: Франъ Сонвило съсъ Анною -Доминика Эимоса Ксупругою"
+   }
+  },
+  {
+   "row_id": "0009_L4",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "ѣдева",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ ЛабараНо- дзевскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "всѣ- Павшки Ретовска",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петр щ- Жимосъ съ Емили ны-ею Адама Мицкуса асупругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "242 122 Тосяча восемьсон носто второго год ября двадцатъ втъ дня въ Ретовскомъ Р.К. приходскомъ лѣ мѣстнымъ нымъ Кс. Ггнсомъ рещенъ мходѣ нец немъ Симеонъ со сми обрадами таин",
+    "parents": "ѣдева Крестьянъ ЛабараНо- дзевскои волости Си фрого меона и Маріяннъ щъ Поцѣсовъ Мі косте Кусовъ законныхъ Викарсупруговъ сынъ род ок-тійся 19 Ноября ъиле 1892года въ деревнѣ всѣ- Павшки Ретовска ства го прихода",
+    "godparents": "Воспріем -никами и были: Петр щ- Жимосъ съ Емили ны-ею Адама Мицкуса асупругою"
+   }
+  },
+  {
+   "row_id": "0009_L5",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Іосифъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лукго го- никскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кс. Гугисъ съ Юсліаннаю Кариисов -ною дѣви цею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "В2022 Тосяча восемъ девяноста второ да Ноября дваду второго дня въ Р скомъ Р.К. прихо комъ Костелѣ ми тнымъ Викарнымъ Кс. Гугсомъ окр младѣнецъ имене Іосифъ со всѣ обрядамѣ таинс",
+    "parents": "сотъ Крестьянъ Лукго го- никскои волости цатъ тосифа и Емилій стов иъ Корписовъ Жи де мнскихъ даконны с-супруговъ сынъ ро дившійся 20 Нояб ещенъ ря 1892 года въ мѣг мъ течкѣ Ротово ми тва",
+    "godparents": "Воспріем никами боли Кс. Гугисъ съ Юсліаннаю Кариисов -ною дѣви цею"
+   }
+  },
+  {
+   "row_id": "0009_R1",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспр ской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "ругоно Явняны Ре",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-11-24",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "сеяча восемьсотъ Кр евяносто второго дзев да Ноября двадцать Пав твертаго дня въщъ стовскомъ Р.К. при Нас дскомъ Костемѣ за стнымъ Викар-гов ным Кс. Гунсомъ яся кещенъ младѣнецъ 189 номъ Маріян тѣ со всѣми обря-то ами таннства",
+    "parents": "естьянъ Лабар-Воспр ской волости нками ла и Анны быт: Янъ Грокшасо въ Жупарисъ тецкихъ съ Конен ко нныхъ супру-ціего М ъ днъ роднвша гела Грик23 Нохбря шаса су 2года въ дерев ругоно Явняны Ре вскаго прихода -",
+    "godparents": "демкан иха и-"
+   }
+  },
+  {
+   "row_id": "0009_R2",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Псрбаръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Андре Воспри скон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "де вез Тадвойняхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "восемьсотъ Кр евяно сто вто рого го- евског а Ноября двадцатъ Фр сымого дня въ Ре-діи оскомъ Р.К. прихо-чев ѣ ом Костелѣмѣдочь мъ настоянолемъсу Кс. Каноникомъ Завтая кевичемъ окрещенъ 18 садѣнецъ именемъ П србаръ со всѣми Рен рядами таинсты",
+    "parents": "естьянъ Андре Воспри скон волостиникал анца и Леока были: тсну щъ Касперови-Лемѣ Жутовтовъ ли съ законнымъ Бвого пруговъ роднь- товѣ ся 23 Юоябра ного д2 года въ дерев-де вез Тадвойняхъ говскаго прихода",
+    "godparents": "им г овжу гы ею"
+   }
+  },
+  {
+   "row_id": "0009_R3",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "нъ нылѣ Кс. Гугмсомѣ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Жорин Воспръ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Эекахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "восемьсотъ Кр евяносто второго скои да Ноября двадкать ника сомого дна въ Репзъ оскомъ Р.К. при Ірав дскомъ костелѣ кон мъ стнымъ Викарсынъ нылѣ Кс. Гугмсомѣ 27 рещенъ младенецъ въ онемъ Адамъ со Реп ми обрядамти таинства",
+    "parents": "естьянъ Жорин Воспръ волости Досминиками и Домицели был: Витневсмихъ мык емисовъ за-мосъ съ ныхъ супруговъронем родивтіися Зимо Ноября 1892 годаного дѣви деревнѣ Эекахъ цего говскаго прихода",
+    "godparents": "м до ъки н л -"
+   }
+  },
+  {
+   "row_id": "0009_R4",
+   "register_year": 1892,
+   "scan": 9,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0009_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "priest": {
+     "value": "супру Гунсолѣ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ма18лнна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "тьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабарезев Воспри и",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "девну мудяхъ Ретов",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-11-28",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "реяча восемьсотъ Кес евяно сто второго года ско ября двадцать восьмо на дня въ Ретовскомъ Р.К. Гъ риходскомъ Костемъ.ли щостнымъ Викарнемъ супру Гунсолѣ окрощенъ та ладгонець именемъ Ма 18 лнна со всѣми оя Ръ аеи таинства ска",
+    "parents": "тьянъ Лабарезев Воспри иволости Антаника и Петромлѣ босл: тжо Курасоы Мео- Леонев совъ законныхъ съ Мар говъ дочь родив ного Чени ася 26 Ноября со вно 92 года въ деревньдевну мудяхъ Ретов гоприсода",
+    "godparents": "и росифръ си анею"
+   }
+  },
+  {
+   "row_id": "0010_L1",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "жѣьъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "аво имсенн, прозвано воспріемннками присв.крещени вто ПрисуТ-ство вамъ?о",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "тсн-Когда, съ, ято ж одвотют- ви во дою нли ясьн обрядамь ганн ожрешенъ.",
+    "parents": "жѣьъ, Какихъ родитемси я къ ка со кому сословію нан общестъ они прннадлесжатъ, когда ства гв, ч. с. въ жакомъ при ходъ роднося жрещаемыи?",
+    "godparents": "-Кто былаво имсенн, прозвано воспріемннками присв.крещени вто ПрисуТ-ство вамъ?о"
+   }
+  },
+  {
+   "row_id": "0010_L2",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Кадиміръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "тьде",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Сарти да На ниѣскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Богдано ва вѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "248 2729 Тысяча восемьсо ваносто второгаго ября двадуатьдев дня въ Ретовскомъ прихо дскомъ Косп мъстнымъ Викарны Кс. Гунсомъ окре младнецъ именемъ Кадиміръ со всѣ обрядами таинст",
+    "parents": "тьде Крестьянъ Сарти да На ниѣскои волости ятог Аслександри и Ели Р.К. ми щъ ТКадейки гелѣ совъ Рельскихъ за иКонныхъ супругов щенъ дочь родпышаяся ъ 27 Ноября 1892года ми въ деревнѣ Богдано ва вѣ Рстовскаго пр",
+    "godparents": "-Воспріемъ никами бым: Ста -нислаыъ Островскій съ Александрог Юцисовнг дѣвицеюо"
+   }
+  },
+  {
+   "row_id": "0010_L3",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбаря",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "father": {
+     "value": "Паднявла",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Марцімнприны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Іселнсовъ миыы Юріоновъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Павшкяхъ Рстов тва",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Гостъ Лявдонекійсъ Ва леріен. Лавдоне никою дѣвиуцеюо",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Мѣсяц 49 292 Тысяча восемьсо девяносто второ да Декабря второго Бъ Ретовскомъ Р.К. ходскомъ Костемъ тнымъ Викарн Кс. Гугсомъ окре младенецъ имен Барбаря. со всѣмъ обрядами танн",
+    "parents": "ъ Декабрь тъ Крестѣянъ Андре го го-евскои восгости Па днявла и Марцімн при ны изъ Іселнсовъ миыы Юріоновъ законымъ ныссь супруговъ дочь тенъ родившаяся 29 Ного имъ ря 1892года въ дереь Павшкяхъ Рстов тва скаго прихода",
+    "godparents": "-Воспріем ннкаси были: Гостъ Лявдонекійсъ Ва леріен. Лавдоне никою дѣвиуцеюо"
+   }
+  },
+  {
+   "row_id": "0010_L4",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "тъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьанъ Андреевской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Катьзитра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяв-ны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Макара скомъ совъ Ленковскиъ ынъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Шлѣ и ноб-штыкахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "30.3. Тысяча восельсо девяносто вто раго года Декабря тре лго дня въ Рето комъ Р.К. приход Костеммѣстн Викарнымъ Кс. Гу сомъ окрещенъмла денецъ пменемъ Петръ со всѣм рядаи тапнсть",
+    "parents": "тъ Крестьанъ Андреевской волости Ка тьзитра и Марія в- ны изъ Макара скомъ совъ Ленковскиъ ынъ законныхъ супруговъ гѣ сынъ роднвтіися З0 Ноября 1892 год въ деревнѣ Шлѣ и ноб-штыкахъ",
+    "godparents": "Воспріемниками быт: н Петръ Савдаргасъ съ хАннаю зоспера Ленковска ого су пругою"
+   }
+  },
+  {
+   "row_id": "0010_L5",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "лМаріянна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "иъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Креслаь гого- ской",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "ко Барстенковъ Ила ко пиновъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ѣ тоспеъ ленъ вскій съ Канерѣ внѣго чеКлнскоюо вдовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "3.. Тоссяча восемьсп девяносто второ да Декабря треть годня въ Рето Р.К. приходскомъ темѣ мѣ стнымъ Викарнымъ Кс. Гу сомъ окрещенъ дѣнецъ пменел Маріянна со в сни обрадама таинсттва",
+    "parents": "иъ Крестьянъ Креслаь гого- ской волости Витея я ского губ. Іосифаг вскомъ Петронели изъ ко Барстенковъ Ила ко пиновъ законныхъ ги супруговъ дочь роди мла шаяся 30Нолобря ѣ. 1892 года въ мѣс сѣ-течк Ретово",
+    "godparents": "Воспріем никамиа былѣ тоспеъ ленъ вскій съ Канерѣ внѣго чеКлнскоюо вдовою"
+   }
+  },
+  {
+   "row_id": "0010_R1",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Емиміяв",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспри зеьскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ Кр девяносто вто рого года дзев Декадря пятого днявъ Маріян Рстовскомъ Р.К. приход ми скомъ костелѣ мѣс- Шев тнымъ Викарнымъ ко Кс. Гугсомъ окре- дочь щенъ младенецъ именемъ Емимія в со всѣми обрядами во таинства.",
+    "parents": "Крестьянъ Лабар-Воспри зеьскои волости никами Маріянны Кази ли: то ровны Сладо-Ленков шевской неза съ Фр нно розкденнаяцигко родившаяся ен фа Декабря 1892 года рымъ ъ мѣстечоѣ Кето супру",
+    "godparents": "ем би сифъ скій аню та Гедаса гою"
+   }
+  },
+  {
+   "row_id": "0010_R2",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "естьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ворнем-Воспріемита",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-06",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ Кр девяносто второго кон года Докабря шестого и ня въ Ретовскомъ ку Р.К. приходскомъ Кос- заР темѣ мѣстнымъ На д гоятелемъ Канони-дг зомъ Кс Завкевичемъ 18 окрещены младѣнцы нов воиные 1я Анна 2я прі Маріянна со всѣми обрядами Таинства",
+    "parents": "естьянъ Ворнем-Воспріемита волости Адамами были Анны изъ Венц-ны: Іоси совъ Велюсовъ неьсліи онныхъ супруговъанною вонныче дочеро ро-совного авшіеса 5 Декабря Маринны д2 года въ Богда Станис ѣ Ретовскаго островсой риходасъ Марі Кутнев дѣвиц",
+    "godparents": "мниска Анфъ Кутсъ ЮмВындѣви. с ланъ анною скою ею"
+   }
+  },
+  {
+   "row_id": "0010_R3",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": "Гуги су мъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Бар18ара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естъянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ану- Воспр евскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "ного у Справдзахъ Ре ви",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ Кр девяносто вто рогого ре а Декао ря шестого Ф дня Въ Ретовскомънел Р.К. Приходскомъ Ко рисо темъ, мѣстнылѣЮ Викарнымъ Кс. Гуги су мъ окрещенъмлата ѣнецъ именемъ Бар 18 ара, со всѣмѣобра нъ ами таинстват",
+    "parents": "естъянъ Ану- Воспр евскои волостимикамиб рана и Петроли: Д и пзъ Лнгнуга иикъ въ Пакалъ- кальн шкисовъ законсъ Веро пруговъ догь родивкого Лнѣ ягя 5 Декабря нугари 92года въ дерев-ного у Справдзахъ Ре вицего овскаго прихода",
+    "godparents": "имоии паишамъ ни са н -"
+   }
+  },
+  {
+   "row_id": "0010_R4",
+   "register_year": 1892,
+   "scan": 10,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0010_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казиміръд",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестѣянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Андре Воспу ског",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пуп виуею хъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Точсяча восемьсотъ Кр евяностго второго года ев екабря восьмо го дня кентія ъ Ретовскомъ Р.К. ци риходскомъ Костемъ со ѣстнымъ Викар-ко мъ Кс. Гуномѣ ок сынъ стенъ младѣнецъД иенем Казиміръ да овсѣми обрядаитъ шя ганнстваго",
+    "parents": "рестѣянъ Андре Воспу ског волости Ви-никами и Фран ли: Ка тхи щзъ Юріоналѣръ въ Юріоновъ за ковскии нныхъ супругоыъ Бмил родиышісяМнц скабря 1892го-ног д въ деревнѣ Пуп виуею хъ Ретовска прихода",
+    "godparents": "нем са зиян съ пю кусою.-"
+   }
+  },
+  {
+   "row_id": "0011_L1",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "бынъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "по тимснн, про3ваѣню воспріемннками при св.р-кресщенн асѣвовадсу",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ан-Косда, тъ, во одвою-л водоо и ссвни обрддами га окрсценъ -",
+    "parents": "бынъ, Вакихъ родитедея н къ ми собону сословію нлн общес ностваонн прннадлежатъ, косда ѣдѣ, т. с. въ бакомъ в ходъ роднося Крещасмы",
+    "godparents": "ка-Кто были по тимснн, про3ваѣню воспріемннками при св.р-кресщенн асѣвовадсу-"
+   }
+  },
+  {
+   "row_id": "0011_L2",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "лФранцъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лаба года дзевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Снум а Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "258. 5. 8. Тысяча восемъ девяносто вто рого Декабря восьлго въ Ретовскомъ ходскомъ Кост -мѣстнымъ Вика аКс. Гугтомъ окр младѣнецъ именел Францъ со всѣм радами таинсть",
+    "parents": "сотъ Крестьянъ Лаба года дзевской волости годня ханла и Барбары Р.К. при щъ Буль видасо емъ Вразо вскихъ рныи законныхъ супру оженъ сынъ родившіиса ѣ 5 Декабря 1892го об-въ деровнѣ Снум а Ретовскаго прихода",
+    "godparents": ". ар-Воспріем Миниками бол: Франъ въ Бульвидъ съ Анною говъ Антона Кавмоса да супругого брохъ"
+   }
+  },
+  {
+   "row_id": "0011_L3",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабар года дзевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Ла сѣ- бардзяхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "57 1 11. Тысяча восемъ девяносто второго Декабря одинад дня въ Ретовско приходскомъ Косте мѣстнаммъ На телемъ Кс. Канонт Завневичемъ окремъ младенецъ име Казимръ сов ми абрядаити ства",
+    "parents": "сотъ Крестьянъ Лабар года дзевской волости уатого Франа и Барб мъ Р.К. ры пзъ, Моцку ми со въ Кавлюсо стоа законныхъ супру гомъ говъ сынъ родивии енся 10 Декабря 18 нмъ года въ деревнѣ Ла сѣ- бардзяхъ Рето вска ганн го прихода",
+    "godparents": "Воспріеи никами а бонт: 7озефатъ въ Давкшасъ -съ Маріян ного Мну9ъ кусовною дѣвицею"
+   }
+  },
+  {
+   "row_id": "0011_L4",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ФР",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестъянъ Андресв года скои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "анцъ Ведеданахъ Ренъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "1.1. Тысяча восемь девяносто второго Декабря Одинад годня въ Ретовско Приходскомъ Костел тнымъ Настомтелъ Канониколѣ Кс. Заь виемъ ок рещенѣм нецъ именемъ ФР со всѣми обрада таинства",
+    "parents": "сотъ Крестъянъ Андресв года скои волости Ива цато на и вилт иъ мѣ Р.К. Венцкусовъ Цыпа имыс Рисо въ законных елѣ супруговъ сынъ роднъ н шйся 10Докадря ладѣ-1892 года въ деревн анцъ Ведеданахъ Ренъ ми скаго прихода-",
+    "godparents": "Воспріем никати ъ бом: Мелъхіоръ Веникусъ съ Леокадіего Слилин ѣшсовного лов дѣвицен"
+   }
+  },
+  {
+   "row_id": "0011_L5",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Иванъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьанъ ЖСорамъ гога кон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ветушахъ Ретов скаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "5. 1 Тысяча восемъ девяносто второ да Декабря двѣ цатого дня въ Р скомъ Р.К. приход Костемь мѣстнымъ Настоятелемъ Кс. ноникомъ Завкеыи чемъ окрещенъ млад нецъ именъ Иванъ со всѣии обрядами тамнтва",
+    "parents": "сотъ Крестьанъ ЖСорамъ гога кон волости Ивана над и Маріянны щзъ стов- Венцкусовъ ЛуКоскомъ ШЮсо въ законныя супруговъ сынъ ро Ка дившнися 5 Декабра 1892 года въ деревнъ и-Ветушахъ Ретов скаго пріхода",
+    "godparents": "Воспріем никами быт: Франуъ Венцкусъ -съ Агатою Венщнусовною дѣвиею"
+   }
+  },
+  {
+   "row_id": "0011_R1",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Иванъсо189ьмобрядамитаПелаинва.скаго",
+     "source": "model"
+    },
+    "estate": {
+     "value": "естѣянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лобар-Воспріемъ скон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "лайцяхъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "восемьсотъ Кр вяносто второго года дзев каб ря тринадато Фо ня въ Рстовскомъ тр К. приходскомъ Кос-ии м мѣстнамъ Ви со въ рнылѣ Кс. Гугтсомъ руго рещенъ младѣнецъ ши ненемъ Иванъ со 189 ьм обрядами таПелаи нва.скаго",
+    "parents": "естѣянъ Лобар-Воспріемъ скон волости - никами ртуната и Пе ми: Ми онели пъ Кав илъ Баг со въ Милаштсъ Агн законныхъсуп кого Кав въ сонъ роднь иисов ся 12 Декабря дѣвнуего 2года въ деревн елайцяхъ Ретовприхода",
+    "godparents": "ы ла уеюо пш ною"
+   }
+  },
+  {
+   "row_id": "0011_R2",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "лнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Зоран Воспри",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Гысяча воселѣсотъ де Крестъ яносто второго года скон абря тринадуато пгне ня въ Ретовскомъ Лен прияо декомъ ко ты мстнымъ Ви ных Кс Гугисомъ род ощенъмладѣнецъ кабр немъ Роспфъ со-дерсь сми обрядами та рахъ а",
+    "parents": "лнъ Зоран Воспри воссости тосифаниками шки щъ боли: Ан кшасовъ Лу-тонъ П икихъ законпариъ с ъсу пруговъ сынъ Агнѣи ивиийся 12 Де- кого Лу а 1892 года въ тыского нѣ Гиліоги- дѣвиуег Ротовсѣ. прихода",
+    "godparents": "е су"
+   }
+  },
+  {
+   "row_id": "0011_R3",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ваме",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "сяча восельсотъ Дво яносто втораго го- и Ал Декабря четырнад-халъ гого дня въ Ротовс- Лв Р.К. приходскомъ супру цѣмѣстым днвмъ ятелемъ КсКа ря 1 никомъ Вавкеви слав ѣокрещенъмладѣго при ъ именемъ Ваме со всѣми обра и таинства",
+    "parents": "рянъ Петра Воспри =бины изъ Ми никати евскихъ Ве-были: Ю ичевъ закон-  янъ Кон говъ дочь ро- цевичъ аяся 12 Декао Елтм 892 года въ Сав- Сребали кахъ Ретовска вого вд хода вою",
+    "godparents": "им еъ"
+   }
+  },
+  {
+   "row_id": "0011_R4",
+   "register_year": 1892,
+   "scan": 11,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0011_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "ян",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабар-Воспріем",
+     "source": "model"
+    },
+    "father": {
+     "value": "ннкаминія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбабыт:Іо",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "восемьсотъ Кресть яносто второго го-дзевскон окабря четырнад Игнанъ дна въ Рсетов ры мъ Р.К. приходе- Ст мъ Костелмѣстзакон мъ Викарнымъ родив Гугисомъ окре-кабря нъ младѣнецъдереь немъ Антонъ со Ретъ сти обрадаии таттотва",
+    "parents": "ян Лабар-Воспріем волости ннками нія и Барба быт: Іо изъ Пожѣсовъ Контри равкасовъ съ Барбаръ он. супр. сынъІоспфа шійся 12 Да- Смагур 1892 года въ супругон нѣ Погоржке овскаго прихода",
+    "godparents": "сперъ маъ ою цию."
+   }
+  },
+  {
+   "row_id": "0012_L1",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "бѣнъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "по имснн, прозввн воспріеминнкамн прКсв. -крещени и вто прсутство вадъ?",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "есвнРосда, сь, вто ж одною-в во до ю ня мсьнн оотр ядан тан окреценъ -",
+    "parents": "бѣнъ, Какихъ родитедео ввъ ж ясо кому сословію нн общест они прннадлежатъ, когда нства нб, Т. с. въ какомъ пр ходъ роднося крецаемь?",
+    "godparents": "а-Кто был по имснн, прозввн воспріеминнкамн прКсв. -крещени и вто прсутство вадъ?"
+   }
+  },
+  {
+   "row_id": "0012_L2",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "1яЕлти2яБардарадоче",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ѣ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабар года дзевскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "а Шурнокахъ Реподъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "264. В. К. Тысяча восемьсоп девяносто второго Декабря четырн того дня въ Рето Р.К. Приходскоммъ лѣ мѣстнымъ карнымъ Кс. Гу окрещены младѣ именам: 1я Елти 2я Бардара дочеры всѣми обрядами инства",
+    "parents": "ѣ Крестьянъ Лабар года дзевскон волости Ка адца зиемра и Агнѣ вскомъ Ки тъ ѣгастнсо кота Руибутисо въ Ва закон. супр. доче риро шсомъ дѣвтеса В. Декао нун 1812го да въ деревн а Шурнокахъ Реподъ со скаго прихода та",
+    "godparents": "-Воспріемниками ыни: Ессті ш Янъ Пошацсъ въ съ Есииліею Пупамнсо вног ро днвицею. воспр. ря Барбара: Францъ ѣ Линисъсъ Казимірою Игнатія Возшрди су пругого"
+   }
+  },
+  {
+   "row_id": "0012_L3",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "де",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Лабар года дзевской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "ми Явнлнаяъ Ротовск",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іосифъ Лавадонъ съ Пулѣхеріею нв -Виржіин тасо вноо дѣвнуею а",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "6. В. К. Тысяча восемьсотъ вяносто второго Декаб ра четырнад того дна въ Рето Р.К. приходскомъ . мъ мѣстныемъ В. нымъ Кс. Гугисомъ рещенъ младѣнен немъ Анна со всѣ обрядами тамыеѣ",
+    "parents": "де Крестьянъ Лабар года дзевской волости Иы ца- на и Домуеѣ щъ вскомъ Отанисовъ Жуп іосте-Рисо въ законныхъ тхарсупруговъ догь род ок-таяся ВДекабра зии-1892года въ деревнъ ми Явнлнаяъ Ротовск ва го прихода",
+    "godparents": "-Востріем Ва ткамтибыли Іосифъ Лавадонъ съ Пулѣхеріею нв -Виржіин тасо вноо дѣвнуею а"
+   }
+  },
+  {
+   "row_id": "0012_L4",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гу",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестынъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабаргого-дзевско",
+     "source": "model"
+    },
+    "father": {
+     "value": "Иънаднатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріянетов-ны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Бучннсовъ скомъ Томашевскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Погоргѣе Ретовска го",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Ка зилиръ Виумонтъ съ Барби рносвосюо супругююо",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "6. К.К. Тосяча восемьсотъ деваносто второ да Декабря пят цатого дня въ Рет скомъ Р.К. приход Костелѣ мѣстнымъ Викарномъ Кс. Гу окрещенъ младѣне именемъ Барбарасо всѣсти обрядасми таинства",
+    "parents": "Крестынъ Лабаргого-дзевско волости Иъ над натія и Маріян етов-ны изъ Бучннсовъ скомъ Томашевскихъ даконныхъ супругѣ щисомъ дочъ родивтался цъ 14 Декабря 1892 года въ деревнѣ Погоргѣе Ретовска го прихода",
+    "godparents": "Воспріем никами были: Ка зилиръ Виумонтъ съ Барби рносвосюо супругююо"
+   }
+  },
+  {
+   "row_id": "0012_L5",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 15,
+     "source": "model"
+    },
+    "priest": {
+     "value": "мъ Кс. Гу сомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Фр",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Кростьянъ Того-ранской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лавжкахъ Ретовска го",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-15",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "7. К.5. Тысяча-восемъ девяносто вто рого да Декября пятнад цатого дна въ Ретов скомъ Р.К. приходег Костемъ мѣстнымъ Викарныммъ Кс. Гу сомъ окрещенъ млад нецъ именемъ Фр со всѣми об рядали таинсетва.",
+    "parents": "сотъ Кростьянъ Того-ранской воостѣ -Доииника и Есл етов ми щзъ Ж неносо номъ роцисовъ законныхъ супруговсынъ ги- родившіся 14Деѣ- кабря 1892 года рянцъ въ доревнѣ Лавжкахъ Ретовска го прихода",
+    "godparents": "4 въ -"
+   }
+  },
+  {
+   "row_id": "0012_R1",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугнсосм",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Жко-Воспріем ранскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Довглдахъ Ретовскаго прѣхода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "П Тысяча воселѣсотъ девяносто вто рого года Декабрасем надцатого дня въ Рстовскомъ Р.К.при ходскомъ Костемъ мѣстнымъ Викар нымъ Кс. Гугнсосм окрещенъ младѣн. именемъ Барбара со всѣсти обрядат таинства",
+    "parents": "Крестьянъ Жко-Воспріем ранскон волости никамми Антона и Бар-были: тостфръ бари щзъ Канли-Ксктъ съ насовъ Конт-Маруіян Бон невъ закон ног Каиныхъ супругоълтннасовдочъ роднвтаяся ного вдоцъ В5 2екабря 1892 вого года въ деревнѣ Довглдахъ Ретовскаго прѣхода",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0012_R2",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Гугнсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Магдалена",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ъКрестѣянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лабтра Воспріем дзевскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Встутах Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "1. Тысяча воселѣсот девяносто второго года Декабрясемѣнадцатого дня въ Ре товскомъ Р. К. приходскомъ Костемъ мѣстнылѣ Викар нымъ Кс. Гугнсомъ окрещенъ младѣнп именемъ Магдалена со всѣст обра амитаи -",
+    "parents": "ъКрестѣянъ Лабтра Воспріем дзевскон волости никами Кавла и Магда быни толены щъ Акшт-снфъ Сав калѣнисовъ Сав-даргасъ съ даргасовъ закон Барбарог супруговъ дочь ро-Іостра сс днвшаяса В5 Докао-бомвскаго ъ кя 1892 года въсупруно дереьнѣ Встутах Ретовскаго прихода",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0012_R3",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 20,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Дыргяломъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Лаб ардзев- Воспріемокон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Косновкаг нѣ Леги",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-20",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча воселнсотъ девяносто второго года Декабря двадуатого дня въ Ретовсколѣ Р.К приходскомъ костелѣ мѣстнымъ Викарнымъ Кс. Дыргяломъ окрещенъ младѣнецъ именемъ Петръсо всѣми о рядамтѣта инства.-",
+    "parents": "Крестьянъ Лаб ардзев- Воспріемокон волости Петра никамѣ и Агнѣшки щерк были: Ма галнсов Косновс-теутъ Гуиихъ законнихъ суп-довскій съ уговъ сынъ родив-Анелею инися 18 ДекабряАнтона 1892 года въ дерев-Косновкаг нѣ Леги Ретовска супругого го прихода -",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0012_R4",
+   "register_year": 1892,
+   "scan": 12,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0012_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріаовсѣнтобрядамитайства",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Прусскихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-26",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяносто второго гоа Дскабря двадцатъ шестого дня въ Реть скомъ Р.К. приходскомъ Костелѣъ, мѣстнимър Настоятелемъ Кс. Ка я ноникомъ Завкеви го чемъ окрещенъ младѣнецъ именемъ Маріа овсѣнт обрядами та йства",
+    "parents": "Прусскихъ поддан Воспріем шхъ сАдомьса иннками Матыльда иъбыли: ЛюдПиковъ Реитевисъ Трестъ ровъ законнихѣ сунсъ Фран уговъ дочъ роднета унскою ся 21 Декабря 1342 Вилѣчелъ. да въмѣстечоѣма Рерте Ретово н",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0013_L1",
+   "register_year": 1892,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0013_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "мъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "а во именн, прозваню воспріемниками прнсв.вреен споАъ",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "тцю- Восда, скъ, жто нвв одною-ли водою нли освни обрядами чаннсѣ окрещенъ.",
+    "parents": "мъ, Какнхъ родитемси в въ васокому сословію нан обществу они прннадлежатъ, когда и вагдъ, Т. с. въ какомъ приходъ родняся крещаемнн?",
+    "godparents": "Кто была во именн, прозваню воспріемниками прнсв.вреен споАъ"
+   }
+  },
+  {
+   "row_id": "0013_L2",
+   "register_year": 1892,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0013_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 31,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Грасылъда",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сотъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестѣянъ Колты га нянског",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Гидвоине Ретовскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казилиръ Гравемсъ съ Агнѣшкого Граве лиаовнаго довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1892-12-31",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "230.31 Тысяча восемъ девяносто всорого да Декабря три цатъ первого дня Ретовскомъ Р.К. пр ходском Косте мстнымъ Виѣ нымъ Кс. Гуисомъ окрещенъ младенецъ именемъ Грасылъ да со встеми абряда ми тамиства",
+    "parents": "сотъ Крестѣянъ Колты га нянског волости гд- Алѣ бина и Марвъ ціянны щзъ Гравси лисовъ Гомолевт скихъ законныхъ а-супруго въ дочь роъ дившаяса б0 Декабря 1892 года въ ль- дѣревнѣ Гидвоине Ретовскаго прихода",
+    "godparents": "Воспріем мнками бы ли: Казилиръ Гравемсъ съ Агнѣшкого Граве лиаовнаго довицею"
+   }
+  },
+  {
+   "row_id": "0013_L3",
+   "register_year": 1892,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0013_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Іеестръ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Апдрава. Ашмонтов „„ Ашмонтов 5. Адамовичен Агинсовъ „ „ Андракеевск - Битеров „„ Бурневския = Бурнисовъ „  Бамьтрили Ваиьсисовъ „ Балондисов Бунвидевъ = Бамь трили Битерисовъ Балонунсовъ Беинарисо „ Бухъвидовъ Бкусовъ Данисовъ . Рудневста",
+    "parents": "Іеестръ ихъ Емлія ъ Станиелаыъ ъ Барбара Казоміръ Антонъ ихъ Петръ ъ Емимія ъІоганна Маріанна асо въ Анолонга Доминикъ Павелъ Анна асовъ Агнѣшіхя Казиміръ -Ив Аленсаног въ Іосперъ Доминикъ Иванъ Емимія ъ Досиникъ",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0013_R1",
+   "register_year": 1892,
+   "scan": 13,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0013_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Маріанна",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Боровсотхъ Буто вичвъ Бендикасовъ Буль виддвъ Бертумисовъ Бочкусо вой Бальсисовъ Буковсцкихъ Брасовскихъ Ваиткусоъ Ваишно ровъ Вальцевъ Воншыиловъ Вайчико вскихъ Венукусовъ Возшруѣвъ Венукисовъ Вилковнон Варнемисо въ Венцкусовъ Ваи цехо вскихъ Видмонтовъ Венцаусовъ Венукусовъ Виринто въ Велнмасовъ Велосовъ Вѣлевичевъ Гедминто въ Гедвильвъ в",
+    "parents": "Маріанна Анна Павелъ Павелъ Агнѣшка Владиславъ Петръ Емимя Францъ въ Иванъ Барбира Павелъ Евгемъ Агнѣшка Анна Антонъ Анастазія Ирена Барбара Игнатій Барбара Франыимта Юмянъ Марія Емимя Маріянна Емимя 1я Анна 2а Мъ. Вамерія въАнтанъпавай",
+    "godparents": "а пцеи"
+   }
+  },
+  {
+   "row_id": "0014_L1",
+   "register_year": 1892,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0014_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Бакихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "синиКогда, схъ, ято н жвмъ, одною-м водою н со ясьни обрядани таннства ожрещшеньъ.",
+    "parents": "Бакихъ родитсясь жвъ ва- нс бому сосКвю нан общестьу но окн прннадлежатъ, когда и ння нѣ, т. с. вь какомъ прнходъ рсоднса Крещаены",
+    "godparents": "нн, прозва-"
+   }
+  },
+  {
+   "row_id": "0014_L2",
+   "register_year": 1892,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0014_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Бардара.",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Гедвисовъ „ Греивисовъ Григалосо въ Гавдешевъ Гейвисовъ Гаимосо въ Галь днкасовъ Граиисовъ Гофферовъ Грысгосовъ „ Грыцевичей Грыкамасовъ Грогуловъ Григайтисовъ Грыкшасовъ Грижилно въ Гедвилловъ Гомолевской Гачеласовъ Грыгалѣосовъ Гравелисовъ Гравелѣсовъ Гомолевскихъ Даргисовъ Дрмонтоыъ Довглло въ Довкентисовъ Довчеловъ Довсиновъ",
+    "parents": "Бардара. Барбаря Антънъ Маріянна Анна Барбира Агата Антонъ Антонъ Станислава Алексанаръ Петръ Павмна Леокадіа Агнѣшска Казиміръ Гоганъ Константинъ Игнати Игнатіи Гертруда Антонъ Адамъ Грасымьда Францъ Бардара Игнатии Іосифъ Антонъ Адамъ Иванъ Ва д",
+    "godparents": "восПріемами присв.рецен опрсутвтовадъ?аа"
+   }
+  },
+  {
+   "row_id": "0014_R1",
+   "register_year": 1892,
+   "scan": 14,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/rietavas-1828-1-12/processed/rows/0014_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Жилѣсовъ Жонситисовъ Жилѣосовъ Жемгумнсовъ Тилосовъ Жеилтсъ въ Жилинскисъ утовтовъ Жупариссвъ Зимкусо въ Зиикусо въ Іедынкусъ Іоцисовъ Іыкизѣисовъ Іонунтсъ въІокубаитисовъ Іоваи тасовъ Іоникасъ Іоцисовъ Іоцисовъ Іоцисовъ Іокубантисовъ Іокубаитисовъ Іонунасовъ Іоцисовъ Іокисо въ Кучинския Круковыхъ Ковло совъ Клябусовъ Кллубовъ Кунстнсовъ",
+    "parents": "Анна Барбара Анна Барбара Иванъ Францъ Іосифъ Барбара Анна Павелъ Іозефатъ Иванъ Домицеля Барбара Петронела Домтннѣъ Анна Игнатіи Иванъ Іосифъ Петронеля Маріянна Антонъ Барбара Владиславъ Фринцъ Казимиръ Достаоъ до Каріянна жванъ",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0015_L1",
+   "register_year": 1892,
+   "scan": 15,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0015_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Казимпра",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "19. „ Кукимевой „ Контрим 8 Контримо 2 „„ Концевичн 5 „ „ Клейбовно 4„„ Кунетиеы 9- Кестумнсь „ Кавлѣсов Козловски ч„„ Кучинскихъ 85. Козловскио 8ъ Казрагисо Каутисовъ .„ Кавецкихъ а„Куненковъ .Кучинсои ъ 5 - Купетисовъ Купетовск Кленбовъ Кавлосовъ Контвойне - Косновски Луты „„ Лаоштие Лигнугар Люкосовъ Ллчасовъ ди-Ленатасмъ м",
+    "parents": "Казимпра асовъ Павлина въ Ева Францъ и Францъ Францъ нонГосифъ ъІосифъ иъ Ядвша Пусхеріа ъ Антонъ ъ Франуъ Михамлъ Константин Марціянна Анна Іосперъ икъ Іосиеръ Леокадіа Казимтіръ ыБарбара хъ Нетръ искихъ Барбара овной Пулѣхерыя нсоыъ Іосифъ Барбара Анна Станнелава Игнатій ы Станислав =в Анна и Кадиръ",
+    "godparents": "хаг"
+   }
+  },
+  {
+   "row_id": "0015_R1",
+   "register_year": 1892,
+   "scan": 15,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0015_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "хъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Когда, еъ, тто н кьнъ, Каки однот-ли водою нлн со бону всьни обрадами чаннства окв, окрсешенъ? ходкъ",
+    "parents": "хъ роднчесдснякъ ма- Рсо быслн сосковію нноощесКу сN, спо прннадлесжатъ, когда и ннками прн ч. е. въ какомъ при-Крещени родяся Крещаен? Сѣ КаКс.",
+    "godparents": "ва "
+   }
+  },
+  {
+   "row_id": "0015_R2",
+   "register_year": 1892,
+   "scan": 15,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/rietavas-1828-1-12/processed/rows/0015_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "нковъИицневичейМечисовъМицневигейМншейкисовъБМиткевнчейМоравловнойСМонтвилловъКМихаловскихъПМазѣсонасовъВМнциусовБМицкусовъСМнцневичейАнМорав",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Маріянна",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Лютыковной ЛютасовъА Лясутисовъ Ленковскихъ Лукошѣсовъ Лутынскихъ Малаховскихъ Иихаловскихъ Моцкусовъ Моравло вно и Меденковъ Иицневичей Мечисовъ Мицневигей МншейкисовъБ Миткевнчей М оравловнойС Монтвилловъ К Михаловскихъ П Мазѣсонасовъ В МнциусовБ МицкусовъС МнцневичейАн Моравловъ Сѣ Мимсьскоъ Я Моцкусовъ Моцкусовъ МотѣковъД МицнусовСМеимсовъ Мнлаитсовъ И",
+    "parents": "Маріянна Анна я Маріянна 20 Леокаде Петръ Иванъ Іоспфъ Иванъ Інтонъ Евсаъ Донтицеля Госпфъ Петръ Павлина Барбара-Магдамена Белена таниславъ Казиитръ Павелъ ладнемвъ арбара тепанъ тонъ таннелавъ Саріанна Ауямъ Адамъ аемазій имсонъ Санряннъ",
+    "godparents": "аситтци"
+   }
+  },
+  {
+   "row_id": "0016_L1",
+   "register_year": 1892,
+   "scan": 16,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0016_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "товъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "45 . „ Нарбу 55 „ „ Нерваныи 73 „„ Норкусовъ 81 „- Нороусов 107 „ „ Нугарисо 1В „ Нугавди К5 „„ Нестенк 218 Нарвоине 247 „ „ Настеуа Петр 1„ Поцюсовн 23 Печѣлисов 58 „ Пацевичей 59 „ Петрошев ч -Петрылло 86 „„ Поцюсов 15.„ Петровсь 18 „„ Пупамисо 126 „ Пурисовъ 47 „ Поцесовъ 5 „„ Поцѣсовъ 0ъ „ „ Павликас 5ъ - „ Пакальнии 2 „„ Равусн 7- Раукинсо „- Руптисяъ 2- Рычкосовъ 3 „ - Родзивнло 5 Рафамевичоен „ Зутамсов скаитсо в мкусовъ ч",
+    "parents": "товъ Барбаря совъМаріянна Иванъ ъ Антонъ въ Іозефа совъСтаннелав ихъКазимірь въНетръ ихъ Маріянна быллоьъ Иванъ он Емила ъБарбара Петронеля чей Иванъ вной Павлина ъБарбара мхъ Барбаря ьъ Іоспфъ Иванъ Доминикъ Петронеля бвъ Барбара кисовъ Барбара нсовъ Казимиръ- Фъ з въ ветмя Іоспфъ Анна въ Іозефа Теофиля Альбинъ Аполинарій Петроних",
+    "godparents": "."
+   }
+  },
+  {
+   "row_id": "0017_L1",
+   "register_year": 1892,
+   "scan": 17,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0017_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "жынъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "днося врещасты?",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "инсн-Когда, жъ, яо окдною-мв во дою вя осьни оорядамь ТаП окрещсъ",
+    "parents": "жынъ, Вакихъ роднтесо жкъ ва асо кому сословію нан общестъ они прннадлежатъ, когда жства нѣ, ч. с. въ каконъ пръ водъ реднднося врещасты?",
+    "godparents": "именн, прозвя-"
+   }
+  },
+  {
+   "row_id": "0017_L2",
+   "register_year": 1892,
+   "scan": 17,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/rietavas-1828-1-12/processed/rows/0017_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "нгасовъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "28  Шлли 3ь - Шавлевичен 47„ Шимевскихъ 48 „ „ Шупаро 7 „ Шомневичен 8ъ „„ Шарковсаиа 128 „  Шымкусо 141 „ „ Шарковскихъ 18 „ „ Шарковскихъ 257 „„ Шламинов 133. „ Эмяш 195. Эрнѣмисо 20 „ „ Юткасо29 „ „ Ю ркусовъ 3о „ „ Юроусовъ 1 „ „ Ю ревичевно 27 „„ Юркусовъ з4 „ „ Юрчисовъ 63 „- Юревичей 91„ „ Юцисовъ 232 „ Юревичевъ 49 „ „ Юріоновъ 55.  Юрьонасовъ 7 „„ Явнис 03„ „ Яссасовно 42 „ Яссасовно 3„. Яковна",
+    "parents": "нгасовъ Петронеля Антонина Іосифъ въ Маріянна Станислава Петръ въ Анна Казиміръ Агнѣшка-Барб Маріянна евъ Петронеля въ Симеонъ касовъ Казиміръ Игнатій Анна-Аган ной Брониславъ Домицела Апоминарій Игнатій 1 Анна 2 Ев0 Іосифъ Барбаря Казиміръ овъ Розамя Маріянна и Петронела оѣ Сиснихю.",
+    "godparents": "н воспріемвннкмн прнсв.крещенн и кто прсутство валъ?-й"
+   }
+  }
+ ]
+}

@@ -24,6 +24,8 @@ nice .venv/bin/python -I pipeline/segment_lines.py --queue processed/queue_years
 nice .venv/bin/python -I pipeline/refine_lines.py --in-json training/line_proposals_years.json \
   --out-json training/line_proposals_years_v2.json --out-dir training/proposals_years_v2
 rm -rf "$BOOK/training/proposals_years" "$BOOK/debug"   # first-stage crops/overlays: regenerable, large
+mkdir -p "$BOOK/training" "$BOOK/processed"
+[ -f "$BOOK/training/annotations.json" ] || echo "[]" > "$BOOK/training/annotations.json"   # a new book has no labels yet
 PRED=$(pipeline/draft_shards.sh "/mnt/ssd240gb/anna/samogitia-htr/models/$MODEL/model.safetensors" years_v2 6 | tail -1)
 rm -rf "$BOOK"/training/predictions/*shard*
 echo "drafts: $PRED"
