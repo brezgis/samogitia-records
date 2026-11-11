@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Žemaičių metrikai</title>
+<meta name="description" content="Parish registers of Samogitia, read by machine and translated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* The shelf: every parish is a row of book spines standing on one time axis, so the years a
+   parish has, and the years it lacks, can be seen before anything is opened. Colours and type are
+   the reading book's (site/book/index.html). */
+:root{
+  --madder:#8c2b25; --soot:#1f1b18; --paper:#e6dcc4;
+  --room:#d5d8cf; --room-ink:#252b27; --room-soft:#5d665f; --rule:rgba(37,43,39,.18); --field:#eef0ea;
+  --serif:"Old Standard TT","Iowan Old Style",Georgia,serif;
+  --sans:"Commissioner",system-ui,sans-serif;
+  --label:9.5rem;           /* width of the parish-name column */
+}
+*{box-sizing:border-box}
+html{background:var(--room)}
+body{margin:0;color:var(--room-ink);font:400 15px/1.5 var(--sans);background:var(--room);padding:0 clamp(14px,3vw,48px) 72px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--madder);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto}
+
+.mast{padding:30px 0 0;display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.mast h1{font:400 clamp(34px,5vw,64px)/1 var(--serif);margin:0;letter-spacing:-.012em}
+.langs{border:0;margin:6px 0 0 auto;padding:0;display:flex;gap:2px}
+.langs legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.langs input{position:absolute;opacity:0;pointer-events:none}
+.langs span{display:block;padding:3px 9px;font-size:13.5px;color:var(--room-soft);cursor:pointer;border-bottom:2px solid transparent}
+.langs span:hover{color:var(--room-ink)}
+.langs input:checked+span{color:var(--room-ink);border-bottom-color:var(--madder)}
+.langs input:focus-visible+span{outline:2px solid var(--madder);outline-offset:2px}
+.lede{font:400 clamp(18px,1.55vw,21px)/1.5 var(--serif);max-width:60ch;margin:16px 0 0;color:var(--room-ink)}
+.lede+.lede{color:var(--room-soft);font-size:16.5px;margin-top:10px}
+
+/* the shelves */
+.shelves{margin:46px 0 0;position:relative}
+.axis{position:relative;height:26px;margin-left:var(--label);border-bottom:1px solid var(--rule)}
+.axis span{position:absolute;bottom:5px;transform:translateX(-50%);font:400 14px/1 var(--serif);color:var(--room-soft)}
+.axis i{position:absolute;bottom:-1px;width:1px;height:6px;background:var(--room-soft);opacity:.6}
+.shelf{display:grid;grid-template-columns:var(--label) minmax(0,1fr);align-items:end;padding-top:30px}
+.shelf h2{font:400 clamp(24px,2.3vw,31px)/1.05 var(--serif);margin:0 0 20px;padding-right:14px}
+.shelf h2 small{display:block;font:400 13px/1.35 var(--sans);color:var(--room-soft);margin-top:7px}
+.row{position:relative;height:178px;border-bottom:.5rem solid #3b332b;
+  box-shadow:0 1px 0 rgba(255,255,255,.25),0 14px 18px -14px rgba(20,24,20,.6)}
+.row .tick{position:absolute;top:0;bottom:0;width:1px;background:var(--rule);opacity:.7}
+.spine{position:absolute;bottom:0;height:150px;display:flex;flex-direction:column;justify-content:flex-end;
+  text-decoration:none;color:#f3eddd;border-radius:2px 2px 0 0;overflow:hidden;
+  background:var(--soot) center/cover;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.45),inset .3rem 0 .5rem -.3rem rgba(255,255,255,.22),inset -.4rem 0 .6rem -.3rem rgba(0,0,0,.55);
+  transition:height .18s ease,box-shadow .18s ease}
+a.spine:hover,a.spine:focus-visible{height:164px}
+.spine{container-type:inline-size}
+.spine .plate{margin:0 clamp(2px,5cqw,6px) 12px;padding:7px 2px 6px;background:rgba(246,241,229,.93);color:#2a211b;text-align:center;border-radius:1px;
+  box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.spine b{display:block;font:400 clamp(11px,17cqw,18px)/1.05 var(--serif);white-space:nowrap}
+.spine em{display:block;font:400 clamp(10px,12cqw,11.5px)/1.25 var(--sans);font-style:normal;color:#5d5246;margin-top:3px}
+/* a book that is scanned but not read yet: paper, not cloth */
+.spine.scanned{background:repeating-linear-gradient(135deg,rgba(37,43,39,.07) 0 6px,transparent 6px 12px),var(--field);
+  color:var(--room-soft);height:112px;box-shadow:inset 0 0 0 1px var(--rule)}
+.spine.scanned .plate{background:none;box-shadow:none;color:var(--room-soft)}
+.gapnote{margin:14px 0 0 var(--label);font-size:13.5px;color:var(--room-soft);max-width:70ch}
+
+/* notes */
+.notes{margin:64px 0 0;padding-top:26px;border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 48px;color:var(--room-soft)}
+.notes h2{font:400 23px/1.15 var(--serif);margin:0 0 10px;color:var(--room-ink)}
+.notes p{font:400 16.5px/1.55 var(--serif);margin:0 0 12px;max-width:46ch}
+
+/* narrow: the axis goes, the books become a list in year order */
+@media (max-width:820px){
+  .axis,.row .tick{display:none}
+  .shelf{display:block;padding-top:26px}
+  .shelf h2{margin-bottom:12px}
+  .row{height:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:10px;border-bottom:0;box-shadow:none}
+  .spine,.spine.scanned{position:static;width:auto!important;height:104px}
+  a.spine:hover,a.spine:focus-visible{height:104px}
+  .gapnote{margin-left:0}
+  .notes{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <h1>Žemaičių metrikai</h1>
+    <fieldset class="langs"><legend>Language</legend>
+      <label><input type="radio" name="lang" value="lt"><span lang="lt">Lietuvių</span></label>
+      <label><input type="radio" name="lang" value="en"><span lang="en">English</span></label>
+      <label><input type="radio" name="lang" value="pl"><span lang="pl">Polski</span></label>
+      <label><input type="radio" name="lang" value="ru"><span lang="ru">Русский</span></label>
+    </fieldset>
+  </header>
+  <p class="lede" id="lede1"></p>
+  <p class="lede" id="lede2"></p>
+
+  <main class="shelves" id="shelves"></main>
+
+  <section class="notes">
+    <div><h2 id="h1"></h2><p id="p1"></p></div>
+    <div><h2 id="h2"></h2><p id="p2"></p></div>
+    <div><h2 id="h3"></h2><p id="p3"></p></div>
+  </section>
+</div>
+
+<script src="library.js"></script>
+<script>
+(() => {
+const LIB = window.LIBRARY || { span: [1845, 1910], parishes: [] };
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const CLOTH = { plunge: 'book/img/cloth-plunge.jpg', rietavas: 'book/img/cloth-telsiai.jpg' };
+const LANGNAME = { en: { en: 'English', lt: 'Lithuanian', pl: 'Polish' }, lt: { en: 'anglų', lt: 'lietuvių', pl: 'lenkų' },
+  pl: { en: 'angielski', lt: 'litewski', pl: 'polski' }, ru: { en: 'английский', lt: 'литовский', pl: 'польский' } };
+const T = {
+  en: { lede1: 'The baptism registers of Samogitian parishes under the Russian Empire, read from the archive’s scans by a handwriting model and translated.',
+    lede2: 'Each book opens as a book: the scan on the page, the reading over the entry you point at, and a search by name, village or date.',
+    entries: n => `${n.toLocaleString('en-GB')} entries`, scanned: 'scanned, not read yet', parish: 'baptisms',
+    gap: 'Where the shelf is empty, the archive has no public scans for those years.',
+    h1: 'What is here', p1: (b, n) => `${b} books are open, with ${n.toLocaleString('en-GB')} baptisms between them. Books shown as plain paper are downloaded and waiting to be read.`,
+    h2: 'How far to trust it', p2: 'Everything was read and translated by machine and nobody has checked it. Formula words come out well; names and villages often do not. Each book shows the scan beside the reading, and the scan is the record.',
+    h3: 'Names', p3: 'Spellings vary from entry to entry and from clerk to clerk. The site gives each name as it was read and a rendering of it; it does not decide which entries are the same person.' },
+  lt: { lede1: 'Žemaitijos parapijų krikšto metrikai Rusijos imperijos laikais, mašinos perskaityti iš archyvo skenų ir išversti.',
+    lede2: 'Kiekviena knyga atsiverčia kaip knyga: puslapyje skenas, ant rodomo įrašo jo perskaitymas, o paieška – pagal vardą, kaimą ar datą.',
+    entries: n => `${n.toLocaleString('lt-LT')} įrašai`, scanned: 'nuskenuota, dar neperskaityta', parish: 'krikštai',
+    gap: 'Kur lentyna tuščia, archyvas tų metų skenų viešai neskelbia.',
+    h1: 'Kas čia yra', p1: (b, n) => `Atversta knygų: ${b}; jose ${n.toLocaleString('lt-LT')} krikštų. Paprasto popieriaus spalvos knygos jau atsisiųstos ir laukia skaitymo.`,
+    h2: 'Kiek tuo galima pasikliauti', p2: 'Viską perskaitė ir išvertė mašina, niekas netikrino. Formulės žodžiai perskaitomi gerai, vardai ir kaimai – dažnai klaidingai. Kiekvienoje knygoje šalia perskaitymo matyti skenas, ir būtent skenas yra šaltinis.',
+    h3: 'Vardai ir pavardės', p3: 'Rašyba skiriasi įrašas nuo įrašo ir raštininkas nuo raštininko. Svetainė pateikia kiekvieną vardą taip, kaip jis perskaitytas, ir jo perrašą; ji nesprendžia, kurie įrašai yra tas pats žmogus.' },
+  pl: { lede1: 'Metryki chrztów żmudzkich parafii z czasów Cesarstwa Rosyjskiego, odczytane maszynowo ze skanów archiwum i przetłumaczone.',
+    lede2: 'Każda księga otwiera się jak księga: na stronie skan, nad wskazanym wpisem jego odczyt, a wyszukiwanie według nazwiska, wsi lub daty.',
+    entries: n => `${n.toLocaleString('pl-PL')} wpisów`, scanned: 'zeskanowana, jeszcze nieodczytana', parish: 'chrzty',
+    gap: 'Tam, gdzie półka jest pusta, archiwum nie udostępnia publicznie skanów z tych lat.',
+    h1: 'Co tu jest', p1: (b, n) => `Otwartych ksiąg: ${b}; razem ${n.toLocaleString('pl-PL')} chrztów. Księgi w kolorze zwykłego papieru są już pobrane i czekają na odczytanie.`,
+    h2: 'Na ile można temu ufać', p2: 'Wszystko odczytała i przetłumaczyła maszyna i nikt tego nie sprawdzał. Słowa formuły wychodzą dobrze, nazwiska i nazwy wsi często nie. W każdej księdze obok odczytu widać skan i to skan jest źródłem.',
+    h3: 'Imiona i nazwiska', p3: 'Pisownia zmienia się z wpisu na wpis i z pisarza na pisarza. Strona podaje każde nazwisko tak, jak je odczytano, oraz jego transkrypcję; nie rozstrzyga, które wpisy dotyczą tej samej osoby.' },
+  ru: { lede1: 'Метрические книги о крещениях жемайтийских приходов времён Российской империи, прочитанные машиной по сканам архива и переведённые.',
+    lede2: 'Каждая книга открывается как книга: на странице скан, над выбранной записью её прочтение, а поиск идёт по имени, деревне или дате.',
+    entries: n => `записей: ${n.toLocaleString('ru-RU')}`, scanned: 'отсканирована, ещё не прочитана', parish: 'крещения',
+    gap: 'Там, где полка пуста, архив не публикует сканы за эти годы.',
+    h1: 'Что здесь есть', p1: (b, n) => `Открыто книг: ${b}; в них ${n.toLocaleString('ru-RU')} крещений. Книги цвета простой бумаги уже скачаны и ждут чтения.`,
+    h2: 'Насколько этому можно верить', p2: 'Всё прочитано и переведено машиной, человек ничего не проверял. Слова формулы читаются хорошо, имена и деревни часто с ошибками. В каждой книге рядом с прочтением виден скан, и источником остаётся скан.',
+    h3: 'Имена и фамилии', p3: 'Написание меняется от записи к записи и от писаря к писарю. Сайт приводит каждое имя так, как оно прочитано, и его передачу; он не решает, какие записи относятся к одному человеку.' },
+};
+const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+const fromHash = new URLSearchParams(location.hash.slice(1)).get('lang');
+let lang = T[fromHash] ? fromHash : T[store.get('lang')] ? store.get('lang') : 'en';
+
+const [A, B] = LIB.span, W = B - A;
+const pct = y => (y - A) / W * 100;
+
+function draw() {
+  const L = T[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll('input[name=lang]').forEach(r => r.checked = r.value === lang);
+  $('#lede1').textContent = L.lede1; $('#lede2').textContent = L.lede2;
+  let open = 0, total = 0;
+  const ticks = [];
+  for (let y = Math.ceil(A / 10) * 10; y <= B; y += 10) ticks.push(y);
+  let html = `<div class="axis" aria-hidden="true">${ticks.map(y => `<i style="left:${pct(y)}%"></i><span style="left:${pct(y)}%">${y}</span>`).join('')}</div>`;
+  for (const p of LIB.parishes) {
+    const name = p.names[lang].name;
+    let prevEnd = -Infinity;
+    const spines = p.books.map((b, i) => {
+      const next = p.books[i + 1];
+      const start = Math.max(b.years[0], prevEnd), end = Math.min(b.years[1] + 1, next ? next.years[0] + .5 : Infinity);
+      prevEnd = end;
+      const style = `left:${pct(start)}%;width:calc(${pct(end) - pct(start)}% - 3px);` + (b.state === 'open' ? `background-image:url(${CLOTH[p.id] || CLOTH.plunge})` : '');
+      const years = `${b.years[0]}–${String(b.years[1]).slice(b.years[1] - b.years[0] < 10 && String(b.years[0]).slice(0, 2) === String(b.years[1]).slice(0, 2) ? 2 : 0)}`;
+      if (b.state === 'open') {
+        open++; total += b.entries;
+        const langs = (b.langs || []).map(l => LANGNAME[lang][l]).filter(Boolean).join(', ');
+        return `<a class="spine" href="${esc(b.dir)}/" style="${style}" title="${esc(name)} ${b.years[0]}–${b.years[1]}. ${esc(L.entries(b.entries))}${langs ? '. ' + esc(langs) : ''}">
+          <span class="plate"><b>${years}</b><em>${esc(L.entries(b.entries))}</em></span></a>`;
+      }
+      return `<div class="spine scanned" style="${style}" title="${esc(name)} ${b.years[0]}–${b.years[1]}. ${esc(L.scanned)}"><span class="plate"><b>${years}</b></span></div>`;
+    }).join('');
+    html += `<section class="shelf"><h2>${esc(name)}<small>${esc(L.parish)}</small></h2><div class="row">${ticks.map(y => `<i class="tick" style="left:${pct(y)}%"></i>`).join('')}${spines}</div></section>`;
+  }
+  html += `<p class="gapnote">${esc(L.gap)}</p>`;
+  $('#shelves').innerHTML = html;
+  $('#h1').textContent = L.h1; $('#p1').textContent = L.p1(open, total);
+  $('#h2').textContent = L.h2; $('#p2').textContent = L.p2;
+  $('#h3').textContent = L.h3; $('#p3').textContent = L.p3;
+}
+document.querySelectorAll('input[name=lang]').forEach(r => r.onchange = () => { lang = r.value; store.set('lang', lang); draw(); });
+draw();
+})();
+</script>
+</body>
+</html>

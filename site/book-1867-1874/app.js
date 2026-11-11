@@ -2,107 +2,119 @@
 const SPREADS = window.SPREADS, INDEX = window.INDEX, $ = (s, r = document) => r.querySelector(s);
 const body = document.body, book = $('#book'), block = $('#block');
 const LOCALE = { en: 'en-GB', lt: 'lt-LT', pl: 'pl-PL', ru: 'ru-RU' };
+/* which book this is (book.js) and the shelf it stands on (../library.js); both written by site/make_library.py */
+const BK = window.BOOK || { parish: 'plunge', dir: 'book', years: [1886, 1890], archive: '1827/1/23', scan: 93, row: '0093_R3' };
+const LIB = window.LIBRARY || { parishes: [] };
+const PARISH = LIB.parishes.find(p => p.id === BK.parish) || { id: 'plunge', books: [], names: {
+  en: { name: 'Plungė', county: 'Telšiai' }, lt: { name: 'Plungė', gen: 'Plungės', countyGen: 'Telšių' },
+  pl: { name: 'Płungiany', loc: 'Płungianach', lay: 'leżały', countyLoc: 'telszewskim' },
+  ru: { name: 'Плунге', adjNom: 'Плунгянский', adjGen: 'Плунгянского', was: 'входило', county: 'Тельшевский' } } };
+const Y0 = BK.years[0], Y1 = BK.years[1], YMID = Math.floor((Y0 + Y1) / 2), LATE = Y1 > 1900;
 const T = {
-  en: { title: 'Žemaičių metrikai', sub: 'Parish registers of Samogitia. Plungė, baptisms, 1867–1874',
+  en: { title: 'Žemaičių metrikai', sub: 'Parish registers of Samogitia. Plungė, baptisms, January 1888',
+    namesH: "Names", names1: "A name can appear here in three forms: the Russian letters the machine read from the page, a rendering of them into the language you are reading, and, in the margin, the family name as the clerk wrote it a second time. These are readings and renderings, not identifications. Two entries with the same name are not thereby the same person, and the search finds spellings that look alike without claiming they are one family.", dataLine: "The readings, the translations and the recognition model are open: <a href=\"https://github.com/brezgis/samogitia-records\">data and code</a>, <a href=\"https://huggingface.co/brezgis/samogitia-plunge-htr\">model</a>.",
     aboutH: 'About these registers',
-    about1: 'From baptism to burial, a Catholic life in Samogitia was written into the parish books. Every parish kept registers, metrikai in Lithuanian, of baptisms, marriages and deaths. This is one of them: the baptisms of Plungė parish, in the diocese of Samogitia, for 1867 to 1874.',
-    about2: 'In these years Plungė lay in the Russian Empire, in Telšiai county of Kovno governorate, and the registers had to be kept in Russian. So the priest wrote Lithuanian and Polish names in Russian letters, into a printed Russian form, and dated them by the old Julian calendar, twelve days behind the one we use.',
+    about1: 'From baptism to burial, a Catholic life in Samogitia was written into the parish books. Every parish kept registers, metrikai in Lithuanian, of baptisms, marriages and deaths. This is one of them: the baptisms of Plungė parish, in the diocese of Samogitia, for 1886 to 1890.',
+    about2: 'In 1888 Plungė lay in the Russian Empire, in Telšiai county of Kovno governorate, and the registers had to be kept in Russian. So the priest wrote Lithuanian and Polish names in Russian letters, into a printed Russian form, and dated them by the old Julian calendar, twelve days behind the one we use.',
     readH: 'Reading an entry',
     read1: 'Every entry repeats one formula across three columns: when, where and by whom the child was baptised; who the parents were, their estate and district, and when and where the child was born; and who the godparents were. Family names stand as the formula puts them, “of the Takiovs”, so here they often end in -ov where the family itself would have said -is, -as or -us.',
-    read2: "The handwriting was read by a recognition model trained on about 1,700 lines of these registers, each read independently by two AI readers and checked against each other, then translated by machine. No person has checked the result. Ordinary words come out well; names and villages often do not.",
+    read2: "The handwriting was read by a recognition model trained on about 2,300 lines of these registers, each read independently by two AI readers and checked against each other, then translated by machine. No person has checked the result. Ordinary words come out well; names and villages often do not.",
     colsH: "The printed columns", cols: [["Прозваніе крещаемыхъ", "Surname of the baptised, written sideways in the margin"], ["№", "Entry number"], ["Число рожденія / крещенія", "Day of birth / day of baptism"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "When, where, who and by whom was baptised, with water only or with all the rites?"], ["Какихъ родителей …?", "Of which parents, of which estate or community; when and where the child was born"], ["Кто были … воспріемниками …?", "Who, by name and surname, were the godparents, and who was present"], ["Рукоприкладство свидѣтелей …", "Signatures of witnesses, if desired"]],
     sideMargin: "In the margin", sideDiffer: x => `The machine read the surname inside the entry as “${x}”; the margin is the better reading.`, sideNo: "No.", sideBorn: "born", sideBapt: "baptised", sideNote: "Later note", sexM: "boy", sexF: "girl", sideBy: "Side columns read once by machine.",
     heads: {"margin": "Surname of the baptised", "no": "No.", "dates": "Day of birth / baptism", "baptism": "When, where, by whom baptised", "parents": "Parents, estate; when and where born", "godparents": "Godparents and those present", "sign": "Witnesses’ signatures"},
     clothH: 'The cloth and the ribbon',
     cloth1: 'The cover and the ribbon are real Samogitian textiles in the National Museum of Lithuania. The museum’s photographs are used under CC BY 4.0.',
     
-    ph: 'Name, village or date, 1867 to 1874', chooseH: 'Choose an entry', chooseP: 'Point at a row of the register to read it. Click to keep it open.',
+    ph: 'Name, village or date, 1886 to 1890', chooseH: 'Choose an entry', chooseP: 'Point at a row of the register to read it. Click to keep it open.',
     everyH: 'The whole page, translated', everyP: 'Rest the pointer on a sheet to see the handwriting under it, or choose an entry for its notes.',
     bapt: 'Baptised', born: 'born', marks: 'The ribbon marks this entry.', move: 'Move the ribbon here', from: 'Read from: ',
     key: '<span class="u">Dotted</span> marks a reading the machine was unsure of; <span class="ed">[italic brackets]</span> are its remarks. Rest the pointer on a name to see the Russian it was read from.',
     warn: 'Read and translated by machine; nobody has checked it. Trust the handwriting over the translation.',
-    sources: 'Sources', register: 'Register: Roman Catholic parish of Plungė, births and baptisms 1867–1874, Lithuanian State Historical Archives, 1827/1/22, from <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (non-commercial use).',
+    sources: 'Sources', register: 'Register: Roman Catholic parish of Plungė, births and baptisms 1886–1890, Lithuanian State Historical Archives, 1827/1/23, from <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (non-commercial use).',
     museum: 'National Museum of Lithuania', showR: 'Show the right-hand page', showL: 'Show the left-hand page',
     none: 'Nothing close to that. Try fewer letters; spellings in the register vary a lot.', noName: 'name not read', noDate: 'date not read',
     found: n => n === 1 ? '1 entry' : `${n} entries`, more: n => `Showing the first ${n}.`, away: 'Greyed entries are on pages not bound into this sample yet.',
-    tips: 'Try a name in any spelling, a village, or a date such as “10 January 1870”, “03.1869” or “#8”.',
+    tips: 'Try a name in any spelling, a village, or a date such as “10 January 1888”, “03.1887” or “#8”.',
     no: 'no.', scan: 'scan', onDate: 'baptised or born', anyText: 'matching', entryNo: 'entry number', and: 'and',
     cloth: { plunge: 'Cover cloth: wool and linen bedspread (divonas), late 19th century, Palūščiai village, Plungė district', kretinga: 'Cover cloth: striped wool shawl, second half of the 19th century, Budriai village, Kretinga district', telsiai: 'Cover cloth: tapestry-woven bedspread (divonas), late 19th century, Vaštakiai village, Telšiai district' },
     ribbon: { mazeikiai: 'Ribbon: braided wool sash, 1930, Meinoriai village, Mažeikiai district', taurage: 'Ribbon: round-braided wool sash, late 19th century, Tauragė district', ukrinai: 'Ribbon: braided wool garter sash, about 1940, Ukrinai village, Mažeikiai district' } },
   lt: { title: 'Žemaičių metrikai', sub: 'Žemaitijos parapijų knygos. Plungė, krikštai, 1888 m. sausis',
+    namesH: "Vardai ir pavardės", names1: "Vardas čia gali būti užrašytas trimis pavidalais: rusiškomis raidėmis, kurias mašina perskaitė puslapyje, jų perrašu ta kalba, kuria skaitote, ir paraštėje – pavarde, kurią raštininkas užrašė antrą kartą. Tai skaitymai ir perrašai, o ne tapatybės nustatymas. Du įrašai su ta pačia pavarde dar nereiškia to paties žmogaus, o paieška randa panašias rašybas, netvirtindama, kad tai viena šeima.", dataLine: "Skaitymai, vertimai ir atpažinimo modelis yra atviri: <a href=\"https://github.com/brezgis/samogitia-records\">duomenys ir kodas</a>, <a href=\"https://huggingface.co/brezgis/samogitia-plunge-htr\">modelis</a>.",
     aboutH: 'Apie šias knygas',
-    about1: 'Nuo krikšto iki laidotuvių Žemaitijos kataliko gyvenimas buvo užrašomas parapijos knygose. Kiekviena parapija vedė krikšto, santuokos ir mirties metrikus. Čia viena tokių knygų: Žemaičių vyskupijos Plungės parapijos krikšto metrikai, 1867–1874 m.',
-    about2: 'Šiais metais Plungė priklausė Rusijos imperijai, Kauno gubernijos Telšių apskričiai, ir metrikus reikėjo rašyti rusiškai. Todėl kunigas lietuviškus ir lenkiškus vardus rašė rusiškomis raidėmis į spausdintą rusišką formą, o datas žymėjo pagal senąjį Julijaus kalendorių, dvylika dienų atsiliekantį nuo dabartinio.',
+    about1: 'Nuo krikšto iki laidotuvių Žemaitijos kataliko gyvenimas buvo užrašomas parapijos knygose. Kiekviena parapija vedė krikšto, santuokos ir mirties metrikus. Čia viena tokių knygų: Žemaičių vyskupijos Plungės parapijos krikšto metrikai, 1886–1890 m.',
+    about2: '1888 m. Plungė priklausė Rusijos imperijai, Kauno gubernijos Telšių apskričiai, ir metrikus reikėjo rašyti rusiškai. Todėl kunigas lietuviškus ir lenkiškus vardus rašė rusiškomis raidėmis į spausdintą rusišką formą, o datas žymėjo pagal senąjį Julijaus kalendorių, dvylika dienų atsiliekantį nuo dabartinio.',
     readH: 'Kaip skaityti įrašą',
     read1: 'Kiekvienas įrašas kartoja tą pačią formulę trijose skiltyse: kada, kur ir kas pakrikštijo vaiką; kas tėvai, koks jų luomas ir valsčius, kada ir kur vaikas gimė; kas buvo krikštatėviai. Pavardės užrašytos taip, kaip reikalauja formulė, daugiskaitos kilmininku, todėl čia jos dažnai baigiasi -ov, nors pati šeima būtų sakiusi -is, -as ar -us.',
-    read2: "Rankraštį perskaitė atpažinimo modelis, apmokytas maždaug 1 700 šių knygų eilučių, kurias nepriklausomai perskaitė ir sulygino du dirbtinio intelekto skaitytojai; vertimas – mašininis. Žmogus rezultato netikrino. Įprasti žodžiai perskaitomi gerai, vardai ir kaimai – dažnai klaidingai.",
+    read2: "Rankraštį perskaitė atpažinimo modelis, apmokytas maždaug 2 300 šių knygų eilučių, kurias nepriklausomai perskaitė ir sulygino du dirbtinio intelekto skaitytojai; vertimas – mašininis. Žmogus rezultato netikrino. Įprasti žodžiai perskaitomi gerai, vardai ir kaimai – dažnai klaidingai.",
     colsH: "Spausdinti stulpeliai", cols: [["Прозваніе крещаемыхъ", "Krikštijamųjų pavardė, įrašyta paraštėje skersai"], ["№", "Įrašo numeris"], ["Число рожденія / крещенія", "Gimimo diena / krikšto diena"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kada, kur, kas ir kieno pakrikštytas – tik vandeniu ar su visomis apeigomis?"], ["Какихъ родителей …?", "Kokių tėvų, kokio luomo ar bendruomenės; kada ir kur gimė vaikas"], ["Кто были … воспріемниками …?", "Kas, nurodant vardą ir pavardę, buvo krikštatėviai ir kas dalyvavo"], ["Рукоприкладство свидѣтелей …", "Liudytojų parašai (pagal pageidavimą)"]],
     sideMargin: "Paraštėje", sideDiffer: x => `Įrašo tekste mašina pavardę perskaitė „${x}“; paraštės skaitymas patikimesnis.`, sideNo: "Nr.", sideBorn: "gimė", sideBapt: "pakrikštyta(s)", sideNote: "Vėlesnė pastaba", sexM: "berniukas", sexF: "mergaitė", sideBy: "Šoniniai stulpeliai perskaityti mašinos vieną kartą.",
     heads: {"margin": "Krikštijamųjų pavardė", "no": "Nr.", "dates": "Gimimo / krikšto diena", "baptism": "Kada, kur, kas pakrikštijo", "parents": "Tėvai, luomas; kada ir kur gimė", "godparents": "Krikštatėviai ir dalyvavusieji", "sign": "Liudytojų parašai"},
     clothH: 'Audinys ir juostelė',
     cloth1: 'Viršelis ir juostelė – tikri žemaitiški audiniai iš Lietuvos nacionalinio muziejaus rinkinių. Muziejaus nuotraukos naudojamos pagal CC BY 4.0 licenciją.',
     
-    ph: 'Vardas, kaimas arba data, 1867–1874 m.', chooseH: 'Pasirinkite įrašą', chooseP: 'Užveskite pelę ant knygos eilutės, kad ją perskaitytumėte. Spustelėkite, kad liktų atversta.',
+    ph: 'Vardas, kaimas arba data, 1886–1890 m.', chooseH: 'Pasirinkite įrašą', chooseP: 'Užveskite pelę ant knygos eilutės, kad ją perskaitytumėte. Spustelėkite, kad liktų atversta.',
     everyH: 'Visas puslapis, išverstas', everyP: 'Užveskite pelę ant lapelio, kad pamatytumėte rankraštį po juo, arba pasirinkite įrašą.',
     bapt: 'Krikštas', born: 'gimimas', marks: 'Juostelė žymi šį įrašą.', move: 'Perkelti juostelę čia', from: 'Perskaityta iš: ',
     key: '<span class="u">Taškuota linija</span> žymi vietas, dėl kurių mašina nebuvo tikra; <span class="ed">[kursyvas skliaustuose]</span> – jos pastabos. Užvedę pelę ant vardo, matysite rusišką užrašą, iš kurio jis perskaitytas.',
     warn: 'Perskaityta ir išversta mašinos; niekas netikrino. Pasikliaukite rankraščiu, ne vertimu.',
-    sources: 'Šaltiniai', register: 'Metrikų knyga: Plungės Romos katalikų parapijos gimimo ir krikšto metrikai, 1867–1874 m., Lietuvos valstybės istorijos archyvas, 1827/1/22, iš <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (nekomerciniam naudojimui).',
+    sources: 'Šaltiniai', register: 'Metrikų knyga: Plungės Romos katalikų parapijos gimimo ir krikšto metrikai, 1886–1890 m., Lietuvos valstybės istorijos archyvas, 1827/1/23, iš <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (nekomerciniam naudojimui).',
     museum: 'Lietuvos nacionalinis muziejus', showR: 'Rodyti dešinįjį puslapį', showL: 'Rodyti kairįjį puslapį',
     none: 'Nieko panašaus nerasta. Pabandykite mažiau raidžių: rašyba knygoje labai įvairuoja.', noName: 'vardas neperskaitytas', noDate: 'data neperskaityta',
     found: n => `Įrašų: ${n}`, more: n => `Rodoma pirmi ${n}.`, away: 'Pilki įrašai yra puslapiuose, kurie dar neįrišti į šį pavyzdį.',
-    tips: 'Rašykite vardą bet kokia rašyba, kaimą arba datą, pvz., „1870 sausio 10“, „03.1869“ ar „#8“.',
+    tips: 'Rašykite vardą bet kokia rašyba, kaimą arba datą, pvz., „1888 sausio 10“, „03.1887“ ar „#8“.',
     no: 'nr.', scan: 'skenas', onDate: 'krikštyta arba gimė', anyText: 'atitinka', entryNo: 'įrašo numeris', and: 'ir',
     cloth: { plunge: 'Viršelio audinys: vilnos ir lino lovatiesė (divonas), XIX a. pab., Palūščių k., Plungės r.', kretinga: 'Viršelio audinys: dryžuota vilnonė skara, XIX a. II p., Budrių k., Kretingos r.', telsiai: 'Viršelio audinys: kiliminio audimo lovatiesė (divonas), XIX a. pab., Vaštakių k., Telšių r.' },
     ribbon: { mazeikiai: 'Juostelė: pintinė vilnonė juosta, 1930 m., Meinorių k., Mažeikių r.', taurage: 'Juostelė: apvaliai pinta vilnonė juosta, XIX a. pab., Tauragės r.', ukrinai: 'Juostelė: pintinė vilnonė juosta-keliaraištis, apie 1940 m., Ukrinų k., Mažeikių r.' } },
   pl: { title: 'Žemaičių metrikai', sub: 'Księgi parafialne Żmudzi. Płungiany, chrzty, styczeń 1888',
+    namesH: "Imiona i nazwiska", names1: "Nazwisko może tu występować w trzech postaciach: rosyjskimi literami, które maszyna odczytała ze strony, w transkrypcji na język, w którym czytasz, oraz na marginesie – jako nazwisko rodziny zapisane przez pisarza po raz drugi. To odczyty i transkrypcje, a nie identyfikacje. Dwa wpisy z tym samym nazwiskiem nie oznaczają jeszcze tej samej osoby, a wyszukiwarka znajduje podobne pisownie, nie twierdząc, że to jedna rodzina.", dataLine: "Odczyty, tłumaczenia i model rozpoznawania są otwarte: <a href=\"https://github.com/brezgis/samogitia-records\">dane i kod</a>, <a href=\"https://huggingface.co/brezgis/samogitia-plunge-htr\">model</a>.",
     aboutH: 'O tych księgach',
-    about1: 'Od chrztu po pogrzeb życie katolika na Żmudzi zapisywano w księgach parafialnych. Każda parafia prowadziła metryki chrztów, ślubów i zgonów. To jedna z nich: metryki chrztów parafii Płungiany w diecezji żmudzkiej za lata 1867–1874.',
-    about2: 'W tych latach Płungiany leżały w Cesarstwie Rosyjskim, w powiecie telszewskim guberni kowieńskiej, a metryki należało prowadzić po rosyjsku. Ksiądz zapisywał więc litewskie i polskie imiona i nazwiska rosyjskimi literami w drukowanym rosyjskim formularzu i datował je według dawnego kalendarza juliańskiego, o dwanaście dni wcześniejszego od dzisiejszego.',
+    about1: 'Od chrztu po pogrzeb życie katolika na Żmudzi zapisywano w księgach parafialnych. Każda parafia prowadziła metryki chrztów, ślubów i zgonów. To jedna z nich: metryki chrztów parafii Płungiany w diecezji żmudzkiej za lata 1886–1890.',
+    about2: 'W 1888 roku Płungiany leżały w Cesarstwie Rosyjskim, w powiecie telszewskim guberni kowieńskiej, a metryki należało prowadzić po rosyjsku. Ksiądz zapisywał więc litewskie i polskie imiona i nazwiska rosyjskimi literami w drukowanym rosyjskim formularzu i datował je według dawnego kalendarza juliańskiego, o dwanaście dni wcześniejszego od dzisiejszego.',
     readH: 'Jak czytać wpis',
     read1: 'Każdy wpis powtarza jedną formułę w trzech kolumnach: kiedy, gdzie i kto ochrzcił dziecko; kim byli rodzice, jakiego stanu i z jakiej gminy, kiedy i gdzie dziecko się urodziło; kto był rodzicami chrzestnymi. Nazwiska stoją tak, jak wymaga formuła, w dopełniaczu liczby mnogiej, dlatego często kończą się tu na -ow, choć sama rodzina powiedziałaby -is, -as albo -us.',
-    read2: 'Pismo odczytał model rozpoznawania wytrenowany na około 1700 wierszach tych ksiąg, z których każdy przeczytało niezależnie dwóch czytelników AI i porównano ich odczyty; tłumaczenie jest maszynowe. Nikt nie sprawdzał wyniku. Zwykłe słowa wychodzą dobrze, nazwiska i nazwy wsi często nie.',
+    read2: 'Pismo odczytał model rozpoznawania wytrenowany na około 2300 wierszach tych ksiąg, z których każdy przeczytało niezależnie dwóch czytelników AI i porównano ich odczyty; tłumaczenie jest maszynowe. Nikt nie sprawdzał wyniku. Zwykłe słowa wychodzą dobrze, nazwiska i nazwy wsi często nie.',
     colsH: 'Drukowane rubryki', cols: [["Прозваніе крещаемыхъ", "Nazwisko ochrzczonego, pisane bokiem na marginesie"], ["№", "Numer wpisu"], ["Число рожденія / крещенія", "Dzień urodzenia / dzień chrztu"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kiedy, gdzie, kto i przez kogo został ochrzczony, tylko z wody czy ze wszystkimi obrzędami?"], ["Какихъ родителей …?", "Z jakich rodziców, jakiego stanu lub gminy; kiedy i gdzie urodziło się dziecko"], ["Кто были … воспріемниками …?", "Kto z imienia i nazwiska był rodzicami chrzestnymi i kto był obecny"], ["Рукоприкладство свидѣтелей …", "Podpisy świadków, według życzenia"]],
     sideMargin: "Na marginesie", sideDiffer: x => `W treści wpisu maszyna odczytała nazwisko jako „${x}”; odczyt z marginesu jest pewniejszy.`, sideNo: "Nr", sideBorn: "ur.", sideBapt: "ochrzcz.", sideNote: "Późniejsza adnotacja", sexM: "chłopiec", sexF: "dziewczynka", sideBy: "Boczne rubryki odczytane raz przez maszynę.",
     heads: {"margin": "Nazwisko ochrzczonego", "no": "Nr", "dates": "Dzień urodzenia / chrztu", "baptism": "Kiedy, gdzie, przez kogo ochrzczony", "parents": "Rodzice, stan; kiedy i gdzie urodzony", "godparents": "Rodzice chrzestni i obecni", "sign": "Podpisy świadków"},
     clothH: 'Tkanina i wstążka',
     cloth1: 'Okładka i wstążka to prawdziwe żmudzkie tkaniny ze zbiorów Litewskiego Muzeum Narodowego. Fotografie muzeum wykorzystano na licencji CC BY 4.0.',
-    ph: 'Nazwisko, wieś lub data, lata 1867–1874', chooseH: 'Wybierz wpis', chooseP: 'Wskaż wiersz księgi, aby go przeczytać. Kliknij, aby pozostał otwarty.',
+    ph: 'Nazwisko, wieś lub data, lata 1886–1890', chooseH: 'Wybierz wpis', chooseP: 'Wskaż wiersz księgi, aby go przeczytać. Kliknij, aby pozostał otwarty.',
     everyH: 'Cała strona w tłumaczeniu', everyP: 'Zatrzymaj wskaźnik na karcie, aby zobaczyć pismo pod nią, albo wybierz wpis, aby zobaczyć uwagi.',
     bapt: 'Chrzest', born: 'ur.', marks: 'Wstążka zaznacza ten wpis.', move: 'Przenieś wstążkę tutaj', from: 'Odczytano z: ',
     key: '<span class="u">Kropkowana linia</span> oznacza odczyt, którego maszyna nie była pewna; <span class="ed">[kursywa w nawiasach]</span> to jej uwagi. Zatrzymaj wskaźnik na nazwisku, aby zobaczyć rosyjski zapis, z którego je odczytano.',
     warn: 'Odczytane i przetłumaczone maszynowo; nikt tego nie sprawdzał. Ufaj rękopisowi bardziej niż tłumaczeniu.',
-    sources: 'Źródła', register: 'Księga: parafia rzymskokatolicka w Płungianach, metryki urodzeń i chrztów 1867–1874, Litewskie Państwowe Archiwum Historyczne, 1827/1/22, z <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (do użytku niekomercyjnego).',
+    sources: 'Źródła', register: 'Księga: parafia rzymskokatolicka w Płungianach, metryki urodzeń i chrztów 1886–1890, Litewskie Państwowe Archiwum Historyczne, 1827/1/23, z <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (do użytku niekomercyjnego).',
     museum: 'Litewskie Muzeum Narodowe', showR: 'Pokaż prawą stronę', showL: 'Pokaż lewą stronę',
     none: 'Nic podobnego nie znaleziono. Spróbuj mniej liter; pisownia w księdze bardzo się waha.', noName: 'imienia nie odczytano', noDate: 'daty nie odczytano',
     found: n => n === 1 ? '1 wpis' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? `${n} wpisy` : `${n} wpisów`, more: n => `Pokazano pierwsze ${n}.`, away: 'Wyszarzone wpisy są na stronach, których jeszcze nie ma w tej próbce.',
-    tips: 'Wpisz nazwisko w dowolnej pisowni, wieś albo datę, np. „10 stycznia 1870”, „03.1869” lub „#8”.',
+    tips: 'Wpisz nazwisko w dowolnej pisowni, wieś albo datę, np. „10 stycznia 1888”, „03.1887” lub „#8”.',
     no: 'nr', scan: 'skan', onDate: 'chrzest lub urodzenie', anyText: 'pasujące do', entryNo: 'numer wpisu', and: 'i',
     cloth: { plunge: 'Tkanina okładki: wełniano-lniana narzuta (divonas), koniec XIX w., wieś Palūščiai, rejon płungiański', kretinga: 'Tkanina okładki: pasiasta chusta wełniana, druga połowa XIX w., wieś Budriai, rejon kretyngański', telsiai: 'Tkanina okładki: narzuta tkana techniką gobelinową (divonas), koniec XIX w., wieś Vaštakiai, rejon telszański' },
     ribbon: { mazeikiai: 'Wstążka: pleciona krajka wełniana, 1930, wieś Meinoriai, rejon możejski', taurage: 'Wstążka: okrągło pleciona krajka wełniana, koniec XIX w., rejon taurogski', ukrinai: 'Wstążka: pleciona wełniana krajka-podwiązka, około 1940, wieś Ukrinai, rejon możejski' } },
   ru: { title: 'Žemaičių metrikai', sub: 'Приходские книги Жемайтии. Плунге, крещения, январь 1888 года',
+    namesH: "Имена и фамилии", names1: "Имя здесь может встречаться в трёх видах: русскими буквами, которые машина прочла на странице, в передаче на язык, на котором вы читаете, и на полях – как фамилия семьи, записанная писарем второй раз. Это прочтения и передачи, а не отождествления. Две записи с одной фамилией ещё не означают одного человека, а поиск находит похожие написания, не утверждая, что это одна семья.", dataLine: "Прочтения, переводы и модель распознавания открыты: <a href=\"https://github.com/brezgis/samogitia-records\">данные и код</a>, <a href=\"https://huggingface.co/brezgis/samogitia-plunge-htr\">модель</a>.",
     aboutH: 'Об этих книгах',
-    about1: 'От крещения до погребения жизнь католика в Жемайтии записывалась в приходские книги. Каждый приход вёл метрические книги о крещениях, браках и смертях. Перед вами одна из них: книга о крещениях Плунгянского прихода Жемайтской епархии за 1867–1874 годы.',
-    about2: 'В эти годы Плунге входило в Российскую империю, в Тельшевский уезд Ковенской губернии, и метрики полагалось вести по-русски. Поэтому священник вписывал литовские и польские имена русскими буквами в печатный русский бланк, а даты ставил по старому юлианскому календарю, который отстаёт от нынешнего на двенадцать дней.',
+    about1: 'От крещения до погребения жизнь католика в Жемайтии записывалась в приходские книги. Каждый приход вёл метрические книги о крещениях, браках и смертях. Перед вами одна из них: книга о крещениях Плунгянского прихода Жемайтской епархии за 1886–1890 годы.',
+    about2: 'В 1888 году Плунге входило в Российскую империю, в Тельшевский уезд Ковенской губернии, и метрики полагалось вести по-русски. Поэтому священник вписывал литовские и польские имена русскими буквами в печатный русский бланк, а даты ставил по старому юлианскому календарю, который отстаёт от нынешнего на двенадцать дней.',
     readH: 'Как читать запись',
     read1: 'Каждая запись повторяет одну формулу в трёх графах: когда, где и кем крещён младенец; кто его родители, какого они сословия и волости, когда и где он родился; кто были восприемники. Фамилии стоят так, как требует формула, в родительном падеже множественного числа, поэтому здесь они часто оканчиваются на «-овъ», хотя сама семья сказала бы «-ис», «-ас» или «-ус».',
-    read2: "Рукопись прочитана моделью распознавания, обученной примерно на 1 700 строках этих книг, каждую из которых независимо прочли и сверили два ИИ-читателя; перевод сделан машиной. Человек результат не проверял. Обычные слова читаются хорошо, имена и деревни часто с ошибками.",
+    read2: "Рукопись прочитана моделью распознавания, обученной примерно на 2 300 строках этих книг, каждую из которых независимо прочли и сверили два ИИ-читателя; перевод сделан машиной. Человек результат не проверял. Обычные слова читаются хорошо, имена и деревни часто с ошибками.",
     colsH: "Печатные графы", cols: [["Прозваніе крещаемыхъ", "Фамилия крещаемого, вписана поперёк на полях"], ["№", "Номер записи"], ["Число рожденія / крещенія", "День рождения / день крещения"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Когда, где, кто и кем крещён, одною ли водою или со всеми обрядами"], ["Какихъ родителей …?", "Каких родителей, какого сословия или общества; когда и где родился"], ["Кто были … воспріемниками …?", "Кто по имени и фамилии были восприемниками и кто присутствовал"], ["Рукоприкладство свидѣтелей …", "Подписи свидетелей записи, по желанию"]],
     sideMargin: "На полях", sideDiffer: x => `В тексте записи машина прочла фамилию как «${x}»; чтение на полях надёжнее.`, sideNo: "№", sideBorn: "родился", sideBapt: "крещён", sideNote: "Позднейшая запись", sexM: "мальчик", sexF: "девочка", sideBy: "Боковые графы прочитаны машиной один раз.",
     heads: {"margin": "Прозваніе крещаемыхъ", "no": "№", "dates": "Число рожденія / крещенія", "baptism": "Когда, гдѣ, кто и кѣмъ окрещенъ", "parents": "Какихъ родителей …", "godparents": "Кто были воспріемниками …", "sign": "Рукоприкладство свидѣтелей"},
     clothH: 'Ткань и закладка',
     cloth1: 'Переплёт и закладка — настоящие жемайтские ткани из собрания Национального музея Литвы. Фотографии музея используются по лицензии CC BY 4.0.',
     
-    ph: 'Имя, деревня или дата, 1867–1874', chooseH: 'Выберите запись', chooseP: 'Наведите указатель на строку книги, чтобы прочитать её. Щёлкните, чтобы оставить открытой.',
+    ph: 'Имя, деревня или дата, 1886–1890', chooseH: 'Выберите запись', chooseP: 'Наведите указатель на строку книги, чтобы прочитать её. Щёлкните, чтобы оставить открытой.',
     everyH: 'Вся страница в расшифровке', everyP: 'Наведите указатель на листок, чтобы увидеть рукопись под ним, или выберите запись.',
     bapt: 'Крещение', born: 'рождение', marks: 'Закладка отмечает эту запись.', move: 'Перенести закладку сюда', from: 'Прочитано из: ',
     key: 'Здесь показана машинная расшифровка рукописи в старой орфографии, со всеми её ошибками. Справа от неё — английский перевод.',
     warn: 'Прочитано и переведено машиной; никто не проверял. Доверяйте рукописи, а не расшифровке.',
-    sources: 'Источники', register: 'Метрическая книга: Плунгянский римско-католический приход, записи о рождении и крещении за 1867–1874 гг., Литовский государственный исторический архив, 1827/1/22, с сайта <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (некоммерческое использование).',
+    sources: 'Источники', register: 'Метрическая книга: Плунгянский римско-католический приход, записи о рождении и крещении за 1886–1890 гг., Литовский государственный исторический архив, 1827/1/23, с сайта <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (некоммерческое использование).',
     museum: 'Национальный музей Литвы', showR: 'Показать правую страницу', showL: 'Показать левую страницу',
     none: 'Ничего похожего не найдено. Попробуйте меньше букв: написание в книге сильно разнится.', noName: 'имя не прочитано', noDate: 'дата не прочитана',
     found: n => `Записей: ${n}`, more: n => `Показаны первые ${n}.`, away: 'Серые записи находятся на страницах, которых пока нет в этом образце.',
-    tips: 'Введите имя в любом написании, деревню или дату, например «10 января 1870», «03.1869» или «#8».',
+    tips: 'Введите имя в любом написании, деревню или дату, например «10 января 1888», «03.1887» или «#8».',
     no: '№', scan: 'скан', onDate: 'крещение или рождение', anyText: 'совпадает с', entryNo: 'номер записи', and: 'и',
     cloth: { plunge: 'Ткань переплёта: покрывало из шерсти и льна (дивонас), конец XIX в., дер. Палушчяй, Плунгеский район', kretinga: 'Ткань переплёта: полосатый шерстяной платок, вторая половина XIX в., дер. Будряй, Кретингский район', telsiai: 'Ткань переплёта: покрывало ковровой техники (дивонас), конец XIX в., дер. Ваштакяй, Тельшяйский район' },
     ribbon: { mazeikiai: 'Закладка: плетёный шерстяной пояс, 1930 г., дер. Мейноряй, Мажейкский район', taurage: 'Закладка: шерстяной пояс круглого плетения, конец XIX в., Таурагский район', ukrinai: 'Закладка: плетёный шерстяной пояс-подвязка, около 1940 г., дер. Укринай, Мажейкский район' } },
@@ -122,6 +134,35 @@ const X = {
     prev: 'Перелистнуть назад', next: 'Перелистнуть вперёд', nothing: 'На этих двух страницах записей не найдено.' },
 };
 for (const k in X) Object.assign(T[k], X[k]);
+/* strings that name the parish, the years or the archive file */
+const EPAV = '<a href="https://www.epaveldas.lt/">epaveldas.lt</a>';
+const BOOKTEXT = (N => ({
+  en: { sub: w => `${N.en.name}, baptisms, ${w}`,
+    about1: `From baptism to burial, a Catholic life in Samogitia was written into the parish books. Every parish kept registers, metrikai in Lithuanian, of baptisms, marriages and deaths. This is one of them: the baptisms of ${N.en.name} parish, in the diocese of Samogitia, for ${Y0} to ${Y1}.`,
+    about2: `In these years ${N.en.name} lay in the Russian Empire, in ${N.en.county} county of Kovno governorate, and the registers had to be kept in Russian. So the priest wrote Lithuanian and Polish names in Russian letters, into a printed Russian form, and dated them by the old Julian calendar, ${LATE ? 'twelve days behind the one we use, thirteen from March 1900' : 'twelve days behind the one we use'}.`,
+    ph: `Name, village or date, ${Y0} to ${Y1}`,
+    register: `Roman Catholic parish of ${N.en.name}, births and baptisms ${Y0}–${Y1}. Lithuanian State Historical Archives, ${BK.archive}, from ${EPAV}; the scans are for non-commercial use.`,
+    tips: `Try a name in any spelling, a village, or a date such as “10 January ${YMID}”, “03.${YMID}” or “#8”.` },
+  lt: { sub: w => `${N.lt.name}, krikštai, ${w}`,
+    about1: `Nuo krikšto iki laidotuvių Žemaitijos kataliko gyvenimas buvo užrašomas parapijos knygose. Kiekviena parapija vedė krikšto, santuokos ir mirties metrikus. Čia viena tokių knygų: Žemaičių vyskupijos ${N.lt.gen} parapijos krikšto metrikai, ${Y0}–${Y1} m.`,
+    about2: `Šiais metais ${N.lt.name} priklausė Rusijos imperijai, Kauno gubernijos ${N.lt.countyGen} apskričiai, ir metrikus reikėjo rašyti rusiškai. Todėl kunigas lietuviškus ir lenkiškus vardus rašė rusiškomis raidėmis į spausdintą rusišką formą, o datas žymėjo pagal senąjį Julijaus kalendorių, ${LATE ? 'dvylika, o nuo 1900 m. kovo trylika dienų' : 'dvylika dienų'} atsiliekantį nuo dabartinio.`,
+    ph: `Vardas, kaimas arba data, ${Y0}–${Y1} m.`,
+    register: `${N.lt.gen} Romos katalikų parapijos gimimo ir krikšto metrikai, ${Y0}–${Y1} m. Lietuvos valstybės istorijos archyvas, ${BK.archive}, iš ${EPAV}; skenai skirti nekomerciniam naudojimui.`,
+    tips: `Rašykite vardą bet kokia rašyba, kaimą arba datą, pvz., „${YMID} sausio 10“, „03.${YMID}“ ar „#8“.` },
+  pl: { sub: w => `${N.pl.name}, chrzty, ${w}`,
+    about1: `Od chrztu po pogrzeb życie katolika na Żmudzi zapisywano w księgach parafialnych. Każda parafia prowadziła metryki chrztów, ślubów i zgonów. To jedna z nich: metryki chrztów parafii ${N.pl.name} w diecezji żmudzkiej za lata ${Y0}–${Y1}.`,
+    about2: `W tych latach ${N.pl.name} ${N.pl.lay} w Cesarstwie Rosyjskim, w powiecie ${N.pl.countyLoc} guberni kowieńskiej, a metryki należało prowadzić po rosyjsku. Ksiądz zapisywał więc litewskie i polskie imiona i nazwiska rosyjskimi literami w drukowanym rosyjskim formularzu i datował je według dawnego kalendarza juliańskiego, o ${LATE ? 'dwanaście, a od marca 1900 roku o trzynaście dni' : 'dwanaście dni'} wcześniejszego od dzisiejszego.`,
+    ph: `Nazwisko, wieś lub data, lata ${Y0}–${Y1}`,
+    register: `Parafia rzymskokatolicka w ${N.pl.loc}, metryki urodzeń i chrztów ${Y0}–${Y1}. Litewskie Państwowe Archiwum Historyczne, ${BK.archive}, z ${EPAV}; skany do użytku niekomercyjnego.`,
+    tips: `Wpisz nazwisko w dowolnej pisowni, wieś albo datę, np. „10 stycznia ${YMID}”, „03.${YMID}” lub „#8”.` },
+  ru: { sub: w => `${N.ru.name}, крещения, ${w}`,
+    about1: `От крещения до погребения жизнь католика в Жемайтии записывалась в приходские книги. Каждый приход вёл метрические книги о крещениях, браках и смертях. Перед вами одна из них: книга о крещениях ${N.ru.adjGen} прихода Жемайтской епархии за ${Y0}–${Y1} годы.`,
+    about2: `В эти годы ${N.ru.name} ${N.ru.was} в Российскую империю, в ${N.ru.county} уезд Ковенской губернии, и метрики полагалось вести по-русски. Поэтому священник вписывал литовские и польские имена русскими буквами в печатный русский бланк, а даты ставил по старому юлианскому календарю, который отстаёт от нынешнего на ${LATE ? 'двенадцать, а с марта 1900 года на тринадцать дней' : 'двенадцать дней'}.`,
+    ph: `Имя, деревня или дата, ${Y0}–${Y1}`,
+    register: `${N.ru.adjNom} римско-католический приход, записи о рождении и крещении за ${Y0}–${Y1} гг. Литовский государственный исторический архив, ${BK.archive}, с сайта ${EPAV}; сканы только для некоммерческого использования.`,
+    tips: `Введите имя в любом написании, деревню или дату, например «10 января ${YMID}», «03.${YMID}» или «#8».` },
+}))(PARISH.names);
+for (const k in BOOKTEXT) Object.assign(T[k], BOOKTEXT[k]);
 const LIMIS = { plunge: '1056757085', kretinga: '1059250648', telsiai: '1057411152', mazeikiai: '914006288', taurage: '914017553', ukrinai: '914014451' };
 const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
 let lang = 'en';
@@ -140,7 +181,7 @@ function showDate(d, noYear) {
 /* the open spread */
 let S = null, pages = {}, byRow = {}, slip = null;
 let pinned = null, hovered = null;
-let marked = (() => { try { return JSON.parse(store.get('ribbon')) || null; } catch { return null; } })() || { row: '', scan: 20 };
+let marked = (() => { try { return JSON.parse(store.get('ribbon')) || null; } catch { return null; } })() || { row: BK.row || '', scan: BK.scan };
 const params = new URLSearchParams(location.hash.slice(1));
 const cache = {};
 const loadSpread = scan => cache[scan] || (cache[scan] = fetch(`spreads/${pad(scan)}.json`).then(r => r.json()));
@@ -288,7 +329,7 @@ async function go(scan, row, quiet) {
   if (S && S.scan === scan) { if (row && byRow[row]) pick(row, true); return; }
   turning = true;
   const next = await loadSpread(scan);
-  await Promise.all([preload(next.pages.L.img), preload(next.pages.R.img)]);
+  if (S) await Promise.all([preload(next.pages.L.img), preload(next.pages.R.img)]);   // the first spread is laid out at once and its scans fill in
   const dir = S ? Math.sign(scan - S.scan) : 0;
   const old = dir && !quiet && !reduced() && pages.L && getComputedStyle(pages.R).display !== 'none' && getComputedStyle(pages.L).display !== 'none'
     ? Object.fromEntries(['L', 'R'].map(s => [s, { src: S.pages[s].img, left: pages[s].offsetLeft, width: pages[s].offsetWidth, height: pages[s].offsetHeight }])) : null;
@@ -346,11 +387,17 @@ $('#next').onclick = $('#edgeR').onclick = () => step(1);
 $('#scrub').max = SPREADS.length;
 $('#scrub').addEventListener('input', ev => $('#where').textContent = t().where(SPREADS[ev.target.value - 1].scan, SPREADS.length));
 $('#scrub').addEventListener('change', ev => go(SPREADS[ev.target.value - 1].scan));
+/* the same parish's books before and after this one stand at either end of the year row */
+const SHELF = PARISH.books.filter(b => b.state === 'open'), HERE = SHELF.findIndex(b => b.dir === BK.dir);
+const span = b => b.years[0] === b.years[1] ? `${b.years[0]}` : `${b.years[0]}–${b.years[1]}`;
+const bookLink = (b, cls) => { const a = el('a', cls); a.href = `../${b.dir}/`; a.textContent = span(b); return a; };
+if (HERE > 0) $('.years').append(bookLink(SHELF[HERE - 1], 'before'));
 for (const y of [...new Set(SPREADS.map(m => m.y).filter(Boolean))].sort()) {
   const b = el('button', '', y); b.type = 'button'; b.dataset.y = y;
   b.onclick = () => go(SPREADS.find(m => m.y === y).scan);
   $('.years').append(b);
 }
+if (HERE >= 0 && SHELF[HERE + 1]) $('.years').append(bookLink(SHELF[HERE + 1], 'after'));
 $('#ribbonBtn').onclick = () => go(marked.scan, marked.row).then(() => { if (S.scan === marked.scan && byRow[marked.row]) pick(marked.row, true); });
 const turn = $('#turn');
 const syncTurn = () => turn.textContent = book.dataset.show === 'R' ? t().showL : t().showR;
@@ -373,7 +420,8 @@ function setLang(l) {
   document.title = L.title; $('#title').textContent = L.title;
   $('#q').placeholder = L.ph; $('#q').setAttribute('aria-label', L.ph);
   $('#key').innerHTML = L.key; $('#warn').textContent = L.warn; $('#register').innerHTML = L.register;
-  for (const k of ['aboutH', 'about1', 'about2', 'readH', 'read1', 'read2', 'clothH', 'cloth1']) $('#' + k).textContent = L[k];
+  for (const k of ['aboutH', 'about1', 'about2', 'readH', 'read1', 'read2', 'clothH', 'cloth1', 'namesH', 'names1']) $('#' + k).textContent = L[k];
+  $('#sourcesH').textContent = L.sources; $('#dataLine').innerHTML = L.dataLine;
   $('#colsH').textContent = L.colsH;
   $('#cols').innerHTML = L.cols.map(([ru, x]) => `<li><span lang="ru">${esc(ru)}</span> — ${esc(x)}</li>`).join('');
   const cr = [[L.cloth[body.dataset.cloth], LIMIS[body.dataset.cloth]], [L.ribbon[body.dataset.ribbon], LIMIS[body.dataset.ribbon]]].filter(c => c[0]);
@@ -412,7 +460,7 @@ function parse(q) {
     else if ((m = b.match(/^(1[789]\d\d)-(\d{1,2})(?:-(\d{1,2}))?$/))) { want.y = +m[1]; want.m = +m[2]; if (m[3]) want.d = +m[3]; }
     else if ((m = b.match(/^(\d{1,2})[./](\d{1,2})[./](1[789]\d\d)$/))) { want.d = +m[1]; want.m = +m[2]; want.y = +m[3]; }
     else if ((m = b.match(/^(\d{1,2})[./](1[789]\d\d)$/))) { want.m = +m[1]; want.y = +m[2]; }
-    else if (/^(1867|1868|1869|1870|1871|1872|1873|1874)$/.test(b)) want.y = +b;
+    else if (/^\d{4}$/.test(b) && +b >= Y0 - 1 && +b <= Y1) want.y = +b;
     else if (MON[b]) want.m = MON[b];
     else if ((m = b.match(/^(\d{1,2})(?:st|nd|rd|th|d|го|е)?$/)) && +m[1] >= 1 && +m[1] <= 31) want.d = +m[1];
     else if (!/^(m|г|год|года|metu|d|of|the)$/.test(b)) want.words.push(tok);
@@ -441,7 +489,7 @@ function describe(w) {
   const L = t(), parts = [];
   if (hasDate(w)) {
     const opt = {}; if (w.d) opt.day = 'numeric'; if (w.m) opt.month = 'long'; if (w.y) opt.year = 'numeric';
-    parts.push(`${L.onDate} ${w.m || w.y ? new Intl.DateTimeFormat(LOCALE[lang], { ...opt, timeZone: 'UTC' }).format(new Date(Date.UTC(w.y || 1870, (w.m || 1) - 1, w.d || 1))) : w.d}`);
+    parts.push(`${L.onDate} ${w.m || w.y ? new Intl.DateTimeFormat(LOCALE[lang], { ...opt, timeZone: 'UTC' }).format(new Date(Date.UTC(w.y || YMID, (w.m || 1) - 1, w.d || 1))) : w.d}`);
   }
   if (w.n != null) parts.push(`${L.entryNo} ${w.n}`);
   if (w.words.length) parts.push(`${L.anyText} “${esc(w.words.join(' '))}”`);
@@ -473,5 +521,5 @@ closeHits(); applyLook(); setLang(lang);
 // open at a random spread that has entries (a link with #s=… still opens where it points;
 // the ribbon's tail leads back to the marked entry)
 const randomScan = () => { const full = SPREADS.filter(m => m.n > 0); return full.length ? full[Math.floor(Math.random() * full.length)].scan : 0; };
-go(+params.get('s') || randomScan() || marked.scan || 20, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } });
+go(+params.get('s') || randomScan() || marked.scan || BK.scan, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } });
 })();
