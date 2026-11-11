@@ -60,8 +60,11 @@ def checked_labels(annotations, root=ROOT):
         split=split_for_scan(item['scan'])
         if item.get('split')!=split: raise ValueError(f'Spread split mismatch: {ident}')
         for path_key,hash_key in [('image','image_sha256'),('source_image','source_sha256')]:
-            path=(root/item[path_key]).resolve()
-            if not path.is_relative_to(root.resolve()): raise ValueError(f'Path outside project: {ident}')
+            # the path must stay inside the project as written (no ..); bulk image folders may be
+            # links to a data drive, so the link target itself is allowed to lie outside
+            path=root/item[path_key]
+            if '..' in Path(item[path_key]).parts or Path(item[path_key]).is_absolute():
+                raise ValueError(f'Path outside project: {ident}')
             if sha(path)!=item[hash_key]: raise ValueError(f'Image changed since review: {ident}')
         with Image.open(root/item['source_image']) as source:
             x0,y0,x1,y1=item['bbox']

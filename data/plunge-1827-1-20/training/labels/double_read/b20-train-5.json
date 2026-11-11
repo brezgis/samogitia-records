@@ -1,0 +1,1391 @@
+{
+ "batch": "b20-train-5",
+ "A": [
+  {
+   "id": "0078_L2_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шестаго",
+   "sure": true,
+   "crop_ok": true,
+   "note": "last word squeezed at edge"
+  },
+  {
+   "id": "0078_L2_baptism_02",
+   "text": "Года апреля четырнацатаго дня въ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_03",
+   "text": "Плунгянскомъ Р: К: Приходскомъ Косте-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_04",
+   "text": "лѣ Викарнымъ онаго Кс: Юліяномъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_05",
+   "text": "Ду[кѣ?]вичемъ окрещенъ младенецъ име=",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname: 3rd-4th letters doubtful (к/ж + ѣ)"
+  },
+  {
+   "id": "0078_L2_baptism_06",
+   "text": "немъ Анна совсеми обрядами таин-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_07",
+   "text": "ства - .. - .. -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "filler dashes and ditto dots after the word; exact filler rendering uncertain"
+  },
+  {
+   "id": "0078_L2_parents_01",
+   "text": "Крестьянъ Іосифа и Петро-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_02",
+   "text": "нелій урожденной Винга",
+   "sure": false,
+   "crop_ok": true,
+   "note": "possibly a hyphen lost at the edge; 'Винга' continues on next line"
+  },
+  {
+   "id": "0078_L2_parents_03",
+   "text": "лговной [Мацѣвсіовъ?] Закон",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful (Мацѣв-/Машъв-)"
+  },
+  {
+   "id": "0078_L2_parents_04",
+   "text": "ныхъ Супруговъ Дочь ро",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_05",
+   "text": "дившаяся 1856. года Апре-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "line-end stroke may be hyphen or rule overlap"
+  },
+  {
+   "id": "0078_L2_parents_06",
+   "text": "ля 14. дня въ Деревни [Олк?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village start runs into column rule"
+  },
+  {
+   "id": "0078_L2_parents_07",
+   "text": "[сняняхъ?] Плунгянскаго Прихода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village continuation doubtful"
+  },
+  {
+   "id": "0078_L2_godparents_01",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only a ruled line, no text"
+  },
+  {
+   "id": "0078_L2_godparents_02",
+   "text": "Воспріемниками были",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_03",
+   "text": "Крестьянинъ Іосифъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_04",
+   "text": "[Мацѣвскій?] съ Кресть-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful (Мацѣвскій/Машъвскій)"
+  },
+  {
+   "id": "0078_L2_godparents_05",
+   "text": "янк[ою?] Анну Винга-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ending of first word looks like -ого/-ою"
+  },
+  {
+   "id": "0078_L2_godparents_06",
+   "text": "лговно[ю?] Девицею. -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ending -ою vs -ого doubtful"
+  },
+  {
+   "id": "0086_L1_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шестаго",
+   "sure": true,
+   "crop_ok": true,
+   "note": "small stray mark before Т not transcribed"
+  },
+  {
+   "id": "0086_L1_baptism_02",
+   "text": "Года Іюня девятаго дня въ Плунгян-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_03",
+   "text": "скомъ Р: К: Приходскомъ Костелѣ Ал[ь?]-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "last sign ь or ъ; faint hyphen"
+  },
+  {
+   "id": "0086_L1_baptism_04",
+   "text": "таристомъ онаго Кс: Эдуардомъ Жу-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_05",
+   "text": "ковскимъ окрещенъ младенецъ име-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_06",
+   "text": "немъ Л[ѣ?]онъ совсеми обрядами -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Лѣонъ vs Леонъ; line-end filler mark"
+  },
+  {
+   "id": "0086_L1_baptism_07",
+   "text": "таинства. - .. - .. - ..",
+   "sure": false,
+   "crop_ok": true,
+   "note": "filler dashes and ditto dots"
+  },
+  {
+   "id": "0086_L1_baptism_08",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only tops of letters / fragments, no readable line"
+  },
+  {
+   "id": "0086_L1_baptism_09",
+   "text": "Тысяча восемсотъ Пятдесятъ шеста",
+   "sure": true,
+   "crop_ok": true,
+   "note": "second record begins; top slightly clipped"
+  },
+  {
+   "id": "0086_L1_baptism_10",
+   "text": "го Года Іюня десятаго дня въ Плунгян-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_11",
+   "text": "скомъ Р: К: Приходскомъ Костелѣ Викар-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_12",
+   "text": "нымъ онаго Кс: Юліяномъ Ду[кѣ?]вичемъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname middle letters doubtful"
+  },
+  {
+   "id": "0086_L1_baptism_13",
+   "text": "окрещенъ младенецъ именемъ Франци",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_14",
+   "text": "шекъ совсеми обрядами таинства. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_01",
+   "text": "Крестьянъ Францишка и",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_02",
+   "text": "Агнѣшки урожденной Ми-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Агн[ѣ]шки: ѣ vs е"
+  },
+  {
+   "id": "0086_L1_parents_03",
+   "text": "лашіовной Норвиловъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "names"
+  },
+  {
+   "id": "0086_L1_parents_04",
+   "text": "Законныхъ Супруговъ Сынъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_05",
+   "text": "родившійся 1856. Года Іюня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_06",
+   "text": "9. дня въ Деревни Ми[ж?]а-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village: Мижа-/Миша-/Мика- doubtful"
+  },
+  {
+   "id": "0086_L1_parents_07",
+   "text": "нахъ Плунгянскаго Прихода -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_08",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only a ruled line, no text"
+  },
+  {
+   "id": "0086_L1_parents_09",
+   "text": "Крестьянъ Іосифа и Фран-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_10",
+   "text": "цишки урожденой Шаки-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "single н in урожденой as written; surname start doubtful"
+  },
+  {
+   "id": "0086_L1_parents_11",
+   "text": "ніовной Гу[н?]ціовъ Законныхъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname Гунціовъ/Гудціовъ"
+  },
+  {
+   "id": "0086_L1_parents_12",
+   "text": "Супруговъ Сынъ родившій-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_13",
+   "text": "ся 1856. Года Іюня 9. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_14",
+   "text": "въ Деревни Лук[н?]янахъ -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village doubtful; trailing flourish read as filler"
+  },
+  {
+   "id": "0086_L1_parents_15",
+   "text": "Плунгянскаго Прихода. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_01",
+   "text": "Воспріемниками были",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_02",
+   "text": "Крестьянинъ Л[ѣ?]онъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "speck at left not transcribed"
+  },
+  {
+   "id": "0086_L1_godparents_03",
+   "text": "[Н?]арчевскій съ Крестьян",
+   "sure": false,
+   "crop_ok": true,
+   "note": "initial Н or М"
+  },
+  {
+   "id": "0086_L1_godparents_04",
+   "text": "кою Юстыною Норви-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "names"
+  },
+  {
+   "id": "0086_L1_godparents_05",
+   "text": "ловною Девицею. - .. -",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_06",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "blank strip, no text"
+  },
+  {
+   "id": "0086_L1_godparents_07",
+   "text": "Крестьянъ воспріемни",
+   "sure": true,
+   "crop_ok": true,
+   "note": "second record's godparents"
+  },
+  {
+   "id": "0086_L1_godparents_08",
+   "text": "ками были Михаилъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_09",
+   "text": "Шакинисъ. съ Петро-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname"
+  },
+  {
+   "id": "0086_L1_godparents_10",
+   "text": "нелью Іосифа Среба-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname"
+  },
+  {
+   "id": "0086_L1_godparents_11",
+   "text": "[лиа?] Супругою. - ..",
+   "sure": false,
+   "crop_ok": true,
+   "note": "first fragment doubtful (лиа/ша)"
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шестаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end of шестаго squeezed into the edge"
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "Года Іюня двенацатаго дня въ Плун",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_03",
+   "text": "гянскомъ Р: К: Приходскомъ Костелѣ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "Альтаристомъ онаго Кс: Эдуар-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "домъ Жуковскимъ окрещенъ мла=",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_06",
+   "text": "денецъ именемъ Петронеля совсе-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "ми обрядами таинства - .. -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "fillers after таинства"
+  },
+  {
+   "id": "0091_L1_parents_01",
+   "text": "Крестьянъ Казимира и",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_02",
+   "text": "Теодоры урожденной Пи-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "воріовной Піотро-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "names"
+  },
+  {
+   "id": "0091_L1_parents_04",
+   "text": "вичовъ Законныхъ Супру",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "говъ Дочь родившаяся",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "1856. Года Іюня 12. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "въ Деревни В[о?]лончай",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village; second letter о/а"
+  },
+  {
+   "id": "0091_L1_parents_08",
+   "text": "цяхъ Плунгянскаго Прихода",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_01",
+   "text": "Воспріемниками бы-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_02",
+   "text": "ли Крестьянинъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_03",
+   "text": "Францишекъ Ду[м?]ар-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname: Думар-/Дунар-/Дулар-"
+  },
+  {
+   "id": "0091_L1_godparents_04",
+   "text": "касъ съ Теодорою",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_05",
+   "text": "Крестьянина Іосифа",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_06",
+   "text": "Пиворя Супругою. -",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname"
+  }
+ ],
+ "B": [
+  {
+   "id": "0078_L2_baptism_01",
+   "text": "Тысяча восемьсотъ Пятдесятъ шестаго",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_02",
+   "text": "Года апреля четырнадцатаго дня въ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_03",
+   "text": "Плунгянскомъ Р:К: Приходскомъ Косте-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_04",
+   "text": "лъ Викарнымъ оного Кс: Юліаномъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_05",
+   "text": "[Дуньвичемъ?] окрещенъ младенецъ име-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_06",
+   "text": "немъ Анна совсеми обрядами тайн-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_baptism_07",
+   "text": "ства - .. - ..-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "filler dashes and dots approximate; rule below"
+  },
+  {
+   "id": "0078_L2_parents_01",
+   "text": "Крестьянъ Іосифа и Петро-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_02",
+   "text": "[нелій?] урожденной Винга-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_03",
+   "text": "[іловной?] Самсіовъ Закон-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Самсіовъ doubtful; Закон- partly cut by rule at right"
+  },
+  {
+   "id": "0078_L2_parents_04",
+   "text": "ныхъ Супруговъ. Дочъ ро-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_05",
+   "text": "дившаяся 1856. года апре-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_parents_06",
+   "text": "ля 14. дня въ Деревни [Ол?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "last word cut by rule, village name doubtful"
+  },
+  {
+   "id": "0078_L2_parents_07",
+   "text": "[сіянахъ?] Плунгянскаго Прихода",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_01",
+   "text": "Воспріемниками были",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_02",
+   "text": "Крестьянинъ Іосифъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_03",
+   "text": "[Малъвекій?] съ Кресть-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_04",
+   "text": "[янкою?] Анну Винга-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_05",
+   "text": "[иловного?] Девицего. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0078_L2_godparents_06",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only a rule, no text (indices shifted: idx14 sheet crop is a rule); see note"
+  },
+  {
+   "id": "0086_L1_baptism_01",
+   "text": "Тысяча восемьсотъ Пятдесятъ шестаго.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "small stray mark before Т ignored"
+  },
+  {
+   "id": "0086_L1_baptism_02",
+   "text": "Года Іюня девятаго дня въ Плунгян-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_03",
+   "text": "скомъ Р:К: Приходскомъ Костелъ [Ад?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_04",
+   "text": "[таристомъ?] оного Кс: Эдуардомъ Жу-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_05",
+   "text": "ковскимъ окрещенъ младенецъ име-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_06",
+   "text": "немъ [Леонъ?] совсеми обрядами",
+   "sure": false,
+   "crop_ok": true,
+   "note": "stray ɔ-like mark at end not transcribed"
+  },
+  {
+   "id": "0086_L1_baptism_07",
+   "text": "таинства. - .. - .. - ..",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_08",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only tops of letters of the next line"
+  },
+  {
+   "id": "0086_L1_baptism_09",
+   "text": "Тысяча восемьсотъ Пятдесятъ шеста-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_10",
+   "text": "го Года Іюня десятаго дня въ Плунгян-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_11",
+   "text": "скомъ Р.К: Приходскомъ Костелъ Викар-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_12",
+   "text": "нымъ оного Кс: Юліаномъ Дуньвичемъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_13",
+   "text": "окрещенъ младенецъ имемъ Франци-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_baptism_14",
+   "text": "шекъ совсеми обрядами таинства. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_01",
+   "text": "Крестьянъ Францишка и",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_02",
+   "text": "Агнешки урожденной Ми-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_03",
+   "text": "лашіовной Корвилов",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_04",
+   "text": "Законныхъ Супруговъ Сынъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_05",
+   "text": "родившійся 1856. года Іюня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_06",
+   "text": "9. дня въ Деревни Миша-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_07",
+   "text": "нахъ Плунгянскаго Прихода-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_08",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only a rule and a stray stroke"
+  },
+  {
+   "id": "0086_L1_parents_09",
+   "text": "Крестьянъ Іосифа и Фран-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_10",
+   "text": "цишки урожденной Шаки-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_11",
+   "text": "[ніовной?] Гунжіовъ Законныхъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_12",
+   "text": "Супруговъ Сынъ родившій-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_13",
+   "text": "ся 1856. Года Іюня 9. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_parents_14",
+   "text": "въ Деревни Лукняпахъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "trailing small stroke not transcribed"
+  },
+  {
+   "id": "0086_L1_parents_15",
+   "text": "Плунгянскаго Прихода. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_01",
+   "text": "Воспріемниками были",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_02",
+   "text": "Крестьянинъ Леонъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_03",
+   "text": "Марчевскій съ Крестьян-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_04",
+   "text": "кою Юстыною Корви-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_05",
+   "text": "ловною Девицего. - .. -",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_06",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "empty strip"
+  },
+  {
+   "id": "0086_L1_godparents_07",
+   "text": "Крестьянъ воспріемни-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_08",
+   "text": "ками были Михаилъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_09",
+   "text": "[Шакинисъ?]. и Петро-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_10",
+   "text": "нелью Іосифа Среда",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0086_L1_godparents_11",
+   "text": "на Супругого. - ..",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча восемьсотъ Пятдесятъ шестаго",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "Года Іюня двенадцатаго дня въ Плун-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_03",
+   "text": "гянскомъ Р:К: Приходскомъ Костелъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "[Адътаристомъ?] оного Кс: Эдуар-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "домъ Жуковскимъ окрещенъ мла-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_06",
+   "text": "денецъ именемъ Петронелья совсе-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "ми обрядами таинства. - ..",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_01",
+   "text": "Крестьянъ Казимира и",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_02",
+   "text": "Теодоры урожденной [Ти?]-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "[воріовной?] Піотро-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_04",
+   "text": "вичовъ Законныхъ Супру-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "говъ Дочъ родившаяся",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "1856. года Іюля 12. дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "въ. Деревни [Волонцай-?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_parents_08",
+   "text": "цахъ Плунгянскаго Прихода",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_01",
+   "text": "Воспріемниками бы-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_02",
+   "text": "ли Крестьянинъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_03",
+   "text": "Францишекъ Дунар-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_04",
+   "text": "касъ и съ Теодорого",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_05",
+   "text": "Крестьянина Іосифа",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0091_L1_godparents_06",
+   "text": "[Нивоня?] Супругого. -",
+   "sure": false,
+   "crop_ok": true
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0078_L2_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шеста[го?]",
+   "status": "draft",
+   "note": "no ь in восемсотъ; end of шестаго squeezed/smeared at the rule"
+  },
+  {
+   "id": "0078_L2_baptism_02",
+   "text": "Года апреля четырнацатаго дня въ",
+   "status": "image_checked",
+   "note": "четырнацатаго written without д"
+  },
+  {
+   "id": "0078_L2_baptism_03",
+   "text": "Плунгянскомъ Р: К: Приходскомъ Косте-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0078_L2_baptism_04",
+   "text": "лѣ Викарнымъ онаго Кс: Юліяномъ",
+   "status": "image_checked",
+   "note": "ѣ, онаго with а, Юліяномъ with я"
+  },
+  {
+   "id": "0078_L2_baptism_05",
+   "text": "Ду[к?]ѣвичемъ окрещенъ младенецъ име-",
+   "status": "draft",
+   "note": "priest surname 3rd letter doubtful (к/н/ж); ѣ clear; line-end hyphen is a single stroke"
+  },
+  {
+   "id": "0078_L2_baptism_06",
+   "text": "немъ Анна совсеми обрядами та[и?]н-",
+   "status": "draft",
+   "note": "possible breve over и (и/й)"
+  },
+  {
+   "id": "0078_L2_baptism_07",
+   "text": "ства - .. - .. -",
+   "status": "image_checked",
+   "note": "filler dashes and ditto dots; rule below not transcribed"
+  },
+  {
+   "id": "0078_L2_parents_02",
+   "text": "нел[ій?] урожденной Винга",
+   "status": "draft",
+   "note": "no hyphen visible before the rule"
+  },
+  {
+   "id": "0078_L2_parents_03",
+   "text": "[лг?]овной [Сатьсіовъ?] Закон-",
+   "status": "draft",
+   "note": "surname capital has a flourish (С/Б/Г), middle т or м; Закон- runs into the rule"
+  },
+  {
+   "id": "0078_L2_parents_04",
+   "text": "ныхъ Супруговъ[.?] Доч[ь?] ро",
+   "status": "draft",
+   "note": "small mid-height dot after Супруговъ; final sign of Дочь ь/ъ; no hyphen visible"
+  },
+  {
+   "id": "0078_L2_parents_05",
+   "text": "дившаяся 1856. [Г?]ода [А?]пре-",
+   "status": "draft",
+   "note": "capital vs lowercase of Года/Апре uncertain; hyphen stroke crosses the rule"
+  },
+  {
+   "id": "0078_L2_parents_06",
+   "text": "ля 14. дня въ Деревни [Олк?]-",
+   "status": "draft",
+   "note": "village start (probably Олк-снянахъ) overlaps the column rule; hyphen stroke beyond rule"
+  },
+  {
+   "id": "0078_L2_parents_07",
+   "text": "[снянахъ?] Плунгянскаго Прихода",
+   "status": "draft",
+   "note": "village continuation; trailing stroke at rule not transcribed"
+  },
+  {
+   "id": "0078_L2_godparents_01",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "only a ruled line, no text"
+  },
+  {
+   "id": "0078_L2_godparents_02",
+   "text": "Воспріемниками были",
+   "status": "image_checked",
+   "note": "reader B's indices were shifted by one in this cell"
+  },
+  {
+   "id": "0078_L2_godparents_03",
+   "text": "Крестьянинъ Іосифъ",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0078_L2_godparents_04",
+   "text": "[Машѣвскій?] съ Кресть-",
+   "status": "draft",
+   "note": "surname: 3rd letter ш/ц/т, then ѣ/ъ"
+  },
+  {
+   "id": "0078_L2_godparents_05",
+   "text": "янко[ю?] Анну Винга-",
+   "status": "draft",
+   "note": "clerk's ю resembles го"
+  },
+  {
+   "id": "0078_L2_godparents_06",
+   "text": "[лг?]овною Девицею. -",
+   "status": "draft",
+   "note": "first letters лг/ил doubtful; ю written like го in this hand"
+  },
+  {
+   "id": "0086_L1_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шестаго[.?]",
+   "status": "draft",
+   "note": "dot after шестаго may be punctuation or speck; stray mark before Т not transcribed"
+  },
+  {
+   "id": "0086_L1_baptism_03",
+   "text": "скомъ Р: К: Приходскомъ Костелѣ Аль[-?]",
+   "status": "draft",
+   "note": "faint hyphen at line end"
+  },
+  {
+   "id": "0086_L1_baptism_04",
+   "text": "таристомъ онаго Кс: Эдуардомъ Жу-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0086_L1_baptism_06",
+   "text": "немъ Лѣонъ совсеми обрядами [-?]",
+   "status": "draft",
+   "note": "line-end hooked filler mark"
+  },
+  {
+   "id": "0086_L1_baptism_09",
+   "text": "Тысяча восемсотъ Пятдесятъ шеста",
+   "status": "image_checked",
+   "note": "no hyphen visible"
+  },
+  {
+   "id": "0086_L1_baptism_11",
+   "text": "скомъ Р: К: Приходскомъ Костелѣ Викар[-?]",
+   "status": "draft",
+   "note": "faint stroke after р may be a hyphen"
+  },
+  {
+   "id": "0086_L1_baptism_12",
+   "text": "нымъ онаго Кс: Юліяномъ Ду[к?]ѣвичемъ",
+   "status": "draft",
+   "note": "priest surname 3rd letter doubtful (к/н)"
+  },
+  {
+   "id": "0086_L1_baptism_13",
+   "text": "окрещенъ младенецъ именемъ Франци",
+   "status": "image_checked",
+   "note": "именемъ complete; no hyphen visible"
+  },
+  {
+   "id": "0086_L1_parents_02",
+   "text": "Агнѣшки урожденной Ми-",
+   "status": "image_checked",
+   "note": "ѣ form as in Костелѣ"
+  },
+  {
+   "id": "0086_L1_parents_03",
+   "text": "лашіовной Норвиловъ",
+   "status": "image_checked",
+   "note": "capital is the clerk's N-shaped Н (same as Норви- in godparents), final ъ present"
+  },
+  {
+   "id": "0086_L1_parents_05",
+   "text": "родившійся 1856. Года Іюн[ь?]я",
+   "status": "draft",
+   "note": "tall Г; month appears written with an extra ь-like letter (Іюнья), as in other lines of this clerk"
+  },
+  {
+   "id": "0086_L1_parents_06",
+   "text": "9. дня въ Деревни Ми[ш?]а-",
+   "status": "draft",
+   "note": "village; hyphen crosses the rule"
+  },
+  {
+   "id": "0086_L1_parents_07",
+   "text": "нахъ Плунгянскаго Прихода -",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0086_L1_parents_10",
+   "text": "цишки урожденой Шаки-",
+   "status": "image_checked",
+   "note": "single н in урожденой as written"
+  },
+  {
+   "id": "0086_L1_parents_11",
+   "text": "ніовной Гу[н?]ціовъ Законныхъ",
+   "status": "draft",
+   "note": "surname 3rd letter doubtful"
+  },
+  {
+   "id": "0086_L1_parents_14",
+   "text": "въ Деревни Лукнянахъ [-?]",
+   "status": "draft",
+   "note": "trailing wavy flourish, filler or stray"
+  },
+  {
+   "id": "0086_L1_godparents_02",
+   "text": "Крестьянинъ Лѣонъ",
+   "status": "image_checked",
+   "note": "speck at left not transcribed"
+  },
+  {
+   "id": "0086_L1_godparents_03",
+   "text": "[Н?]арчевскій съ Крестьян",
+   "status": "draft",
+   "note": "initial Н or М; no hyphen visible before the rule"
+  },
+  {
+   "id": "0086_L1_godparents_04",
+   "text": "кою Юстыною Норви-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0086_L1_godparents_05",
+   "text": "ловною Девицею. - .. -",
+   "status": "image_checked",
+   "note": "clerk's ю resembles го"
+  },
+  {
+   "id": "0086_L1_godparents_07",
+   "text": "Крестьянъ воспріемни[-?]",
+   "status": "draft",
+   "note": "short stroke at the rule, probably hyphen"
+  },
+  {
+   "id": "0086_L1_godparents_09",
+   "text": "Шакинисъ. съ Петро-",
+   "status": "image_checked",
+   "note": "съ, not и"
+  },
+  {
+   "id": "0086_L1_godparents_10",
+   "text": "нелью Іосифа Сре[б?]а-",
+   "status": "draft",
+   "note": "surname; б (top stroke to the right) more likely than д; hyphen at rule"
+  },
+  {
+   "id": "0086_L1_godparents_11",
+   "text": "[лиа?] Супругою. - ..",
+   "status": "draft",
+   "note": "first fragment doubtful (лиа/ля/ша); possible further short dash merging with the rule"
+  },
+  {
+   "id": "0091_L1_baptism_01",
+   "text": "Тысяча восемсотъ Пятдесятъ шеста[го?]",
+   "status": "draft",
+   "note": "end of шестаго squeezed into the rule"
+  },
+  {
+   "id": "0091_L1_baptism_02",
+   "text": "Года Іюн[ь?]я двенацатаго дня въ Плун",
+   "status": "draft",
+   "note": "двенацатаго without д; month looks like Іюнья (extra ь-like letter, same as in Петронелья); no hyphen visible"
+  },
+  {
+   "id": "0091_L1_baptism_03",
+   "text": "гянскомъ Р: К: Приходскомъ Костелѣ",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_baptism_04",
+   "text": "Альтаристомъ онаго Кс: Эдуар-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_baptism_05",
+   "text": "домъ Жуковскимъ окрещенъ мла-",
+   "status": "image_checked",
+   "note": "single-stroke hyphen"
+  },
+  {
+   "id": "0091_L1_baptism_06",
+   "text": "денецъ именемъ Петронелья совсе[-?]",
+   "status": "draft",
+   "note": "ь before я is written; tiny hyphen stroke at the rule doubtful"
+  },
+  {
+   "id": "0091_L1_baptism_07",
+   "text": "ми обрядами таинства[.?] - .. -",
+   "status": "draft",
+   "note": "fillers: small dot, long dash, two dots, short dash"
+  },
+  {
+   "id": "0091_L1_parents_02",
+   "text": "Теодоры урожденной Пи-",
+   "status": "image_checked",
+   "note": "П as in Піотро-; hyphen crosses the rule"
+  },
+  {
+   "id": "0091_L1_parents_03",
+   "text": "воріовной Піотро-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0091_L1_parents_04",
+   "text": "вичовъ Зако[н?]ыхъ Супр[у?]",
+   "status": "draft",
+   "note": "appears to be written with a single н (Законыхъ); last letter overlaps the rule; no hyphen visible"
+  },
+  {
+   "id": "0091_L1_parents_05",
+   "text": "говъ Доч[ь?] родившаяся",
+   "status": "draft",
+   "note": "final sign of Дочь ь/ъ"
+  },
+  {
+   "id": "0091_L1_parents_06",
+   "text": "1856. Года Іюн[ь?]я 12. дня",
+   "status": "draft",
+   "note": "month matches the baptism line (Іюн-, not Іюл-), with extra ь-like letter"
+  },
+  {
+   "id": "0091_L1_parents_07",
+   "text": "въ[.?] Деревни [Волончай?]",
+   "status": "draft",
+   "note": "dot after въ may belong to the Д flourish; village doubtful (ч vs ц)"
+  },
+  {
+   "id": "0091_L1_parents_08",
+   "text": "[цяхъ?] Плунгянскаго Прихо[да?]",
+   "status": "draft",
+   "note": "end of Прихода blotted into the rule"
+  },
+  {
+   "id": "0091_L1_godparents_03",
+   "text": "Францишекъ Ду[м?]ар-",
+   "status": "draft",
+   "note": "surname: м/н"
+  },
+  {
+   "id": "0091_L1_godparents_04",
+   "text": "касъ съ Теодорою",
+   "status": "image_checked",
+   "note": "no и; ю resembles го"
+  },
+  {
+   "id": "0091_L1_godparents_06",
+   "text": "Пиво[р?]я Супругою. -",
+   "status": "draft",
+   "note": "surname matches mother's maiden name Пи-воріовной; р/н doubtful"
+  }
+ ]
+}

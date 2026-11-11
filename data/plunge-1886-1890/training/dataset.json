@@ -1,6 +1,6 @@
 {
-  "dataset_id": "e938848bdf71ecc4",
-  "directory": "data/plunge-1886-1890/training/exports/e938848bdf71ecc4",
+  "dataset_id": "ef82ca8fa9fcf4db",
+  "directory": "data/plunge-1886-1890/training/exports/ef82ca8fa9fcf4db",
   "annotation_files": [
     "data/plunge-1827-1-18/training/annotations.json",
     "data/plunge-1827-1-20/training/annotations.json",
@@ -9,16 +9,17 @@
     "data/plunge-1827-1-25/training/annotations.json",
     "data/plunge-1886-1890/training/annotations.json"
   ],
-  "annotations_sha256": "13ec27d09e3f8488d4cf4bd5521a5fca8b03f9796c49b03cbd2fcb37bdac7668",
-  "approved_labels": 2994,
-  "draft_labels": 3196,
+  "annotations_sha256": "002aa52ecffc252907ee101fd76d1261b5ff51b3bbe7a0c04795e5df5b7c9262",
+  "approved_labels": 3221,
+  "draft_labels": 3556,
   "counts": {
-    "test": 419,
-    "train": 2174,
-    "validation": 401
+    "test": 445,
+    "train": 2333,
+    "validation": 443
   },
   "by_book": {
     "plunge-1827-1-18": 454,
+    "plunge-1827-1-20": 227,
     "plunge-1827-1-22": 420,
     "plunge-1827-1-24": 420,
     "plunge-1827-1-25": 394,
@@ -26,23 +27,23 @@
   },
   "hands_by_split": {
     "train": {
-      "unknown": 1680,
+      "unknown": 1839,
       "early_candidate": 251,
       "later_candidate": 243
     },
     "validation": {
-      "unknown": 284,
+      "unknown": 326,
       "early_candidate": 62,
       "later_candidate": 55
     },
     "test": {
-      "unknown": 328,
+      "unknown": 354,
       "early_candidate": 51,
       "later_candidate": 40
     }
   },
-  "independently_verified_labels": 1681,
-  "independently_verified_evaluation_labels": 472,
+  "independently_verified_labels": 1810,
+  "independently_verified_evaluation_labels": 519,
   "readiness": "pilot",
   "warning": "Labels are Claude transcriptions (blind Opus+Sonnet double reading with Opus adjudication, plus single-reader labels), not expert human ground truth."
 }

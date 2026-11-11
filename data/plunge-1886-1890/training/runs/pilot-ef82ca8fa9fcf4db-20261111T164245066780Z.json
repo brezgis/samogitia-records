@@ -1,0 +1,64 @@
+{
+ "run_id": "pilot-ef82ca8fa9fcf4db-20261111T164245066780Z",
+ "kind": "pilot",
+ "dataset_id": "ef82ca8fa9fcf4db",
+ "counts": {
+  "test": 445,
+  "train": 2333,
+  "validation": 443
+ },
+ "hands_by_split": {
+  "train": {
+   "unknown": 1839,
+   "early_candidate": 251,
+   "later_candidate": 243
+  },
+  "validation": {
+   "unknown": 326,
+   "early_candidate": 62,
+   "later_candidate": 55
+  },
+  "test": {
+   "unknown": 354,
+   "early_candidate": 51,
+   "later_candidate": 40
+  }
+ },
+ "base_model": "/mnt/ssd240gb/anna/samogitia-htr/models/ppocrv6-small/small.safetensors",
+ "base_model_sha256": "3108259779f5abfed3908a1c9eafba64d17e4a2a169368c539ecfeff04c018f3",
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "command": [
+  "/home/anna/projects/samogitia-parishes/.venv-htr/bin/ketos",
+  "-d",
+  "cuda:0",
+  "--seed",
+  "1888",
+  "train",
+  "-f",
+  "path",
+  "--linetype",
+  "bbox",
+  "-t",
+  "/home/anna/projects/samogitia-parishes/data/plunge-1886-1890/training/exports/ef82ca8fa9fcf4db/train.txt",
+  "-e",
+  "/home/anna/projects/samogitia-parishes/data/plunge-1886-1890/training/exports/ef82ca8fa9fcf4db/validation.txt",
+  "--load",
+  "/mnt/ssd240gb/anna/samogitia-htr/models/ppocrv6-small/small.safetensors",
+  "--resize",
+  "union",
+  "--batch-size",
+  "8",
+  "--lrate",
+  "0.0001",
+  "--epochs",
+  "40",
+  "--quit",
+  "fixed",
+  "--augment",
+  "-o",
+  "/mnt/ssd240gb/anna/samogitia-htr/runs/pilot-ef82ca8fa9fcf4db-20261111T164245066780Z"
+ ],
+ "output_dir": "/mnt/ssd240gb/anna/samogitia-htr/runs/pilot-ef82ca8fa9fcf4db-20261111T164245066780Z",
+ "started": "2026-11-11T16:42:45.077373+00:00"
+}
