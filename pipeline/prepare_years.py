@@ -54,6 +54,8 @@ def main():
         sha = digest(source)
         for pg in lay['pages']:
             rows = pg.get('rows', [])
+            if pg.get('merged_into'):      # spread form: this page's cells belong to the other page's rows
+                continue
             if not rows:
                 empty.append({'page_id': f"{scan:04d}_{pg['page']}", 'reason': 'no table rows detected',
                               'note': 'cover, inserted decree/amendment, blank, or layout failure: check by eye'})
@@ -62,6 +64,9 @@ def main():
                 row_id = f"{scan:04d}_{pg['page']}{i}"
                 x0, x1 = (0, w // 2) if pg['page'] == 'L' else (w // 2, w)
                 bbox = [x0, max(0, r['y0'] - 70), x1, min(h, r['y1'] + 150)]
+                if r.get('cells'):         # spread form (layout_spread.py): the entry runs across both pages
+                    ys = [v for c in r['cells'].values() for v in (c[1], c[3])]
+                    bbox = [0, max(0, min(ys) - 70), w, min(h, max(ys) + 150)]
                 target = BOOK / f'processed/rows/{row_id}.jpg'
                 image.crop(tuple(bbox)).save(target, quality=92)
                 queue.append({'row_id': row_id, 'scan': scan, 'page': pg['page'], 'row_index': i,
@@ -69,7 +74,8 @@ def main():
                               'entry_no': None, 'entry_no_status': 'not_read',
                               'image': str(target.relative_to(ROOT)), 'source': str(source.relative_to(ROOT)),
                               'source_sha256': sha, 'image_sha256': digest(target), 'bbox': bbox,
-                              'focal_y': [r['y0'], r['y1']], 'layout_status': 'automatic_unreviewed',
+                              'focal_y': [r['y0'], r['y1']], **({'cells': r['cells']} if r.get('cells') else {}),
+                              'layout_status': 'automatic_unreviewed',
                               'in_target_year': False, 'transcription_status': 'pending',
                               'hand_group': 'unknown', 'hand_group_status': 'not_assigned'})
     (BOOK / 'processed/queue_years.json').write_text(json.dumps(queue, ensure_ascii=False, indent=1))

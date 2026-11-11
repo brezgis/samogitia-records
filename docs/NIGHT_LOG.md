@@ -138,3 +138,30 @@ translation, model training ... as you can"). Entries are appended as work compl
   (images decoded before the leaf moves; Web Animations; bounded waits).
 - Known gap: parse_entries.py rarely extracts father/mother in books 25, 22, 18 (formula variants),
   so search by parent name is weak there.
+
+## Daytime, 2026-11-11 (Anna: "keep cooking all day")
+- Pushed to GitHub (merged with the Pages setup made there: CNAME samogitia.brezgis.com, root page,
+  page images of the two published books). GUI: random start spread, retry of failed page images.
+- **Disk:** the system drive hit 100%. Removed the unused first-stage row crops (`data/*/rows`,
+  regenerable by layout.py) and moved scans, row images and line crops of the five finished books
+  to /mnt/ssd1TB/anna/samogitia-data (links left in place; .gitignore covers the links). New
+  books' scans go to /mnt/ssd240gb/anna/samogitia-data. Each book needs about 5 GB while in work.
+- **Book 1827/1/20 is October 1854 – August 1857** and uses a two-page form (left: margin
+  surname, No., sex tallies, days, baptism; right: parents, godparents, signatures).
+  `pipeline/layout_spread.py` joins the two pages (rows = union of both pages' rules, explicit
+  cell boxes, all rows filed under page L); prepare_years.py and segment_lines.py accept the cell
+  boxes; run_book.sh runs it when the book has form.json {"form": "spread"}. v6 draft: 813
+  entries (1854: 71, 1855: 291, 1856: 269, 1857: 182). Side columns (34 Sonnet agents) and a
+  reading round (30 entries, 27 agents) launched.
+- **Archive survey** (Opus agent; details in the agent's report, summarised here): fond 1827 has
+  only files 1–25 online; Plungė births Sept 1857–1866, 1875–1885 and 1891–1895 are NOT on
+  epaveldas as scans (only catalogue links to EAIS, which blocks automated access: consistory
+  duplicates LVIA 669/18 Rietavas deanery, drafts LVIA 3005/63). Compatible neighbours with full
+  scans: Rietavas 1828/1/2,3,6,7,8,10,12,15 (1855–1905), Salantai 1517/1 (1856–1914), Plateliai
+  1661/1/5,7,8 (1886–1915), Telšiai 1480/1 (single-page scans), Kantaučiai 1825/1. Search API:
+  POST /vepis-api/internal/find {"term": "\"Rietavo RKB\"", "page": 0, "pageSize": 100,
+  "filters": {"providerFacets_str": ["ARCH"]}}. `pipeline/download_book.py` added; Rietavas
+  1828/1/7 (1877–82) and 1828/1/12 (1892–99) downloading.
+- Lithuanian: glossary being rewritten for 1849–1907 (Opus agent) with fixed decisions on maiden
+  names, women's surnames, Russian endings, places and clergy; `pipeline/lt_fix_chunks.py` and
+  `merge_lt_fix.py` prepared for a correction pass over all five books (250 chunks).

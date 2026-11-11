@@ -9,13 +9,19 @@
    "page": "L",
    "ok": false,
    "v": [],
-   "h": []
+   "h": [],
+   "rows": [],
+   "form": "spread",
+   "spread_note": "no joined rows: left table not found"
   },
   {
    "page": "R",
    "ok": false,
    "v": [],
-   "h": []
+   "h": [],
+   "rows": [],
+   "form": "spread",
+   "merged_into": "L"
   }
  ]
 }

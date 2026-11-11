@@ -35,33 +35,9 @@
     3218,
     3225
    ],
-   "rows": [
-    {
-     "y0": 707,
-     "y1": 1233,
-     "suspect": false
-    },
-    {
-     "y0": 1233,
-     "y1": 1867,
-     "suspect": false
-    },
-    {
-     "y0": 1867,
-     "y1": 2552,
-     "suspect": false
-    },
-    {
-     "y0": 2552,
-     "y1": 3218,
-     "suspect": false
-    },
-    {
-     "y0": 3218,
-     "y1": 3884,
-     "suspect": false
-    }
-   ]
+   "rows": [],
+   "form": "spread",
+   "spread_note": "no joined rows: right table not found"
   },
   {
    "page": "R",
@@ -75,7 +51,10 @@
    "h": [
     389.1673789173789,
     714.0
-   ]
+   ],
+   "rows": [],
+   "form": "spread",
+   "merged_into": "L"
   }
  ]
 }

@@ -7,7 +7,10 @@
  "pages": [
   {
    "page": "L",
-   "ok": false
+   "ok": false,
+   "rows": [],
+   "form": "spread",
+   "spread_note": "no joined rows: left table not found"
   },
   {
    "page": "R",
@@ -43,7 +46,10 @@
     3028.0,
     3176.25,
     3565.75
-   ]
+   ],
+   "rows": [],
+   "form": "spread",
+   "merged_into": "L"
   }
  ]
 }

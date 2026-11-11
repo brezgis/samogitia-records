@@ -1,0 +1,4241 @@
+{
+ "source": "data/plunge-1827-1-20/processed/year_draft_1854_plunge-v6.json",
+ "model": "/mnt/ssd240gb/anna/samogitia-htr/models/plunge-v6/model.safetensors",
+ "note": "Machine-extracted fields from machine drafts. Unverified.",
+ "entries": [
+  {
+   "row_id": "0004_L1",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Воспріетниками",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Мѣсацъ Тыслча Зосемсотъ патьесотъ четьертаг года. Октгбра втарого дня въ Плунянско мъ",
+    "parents": "Воспріетниками Пими",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0004_L2",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "мъАнна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянннъ:",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Кимско-Католнческомъ Прлхобмомъ Каст нъ  Альтрлстомъ онаго Кастена= Кс. Мотеушомъ Тмиикомъ скрщенъ младенъмменеммъ Анна со всме обрадами Тяннтва --- Тыгача Воссмсотъ пятьдесятъчетвертаго года, октябрг трстьяго дне, въ Плунгятъкомъ Р. В. приходекомъ Кастеслѣ  Аль терихтомъ онаго Кс. Матеунонъ Шылейкомъ окре-",
+    "parents": "Крестьянннъ: Пнашъ, йанина Лна Венгамя вупругою. - - . -  - .  -- Восріемтками были Критьянинъ: Іомфъ Кукунски, съ Парбарого Критя-",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0004_L3",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Онаго Кс: Ю.аяномъ Дулѣвочемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "БарбараЮстина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "инна",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "щоемъ маденемъ ммтененъ Теня со всѣмми обрядани Таинства.  - --- Тыяча восемсотъ Пятдесятъ четвертаго года Окстяб ря седмаго дня въ Плунгянскомъ Р:К: Пригодскомъ Костемъ Викарнымъ Онаго Кс: Ю.аяномъ Дулѣвочемъ окрещенъ младенецъ Іменемъ Барбара Юстина со віеми обрядами таинства! - . -  -    - - „ - „ - „ - .",
+    "parents": "инна Кукульског дѣвимю. .. - . -- Воспріемниками быи Крестіяхинъ Іосифъ Довнло съ Барбарою Крестіянина Ягнатія Суда Супругог.  „ -. -. Воспріемниками были",
+    "godparents": ". -"
+   }
+  },
+  {
+   "row_id": "0004_L4",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Агнѣтка",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянинъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча восемсотъ Пятьдесятъ четвертаго года октября седмаго дня въ Плунгянскамъ Р.К. Приходскомъ Костелѣ Алітаристомъ онаго Кс: Матеунмомъ Иилейкомъ окрещенъ Мляденецъ Яменемъ Агнѣтка со всеми обами таинства. - а - -",
+    "parents": "Крестьянинъ Антони Роговсъ Анного Крестьянина Франщишка Лявданскаго Супругою. - р КВоспріемниками ды",
+    "godparents": ""
+   }
+  },
+  {
+   "row_id": "0004_L5",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Домищцеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": null,
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыняча восемсотъ Пятьдесятъ четвертяго года Октябра восмаго дня въ Плуныынскомъ Р.К: Приходекомъ Костелѣ Алвтаристомъ онаго Кс: Эдуардомъ Жуковскимъ окрещенъ младенецъ Іменемъ Домищцеля совеи обрадами таинства - -",
+    "parents": "",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0004_L6",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянинъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ Пятьдесятъ четвсртаго годеда тября восмаго дня въ Плунгянскосыъ Р.К: Пныаодска Костелѣ Альтаристомъ онаго Кс: Пуар домъ Туковкимъ окрещенъ младенецъ Іна Анна со всеми обрядами таинства. -  - . - -",
+    "parents": "Крестьянинъ Петръ Римейко съ Домицелью Крестіянина Сыльвестра Вонткѣвича Супругон 1 Воспріемниками были Крестъянинъ Франщимекъ Лаврецки съ Петронелью",
+    "godparents": "ло"
+   }
+  },
+  {
+   "row_id": "0004_L7",
+   "register_year": 1854,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0004_L7.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ПлящидаФранцитка",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянина",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча выссмъсотъ Пятьдае вертаго Года окстября девятегд Плунгянскомъ Р.: К: Приаодскомъ Костелѣ Альтаристомъ онаго Кс Мати унамъ Шилейкоммъ окрещенъ младенецъ менемъ Плящида Францитка, со всеми",
+    "parents": "Крестьянина Бартломѣч Густя Супругою.  и -. Воспріемниками были Крестьянинъ Янъ шакисъ Съ Маріяного Кре стгянина Антона Шакя Супругою -",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0005_L1",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 9,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Агнѣтска",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "ы Меркеляхъ Плун",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "крестіянинъ Казимиръ Давкинтисъ ъ Барбарог Крестьянина Яна гайня Супругог. . - „. - - б. - . и - а- и - „",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-09",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыняча восемеотъ Петьдесятъ четвертаго года октября девятаго дня въ Плунгянскомъ Р.К: Криходскомъ Костелѣ Альтаристомъ онел Кс: Эдуардомъ Туковкимъ окрещенъ Младенецъ Яненемъ Агнѣтска со всеми обрядами Таинства",
+    "parents": "Крестьянъ Матсуна и Анныуро денной Гайлѣовны Лукожіывъ законныаъ Супруговъ Дочь родив шаяся 1854. Года октября 9. дня въ Деревны Меркеляхъ Плун гянскагь Крихода - . .",
+    "godparents": "Воспріемниками были крестіянинъ Казимиръ Давкинтисъ ъ Барбарог Крестьянина Яна гайня Супругог.  . - „. - - б. - .  и - а- и - „-"
+   }
+  },
+  {
+   "row_id": "0005_L2",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронема",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьянинъ Казимиръ чесновкій съ Анног Крестьянина Ігнатія Юрка Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсятъ Пятдесятъ четвертаго года октября десятаго дня въ Плунгянскамъ Р.К: Приходскомъ Костелѣ Альтаристомъ онаго Кс: Эдуардомъ Туковскимъ окрещенъ младенецъ Іменемъ Петронема совсеми обрядами Таинства. -    -",
+    "parents": "Крестьянъ Антона и Анныгуро Пденной Милашговны Жутов товъ Чаконныхъ Супруговъ Дочъ родившаяся 1854. года октября 1. дня въ Мѣстѣчки Плунгянахъ и тогожъ Прихода. -",
+    "godparents": "Воспріемниками были Крестьянинъ Казимиръ чесновкій съ Анног Крестьянина Ігнатія Юрка Супругою. -  - . -"
+   }
+  },
+  {
+   "row_id": "0005_L3",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Франиыимкамаріяна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Годыеикахъ Прунгянскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Інатій Ірникисъ съ Ан ноюо Крестьянина анто на Урникя Супругог",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыняча восемотъ Пятдесятъ четвертаго года Октября единащатаго дня в Плунгянъ скомъ Р.:К: Приходскомъ Костелѣ Альта риетомъ Онаго Кс: Матеуномъ Шилейкомъ окрещенъ младенецъ Іменемъ Франиыим ка маріяна со всеми одрядами тыинстыа -",
+    "parents": "Крестьянъ Антона и Петронся кй урожденнай Ірникувны Яновскихъ Законвмъ Спруговъ Дочь родившаяся 1859годаоктяб ря 11. днча въ Деревни Годыеикахъ Прунгянскаго Прихода. -",
+    "godparents": "Воспріемниками были Інатій Ірникисъ съ Ан ноюо Крестьянина анто на Урникя Супругог. -"
+   }
+  },
+  {
+   "row_id": "0005_L4",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріянаанна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьямъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Тарвайняхъ Тлунгянскаго Прххода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "крестьянннъ Янъ Тикисъ Бъ Анного Крестьянина Казимира Геншавскѣго супругою. - и",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыняча восемготъ Пять десятъ четвертаго года Октября тринацатаго дня въ5лунгян скомъ Р.К: Приходскомъ Костелѣ Альтаристанъ онаго кс: Э Дуардомъ Туковскимъ окрещценъ младенецъ Іиснемъ Маріяна анна совем-",
+    "parents": "Крестьямъ Даминика и Агнѣмки Крожденной Яновской Шакіовъ чаконныхъ Супруговъ Дочь родив186 4 года октядря В3. дня нъ деревни Тарвайняхъ Тлунгянскаго Прххода. - . -",
+    "godparents": "Воспріемниками были крестьянннъ Янъ Тикисъ Бъ Анного Крестьянина Казимира Геншавскѣго супругою. - и - ..-"
+   }
+  },
+  {
+   "row_id": "0005_L5",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 15,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онаго ка. КЮліянамъ Дулѣвичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ВинцентыАнтони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "крест янитъ Антони шліожа съ Юміяною Дварянина Яна шимкѣвича Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-15",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча волемсотъ Пять десятъ четвертаго года октября петнацатаго дня въ Плунгянскымъ Р.К: Приходкомъ костелѣ Викарнымъ онаго ка. КЮліянамъ Дулѣвичемъ окрещенъ младенецъ Іменемъ Винценты Антони со веми одрядатаинства - «- и -",
+    "parents": "Крестьянъ Викентія и Уреули угождснной Жуковской яубовскихъ Ваконныхъ Супруговъ Сынъ родившійсся 1854. года октядря 1 дня въ городѣ Тельшахъ и тогожръ",
+    "godparents": "Воспріемниками были крест янитъ Антони шліожа съ Юміяною Дварянина Яна шимкѣвича Супругою. -"
+   }
+  },
+  {
+   "row_id": "0005_L6",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 15,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онаго Кс: Юліяномъ Дулѣвичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Інатіи",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестіянинъ ЭЭгнатій Кведерасъ съ Аг нѣмкого Крестьянуна Ягнатія Бурвя Супругою. Т",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-15",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча волемсотъ Пятьдесятъ четвсртаго года сктября петнацатаго дня въ Плунгянскомъ Р.К: Приходткомъ Костелѣ Викарнымъ онаго Кс: Юліяномъ Дулѣвичемъ окрещенъ младенецъ Іменемъ Іна тіи со всми обрядами таинства. - ..-",
+    "parents": "Крестьянъ Іосифа и Людовики урожденной Мацеѣвской Юрчіовъ законныхъ Супруговъ Сынъ родившіи я: 1859н г2оЯ нахъ итябряъ 15р. дня въ-",
+    "godparents": "Воспріемниками были Крестіянинъ ЭЭгнатій Кведерасъ съ Аг нѣмкого Крестьянуна Ягнатія Бурвя Супругою. Т...-"
+   }
+  },
+  {
+   "row_id": "0005_L7",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L7.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 16,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онаго Кс: доміяномъ Дулѣвикемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Ти дашсаицядръ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьянинъ Антони Рунейка съ агнѣмкою Крес тіянина Бартламмѣя Вайтка Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-16",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ Пятьбесятъ четвертаго Іодавк тября шеснацатаго дня въ Плунгянскомъ В.К: Приходскомъ Костелѣ Викарнымъ онаго Кс: доміяномъ Дулѣвикемъ окрещенъ младенецъ Іменемъ Антони со веми обрядами таинетва",
+    "parents": "Крестьянъ Казимира и Петронема В урожденной рупвйкувнв урникіовъ Законнвхъ Супруговъ Сынъ родня. гімеревни Ти дашсаицядръ",
+    "godparents": "оспріемникамя были Крестьянинъ Антони Рунейка съ агнѣмкою Крес тіянина Бартламмѣя Вайтка Супругою. -  - . -"
+   }
+  },
+  {
+   "row_id": "0005_L8",
+   "register_year": 1854,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1827-1-20/processed/rows/0005_L8.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 16,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онаго кс: Юміяномъ Дулѣвичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Теодара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "м гомь 1854года",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьянинъ Мацѣй Тома мевскій съ Агнѣшкого кресть янина Миколая урбона Супругою. - К. - Воспріемниками были Кресті янинъ Іосифъ Гульбинвсъ съ илѣонарочв Крестьянина АнтонаСтунка Супругого. оспріемниками были Крестьянинъ Винценты Шимнусъ съ тьянкою Петронелю тила шувного Девицего",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-16",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ Пятьдесятъ четвертаго года октября шеснатцатаго дня въ илунгянЭкомъ Р:.К: Приходскомъ Костелѣъ Викарнымъ онаго кс: Юміяномъ Дулѣвичемъ окрещенъ у денецъ Іменемъ Теодара со всми обрядами Таснства. - . ТКыняча восемсотъ Пятьдесятъ четвертаго года октября семнацтаго дня въ Плунеянкомъ Р.К: Прихобекомъ Костелѣ младенецъ Яменемъ Іънааеусоомъ Молеиламъ окрещенъ тамнства. -исяча восемчотъ Пятьдесятъ четвертаго годо онтября восемнатцатаго дня въ Плунган амъ Р.К: Приходекомъ Костелѣ Альтаристомъ онаг ке: Эдуардомъ Туковмимъ опрещенъ младенем Іменемъ Петронеля со віеми вбрядами Таинетва",
+    "parents": "Крестьянъ Павла и Анныъ урожденной Ка вецкой Витковъ Ваконынъ сСупруговъ Сынъ родившійся года Октября 16. дня. въ Дереви Юдеінаяъ Плунгянскахо Прихода. -  -. Крестьянъ Ігнатіи и Елѣонорвъ ургожденнои Левданекой Жиіовъ ЗскожвАыхъ Сувъ Д еревнм гомь 1854года 17гяненаго рихода.Дворянъ Даминика и Теодоры урожВ деной Пѣневской Богдановича въ Ка коныгмъ Супруго въ Дочь родившаяга въ Деревныъ каримнааъ 1854 годаок Крес тября 18. дня плунгянскаго Прикода-",
+    "godparents": "Воспріемниками были Крестьянинъ Мацѣй Тома мевскій съ Агнѣшкого кресть янина Миколая урбона Супругою. - К. - Воспріемниками были Кресті янинъ Іосифъ Гульбинвсъ съ илѣонарочв Крестьянина АнтонаСтунка Супругого. оспріемниками были Крестьянинъ Винценты Шимнусъ съ тьянкою Петронелю тила шувного Девицего -"
+   }
+  },
+  {
+   "row_id": "0006_L1",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Фортунатъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крсстьмснъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Васончайцяхъ Плунгянскаго приаода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ тетдесятъ четвер таго Еода, Юктября двацатнерваго дня въ Плунгянскомъ Р.К. Приходскомъ костѣлѣ Алотаристомъ Оного Кс. Матеутомъ Шнлейког окрещенъмлоденецъ именемъ Фортунатъ со всѣмно обрядами Таинства-",
+    "parents": "Крсстьмснъ ФРортуната и Д -Інны, урорденой Довгялов ной Ірникіовъ Заканныхъ супруговъ сынъ, родившійсян 1854года Октябра 2. дна деревни Васончайцяхъ Плунгянскаго приаода.",
+    "godparents": "Зоспріемниками бвали Крестьмнннѣ Іозпръ ггль шъ съ Крестьмнкоюо Бе-иіног Іриико вною. ."
+   }
+  },
+  {
+   "row_id": "0006_L2",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Францашскъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Видеикахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмннны Гозпръ Заумъ съ Петронелен Крестімника. Антонего рловского супругог",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча восемсотъ пятдесятъчетвртаго года Октаб ра двацатвтарого дна въ Плунганскомъ Р.К. Приаодскомъ костелѣ Атарнстомъо наго Кс. Мате тномъ Шилейкою, окрещенъ младенецъ мменемъ Францашскъ съ всѣма",
+    "parents": "Крестьянъ Францника. ввы, урожденой Грицевной Дауліовъ Законныхъ супруговъ сынъ родившійсъ 1854. года Октабри 2.дня въ деревни Видеикахъ.",
+    "godparents": "Поспріемниками быми Крестьмннны Гозпръ Заумъ съ Петронелен Крестімника. Антонего рловского супругог. "
+   }
+  },
+  {
+   "row_id": "0006_L3",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ТамонъиЮда",
+     "source": "model"
+    },
+    "estate": {
+     "value": "урнакнекыго",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "ш",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ ВинцентвКумсковскій съ Крести инкою Марціяного Са мовскою дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыиияча воссмсотъ пятдесятъчсетвертего годо Октабря дващатеемогоіня, въ П.лунганском Р.К. Приходскомъ Костелѣ, Ллстарнстомъ Онаго Кс. Рсуардомъ Туковскнмъ окрещенъ иладенецъ именемъ Тамонъ и Юда со всѣми",
+    "parents": "урнакнекыго Прилода. Крестьмнъ Казимьра и Анв І урожѣденой Пунтовто вног Пурликовскнаъ Законвхъ супруговъ. вн ъ роди вшійся 1854. года Октосбря 27. дня, въ деревш",
+    "godparents": "Зыпрямникаим быеи Крестьмнинъ ВинцентвКумсковскій съ Крести инкою Марціяного Са мовскою дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0006_L4",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Пркеляхъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "ыи",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмниыъ Антитувнемі ъАнного Матуціово со вдовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тасяча восемсотъ пятдесятъ четвертого года стябра двацатсядмаго дна, въ Плунганскомъ Р.К. Приходскомъкостелѣ Алятаристомъ оннъ Кс. Пуардомъ Туковскнъ окрещенъ младенецъ именемъ Янъ со всѣмѣ обрядами Таинства.",
+    "parents": "Пркеляхъ тогожиъ прихода Крестьмнъ Мащея и Марімнъ уротденой Паидовской Витговъ Ваконыхъ супруговътъ ынъ, родившійся 1854. года Октябра 2 Р. дна въ деревыи",
+    "godparents": "Воспріемника ми были Крестьмниыъ Антитувнемі ъАнного Матуціово со вдовою. -"
+   }
+  },
+  {
+   "row_id": "0006_L5",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Дсомиъео",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ркылмхъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Меркенахъ Плунгоін",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Фрон цншекъ Белавскій бы Анеги кого Крестьмінина Антонего Пакаинискя сун ругог",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемсотъ пятдесятъ четвертого года ктабря двацатвостогодня въ Плунгянскомъ Р.К. Приходскомъ кытнннѣ Алотарнстомъ наго не )дуа рдомъ Туковскемъ окрещенъмла денецъшиыенемъ Дсомиъео оо всѣми",
+    "parents": "ркылмхъ тогосъ прихода. Крестъмнъ 2іонизіе иАнны урожденой Гензіовной Гуй -бовъ Зсконныхъ сунруговъынъ родивній с В54. года Остабря 17. дня въ. деревни Меркенахъ Плунгоін-",
+    "godparents": "Зыпреемника иги были Крестьмнинъ Фрон цншекъ Белавскій бы Анеги кого Крестьмінина Антонего Пакаинискя сун ругог. -"
+   }
+  },
+  {
+   "row_id": "0006_L6",
+   "register_year": 1854,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0006_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "АннасывнмиобрлдамиТоинстьа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "прихюа.Крецемнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Ідги кыхъ тогое",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмненнъ Птръ именкиъ ъ Анного идейковно давшло",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыляча восемсотъ Тятдесятъ челъ встго года Октабри двщатдевятаго ся, въ Плунгянском Б Р.К. Пригодскомъ стелѣ,  Алотарнстомъ Онсго Кс. Матеуномъ Ишлейкою окрещенъ теденецыименемъ  Анна сы внми обрлдами Тоинстьа.",
+    "parents": "прихюа.Крецемнъ Винцентего и Петронеми урох деной Па шиловной венгоніавъ Ва. коныхъ супруго въ дочь. ро В дившаясм Т1854года Д ктября 29. дня, въ деревни Ідги кыхъ тогое прилода. -",
+    "godparents": "Випріемникамии были Крестьмненнъ Птръ именкиъ ъ Анного идейковно давшло. -"
+   }
+  },
+  {
+   "row_id": "0007_L1",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 29,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Патронемя",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Ірестямнки",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Покпршнаг Плунгамскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнынѣ. Іозиръ вумбмиъ бъ озалію Амксандровного дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-29",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Таиемча восемсотъ пятдесятъчствертагогодо Октен ря двацатдевятно дня, въ Плунгенскомъ Р.К. Прекодскомъ костелѣ, Алотаристо иъ оного нс. латеуномъ Шллейкогъ окрещенъ ыла денецъ именемъ Патронемя со всѣми обрядами Таинства.",
+    "parents": "Ірестямнки Анны вуибліовны нзакоино рожденам до, роди вшамся 1854. года Онтен ра 29. дня, въ д.ревни Покпршнаг Плунгамскаго прихода. -",
+    "godparents": "Воспріемникам были Крестьмнынѣ. Іозиръ вумбмиъ бъ озалію Амксандровного дѣвицею. .. -"
+   }
+  },
+  {
+   "row_id": "0007_L2",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 30,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Видейкахътого",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ ДДаиинихъ Венгамсъ бъ Анного Крестьмнина ветра вуибла супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-10-30",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Пыемча восемсотъ пятдсеятъ четвертаго года Октябра трицатаго дня Къ Плунгянскомъ Р.К. Прикодском в костенѣ, Алотарелстомъ Оного Кс. Вуордомъ Туковскихъ окрещзенъ мраде нецъ именемъ Анна со всѣми обря дамъи Таинства.",
+    "parents": "Крестьмнъ Фаликса и влеоно ра, урозденой Гавновной Мацесвскихъ Таконыхъ супруговъ дось родившгяся 1857года ктября 30. дна, 6ъдеревни Видейкахътого .",
+    "godparents": "Восѣ. ри мникам были Крестьмнинъ ДДаиинихъ Венгамсъ бъ Анного Крестьмнина ветра вуибла супругою:  -"
+   }
+  },
+  {
+   "row_id": "0007_L3",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "вимъ ного Кс Юліяномъ Думе вичеднъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Зозиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ихада.",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ танисливъ СтраукуъдПронцишикаго Восконтово ритѣмнина Павла супругою. тоже",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пястдесятъ четвертао года Октября трицаттервого дня въ Плунгмнскомъ Р.К. Прияодскомъ Костелѣ Викарнвимъ ного Кс Юліяномъ Думе вичеднъ, окрещенъ міео дещецъ итенемъ Зозиръ съ всѣми обродами Месянъ",
+    "parents": "ихада. рестьмнъ Игнатія иГва рбарва, урожденой Поцевшй Янковскихъ Іаконныхъ супруговъ сынъ родовшііся 1854. года Остаг ря з0. дня, 66 К беревни. Пукиянахъ Кумвского Ноябрь",
+    "godparents": "Воспріемниками были Крестьмнинъ танисливъ СтраукуъдПронцишикаго Восконтово ритѣмнина Павла супругою. тоже"
+   }
+  },
+  {
+   "row_id": "0007_L4",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ванценты",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Іо",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Впапенты воровскій бъ. Кораржиного Кресстьянуеа Іозера Бумблао супругого",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемсотъ пятдесмтъ четвертно года Поябра перваго дня, въ П. сунганскомъ Р.К. Прилодскомъ Костемѣ Вихарраги Онаго Кс. Юлімнъ Дулмвияьмъ окре щенъ младенецъ именемъ Ванценты совсѣми обрядами Таннсѣв..",
+    "parents": "Крестьмнъ Мотеуша ихАнв урожденойМазрымовной Лукошіовъ Зоконныхъ супруговъ ынъ, радрвшійся 1854. года Поябрав дня, въ деревни Іо",
+    "godparents": "Воспріемниками быми Крестьмнинъ Впапенты воровскій бъ. Кораржиного Кресстьянуеа Іозера Бумблао супругого."
+   }
+  },
+  {
+   "row_id": "0007_L5",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "priest": {
+     "value": "нмъ онаго Кс. Юліяномъмми вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "вкараиыог",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Яздайцяхъ тогожъо при",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Са ннелавъ Петровшчь бъ Кунстанціего Крестьянина ефа Тисконта сунругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тымча восеисотъ пятдесятъ четвуртн года Поября второго дня, въ Пунан скомъ Р.К. Прияодскомъ Костенѣ Викарнынмъ онаго Кс. Юліяномъмми вичемъ зкременъ младелецѣимонемъ ъ Барбара со всгѣми обрядами Таинст ва -",
+    "parents": "вкараиыог урланска о -прихода.Крескямнъ Игнацегои Петро нели уряѣденой Висконв й Висковъ Загоныисъ супруовъ дочь, родившаяся 185  .ода Ноября 1. дня, въ. деревни Яздайцяхъ тогожъо при",
+    "godparents": "Випріениками были Крестьмнинъ Са ннелавъ Петровшчь бъ Кунстанціего Крестьянина ефа Тисконта сунругою. -"
+   }
+  },
+  {
+   "row_id": "0007_L6",
+   "register_year": 1854,
+   "scan": 7,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0007_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ЮриевичетмъоретѣенъмладенецѣммиънемъВероникаиАнна",
+     "source": "model"
+    },
+    "estate": {
+     "value": ".рянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Каушаналъ тогоми при",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнанъ Гогсфъ Таммасъ бъ Вероникого Пемушбиикогодѣвимсн",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыелоча восемсотъ пятоесятъ четвертаго годо Ноября третьяг дня въ Тлунгянскомъ .К. Приходска мъ кокглѣ Викориымъ внаго Кс. 1ліеномъ Юрие вичетмъ оретѣ енъ младенецѣммиъ немъ Вероника и Анна со вѣми рядами Таинсть а -",
+    "parents": ".рянъ Доминика Птронеми, урорденей беломбищ кой 2анівъ Ісконнвхъсупруговъ дия роди вшая ся 185 Ірода. Носбря 2. дня вдеревни Каушаналъ тогоми при",
+    "godparents": "Воспріемникамѣ быяи Крестьмнанъ Гогсфъ Таммасъ бъ Вероникого Пемушбиикогодѣвимсн"
+   }
+  },
+  {
+   "row_id": "0008_L1",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": "вимъ Онаго Кс. Юліена нъ Дурілевичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Крстина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Олкекинахъ Плунгмнскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестыанинъ Антони верианокли бъ Кристихо гъ Крестьмни ФФранцешика Малевскы супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыимча восемсотъ пмтдессстъ четвіртао года Наабря третьмго дня, въ Плунгянском ъ Р.К. Приходскомъ Костемѣ Викарнвимъ Онаго Кс. Юліена нъ Дурілевичемъ окрещенъ млоденецъ именемъ Крстина совсѣми обрадами Таинства",
+    "parents": "Крестьмнъ Антонего и Бле онъры, уретденой вальсів нй Ковецкихъ законыхъ супруго въ дочѣ, родившаяся 1854. года Номбри 2. дна: въдеревни Олкекинахъ Плунгмнскаго прихода",
+    "godparents": "Воспріемниками были Крестыанинъ Антони верианокли бъ Кристихо гъ Крестьмни ФФранцешика Малевскы супругою. -"
+   }
+  },
+  {
+   "row_id": "0008_L2",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "виъ наго Кс. Юлімномъ Д Одмсвичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "иПтронема-Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ж",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Виснтованахъ П",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча восемсотъ пятдесятъ чет вертагогода Насряо седмогодня, въ Плунгмискомъ Р.К. Приходскоммъкостелѣ Викарнвиъ наго Кс. Юлімномъ Д Одмсвичемъ окрещценъммаденецъименами Птронема- Аннасо всѣмѣ обрлдамн Паинства. -",
+    "parents": "ж Крестьмн ъ Іозефа и Вероннри, прожденой Гарьоно вой Істрейкіо въ Зоконыхъ сунруговъ дочь родившаяся 1854. ода хоябра 6. дня, въ деревни Виснтованахъ П.лунянскаго",
+    "godparents": "Воспріемниками бым Двороминъ Петръ Мицевшьсъ. Подовикою Крестьмнина Іозера Себаясупругою. -"
+   }
+  },
+  {
+   "row_id": "0008_L3",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "тъПетронела",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Дидей кахъ Плунгянскиго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Іѣиръ Аливске бъ Петронелсго Крестьмнина Доминка Венгалм супруг",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыехоча восемсотъ пятдесятъ четвсртаго года Намгбраседмого днѣ въ Плунганскомъ Р.К. ПроходскомъКостелѣ Вилпраынмъ ныго Кс. Юліеномъ  умевичемъ, окриценъ младептезъ именетъ Петронела совсѣим обрядами Таинст ва--",
+    "parents": "Крестьмнъ Іѣзефра и Короли ны, урождмой Пупшевной Волужевзаконыхъ супруговъ дочь, родившнася 1857. г. Ноября Р. дня, въ дуревни Дидей кахъ Плунгянскиго",
+    "godparents": "Воспріемниками были Крестьмнинъ Іѣиръ Аливске бъ Петронелсго Крестьмнина Доминка Венгалм супруг."
+   }
+  },
+  {
+   "row_id": "0008_L4",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 9,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Онаго Кс. Пліяномъ Думы вгчм ъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Красть",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Виштовяно хъ Плунгинекого",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмннъ. Онуріи Ррефсъ бъ Саолястыкою Крестомнима Антонего Виткуса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-09",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "раиеу р а обеемсотъ пятдесятъ чет верѣл года Поябряневятаго дня, Съ млунгянекомъ Р.К. Приходскомъ Костелѣ Викорнымъ Онаго Кс. Пліяномъ Думы вгчм ъ окрещенъ мтаденецѣименемъ Анна совсѣми обрядами таинства. Тыс в-",
+    "parents": "Красть мнъ Фронцника Парзанв, уротденой Войчевной Ловринко въ аконныа ъ супруговъ дочь, родивтаяся 1859..г. Ноября 5. дня, въ древни Виштовяно хъ Плунгинекого прикыа. -",
+    "godparents": "Доспріемникми были Крестьмннъ. Онуріи Ррефсъ бъ Саолястыкою Крестомнима Антонего Виткуса супругою. -"
+   }
+  },
+  {
+   "row_id": "0008_L5",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 5,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "нвъ о Кс. саліяномъ Д усиевгочемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ѣИгнацы",
+     "source": "model"
+    },
+    "estate": {
+     "value": "урожденой",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Стамыляхъ тѣом",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнин ъ Винцента Висни вкі ъПатот критьянин Іазура Вовра суп рргою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "года Маября деватаго іня, въ Плунганскн Р.К. Приходскакъ Костелѣ Пикарнымъ нвъ о Кс. саліяномъ Д усиевгочемъ окреенъмладенецъименемѣ Игнацы со всѣми обрагдим танаства .",
+    "parents": "урожденой Мамко вной Вииневскихъ Іаконых ъ супруговъ сынъ, родившіе ся 1854 года Ноябра. 8. дня въ деревни Стамыляхъ тѣом Прихода",
+    "godparents": "Воспрімникам были Крестьмнин ъ Винцента Висни вкі ъПатот критьянин Іазура Вовра суп рргою -"
+   }
+  },
+  {
+   "row_id": "0008_L6",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": "енло Кс. Тліаномъ Дуя ивиемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "варвгуа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кретыанъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "д Ітяанмаъ тогоме",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьянинъ Леонъ Паркусъ съ варбырого Кресмь мнкогъ Стононковнагѣ авицен",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Таияча восемсотъпятдесятъ чет вертагогода Ныября десятаго дна, въ Плу нгянскомъ Р.К. Прихоскомъ коннем Викарнымъ енло Кс. Тліаномъ Дуя ивиемъ окрещенымладенецъ име мемъварвгуа со ксѣми об ряоам памнства -",
+    "parents": "Кретыанъ Іозсфа и Гозам уржрромденой СтанонковоиПавловскихъ законнахъ супруговъ дочь, родившаяс 1854. года Номбра 9- дня, въ деревни д Ітяанмаъ тогоме ѣ гихода. -",
+    "godparents": "оспріемниками были Крестьянинъ Леонъ Паркусъ съ варбырого Кресмь мнкогъ Стононковнагѣ авицен. -"
+   }
+  },
+  {
+   "row_id": "0008_L7",
+   "register_year": 1854,
+   "scan": 8,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0008_L7.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": null,
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "",
+    "parents": "",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0009_L1",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Оного Киендзамъ Вліяномъ Думевиочемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Мырганѣ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Прстьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Мордосахъ лунгынскаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "рестямнинъ Инотій Стувнемъ ъ Вероником Крескяяннна Іоефа Петровгоса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тасяча восемсотз пятесятъ чет вутагогода Ножря тринацтагодня въ Плунгмнскомъ Р.К. Приходскомъ костілѣ Викариямъ Оного Киендзамъ Вліяномъ Думевиочемъ окрещенъ младенецъ именемъ Мырганѣ. со всѣмн оббридами таинства.",
+    "parents": "Прстьмнъ Игнацегон Пстронемми,урожденой Пот ровгочовной Ю0рчіовъ Іаконныхъсупруго въ дочъ, редив шаяся 1854. г.Ножп ря 12. днхо въ деревни Мордосахъ лунгынскаго Прихода. -",
+    "godparents": "Восприсмниками быеи рестямнинъ Инотій Стувнемъ ъ Вероником Крескяяннна Іоефа Петровгоса супругою. -"
+   }
+  },
+  {
+   "row_id": "0009_L2",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онаго Кл. Пляяномъ утевгочемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Гозефъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Точутовянахъ тогоме при",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "--Тысмча восемсотъ тятдесятъ четвертрго года Ноябри четварнацтаго дня въ Плунгянскомъ Р.К. Приходскомъ костелѣ Викарнымъ онаго Кл. Пляяномъ утевгочемъ окрещенъ младенецъ ими немъ Гозефъ со всѣми обрядам таинства. -",
+    "parents": "Крестьмнъ Михалн и Петрроемн,уромдено Кр Собыевской Добила въ цоконныхъ супруговъ вснъ, родившіймя 1859. г. Наября 13. дня, въ деревни Точутовянахъ тогоме при",
+    "godparents": "Восѣріемникаути бым Кріестямнинъ Розиръ Кочвиъ ъ Пстронмею тувнело вною дѣвицею."
+   }
+  },
+  {
+   "row_id": "0009_L3",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Варбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "я Диштовя накъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Мыяча восемсотъ пятдесятъ четвутагагода Номбря чствурнацтого дна въ Плунгянскомъ Р.Н. Проходскоммъ Костемѣокрещснъ младенецѣ именемъ Варбара со всѣми обрядами таинства. -",
+    "parents": "Крестьмнъ Францишка и Маріаны, урожденой Гдговдовной Брачдейке овъ законвхъ супруговъ дчь родившая ся 185 7. Наябра В. дня, въ деревни я Диштовя накъ Плунгянскно приханв",
+    "godparents": "Доспріеениками бым Крестьянинъ Гозеъ Атрейкиъ съ Крестьянкою Ктрмелего Бела вского дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0009_L4",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 5,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Онаго Кс. 10мімномъ улмвгочемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ПертрудаПтронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кростяянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Станеляхъ Плунгмнскаго Пррихода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кристь. анинъ И.натій Теймнъ съ Анниного Крестьмнина. сона. Тешковскач супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдьсятъ четвертаго года Паября пятнацтаго дым, въ Плунгянскомъ Р.К. Приходскамъ костелѣ Викарнымъ Онаго Кс. 10мімномъ улмвгочемъ окретенъ младене цъ шменемъ Пертруда Птронеля со всѣми обрядами таинства. -",
+    "parents": "Кростяянъ Винщентего и Вероникн урожденой Мешковской Пруйніо въ Законныхъ супруговъ дочь то родившаяся 1854. г. Коябра 4. дня, въ деревни Станеляхъ Плунгмнскаго Пррихода. -",
+    "godparents": "Зоспріемниками были Кристь. анинъ И.натій Теймнъ съ Анниного Крестьмнина. сона. Тешковскач супругою.  - - -"
+   }
+  },
+  {
+   "row_id": "0009_L5",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "влеонора",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "В",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмненъ Іозеуъ Довгммгоъ Блеонорою Крестьмнин оминика Думар ко супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыемоча восемсотъ пятдеслтъ четвертаго года Ноябри шеснацзтаи ня, въ Плунгянскомъ Приходскомъ Р.К.. Костелѣ, Вид. Алотарнетамъ Онаго Кс. катеутомъ Шнмеикомъ окрещенъ. илаенеиѣ именемъ влеонора со вѣми обрядамни таинства. -",
+    "parents": "Крестьмнъ Францшка. Блоноры, уротденой -Миламе вной Думмарковъ Закопнваъ супруговъ до ч,ро дившасяся 1854. г. Номбри Д иявъ деревни В.понгаицяа тогоме",
+    "godparents": "Воспріеминиками были Крестьмненъ Іозеуъ Довгммгоъ Блеонорою Крестьмнин оминика Думар ко супругою. -"
+   }
+  },
+  {
+   "row_id": "0009_L6",
+   "register_year": 1854,
+   "scan": 9,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0009_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": null,
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-",
+    "parents": "",
+    "godparents": "-"
+   }
+  },
+  {
+   "row_id": "0010_L1",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ввасо",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ четвертаго года Ноября восемнкцтадиа, въ Пунгянскомъ Р.К. Приходскомъ Костелѣ Алрьтарыстымъ Днаго Кс. Матеуномъ Шнлейкомъ оарещетъ музаденецъ именемъ вва со",
+    "parents": "Крестьмнъ Тодерна и В Пмронсли, урожденойКреснъ Гаріоно вно й Петрыло въ Мики Іоконныхъ су пруговъ дачь родившаяся 1854.года Нояпбра 18дня, въ деревни",
+    "godparents": "опрісмниками бымъ Крестьмнинъ Козиміръ невшцьсъ Крестьмнкн Мгрціянѣ Войтви ловною дѣвицзею. -"
+   }
+  },
+  {
+   "row_id": "0010_L2",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 5,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "бръдМаріянаяИецисія",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Пурвойшааъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнине Станиславъ Тиивикасъ ы Мадаленон Крестьмниная Ана Штірза суппугою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Трряча восемсутъ пятдесятъ четгоди Паября двоатвторно дня въ Плунгянскомъ Р.К. Ппрнаодско .Альтаристомъ Фнаго Кс. М. комъ окреенъ мсаденецъиме хебръд Маріяная Иецисіясо всѣми",
+    "parents": "Крестьянъ Антоніи и П Анны, урот деной Собомевской Тыльвиховъ Зеконныхъ супруовъ доць, родив шаяся 1854.г. Наября П1 д. вдервни Пурвойшааъ",
+    "godparents": "иѣріемниками были Крестьмнине Станиславъ Тиивикасъ ы Мадаленон Крестьмниная Ана Штірза суппугою "
+   }
+  },
+  {
+   "row_id": "0010_L3",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "еиворбараПециѣя",
+     "source": "model"
+    },
+    "estate": {
+     "value": "плунгинмолго",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Мажіо вахъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестямнын ъ Фран итекъ вроздейки, А гоникогь Крестьлнина Іозира Гедговда супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ чемгода Ноябра двоцетвтарно ня въ Плунгянскомъ Р.К. Прияодсколъ Костенѣ, Алтаристомъ оннго Кс Матъ гнламъ Шилей комъ окреенъ инаденецъ мменамеи ворбара Пециѣя со всѣми обкададетамв",
+    "parents": "плунгинмолго рняод а. Крестянъ Смсона и Ірасемьды, урожденой Кузовов ной ЛажіовъЗконыхъ супруговъ дочь, родивнсяя Э 185Іт. номбра 22. диа, въ дуревни Мажіо вахъ",
+    "godparents": "Поспріемниками -быеи Крестямнын ъ Фран итекъ вроздейки, А гоникогь Крестьлнина Іозира Гедговда супругою. -"
+   }
+  },
+  {
+   "row_id": "0010_L4",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "тъАнтони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кресмьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ ни Гапшниъ бъ Анного Мияаловског уѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыияча восемсотъ пртдссятъ чем года Помбря двоатьторно дня, въ Плунганскомъ Р.К. Приходском Костенѣ, Анятаристомъ наго Кендзем Матеуномъ Тилейкомъ окрещень мраденецрменемтъ Антони со вѣмни обрядами таинстьа",
+    "parents": "Кресмьмнъ Іозира и Верорики, урожденой Невардов ской Михаловскихъ За-Аито коннваъ су пруговъ сынъ радившйчя 18511. года ромбря 22. дня, въ М. Пунянаазтогтир-",
+    "godparents": "г ВГыпріемниками -были Крестьмнинъ ни Гапшниъ бъ Анного Мияаловског уѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0010_L5",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "иварбараМа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестііинъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Ма рідвсаъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "й Луцанъ ъъло норого Крестьмнина вдо алтромея супругоюо",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Танмча восеместъ патдесятъ чегтаго гадъ Поябра двацатт ретаг я, Въ Плунганскомъ Р.К. прлад. ителѣ, Альтаристомъ Оннго ке Матеунымъ Шилей комъ окрещенъ мнаинецьименами варбара Ма -",
+    "parents": "Крестііинъ Іклра и мріеиъ хрождено Проіямгавь кой вмовъЗоконых: сун Игнот ругов дычь, роднвшя се 1859лода Комобра 23. дня водревни Ма рідвсаъ",
+    "godparents": "Дыѣріемниками быий Луцанъ ъъло норого Крестьмнина вдо алтромея супругоюо"
+   }
+  },
+  {
+   "row_id": "0010_L6",
+   "register_year": 1854,
+   "scan": 10,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0010_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ПіотръПавенъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "сульмноприявда.",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пети",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестсеянкинъ Антонѣ Буви Пноготармонто внан дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пяудесятъъ читырраго годи Помбря двыцсенятаг дня, в Плургянскомъ Р.К. приаодскомъ Котелѣ, Аняеесристомъ Пнлго Киндземъ Матеуномъ Имейктнъ окрещенъ совденецъ пренемъ Піотръ Павенъ",
+    "parents": "сульмноприявда. Марцнвныос,т урнъ дозефрам В оьмаи Минелсвъ ъ 9 даяній ио пугоычекнъ, рробня Въ деревни Пети-",
+    "godparents": "-Пприемниками был Крестсеянкинъ Антонѣ Буви Пноготармонто внан дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0011_L1",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Котартина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестімнъ.",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "а Маркяагя поготе",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестямниръ, Інтони Янховскій ы вомонісг Крестьммина. уустима иико вскаго супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсожъ пятдесятъ четвуртаго года Ноября двацатедмаго дна въ ПлунгмнскомП Р.К. Прикодском ъ кос тенѣ Алотарнстомъ наго Ко. Гыимун домъ Стефано вичем. окрещенъмладенецъ мыенемъ Котартина со всѣ мгоабридами таинства. -",
+    "parents": "Крестімнъ. Винцентго и Как арониныя урож ден ой Вло тевгчевной Васиивскохъ Іаконыхъ супруговъ дочь родившаяся 1854. гад Моигбря В. днс, К. деревна Маркяагя поготе прихода. -",
+    "godparents": "Воспріемниками были: Крестямниръ, Інтони Янховскій ы вомонісг Крестьммина. уустима иико вскаго супругою."
+   }
+  },
+  {
+   "row_id": "0011_L2",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "онсго Кс. плімномъ Думевичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "варбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Жикняяътогомеприхдд",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Теодаръ Тума ъ Петронелего Крестьмнинъ еуа Заншнса супругог",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыимча восемсо тъ пятдесмтъ четвертео года Ноябрии дващатвосмаго дня, въ Рлунгмнскомъ Р.К. Приходскомъ Кестелѣѣ Викаривмъ онсго Кс. плімномъ Думевичемъ окрещенъ младскецъ именемъ варбара со вѣми обрядами таинст ва. -",
+    "parents": "Крестьмнъ Гозираи Реона Іожфрги, урождекой Аконтовной Прамисовъ Усконыхъ спрра въ дочь, родовшамя 1854. года Нога бря 2. дня, въ деревни Жикняяътогомеприхдд",
+    "godparents": "Воспріемникам быми Крестьмнинъ Теодаръ Тума ъ Петронелего Крестьмнинъ еуа Заншнса супругог- -"
+   }
+  },
+  {
+   "row_id": "0011_L3",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 29,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріяна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестямнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Іозпра и Котариныа дождсной вновской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Тарвойнмхъ тогае",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестямуинъ Игнотій Тамнъ ъ варборою кишевною дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-29",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысмча восемсотъ пятдесятъ читвртаго год Аоя ря двоцатдевмтаго дня, въ Плунзянскомъ Р.К. Проходскомъ Костелѣ Асвтамстомъ Онаго Кс. М. Шнлейкомъ окрещенъ скецъ ишенемъ Маріяна сѣвсѣми",
+    "parents": "Крестямнъ Іозпра и Котариныа дождсной вновской Воловскиръ Іаконыхъ супруговъ дочь, радившаяся 1854. года Нам бра 18. днаР въ беревни Тарвойнмхъ тогае приход-",
+    "godparents": "оспрь иниками были Крестямуинъ Игнотій Тамнъ ъ варборою кишевною дѣвицею"
+   }
+  },
+  {
+   "row_id": "0011_L4",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 5,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антонина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Гимбуцкхъ Плунгинского",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Габріель бъабъъ Агатоо Латаховноюо дѣвицею - . тоте",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча водемосотъ тятдссятъ четвутаго гада Паября трищстаго дня, въ Плунгма скомъ Р.К. Приходскомъ Кастенѣ Алстаритомъ Онаго Нс. Раитмундомъ Стѣерановичемъ окреценъ маденецъиекемъ Антонина со вѣми обродами танства. Мѣсян Декабрь",
+    "parents": "Крестьмнъ Фраициника иПтронены,урот деной Сруговнаи Такіо въ Уконыхъ супруговъ дочь Кодившамся 1854. годМаа Пря удня въ деревни Гимбуцкхъ Плунгинского прихода.",
+    "godparents": "Зоспрісмниками Тыли Крестьмнинъ Габріель бъабъъ Агатоо Латаховноюо дѣвицею - . тоте"
+   }
+  },
+  {
+   "row_id": "0011_L5",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ГозефъАндреей",
+     "source": "model"
+    },
+    "estate": {
+     "value": "таме",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Каземір вскіъ Марімною Фестьмнина Козікика Бернота супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ четвертаго года скабра тперваго днм: въ Плунгянскомъ Р.К. Приходскомъ Костелѣ, Антаристомъ Онсго КсМатеутомъ Шллескомъ окрещенъмлоденецъ аменемъ Гозефъ Андреей совсѣмиободами таинства. -",
+    "parents": "таме Крестьмнъ Инацего и варбарв урожденой Гпрдвойніо вно. ТешковскиаъЗакомнвхъАнсупруговъ внъ, родившійчо. 1852 газа Лосября 3Р. дня, въ деревни",
+    "godparents": "Воспріемнсками были Крестьмнинъ Каземір вскіъ Марімною Фестьмнина Козікика Бернота супругою."
+   }
+  },
+  {
+   "row_id": "0011_L6",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антонійсо",
+     "source": "model"
+    },
+    "estate": {
+     "value": "ъпнхода.",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Алснеитааъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ чет вертого года скабра иостого дня, въ Плун. комъ Р.К. Приходскомъ костео ѣ Анстарвистол Онаго Кс. Расмундомъ Стырано вичемъ окревзерѣмоладененъ иииенемъ Анто ній со",
+    "parents": "ъпнхода. мнъ Антонім и Петро-В Пъ дено Лновской. вну шовъ Законвхъ супруговъ сыыъ родившійса 1854 годи Дска ро дня, въ деревни Алснеитааъ",
+    "godparents": "оспріетнскамм Твши сстѣянннъ Атоніе суровсклиъ Аннага пушевного дѣвицею.-"
+   }
+  },
+  {
+   "row_id": "0011_L7",
+   "register_year": 1854,
+   "scan": 11,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0011_L7.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "мсмаго",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Пынанахъ того же",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнннъ. Козиміу ашкнъ ъ Аолоніею мннна Інуа Іонуши супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-11-06",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тымча всемсотъ пятдесятъ четвертагогода скобряшестого днаъ, въ Плунганокомъ Р.К. нодскомъ Костелѣ, Алятаристамъ Оногъ Матеуннамъ Инленкомъ окрещенъмлоденецъ емемъ Гогпръ со вими о брадамни теинства",
+    "parents": "мсмаго приаода Кресктимнъ Францишка ия Антонины, урожденой ВашховЛингіо въЗоконваъ сунд го въ сынъ родившігхя 17чр кре скобря в. дня, Веревни Пынанахъ того же приаода",
+    "godparents": "Выспріемникомеибыми Крестьмнннъ. Козиміу ашкнъ ъ Аолоніею мннна Інуа Іонуши супругою-"
+   }
+  },
+  {
+   "row_id": "0012_L1",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "варбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестямнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Ілекняа зтогор",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьяннъ Рранаемекъ Кеишаъ съ Катаркинаг Nауковаимо дѣвицеа",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тынмча воссмсотъ пятдесятъ четву тигогода Дскабри семоодня, въ Плунганскомъ Р.К. Приходскомъ Костелѣ Тлстарысстомъ нигѣ Кг Матеуннмъ Шилейкомъ окрещенъмладекецъыменемъ варбара со всѣмни ог рядами таинства. -",
+    "parents": "Крестямнъ вонаъ Истроги ш уродено Норвшло вн Карковъ законва супруговъ доч6, родо воая ся 1854. гада екобря 7. дня, Пъ деревни Ілекняа зтогор прихода.",
+    "godparents": "Выспріемниками быми . Крестьяннъ Рранаемекъ Кеишаъ съ Катаркинаг Nауковаимо дѣвицеа. -"
+   }
+  },
+  {
+   "row_id": "0012_L2",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "тъІѣзиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестѣянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "я Луннярохъ того",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крастьмне: Ку ціанъ Грыгойтибъ ъ внна Пушевного дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяоча восемсотъ пятдссятъ четвустаго года кобра девятаго дна, въ Плунгянекмъ Р.К. Приходскомъ Костелѣ Аньдарнстамъ онгоКс. Мстеусеномъ Шаидйкнъ окрещенъмлоднецъ именетъ Іѣзиръ со всѣмли брадоми тоныства.",
+    "parents": "Крестѣянъ Павла и Франзонеки, раж деной Пуншв нан ВІконтовъ Зокннныхъ супруго въ ынъ родившійся 1857.г. Дкобря Р. дня, въ деревня Луннярохъ того прихода.",
+    "godparents": "-Выпромыиками были Крастьмне: Ку ціанъ Грыгойтибъ ъ внна Пушевного дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0012_L3",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "близнецыименамиСтефанъиФемищіемъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Престьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Видейкааъ Плунгянскпр",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "первно Крестьянинъ Кизи мръ вутхуъсъ Аннао овитовнаг дѣ вцеюо. Вкорого: Крестѣянинъ Ми каилъ Восисуъъ Петрораяттоиег",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ четвиртаго годо скабрдевятаго днм, въ Плунгмнскомъ Р.К. Приходскомъ Костелѣ Аьтаристомъ онаго Кс. Матсумавъ Шилейкомъ окрещенъамладенекыъ еменемъ близнецы именами Стефа нъ и Фемищіемъ со вѣми обрядами тоинства.-",
+    "parents": "Престьянъ озефа и: Анем ки жротденой Собылевокой Гадитовъ Законныаъ суруговъ сыновоя. родившиесяЗ. 1854.года Декобря 9. дня въ деревни Видейкааъ Плунгянскпр прихода.-",
+    "godparents": "Выпрямуиками были первно Крестьянинъ Кизи мръ вутхуъсъ Аннао овитовнаг дѣ вцеюо. Вкорого: Крестѣянинъ Ми каилъ Восисуъъ Петрораяттоиег. -"
+   }
+  },
+  {
+   "row_id": "0012_L4",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крстѣянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Палущаяъ тогое",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьянинъ Михалъ НорКиласъ съ Птроюмего Крест янина Анужа Гылпра супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-12-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ четБертно года скабря десятаго дня, въ Плунгянскомъ Р.К. Проходскомъ Костелѣ Анятасотъ Оного Кс. Матеуномъ Шалейкомъ окрещенъ младмецъименомъ Анна со всѣми обрядами таинства",
+    "parents": "Крстѣянъ иИроіяа ввы, урѣж-дной Бертвшшевной Сыеовъ Іохонмыяз супруговъ дочь, родивая ся 1854. года скабра10. дня, въ. древни Палущаяъ тогое прихода",
+    "godparents": "Воспрісмниками были Крестьянинъ Михалъ НорКиласъ съ Птроюмего Крест янина  Анужа Гылпра супругою.  -"
+   }
+  },
+  {
+   "row_id": "0012_L5",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "вимъ наго Кс. 10ліямомъ умев ичеммъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "влябета",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Престьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Гжупаъ унсянкогоппи",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Р.чиръ. Руйбшъ ъ вльзбетого Крестіяниъ Антана Пржіалговского супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъ четвутого годи Дскабраодинацтаго дня, въ Плунгянскомъ Р.К. Проходскомъ костелѣ Викарнвимъ наго Кс. 10ліямомъ умев ичеммъ окрещенъ младенецъ именемъ влябета со вѣми",
+    "parents": "Престьянъ Гочира и варбары. уротденой Урникіов ной Иакіовъ Законыа. супруговъ дочь, родившалс 154. го да 2жрбря М1. днм деревни Гжупаъ унсянкогоппи",
+    "godparents": "Воспрісуниками бымиР.чиръ. Руйбшъ ъ вльзбетого Крестіяниъ Антана Пржіалговского супругою. -"
+   }
+  },
+  {
+   "row_id": "0012_L6",
+   "register_year": 1854,
+   "scan": 12,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0012_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "вного Кс. Юлімномъ Дуллевичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "тъГозпъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "янъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыисяча восеметъ пятдесятъ четхрѣло года Дскабря дыназтогдня, въ Плунгянекомъ Р.К. Проходекомъ Костелѣ Викарнымъ вного Кс. Юлімномъ Дуллевичемъокрещенъ млоденецъ именетъ Гозпъсо веѣ мии радамм тяинситва. -",
+    "parents": "янъ Фронцинмка и Марціанва, трожденой Милншовнай Куссовъза Кнныаъ супруговъ сынъ родившйся 1854. года Декобря 12. дня, въ М. Плунгянскомъ пого ъ прихода. -",
+    "godparents": "- Врспрнемниками мымъ- Крестьмнинъ Михлъ Малснусъ ъ Ма рганог Крестьянина ояго Бераита супругого"
+   }
+  },
+  {
+   "row_id": "0013_L1",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "(Онаго Кс. Юлімномъ уллевичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Доминикъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнки",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Консудахъ Плунгянскаго приао",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Фемціанъ тонкуъ съі Анньн ауовноо дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятѣчетвртагогода LОскобря дынацтаго дня въ Плунгянска иъ Р.К. Приходскомъ костелѣ Викарнымъ. (Онаго Кс. Юлімномъ уллевичемъ окрещенъ иладенецъ имънемъ Доминикъ со всѣми обрядами тамниства. -",
+    "parents": "Крестьмнки Анны Стрыиковской нзаконно отдсный сынъ, родившййля 1854. сода . декабра 12. дня, въ деревни Консудахъ Плунгянскаго приао.а. -",
+    "godparents": "Воспріемниками были Крестьмнинъ Фемціанъ тонкуъ съі Анньн ауовноо дѣвицею -"
+   }
+  },
+  {
+   "row_id": "0013_L2",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "иРозприина-Пуціа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "вормнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "L ворянинѣ Антон Окумодъхъ Іозероно Коссоковского дѣвицег",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-12-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемеотъ пятдесятъ четвертно ода Дскабря тринацтао дняъ, въ. Плунгянскомъ Р.К. Приходскомъ Костелѣ Алятарвистомъ нлго Кс. Мотеуномъ Шнлійкомъ окрещенъмладенецъ нменами Розприина- Пуціа со всѣмъ обрядамеи таиниства. -",
+    "parents": "вормнъ Ниходема и лащиды уротденой укунтевной Павло векихъЗаконныхъ супруговъ дочь, родившаяся 1854. года скабра В3. дня, въ Скрузди нахъПлунгянскагоп",
+    "godparents": "Воспріемниками были L ворянинѣ Антон Окумодъхъ Іозероно Коссоковского дѣвицег."
+   }
+  },
+  {
+   "row_id": "0013_L3",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Аюція",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Войнайцааъ Плунгямкагопрохода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ць Коземръ Вукмъ Ппаміси Крест:мнина тостоня Дупругоюо",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-12-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыяча восемсотъ пятдесятъ четвутого года Дкабра тринацтаго днавъ Плунгмнскоммъ Р.К. Приходскоммы костелѣ Алстарвито.мъ Онаго Кс. Матуномъ Шллейкомъ окрещенъ мла дмуцъ имменемъ Аю ція со вѣми обрядами таинства. Тыяча восемсо тъ пятдесятъ четвур-",
+    "parents": "Крестьмнъ Мотсуна и Анны урожденой Пощіо вной Вылковъ5 аконныаъ супруго въ дочь, родоршамся 1854. года Дскабра 12. дня, въ деревни Войнайцааъ Плунгямкагопрохода. рествт д",
+    "godparents": "Вопріем никами былць Коземръ Вукмъ Ппаміси Крест:мнина тостоня Дупругоюо -"
+   }
+  },
+  {
+   "row_id": "0013_L4",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Игнацы",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рсоны,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Войнойцяаътоонпри",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ Іѣпуръ Пиворіунъ 5ъ Анекого Крестьмнина Козим, ра веинского супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "таго года Дкабря четвуноцтаго дня, Съ Плунгянскомъ Р.К. Приходе комъ Костелѣ Аллтаристомъ Онно Кс. Матеунгомъ Шнлейкомъ окрещенъ млоденецъ именемъ Игнацы со всѣми обрядами таинества",
+    "parents": "рсоны, урор веной Клобо вной Страуковъз аконыаъ супруговъ сынъ, родившій Крестъ ня 1854. годаДкабря В3 ве дня, въ деревни Войнойцяаътоонпри",
+    "godparents": "Воспріемниками были Крестьмнинъ Іѣпуръ Пиворіунъ 5ъ Анекого Крестьмнина Козим, ра веинского супругою. -"
+   }
+  },
+  {
+   "row_id": "0013_L5",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 4,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "апшанцяхъ Кумвскаг приаода",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ кнацы Алнмасъ бъ",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемсотъ пятдесятъ четвртегогода ска Пря ѣетнацтаго дня въ Плунгянскомъ Р.К. Приаодскомъ ко ттелѣ Аньтарнстомъ Онаго Кс. Мапеуномъ Шилейкомъ окрещенъ мла-",
+    "parents": "Крестьмнъ Францисика а Анны, уроъ деной Кнйи овной Салговъзаконныхъсу пруговъсынъ, родившйся 1854. года РскобВ. бня, въ древни апшанцяхъ Кумвскаг приаода. -",
+    "godparents": "Вопріемниками были Крестьмнинъ кнацы Алнмасъ бъ"
+   }
+  },
+  {
+   "row_id": "0013_L6",
+   "register_year": 1854,
+   "scan": 13,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1827-1-20/processed/rows/0013_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "иІриуля-Аназ,ягинобрадамитаинства",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Фронзишекъсо всѣм. обрядами таинства. Тысмча восемеотъ пятдесятъ чемивертого года Дкабряшеснен ня, въ. Плунгянскомъ Р.К. Криходскм Ко телѣ Аньтарнстомъ Онло Кс. Матеушамъ Инлейкоммъ окрещенъ меоднещъ именами Іриуля -Аназ,я гин об радамитаинства. -",
+    "parents": "Крестьянъ Яна иъ Маріоны Фротъ деной Юндыловагой Вынгаліовъ3 оконыаъ Юесть супруговъры. нъ дочь, родивша Мам ася 185 . года  Дскабря 15д въ М. Плунгяноаъ Плунянаго приаодо.",
+    "godparents": "Кронцшиикаа Малевскогоа супругою п Воспріемниками бым Крестьмнинъ Марцелинъ Юндылло ы Модовигого севъчевною дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0014_L1",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Гозефъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьмнъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Палущахъ Плунгмнска го",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестямнинъ Станиславъ Куссаъ ч Анного Крестьмнна Пранцишка вумбля супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ пятдесятъчитвутагагода скабря двацатвторно дня, въ Плунгянскомъ Р.К. Приходскоммъ Костелѣ, Алтарвистомъ Онно Кс. Матеуномъ Шылеуко. нъ окрещенъ мла денецъ именемъ Гозефъ со всѣми обрядами таинства. -",
+    "parents": "Крестьмнъ Мохалкі и Аннви уроденой Куссовной воровскилз Законыхъ супруга внынъ, родившій ся 1854. года Дкабра 22. дня6 въ деревни Палущахъ Плунгмнска го прихода. -",
+    "godparents": "Воспріемниками были Крестямнинъ Станиславъ Куссаъ ч Анного Крестьмнна Пранцишка вумбля супругою. -"
+   }
+  },
+  {
+   "row_id": "0014_L2",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "иАинавва",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Пруселкхъ Плунгянискаго прихада",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьынинъ Кочымпръ Шникуъ ъ Петронеисѣ Крестьянина Кочшмора Пыимка супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-12-24",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Пылоча восемсотъ пятдесятъ четыртаго года Дска ря двацатствертаго бня, въ Плунгкнскомъ Р.К. Приходскомъ костелѣ, Анста рыстаъ Онего Кс. Раймундомъ Сте ано вчемѣ, скрещенъ младенецъ мменами Аина вва со всѣми обрядами таинства. -",
+    "parents": "Крестьянъ Антонего и Анны, уротдной Крыкщуковной вержанки хъ Паконыхъ супрровъ дочь родовшоя ся 1854. года Дскабря 24. дня, въ деревни Пруселкхъ Плунгянискаго прихада.",
+    "godparents": "-Воспріемниками были Крестьынинъ Кочымпръ Шникуъ ъ Петронеисѣ Крестьянина Кочшмора Пыимка супругою. -"
+   }
+  },
+  {
+   "row_id": "0014_L3",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "наго Кс. Юлімномъ Думевичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ѣанъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Явойшвишкахъ Плунгямкаго",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ съ Милашусъ бъ Рѣалісгѣ Крестьаннна Сианислова Стокани Супругоюо 1",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыияча восемеотъ пятдесятъ четвертаго года Дскабра бвацат восьмого дня, въ Плунгянскомъ Рк. Прихдскоммъ Ккостемѣ, Викарнымъ наго Кс. Юлімномъ Думевичемъ окременъ младенецъ именемѣ анъ со всѣіи обрядами таннства",
+    "parents": "Крестьянъ Іозираи Маріоны, уражднгой Lеунской Нармонтовъ За конныхъ супруговъ сымъу родившій ся 1854. года Іескабря 27. дня, въ деревни Явойшвишкахъ Плунгямкаго прихода. -",
+    "godparents": "--- - - Воспрімникаии были: Крестьмнинъ съ Милашусъ бъ Рѣалісгѣ Крестьаннна Сианислова Стокани Супругоюо 1."
+   }
+  },
+  {
+   "row_id": "0014_L4",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "Фрестьянъ,",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Плысканаххъ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-Тылема Восаиинотъ пятдесятъКлвсс таго года,  скябро трицатяго дня. въ Плунгянскомнъ Р. К. Прніодскоммъ Костенѣъ Викарнымъ кс. Юляндтъ Дднсвичана рараценъ сладененъ имскаъ Лгодовико совсѣми обрядами Таинетва. -",
+    "parents": "Фрестьянъ, ерраниника имодавики урожрденной Даутяровнвъ медещъовъ закониыіыъ одпруговъ дочь родившаяся 185 2. го да Декабря 3о. дио, въ бстевшу длоконахъ Плупгянскаго Крико да.ьъ дфевни Плысканаххъ. -",
+    "godparents": "Воспрісенникани быммъ рестьянъ Фіенспъ Влткисъ, съ Крестьанкого Агатого Даувявтвного оырнцег.-Январь"
+   }
+  },
+  {
+   "row_id": "0014_L5",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Онаго Кс. Юліяномъ ДулмевгячемК",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Гозеъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Мѣсяцъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Коцганахъ точаръ приха",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Крестьмнинъ озиръ Стонкусъ бъ Френ динию дуцевною",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1854-01-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Годъ 1855. Тыяча восемсотъ патдесятъ чята гогодая Январм перваго дня, въ Плунгенскомъ Р.К. Приходскомъ костелѣ Викарнымъ Онаго Кс. Юліяномъ ДулмевгячемКокрещенъ мла денецъ именемъ Гозеъ со всѣми рядами таинства. -",
+    "parents": "Мѣсяцъ Крестьмнъ Петра чі Аны щго деной Гугевно й Микловъ закон нысъ супруговъ ынъ родивгійся 1855. года а1.г дня, въ деревни Коцганахъ точаръ приха - --",
+    "godparents": "Воспріемниками были Крестьмнинъ озиръ Стонкусъ бъ Френ динию дуцевною."
+   }
+  },
+  {
+   "row_id": "0014_L6",
+   "register_year": 1854,
+   "scan": 14,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1827-1-20/processed/rows/0014_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": null,
+     "source": "model"
+    },
+    "estate": {
+     "value": "",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "",
+    "parents": "-",
+    "godparents": "- - -"
+   }
+  }
+ ]
+}

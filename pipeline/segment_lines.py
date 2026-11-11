@@ -66,8 +66,11 @@ def main():
             x3=max(cols)
         else:
             x0,x1,x2,x3=[start+int(half*f) for f in [.215,.485,.765,.96]]
-        for cell,(xa,xb) in zip(['baptism','parents','godparents'],[(x0,x1),(x1,x2),(x2,x3)]):
-            ya,yb=row['focal_y']; xa=max(0,xa+8);xb=min(w,xb-8)
+        boxes=[(c,xa,xb,*row['focal_y']) for c,(xa,xb) in zip(['baptism','parents','godparents'],[(x0,x1),(x1,x2),(x2,x3)])]
+        if row.get('cells'):   # spread form: explicit cell boxes, each at its own page's height
+            boxes=[(c,b[0],b[2],max(0,b[1]),min(h,b[3])) for c,b in row['cells'].items()]
+        for cell,xa,xb,ya,yb in boxes:
+            xa=max(0,xa+8);xb=min(w,xb-8)
             crop=source[ya:yb,xa:xb]
             if crop.size==0 or crop.shape[0]<20 or crop.shape[1]<20:
                 skipped.append({'row_id':row['row_id'],'cell':cell,'box':[int(xa),int(ya),int(xb),int(yb)]})

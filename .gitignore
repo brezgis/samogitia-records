@@ -46,3 +46,9 @@ site/book*/img/pages/
 !site/book*/img/cloth-*.jpg
 !site/book*/img/src/
 !site/book*/img/src/*.jpg
+# bulk image folders may be links to a data drive (see docs/NIGHT_LOG.md, 2026-11-11)
+data/*/pages
+data/*/processed/rows
+data/*/training/proposals_years_v2
+data/*/training/proposals_v2
+data/*/rows

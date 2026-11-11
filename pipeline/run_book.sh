@@ -13,6 +13,10 @@ export TMPDIR=${TMPDIR:-/tmp}
 N=$(ls "$BOOK"/pages/*.jpg | wc -l)
 echo "== $BOOK: $N scans"
 nice .venv/bin/python -I pipeline/layout.py "$BOOK/pages" "$BOOK" 1 "$N" | tail -1
+if grep -q '"spread"' "$BOOK/form.json" 2>/dev/null; then   # one entry spans both pages (e.g. 1827/1/20)
+  rm -rf "$BOOK/layout_pages"
+  .venv/bin/python -I pipeline/layout_spread.py "$BOOK"
+fi
 nice .venv/bin/python -I pipeline/prepare_years.py --scans "1-$N"
 nice .venv/bin/python -I pipeline/segment_lines.py --queue processed/queue_years.json --all-rows \
   --scans $(seq -s ' ' 1 "$N") --out-json training/line_proposals_years.json --out-dir training/proposals_years \
