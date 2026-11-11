@@ -1,7 +1,7 @@
 (() => {
 const SPREADS = window.SPREADS, INDEX = window.INDEX, $ = (s, r = document) => r.querySelector(s);
 const body = document.body, book = $('#book'), block = $('#block');
-const LOCALE = { en: 'en-GB', lt: 'lt-LT', ru: 'ru-RU' };
+const LOCALE = { en: 'en-GB', lt: 'lt-LT', pl: 'pl-PL', ru: 'ru-RU' };
 const T = {
   en: { title: 'Žemaičių metrikai', sub: 'Parish registers of Samogitia. Plungė, baptisms, 1849–1854',
     aboutH: 'About these registers',
@@ -55,6 +55,31 @@ const T = {
     no: 'nr.', scan: 'skenas', onDate: 'krikštyta arba gimė', anyText: 'atitinka', entryNo: 'įrašo numeris', and: 'ir',
     cloth: { plunge: 'Viršelio audinys: vilnos ir lino lovatiesė (divonas), XIX a. pab., Palūščių k., Plungės r.', kretinga: 'Viršelio audinys: dryžuota vilnonė skara, XIX a. II p., Budrių k., Kretingos r.', telsiai: 'Viršelio audinys: kiliminio audimo lovatiesė (divonas), XIX a. pab., Vaštakių k., Telšių r.' },
     ribbon: { mazeikiai: 'Juostelė: pintinė vilnonė juosta, 1930 m., Meinorių k., Mažeikių r.', taurage: 'Juostelė: apvaliai pinta vilnonė juosta, XIX a. pab., Tauragės r.', ukrinai: 'Juostelė: pintinė vilnonė juosta-keliaraištis, apie 1940 m., Ukrinų k., Mažeikių r.' } },
+  pl: { title: 'Žemaičių metrikai', sub: 'Księgi parafialne Żmudzi. Płungiany, chrzty, styczeń 1888',
+    aboutH: 'O tych księgach',
+    about1: 'Od chrztu po pogrzeb życie katolika na Żmudzi zapisywano w księgach parafialnych. Każda parafia prowadziła metryki chrztów, ślubów i zgonów. To jedna z nich: metryki chrztów parafii Płungiany w diecezji żmudzkiej za lata 1849–1854.',
+    about2: 'W tych latach Płungiany leżały w Cesarstwie Rosyjskim, w powiecie telszewskim guberni kowieńskiej, a metryki należało prowadzić po rosyjsku. Ksiądz zapisywał więc litewskie i polskie imiona i nazwiska rosyjskimi literami w drukowanym rosyjskim formularzu i datował je według dawnego kalendarza juliańskiego, o dwanaście dni wcześniejszego od dzisiejszego.',
+    readH: 'Jak czytać wpis',
+    read1: 'Każdy wpis powtarza jedną formułę w trzech kolumnach: kiedy, gdzie i kto ochrzcił dziecko; kim byli rodzice, jakiego stanu i z jakiej gminy, kiedy i gdzie dziecko się urodziło; kto był rodzicami chrzestnymi. Nazwiska stoją tak, jak wymaga formuła, w dopełniaczu liczby mnogiej, dlatego często kończą się tu na -ow, choć sama rodzina powiedziałaby -is, -as albo -us.',
+    read2: 'Pismo odczytał model rozpoznawania wytrenowany na około 1700 wierszach tych ksiąg, z których każdy przeczytało niezależnie dwóch czytelników AI i porównano ich odczyty; tłumaczenie jest maszynowe. Nikt nie sprawdzał wyniku. Zwykłe słowa wychodzą dobrze, nazwiska i nazwy wsi często nie.',
+    colsH: 'Drukowane rubryki', cols: [["Прозваніе крещаемыхъ", "Nazwisko ochrzczonego, pisane bokiem na marginesie"], ["№", "Numer wpisu"], ["Число рожденія / крещенія", "Dzień urodzenia / dzień chrztu"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kiedy, gdzie, kto i przez kogo został ochrzczony, tylko z wody czy ze wszystkimi obrzędami?"], ["Какихъ родителей …?", "Z jakich rodziców, jakiego stanu lub gminy; kiedy i gdzie urodziło się dziecko"], ["Кто были … воспріемниками …?", "Kto z imienia i nazwiska był rodzicami chrzestnymi i kto był obecny"], ["Рукоприкладство свидѣтелей …", "Podpisy świadków, według życzenia"]],
+    sideMargin: "Na marginesie", sideDiffer: x => `W treści wpisu maszyna odczytała nazwisko jako „${x}”; odczyt z marginesu jest pewniejszy.`, sideNo: "Nr", sideBorn: "ur.", sideBapt: "ochrzcz.", sideNote: "Późniejsza adnotacja", sexM: "chłopiec", sexF: "dziewczynka", sideBy: "Boczne rubryki odczytane raz przez maszynę.",
+    heads: {"margin": "Nazwisko ochrzczonego", "no": "Nr", "dates": "Dzień urodzenia / chrztu", "baptism": "Kiedy, gdzie, przez kogo ochrzczony", "parents": "Rodzice, stan; kiedy i gdzie urodzony", "godparents": "Rodzice chrzestni i obecni", "sign": "Podpisy świadków"},
+    clothH: 'Tkanina i wstążka',
+    cloth1: 'Okładka i wstążka to prawdziwe żmudzkie tkaniny ze zbiorów Litewskiego Muzeum Narodowego. Fotografie muzeum wykorzystano na licencji CC BY 4.0.',
+    ph: 'Nazwisko, wieś lub data, lata 1849–1854', chooseH: 'Wybierz wpis', chooseP: 'Wskaż wiersz księgi, aby go przeczytać. Kliknij, aby pozostał otwarty.',
+    everyH: 'Cała strona w tłumaczeniu', everyP: 'Zatrzymaj wskaźnik na karcie, aby zobaczyć pismo pod nią, albo wybierz wpis, aby zobaczyć uwagi.',
+    bapt: 'Chrzest', born: 'ur.', marks: 'Wstążka zaznacza ten wpis.', move: 'Przenieś wstążkę tutaj', from: 'Odczytano z: ',
+    key: '<span class="u">Kropkowana linia</span> oznacza odczyt, którego maszyna nie była pewna; <span class="ed">[kursywa w nawiasach]</span> to jej uwagi. Zatrzymaj wskaźnik na nazwisku, aby zobaczyć rosyjski zapis, z którego je odczytano.',
+    warn: 'Odczytane i przetłumaczone maszynowo; nikt tego nie sprawdzał. Ufaj rękopisowi bardziej niż tłumaczeniu.',
+    sources: 'Źródła', register: 'Księga: parafia rzymskokatolicka w Płungianach, metryki urodzeń i chrztów 1849–1854, Litewskie Państwowe Archiwum Historyczne, 1827/1/18, z <a href="https://www.epaveldas.lt/">epaveldas.lt</a> (do użytku niekomercyjnego).',
+    museum: 'Litewskie Muzeum Narodowe', showR: 'Pokaż prawą stronę', showL: 'Pokaż lewą stronę',
+    none: 'Nic podobnego nie znaleziono. Spróbuj mniej liter; pisownia w księdze bardzo się waha.', noName: 'imienia nie odczytano', noDate: 'daty nie odczytano',
+    found: n => n === 1 ? '1 wpis' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? `${n} wpisy` : `${n} wpisów`, more: n => `Pokazano pierwsze ${n}.`, away: 'Wyszarzone wpisy są na stronach, których jeszcze nie ma w tej próbce.',
+    tips: 'Wpisz nazwisko w dowolnej pisowni, wieś albo datę, np. „10 stycznia 1851”, „03.1850” lub „#8”.',
+    no: 'nr', scan: 'skan', onDate: 'chrzest lub urodzenie', anyText: 'pasujące do', entryNo: 'numer wpisu', and: 'i',
+    cloth: { plunge: 'Tkanina okładki: wełniano-lniana narzuta (divonas), koniec XIX w., wieś Palūščiai, rejon płungiański', kretinga: 'Tkanina okładki: pasiasta chusta wełniana, druga połowa XIX w., wieś Budriai, rejon kretyngański', telsiai: 'Tkanina okładki: narzuta tkana techniką gobelinową (divonas), koniec XIX w., wieś Vaštakiai, rejon telszański' },
+    ribbon: { mazeikiai: 'Wstążka: pleciona krajka wełniana, 1930, wieś Meinoriai, rejon możejski', taurage: 'Wstążka: okrągło pleciona krajka wełniana, koniec XIX w., rejon taurogski', ukrinai: 'Wstążka: pleciona wełniana krajka-podwiązka, około 1940, wieś Ukrinai, rejon możejski' } },
   ru: { title: 'Žemaičių metrikai', sub: 'Приходские книги Жемайтии. Плунге, крещения, январь 1888 года',
     aboutH: 'Об этих книгах',
     about1: 'От крещения до погребения жизнь католика в Жемайтии записывалась в приходские книги. Каждый приход вёл метрические книги о крещениях, браках и смертях. Перед вами одна из них: книга о крещениях Плунгянского прихода Жемайтской епархии за 1849–1854 годы.',
@@ -89,6 +114,9 @@ const X = {
   lt: { sub: w => `Žemaitijos parapijų knygos. Plungė, krikštai, ${w}`, front: 'puslapiai be įrašų', to: ' – ',
     untranslated: 'Dar neišversta, todėl rodomas mašinos perskaitytas rusiškas tekstas.', ltMissing: 'Lietuviško vertimo dar nėra, rodomas angliškas.', where: (a, b) => `${a} skenas iš ${b}`,
     prev: 'Atversti ankstesnį puslapį', next: 'Versti kitą puslapį', nothing: 'Šiuose dviejuose puslapiuose įrašų nerasta.' },
+  pl: { sub: w => `Księgi parafialne Żmudzi. Płungiany, chrzty, ${w}`, front: 'strony bez wpisów', to: ' – ',
+    untranslated: 'Jeszcze nie przetłumaczono, więc to rosyjski odczyt maszyny.', ltMissing: 'Polskiego tłumaczenia jeszcze nie ma, pokazano angielskie.', where: (a, b) => `Skan ${a} z ${b}`,
+    prev: 'Przewróć stronę wstecz', next: 'Przewróć na następną stronę', nothing: 'Na tych dwóch stronach nie znaleziono wpisów.' },
   ru: { sub: w => `Приходские книги Жемайтии. Плунге, крещения, ${w}`, front: 'страницы без записей', to: ' – ',
     untranslated: '', ltMissing: '', where: (a, b) => `Скан ${a} из ${b}`,
     prev: 'Перелистнуть назад', next: 'Перелистнуть вперёд', nothing: 'На этих двух страницах записей не найдено.' },
@@ -137,12 +165,17 @@ function buildPages() {
     b.type = 'button'; b.dataset.row = e.row; b.setAttribute('aria-pressed', 'false');
     b.style.top = e.band[0] + '%'; b.style.height = (e.band[1] - e.band[0]) + '%';
     p.append(b);
+    if (e.band2 && pages[e.band2.side]) {          // two-page form: the entry continues on the facing page
+      const b2 = b.cloneNode(false);
+      b2.style.top = e.band2.band[0] + '%'; b2.style.height = (e.band2.band[1] - e.band2.band[0]) + '%';
+      pages[e.band2.side].append(b2);
+    }
     const boxesFor = Object.assign({}, e.cells, e.sideBox ? { side: e.sideBox } : {});
     for (const c of Object.keys(boxesFor)) {
       const l = el('div', 'leaf' + (c === 'side' ? ' side' : '')); l.dataset.row = e.row; l.dataset.cell = c;
       const [x0, y0, x1, y1] = boxesFor[c];
       l.style.left = x0 + '%'; l.style.top = y0 + '%'; l.style.width = (x1 - x0) + '%'; l.style.minHeight = (y1 - y0) + '%';
-      p.append(l);
+      (pages[e.cellSide && e.cellSide[c]] || p).append(l);
     }
   }
   for (const side of ['L', 'R']) {               // translated printed column headings at the top of the page
@@ -175,7 +208,7 @@ function fillLeaves() {
   block.querySelectorAll('.band').forEach(b => b.setAttribute('aria-label', plain(fullName(byRow[b.dataset.row]))));
 }
 const fullName = e => lang === 'ru' || !e.child ? esc([e.childRu, e.surnameRu].filter(Boolean).join(' ') || t().noName)
-  : esc(e.child) + (e.surname ? ` <span class="${e.surnameQ ? 'u' : ''}">${esc(lang === 'lt' && e.surnameLt || e.surname)}</span>` : '');
+  : esc(lang === 'pl' && e.childPl || e.child) + (e.surname ? ` <span class="${e.surnameQ ? 'u' : ''}">${esc(lang === 'lt' && e.surnameLt || lang === 'pl' && e.surnamePl || e.surname)}</span>` : '');
 const plain = h => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const current = () => hovered || pinned;
 
@@ -190,7 +223,7 @@ function sideHtml(e) {           // printed columns 1-3: margin surname, No., se
   const bits = [c.entry_no && `${L.sideNo} ${esc(c.entry_no)}`, sex, c.birth_day && `${L.sideBorn} ${esc(c.birth_day)}`,
     c.baptism_day && `${L.sideBapt} ${esc(c.baptism_day)}`].filter(Boolean);
   const margin = c.margin_surname ? `${L.sideMargin}: <span lang="ru">${esc(c.margin_surname)}</span>${rend ? ` (${esc(rend)})` : ''}${differ}` : '';
-  const noteT = lang === 'lt' ? c.notes_lt : lang === 'en' ? c.notes_en : c.notes_ru;
+  const noteT = lang === 'lt' ? c.notes_lt : lang === 'en' || lang === 'pl' ? c.notes_en : c.notes_ru;
   const note = c.notes_ru ? `<p class="side-note">${L.sideNote}: ${esc(noteT || c.notes_ru)}</p>` : '';
   return `<p class="side">${[margin, bits.join(', ')].filter(Boolean).join(' · ')}</p>${note}`;
 }
@@ -365,10 +398,10 @@ const mini = new MiniSearch({
 });
 mini.addAll(INDEX);
 const rec = Object.fromEntries(INDEX.map(r => [r.row, r]));
-const MONTHS = [['january','jan','sausis','sausio','январь','января','янв'],['february','feb','vasaris','vasario','февраль','февраля','фев'],['march','mar','kovas','kovo','март','марта'],
-  ['april','apr','balandis','balandzio','апрель','апреля','апр'],['may','geguze','geguzes','май','мая'],['june','jun','birzelis','birzelio','июнь','июня'],['july','jul','liepa','liepos','июль','июля'],
-  ['august','aug','rugpjutis','rugpjucio','август','августа','авг'],['september','sep','sept','rugsejis','rugsejo','сентябрь','сентября','сен'],['october','oct','spalis','spalio','октябрь','октября','окт'],
-  ['november','nov','lapkritis','lapkricio','ноябрь','ноября','ноя'],['december','dec','gruodis','gruodzio','декабрь','декабря','дек']];
+const MONTHS = [['january','jan','styczen','stycznia','sausis','sausio','январь','января','янв'],['february','feb','luty','lutego','vasaris','vasario','февраль','февраля','фев'],['march','mar','marzec','marca','kovas','kovo','март','марта'],
+  ['april','apr','kwiecien','kwietnia','balandis','balandzio','апрель','апреля','апр'],['may','maj','maja','geguze','geguzes','май','мая'],['june','jun','czerwiec','czerwca','birzelis','birzelio','июнь','июня'],['july','jul','lipiec','lipca','liepa','liepos','июль','июля'],
+  ['august','aug','sierpien','sierpnia','rugpjutis','rugpjucio','август','августа','авг'],['september','sep','sept','wrzesien','wrzesnia','rugsejis','rugsejo','сентябрь','сентября','сен'],['october','oct','pazdziernik','pazdziernika','spalis','spalio','октябрь','октября','окт'],
+  ['november','nov','listopad','listopada','lapkritis','lapkricio','ноябрь','ноября','ноя'],['december','dec','grudzien','grudnia','gruodis','gruodzio','декабрь','декабря','дек']];
 const MON = {}; MONTHS.forEach((ws, i) => ws.forEach(w => MON[bare(w)] = i + 1));
 function parse(q) {
   const want = { y: null, m: null, d: null, n: null, words: [] };

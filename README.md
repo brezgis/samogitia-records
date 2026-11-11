@@ -133,6 +133,26 @@ third hand the v1 model cannot read (~15% of formula words correct); a double-re
 on that hand precedes v2. Inserted decrees/amendments (scans 67-68, 90-91, 150-151, 153-154)
 are listed in `processed/non_table_sides_years.json` for separate review.
 
+## Names: three things that are kept apart
+
+Spellings in these registers vary, and the same person can appear under several. The data keeps
+three different kinds of statement separate, and nothing downstream may merge them:
+
+1. **The recorded form**: what the register says, as read. The scan is the record; the machine
+   draft (`text`, Cyrillic), the margin reading (`side_columns.json`, `margin_surname`) and the
+   checked line labels are readings of it, each marked with who read it. Every translated name
+   keeps the Cyrillic it was read from (`names`: "Cyrillic as drafted -> rendering").
+2. **A proposed rendering**: the transliterated or normalised form in English, Lithuanian or
+   Polish, made by the rules in `docs/LT_GLOSSARY.md` / `docs/PL_GLOSSARY.md`. It is an editorial
+   convenience for reading and search, not a claim about what the family called itself.
+   `processed/surnames.json` reconciles the two writings of the family surname *inside one entry*
+   (margin and parents column) and keeps both readings and the status (agree / margin / conflict).
+3. **A claim that two records are the same person or family**: an entity-resolution hypothesis,
+   not a linguistic fact. The project makes none yet. Search collapses spelling variants so that
+   candidates can be found; that is retrieval, not identification. If links between records are
+   ever added, they go in their own file, each with its evidence and confidence, and never
+   overwrite or stand in for the recorded forms.
+
 **Reading book (main GUI):** `site/book/` — the register as a book, EN/LT/RU, with search across
 all years. Rebuild after drafts/translations change: `.venv/bin/python -I site/book/build_book.py`
 (add `--images` once to cut the page images from the scans). Serve with

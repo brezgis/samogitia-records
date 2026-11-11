@@ -142,6 +142,7 @@ def layout_cols(scan, side):
 
 SIDE_WORDS = {"en": ("No.", {"M": "boy", "F": "girl"}, "born", "baptised", "Later note"),
               "lt": ("Nr.", {"M": "berniukas", "F": "mergaitė"}, "gimė", "pakrikštyta(s)", "Vėlesnė pastaba"),
+              "pl": ("Nr", {"M": "chłopiec", "F": "dziewczynka"}, "ur.", "ochrzcz.", "Późniejsza adnotacja"),
               "ru": ("№", {}, "рожд.", "крещ.", "Позднейшая запись")}
 
 def side_html(c, lang, name=None):
@@ -153,7 +154,7 @@ def side_html(c, lang, name=None):
             sex.get(c.get("sex")) if lang != "ru" else c.get("sex_letter"),
             c.get("birth_day") and f"{born} {c['birth_day']}", c.get("baptism_day") and f"{bapt} {c['baptism_day']}"]
     out = (f'<b>{html.escape(name)}</b><br>' if name else "") + html.escape(", ".join(b for b in bits if b))
-    nt = c.get("notes_lt") if lang == "lt" else c.get("notes_en") if lang == "en" else c.get("notes_ru")
+    nt = c.get("notes_lt") if lang == "lt" else c.get("notes_en") if lang in ("en", "pl") else c.get("notes_ru")
     if c.get("notes_ru"):
         out += f'<br><span class="ed">{html.escape(note)}: {html.escape(nt or c["notes_ru"])}</span>'
     return out
@@ -234,10 +235,22 @@ def main(args):
             x0, y0, x1, y1 = boxes[key][side]
             if not all((row, c) in cells for c in CELLS):
                 continue
-            bx = {}
+            bx, cell_side = {}, {}
             for c in CELLS:
                 b = cells[(row, c)]
-                bx[c] = [max(0, pct(b[0], x0, x1)), pct(b[1], y0, y1), min(99.4, pct(b[2], x0, x1)), pct(b[3], y0, y1)]
+                # two-page forms (layout_spread.py): a cell lies on the page its centre is on
+                cs = side
+                if "R" in boxes[key] and "L" in boxes[key]:
+                    cs = "R" if (b[0] + b[2]) / 2 >= boxes[key]["R"][0] else "L"
+                if cs != side:
+                    cell_side[c] = cs
+                cx0, cy0, cx1, cy1 = boxes[key][cs]
+                bx[c] = [max(0, pct(b[0], cx0, cx1)), pct(b[1], cy0, cy1), min(99.4, pct(b[2], cx0, cx1)), pct(b[3], cy0, cy1)]
+            band2 = None
+            if cell_side:
+                other = next(iter(cell_side.values()))
+                ys = [v for c, s in cell_side.items() if s == other for v in (bx[c][1], bx[c][3])]
+                band2 = {"side": other, "band": [min(ys), max(ys)]}
             sc = side_cols.get(row)
             lay = layout_cols(scan, side)
             sx0 = max(0.6, pct(lay[0], x0, x1)) if lay else 0.6
@@ -259,12 +272,18 @@ def main(args):
                 if sc:
                     h["lt"]["side"] = side_html(sc, "lt", rec and (r.get("surLt") or r["surEn"]))
                 issues["lt"], issues["ru"] = lt[row]["issues"], lt[row]["issues_ru"]
+            if t and t.get("baptism_pl"):          # Polish (pipeline/merge_pl.py), where a book has it
+                h["pl"] = {c: mark(t.get(c + "_pl") or "", names) for c in CELLS}
+                if sc:
+                    h["pl"]["side"] = side_html(sc, "pl", t.get("surname_pl") or (rec and r["surEn"]))
+                issues["pl"] = t.get("issues_pl") or ""
             spread["entries"].append({
                 "row": row, "n": r.get("n"), "side": side, "y": r["y"], "date": r.get("bapt"), "born": r.get("born"),
                 "child": r.get("childEn", ""), "surname": r.get("surEn", ""), "surnameQ": r.get("surQ", False),
-                "surnameLt": r.get("surLt", ""), "surnameSrc": r.get("surSrc", ""), "surnameAlt": r.get("surAlt", ""),
+                "surnameLt": r.get("surLt", ""), "childPl": (t or {}).get("child_pl", ""), "surnamePl": (t or {}).get("surname_pl", ""), "surnameSrc": r.get("surSrc", ""), "surnameAlt": r.get("surAlt", ""),
                 "childRu": r.get("child", ""), "surnameRu": (r.get("sur", "").split() or [""])[-1],
                 "band": [bx["baptism"][1], bx["baptism"][3]], "cells": bx, "html": h,
+                **({"cellSide": cell_side, "band2": band2} if cell_side else {}),
                 "names": [n.split("->", 1) for n in names if "->" in n], "issues": issues,
                 "sideCols": sc, "sideBox": [round(sx0, 3), bx["baptism"][1], round(sx1, 3), bx["baptism"][3]] if sc else None})
         spread["entries"].sort(key=lambda en: (en["side"], en["band"][0]))
