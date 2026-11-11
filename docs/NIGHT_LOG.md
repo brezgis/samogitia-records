@@ -77,3 +77,15 @@ translation, model training ... as you can"). Entries are appended as work compl
   the full translations, shows the side columns (margin surname, No., sex, days, later notes)
   in the entry popover and the seven printed column headings in EN/LT/RU; its "how this was
   read" text updated to the current method. Served at http://100.107.252.39:8742/.
+- Model v4 (both books): validation CER 6.6% (1886–90), 9.1% (1896–1902; v3 15.8%). Book 24
+  redrafted with v4: 2,582 entries; parser learnt "дер." and the later village formula.
+- Book 24 translated EN+LT: 2,582/2,582 (66 agents, ~3.5M tokens); review shows only scattered
+  issues (docs/LT_REVIEW_2026-11-11_book24.json): inconsistent priest/township spellings,
+  occasional -ski/-ič endings, spelled-out dates.
+- Reading GUI fixes from headless-Chrome screenshots: narrow-screen layout (inline grid beat the
+  media query: half-width page, black half, misplaced ribbon; pre-existing), translated column
+  headers placed from the layout's measured header band and shown only on hover/tap, narrow
+  columns vertical; ribbon .webp now served as image/webp (site/serve.py).
+- Book 24 GUI: http://100.107.252.39:8743/ (site/book-1896-1902).
+- Pushed to GitHub brezgis/samogitia-records (first commit; images excluded) and released the
+  v4 model as release `htr-v4`. Hugging Face not touched: waiting for Anna to confirm repo names.
