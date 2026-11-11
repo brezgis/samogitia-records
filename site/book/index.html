@@ -94,7 +94,7 @@ button,input{font:inherit;color:inherit}
 [data-paper="film"] .face{background:#fff}
 [data-paper="film"] .face img{mix-blend-mode:normal;filter:none}
 .face.hold{inset:auto;top:0;z-index:8}
-.flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.45,.05,.3,1);will-change:transform}
+.flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;will-change:transform}   /* turned by app.js (Web Animations) */
 .flip.fwd{transform-origin:left center} .flip.back{transform-origin:right center}
 .flip .rear{transform:rotateY(180deg)}
 .flip .shade{position:absolute;inset:0;pointer-events:none}

@@ -256,17 +256,29 @@ async function go(scan, row, quiet) {
   const dir = S ? Math.sign(scan - S.scan) : 0;
   const old = dir && !quiet && !reduced() && pages.L && getComputedStyle(pages.R).display !== 'none' && getComputedStyle(pages.L).display !== 'none'
     ? Object.fromEntries(['L', 'R'].map(s => [s, { src: S.pages[s].img, left: pages[s].offsetLeft, width: pages[s].offsetWidth, height: pages[s].offsetHeight }])) : null;
+  // Build the turning leaf first and decode its three images, so nothing is decoded or laid
+  // out while the leaf is moving (that was the stutter at the start of a turn).
+  let hold, flip;
+  if (old) {
+    const stay = dir > 0 ? 'L' : 'R', turn = dir > 0 ? 'R' : 'L';
+    hold = face(old[stay].src, 'hold'); flip = el('div', 'flip ' + (dir > 0 ? 'fwd' : 'back'));
+    for (const [e, o] of [[hold, old[stay]], [flip, old[turn]]]) { e.style.left = o.left + 'px'; e.style.width = o.width + 'px'; e.style.height = o.height + 'px'; }
+    flip.append(face(old[turn].src, 'front'), face(next.pages[stay].img, 'rear'));
+    // (bounded: a browser that never settles decode() must not leave the book stuck mid-turn)
+    await Promise.race([new Promise(res => setTimeout(res, 600)),
+      Promise.all([hold, flip].flatMap(e => [...e.querySelectorAll('img')]).map(i => i.decode ? i.decode().catch(() => {}) : null))]);
+  }
   S = next; pinned = row && S.entries.some(e => e.row === row) ? row : null; hovered = null;
   buildPages(); render(); chrome();
   if (old) {
-    const stay = dir > 0 ? 'L' : 'R', turn = dir > 0 ? 'R' : 'L';
-    const hold = face(old[stay].src, 'hold'), flip = el('div', 'flip ' + (dir > 0 ? 'fwd' : 'back'));
-    for (const [e, o] of [[hold, old[stay]], [flip, old[turn]]]) { e.style.left = o.left + 'px'; e.style.width = o.width + 'px'; e.style.height = o.height + 'px'; }
-    flip.append(face(old[turn].src, 'front'), face(S.pages[stay].img, 'rear'));
-    block.append(hold, flip);
-    flip.getBoundingClientRect();
-    flip.style.transform = `rotateY(${dir > 0 ? -180 : 180}deg)`;
-    await new Promise(res => { flip.addEventListener('transitionend', res, { once: true }); setTimeout(res, 950); });
+    block.append(hold, flip);                       // same task as the rebuild: the new spread never shows early
+    await new Promise(res => { requestAnimationFrame(() => requestAnimationFrame(res)); setTimeout(res, 120); });   // let the rebuild's layout settle
+    const to = `rotateY(${dir > 0 ? -180 : 180}deg)`;
+    const turnAnim = flip.animate([{ transform: 'rotateY(0deg)' }, { transform: to }],
+      { duration: 900, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' });
+    // the shadow the leaf casts deepens as it stands up and fades as it lands
+    for (const s of flip.querySelectorAll('.shade')) s.animate([{ opacity: .35 }, { opacity: 1, offset: .5 }, { opacity: .35 }], { duration: 900, easing: 'linear' });
+    await Promise.race([turnAnim.finished.catch(() => {}), new Promise(res => setTimeout(res, 1400))]);
     hold.remove(); flip.remove();
   }
   turning = false;
