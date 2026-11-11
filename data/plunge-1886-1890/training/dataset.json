@@ -1,21 +1,23 @@
 {
-  "dataset_id": "ef82ca8fa9fcf4db",
-  "directory": "data/plunge-1886-1890/training/exports/ef82ca8fa9fcf4db",
+  "dataset_id": "c3e18f01df6080dd",
+  "directory": "data/plunge-1886-1890/training/exports/c3e18f01df6080dd",
   "annotation_files": [
     "data/plunge-1827-1-18/training/annotations.json",
     "data/plunge-1827-1-20/training/annotations.json",
     "data/plunge-1827-1-22/training/annotations.json",
     "data/plunge-1827-1-24/training/annotations.json",
     "data/plunge-1827-1-25/training/annotations.json",
-    "data/plunge-1886-1890/training/annotations.json"
+    "data/plunge-1886-1890/training/annotations.json",
+    "data/rietavas-1828-1-12/training/annotations.json",
+    "data/rietavas-1828-1-7/training/annotations.json"
   ],
-  "annotations_sha256": "002aa52ecffc252907ee101fd76d1261b5ff51b3bbe7a0c04795e5df5b7c9262",
-  "approved_labels": 3221,
-  "draft_labels": 3556,
+  "annotations_sha256": "36b408ed148209910f1006c8f544fcafc8d1dd78cdd7bcb3376c04c490d89cb3",
+  "approved_labels": 3421,
+  "draft_labels": 4210,
   "counts": {
-    "test": 445,
-    "train": 2333,
-    "validation": 443
+    "test": 485,
+    "train": 2462,
+    "validation": 474
   },
   "by_book": {
     "plunge-1827-1-18": 454,
@@ -23,27 +25,28 @@
     "plunge-1827-1-22": 420,
     "plunge-1827-1-24": 420,
     "plunge-1827-1-25": 394,
-    "plunge-1886-1890": 1306
+    "plunge-1886-1890": 1306,
+    "rietavas-1828-1-7": 200
   },
   "hands_by_split": {
     "train": {
-      "unknown": 1839,
+      "unknown": 1968,
       "early_candidate": 251,
       "later_candidate": 243
     },
     "validation": {
-      "unknown": 326,
+      "unknown": 357,
       "early_candidate": 62,
       "later_candidate": 55
     },
     "test": {
-      "unknown": 354,
+      "unknown": 394,
       "early_candidate": 51,
       "later_candidate": 40
     }
   },
-  "independently_verified_labels": 1810,
-  "independently_verified_evaluation_labels": 519,
+  "independently_verified_labels": 1916,
+  "independently_verified_evaluation_labels": 559,
   "readiness": "pilot",
   "warning": "Labels are Claude transcriptions (blind Opus+Sonnet double reading with Opus adjudication, plus single-reader labels), not expert human ground truth."
 }

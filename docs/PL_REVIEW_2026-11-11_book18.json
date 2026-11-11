@@ -1,0 +1,130 @@
+{
+ "rows_checked": 150,
+ "rows_with_any_problem": 16,
+ "glossary_violations": [
+  {
+   "row_id": "0004_R1",
+   "found": "All three fields empty (baptism_pl, parents_pl, godparents_pl are \"\").",
+   "expected": "§1: every element is required, so write the formula with placeholders. If the row is only the printed 1849 form heading, §8.7 says to write \"[Tekst niewypełnionego drukowanego formularza.]\" in each field. An empty field is never allowed."
+  },
+  {
+   "row_id": "0011_R3",
+   "found": "\"parafii Kule [?]\"",
+   "expected": "\"parafii Kule\". §4.5 says the established names (Kule included) are written without [?], and §4.2 gives Кулевскаго → parafii Kule. Rows 0035_L3, 0099_L3, 0104_L1 and 0160_L3 do this correctly."
+  },
+  {
+   "row_id": "0011_R3",
+   "found": "Godfather \"Marcjan [?] Rigatis [?]\". In 0006_R2 the same pair (Марціянъ/Марщіянъ with wife Katarzyna, the Wiskont family) is \"Marcijan [?] Trigatis\".",
+   "expected": "Principle 2 (one form per person or name per book). Марціянъ is not in the §6 table, so the §7.1 transliteration \"Marcijan [?]\" applies, and it must be the same in both entries (or add Marcjan to §6, see suggestions)."
+  },
+  {
+   "row_id": "0015_R4",
+   "found": "\"Barbary z domu Balsiuwna\" (from Бальсювной)",
+   "expected": "\"z domu Balsiowna\". The §7.3 table maps -ювна / -ювной → -iowna, and §6 of the checklist forbids inventing other shapes."
+  },
+  {
+   "row_id": "0019_L3",
+   "found": "\"Eleonory z domu Buczniuwna\" (from Бучнювном)",
+   "expected": "\"z domu Buczniowna\" (§7.3: -ювна → -iowna)."
+  },
+  {
+   "row_id": "0033_R4",
+   "found": "\"Anna, żona Kazimierza Tania [?]\" (from Таня)",
+   "expected": "\"Kazimierza Tana [?]\". §7.2: a genitive singular -а / -я after a consonant gives the consonant-final base (Tan) + -a. The Russian -я must not stay as \"-ia\"."
+  },
+  {
+   "row_id": "0035_L3",
+   "found": "\"Anna, żona [nieczytelne] Kazragi [?]\" (from Казрагя)",
+   "expected": "\"Kazraga [?]\". §7.2: genitive -я after a consonant → base Kazrag, genitive Kazraga. The -a-noun genitive (-i after g) applies only to a Russian genitive -и/-ы. The same family is \"Kazrag [?]\" in 0049_R4."
+  },
+  {
+   "row_id": "0036_R2",
+   "found": "\"Franciszka, żona Michała Szykinia [?]\" (from Шыкиня)",
+   "expected": "\"Michała Szykina [?]\" (§7.2: genitive -я after a consonant → Szykin + -a). Compare 0142_R3, where Шакиня → \"Szakina [?]\" is correct, and 0106_L3, where Шавкиня → \"Szawkina [?]\" is correct."
+  },
+  {
+   "row_id": "0120_L1",
+   "found": "\"Franciszka, żona Antoniego Lingia [?]\" (from лин гя)",
+   "expected": "\"Antoniego Linga [?]\" (§7.2: genitive -я after a consonant → Ling + -a)."
+  },
+  {
+   "row_id": "0171_R1",
+   "found": "\"(2) … żona włościanina Kazimierza Ramunia [?]\" (from Рамуня)",
+   "expected": "\"Kazimierza Ramuna [?]\" (§7.2: genitive -я after a consonant → Ramun + -a)."
+  },
+  {
+   "row_id": "0145_L4",
+   "found": "\"żona włościanina Tadeusza [?] Patwowa [?]\" (from Патво вя)",
+   "expected": "\"Tadeusza [?] Patwow [?]\". §7.2: a genitive singular -ова/-ева (here -овя) → -ow + [?], left unchanged (cf. \"Antoniego Miklow [?]\"). \"Patwowa\" also reads as a woman's -owa surname."
+  },
+  {
+   "row_id": "0147_R3",
+   "found": "\"Ignacego Abaris [?]\", undeclined (margin Абарисіовъ)",
+   "expected": "\"Ignacego Abarisa [?]\". §7.2 Step 3 (bare stem, undeclined) applies only to a stem *without* a Lithuanian ending. Абарис- has a written -ис, so the -исъ/-исовъ row applies (base -is, genitive -isa). This is the same logic as \"Astrejkisa if the entry writes Астрейкисъ\", and the same as \"Winlasa [?]\" in 0104_L1."
+  },
+  {
+   "row_id": "0092_R3",
+   "found": "Baptism field starts with \"[Koniec poprzedniego wpisu: „…imieniem Konstancja …”.]\" and ends with \"[Dopisek: „…roku. Września 4. wizytacja [?]…” …]\". The parents and godparents fields also carry \"[Dopisek: …]\" visitation remarks.",
+   "expected": "§8.7: later margin remarks are not part of the entry and go only in the notes. §1: the baptism field is date, church, priest, \"ochrzcił…\", \"z dopełnieniem…\" in that order, so the tail of the previous entry does not belong here either."
+  },
+  {
+   "row_id": "0169_L1",
+   "found": "Baptism field ends \"…imieniem [tekst się urywa]\" and parents field ends \"…we wsi Keltinki [?] [tekst się urywa]\", both without a full stop.",
+   "expected": "§1: \"Every field ends with a full stop\" (cf. 0027_L3: \"imieniem [tekst się urywa].\")."
+  }
+ ],
+ "grammar_problems": [
+  {
+   "row_id": "0145_L4",
+   "problem": "\"Tadeusza [?] Patwowa [?]\": the -owa ending makes the husband's surname look feminine (a wife's name), so the genitive phrase reads wrongly.",
+   "fix": "\"Magdalena, żona włościanina Tadeusza [?] Patwow [?].\""
+  },
+  {
+   "row_id": "0036_R2",
+   "problem": "\"Michała Szykinia\" is not a possible Polish genitive of a consonant-stem surname. It keeps the Russian soft -я as \"-ia\" (same pattern: 0120_L1 \"Lingia\", 0171_R1 \"Ramunia\", 0033_R4 \"Tania\").",
+   "fix": "\"żona Michała Szykina [?]\"; \"żona Antoniego Linga [?]\"; \"żona włościanina Kazimierza Ramuna [?]\"; \"żona Kazimierza Tana [?]\"."
+  },
+  {
+   "row_id": "0047_R2",
+   "problem": "In \"Ewa, żona [?] Szymona Tipuda [?]\" the [?] hangs on \"żona\", which reads as doubt about the marriage, not about the reading.",
+   "fix": "\"Ewa, żona Szymona Tipuda [?]\" (or \"Ewa, żona [?] Szymona …\" only if the word супругою itself is the uncertain reading; if so, say that in the notes)."
+  },
+  {
+   "row_id": "0110_R2",
+   "problem": "\"Anna, żona [?] Antoniego [?] Szlida [?]\": three [?] marks, one of them on \"żona\". The phrase is hard to read and the uncertainty is put on the wrong word.",
+   "fix": "\"Anna, żona Antoniego [?] Szlida [?].\""
+  },
+  {
+   "row_id": "0167_L2",
+   "problem": "\"ksiądz proboszcz parafii Leelaw [?] Edmund [?] Gaeminow [?] ochrzcił\" is a stacked title in which the parish name runs straight into the priest's given name, so the reader cannot see where one stops and the other starts. The glossary rule (§2) produces this.",
+   "fix": "\"ksiądz Edmund [?] Gaeminow [?], proboszcz parafii Leelaw [?], ochrzcił …\""
+  },
+  {
+   "row_id": "0092_R3",
+   "problem": "The quoted remarks inside the fields break the sentences. The parents field reads \"…we wsi Merkele [?]. [Dopisek: „…tę księgę obejrzawszy [?]…\", so the sentence no longer ends with the entry.",
+   "fix": "\"Dnia 2 września 1851 roku w płungiańskim rzymskokatolickim kościele parafialnym ksiądz wikary Ludwik Montwid ochrzcił niemowlę imieniem Andrzej [?] z dopełnieniem wszystkich obrzędów Sakramentu.\" Move the visitation remarks and the Konstancja fragment to the notes."
+  },
+  {
+   "row_id": "0169_L1",
+   "problem": "Both broken-off fields have no closing full stop.",
+   "fix": "\"…ochrzcił niemowlę imieniem [tekst się urywa].\" / \"…we wsi Keltinki [?] [tekst się urywa].\""
+  }
+ ],
+ "glossary_suggestions": [
+  "Parents field opening (§1, §2 Template A): \"Włościan, prawowitych małżonków X i Y z domu Z, córka, urodzona…\" begins with a genitive plural that has nothing to depend on. It is a word-for-word copy of the Russian \"Крестьянъ законныхъ супруговъ … дочь\" and in Polish it reads as broken. Polish needs the head noun first: \"Córka włościan, prawowitych małżonków Tadeusza Jankowskiego i Marianny z domu Tumowna [?], urodzona dnia …\" (twins: \"Syn i córka, bliźnięta, włościan, prawowitych małżonków …\"). Template B should match: \"Syn żołnierza Ignacego Zaldyka i Ludwiki z domu Kawecka, prawowitych małżonków, urodzony …\". The change is mechanical: move \"syn/córka\" to the front. This affects every entry, so it matters most.",
+  "Church phrase (§1): \"w płungiańskim rzymskokatolickim kościele parafialnym\" piles three adjectives in front of the noun. Polish puts classifying adjectives after the noun, and metrical books name the place with the town. Use \"w kościele parafialnym rzymskokatolickim w Płungianach\" (declining a town name after \"w\" is ordinary Polish; the no-declension rule is needed only after type words such as \"we wsi\"). If the adjective must stay, \"w płungiańskim kościele parafialnym rzymskokatolickim\" is the acceptable fallback. For other churches (§4.6): \"w kościele parafialnym rzymskokatolickim w Kulach\".",
+  "\"z dopełnieniem wszystkich obrzędów Sakramentu\" (§1, open question 10.1): Polish does not capitalise \"sakrament\" as a common noun, and the bare genitive \"obrzędów Sakramentu\" sounds unfinished. Use \"z dopełnieniem wszystkich obrzędów sakramentu chrztu\" (or the period formula \"z zachowaniem wszystkich ceremonii\"). At the least, write lowercase \"sakramentu\". The bracketed form becomes \"[sakramentu]\".",
+  "Twins (§8.1): \"ochrzcił niemowlęta bliźnięta imionami Emilia i Petronela\" puts two nouns side by side, which is unidiomatic. Write \"ochrzcił bliźnięta imionami Emilia i Petronela\". In the godparents field, \"pierwszego niemowlęcia / drugiego niemowlęcia\" is better as \"pierwszego z bliźniąt / drugiego z bliźniąt\". In the parents field, \"córki (bliźnięta)\" in parentheses is unnatural. Use \"córki bliźniaczki, urodzone\", \"synowie bliźniacy\", and \"syn i córka, bliźnięta, urodzeni\". These words are normal Polish and are not the colloquial \"bliźniaki\" that §8.1 rightly forbids.",
+  "\"-owna/-ewna, never -ówna\" (§7.1, §7.3, checklist 6): this rule does the most harm to how the translations read. To a Polish reader \"Kawnowna\", \"Milaszowna\" and \"Lukoszowny\" look like misspellings, because the suffix in Polish is always -ówna. Changing о → ó *only inside the fixed suffix* -овна → -ówna (genitive -ówny) invents nothing about the stem, so it stays mechanical. It does not break principle 1 any more than -ска → -ska does. The sample also shows that the -ювна rule causes confusion: translators wrote \"Balsiuwna\" and \"Buczniuwna\" because §7.1 (ю → iu) and §7.3 (-ювна → -iowna) contradict each other. Pick one rule for -ювна (I suggest -iówna) and state it in §7.1 too.",
+  "рж → rż and -кевичъ → -kewicz in Slavic-suffix lay names (§7.1, open question 18): \"włościanin Józef Brżeziński\" (0015_L4), \"Berżsański\", \"Szymkewicz\", \"Franciszkewicz\" and \"Fronckewiczów\" all read as typos for Brzeziński, Szymkiewicz and so on. Russian clerks wrote рж and кевичъ precisely to render Polish rz and kiewicz. Allow rz and -kiewicz inside names with a Polish suffix (-ski, -cki, -icz), just as ń before -sk- is already allowed. Then a lay Бржезинскій and the clergy Brzeziński no longer get different spellings.",
+  "л always → l in lay names (§7.1): the result is \"Pawlowski\", \"Michalowski\", \"Sokolowski\", \"Orlowska\", \"Kozlawski\" and \"Lawrecka\", which a Polish reader takes for misspellings of Pawłowski, Michałowski, Sokołowski and Orłowska. Russian л stands for both Polish l and ł, and there is a standard mechanical reverse rule: л before а, о, у, ы, before a consonant and at the end of a word → ł; л before е, и, ь, я, ю → l. At least for names with a Polish suffix (-owski, -ewicz, -owna), use that rule rather than a blanket l.",
+  "Given-name table (§6) is missing several names that come up often in 1849–1854, so the mechanical rule produces non-names. Мацей gives \"Macej [?]\" / \"Maceja [?]\" (0028, 0058, 0104_R3, 0148); add Мацей → Maciej (gen. Macieja). Also add Кристина → Krystyna (0094 \"Kristina\"), Ципріянъ / Цапріянъ → Cyprian (0049 \"Cyprijana\", 0159 \"Caprijan\"), Марціянъ → Marcjan (0006 \"Marcijan\" vs 0011 \"Marcjan\" for the same man), Мелитонъ → Meliton, Ромуальдъ → Romuald, Гіеронимъ → Hieronim, and Кристофъ → Krzysztof. Without these entries, the same godfather is spelled two ways and real names get a [?].",
+  "§7.2, genitive -а/-я after a consonant: translators repeatedly misapplied it to -я after н or г (Szykinia, Lingia, Ramunia, Tania, Kazragi). Add explicit examples to the table: Шыкиня → Szykin, \"Michała Szykina\"; Казрагя → Kazrag, \"Kazraga\"; Линга/Лингя → Ling, \"Linga\". Also state that -я never survives as \"-ia\" in a man's surname. Likewise, add an example to the -ова row showing that a genitive -овя/-ова stays \"-ow [?]\" and never becomes \"-owa\" (0145 \"Patwowa\").",
+  "§7.1 vs §7.2 on -люсъ: Кубилюсъ (0013_L1) gives \"Kubilus\" under the л + ю → u letter rule, but \"Kubilius\" under the -юсъ → -ius suffix rule, whose own example is Кубиліусовъ → Kubilius. Say which rule wins. I suggest the suffix rule wins (Kubilius, Kubiliusa), so that one family is not split between Кубилюсъ and Кубиліусъ spellings.",
+  "§7.4 / §8.2, widowed mother of a child born out of wedlock: the glossary says only that an unmarried mother gets no \"z domu\". In 0041_L3 the translator wrote \"Nieślubna córka włościanki wdowy Domiceli Lawreckiej z domu Grumlewna [?]\". That is good Polish and should be written into the rule as the model: a widow keeps \"z domu\" + maiden name, with the maiden name in the nominative as in Case 2.",
+  "§2 clergy, book 18 \"мѣстнымъ\": the book-18 formula row lists only \"Альтаристомъ/Викарнымъ онаго Кс.\", and \"miejscowy ksiądz\" is listed for 1867–1874. In January–March 1854, translators wrote \"miejscowy ksiądz altarysta/wikary\" in 0169_L1–0174_L1 and dropped it from 0175_L2b on. If the 1854 scribe writes мѣстнымъ, state that \"miejscowy\" applies in book 18 too. Otherwise one priest's entries will alternate between the two forms.",
+  "Priest of another parish (§2 table, §8.5): \"ksiądz proboszcz parafii Kule Y\" runs the parish name into the priest's name (0167_L2: \"ksiądz proboszcz parafii Leelaw [?] Edmund [?] Gaeminow [?]\"). Use apposition: \"ksiądz Y, proboszcz parafii Kule, ochrzcił …\".",
+  "\"w okolicy X\" for околица (§4.1, open question 8): in 0065_L3, \"urodzona … w okolicy Keieinszki [?]\" will be read as \"near Keieinszki\". Use \"w okolicy szlacheckiej Keieinszki [?]\" or \"w zaścianku\". It adds a word but removes a real misreading."
+ ],
+ "overall": "I checked all 150 rows against the glossary, and 16 have a problem. On the whole the sample follows the glossary closely: the formula order, numeral dates, village nominatives from §4.3/4.4, the fixed clergy forms, the Step-3 stems, Case-2 maiden names, the twins template and the placeholders are almost all applied correctly.\n\nThe violations that do occur fall into four groups:\n- **Genitive -я after a consonant** (§7.2), misapplied five times: Szykinia, Lingia, Ramunia, Tania, Kazragi.\n- **Other suffix slips:** two -ювна → -iuwna for -iowna (Balsiuwna, Buczniuwna), one -ова genitive written as \\\"-owa\\\" (Patwowa), and one wrongly undeclined -is stem (Abaris, should be Abarisa).\n- **One-off rule breaks:** \\\"parafii Kule [?]\\\" (Kule takes no [?]), one godfather written two ways (Marcijan / Marcjan), and visitation notes and the previous entry's ending inside the fields of 0092_R3.\n- **Formal gaps:** an entirely empty row (0004_R1) and missing final full stops (0169_L1).\n\nThe bigger issue is the glossary itself, not the translators. Its own templates produce Polish that a native reader will find wrong or odd:\n- the parents field opens with a dangling genitive (\\\"Włościan, prawowitych małżonków …, córka\\\");\n- the church phrase stacks three adjectives in front of the noun;\n- \\\"Sakramentu\\\" is capitalised;\n- twins are written \\\"niemowlęta bliźnięta\\\";\n- \\\"-owna\\\" without ó, \\\"l\\\" for every л and \\\"rż\\\" all make ordinary surnames (Pawlowski, Kawnowna, Brżeziński, Szymkewicz) look misspelled;\n- missing table entries turn Мацей into \\\"Macej\\\" and Кристина into \\\"Kristina\\\".\n\nBecause every entry follows these rules, fixing them in the glossary (mechanically, as its header proposes) would improve the Polish far more than any of the per-row corrections."
+}

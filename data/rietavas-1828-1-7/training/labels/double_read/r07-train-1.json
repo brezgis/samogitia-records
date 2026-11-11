@@ -1,0 +1,2017 @@
+{
+ "batch": "r07-train-1",
+ "A": [
+  {
+   "id": "0008_R2_baptism_01",
+   "text": "Мѣсяцъ",
+   "sure": true,
+   "crop_ok": false,
+   "note": "Page column header, not an entry line; column rule runs through the word."
+  },
+  {
+   "id": "0008_R2_baptism_02",
+   "text": "[ы?]сяча восемьсотъ Крес",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Crop shifted right: initial Т cut off at left; 'Крес' right of the rule is the start of the parents column."
+  },
+  {
+   "id": "0008_R2_baptism_03",
+   "text": "ьдесятъ седьмо джев",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (сем- missing); 'джев' belongs to parents column."
+  },
+  {
+   "id": "0008_R2_baptism_04",
+   "text": "года Сентября [ско?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right of rule: parents-column fragment, top cut."
+  },
+  {
+   "id": "0008_R2_baptism_05",
+   "text": "[та?]раго дня въ Ре [Юрге?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (probably втораго); right fragment is parents column."
+  },
+  {
+   "id": "0008_R2_baptism_06",
+   "text": "[т?]овскомъ Р:К: При [изъ Н?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "First letter partly cut; right fragment from parents column."
+  },
+  {
+   "id": "0008_R2_baptism_07",
+   "text": "дскомъ Костел[ѣ?] шев",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (хо- missing); last letter of Костелѣ under the rule; 'шев' parents column."
+  },
+  {
+   "id": "0008_R2_baptism_08",
+   "text": "[м?]ѣстнымъ Ви [свич?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Initial letter cut; right fragment parents column."
+  },
+  {
+   "id": "0008_R2_baptism_09",
+   "text": "[а?]рнымъ Кс: Ива 1877",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (к missing); '1877' from parents column."
+  },
+  {
+   "id": "0008_R2_baptism_10",
+   "text": "вичъ Петронай [да?] 1",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right fragment from parents column, top cut."
+  },
+  {
+   "id": "0008_R2_baptism_11",
+   "text": "[т?]исомъ окрещенъ [ря?] 1",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right fragment parents column."
+  },
+  {
+   "id": "0008_R2_baptism_12",
+   "text": "ладенецъ име [въ де?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Initial м cut; right fragment parents column."
+  },
+  {
+   "id": "0008_R2_baptism_13",
+   "text": "ъ Доминикъ [по?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (нем- missing); right fragment parents column."
+  },
+  {
+   "id": "0008_R2_baptism_14",
+   "text": "всѣми обрядам ро",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Last letter(s) of обрядами at the rule; 'ро' parents column."
+  },
+  {
+   "id": "0008_R2_baptism_15",
+   "text": "[а?]инства",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Initial letters cut (таинства); flourish at right not transcribed."
+  },
+  {
+   "id": "0008_R2_parents_01",
+   "text": "Сентябрь",
+   "sure": true,
+   "crop_ok": false,
+   "note": "Month header with rule, not an entry line."
+  },
+  {
+   "id": "0008_R2_parents_02",
+   "text": "тьянъ Лабор",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (Крес- is in the baptism crop)."
+  },
+  {
+   "id": "0008_R2_parents_03",
+   "text": "ской Волости Воспр",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; 'Воспр' is the godparents column."
+  },
+  {
+   "id": "0008_R2_parents_04",
+   "text": "[н?]ца и Барбары [ками?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right fragment godparents column."
+  },
+  {
+   "id": "0008_R2_parents_05",
+   "text": "[р?]ціовъ Тры Авгу",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; 'Авгу' godparents column."
+  },
+  {
+   "id": "0008_R2_parents_06",
+   "text": "скихъ зак: супр: [Вари?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right fragment godparents column."
+  },
+  {
+   "id": "0008_R2_parents_07",
+   "text": "родившійся съ Мар",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right fragment godparents column."
+  },
+  {
+   "id": "0008_R2_parents_08",
+   "text": "[года?] Сентяб",
+   "sure": false,
+   "crop_ok": false,
+   "note": "First word unclear (года/сего); end of line under the rule."
+  },
+  {
+   "id": "0008_R2_parents_09",
+   "text": "дня въ [деревнѣ?] Меле",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right side holds two godparents-column lines (Меле / below it another fragment)."
+  },
+  {
+   "id": "0008_R2_parents_10",
+   "text": "[Авижахъ?] Ре [вице?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Village name uncertain; right fragment godparents column."
+  },
+  {
+   "id": "0008_R2_parents_11",
+   "text": "вскаго При",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (Рето- missing)."
+  },
+  {
+   "id": "0008_R2_parents_12",
+   "text": "хода",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0008_R2_godparents_01",
+   "text": "[іемни?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Only the tail of a godparents line, cut at left, touching the rule."
+  },
+  {
+   "id": "0008_R2_godparents_02",
+   "text": "были",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Tail of godparents column."
+  },
+  {
+   "id": "0008_R2_godparents_03",
+   "text": "стинъ",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Tail of a name (Авгу- is in the parents crop)."
+  },
+  {
+   "id": "0008_R2_godparents_04",
+   "text": "[рлисъ?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Name fragment, left cut."
+  },
+  {
+   "id": "0008_R2_godparents_05",
+   "text": "[іанною?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Name fragment, left cut."
+  },
+  {
+   "id": "0008_R2_godparents_06",
+   "text": "нов",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0008_R2_godparents_07",
+   "text": "[дѣ?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0008_R2_godparents_08",
+   "text": "ю",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Single trailing letter (ю/го)."
+  },
+  {
+   "id": "0018_L2_baptism_01",
+   "text": "9 30 Тысяча восемьсотъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'9' and '30' are the entry-number/day columns left of the baptism text, separated by rules; whole glyphs so transcribed."
+  },
+  {
+   "id": "0018_L2_baptism_02",
+   "text": "семьдесятъ седмаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Ending squeezed at the rule; no ь seen in седмаго."
+  },
+  {
+   "id": "0018_L2_baptism_03",
+   "text": "года Ноября трид",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_04",
+   "text": "цатаго дня въ Ре",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_05",
+   "text": "товскомъ Р:К: При",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_06",
+   "text": "ходскомъ Косте",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_07",
+   "text": "лѣ Мѣстнымъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_08",
+   "text": "Викарнымъ Кс:",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_09",
+   "text": "Іосифомъ Добк[ѣ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Last letter at the rule."
+  },
+  {
+   "id": "0018_L2_baptism_10",
+   "text": "вичемъ окрещенъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_11",
+   "text": "Младенецъ име",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_12",
+   "text": "нами Ева Ва",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_13",
+   "text": "лерія со всѣми",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_14",
+   "text": "обрядами таин",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_15",
+   "text": "ства",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_baptism_16",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "Rule only."
+  },
+  {
+   "id": "0018_L2_parents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "Rule and flourish only."
+  },
+  {
+   "id": "0018_L2_parents_02",
+   "text": "Крестьянъ Л[а?]б[а?]р",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_parents_03",
+   "text": "джевской Волости В",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'В' right of the rule is the first letter of the godparents column."
+  },
+  {
+   "id": "0018_L2_parents_04",
+   "text": "Антона и Вале",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_parents_05",
+   "text": "ріи изъ Пикц[іо?]въ н",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'н' right of the rule is from the godparents column."
+  },
+  {
+   "id": "0018_L2_parents_06",
+   "text": "Венцковъ зако: ли",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'ли' right of the rule is from the godparents column."
+  },
+  {
+   "id": "0018_L2_parents_07",
+   "text": "супру: дочь родив [Ти?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Two letters right of the rule (Ти/Ги) from the godparents column."
+  },
+  {
+   "id": "0018_L2_parents_08",
+   "text": "шаяся 1877 года Но съ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "'съ' right of the rule from the godparents column."
+  },
+  {
+   "id": "0018_L2_parents_09",
+   "text": "ября 29 дня въ д[ѣ?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Glyph right of the rule is cut by the crop edge."
+  },
+  {
+   "id": "0018_L2_parents_10",
+   "text": "ревнѣ Ведегяна[хъ?] ною",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Ending squeezed against the rule; 'ною' at top right is godparents column."
+  },
+  {
+   "id": "0018_L2_parents_11",
+   "text": "Ретовскаго При",
+   "sure": true,
+   "crop_ok": true,
+   "note": "Stray strokes right of the rule not transcribed."
+  },
+  {
+   "id": "0018_L2_parents_12",
+   "text": "хода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Tall crop; 'д' at top right and partial capital at bottom right are stray/cut and not transcribed."
+  },
+  {
+   "id": "0018_L2_godparents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "Rule only."
+  },
+  {
+   "id": "0018_L2_godparents_02",
+   "text": "оспріем",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Initial В is left of the crop (visible in the parents crop)."
+  },
+  {
+   "id": "0018_L2_godparents_03",
+   "text": "иками бы",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Initial н is outside the crop."
+  },
+  {
+   "id": "0018_L2_godparents_04",
+   "text": "Франц[ъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Last letter at the rule."
+  },
+  {
+   "id": "0018_L2_godparents_05",
+   "text": "и[гр?]евскій",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Surname; first letters are outside the crop."
+  },
+  {
+   "id": "0018_L2_godparents_06",
+   "text": "Марія",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Ending could be -ія or -іею abbreviated."
+  },
+  {
+   "id": "0018_L2_godparents_07",
+   "text": "Венц",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_godparents_08",
+   "text": "ковною",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0018_L2_godparents_09",
+   "text": "дѣвицею",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0027_R2_baptism_01",
+   "text": "[сяча?] восемьсотъ Крест",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Crop shifted right: start of Тысяча cut; 'Крест' is the parents column."
+  },
+  {
+   "id": "0027_R2_baptism_02",
+   "text": "десятъ восьмаго джевско",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (семь- missing); right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_03",
+   "text": "Февраля восем [Ивано?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (года); right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_04",
+   "text": "[дцатаго?] дня въ [изъ Ив?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_05",
+   "text": "[о?]вскомъ Р:К: При Гедвил",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (Рето-); 'Гедвил' parents column."
+  },
+  {
+   "id": "0027_R2_baptism_06",
+   "text": "комъ Костелѣ супру:",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; 'супру:' parents column."
+  },
+  {
+   "id": "0027_R2_baptism_07",
+   "text": "стнымъ Настоя дочь [1878?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (мѣ-); right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_08",
+   "text": "мъ Кс: Анто [ся?] 17",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_09",
+   "text": "ъ З[е?]вжавичемъ [нѣ?] [Б?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Priest surname uncertain; right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_10",
+   "text": "ещенъ младен товск",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (окр-); right part parents column."
+  },
+  {
+   "id": "0027_R2_baptism_11",
+   "text": "ъ именами [Ан?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; last letters at the rule."
+  },
+  {
+   "id": "0027_R2_baptism_12",
+   "text": "[а?] Барбара со",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut."
+  },
+  {
+   "id": "0027_R2_baptism_13",
+   "text": "и обрядами",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (всѣм-)."
+  },
+  {
+   "id": "0027_R2_baptism_14",
+   "text": "[инства?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; flourish at right not transcribed."
+  },
+  {
+   "id": "0027_R2_parents_01",
+   "text": "янъ Лабар Воспріем",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (Кресть-); 'Воспріем' godparents column."
+  },
+  {
+   "id": "0027_R2_parents_02",
+   "text": "й Волости",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut."
+  },
+  {
+   "id": "0027_R2_parents_03",
+   "text": "и Барбары ками был",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_04",
+   "text": "[рнтовтовъ?] [Фортун?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Surname fragment, left cut; right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_05",
+   "text": "[ловъ?] закон: [Даргужи?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_06",
+   "text": "дочь родивша съ [Анто?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_07",
+   "text": "8 года Февра ного Фор",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut (187-); right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_08",
+   "text": "дня въ [деревн?] ната Д",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_09",
+   "text": "[Слайцяхъ?] Ре гужи суп",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Village name very uncertain; right part godparents column."
+  },
+  {
+   "id": "0027_R2_parents_10",
+   "text": "[к?]аго Прихода [гою?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Left cut; right fragment with blot."
+  },
+  {
+   "id": "0027_R2_parents_11",
+   "text": "Тадеуша До",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Only godparents-column text visible; parents side has a stray stroke."
+  },
+  {
+   "id": "0027_R2_parents_12",
+   "text": "ша супру",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Content appears to be godparents-column text."
+  },
+  {
+   "id": "0027_R2_godparents_01",
+   "text": "[ми?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Faint fragment at the left edge."
+  },
+  {
+   "id": "0027_R2_godparents_02",
+   "text": "[и?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Two fragments on two lines merged in one crop."
+  },
+  {
+   "id": "0027_R2_godparents_03",
+   "text": "[съ?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Faint fragment."
+  },
+  {
+   "id": "0027_R2_godparents_04",
+   "text": "[ми?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0027_R2_godparents_05",
+   "text": "[ожи?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0027_R2_godparents_06",
+   "text": "[ар?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0027_R2_godparents_07",
+   "text": "[гру?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0027_R2_godparents_08",
+   "text": "[жу?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment."
+  },
+  {
+   "id": "0027_R2_godparents_09",
+   "text": "[гою?]",
+   "sure": false,
+   "crop_ok": false,
+   "note": "Fragment at top-left of a tall, mostly empty crop."
+  }
+ ],
+ "B": [
+  {
+   "id": "0008_R2_baptism_01",
+   "text": "Мѣсяцъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "column header, underlined; not a baptism line"
+  },
+  {
+   "id": "0008_R2_baptism_02",
+   "text": "Тысяча восемьсотъ [сем?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "text right of the rule (Крес...) is from the parents column, not transcribed"
+  },
+  {
+   "id": "0008_R2_baptism_03",
+   "text": "[ь?]десятъ седьмаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": "start of line reads like ьдесятъ (continuation of семь-); right side from other column ignored"
+  },
+  {
+   "id": "0008_R2_baptism_04",
+   "text": "года Сентября",
+   "sure": false,
+   "crop_ok": true,
+   "note": "right-side ink ignored"
+  },
+  {
+   "id": "0008_R2_baptism_05",
+   "text": "[шаго?] дня въ Ре",
+   "sure": false,
+   "crop_ok": true,
+   "note": "day ordinal first word doubtful"
+  },
+  {
+   "id": "0008_R2_baptism_06",
+   "text": "[т?]овскомъ Р.К: При",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_baptism_07",
+   "text": "[ходскомъ?] Костелѣ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ѣ ending looks like tall к form"
+  },
+  {
+   "id": "0008_R2_baptism_08",
+   "text": "мѣстнымъ Ви",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_baptism_09",
+   "text": "[карнымъ?] Кс: [Ива?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest name doubtful"
+  },
+  {
+   "id": "0008_R2_baptism_10",
+   "text": "вичъ [Петронай?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest name continuation, doubtful"
+  },
+  {
+   "id": "0008_R2_baptism_11",
+   "text": "[и?]сомъ окрещенъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_baptism_12",
+   "text": "младенецъ име",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_baptism_13",
+   "text": "ь Доминикъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "initial small ь before the capital, possibly part of именемъ"
+  },
+  {
+   "id": "0008_R2_baptism_14",
+   "text": "всѣми обрядам[и?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_baptism_15",
+   "text": "инства",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end of Таинства"
+  },
+  {
+   "id": "0008_R2_parents_01",
+   "text": "Сентябрь",
+   "sure": false,
+   "crop_ok": true,
+   "note": "month header with rule beneath; ending doubtful"
+  },
+  {
+   "id": "0008_R2_parents_02",
+   "text": "[тьянъ?] Лобор",
+   "sure": false,
+   "crop_ok": true,
+   "note": "township name doubtful"
+  },
+  {
+   "id": "0008_R2_parents_03",
+   "text": "ской Волости",
+   "sure": false,
+   "crop_ok": true,
+   "note": "right side ignored"
+  },
+  {
+   "id": "0008_R2_parents_04",
+   "text": "[н?]ца и Барбары",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_parents_05",
+   "text": "[ріовъ Тры?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "maiden surname doubtful"
+  },
+  {
+   "id": "0008_R2_parents_06",
+   "text": "скихъ закон[ныхъ?] супру-",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_parents_07",
+   "text": "родившійся",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_parents_08",
+   "text": "года Сентября",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_parents_09",
+   "text": "дня въ деревнѣ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "stray stroke below ignored"
+  },
+  {
+   "id": "0008_R2_parents_10",
+   "text": "[Мичюры?] Ре",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village doubtful"
+  },
+  {
+   "id": "0008_R2_parents_11",
+   "text": "вескаго При",
+   "sure": false,
+   "crop_ok": true,
+   "note": "probably Ре|товскаго"
+  },
+  {
+   "id": "0008_R2_parents_12",
+   "text": "хода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "first letter x in cursive; rest of crop empty"
+  },
+  {
+   "id": "0008_R2_godparents_01",
+   "text": "[іемни?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "text only at bottom of tall crop; likely ...никами"
+  },
+  {
+   "id": "0008_R2_godparents_02",
+   "text": "[были?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0008_R2_godparents_03",
+   "text": "[сынъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0008_R2_godparents_04",
+   "text": "[Ремъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0008_R2_godparents_05",
+   "text": "[ійзнаго?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0008_R2_godparents_06",
+   "text": "[нов?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0008_R2_godparents_07",
+   "text": "[дть?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0008_R2_godparents_08",
+   "text": "[ко?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "short word in top left of otherwise empty crop"
+  },
+  {
+   "id": "0018_L2_baptism_01",
+   "text": "9 30 Тысяча восемьсотъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "9 and 30 are glyphs from the left neighbouring column, left unpainted; included"
+  },
+  {
+   "id": "0018_L2_baptism_02",
+   "text": "семьдесятъ седьмаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": "седьмаго ending doubtful"
+  },
+  {
+   "id": "0018_L2_baptism_03",
+   "text": "года Ноября [двад?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_04",
+   "text": "цатаго дня въ Ре",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_05",
+   "text": "товскомъ Р:К: При",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_06",
+   "text": "ходскомъ Косте",
+   "sure": false,
+   "crop_ok": true,
+   "note": "word cut at rule"
+  },
+  {
+   "id": "0018_L2_baptism_07",
+   "text": "лѣ мѣстнымъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_08",
+   "text": "Викарнымъ Кс:",
+   "sure": true,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_09",
+   "text": "[Іосифомъ Добкъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest name"
+  },
+  {
+   "id": "0018_L2_baptism_10",
+   "text": "вичемъ окрещенъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_11",
+   "text": "младенецъ име",
+   "sure": true,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_12",
+   "text": "немъ [Эво?] Ва",
+   "sure": false,
+   "crop_ok": true,
+   "note": "child's name Ва|лерій, first name doubtful"
+  },
+  {
+   "id": "0018_L2_baptism_13",
+   "text": "лерій со всѣми",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_14",
+   "text": "обрядами Таин",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_15",
+   "text": "ства",
+   "sure": true,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_16",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only ruled lines"
+  },
+  {
+   "id": "0018_L2_parents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "rule and flourish only"
+  },
+  {
+   "id": "0018_L2_parents_02",
+   "text": "Крестьянъ Лобор",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Лобор doubtful"
+  },
+  {
+   "id": "0018_L2_parents_03",
+   "text": "[девской?] Волости",
+   "sure": false,
+   "crop_ok": true,
+   "note": "right-side ink ignored"
+  },
+  {
+   "id": "0018_L2_parents_04",
+   "text": "Антона и Вале",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_parents_05",
+   "text": "[ріи изъ?] Пикцовъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful"
+  },
+  {
+   "id": "0018_L2_parents_06",
+   "text": "Венцковъ закон:",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_parents_07",
+   "text": "супру: дочь родив",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_parents_08",
+   "text": "шаяся 1877 года Но",
+   "sure": false,
+   "crop_ok": true,
+   "note": "a long stray stroke crosses 1877"
+  },
+  {
+   "id": "0018_L2_parents_09",
+   "text": "ября [24?] дня въ [де?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_parents_10",
+   "text": "ревнѣ [Ведегянор?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village doubtful; right side ignored"
+  },
+  {
+   "id": "0018_L2_parents_11",
+   "text": "Ретовскаго При",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_parents_12",
+   "text": "хода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "rest empty; partial glyph at bottom right ignored"
+  },
+  {
+   "id": "0018_L2_godparents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "ruled line only"
+  },
+  {
+   "id": "0018_L2_godparents_02",
+   "text": "[В?]оспріем",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_03",
+   "text": "никами Бы",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_04",
+   "text": "[Франциш?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_05",
+   "text": "[Гаревскій?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname doubtful"
+  },
+  {
+   "id": "0018_L2_godparents_06",
+   "text": "Марія",
+   "sure": true,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_07",
+   "text": "Венц",
+   "sure": false,
+   "crop_ok": true,
+   "note": "long tail"
+  },
+  {
+   "id": "0018_L2_godparents_08",
+   "text": "[Ковного?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_09",
+   "text": "[ъвищеко?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "text only at top of tall crop"
+  },
+  {
+   "id": "0027_R2_baptism_01",
+   "text": "ысяча восемьсотъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "initial T cut off at left; right side is other column, ignored"
+  },
+  {
+   "id": "0027_R2_baptism_02",
+   "text": "десятъ восьмаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_03",
+   "text": "Февраля восем",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_04",
+   "text": "[на?]цатаго дня въ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "probably надцатаго"
+  },
+  {
+   "id": "0027_R2_baptism_05",
+   "text": "[т?]овскомъ Р.К: При",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_06",
+   "text": "комъ Костелѣ",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_07",
+   "text": "[стнымъ Викар?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_08",
+   "text": "мъ Кс: [Амро?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest name"
+  },
+  {
+   "id": "0027_R2_baptism_09",
+   "text": "ь [Зевжкавичемъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname"
+  },
+  {
+   "id": "0027_R2_baptism_10",
+   "text": "ещенъ Младенецъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_11",
+   "text": "ъ именемъ [Ян?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_12",
+   "text": "[Еградго?] со",
+   "sure": false,
+   "crop_ok": true,
+   "note": "name doubtful"
+  },
+  {
+   "id": "0027_R2_baptism_13",
+   "text": "и обрядами",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_baptism_14",
+   "text": "нства",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_01",
+   "text": "[тьянъ?] Лабор",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_02",
+   "text": "и Волости",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_03",
+   "text": "и Барбары",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_04",
+   "text": "[ковитовъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_05",
+   "text": "[ловъчажин?]:",
+   "sure": false,
+   "crop_ok": true,
+   "note": "probably закон:, illegible"
+  },
+  {
+   "id": "0027_R2_parents_06",
+   "text": "дочь родивша",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_07",
+   "text": "З года Февра",
+   "sure": false,
+   "crop_ok": true,
+   "note": "faint З"
+  },
+  {
+   "id": "0027_R2_parents_08",
+   "text": "[дня Ацдтеров?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village doubtful"
+  },
+  {
+   "id": "0027_R2_parents_09",
+   "text": "[слайцѣ Ве?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_10",
+   "text": "[товскаго?] Прихода",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_parents_11",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only a stray stroke left of the rule"
+  },
+  {
+   "id": "0027_R2_parents_12",
+   "text": "ша супру",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ша underlined; rest empty"
+  },
+  {
+   "id": "0027_R2_godparents_01",
+   "text": "ими",
+   "sure": false,
+   "crop_ok": true,
+   "note": ""
+  },
+  {
+   "id": "0027_R2_godparents_02",
+   "text": "и гріи",
+   "sure": false,
+   "crop_ok": false,
+   "note": "two separate small words at different heights, likely merged lines"
+  },
+  {
+   "id": "0027_R2_godparents_03",
+   "text": "иъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_04",
+   "text": "ии",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_05",
+   "text": "ему",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_06",
+   "text": "оп",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_07",
+   "text": "гру",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_08",
+   "text": "иу",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  },
+  {
+   "id": "0027_R2_godparents_09",
+   "text": "гого",
+   "sure": false,
+   "crop_ok": true,
+   "note": "low confidence"
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0008_R2_baptism_01",
+   "text": "Мѣсяцъ",
+   "status": "image_checked",
+   "note": "Column header (underlined, column rule through the word), not an entry line; tops of the next line at the bottom edge not transcribed."
+  },
+  {
+   "id": "0008_R2_baptism_02",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "Crop shifted right: initial Т of Тысяча cut by the left edge; reads ...ысяча восемьсотъ, then Крес from the parents column right of the rule."
+  },
+  {
+   "id": "0008_R2_baptism_03",
+   "text": "ьдесятъ седьм[о?] джев",
+   "status": "draft",
+   "note": "Crop shifted right (сем- outside). Small mark above the end of седьмо may be a superscript го or a stray. джев right of the rule is parents-column text, not painted out."
+  },
+  {
+   "id": "0008_R2_baptism_04",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "года Сентября is readable, but the parents-column fragment right of the rule is cut by the top edge."
+  },
+  {
+   "id": "0008_R2_baptism_05",
+   "text": "т[а?]раго дня въ Ре [Юрге?]",
+   "status": "draft",
+   "note": "Left cut (в of втораго outside the crop). Right of the rule is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_06",
+   "text": "[т?]овскомъ Р:К: При [изъ Н?]",
+   "status": "draft",
+   "note": "First letter at the left edge; right of the rule is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_07",
+   "text": "дскомъ Костел[ѣ?] шев",
+   "status": "draft",
+   "note": "хо- outside the crop; last letter of Костелѣ sits on the rule; шев is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_08",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "Initial м of мѣстнымъ cut by the left edge (only a stroke remains); rest reads ѣстнымъ Ви, then parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_09",
+   "text": "[а?]рнымъ Кс: Ива 1877",
+   "status": "draft",
+   "note": "к of -карнымъ outside the crop; 1877 is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_10",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "вичъ Петронай is readable, but the right side holds fragments of two parents-column lines (bottoms of 1877 above, ря 1 below)."
+  },
+  {
+   "id": "0008_R2_baptism_11",
+   "text": "[ти?]сомъ окрещенъ [ря?] 1",
+   "status": "draft",
+   "note": "Left edge at the first letter; right of the rule is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_12",
+   "text": "ладенецъ име [въ де?]",
+   "status": "draft",
+   "note": "Initial м outside the crop; right of the rule is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_13",
+   "text": "[ъ?] Доминикъ [по?]",
+   "status": "draft",
+   "note": "Small ъ/ь at the left edge is the end of именемъ; по is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_14",
+   "text": "всѣми обрядам[и?] ро",
+   "status": "draft",
+   "note": "End of обрядами squeezed against the rule; ро is parents-column text."
+  },
+  {
+   "id": "0008_R2_baptism_15",
+   "text": "[а?]инства",
+   "status": "draft",
+   "note": "Start of Таинства outside the crop; flourish at right not transcribed."
+  },
+  {
+   "id": "0008_R2_parents_01",
+   "text": "Сентябрь",
+   "status": "image_checked",
+   "note": "Month header with underline and column rule through it, not an entry line; tops of the next line at the bottom edge not transcribed."
+  },
+  {
+   "id": "0008_R2_parents_02",
+   "text": "тьянъ Л[о?]б[о?]р",
+   "status": "draft",
+   "note": "Крес- is outside the crop (left). Township vowels а/о uncertain."
+  },
+  {
+   "id": "0008_R2_parents_03",
+   "text": "ской Волости Воспр",
+   "status": "image_checked",
+   "note": "Crop spans two columns: Воспр right of the rule is the start of the godparents column, whole and visible. джев- is outside the crop at left."
+  },
+  {
+   "id": "0008_R2_parents_04",
+   "text": "[н?]ца и Барбары ками",
+   "status": "draft",
+   "note": "Left cut; ками is godparents-column text."
+  },
+  {
+   "id": "0008_R2_parents_05",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "First letter cut by the left edge (only a stroke remains); rest reads ціовъ Тры, then Авгу from the godparents column."
+  },
+  {
+   "id": "0008_R2_parents_06",
+   "text": "скихъ зак: супр: [Вари?]",
+   "status": "draft",
+   "note": "Abbreviated зак: супр:, not законныхъ. Right of the rule is godparents-column text."
+  },
+  {
+   "id": "0008_R2_parents_07",
+   "text": "родивш[ійся?] съ Мар",
+   "status": "draft",
+   "note": "съ Мар is godparents-column text."
+  },
+  {
+   "id": "0008_R2_parents_08",
+   "text": "[года?] Сентяб",
+   "status": "draft",
+   "note": "First word heavy/unclear; the month ends at the rule with no clear ря. Stray tails at right not transcribed."
+  },
+  {
+   "id": "0008_R2_parents_09",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "дня въ деревнѣ at left, but the right side holds two godparents-column lines (Меле / below it another), plus cut tops of the next line."
+  },
+  {
+   "id": "0008_R2_parents_10",
+   "text": "[Авижахъ?] Ре [вице?]",
+   "status": "draft",
+   "note": "Village name very uncertain; right fragment is godparents-column text."
+  },
+  {
+   "id": "0008_R2_parents_11",
+   "text": "[в?]скаго При",
+   "status": "draft",
+   "note": "то- of Ретовскаго outside the crop at left; no е between в and с. Squiggle at right not transcribed."
+  },
+  {
+   "id": "0008_R2_godparents_01",
+   "text": "[іемни?]",
+   "status": "draft",
+   "note": "Tall, mostly empty crop; text only at bottom left, touching the rule."
+  },
+  {
+   "id": "0008_R2_godparents_02",
+   "text": "были",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0008_R2_godparents_03",
+   "text": "[с?]тинъ",
+   "status": "draft",
+   "note": "Tail of Августинъ (Авгу- is in the parents crop); not сынъ."
+  },
+  {
+   "id": "0008_R2_godparents_04",
+   "text": "[рлисъ?]",
+   "status": "draft",
+   "note": "Surname tail, first letters unclear."
+  },
+  {
+   "id": "0008_R2_godparents_05",
+   "text": "і[ан?]ною",
+   "status": "draft",
+   "note": "Probably the tail of Маріанною (Мар is in the parents crop)."
+  },
+  {
+   "id": "0008_R2_godparents_06",
+   "text": "[н?]ов",
+   "status": "draft",
+   "note": "Fragment of a surname."
+  },
+  {
+   "id": "0008_R2_godparents_07",
+   "text": "дѣ",
+   "status": "image_checked",
+   "note": "Start of дѣвицею, continued in the next line."
+  },
+  {
+   "id": "0008_R2_godparents_08",
+   "text": "[ю?]",
+   "status": "draft",
+   "note": "Single trailing letter at top left of an otherwise empty crop (end of дѣвицею)."
+  },
+  {
+   "id": "0018_L2_baptism_02",
+   "text": "семьдесятъ седма[го?]",
+   "status": "draft",
+   "note": "No ь in седмаго; ending squeezed against the rule."
+  },
+  {
+   "id": "0018_L2_baptism_03",
+   "text": "года Ноября трид",
+   "status": "image_checked",
+   "note": "трид (continued цатаго on the next line), not двад."
+  },
+  {
+   "id": "0018_L2_baptism_07",
+   "text": "лѣ [М?]ѣстнымъ",
+   "status": "draft",
+   "note": "Initial м has an ornamental entry dot; capital vs lowercase unclear."
+  },
+  {
+   "id": "0018_L2_baptism_09",
+   "text": "Іосифомъ Добк[ѣ?]",
+   "status": "draft",
+   "note": "Priest surname continues вичемъ on the next line; last letter at the rule."
+  },
+  {
+   "id": "0018_L2_baptism_11",
+   "text": "[М?]ладенецъ име",
+   "status": "draft",
+   "note": "Same initial-м form as in line 07; capital vs lowercase unclear."
+  },
+  {
+   "id": "0018_L2_baptism_12",
+   "text": "нами Ев[а?] Ва",
+   "status": "draft",
+   "note": "именами (two names). Final vowel of the first name looks like о but is probably а."
+  },
+  {
+   "id": "0018_L2_baptism_13",
+   "text": "лерія со всѣми",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0018_L2_baptism_14",
+   "text": "обрядами таин",
+   "status": "image_checked",
+   "note": "Lowercase т."
+  },
+  {
+   "id": "0018_L2_parents_02",
+   "text": "Крестьянъ Л[а?]бор",
+   "status": "draft",
+   "note": "Second letter of the township unclear (а/о/ѣ-like)."
+  },
+  {
+   "id": "0018_L2_parents_03",
+   "text": "джевской Волости [В?]",
+   "status": "draft",
+   "note": "В right of the rule is the first letter of the godparents column; its lower part runs past the bottom edge."
+  },
+  {
+   "id": "0018_L2_parents_05",
+   "text": "ріи изъ Пикц[і?]овъ н",
+   "status": "draft",
+   "note": "н right of the rule is godparents-column text."
+  },
+  {
+   "id": "0018_L2_parents_06",
+   "text": "Венцковъ зако: [ли?]",
+   "status": "draft",
+   "note": "ли right of the rule is godparents-column text (бы|ли)."
+  },
+  {
+   "id": "0018_L2_parents_07",
+   "text": "супру: дочь родив [Ти?]",
+   "status": "draft",
+   "note": "Capital with top bar right of the rule is godparents-column text (Т or Г)."
+  },
+  {
+   "id": "0018_L2_parents_08",
+   "text": "шаяся 18[77?] года Но съ",
+   "status": "draft",
+   "note": "Long descender from the line above crosses the year digits; съ right of the rule is godparents-column text."
+  },
+  {
+   "id": "0018_L2_parents_09",
+   "text": "ября 2[9?] дня въ д[ѣ?]",
+   "status": "draft",
+   "note": "Second digit 9 or 4; cut fragment right of the rule not transcribed."
+  },
+  {
+   "id": "0018_L2_parents_10",
+   "text": "ревнѣ Ведегяна[хъ?] [ною?]",
+   "status": "draft",
+   "note": "Village ending squeezed against the rule; ною at top right is godparents-column text, near the top edge."
+  },
+  {
+   "id": "0018_L2_godparents_02",
+   "text": "оспріем",
+   "status": "image_checked",
+   "note": "Initial В is outside the crop (in the parents crop); the visible glyphs are whole."
+  },
+  {
+   "id": "0018_L2_godparents_03",
+   "text": "иками [б?]ы",
+   "status": "draft",
+   "note": "Initial н outside the crop; б/Б unclear."
+  },
+  {
+   "id": "0018_L2_godparents_04",
+   "text": "Франц[ъ?]",
+   "status": "draft",
+   "note": "Last letter squeezed against the rule."
+  },
+  {
+   "id": "0018_L2_godparents_05",
+   "text": "и[гр?]евскій",
+   "status": "draft",
+   "note": "Surname; its capital (Т/Г) is outside the crop at left."
+  },
+  {
+   "id": "0018_L2_godparents_08",
+   "text": "ковною",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0018_L2_godparents_09",
+   "text": "[ѣ?]вицею",
+   "status": "draft",
+   "note": "дѣвицею with the initial д outside the crop at left; text only at the top of a tall crop."
+  },
+  {
+   "id": "0027_R2_baptism_01",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "Crop shifted right: start of Тысяча cut by the left edge; then восемьсотъ and Крест from the parents column."
+  },
+  {
+   "id": "0027_R2_baptism_02",
+   "text": "десятъ восьмаго джевск[о?]",
+   "status": "draft",
+   "note": "семь- outside the crop; джевско is parents-column text. Faint ink."
+  },
+  {
+   "id": "0027_R2_baptism_03",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "Cut remnant of года at the left edge; rest reads Февраля восем, then Ивано from the parents column."
+  },
+  {
+   "id": "0027_R2_baptism_04",
+   "text": "[дцатаго?] дня въ [изъ Ив?]",
+   "status": "draft",
+   "note": "Left cut; right of the rule is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_05",
+   "text": "[о?]вскомъ [Р:К:?] При Гедвил",
+   "status": "draft",
+   "note": "Рет- outside the crop; Гедвил is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_06",
+   "text": "комъ Костелѣ супру[:?]",
+   "status": "draft",
+   "note": "Left cut (ходс- outside); супру: is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_07",
+   "text": "стнымъ Настоя [дочь 1878?]",
+   "status": "draft",
+   "note": "Настоя (Настоятелемъ), not Викар. Right of the rule is parents-column text, scribbly."
+  },
+  {
+   "id": "0027_R2_baptism_08",
+   "text": "мъ Кс: Анто [ся?] 17",
+   "status": "draft",
+   "note": "Right of the rule is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_09",
+   "text": "[ъ?] З[евжка?]вичемъ [нѣ?] [Б?]",
+   "status": "draft",
+   "note": "Priest surname uncertain; right of the rule is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_10",
+   "text": "ещенъ [м?]лад[ен?] товск",
+   "status": "draft",
+   "note": "окр- outside the crop; the word ends at the rule after ладен; товск is parents-column text."
+  },
+  {
+   "id": "0027_R2_baptism_11",
+   "text": "[ъ?] именами [Ан?]",
+   "status": "draft",
+   "note": "именами (two names: Анна Барбара), not именемъ."
+  },
+  {
+   "id": "0027_R2_baptism_12",
+   "text": "[а?] Барбара со",
+   "status": "draft",
+   "note": "First glyph at the left edge (end of Анна)."
+  },
+  {
+   "id": "0027_R2_baptism_13",
+   "text": "[и?] обрядами",
+   "status": "draft",
+   "note": "всѣм- outside the crop."
+  },
+  {
+   "id": "0027_R2_baptism_14",
+   "text": "[ин?]ства",
+   "status": "draft",
+   "note": "Start of Таинства outside the crop; flourish at right not transcribed."
+  },
+  {
+   "id": "0027_R2_parents_01",
+   "text": "[ь?]янъ Лабар Воспріем",
+   "status": "draft",
+   "note": "Крест- outside the crop; Воспріем is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_02",
+   "text": "[й?] Волости",
+   "status": "draft",
+   "note": "First glyph at the left edge."
+  },
+  {
+   "id": "0027_R2_parents_03",
+   "text": "и Барбары ками [был?]",
+   "status": "draft",
+   "note": "Right of the rule is godparents-column text, running to the right edge."
+  },
+  {
+   "id": "0027_R2_parents_04",
+   "text": "[рнтовтовъ?] [Фортун?]",
+   "status": "draft",
+   "note": "Surname fragment, left cut; right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_05",
+   "text": "[ловъ?] закон: [Даргужи?]",
+   "status": "draft",
+   "note": "Right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_06",
+   "text": "дочь родивша [съ Анто?]",
+   "status": "draft",
+   "note": "Right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_07",
+   "text": "[8?] года Февра [ного?] Фор",
+   "status": "draft",
+   "note": "Faint first digit (187- outside the crop); right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_08",
+   "text": "дня въ [деревн?] [ната?] Д",
+   "status": "draft",
+   "note": "Right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_09",
+   "text": "[Слайцяхъ?] Ре [гужи?] суп",
+   "status": "draft",
+   "note": "Village name very uncertain; right of the rule is godparents-column text."
+  },
+  {
+   "id": "0027_R2_parents_10",
+   "text": "[к?]аго Прихода [гою?]",
+   "status": "draft",
+   "note": "Left cut; right fragment with a blot and cut tops of the next line."
+  },
+  {
+   "id": "0027_R2_godparents_01",
+   "text": "[ими?]",
+   "status": "draft",
+   "note": "Faint fragment at the left edge."
+  },
+  {
+   "id": "0027_R2_godparents_03",
+   "text": "[съ?]",
+   "status": "draft",
+   "note": "Faint fragment, probably the surname ending (Даргужи|съ)."
+  },
+  {
+   "id": "0027_R2_godparents_04",
+   "text": "[ни?]",
+   "status": "draft",
+   "note": "Faint fragment (ми/ни)."
+  },
+  {
+   "id": "0027_R2_godparents_05",
+   "text": "[ту?]",
+   "status": "draft",
+   "note": "Fragment, probably Фор|ту|ната; a leading stroke at the edge."
+  },
+  {
+   "id": "0027_R2_godparents_06",
+   "text": "[ар?]",
+   "status": "draft",
+   "note": "Fragment (Д|ар|гужи)."
+  },
+  {
+   "id": "0027_R2_godparents_07",
+   "text": "[г?]ру",
+   "status": "draft",
+   "note": "Fragment of супругою; first letter г- or п-like."
+  },
+  {
+   "id": "0027_R2_godparents_08",
+   "text": "[жу?]",
+   "status": "draft",
+   "note": "Faint fragment inside a pencil arc; could also be ргу."
+  },
+  {
+   "id": "0027_R2_godparents_09",
+   "text": "гою",
+   "status": "image_checked",
+   "note": "End of супругою at top left of a tall, mostly empty crop; pencil arc not transcribed."
+  }
+ ]
+}

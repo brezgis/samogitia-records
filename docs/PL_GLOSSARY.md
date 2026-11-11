@@ -6,6 +6,27 @@
 > Translators: apply the rules as written anyway. Corrections will be made here first and
 > then applied mechanically to the finished entries.
 
+> **Revision after the first review (2026-11-11, book 1827/1/18; `docs/PL_REVIEW_2026-11-11_book18.json`).**
+> The reviewer found the translators followed this glossary closely (16 of 150 sampled rows had a
+> slip) but that three of its own formula choices read as broken Polish. These three now
+> **override the wording given further down** and were applied to the finished entries by
+> `pipeline/pl_formula_fix.py`:
+> 1. Church: "w kościele parafialnym rzymskokatolickim w Płungianach" (not "w płungiańskim
+>    rzymskokatolickim kościele parafialnym"); another church: "w kościele parafialnym
+>    rzymskokatolickim w Kulach".
+> 2. Rite: "z dopełnieniem wszystkich obrzędów sakramentu chrztu" (lowercase, with "chrztu").
+> 3. Parents field: the child first, "Córka włościan, prawowitych małżonków X i Y z domu Z,
+>    urodzona dnia …" (not "Włościan, prawowitych małżonków …, córka, urodzona …"). Twins and
+>    multi-entry rows were not rewritten mechanically and still have the old order.
+>
+> **Not decided (they touch the no-Polonising principle and need a Polish reader or Anna):**
+> -овна as "-ówna" rather than "-owna"; л as ł before а/о/у/ы/consonant in Polish-suffix names
+> (Pawłowski, not Pawlowski); рж as "rz" and -кевичъ as "-kiewicz" in Polish-suffix names
+> (Brzeziński, Szymkiewicz); the -люсъ conflict (Kubilus/Kubilius); given names to add to §6
+> (Maciej, Krystyna, Cyprian, Marcjan, Meliton, Romuald, Hieronim, Krzysztof); "bliźnięta"
+> wording for twins; apposition for a priest of another parish; "w okolicy szlacheckiej" for
+> околица. Until decided, entries follow the rules as written below.
+
 This glossary covers all five Plungė books (the same books and scribes as
 [LT_GLOSSARY.md](LT_GLOSSARY.md)):
 
