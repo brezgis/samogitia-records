@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Žemaičių metrikai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --madder:#8c2b25; --spruce:#3f6557; --soot:#1f1b18; --ink:#2a211b;
+  --paper:#e6dcc4; --vellum:246,241,229; --sheer:.84;
+  --room:#d5d8cf; --room-ink:#252b27; --room-soft:#5d665f; --rule:rgba(37,43,39,.18);
+  --field:#eef0ea;
+  --serif:"Old Standard TT","Iowan Old Style",Georgia,serif;
+  --sans:"Commissioner",system-ui,sans-serif;
+}
+[data-room="dusk"]{
+  --room:#1e2824; --room-ink:#e4e2d6; --room-soft:#9aa69e; --rule:rgba(228,226,214,.2); --field:#2a3631;
+}
+*{box-sizing:border-box}
+html{background:var(--room)}
+body{margin:0;color:var(--room-ink);font:400 15px/1.5 var(--sans);background:var(--room);
+  padding:0 clamp(12px,2vw,36px) calc(32vh + 8vw);transition:background .3s,color .3s}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--madder);outline-offset:2px}
+[data-room="dusk"] :focus-visible{outline-color:#e0a79f}
+
+/* masthead */
+.mast{max-width:1480px;margin:0 auto;padding:26px 0 20px;display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.mast h1{font:400 clamp(28px,3.4vw,46px)/1.02 var(--serif);margin:0;letter-spacing:-.01em}
+.mast h1 a{color:inherit;text-decoration:none}
+.mast h1 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.14em}
+.mast p{margin:6px 0 0;color:var(--room-soft);font-size:14px}
+.find{margin-left:auto;position:relative;width:min(100%,340px)}
+.find input{width:100%;padding:9px 12px;border:1px solid var(--rule);border-radius:3px;background:var(--field)}
+.find input::placeholder{color:var(--room-soft)}
+.langs{border:0;margin:0 0 8px;padding:0;display:flex;justify-content:flex-end;gap:2px}
+.langs legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.langs input{position:absolute;opacity:0;pointer-events:none}
+.langs span{display:block;padding:3px 9px;font-size:13.5px;color:var(--room-soft);cursor:pointer;border-bottom:2px solid transparent}
+.langs span:hover{color:var(--room-ink)}
+.langs input:checked+span{color:var(--room-ink);border-bottom-color:var(--madder)}
+.langs input:focus-visible+span{outline:2px solid var(--madder);outline-offset:2px}
+.hits{position:absolute;z-index:70;top:calc(100% + 6px);right:0;width:min(92vw,460px);margin:0;padding:6px;list-style:none;
+  background:var(--field);border:1px solid var(--rule);border-radius:4px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5);max-height:min(62vh,640px);overflow:auto}
+.hits[hidden]{display:none}
+.hits button{display:grid;grid-template-columns:1fr auto;gap:0 12px;width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:3px;cursor:pointer}
+.hits button:hover,.hits button:focus-visible{background:rgba(140,43,37,.12)}
+.hits b{font:400 19px/1.2 var(--serif)}
+.hits i{font-style:normal;font-size:12.5px;color:var(--room-soft);align-self:center;white-space:nowrap}
+.hits small{grid-column:1/-1;color:var(--room-soft);font-size:12.5px;line-height:1.4}
+.hits small[lang=ru]{font:400 14px/1.35 var(--serif)}
+.hits .away{opacity:.6;cursor:default}
+.hits .what{padding:7px 10px;color:var(--room-soft);font-size:12.5px}
+
+/* the book */
+.book{container-type:inline-size;max-width:1480px;margin:0 auto;position:relative}
+.cover{position:relative;padding:3cqw 3.2cqw 3.4cqw;border-radius:.7cqw;
+  background:var(--soot) center/cover;
+  box-shadow:0 .2cqw .3cqw rgba(0,0,0,.35),0 2.2cqw 3.4cqw -1.4cqw rgba(20,24,20,.55);}
+.cover::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.35),inset 0 .25cqw .5cqw rgba(255,255,255,.12),inset 0 -.5cqw .9cqw rgba(0,0,0,.35)}
+.block{position:relative;display:grid;grid-template-columns:1fr 1fr;
+  box-shadow:0 0 0 1px rgba(0,0,0,.4),
+    .16cqw .16cqw 0 #cfc5ad,.3cqw .3cqw 0 #8f8672,.46cqw .46cqw 0 #d6ccb4,.6cqw .6cqw 0 #8f8672,
+    -.16cqw .16cqw 0 #cfc5ad,-.3cqw .3cqw 0 #8f8672,-.46cqw .46cqw 0 #d6ccb4,-.6cqw .6cqw 0 #8f8672,
+    0 .9cqw 1.4cqw rgba(0,0,0,.55)}
+.block{background:#17130f;align-items:start}
+.block:empty{aspect-ratio:1.5}          /* the book keeps its shape while the first spread loads */
+.page>img{color:transparent}            /* no caption text over the paper while a scan is still arriving */
+.page{position:relative;background:var(--paper);isolation:isolate;overflow:visible}
+.page>img{display:block;width:100%;height:100%;mix-blend-mode:multiply;filter:brightness(1.16) contrast(1.12);user-select:none;-webkit-user-drag:none}
+.page .tint{position:absolute;inset:0;background:#2e1f15;mix-blend-mode:lighten;pointer-events:none}
+.page .fold{position:absolute;inset:0;pointer-events:none;z-index:3}
+.page[data-side="L"] .fold{background:linear-gradient(to left,rgba(40,26,14,.5),rgba(40,26,14,.14) 3.5%,transparent 11%)}
+.page[data-side="R"] .fold{background:linear-gradient(to right,rgba(40,26,14,.5),rgba(40,26,14,.14) 3.5%,transparent 11%)}
+[data-paper="film"] .page{background:#fff}
+[data-paper="film"] .page .tint{display:none}
+[data-paper="film"] .page>img{mix-blend-mode:normal;filter:none}
+
+/* turning */
+.leafnav{max-width:1480px;margin:0 auto 12px;display:flex;align-items:center;gap:12px;font-size:13.5px;color:var(--room-soft)}
+.leafnav button{border:1px solid var(--rule);background:none;border-radius:3px;padding:4px 10px;cursor:pointer;color:var(--room-ink)}
+.leafnav button:hover:not(:disabled){border-color:var(--room-ink)}
+.leafnav button:disabled{opacity:.35;cursor:default}
+.years{display:flex;gap:2px}
+.years button{border-color:transparent;font:400 17px/1 var(--serif);padding:4px 7px}
+.years button[aria-current="true"]{box-shadow:inset 0 -2px 0 var(--madder)}
+/* the parish's neighbouring books, before and after this book's years */
+.years{align-items:baseline}
+.years a{font:400 13.5px/1 var(--sans);color:var(--room-soft);text-decoration:none;padding:4px 7px;white-space:nowrap;border-radius:3px}
+.years a:hover{color:var(--room-ink);box-shadow:inset 0 -1px 0 var(--room-soft)}
+.years a.before{margin-right:6px;border-right:1px solid var(--rule);border-radius:0;padding-right:12px}
+.years a.after{margin-left:6px;border-left:1px solid var(--rule);border-radius:0;padding-left:12px}
+@media (max-width:860px){.years a{display:none}}
+.leafnav input[type=range]{flex:1 1 120px;min-width:80px;accent-color:var(--madder)}
+.leafnav output{white-space:nowrap;min-width:9.5em;text-align:right}
+.edge{position:absolute;top:0;bottom:0;width:3.2cqw;border:0;background:none;cursor:pointer;z-index:2;border-radius:inherit}
+#edgeL{left:0;cursor:w-resize} #edgeR{right:0;cursor:e-resize}
+.block{perspective:260cqw}
+.face{position:absolute;inset:0;background:var(--paper);overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face img{display:block;width:100%;height:100%;mix-blend-mode:multiply;filter:brightness(1.16) contrast(1.12)}
+[data-paper="film"] .face{background:#fff}
+[data-paper="film"] .face img{mix-blend-mode:normal;filter:none}
+.face.hold{inset:auto;top:0;z-index:8}
+.flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;will-change:transform}   /* turned by app.js (Web Animations) */
+.flip.fwd{transform-origin:left center} .flip.back{transform-origin:right center}
+.flip .rear{transform:rotateY(180deg)}
+.flip .shade{position:absolute;inset:0;pointer-events:none}
+/* the turning leaf thins toward its free edge, so the page under it shows through as it lifts */
+.flip.fwd .front,.flip.back .rear{-webkit-mask-image:linear-gradient(to right,#000 45%,rgba(0,0,0,.62));mask-image:linear-gradient(to right,#000 45%,rgba(0,0,0,.62))}
+.flip.fwd .rear,.flip.back .front{-webkit-mask-image:linear-gradient(to left,#000 45%,rgba(0,0,0,.62));mask-image:linear-gradient(to left,#000 45%,rgba(0,0,0,.62))}
+.flip.fwd .front .shade,.flip.back .rear .shade{background:linear-gradient(to right,rgba(30,20,10,.3),transparent 26%)}
+.flip.fwd .rear .shade,.flip.back .front .shade{background:linear-gradient(to left,rgba(30,20,10,.3),transparent 26%)}
+/* on other spreads only the tail shows, from the cover's lower edge down (the ribbon starts 2.4cqw
+   below the top and is 4.6cqw taller than the cover, so 7cqw of it hangs below) */
+.ribbon.tucked{clip-path:inset(calc(100% - 7cqw) -50% -1cqw -50%)}
+
+/* entries */
+.band{position:absolute;left:0;right:0;z-index:4;border:0;padding:0;background:none;cursor:pointer}
+.band::before{content:"";position:absolute;inset:0 1.5%;border-radius:.3cqw;transition:background .15s,box-shadow .15s}
+.band:hover::before{background:rgba(140,43,37,.07)}
+.band[aria-pressed="true"]::before{box-shadow:inset 0 0 0 .14cqw rgba(140,43,37,.75)}
+[data-read="slip"] .book.has-pick .band:not([aria-pressed="true"])::before{background:rgba(230,220,196,.5)}
+
+.leaf{position:absolute;z-index:6;padding:.55cqw .65cqw .7cqw;
+  font:400 clamp(10px,.9cqw,14.5px)/1.34 var(--serif);color:var(--ink);text-align:left;hyphens:auto;
+  background:rgba(var(--vellum),var(--sheer));
+  -webkit-backdrop-filter:blur(.16cqw);backdrop-filter:blur(.16cqw);
+  box-shadow:0 0 0 1px rgba(90,70,50,.16),0 .35cqw .7cqw -.3cqw rgba(40,26,14,.55);
+  pointer-events:none;opacity:0;transform:translateY(.25cqw);transition:opacity .16s,transform .16s}
+.leaf.side{font-size:.86em;line-height:1.25}
+.leaf.head.narrow{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.72em;padding:.2cqw}
+.headzone{position:absolute;left:0;right:0;z-index:7;cursor:help}
+.leaf.head{pointer-events:none}
+.leaf.head.on{transform:none}.leaf.head.narrow.on{transform:rotate(180deg)}
+.leaf.head{padding:.3cqw;overflow:hidden;font-size:.78em;line-height:1.15;font-style:italic;display:flex;align-items:center;text-align:center;justify-content:center}
+.leaf.on{opacity:1;transform:none}
+[data-read="every"] .leaf.on{pointer-events:auto;cursor:zoom-in}
+[data-read="every"] .leaf.on:hover{opacity:.06}
+.u{text-decoration:underline dotted rgba(140,43,37,.9);text-decoration-thickness:.09em;text-underline-offset:.18em;color:#6d2019}
+.u::after{content:"?";font-size:.7em;vertical-align:.45em;margin-left:.08em;color:var(--madder)}
+.ed{font-style:italic;color:#6f6558}
+
+/* paper slip */
+.slip{position:absolute;z-index:8;width:44%;padding:1.5cqw 1.7cqw 1.4cqw;
+  background:#f4efe2;color:var(--ink);font:400 clamp(13px,1.12cqw,17.5px)/1.42 var(--serif);
+  box-shadow:0 0 0 1px rgba(90,70,50,.18),0 1.2cqw 2cqw -1cqw rgba(30,20,10,.7);
+  transform:rotate(-.5deg);display:none}
+[data-read="slip"] .slip.on{display:block}
+.slip h2{font:400 1.75em/1.05 var(--serif);margin:0 0 .15em}
+.slip .when{font-style:italic;margin:0 0 .8em;color:#5d5246}
+.slip p{margin:0 0 .65em}
+.slip dl{margin:.9em 0 0;padding-top:.7em;border-top:1px solid rgba(90,70,50,.25);display:grid;grid-template-columns:auto 1fr;gap:.12em 1em;font-size:.84em}
+.slip dt{color:#5d5246}
+.slip dd{margin:0}
+.slip .note{font:400 .74em/1.4 var(--sans);color:#5d5246;margin:.9em 0 0}
+
+/* ribbon */
+.ribbon{position:absolute;z-index:7;left:50%;top:2.4cqw;width:2.25cqw;height:calc(100% + 4.6cqw);transform:translateX(-50%);
+  pointer-events:none;filter:drop-shadow(.12cqw .16cqw .16cqw rgba(20,12,6,.55))}
+.ribbon img{width:100%;height:100%;object-fit:cover;object-position:bottom;display:block}
+.ribbon button{position:absolute;left:-40%;right:-40%;bottom:0;height:9cqw;border:0;background:none;cursor:pointer;pointer-events:auto;border-radius:4px}
+[data-ribbon="none"] .ribbon{display:none}
+
+/* the desk: what the open entry says, fixed under the book */
+.desk{position:fixed;z-index:60;left:0;right:0;bottom:0;background:var(--room);border-top:1px solid var(--rule);
+  padding:14px clamp(12px,2vw,36px) 16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.1fr);gap:8px 40px;
+  align-items:start;max-height:32vh;overflow:auto;box-shadow:0 -18px 30px -26px rgba(0,0,0,.55)}
+.desk h2{font:400 25px/1.1 var(--serif);margin:0}
+.desk p{margin:5px 0 0;color:var(--room-soft);font-size:13.5px;line-height:1.45}
+.desk .ru{font:400 15.5px/1.5 var(--serif);color:var(--room-ink);margin:2px 0 0}
+.desk .warn{color:var(--room-ink)}
+.desk button{margin-top:9px;border:1px solid var(--rule);background:none;border-radius:3px;padding:5px 11px;cursor:pointer;font-size:13.5px}
+.desk button:hover{border-color:var(--room-ink)}
+.desk .about p:first-child{margin-top:0}
+.desk .u,.desk .ed{font:400 15.5px var(--serif)}
+[data-room="dusk"] .desk .u{color:#e9aca4}
+[data-room="dusk"] .desk .ed{color:var(--room-soft)}
+.desk details{margin-top:6px;font-size:13.5px;color:var(--room-soft)}
+.desk summary{cursor:pointer;width:max-content}
+.desk a{color:inherit}
+
+.desk h2 .u{font:inherit}
+/* notes under the book: there if you want them */
+.notes{max-width:1480px;margin:calc(6.5vw + 34px) auto 0;padding-top:26px;border-top:1px solid var(--rule);
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:34px 48px;color:var(--room-soft)}
+.n-about{grid-column:span 4} .n-read{grid-column:span 4} .n-cols{grid-column:span 4}
+.n-names{grid-column:span 5;padding-top:26px;border-top:1px solid var(--rule)}
+.n-cloth{grid-column:span 7;padding-top:26px;border-top:1px solid var(--rule)}
+.n-names h2+p+h2{margin-top:26px}
+.notes h2{font:400 23px/1.15 var(--serif);margin:0 0 10px;color:var(--room-ink)}
+.notes p{font:400 16.5px/1.55 var(--serif);margin:0 0 12px;max-width:46ch}
+.notes .src{font:400 13.5px/1.5 var(--sans);margin:0 0 8px;max-width:52ch}
+.notes a{color:inherit}
+.notes ol.cols{font:400 15px/1.5 var(--serif);margin:0;padding-left:1.3em;max-width:46ch}
+.notes ol.cols li{margin-bottom:6px}
+.slip .side,.slip .side-note{font:400 13px/1.45 var(--sans);opacity:.85;margin-top:8px}
+.things{display:flex;gap:18px;align-items:flex-start;margin-top:4px}
+.things figure{margin:0;flex:1 1 0;min-width:0}
+.things img{display:block;width:100%;height:clamp(150px,15vw,230px);object-fit:cover;border-radius:2px}
+.things figcaption{font:400 13px/1.45 var(--sans);margin-top:7px}
+@media (max-width:1100px){.n-about,.n-read{grid-column:span 6} .n-cols,.n-names,.n-cloth{grid-column:span 12}}
+@media (max-width:860px){.notes{grid-template-columns:1fr} .notes>div{grid-column:auto}}
+
+/* try-on bar: prototype only */
+.tryon{position:fixed;z-index:60;left:0;right:0;bottom:0;background:var(--field);border-top:1px solid var(--rule);
+  padding:9px clamp(12px,2vw,36px) 10px;display:flex;gap:10px 26px;flex-wrap:wrap;align-items:center;font-size:13px;
+  box-shadow:0 -14px 30px -22px rgba(0,0,0,.5)}
+.tryon fieldset{border:0;margin:0;padding:0;display:flex;align-items:center;gap:7px}
+.tryon legend{float:left;padding:0;margin-right:2px;color:var(--room-soft)}
+.tryon label{cursor:pointer}
+.tryon input[type=radio]{position:absolute;opacity:0;pointer-events:none}
+.tryon label span{display:inline-block;padding:4px 9px;border:1px solid var(--rule);border-radius:3px}
+.tryon input:checked+span{background:var(--room-ink);color:var(--room);border-color:var(--room-ink)}
+.tryon input:focus-visible+span{outline:2px solid var(--madder);outline-offset:2px}
+.tryon input[type=range]{width:110px;accent-color:var(--madder)}
+.tryon button.copy{margin:0 0 0 auto}
+.tryon[hidden]{display:none}
+
+@media (max-width:860px){
+  .block{grid-template-columns:1fr!important}   /* the build sets two columns inline */
+  .book:not([data-show="R"]) .page[data-side="R"],.book[data-show="R"] .page[data-side="L"]{display:none}
+  .ribbon{left:auto;right:3cqw;transform:none}
+  .book[data-show="R"] .ribbon{right:auto;left:3cqw}
+  .slip{position:fixed;left:8px!important;right:8px;top:auto!important;bottom:calc(38vh + 8px);width:auto;transform:none;max-height:52vh;overflow:auto;font-size:15px}
+  .leaf{font-size:clamp(10px,2cqw,15px)}
+  .desk{grid-template-columns:1fr;max-height:38vh}
+  .turn{display:inline-block!important}
+  .tryon{max-height:112px;overflow:auto}
+}
+.turn{display:none;margin:0 0 10px;border:1px solid var(--rule);background:none;border-radius:3px;padding:6px 11px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body data-cloth="plunge" data-ribbon="mazeikiai" data-read="one" data-paper="film" data-room="day">
+
+<header class="mast">
+  <div>
+    <h1><a id="title" href="../library.html">Žemaičių metrikai</a></h1>
+    <p id="sub"></p>
+  </div>
+  <div class="find">
+    <fieldset class="langs"><legend>Language</legend>
+      <label><input type="radio" name="lang" value="lt"><span lang="lt">Lietuvių</span></label>
+      <label><input type="radio" name="lang" value="en"><span lang="en">English</span></label>
+      <label><input type="radio" name="lang" value="pl"><span lang="pl">Polski</span></label>
+      <label><input type="radio" name="lang" value="ru"><span lang="ru">Русский</span></label>
+    </fieldset>
+    <input id="q" type="search" placeholder="" aria-label="" autocomplete="off">
+    <ul class="hits" id="hits"></ul>
+  </div>
+</header>
+
+<main>
+  <nav class="leafnav" aria-label="Pages">
+    <button type="button" id="prev">←</button>
+    <div class="years" id="years"></div>
+    <input type="range" id="scrub" min="1" max="202" step="1" aria-label="Scan">
+    <output id="where"></output>
+    <button type="button" id="next">→</button>
+  </nav>
+  <button class="turn" id="turn" type="button">Show the right-hand page</button>
+  <div class="book" id="book">
+    <div class="cover" id="cover">
+      <button type="button" class="edge" id="edgeL"></button><button type="button" class="edge" id="edgeR"></button>
+      <div class="block" id="block"></div>
+      <div class="ribbon"><img id="ribbonImg" alt=""><button type="button" id="ribbonBtn" aria-label="Open at the ribbon"></button></div>
+    </div>
+  </div>
+
+  <section class="notes" aria-labelledby="aboutH">
+    <div class="n-about"><h2 id="aboutH"></h2><p id="about1"></p><p id="about2"></p></div>
+    <div class="n-read"><h2 id="readH"></h2><p id="read1"></p><p id="read2"></p></div>
+    <div class="n-cols"><h2 id="colsH"></h2><ol class="cols" id="cols"></ol></div>
+    <div class="n-names"><h2 id="namesH"></h2><p id="names1"></p>
+      <h2 id="sourcesH"></h2><p class="src" id="register"></p><p class="src" id="dataLine"></p></div>
+    <div class="n-cloth"><h2 id="clothH"></h2><p id="cloth1"></p><div class="things" id="things"></div></div>
+  </section>
+</main>
+
+<aside class="desk" aria-label="About this entry">
+  <div id="cap" aria-live="polite"></div>
+  <p class="ru" id="ru" lang="ru"></p>
+  <div class="about">
+    <p id="key"></p>
+    <p class="warn" id="warn"></p>
+  </div>
+</aside>
+
+<form class="tryon" id="tryon" hidden>
+  <fieldset><legend>Cloth</legend>
+    <label><input type="radio" name="cloth" value="plunge"><span>Plungė check</span></label>
+    <label><input type="radio" name="cloth" value="kretinga"><span>Kretinga stripe</span></label>
+    <label><input type="radio" name="cloth" value="telsiai"><span>Telšiai zigzag</span></label>
+  </fieldset>
+  <fieldset><legend>Ribbon</legend>
+    <label><input type="radio" name="ribbon" value="mazeikiai"><span>Red sash</span></label>
+    <label><input type="radio" name="ribbon" value="taurage"><span>Tasselled cord</span></label>
+    <label><input type="radio" name="ribbon" value="ukrinai"><span>Many-coloured</span></label>
+    <label><input type="radio" name="ribbon" value="none"><span>None</span></label>
+  </fieldset>
+  <fieldset><legend>English</legend>
+    <label><input type="radio" name="read" value="one"><span>Over one entry</span></label>
+    <label><input type="radio" name="read" value="every"><span>Over the whole page</span></label>
+    <label><input type="radio" name="read" value="slip"><span>On a paper slip</span></label>
+  </fieldset>
+  <fieldset><legend>Paper</legend>
+    <label><input type="radio" name="paper" value="warm"><span>Warm</span></label>
+    <label><input type="radio" name="paper" value="film"><span>As filmed</span></label>
+  </fieldset>
+  <fieldset><legend>Room</legend>
+    <label><input type="radio" name="room" value="day"><span>Day</span></label>
+    <label><input type="radio" name="room" value="dusk"><span>Dusk</span></label>
+  </fieldset>
+  <fieldset><legend><label for="sheer">Sheerness</label></legend>
+    <input id="sheer" name="sheer" type="range" min="55" max="97" value="84">
+  </fieldset>
+  <button class="copy" type="button" id="copy">Copy this combination</button>
+</form>
+
+<script src="../library.js"></script>
+<script src="book.js"></script>
+<script src="data.js"></script>
+<script src="vendor/minisearch.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
