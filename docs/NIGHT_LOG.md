@@ -107,3 +107,18 @@ translation, model training ... as you can"). Entries are appended as work compl
 - Files 16 and earlier are in **Polish** (pre-1848); they need a Polish model and rules.
 - Disk: freed ~8 GB of regenerable crops/overlays; run_book.sh now cleans them up.
 - v5 training on 4 books' labels: 1,816 train / 361 val / 363 test.
+
+## Morning, 2026-11-11
+- Committed the night's uncommitted work (books 25, 22, 18 labels and side columns). Reading GUIs
+  restarted on :8742 (1886–1890) and :8743 (1896–1902); review site on :8741.
+- v5 had been trained before book 18's labels were merged (454 lines), so v6 was trained on all
+  five books: 2,174 train / 401 val / 419 test lines.
+- Validation CER, v4 -> v5, per book: 1886–90 7.0% -> 5.9%; 1896–1902 8.8% -> 8.7%;
+  1902–07 14.0% -> 7.3%; 1867–74 12.2% -> 7.3%; 1849–54 15.6% -> 14.6% (v5 had no book-18 lines).
+- **Surnames reconciled** (`pipeline/reconcile_surnames.py` -> processed/surnames.json): the margin
+  column and the parents column write the same family surname twice. The margin reading (agent,
+  from the image) leads; the draft corroborates it or is shown as a difference. Book 1: 360 agree,
+  217 draft is a garbled margin name, 954 margin only, 43 real conflicts. The GUI heading, margin
+  cell and index now carry one surname; the translator's spelling is kept when it is the same name.
+- GUI: on spreads away from the bookmark the ribbon's tail floated detached below the book; it now
+  hangs from the cover's lower edge.

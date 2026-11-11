@@ -100,7 +100,9 @@ button,input{font:inherit;color:inherit}
 .flip .shade{position:absolute;inset:0;pointer-events:none}
 .flip.fwd .front .shade,.flip.back .rear .shade{background:linear-gradient(to right,rgba(30,20,10,.38),transparent 30%)}
 .flip.fwd .rear .shade,.flip.back .front .shade{background:linear-gradient(to left,rgba(30,20,10,.38),transparent 30%)}
-.ribbon.tucked{clip-path:inset(calc(100% - 4.6cqw) -50% 0 -50%)}
+/* on other spreads only the tail shows, from the cover's lower edge down (the ribbon starts 2.4cqw
+   below the top and is 4.6cqw taller than the cover, so 7cqw of it hangs below) */
+.ribbon.tucked{clip-path:inset(calc(100% - 7cqw) -50% -1cqw -50%)}
 
 /* entries */
 .band{position:absolute;left:0;right:0;z-index:4;border:0;padding:0;background:none;cursor:pointer}

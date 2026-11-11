@@ -11,7 +11,7 @@ const T = {
     read1: 'Every entry repeats one formula across three columns: when, where and by whom the child was baptised; who the parents were, their estate and district, and when and where the child was born; and who the godparents were. Family names stand as the formula puts them, “of the Takiovs”, so here they often end in -ov where the family itself would have said -is, -as or -us.',
     read2: "The handwriting was read by a recognition model trained on about 1,700 lines of these registers, each read independently by two AI readers and checked against each other, then translated by machine. No person has checked the result. Ordinary words come out well; names and villages often do not.",
     colsH: "The printed columns", cols: [["Прозваніе крещаемыхъ", "Surname of the baptised, written sideways in the margin"], ["№", "Entry number"], ["Число рожденія / крещенія", "Day of birth / day of baptism"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "When, where, who and by whom was baptised, with water only or with all the rites?"], ["Какихъ родителей …?", "Of which parents, of which estate or community; when and where the child was born"], ["Кто были … воспріемниками …?", "Who, by name and surname, were the godparents, and who was present"], ["Рукоприкладство свидѣтелей …", "Signatures of witnesses, if desired"]],
-    sideMargin: "In the margin", sideNo: "No.", sideBorn: "born", sideBapt: "baptised", sideNote: "Later note", sexM: "boy", sexF: "girl", sideBy: "Side columns read once by machine.",
+    sideMargin: "In the margin", sideDiffer: x => `The machine read the surname inside the entry as “${x}”; the margin is the better reading.`, sideNo: "No.", sideBorn: "born", sideBapt: "baptised", sideNote: "Later note", sexM: "boy", sexF: "girl", sideBy: "Side columns read once by machine.",
     heads: {"margin": "Surname of the baptised", "no": "No.", "dates": "Day of birth / baptism", "baptism": "When, where, by whom baptised", "parents": "Parents, estate; when and where born", "godparents": "Godparents and those present", "sign": "Witnesses’ signatures"},
     clothH: 'The cloth and the ribbon',
     cloth1: 'The cover and the ribbon are real Samogitian textiles in the National Museum of Lithuania. The museum’s photographs are used under CC BY 4.0.',
@@ -37,7 +37,7 @@ const T = {
     read1: 'Kiekvienas įrašas kartoja tą pačią formulę trijose skiltyse: kada, kur ir kas pakrikštijo vaiką; kas tėvai, koks jų luomas ir valsčius, kada ir kur vaikas gimė; kas buvo krikštatėviai. Pavardės užrašytos taip, kaip reikalauja formulė, daugiskaitos kilmininku, todėl čia jos dažnai baigiasi -ov, nors pati šeima būtų sakiusi -is, -as ar -us.',
     read2: "Rankraštį perskaitė atpažinimo modelis, apmokytas maždaug 1 700 šių knygų eilučių, kurias nepriklausomai perskaitė ir sulygino du dirbtinio intelekto skaitytojai; vertimas – mašininis. Žmogus rezultato netikrino. Įprasti žodžiai perskaitomi gerai, vardai ir kaimai – dažnai klaidingai.",
     colsH: "Spausdinti stulpeliai", cols: [["Прозваніе крещаемыхъ", "Krikštijamųjų pavardė, įrašyta paraštėje skersai"], ["№", "Įrašo numeris"], ["Число рожденія / крещенія", "Gimimo diena / krikšto diena"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kada, kur, kas ir kieno pakrikštytas – tik vandeniu ar su visomis apeigomis?"], ["Какихъ родителей …?", "Kokių tėvų, kokio luomo ar bendruomenės; kada ir kur gimė vaikas"], ["Кто были … воспріемниками …?", "Kas, nurodant vardą ir pavardę, buvo krikštatėviai ir kas dalyvavo"], ["Рукоприкладство свидѣтелей …", "Liudytojų parašai (pagal pageidavimą)"]],
-    sideMargin: "Paraštėje", sideNo: "Nr.", sideBorn: "gimė", sideBapt: "pakrikštyta(s)", sideNote: "Vėlesnė pastaba", sexM: "berniukas", sexF: "mergaitė", sideBy: "Šoniniai stulpeliai perskaityti mašinos vieną kartą.",
+    sideMargin: "Paraštėje", sideDiffer: x => `Įrašo tekste mašina pavardę perskaitė „${x}“; paraštės skaitymas patikimesnis.`, sideNo: "Nr.", sideBorn: "gimė", sideBapt: "pakrikštyta(s)", sideNote: "Vėlesnė pastaba", sexM: "berniukas", sexF: "mergaitė", sideBy: "Šoniniai stulpeliai perskaityti mašinos vieną kartą.",
     heads: {"margin": "Krikštijamųjų pavardė", "no": "Nr.", "dates": "Gimimo / krikšto diena", "baptism": "Kada, kur, kas pakrikštijo", "parents": "Tėvai, luomas; kada ir kur gimė", "godparents": "Krikštatėviai ir dalyvavusieji", "sign": "Liudytojų parašai"},
     clothH: 'Audinys ir juostelė',
     cloth1: 'Viršelis ir juostelė – tikri žemaitiški audiniai iš Lietuvos nacionalinio muziejaus rinkinių. Muziejaus nuotraukos naudojamos pagal CC BY 4.0 licenciją.',
@@ -63,7 +63,7 @@ const T = {
     read1: 'Каждая запись повторяет одну формулу в трёх графах: когда, где и кем крещён младенец; кто его родители, какого они сословия и волости, когда и где он родился; кто были восприемники. Фамилии стоят так, как требует формула, в родительном падеже множественного числа, поэтому здесь они часто оканчиваются на «-овъ», хотя сама семья сказала бы «-ис», «-ас» или «-ус».',
     read2: "Рукопись прочитана моделью распознавания, обученной примерно на 1 700 строках этих книг, каждую из которых независимо прочли и сверили два ИИ-читателя; перевод сделан машиной. Человек результат не проверял. Обычные слова читаются хорошо, имена и деревни часто с ошибками.",
     colsH: "Печатные графы", cols: [["Прозваніе крещаемыхъ", "Фамилия крещаемого, вписана поперёк на полях"], ["№", "Номер записи"], ["Число рожденія / крещенія", "День рождения / день крещения"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Когда, где, кто и кем крещён, одною ли водою или со всеми обрядами"], ["Какихъ родителей …?", "Каких родителей, какого сословия или общества; когда и где родился"], ["Кто были … воспріемниками …?", "Кто по имени и фамилии были восприемниками и кто присутствовал"], ["Рукоприкладство свидѣтелей …", "Подписи свидетелей записи, по желанию"]],
-    sideMargin: "На полях", sideNo: "№", sideBorn: "родился", sideBapt: "крещён", sideNote: "Позднейшая запись", sexM: "мальчик", sexF: "девочка", sideBy: "Боковые графы прочитаны машиной один раз.",
+    sideMargin: "На полях", sideDiffer: x => `В тексте записи машина прочла фамилию как «${x}»; чтение на полях надёжнее.`, sideNo: "№", sideBorn: "родился", sideBapt: "крещён", sideNote: "Позднейшая запись", sexM: "мальчик", sexF: "девочка", sideBy: "Боковые графы прочитаны машиной один раз.",
     heads: {"margin": "Прозваніе крещаемыхъ", "no": "№", "dates": "Число рожденія / крещенія", "baptism": "Когда, гдѣ, кто и кѣмъ окрещенъ", "parents": "Какихъ родителей …", "godparents": "Кто были воспріемниками …", "sign": "Рукоприкладство свидѣтелей"},
     clothH: 'Ткань и закладка',
     cloth1: 'Переплёт и закладка — настоящие жемайтские ткани из собрания Национального музея Литвы. Фотографии музея используются по лицензии CC BY 4.0.',
@@ -172,18 +172,21 @@ function fillLeaves() {
   block.querySelectorAll('.band').forEach(b => b.setAttribute('aria-label', plain(fullName(byRow[b.dataset.row]))));
 }
 const fullName = e => lang === 'ru' || !e.child ? esc([e.childRu, e.surnameRu].filter(Boolean).join(' ') || t().noName)
-  : esc(e.child) + (e.surname ? ` <span class="${e.surnameQ ? 'u' : ''}">${esc(e.surname)}</span>` : '');
+  : esc(e.child) + (e.surname ? ` <span class="${e.surnameQ ? 'u' : ''}">${esc(lang === 'lt' && e.surnameLt || e.surname)}</span>` : '');
 const plain = h => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const current = () => hovered || pinned;
 
 function sideHtml(e) {           // printed columns 1-3: margin surname, No., sex, days, later notes
   const c = e.sideCols, L = t();
   if (!c) return '';
-  const rend = lang === 'lt' ? c.margin_lt : lang === 'en' ? c.margin_en : '';
+  // the margin and the parents column write the same surname twice; the heading carries the
+  // reconciled form, so the margin is quoted as written and a second form only when they differ
+  const rend = e.surnameSrc ? '' : lang === 'lt' ? c.margin_lt : lang === 'en' ? c.margin_en : '';
+  const differ = e.surnameAlt && lang !== 'ru' ? ` <span class="ed">${L.sideDiffer(esc(e.surnameAlt))}</span>` : '';
   const sex = c.sex === 'M' ? L.sexM : c.sex === 'F' ? L.sexF : '';
   const bits = [c.entry_no && `${L.sideNo} ${esc(c.entry_no)}`, sex, c.birth_day && `${L.sideBorn} ${esc(c.birth_day)}`,
     c.baptism_day && `${L.sideBapt} ${esc(c.baptism_day)}`].filter(Boolean);
-  const margin = c.margin_surname ? `${L.sideMargin}: <span lang="ru">${esc(c.margin_surname)}</span>${rend ? ` (${esc(rend)})` : ''}` : '';
+  const margin = c.margin_surname ? `${L.sideMargin}: <span lang="ru">${esc(c.margin_surname)}</span>${rend ? ` (${esc(rend)})` : ''}${differ}` : '';
   const noteT = lang === 'lt' ? c.notes_lt : lang === 'en' ? c.notes_en : c.notes_ru;
   const note = c.notes_ru ? `<p class="side-note">${L.sideNote}: ${esc(noteT || c.notes_ru)}</p>` : '';
   return `<p class="side">${[margin, bits.join(', ')].filter(Boolean).join(' · ')}</p>${note}`;

@@ -6,7 +6,7 @@ Run from the project root:
     .venv/bin/python -I site/book/build_book.py --textiles site/book/img/src
 Re-run whenever drafts or translations change; it reads whatever is in processed/.
 """
-import html, json, re, sys
+import difflib, html, json, re, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 import numpy as np
@@ -144,10 +144,11 @@ SIDE_WORDS = {"en": ("No.", {"M": "boy", "F": "girl"}, "born", "baptised", "Late
               "lt": ("Nr.", {"M": "berniukas", "F": "mergaitė"}, "gimė", "pakrikštyta(s)", "Vėlesnė pastaba"),
               "ru": ("№", {}, "рожд.", "крещ.", "Позднейшая запись")}
 
-def side_html(c, lang):
-    """Printed columns 1-3 for one entry: margin surname, No., sex, days, later note."""
+def side_html(c, lang, name=None):
+    """Printed columns 1-3 for one entry: margin surname, No., sex, days, later note.
+    `name` is the reconciled surname (see reconcile_surname); the raw margin rendering otherwise."""
     no, sex, born, bapt, note = SIDE_WORDS[lang]
-    name = c.get("margin_lt") if lang == "lt" else c.get("margin_en") if lang == "en" else c.get("margin_surname")
+    name = name or (c.get("margin_lt") if lang == "lt" else c.get("margin_en") if lang == "en" else c.get("margin_surname"))
     bits = [c.get("entry_no") and f"{no} {c['entry_no']}",
             sex.get(c.get("sex")) if lang != "ru" else c.get("sex_letter"),
             c.get("birth_day") and f"{born} {c['birth_day']}", c.get("baptism_day") and f"{bapt} {c['baptism_day']}"]
@@ -156,6 +157,32 @@ def side_html(c, lang):
     if c.get("notes_ru"):
         out += f'<br><span class="ed">{html.escape(note)}: {html.escape(nt or c["notes_ru"])}</span>'
     return out
+
+def _key(s):
+    """Latin surname without its ending, for comparing a translator's form with the margin's."""
+    s = re.sub(r"[^a-ząčęėįšųūž]", "", (s or "").lower())
+    return re.sub(r"(iov|ov|ev|skii|skis|ski|ius|is|as|us|ys|es|a|i)$", "", s) if len(s) > 5 else s
+
+def reconcile_surname(r, sn):
+    """One surname per entry from its two writings (margin column and parents column).
+    `sn` is the entry's record from processed/surnames.json (pipeline/reconcile_surnames.py).
+    The translation's form is kept when it is the same name as the margin reading, so heading,
+    margin cell and translated text agree; otherwise the margin reading leads and the other
+    form is kept in surAlt to be shown as a difference."""
+    if not sn or sn["status"] == "draft_only" or not sn.get("en"):
+        return
+    r["surSrc"] = sn["status"]
+    tr_sur = r.get("surEn", "")
+    if len(tr_sur) > 30 or len(tr_sur.split()) > 2:      # not a surname: the sentence did not parse
+        tr_sur = ""
+    close = tr_sur and difflib.SequenceMatcher(None, _key(tr_sur), _key(sn["en"])).ratio() >= 0.72
+    if close:
+        r["surQ"] = "?" in sn["margin_ru"] and r.get("surQ", False)   # two writings agree
+        return
+    if tr_sur:
+        r["surAlt"] = tr_sur
+    r["surEn"], r["surLt"] = sn["en"], sn["lt"]
+    r["surQ"] = "?" in sn["margin_ru"] or sn["status"] == "conflict" or bool(tr_sur)
 
 def main(args):
     P = D / "processed"
@@ -220,20 +247,22 @@ def main(args):
             h = {"ru": {c: html.escape(e["text"].get(c) or "") for c in CELLS}}
             if sc:
                 h["ru"]["side"] = side_html(sc, "ru")
+            rec = r.get("surSrc") and r.get("surEn")
             issues = {}
             if t:
                 h["en"] = {c: mark(t[c + "_en"], names) for c in CELLS}
                 if sc:
-                    h["en"]["side"] = side_html(sc, "en")
+                    h["en"]["side"] = side_html(sc, "en", rec and r["surEn"])
                 issues["en"] = t["issues"]
             if row in lt:
                 h["lt"] = {c: mark(lt[row][c], names) for c in CELLS}
                 if sc:
-                    h["lt"]["side"] = side_html(sc, "lt")
+                    h["lt"]["side"] = side_html(sc, "lt", rec and (r.get("surLt") or r["surEn"]))
                 issues["lt"], issues["ru"] = lt[row]["issues"], lt[row]["issues_ru"]
             spread["entries"].append({
                 "row": row, "n": r.get("n"), "side": side, "y": r["y"], "date": r.get("bapt"), "born": r.get("born"),
                 "child": r.get("childEn", ""), "surname": r.get("surEn", ""), "surnameQ": r.get("surQ", False),
+                "surnameLt": r.get("surLt", ""), "surnameSrc": r.get("surSrc", ""), "surnameAlt": r.get("surAlt", ""),
                 "childRu": r.get("child", ""), "surnameRu": (r.get("sur", "").split() or [""])[-1],
                 "band": [bx["baptism"][1], bx["baptism"][3]], "cells": bx, "html": h,
                 "names": [n.split("->", 1) for n in names if "->" in n], "issues": issues,
@@ -271,6 +300,7 @@ def build_index(tr):
     """One compact search record per entry, every register year."""
     P = D / "processed"
     out = []
+    surn = json.loads((P / "surnames.json").read_text()) if (P / "surnames.json").exists() else {}
     for year, name in YEARS:
         for e in json.loads((P / name).read_text())["entries"]:
             f = {k: v.get("value") for k, v in e["fields"].items()}
@@ -300,6 +330,7 @@ def build_index(tr):
                     raw = re.search(r"née(.+?)(?:, lawfully|$)", t["parents_en"])
                     r["surQ"] = bool(raw and "[?]" in raw.group(1).split(parts[0], 1)[-1])
                 r["en"] = " ".join(clean(n.split("->", 1)[1]) for n in t["names"] if "->" in n)
+            reconcile_surname(r, surn.get(e["row_id"]))
             out.append({k: v for k, v in r.items() if v not in ("", None)})
     return out
 
