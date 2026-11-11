@@ -2,7 +2,7 @@
 
 Usage: SAMOGITIA_BOOK=data/<book> .venv/bin/python -I pipeline/lt_fix_chunks.py TRANSLATIONS.json OUT_DIR [PER]
 TRANSLATIONS.json is relative to processed/translations/. Each chunk_NNN.json is a list of
-{row_id, year, ru: {baptism, parents, godparents}, margin_surname, en: {...}, lt: {...}}: the
+{row_id, year, ru: {baptism, parents, godparents}, margin_surname, en: {parents}, lt: {...}}: the
 draft the translation was made from, the family surname as read from the margin column
 (processed/side_columns.json), and the current English and Lithuanian. Prints a JSON summary.
 """
@@ -33,7 +33,7 @@ def main():
         rows.append({'row_id': t['row_id'], 'year': years.get(t['row_id']) or (int(m.group(1)) if m else None),
                      'ru': {c: (t.get('source_text') or {}).get(c, '') for c in CELLS},
                      'margin_surname': (side.get(t['row_id']) or {}).get('margin_surname') or '',
-                     'en': {c: t.get(c + '_en', '') for c in CELLS},
+                     'en': {'parents': t.get('parents_en', '')},      # the surname-bearing sentence, for consistency
                      'lt': {c: t.get(c + '_lt', '') for c in CELLS}})
     out.mkdir(parents=True, exist_ok=True)
     for old in out.glob('chunk_*.json'):

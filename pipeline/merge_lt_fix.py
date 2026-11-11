@@ -24,6 +24,7 @@ def main():
     data = json.loads(path.read_text())
     index = {t['row_id']: t for t in data}
     got, unknown = {}, []
+    prefix = os.environ.get('LABEL_PREFIX', '')   # e.g. 'ltfix:b22-' when one journal holds several books
     for j in journals:
         labels = {}
         for line in Path(j).read_text().splitlines():
@@ -31,6 +32,8 @@ def main():
             if e.get('type') == 'started':
                 labels[e['key']] = e['label']
             elif e.get('type') == 'result' and isinstance(e.get('result'), dict) and 'entries' in e['result']:
+                if prefix and not labels.get(e['key'], '').startswith(prefix):
+                    continue          # another book's chunk in a shared journal
                 for x in e['result']['entries']:
                     if x.get('row_id') in index:
                         got[x['row_id']] = (x, labels.get(e['key'], '?'))
