@@ -1,0 +1,61 @@
+{
+ "run_id": "pilot-8587f0d1df6745c3-20261111T030612124785Z",
+ "kind": "pilot",
+ "dataset_id": "8587f0d1df6745c3",
+ "counts": {
+  "train": 116,
+  "validation": 19,
+  "test": 1
+ },
+ "hands_by_split": {
+  "train": {
+   "early_candidate": 60,
+   "later_candidate": 56
+  },
+  "validation": {
+   "early_candidate": 8,
+   "later_candidate": 11
+  },
+  "test": {
+   "early_candidate": 1
+  }
+ },
+ "base_model": "<htr-store>/models/ppocrv6-small/small.safetensors",
+ "base_model_sha256": "3108259779f5abfed3908a1c9eafba64d17e4a2a169368c539ecfeff04c018f3",
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "command": [
+  ".venv-htr/bin/ketos",
+  "-d",
+  "cuda:0",
+  "--seed",
+  "1888",
+  "train",
+  "-f",
+  "path",
+  "--linetype",
+  "bbox",
+  "-t",
+  "data/plunge-1886-1890/training/exports/8587f0d1df6745c3/train.txt",
+  "-e",
+  "data/plunge-1886-1890/training/exports/8587f0d1df6745c3/validation.txt",
+  "--load",
+  "<htr-store>/models/ppocrv6-small/small.safetensors",
+  "--resize",
+  "union",
+  "--batch-size",
+  "8",
+  "--lrate",
+  "0.00002",
+  "--epochs",
+  "60",
+  "--quit",
+  "fixed",
+  "--augment",
+  "-o",
+  "<htr-store>/runs/pilot-8587f0d1df6745c3-20261111T030612124785Z"
+ ],
+ "output_dir": "<htr-store>/runs/pilot-8587f0d1df6745c3-20261111T030612124785Z",
+ "started": "2026-11-11T03:06:12.136263+00:00",
+ "outcome": "lrate 2e-5, 60 epochs. Internal val 0.80->0.835 over epochs 50-59. baseline_htr.py CER 0.229 (same extraction caveat). Not better than the lrate 1e-4 run. Intermediate checkpoints deleted."
+}

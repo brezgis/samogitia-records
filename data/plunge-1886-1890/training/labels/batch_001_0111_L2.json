@@ -1,0 +1,29 @@
+{
+  "reviewer": "Claude Opus 5.5 visual transcription (single reader)",
+  "baseline_seen": true,
+  "notes": "Read from refined v2 crops at 1x and 2x with the ppocrv6-small baseline output visible. Diplomatic: pre-reform letters, hyphens, capitals and punctuation as written; superscripts written inline (12го). Specks/stray marks not transcribed.",
+  "lines": [
+    {"id": "0111_L2_baptism_01", "text": "Тысяча восемьсотъ восемьдесятъ", "status": "image_checked", "note": "Small speck after final ъ at the rule not transcribed."},
+    {"id": "0111_L2_baptism_02", "text": "восьмаго года Апрѣля три-", "status": "image_checked", "note": "ѣ written as tall к-like letter."},
+    {"id": "0111_L2_baptism_03", "text": "надцатаго дня, въ Плунгян-", "status": "image_checked"},
+    {"id": "0111_L2_baptism_04", "text": "скомъ Р.К. Приходскомъ", "status": "image_checked"},
+    {"id": "0111_L2_baptism_05", "text": "Костелѣ Викарнымъ К[с?]:", "status": "draft", "note": "Abbreviation of Ксендзомъ; second letter could be read е."},
+    {"id": "0111_L2_baptism_06", "text": "Юзефовичемъ окрещенъ", "status": "image_checked"},
+    {"id": "0111_L2_baptism_07", "text": "Младен[е?]цъ именемъ [Г?]елена", "status": "draft", "note": "Capital resembles П; Гелена expected for Helena. Child name underlined in source."},
+    {"id": "0111_L2_baptism_08", "text": "со всѣми обрядами Таинства.", "status": "image_checked", "note": "Word space between со and всѣми is narrow."},
+    {"id": "0111_L2_parents_01", "text": "Крестьянъ [Бининкаловской?]", "status": "draft", "note": "Township name unread; stray mark at left edge."},
+    {"id": "0111_L2_parents_02", "text": "волости Яна и Франци-", "status": "image_checked"},
+    {"id": "0111_L2_parents_03", "text": "шки изъ [Бекешіовъ?]", "status": "draft", "note": "Maiden name uncertain (Бекешіовъ/Бекетсіовъ)."},
+    {"id": "0111_L2_parents_04", "text": "[Лайвіовъ?], законныхъ", "status": "draft", "note": "Surname uncertain."},
+    {"id": "0111_L2_parents_05", "text": "Супруговъ дочь родившая", "status": "image_checked", "note": "Final я touches the rule."},
+    {"id": "0111_L2_parents_06", "text": "ся 1888 года Апрѣля", "status": "image_checked"},
+    {"id": "0111_L2_parents_07", "text": ", 12го дня въ деревн[и?] Сур-", "status": "draft", "note": "Leading comma belongs to child name in baptism column. Superscript го. и vs ѣ uncertain."},
+    {"id": "0111_L2_parents_08", "text": "-бли сего Прихода. -", "status": "image_checked", "note": "Leading hyphen and trailing filler dash as written."},
+    {"id": "0111_L2_godparents_01", "text": "Воспріемника", "status": "image_checked", "note": "Speck at top-left not transcribed."},
+    {"id": "0111_L2_godparents_02", "text": "-ми были Юзефъ", "status": "image_checked"},
+    {"id": "0111_L2_godparents_03", "text": "[Микутисъ?] съ", "status": "draft"},
+    {"id": "0111_L2_godparents_04", "text": "[Г?]еленою Ми-", "status": "draft", "note": "Same capital question as baptism_07."},
+    {"id": "0111_L2_godparents_05", "text": "-левскою д[ѣ?]ви-", "status": "draft"},
+    {"id": "0111_L2_godparents_06", "text": "цею.", "status": "image_checked"}
+  ]
+}

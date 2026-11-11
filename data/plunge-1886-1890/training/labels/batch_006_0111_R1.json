@@ -1,0 +1,30 @@
+{
+  "reviewer": "Claude Opus 5.5 visual transcription (single reader)",
+  "baseline_seen": true,
+  "notes": "Right page; text starts at the rule right after the date column, so several first letters are dropped or partly cut by refine_lines. Lines with partial glyphs kept as drafts.",
+  "lines": [
+    {"id": "0111_R1_baptism_01", "text": "[Т?]ысяча восемьсотъ восемьдесятъ[.?]", "status": "draft", "note": "Crossbar of Т only."},
+    {"id": "0111_R1_baptism_02", "text": "[в?]осьмаго года Апрѣля восем-", "status": "draft"},
+    {"id": "0111_R1_baptism_03", "text": "[н?]адцатаго дня, въ Плун-", "status": "draft"},
+    {"id": "0111_R1_baptism_04", "text": "гянскомъ Р.К. Приходскомъ [Ж?]", "status": "draft", "note": "Glyph beyond right rule."},
+    {"id": "0111_R1_baptism_05", "text": "[К?]остелѣ Викарнымъ Кс.", "status": "draft"},
+    {"id": "0111_R1_baptism_06", "text": "[Ю?]зефовичемъ окрещенъ", "status": "draft"},
+    {"id": "0111_R1_baptism_07", "text": "Младенецъ именемъ [с?]", "status": "draft", "note": "Small mark beyond the rule."},
+    {"id": "0111_R1_baptism_08", "status": "rejected_crop", "note": "Two text lines merged."},
+    {"id": "0111_R1_parents_01", "text": "[К?]рестьянъ Плунгянской", "status": "draft"},
+    {"id": "0111_R1_parents_02", "text": "волости Климента, и", "status": "image_checked"},
+    {"id": "0111_R1_parents_03", "text": "Барбары изъ [Вайшно?]", "status": "draft"},
+    {"id": "0111_R1_parents_04", "text": "[ріовъ Салисовъ?], закон-", "status": "draft"},
+    {"id": "0111_R1_parents_05", "text": "ныхъ Супруговъ доч[ь?]", "status": "draft"},
+    {"id": "0111_R1_parents_06", "text": "[р?]одившаяся 1888 года.", "status": "draft"},
+    {"id": "0111_R1_parents_07", "text": "Апрѣля 17го дня, въ де-", "status": "image_checked"},
+    {"id": "0111_R1_parents_08", "status": "rejected_crop", "note": "Two text lines merged."},
+    {"id": "0111_R1_godparents_01", "text": "Воспріемника-", "status": "image_checked"},
+    {"id": "0111_R1_godparents_02", "text": "ками были", "status": "image_checked"},
+    {"id": "0111_R1_godparents_03", "text": "[Ю?]зефъ [Шакинисъ?]", "status": "draft"},
+    {"id": "0111_R1_godparents_04", "text": "съ Людвикою", "status": "image_checked"},
+    {"id": "0111_R1_godparents_05", "text": "[К?]азимира Ва-", "status": "draft"},
+    {"id": "0111_R1_godparents_06", "text": "[лушиса?] супру-", "status": "draft"},
+    {"id": "0111_R1_godparents_07", "text": "[гою?].", "status": "draft"}
+  ]
+}

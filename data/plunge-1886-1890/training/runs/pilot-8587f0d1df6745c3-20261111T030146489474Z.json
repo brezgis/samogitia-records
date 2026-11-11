@@ -1,0 +1,61 @@
+{
+ "run_id": "pilot-8587f0d1df6745c3-20261111T030146489474Z",
+ "kind": "pilot",
+ "dataset_id": "8587f0d1df6745c3",
+ "counts": {
+  "train": 116,
+  "validation": 19,
+  "test": 1
+ },
+ "hands_by_split": {
+  "train": {
+   "early_candidate": 60,
+   "later_candidate": 56
+  },
+  "validation": {
+   "early_candidate": 8,
+   "later_candidate": 11
+  },
+  "test": {
+   "early_candidate": 1
+  }
+ },
+ "base_model": "<htr-store>/models/ppocrv6-small/small.safetensors",
+ "base_model_sha256": "3108259779f5abfed3908a1c9eafba64d17e4a2a169368c539ecfeff04c018f3",
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "command": [
+  ".venv-htr/bin/ketos",
+  "-d",
+  "cuda:0",
+  "--seed",
+  "1888",
+  "train",
+  "-f",
+  "path",
+  "--linetype",
+  "bbox",
+  "-t",
+  "data/plunge-1886-1890/training/exports/8587f0d1df6745c3/train.txt",
+  "-e",
+  "data/plunge-1886-1890/training/exports/8587f0d1df6745c3/validation.txt",
+  "--load",
+  "<htr-store>/models/ppocrv6-small/small.safetensors",
+  "--resize",
+  "union",
+  "--batch-size",
+  "8",
+  "--lrate",
+  "0.0001",
+  "--epochs",
+  "30",
+  "--quit",
+  "fixed",
+  "--augment",
+  "-o",
+  "<htr-store>/runs/pilot-8587f0d1df6745c3-20261111T030146489474Z"
+ ],
+ "output_dir": "<htr-store>/runs/pilot-8587f0d1df6745c3-20261111T030146489474Z",
+ "started": "2026-11-11T03:01:46.500722+00:00",
+ "outcome": "Completed 30 epochs. Kraken internal val accuracy rose 0.777->0.855 over epochs 20-29 (still rising). Project evaluator on 19 single-reader validation lines: CER 0.226 / WER 0.774 vs base model CER 0.171 / WER 0.679. WORSE than base: under-trained after initial disruption; also bbox crops vs baseline-trained base model (Kraken warning). Intermediate checkpoints deleted; best_0.8551.safetensors kept. UPDATE: ketos test (training-consistent line extraction) on the same 19 validation lines: base 80.87% char accuracy, this model 82.32% (small gain, within noise for 19 lines). The worse score above came from pipeline/baseline_htr.py extracting lines differently for the fine-tuned (bbox-trained) model; use ketos test for now."
+}

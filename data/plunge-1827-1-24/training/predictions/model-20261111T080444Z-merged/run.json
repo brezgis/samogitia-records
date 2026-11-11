@@ -1,0 +1,21 @@
+{
+ "run_id": "model-20261111T080444Z-merged",
+ "kind": "machine_draft_predictions",
+ "pipeline": "ketos-test data module",
+ "model_path": "<htr-store>/models/plunge-v3/model.safetensors",
+ "model_sha256": "1d9a3ba97c54631e0cdf106f354d177afe0c3e1d1e28d4e03bd314ab2e5c8d0e",
+ "input": "annotations.json",
+ "lines": 781,
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "gpu": "NVIDIA GeForce RTX 5070 Ti",
+ "note": "Machine predictions, not labels.",
+ "merged_from": [
+  "model-20261111T080444Z-shard0of6",
+  "model-20261111T080444Z-shard1of6",
+  "model-20261111T080444Z-shard2of6",
+  "model-20261111T080444Z-shard3of6",
+  "model-20261111T080444Z-shard4of6",
+  "model-20261111T080444Z-shard5of6"
+ ]
+}

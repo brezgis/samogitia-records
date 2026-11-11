@@ -1,0 +1,111 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0013_R3",
+   "found": "Plungės parapijos bažnyčioje",
+   "expected": "Plungės Romos katalikų parapijos bažnyčioje"
+  },
+  {
+   "row_id": "0013_R3",
+   "found": "Ona [?] Bernotovago [?]; Petronėlė Machalirekago [?]",
+   "expected": "Surname without the Russian case ending (-ago is a Russian genitive/adjective ending), e.g. 'Bernotov[?]' / base form + [?]. The rule is to transliterate the surname in the nominative with no Russian case ending."
+  },
+  {
+   "row_id": "0095_R1",
+   "found": "pakrikštijo kūdikį, vardu Juozapas, [su visomis apeigomis]",
+   "expected": "su visomis Sakramento apeigomis pakrikštijo kūdikį, vardu Juozapas (fixed formula order, with 'Sakramento' included)"
+  },
+  {
+   "row_id": "0165_R2",
+   "found": "su visomis apeigomis",
+   "expected": "su visomis Sakramento apeigomis"
+  },
+  {
+   "row_id": "0163_R2",
+   "found": "balandžio I [?] dieną",
+   "expected": "Arabic numeral, e.g. 'balandžio 1 [?] dieną'. Dates in the sentence use numerals, and here 'I' looks like an OCR/transcription mix-up with '1'."
+  },
+  {
+   "row_id": "0020_L3",
+   "found": "Koršcjanskoj [?] valsčiaus",
+   "expected": "Drop the Russian adjective ending -oj and render щ as šč: a base form + [?] (e.g. 'Korščian[?] valsčiaus'). Places rule: never write a Russian adjective ending."
+  },
+  {
+   "row_id": "0063_R1",
+   "found": "Toranskoj [?] valsčiaus",
+   "expected": "Drop the Russian adjective ending -oj and use one base form + [?], the same form as in 0100_R1"
+  },
+  {
+   "row_id": "0100_R1",
+   "found": "Toransko [?] valsčiaus",
+   "expected": "The Russian adjective ending -o(go) is written here as if it were a Lithuanian genitive, which the glossary forbids. Use the same base form + [?] as in 0063_R1."
+  },
+  {
+   "row_id": "0042_R3",
+   "found": "Koucjansk [?] valsčiaus",
+   "expected": "A truncated Russian adjective stem (-sk-) is not a township name. Use the base form + [?], and check whether this is the same township as 'Koršcjanskoj' in 0020_L3."
+  },
+  {
+   "row_id": "0192_L3",
+   "found": "Valstiečių, teisėtų sutuoktinių ... šios parapijos, Plungės valsčiaus.",
+   "expected": "Template order: 'Plungės valsčiaus valstiečių, teisėtų sutuoktinių ... gimęs ... Stalge kaime, šios parapijos.'"
+  },
+  {
+   "row_id": "0016_R4",
+   "found": "Kazimiero Fitipovag [?]",
+   "expected": "Father's surname as a Lithuanian genitive of a nominative base, with no Russian ending fragment (-ag looks like a cut-off -аго)"
+  },
+  {
+   "row_id": "0016_R4",
+   "found": "Juozapo Stonkug [?] žmona",
+   "expected": "Husband's surname in the genitive: 'Juozapo Stonkaus [?] žmona' (nominative Stonkus; compare 'Juozapas Stonkus' in 0041_L5)"
+  }
+ ],
+ "grammar_problems": [
+  {
+   "row_id": "0165_R2",
+   "problem": "The children are put in the genitive ('sūnaus ir dukters, gimusių'), but the clause needs the nominative, as in every other entry.",
+   "fix": "... gim. Kukulskis, sūnus ir duktė (dvyniai), gimę 1889 metų balandžio 24 dieną Parvojše [?] kaime, šios parapijos."
+  },
+  {
+   "row_id": "0165_R2",
+   "problem": "'dvynukus' is a colloquial diminutive and inconsistent with 'dvynius' in 0128_L3.",
+   "fix": "pakrikštijo dvynius kūdikius, vardais Povilas ir Uršulė"
+  },
+  {
+   "row_id": "0020_L3",
+   "problem": "The father's surname is left undeclined ('Igno Možeiko'), while the same type of name is declined in 0016_L3 ('Igno Mikeikos').",
+   "fix": "teisėtų sutuoktinių Igno Možeikos [?] ir Onos"
+  },
+  {
+   "row_id": "0155_R4",
+   "problem": "The father's surname 'Janubovskna' is not a Lithuanian genitive. It looks like a misread Russian -скаго ending, which should become -skis, genitive -skio.",
+   "fix": "teisėtų sutuoktinių Petro Janubovskio [?] ir Eleonoros (check against the scan)"
+  },
+  {
+   "row_id": "0013_R3",
+   "problem": "The baptism sentence switches to the passive and does not follow the formula used elsewhere. Acceptable given the illegible line, but it is inconsistent.",
+   "fix": "1886 metų kovo 13 dieną Plungės Romos katalikų parapijos bažnyčioje [neįskaitoma] pakrikštijo kūdikius, vardais Ignas [?] ir Marijona; likusi eilutės dalis [neįskaitoma]."
+  },
+  {
+   "row_id": "0193_L1b",
+   "problem": "The feminine given name is written 'Stanislova' (twice). The standard Lithuanian feminine form is 'Stanislava', which is the form used in 0044_L5.",
+   "fix": "Stanislava Pavlovska, mergina ... vardu Stanislava"
+  },
+  {
+   "row_id": "0015_L3",
+   "problem": "The maiden name contains a digit ('Bal7minikius'), which is an OCR artifact and not a reading.",
+   "fix": "gim. Bal[?]minikius [?] (re-read from the scan)"
+  }
+ ],
+ "glossary_suggestions": [
+  "Maiden name after 'gim.' (lines 81-84): putting a masculine nominative after a woman ('Onos, gim. Mockus', 'gim. Jakubovskis') is unidiomatic in Lithuanian. The rule rightly avoids inventing -aitė/-ūtė forms, but a closer and idiomatic rendering of Russian 'изъ Мокусовъ' is the family genitive plural 'iš Mockų', 'iš Jakubovskių', 'iš Kubilių'. That reads naturally for the period and register, and it reconstructs nothing that is not written. Suggest 'iš [surname, gen. pl.]' in place of 'gim. [masc. nom.]'. Note that the template example on line 89 ('gim. Talimovaitės') already contradicts the rule.",
+  "Places (line 45): 'Bernatovo [?] valsčiaus' for Бернатовская breaks the glossary's own rule against writing a Russian adjective ending as a Lithuanian genitive, and translators are copying that pattern ('Toransko'). Suggest writing the township base plus [?] consistently, or identifying the actual Lithuanian name of the township and adding it to the list.",
+  "Transliteration (line 58): 'я ja, ю ju' gives un-Lithuanian spellings after consonants ('Rjačal' in 0015_L3, while 'Liasas' elsewhere has ia). Lithuanian orthography writes softness after a consonant with i. Suggest: я → ia / ю → iu after a consonant, ja / ju at the start of a word or after a vowel.",
+  "Add a twins entry (близнецы): there are four different renderings in this sample ('vaikai (dvyniai)', 'dvynius kūdikius', 'dvynukus kūdikius', and the genitive 'sūnaus ir dukters'). Suggest 'sūnus ir duktė (dvyniai), gimę' / 'dukterys (dvynės), gimusios' and 'pakrikštijo dvynius kūdikius, vardais A ir B', with godparents introduced per child ('Pirmajam/Pirmajai ... ; antrajam/antrajai ...').",
+  "Add feminine given names that appear in the sample: Станислава → Stanislava (not 'Stanislova'), Тереза → Teresė, Уршуля → Uršulė, Бенедикта → Benedikta, Элеонора → Eleonora, Агнешка → Agnė (genitive Agnės).",
+  "Line 16: in Lithuanian, 'vardu' used appositively normally takes no comma ('pakrikštijo kūdikį vardu Ona'). This is minor, but since the formula is repeated in every entry it is worth fixing once here.",
+  "Add entries for ranks and places that come up but are not covered: a priest with no rank (Кс: [name] → 'kunigas [name]'), 'въ Плунгянскомъ дворѣ' → 'Plungės dvare', and a godparent who is a priest ('kunigas [given name] [surname]')."
+ ],
+ "overall": "I read the glossary at docs/LT_GLOSSARY.md and checked all 37 entries against it. Most entries follow the glossary closely: valsčiaus valstiečių, teisėtų sutuoktinių, Krikštatėviai buvo ... ir ..., the 'X, [husband gen.] žmona' pattern, the clergy forms (Jacewicz, Józefowicz, Augulis, Abramowicz, Beresniewicz with 'klebonas kunigas kanauninkas') and Petronėlė with ė. I found no wrong clergy spellings and no 'našle' errors.\n\nThe recurring problems:\n(1) Township names that keep Russian adjective endings (-oj, -o, -sk) in 0020_L3, 0042_R3, 0063_R1 and 0100_R1. The last two render the same township two different ways.\n(2) Shortened formulas in 0013_R3 (missing 'Romos katalikų'), 0095_R1 and 0165_R2 (missing 'Sakramento').\n(3) Case errors in 0165_R2 (children in the genitive) and in undeclined or Russian-ended surnames of fathers and husbands (0016_R4, 0020_L3, 0155_R4).\n(4) Inconsistent wording for twins.\n\nTwo data issues outside the translation itself, worth checking against the scans:\n- 0016_R4 gives birth on 28 April and baptism on 21 April 1886, so the baptism comes before the birth (one of the dates is probably misread).\n- 0126_R3 gives birth in 1886 and baptism in 1888 (the birth year is probably 1888).\n\nFollowing the instructions, I did not flag uncertain name readings that were marked [?] and transliterated as read."
+}

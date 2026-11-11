@@ -1,0 +1,79 @@
+# Night log, 2026-11-11
+
+Autonomous run requested by Anna ("work through the night ... as much transcription,
+translation, model training ... as you can"). Entries are appended as work completes.
+
+## Start state
+- Book 1827/1/23 (1886–1890), 202 scans downloaded. 1888: 434 entries; other years: 1,247
+  entries (1886: 362, 1887: 398, 1889: 386, 1890: 101).
+- Model v2 (validation CER 8.0%; 1886–87 hand 15.3%). Labels: 634 train / 147 val / 123 test.
+- Review site http://100.107.252.39:8741/ (EN/LT interface; 1888 only so far).
+
+## Progress
+- Reading round 2 (33 agents, ~3.0M tokens): 24 more 1886–87 entries + 9 from 1889–90.
+  +402 checked lines (205 blind-agreed). Labels now 914 train / 189 val / 203 test.
+- Side columns: printed headers transcribed and translated (EN/LT). All 1,681 entries' side
+  columns (margin surname, No., sex, birth/baptism day, later notes) cropped to 421 sheets
+  (`pipeline/side_strips.py`); reading workflow running (36 Sonnet agents).
+- Book 1827/1/24: 298 scans downloaded to data/plunge-1827-1-24/pages; layout running.
+- Model v3 training (same recipe as v2, larger dataset).
+- Mistakes caught: launched the side-column workflow once with placeholder args (failed
+  instantly, 0 agents, 0 tokens). Merge rule ignored 99 blind agreements in round 1 of the
+  1886–87 hand; fixed and re-merged from backup.
+- Side columns read for all 1,681 entries (36 Sonnet agents, ~2.5M tokens) ->
+  processed/side_columns.json. Check: for 1888 the read entry number equals the hand-checked
+  sequence number for 427/434 entries. Numbers show 1886 ran to No. 375, 1888 to 434.
+- Found via entry numbers: 1889 entries 1–14 (scans 144–145) and one 1887 entry (scan 92)
+  were in neither queue; added (12 layout rows, hand-checked years). Year inference now splits
+  the book at entry-number resets: 1886: 368 rows, 1887: 396, 1889: 376, 1890: 92.
+- Book 1827/1/24: layout found tables on 565/596 page sides; 2,587 rows, 67,984 lines;
+  refinement running. 31 non-table sides (covers/inserts) listed.
+- Model v3 (914 train lines): validation CER 7.2% (v2 9.0%); 1886–87/1889–90 group 8.7%
+  (v2 13.6%). Drafting is now sharded (`pipeline/draft_shards.sh`, 6 GPU processes): ~44k lines
+  in ~4 min. (A 10-shard attempt ran out of GPU memory; nothing was merged from it.)
+- Book 1 redrafted with v3 and reassembled: 1886: 370, 1887: 397 (matches its last No. 397),
+  1888: 434, 1889: 401, 1890: 99 entries = 1,701. Formula words read exactly, v1 -> v3:
+  1886 19% -> 50%, 1887 56% -> 65%, 1888 62% -> 64%, 1889 60% -> 62%, 1890 53% -> 58%.
+- Review site now shows all five years (1,701 entries) with side columns and the printed
+  column headings (RU/EN/LT).
+- Translation pass EN+LT launched: 43 Sonnet chunks of 40 entries + Opus review of Lithuanian.
+- Book 1827/1/24 is **1896–1902** (not 1891–95; those are presumably in file 25). Drafted with
+  v3 (67,984 lines). Years by a monotone page fit (isolated misreadings like "1877" for "1897"
+  can't flip a page): 1896: 300, 1897: 394, 1898: 478, 1899: 402, 1900: 410, 1901: 428,
+  1902: 237 entries = 2,649 (after splitting merged rows).
+- Book 24 uses a later form/formula ("мѣстнымъ Викарнымъ Кс.", "окрещено дитя именемъ",
+  dates in digits) and new hands: v3 drafts are weaker there. Margins carry **later Lithuanian
+  annotations of the baptised person's marriage** (e.g. "Apolinaras Stoža priėmė Plungės bažn.
+  rugp. 11 d. 1925 m. moterystės sakramentą, vesdamas Valeriją Brazdeikytę").
+- Side columns for book 24 use a form-agnostic strip (both rotations + upright); reading
+  workflow running (56 Sonnet agents). Reading round for book 24 hands running (30 entries,
+  ~27 agents) -> v4. Dataset export now combines all books' labels (ids namespaced per book).
+- Git: local repo initialised (not pushed); .gitignore keeps images out (~174 MB of text data).
+  Licence plan: CC BY-NC 4.0 for derived data and model (scans are NOC-NC, LVIA fond 1827).
+- Book 1 translated EN+LT: 1,701/1,701 entries (43 Sonnet chunks + Opus review, ~2.2M tokens)
+  -> processed/translations/translations_v3_book1.json (with the source text each was made from).
+  The Opus review (docs/LT_REVIEW_2026-11-11.json) found systematic Lithuanian problems, mostly
+  from my glossary's parent template (father's surname after "gim."), Russian case endings left on
+  surnames, husbands' surnames in the wrong case, inconsistent clergy names. Glossary revised;
+  Lithuanian-only re-translation of book 1 running (43 agents). English unaffected.
+- Book 24 side columns: 2,650 read (56 agents, ~5M tokens). **864 later Lithuanian marriage
+  annotations** (1919–1930s) in the margins, transcribed and translated. Entry numbers used to
+  fix year boundaries and fold 113 half-entries the layout had split: book 24 = 2,536 entries.
+  Book 24 starts at 1896 entry No. 86 (Nos. 1–85 are presumably in another book).
+- **Mistake, repaired:** merging the book-24 reading round, `merge_double_reading.py` still had
+  book 1 hard-coded; because scan numbers overlap across books, it wrote 475 book-24 records onto
+  book-1 line ids and demoted 19 genuine book-1 labels to draft. Restored book-1 annotations from
+  the pre-round-2 backup and re-applied round 2 (2,870 records, identical to before; verified the
+  only differences from the corrupted file were exactly those 19). Script now takes
+  SAMOGITIA_BOOK; book-24 readings merged into book 24 (420 checked lines, 256 blind-agreed).
+- Combined dataset: 1,199 train / 256 val / 271 test lines (book 1: 1,306; book 24: 420). v4 training.
+- Found `site/book/` (a "reading book" builder with textile ribbon images, 202 spread JSONs),
+  created 00:52–01:41 by another session/tool, not by this one. Left untouched and excluded from
+  git pending Anna's confirmation. It reads the v1 drafts; current outputs are v3.
+- Repository kept general per Anna: attribution "samogitia-records contributors"; family-research
+  notes (original status, handoff) and the old family map stay local (.gitignore).
+- `site/book/` confirmed by Anna as the main GUI and folded in: its build now reads the v3
+  drafts and translations (it pointed at a file moved earlier tonight), takes Lithuanian from
+  the full translations, shows the side columns (margin surname, No., sex, days, later notes)
+  in the entry popover and the seven printed column headings in EN/LT/RU; its "how this was
+  read" text updated to the current method. Served at http://100.107.252.39:8742/.

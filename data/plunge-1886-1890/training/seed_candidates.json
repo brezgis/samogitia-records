@@ -1,0 +1,156 @@
+[
+  {
+    "id": "0093_L1_parents_08",
+    "scan": 93,
+    "row_id": "0093_L1",
+    "cell": "parents",
+    "source_image": "data/plunge-1886-1890/pages/0093.jpg",
+    "source_sha256": "d65e1b67df8dbcf384e1419236af758fde66cf0a55d81e263810ead6f31b0ad7",
+    "bbox": [
+      1114,
+      1268,
+      1830,
+      1363
+    ],
+    "image": "data/plunge-1886-1890/training/0093_L1_parents_08_corrected.png",
+    "image_sha256": "03bfb61064271936c00dcf3f093c020f6e30d8c6d0442286fe4e8d1aec02614c",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "train",
+    "hand_group": "early_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0093_L1_parents_11",
+    "scan": 93,
+    "row_id": "0093_L1",
+    "cell": "parents",
+    "source_image": "data/plunge-1886-1890/pages/0093.jpg",
+    "source_sha256": "d65e1b67df8dbcf384e1419236af758fde66cf0a55d81e263810ead6f31b0ad7",
+    "bbox": [
+      1114,
+      1479,
+      1830,
+      1604
+    ],
+    "image": "data/plunge-1886-1890/training/0093_L1_parents_11_corrected.png",
+    "image_sha256": "0dcf87dca335573f74ca65b4916bf32b065d4a9467b8d87169f41486e67946fa",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "train",
+    "hand_group": "early_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0094_L1_godparents_07",
+    "scan": 94,
+    "row_id": "0094_L1",
+    "cell": "godparents",
+    "source_image": "data/plunge-1886-1890/pages/0094.jpg",
+    "source_sha256": "e95e3635d5115d121e3d832e9cfe1603e083c988e177b06cce7fe15a6fa48eae",
+    "bbox": [
+      1776,
+      1200,
+      2371,
+      1411
+    ],
+    "image": "data/plunge-1886-1890/training/0094_L1_godparents_07_corrected.png",
+    "image_sha256": "2fdfa5b12097354181e55604ddeb41fc377d2371f3b1e8af31bc045a16ee0304",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "validation",
+    "hand_group": "early_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0095_L1_parents_10",
+    "scan": 95,
+    "row_id": "0095_L1",
+    "cell": "parents",
+    "source_image": "data/plunge-1886-1890/pages/0095.jpg",
+    "source_sha256": "093fd3b17c613ac2974bb0f5e4fc991f815f0a5b97521e6d9ea7a9fa7fe5eec8",
+    "bbox": [
+      1127,
+      1372,
+      1829,
+      1523
+    ],
+    "image": "data/plunge-1886-1890/training/0095_L1_parents_10_corrected.png",
+    "image_sha256": "b0eb4bea94972e4abfb2cdda6cee0d3979e7e0d0d1c2468c832334f6eb29ea01",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "test",
+    "hand_group": "early_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0111_L1_parents_03",
+    "scan": 111,
+    "row_id": "0111_L1",
+    "cell": "parents",
+    "source_image": "data/plunge-1886-1890/pages/0111.jpg",
+    "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+    "bbox": [
+      1094,
+      844,
+      1795,
+      946
+    ],
+    "image": "data/plunge-1886-1890/training/0111_L1_parents_03_corrected.png",
+    "image_sha256": "38a40a6e2722b8f3b5d83d40cdb525428b51e08a6ef646ab97482bda392c89f3",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "train",
+    "hand_group": "later_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0111_L1_parents_09",
+    "scan": 111,
+    "row_id": "0111_L1",
+    "cell": "parents",
+    "source_image": "data/plunge-1886-1890/pages/0111.jpg",
+    "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+    "bbox": [
+      1094,
+      1251,
+      1795,
+      1355
+    ],
+    "image": "data/plunge-1886-1890/training/0111_L1_parents_09_corrected.png",
+    "image_sha256": "53f7484790614d479d9aa45eb350b57a33a59a232f15b86b5baf2dcd029e1d9b",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "train",
+    "hand_group": "later_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  },
+  {
+    "id": "0111_L1_baptism_07",
+    "scan": 111,
+    "row_id": "0111_L1",
+    "cell": "baptism",
+    "source_image": "data/plunge-1886-1890/pages/0111.jpg",
+    "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+    "bbox": [
+      451,
+      1128,
+      1143,
+      1224
+    ],
+    "image": "data/plunge-1886-1890/training/0111_L1_baptism_07_corrected.png",
+    "image_sha256": "e1c54e02acaedb991526dc3fbe350e713d8f0ebfaf9cfa4c2106870ed188ee6e",
+    "text": null,
+    "status": "needs_boundary_and_text_review",
+    "split": "train",
+    "hand_group": "later_candidate",
+    "reviewer": null,
+    "independent_verification": false
+  }
+]

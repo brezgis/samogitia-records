@@ -1,0 +1,487 @@
+{
+  "status": "pending",
+  "independent_reads_required": 2,
+  "instructions": "src/READING_INSTRUCTIONS.md",
+  "rows": [
+    {
+      "row_id": "0111_L4",
+      "scan": 111,
+      "page": "L",
+      "row_index": 4,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_L4.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "0444a8995f997b11d964d9840cd2408512b4efbe58fce6157b7824a46eec705c",
+      "bbox": [
+        0,
+        2430,
+        2375,
+        3334
+      ],
+      "focal_y": [
+        2500,
+        3184
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 144
+    },
+    {
+      "row_id": "0111_L5",
+      "scan": 111,
+      "page": "L",
+      "row_index": 5,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_L5.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "13b0b74c92f2640781d86707d2d20f0988038a4fd727fff7bf11f9c01fe2c9ab",
+      "bbox": [
+        0,
+        3114,
+        2375,
+        3947
+      ],
+      "focal_y": [
+        3184,
+        3797
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 145
+    },
+    {
+      "row_id": "0111_R1",
+      "scan": 111,
+      "page": "R",
+      "row_index": 1,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_R1.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "7f14ceb542e53a1424f99f2b2c03df176b95ceed326a7e8e1e91cc60a46ce766",
+      "bbox": [
+        2375,
+        657,
+        4751,
+        1460
+      ],
+      "focal_y": [
+        727,
+        1310
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 146
+    },
+    {
+      "row_id": "0111_R2",
+      "scan": 111,
+      "page": "R",
+      "row_index": 2,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_R2.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "8b386945990ff94ec6fd63f245c8b6249a1a50b65ca366b7dcfd36deeb85e4db",
+      "bbox": [
+        2375,
+        1240,
+        4751,
+        2110
+      ],
+      "focal_y": [
+        1310,
+        1960
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 147
+    },
+    {
+      "row_id": "0111_R3",
+      "scan": 111,
+      "page": "R",
+      "row_index": 3,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_R3.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "ff54a98e55c7a75f676174bbaf46703669c299ebdcc947dcc1ac88e923012115",
+      "bbox": [
+        2375,
+        1890,
+        4751,
+        2750
+      ],
+      "focal_y": [
+        1960,
+        2600
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 148
+    },
+    {
+      "row_id": "0111_R4",
+      "scan": 111,
+      "page": "R",
+      "row_index": 4,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_R4.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "cada189e28c083dd27b67aa89bbe5af00f635bec6ae301d47a445fdb58b967bc",
+      "bbox": [
+        2375,
+        2530,
+        4751,
+        3320
+      ],
+      "focal_y": [
+        2600,
+        3170
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 149
+    },
+    {
+      "row_id": "0111_R5",
+      "scan": 111,
+      "page": "R",
+      "row_index": 5,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0111_R5.jpg",
+      "source": "data/plunge-1886-1890/pages/0111.jpg",
+      "source_sha256": "e099ffed5bc5917b8c4a4d5309846db90be65c19776c05023205c801615f036b",
+      "image_sha256": "8f46e58abce140e94d31ff3483f0111972174a7844239010728777144be19409",
+      "bbox": [
+        2375,
+        3100,
+        4751,
+        3905
+      ],
+      "focal_y": [
+        3170,
+        3755
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 150
+    },
+    {
+      "row_id": "0112_L1",
+      "scan": 112,
+      "page": "L",
+      "row_index": 1,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_L1.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "df969fa497e2efdd890cf1c4d35024a727443c90a7419f04ee27d7f401e7d6a5",
+      "bbox": [
+        0,
+        670,
+        2369,
+        1435
+      ],
+      "focal_y": [
+        740,
+        1285
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 151
+    },
+    {
+      "row_id": "0112_L2",
+      "scan": 112,
+      "page": "L",
+      "row_index": 2,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_L2.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "87b6f48b103e57a3520d2a9c1774af7a43a70eb785323feecacb2442acd83d43",
+      "bbox": [
+        0,
+        1215,
+        2369,
+        2040
+      ],
+      "focal_y": [
+        1285,
+        1890
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 152
+    },
+    {
+      "row_id": "0112_L3",
+      "scan": 112,
+      "page": "L",
+      "row_index": 3,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_L3.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "a39a5e62e379cb53023bdedfe184ed2b108b48d5dbcd796a693713256d7440b7",
+      "bbox": [
+        0,
+        1820,
+        2369,
+        2670
+      ],
+      "focal_y": [
+        1890,
+        2520
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 153
+    },
+    {
+      "row_id": "0112_L4",
+      "scan": 112,
+      "page": "L",
+      "row_index": 4,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_L4.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "4da23d1d48b02700e6d80464b0084ee2ffe7640cfcdcd1e07eb7f8aa3cf42e2b",
+      "bbox": [
+        0,
+        2450,
+        2369,
+        3274
+      ],
+      "focal_y": [
+        2520,
+        3124
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 154
+    },
+    {
+      "row_id": "0112_L5",
+      "scan": 112,
+      "page": "L",
+      "row_index": 5,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_L5.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "b8a1b4ff128ce696774bf1bf918ff773a3b638eba1315eedfd9cbeb0f3eb32af",
+      "bbox": [
+        0,
+        3054,
+        2369,
+        3927
+      ],
+      "focal_y": [
+        3124,
+        3777
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 155
+    },
+    {
+      "row_id": "0112_R1",
+      "scan": 112,
+      "page": "R",
+      "row_index": 1,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_R1.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "4206d7b08c647592e81c4207b6be9a5eb5f179d120d8ad6fa0397c4c7cc80448",
+      "bbox": [
+        2369,
+        667,
+        4739,
+        1518
+      ],
+      "focal_y": [
+        737,
+        1368
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 156
+    },
+    {
+      "row_id": "0112_R2",
+      "scan": 112,
+      "page": "R",
+      "row_index": 2,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_R2.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "043e7a556aa614430a6cc9dbe74f69dda41bc22174faa58d25d046e9a8c95db2",
+      "bbox": [
+        2369,
+        1298,
+        4739,
+        2078
+      ],
+      "focal_y": [
+        1368,
+        1928
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 157
+    },
+    {
+      "row_id": "0112_R3",
+      "scan": 112,
+      "page": "R",
+      "row_index": 3,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_R3.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "d46ef34c66bc84ab1f553801c133a72a810ad5defa773b181eb94bea489c07f3",
+      "bbox": [
+        2369,
+        1858,
+        4739,
+        2703
+      ],
+      "focal_y": [
+        1928,
+        2553
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 158
+    },
+    {
+      "row_id": "0112_R4",
+      "scan": 112,
+      "page": "R",
+      "row_index": 4,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0112_R4.jpg",
+      "source": "data/plunge-1886-1890/pages/0112.jpg",
+      "source_sha256": "234726c836bfe36b33222c79c6fc7d6b5f3a37c26623df868ca5e987f8cb44ba",
+      "image_sha256": "d945042c0e89615b5249bba5b6efd79e9559c09a7186fc7e04dcf90cdcbbe3e8",
+      "bbox": [
+        2369,
+        2483,
+        4739,
+        3293
+      ],
+      "focal_y": [
+        2553,
+        3143
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 159
+    }
+  ]
+}

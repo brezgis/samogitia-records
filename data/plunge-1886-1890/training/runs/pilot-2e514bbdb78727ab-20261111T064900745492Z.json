@@ -1,0 +1,66 @@
+{
+ "run_id": "pilot-2e514bbdb78727ab-20261111T064900745492Z",
+ "kind": "pilot",
+ "dataset_id": "2e514bbdb78727ab",
+ "counts": {
+  "train": 914,
+  "validation": 189,
+  "test": 203
+ },
+ "hands_by_split": {
+  "train": {
+   "early_candidate": 251,
+   "later_candidate": 243,
+   "unknown": 420
+  },
+  "validation": {
+   "early_candidate": 62,
+   "later_candidate": 55,
+   "unknown": 72
+  },
+  "test": {
+   "early_candidate": 51,
+   "later_candidate": 40,
+   "unknown": 112
+  }
+ },
+ "base_model": "<htr-store>/models/ppocrv6-small/small.safetensors",
+ "base_model_sha256": "3108259779f5abfed3908a1c9eafba64d17e4a2a169368c539ecfeff04c018f3",
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "command": [
+  ".venv-htr/bin/ketos",
+  "-d",
+  "cuda:0",
+  "--seed",
+  "1888",
+  "train",
+  "-f",
+  "path",
+  "--linetype",
+  "bbox",
+  "-t",
+  "data/plunge-1886-1890/training/exports/2e514bbdb78727ab/train.txt",
+  "-e",
+  "data/plunge-1886-1890/training/exports/2e514bbdb78727ab/validation.txt",
+  "--load",
+  "<htr-store>/models/ppocrv6-small/small.safetensors",
+  "--resize",
+  "union",
+  "--batch-size",
+  "8",
+  "--lrate",
+  "0.0001",
+  "--epochs",
+  "40",
+  "--quit",
+  "fixed",
+  "--augment",
+  "-o",
+  "<htr-store>/runs/pilot-2e514bbdb78727ab-20261111T064900745492Z"
+ ],
+ "output_dir": "<htr-store>/runs/pilot-2e514bbdb78727ab-20261111T064900745492Z",
+ "started": "2026-11-11T06:49:00.759834+00:00",
+ "outcome": "v3: 40 epochs, from PP-OCRv6 small base. Dataset 2e514bbdb78727ab: 914 train / 189 val / 203 test (adds reading round 2). Validation CER v2 -> v3: all 0.090 -> 0.072; unknown-hand group (1886-87 + 1889-90) 0.136 -> 0.087; early 0.064 -> 0.076 (62 lines); later 0.056 -> 0.050. Test not evaluated. Weights: <htr-store>/models/plunge-v3/model.safetensors",
+ "model_sha256": "1d9a3ba97c54631e0cdf106f354d177afe0c3e1d1e28d4e03bd314ab2e5c8d0e"
+}

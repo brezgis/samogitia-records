@@ -1,0 +1,30 @@
+{
+  "reviewer": "Claude Opus 5.5 visual transcription (single reader)",
+  "baseline_seen": true,
+  "notes": "Later hand, read at 1.8x. Text transcribed as visible in the crop, even where a letter was masked as belonging to another cell.",
+  "lines": [
+    {"id": "0111_L3_baptism_01", "text": "Тысяча восемьсотъ восемьде[?]", "status": "draft", "note": "Mark beyond the right rule (7-like) unidentified."},
+    {"id": "0111_L3_baptism_02", "text": "сятъ восьмаго года Апрѣля", "status": "image_checked"},
+    {"id": "0111_L3_baptism_03", "text": "четырнадцатаго дня, въ", "status": "image_checked"},
+    {"id": "0111_L3_baptism_04", "text": "лунгянскомъ Р.К. Приход-", "status": "image_checked", "note": "Initial П of Плунгянскомъ not visible in crop."},
+    {"id": "0111_L3_baptism_05", "text": "скомъ Костелѣ Викарнымъ", "status": "image_checked"},
+    {"id": "0111_L3_baptism_06", "text": "[К?]с: Юзефовичемъ окрещенъ", "status": "draft", "note": "First letter partly masked."},
+    {"id": "0111_L3_baptism_07", "text": "Младенецъ именемъ Кази-", "status": "image_checked", "note": "Cross-like mark beyond right rule not transcribed."},
+    {"id": "0111_L3_baptism_08", "status": "rejected_crop", "note": "Two text lines merged (миръ, со всѣми обрядами / Таинства.)."},
+    {"id": "0111_L3_parents_01", "text": "[К?]рестьянъ [Корнянской?] во-", "status": "draft"},
+    {"id": "0111_L3_parents_02", "text": "лости Казимира и А[г?]-", "status": "draft"},
+    {"id": "0111_L3_parents_03", "text": "нешки изъ [Ромальдисовъ?]", "status": "draft"},
+    {"id": "0111_L3_parents_04", "text": "Василевскихъ закон-", "status": "image_checked"},
+    {"id": "0111_L3_parents_05", "text": "ныхъ Супруговъ сынъ", "status": "image_checked"},
+    {"id": "0111_L3_parents_06", "text": "родившійся 1888 года", "status": "image_checked"},
+    {"id": "0111_L3_parents_07", "text": "Апрѣля 13го дня, въ дерев", "status": "image_checked"},
+    {"id": "0111_L3_parents_08", "status": "rejected_crop", "note": "Two text lines merged (ни М. Плунгянахъ / сего Прихода. -)."},
+    {"id": "0111_L3_godparents_01", "status": "rejected_crop", "note": "Fragment of line above."},
+    {"id": "0111_L3_godparents_02", "text": "Воспріемника-", "status": "image_checked"},
+    {"id": "0111_L3_godparents_03", "text": "ми были Кази-", "status": "image_checked"},
+    {"id": "0111_L3_godparents_04", "text": "миръ [Шилимасъ?]", "status": "draft", "note": "Stray mark at left."},
+    {"id": "0111_L3_godparents_05", "text": "съ Еввою [Мац?]-", "status": "draft"},
+    {"id": "0111_L3_godparents_06", "text": "[новскою?] дѣви-", "status": "draft"},
+    {"id": "0111_L3_godparents_07", "text": "цею.", "status": "image_checked", "note": "Speck at left edge not transcribed."}
+  ]
+}

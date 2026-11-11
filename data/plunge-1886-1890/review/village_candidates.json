@@ -1,0 +1,5077 @@
+{
+  "gazetteer": "data/gazetteer/osm_places_plunge_20km.json",
+  "gazetteer_sha256": "261b13a203fd8db3bdd057a111bfcb973916e0f959622eff4a75942be0b228f5",
+  "license": "OpenStreetMap contributors, ODbL 1.0",
+  "summary": {
+    "named_places": 249,
+    "pairs": 31,
+    "comparable": 30,
+    "same_normalized_reading": 12,
+    "same_top_candidate": 17,
+    "same_separated_candidate": 5,
+    "confirmed_matches": 0,
+    "warning": "Candidate convergence is not accuracy. The 20 km modern gazetteer is not a complete historical parish gazetteer."
+  },
+  "readings": [
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 3,
+      "original": "Стыльги[?]",
+      "key": "stilgi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.7533,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350413",
+          "name": "Stalgas",
+          "lat": 55.8021594,
+          "lon": 21.8709582,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2453846920",
+          "name": "Stalgas",
+          "lat": 55.7941754,
+          "lon": 21.9026742,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.5556,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2258028724",
+          "name": "Staneliai",
+          "lat": 55.9485631,
+          "lon": 21.9504888,
+          "score": 0.4444,
+          "matched_alias": "Staneliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0333,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 4,
+      "original": "Яздайци",
+      "key": "iazdaitsi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2341566040",
+          "name": "Kadaičiai",
+          "lat": 55.9901043,
+          "lon": 21.7191367,
+          "score": 0.4756,
+          "matched_alias": "Kadaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1570891717",
+          "name": "Brazdeikiai",
+          "lat": 55.9473882,
+          "lon": 22.1445087,
+          "score": 0.4545,
+          "matched_alias": "Brazdeikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348529",
+          "name": "Lazdeniai",
+          "lat": 55.9774784,
+          "lon": 21.9420442,
+          "score": 0.4444,
+          "matched_alias": "Lazdeniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350271",
+          "name": "Žvirzdaliai",
+          "lat": 55.8454974,
+          "lon": 22.0073182,
+          "score": 0.4167,
+          "matched_alias": "Žvirzdaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351724",
+          "name": "Tarvainiai",
+          "lat": 55.9538667,
+          "lon": 21.971104,
+          "score": 0.4,
+          "matched_alias": "Tarvainiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0211,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 5,
+      "original": "Шиленти[?]",
+      "key": "shilenti",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.5556,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2387069784",
+          "name": "Sėleniai",
+          "lat": 55.9838637,
+          "lon": 21.6267051,
+          "score": 0.545,
+          "matched_alias": "Sėleniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.5,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350989",
+          "name": "Karklėnai",
+          "lat": 55.8772928,
+          "lon": 21.6984756,
+          "score": 0.4444,
+          "matched_alias": "Karklėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351148",
+          "name": "Paalantis",
+          "lat": 55.8192474,
+          "lon": 21.6194899,
+          "score": 0.4444,
+          "matched_alias": "Paalantis",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0106,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 6,
+      "original": "Норвайши[?]",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 7,
+      "original": "Покутовяны[?]",
+      "key": "pokutoviani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351339",
+          "name": "Pakutuvėnai",
+          "lat": 55.9108586,
+          "lon": 21.6662415,
+          "score": 0.5455,
+          "matched_alias": "Pakutuvėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.5455,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.4545,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.4545,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4545,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 8,
+      "original": "По[?]ини",
+      "key": "poini",
+      "candidates": [
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.52,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.5,
+          "matched_alias": "Pluñhi",
+          "alias_tag": "name:ay",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2359913240",
+          "name": "Dovainiai",
+          "lat": 56.0864361,
+          "lon": 21.7887979,
+          "score": 0.4914,
+          "matched_alias": "Dovainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:6849316784",
+          "name": "Paminijai",
+          "lat": 55.8494214,
+          "lon": 21.9840621,
+          "score": 0.4914,
+          "matched_alias": "Paminijai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.4286,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.02,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_a_0093.json",
+      "scan": 93,
+      "entry_no": 9,
+      "original": "Меркели",
+      "key": "merkeli",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.92,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.4914,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380207336",
+          "name": "Peceliai",
+          "lat": 55.9355733,
+          "lon": 21.5830539,
+          "score": 0.4914,
+          "matched_alias": "Peceliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468807729",
+          "name": "Bereniai",
+          "lat": 55.9593951,
+          "lon": 21.8784087,
+          "score": 0.4914,
+          "matched_alias": "Bereniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350989",
+          "name": "Karklėnai",
+          "lat": 55.8772928,
+          "lon": 21.6984756,
+          "score": 0.4444,
+          "matched_alias": "Karklėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4286,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 3,
+      "original": "Стильги[?]",
+      "key": "stilgi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.7533,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350413",
+          "name": "Stalgas",
+          "lat": 55.8021594,
+          "lon": 21.8709582,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2453846920",
+          "name": "Stalgas",
+          "lat": 55.7941754,
+          "lon": 21.9026742,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.5556,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2258028724",
+          "name": "Staneliai",
+          "lat": 55.9485631,
+          "lon": 21.9504888,
+          "score": 0.4444,
+          "matched_alias": "Staneliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0333,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 4,
+      "original": "Яздайци",
+      "key": "iazdaitsi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2341566040",
+          "name": "Kadaičiai",
+          "lat": 55.9901043,
+          "lon": 21.7191367,
+          "score": 0.4756,
+          "matched_alias": "Kadaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1570891717",
+          "name": "Brazdeikiai",
+          "lat": 55.9473882,
+          "lon": 22.1445087,
+          "score": 0.4545,
+          "matched_alias": "Brazdeikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348529",
+          "name": "Lazdeniai",
+          "lat": 55.9774784,
+          "lon": 21.9420442,
+          "score": 0.4444,
+          "matched_alias": "Lazdeniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350271",
+          "name": "Žvirzdaliai",
+          "lat": 55.8454974,
+          "lon": 22.0073182,
+          "score": 0.4167,
+          "matched_alias": "Žvirzdaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351724",
+          "name": "Tarvainiai",
+          "lat": 55.9538667,
+          "lon": 21.971104,
+          "score": 0.4,
+          "matched_alias": "Tarvainiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0211,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 5,
+      "original": "Шлекети[?]",
+      "key": "shleketi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348589",
+          "name": "Šlepečiai",
+          "lat": 55.9368448,
+          "lon": 21.935311,
+          "score": 0.5867,
+          "matched_alias": "Šlepečiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348592",
+          "name": "Šlečkai",
+          "lat": 55.9909925,
+          "lon": 21.956815,
+          "score": 0.5556,
+          "matched_alias": "Šlečkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350260",
+          "name": "Lekemė",
+          "lat": 55.8514964,
+          "lon": 21.8460771,
+          "score": 0.5,
+          "matched_alias": "Lekemė",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2344258446",
+          "name": "Reketė",
+          "lat": 56.0129494,
+          "lon": 21.6264261,
+          "score": 0.5,
+          "matched_alias": "Reketė",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2387069784",
+          "name": "Sėleniai",
+          "lat": 55.9838637,
+          "lon": 21.6267051,
+          "score": 0.5,
+          "matched_alias": "Sėleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0311,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 6,
+      "original": "Норвайши[?]",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 7,
+      "original": "Покутовяны[?]",
+      "key": "pokutoviani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351339",
+          "name": "Pakutuvėnai",
+          "lat": 55.9108586,
+          "lon": 21.6662415,
+          "score": 0.5455,
+          "matched_alias": "Pakutuvėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.5455,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.4545,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.4545,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4545,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 8,
+      "original": "Поцини[?]",
+      "key": "potsini",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469206473",
+          "name": "Antsieniai",
+          "lat": 56.0384405,
+          "lon": 21.7152115,
+          "score": 0.545,
+          "matched_alias": "Antsieniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2359913240",
+          "name": "Dovainiai",
+          "lat": 56.0864361,
+          "lon": 21.7887979,
+          "score": 0.4914,
+          "matched_alias": "Dovainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469206495",
+          "name": "Plokščiai",
+          "lat": 56.0084601,
+          "lon": 21.849391,
+          "score": 0.4545,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:4067225087",
+          "name": "Plokščiai",
+          "lat": 56.0277003,
+          "lon": 21.9057389,
+          "score": 0.4545,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351220",
+          "name": "Prūsaliai",
+          "lat": 55.9184679,
+          "lon": 21.7652131,
+          "score": 0.4444,
+          "matched_alias": "Prūsaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0536,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "pilot_b_0093.json",
+      "scan": 93,
+      "entry_no": 9,
+      "original": "Меркели",
+      "key": "merkeli",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.92,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.4914,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380207336",
+          "name": "Peceliai",
+          "lat": 55.9355733,
+          "lon": 21.5830539,
+          "score": 0.4914,
+          "matched_alias": "Peceliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468807729",
+          "name": "Bereniai",
+          "lat": 55.9593951,
+          "lon": 21.8784087,
+          "score": 0.4914,
+          "matched_alias": "Bereniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350989",
+          "name": "Karklėnai",
+          "lat": 55.8772928,
+          "lon": 21.6984756,
+          "score": 0.4444,
+          "matched_alias": "Karklėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4286,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 3,
+      "original": "Стелги[?]",
+      "key": "stelgi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350413",
+          "name": "Stalgas",
+          "lat": 55.8021594,
+          "lon": 21.8709582,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2453846920",
+          "name": "Stalgas",
+          "lat": 55.7941754,
+          "lon": 21.9026742,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.5867,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.5556,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2258028724",
+          "name": "Staneliai",
+          "lat": 55.9485631,
+          "lon": 21.9504888,
+          "score": 0.5556,
+          "matched_alias": "Staneliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 4,
+      "original": "Аздайци[?]",
+      "key": "azdaitsi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1570891717",
+          "name": "Brazdeikiai",
+          "lat": 55.9473882,
+          "lon": 22.1445087,
+          "score": 0.4545,
+          "matched_alias": "Brazdeikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348529",
+          "name": "Lazdeniai",
+          "lat": 55.9774784,
+          "lon": 21.9420442,
+          "score": 0.4444,
+          "matched_alias": "Lazdeniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2341566040",
+          "name": "Kadaičiai",
+          "lat": 55.9901043,
+          "lon": 21.7191367,
+          "score": 0.42,
+          "matched_alias": "Kadaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468983264",
+          "name": "Vaitkiai",
+          "lat": 55.9472056,
+          "lon": 21.6118751,
+          "score": 0.42,
+          "matched_alias": "Vaitkiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351724",
+          "name": "Tarvainiai",
+          "lat": 55.9538667,
+          "lon": 21.971104,
+          "score": 0.4,
+          "matched_alias": "Tarvainiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0101,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 5,
+      "original": "Шилекни[?]",
+      "key": "shilekni",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348592",
+          "name": "Šlečkai",
+          "lat": 55.9909925,
+          "lon": 21.956815,
+          "score": 0.5556,
+          "matched_alias": "Šlečkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2387069784",
+          "name": "Sėleniai",
+          "lat": 55.9838637,
+          "lon": 21.6267051,
+          "score": 0.545,
+          "matched_alias": "Sėleniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468807732",
+          "name": "Liekniai",
+          "lat": 55.8409729,
+          "lon": 22.0336413,
+          "score": 0.545,
+          "matched_alias": "Liekniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.5,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350962",
+          "name": "Užlieknis",
+          "lat": 55.8837816,
+          "lon": 21.9005574,
+          "score": 0.5,
+          "matched_alias": "Užlieknis",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0106,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 6,
+      "original": "Норвайши",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 7,
+      "original": "Покутовы[?]",
+      "key": "pokutovi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.5556,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351339",
+          "name": "Pakutuvėnai",
+          "lat": 55.9108586,
+          "lon": 21.6662415,
+          "score": 0.5455,
+          "matched_alias": "Pakutuvėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.375,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351347",
+          "name": "Pakerai",
+          "lat": 55.8916887,
+          "lon": 21.8707247,
+          "score": 0.375,
+          "matched_alias": "Pakerai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351564",
+          "name": "Kuliai",
+          "lat": 55.8059704,
+          "lon": 21.6539042,
+          "score": 0.375,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0101,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 8,
+      "original": "Рушини[?]",
+      "key": "rushini",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469448566",
+          "name": "Rupšiai",
+          "lat": 55.8444626,
+          "lon": 22.1407042,
+          "score": 0.75,
+          "matched_alias": "Rupšiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380207329",
+          "name": "Kupšiai",
+          "lat": 55.9040076,
+          "lon": 21.5711212,
+          "score": 0.625,
+          "matched_alias": "Kupšiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350627",
+          "name": "Rimučiai",
+          "lat": 55.8913748,
+          "lon": 22.0812399,
+          "score": 0.5556,
+          "matched_alias": "Rimučiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350910",
+          "name": "Drūkčiai",
+          "lat": 55.927949,
+          "lon": 22.0509233,
+          "score": 0.5556,
+          "matched_alias": "Drūkčiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351154",
+          "name": "Kaušėnai",
+          "lat": 55.9162229,
+          "lon": 21.7914003,
+          "score": 0.5556,
+          "matched_alias": "Kaušėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.125,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 93,
+      "entry_no": 9,
+      "original": "Меркеля[?]",
+      "key": "merkelia",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.92,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.5556,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380207336",
+          "name": "Peceliai",
+          "lat": 55.9355733,
+          "lon": 21.5830539,
+          "score": 0.545,
+          "matched_alias": "Peceliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468807729",
+          "name": "Bereniai",
+          "lat": 55.9593951,
+          "lon": 21.8784087,
+          "score": 0.545,
+          "matched_alias": "Bereniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380033494",
+          "name": "Stropeliai",
+          "lat": 55.9728304,
+          "lon": 21.5774138,
+          "score": 0.5,
+          "matched_alias": "Stropeliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.3644,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 10,
+      "original": "Малоседи[?]",
+      "key": "malosedi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350137",
+          "name": "Mardosai",
+          "lat": 55.8784668,
+          "lon": 21.7541596,
+          "score": 0.5,
+          "matched_alias": "Mardosai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351017",
+          "name": "Alksnėnai",
+          "lat": 55.9236973,
+          "lon": 21.7265766,
+          "score": 0.4444,
+          "matched_alias": "Alksnėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351375",
+          "name": "Mažieji Mostaičiai",
+          "lat": 55.8009966,
+          "lon": 21.7055542,
+          "score": 0.4286,
+          "matched_alias": "Małe Monstajcie",
+          "alias_tag": "name:pl",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350527",
+          "name": "Maceniai",
+          "lat": 55.9206622,
+          "lon": 21.8101933,
+          "score": 0.42,
+          "matched_alias": "Maceniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1550846401",
+          "name": "Alsėdžiai",
+          "lat": 56.0288687,
+          "lon": 22.048205,
+          "score": 0.42,
+          "matched_alias": "Alsėdžiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0556,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 11,
+      "original": "Винговаты[?]",
+      "key": "vingovati",
+      "candidates": [
+        {
+          "place_id": "osm:node:2308609270",
+          "name": "Cigonaliai",
+          "lat": 55.9418397,
+          "lon": 21.5646383,
+          "score": 0.4756,
+          "matched_alias": "Cigonaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:888395779",
+          "name": "Medingėnai",
+          "lat": 55.8135742,
+          "lon": 22.0723099,
+          "score": 0.4545,
+          "matched_alias": "Medingėnai I",
+          "alias_tag": "alt_name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.4444,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.4444,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4444,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0211,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 12,
+      "original": "Норвайши",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 13,
+      "original": "Покутовани[?]",
+      "key": "pokutovani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351339",
+          "name": "Pakutuvėnai",
+          "lat": 55.9108586,
+          "lon": 21.6662415,
+          "score": 0.6364,
+          "matched_alias": "Pakutuvėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.6,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468807736",
+          "name": "Pauošniai",
+          "lat": 55.9742084,
+          "lon": 21.91735,
+          "score": 0.42,
+          "matched_alias": "Pauošniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350369",
+          "name": "Vieštovėnai",
+          "lat": 55.8519027,
+          "lon": 21.7373864,
+          "score": 0.4167,
+          "matched_alias": "Vieštovėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350208",
+          "name": "Pyvorai",
+          "lat": 55.770675,
+          "lon": 21.8403685,
+          "score": 0.4,
+          "matched_alias": "Pyvorai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0364,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 14,
+      "original": "Ермолъ-Олвопишъ[?]",
+      "key": "ermololvopish",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348532",
+          "name": "Molupiai",
+          "lat": 55.9882741,
+          "lon": 21.9231678,
+          "score": 0.3846,
+          "matched_alias": "Molupiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.3077,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351329",
+          "name": "Bernotavas",
+          "lat": 55.9278044,
+          "lon": 22.0803309,
+          "score": 0.3077,
+          "matched_alias": "Bernotavas",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.3077,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468807738",
+          "name": "Ruolaičiai",
+          "lat": 55.9463608,
+          "lon": 21.8535922,
+          "score": 0.3077,
+          "matched_alias": "Ruolaičiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0769,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 15,
+      "original": "Уплекши[?]",
+      "key": "uplekshi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469009421",
+          "name": "Aleksiai",
+          "lat": 55.999776,
+          "lon": 22.0348254,
+          "score": 0.545,
+          "matched_alias": "Aleksiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469284659",
+          "name": "Likšai",
+          "lat": 56.0542196,
+          "lon": 21.9217256,
+          "score": 0.5,
+          "matched_alias": "Likšai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.5,
+          "matched_alias": "Pluñhi",
+          "alias_tag": "name:ay",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469206495",
+          "name": "Plokščiai",
+          "lat": 56.0084601,
+          "lon": 21.849391,
+          "score": 0.4756,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.045,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 16,
+      "original": "Тургаки[?]",
+      "key": "turgaki",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351578",
+          "name": "Keturakiai",
+          "lat": 55.8429053,
+          "lon": 22.0898145,
+          "score": 0.545,
+          "matched_alias": "Keturakiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2341566053",
+          "name": "Truikiai",
+          "lat": 55.9363415,
+          "lon": 21.8788569,
+          "score": 0.4914,
+          "matched_alias": "Truikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348541",
+          "name": "Nugariai",
+          "lat": 55.942967,
+          "lon": 21.9161089,
+          "score": 0.4914,
+          "matched_alias": "Nugariai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.4286,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4286,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0536,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0093-0094.json",
+      "scan": 94,
+      "entry_no": 17,
+      "original": "Нугары[?]",
+      "key": "nugari",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348541",
+          "name": "Nugariai",
+          "lat": 55.942967,
+          "lon": 21.9161089,
+          "score": 0.92,
+          "matched_alias": "Nugariai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380207333",
+          "name": "Lūgnaliai",
+          "lat": 55.8581517,
+          "lon": 21.5503395,
+          "score": 0.4914,
+          "matched_alias": "Lūgnaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4286,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350253",
+          "name": "Sendvariai",
+          "lat": 55.8206164,
+          "lon": 21.9924254,
+          "score": 0.42,
+          "matched_alias": "Sendvariai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350261",
+          "name": "Gudaliai",
+          "lat": 55.8160793,
+          "lon": 21.9467794,
+          "score": 0.42,
+          "matched_alias": "Gudaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.4286,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 18,
+      "original": "Варкалы[?]",
+      "key": "varkali",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.92,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284650",
+          "name": "Alkai",
+          "lat": 56.0438308,
+          "lon": 21.9407635,
+          "score": 0.5714,
+          "matched_alias": "Alkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284674",
+          "name": "Vilkai",
+          "lat": 56.0418611,
+          "lon": 21.9644455,
+          "score": 0.5714,
+          "matched_alias": "Vilkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.3486,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 19,
+      "original": "Видсейки[?]",
+      "key": "vidseiki",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351598",
+          "name": "Vydeikiai",
+          "lat": 55.9205843,
+          "lon": 22.0327559,
+          "score": 0.67,
+          "matched_alias": "Vydeikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2386115880",
+          "name": "Vydeikiai",
+          "lat": 55.9680625,
+          "lon": 21.7615898,
+          "score": 0.67,
+          "matched_alias": "Vydeikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469009438",
+          "name": "Medsėdžiai",
+          "lat": 56.0605898,
+          "lon": 21.815234,
+          "score": 0.4545,
+          "matched_alias": "Medsėdžiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350229",
+          "name": "Mižuikai",
+          "lat": 55.7797305,
+          "lon": 21.7458219,
+          "score": 0.4444,
+          "matched_alias": "Mižuikai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351177",
+          "name": "Dilbšiai",
+          "lat": 55.9297539,
+          "lon": 21.9116587,
+          "score": 0.4444,
+          "matched_alias": "Dilbšiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 20,
+      "original": "Канеуды",
+      "key": "kaneudi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350162",
+          "name": "Kantaučiai",
+          "lat": 55.9063727,
+          "lon": 22.0527297,
+          "score": 0.4756,
+          "matched_alias": "Kantaučiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350213",
+          "name": "Kapsūdžiai",
+          "lat": 55.885733,
+          "lon": 21.9797074,
+          "score": 0.4756,
+          "matched_alias": "Kapsūdžiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350989",
+          "name": "Karklėnai",
+          "lat": 55.8772928,
+          "lon": 21.6984756,
+          "score": 0.4444,
+          "matched_alias": "Karklėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351017",
+          "name": "Alksnėnai",
+          "lat": 55.9236973,
+          "lon": 21.7265766,
+          "score": 0.4444,
+          "matched_alias": "Alksnėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351154",
+          "name": "Kaušėnai",
+          "lat": 55.9162229,
+          "lon": 21.7914003,
+          "score": 0.4444,
+          "matched_alias": "Kaušėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 21,
+      "original": "М: Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 22,
+      "original": "Лукины[?]",
+      "key": "lukini",
+      "candidates": [
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.6667,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351740",
+          "name": "Luknėnai",
+          "lat": 55.8179769,
+          "lon": 21.8307167,
+          "score": 0.625,
+          "matched_alias": "Luknėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1570891732",
+          "name": "Irkiniai",
+          "lat": 55.9868755,
+          "lon": 22.0825809,
+          "score": 0.5867,
+          "matched_alias": "Irkiniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469009430",
+          "name": "Irkiniai",
+          "lat": 55.995279,
+          "lon": 22.0573964,
+          "score": 0.5867,
+          "matched_alias": "Irkiniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5714,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0417,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 23,
+      "original": "М: Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 24,
+      "original": "[not on this row]",
+      "key": "",
+      "candidates": [],
+      "margin": 0,
+      "status": "no_readable_name",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 95,
+      "entry_no": 25,
+      "original": "Винцровяны[?]",
+      "key": "vintsroviani",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469206473",
+          "name": "Antsieniai",
+          "lat": 56.0384405,
+          "lon": 21.7152115,
+          "score": 0.5,
+          "matched_alias": "Antsieniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009449",
+          "name": "Visvainiai",
+          "lat": 56.092427,
+          "lon": 21.8661977,
+          "score": 0.42,
+          "matched_alias": "Visvainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.4167,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.4167,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.4167,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.08,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 26,
+      "original": "М: Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 27,
+      "original": "Погирши[?]",
+      "key": "pogirshi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.42,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469284672",
+          "name": "Uogučiai",
+          "lat": 56.0817671,
+          "lon": 21.861633,
+          "score": 0.42,
+          "matched_alias": "Uogučiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469009434",
+          "name": "Liepgiriai",
+          "lat": 55.9431755,
+          "lon": 21.6438758,
+          "score": 0.4,
+          "matched_alias": "Liepgiriai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350208",
+          "name": "Pyvorai",
+          "lat": 55.770675,
+          "lon": 21.8403685,
+          "score": 0.375,
+          "matched_alias": "Pyvorai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.375,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 28,
+      "original": "Климоры[?]",
+      "key": "klimori",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.4914,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.4914,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.4286,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351564",
+          "name": "Kuliai",
+          "lat": 55.8059704,
+          "lon": 21.6539042,
+          "score": 0.4286,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009450",
+          "name": "Yliai",
+          "lat": 56.0508191,
+          "lon": 22.0537914,
+          "score": 0.4286,
+          "matched_alias": "Yliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 29,
+      "original": "Бѣлополь[?]",
+      "key": "belopol",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.3486,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.3486,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2377285051",
+          "name": "Plateliai",
+          "lat": 56.0447015,
+          "lon": 21.7966346,
+          "score": 0.3486,
+          "matched_alias": "Płotele",
+          "alias_tag": "alt_name:pl",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380033494",
+          "name": "Stropeliai",
+          "lat": 55.9728304,
+          "lon": 21.5774138,
+          "score": 0.3486,
+          "matched_alias": "Stropeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2440745680",
+          "name": "Beržoras",
+          "lat": 56.0258011,
+          "lon": 21.8106897,
+          "score": 0.3486,
+          "matched_alias": "Beržoras",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 30,
+      "original": "Вишнявяны[?]",
+      "key": "vishniaviani",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469009425",
+          "name": "Dišliai",
+          "lat": 56.0129274,
+          "lon": 22.0221272,
+          "score": 0.5867,
+          "matched_alias": "Dišliai",
+          "alias_tag": "name",
+          "method": "stem/full"
+        },
+        {
+          "place_id": "osm:node:2469009449",
+          "name": "Visvainiai",
+          "lat": 56.092427,
+          "lon": 21.8661977,
+          "score": 0.5833,
+          "matched_alias": "Visvainiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350423",
+          "name": "Vilkaičiai",
+          "lat": 55.9134581,
+          "lon": 22.1049643,
+          "score": 0.5,
+          "matched_alias": "Vilkaičiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2308609270",
+          "name": "Cigonaliai",
+          "lat": 55.9418397,
+          "lon": 21.5646383,
+          "score": 0.5,
+          "matched_alias": "Cigonaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348562",
+          "name": "Raišaičiai",
+          "lat": 55.9909079,
+          "lon": 22.0185605,
+          "score": 0.5,
+          "matched_alias": "Raišaičiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0034,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 31,
+      "original": "Покиркшине[?]",
+      "key": "pokirkshine",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350999",
+          "name": "Akmenskinė",
+          "lat": 55.8293721,
+          "lon": 22.1274421,
+          "score": 0.4545,
+          "matched_alias": "Akmenskinė",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2381987497",
+          "name": "Virkšai",
+          "lat": 56.0740785,
+          "lon": 21.8749848,
+          "score": 0.4545,
+          "matched_alias": "Virkšai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983262",
+          "name": "Skirpsčiai",
+          "lat": 56.0439392,
+          "lon": 22.0012193,
+          "score": 0.4545,
+          "matched_alias": "Skirpsčiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1570891732",
+          "name": "Irkiniai",
+          "lat": 55.9868755,
+          "lon": 22.0825809,
+          "score": 0.42,
+          "matched_alias": "Irkiniai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2469009430",
+          "name": "Irkiniai",
+          "lat": 55.995279,
+          "lon": 22.0573964,
+          "score": 0.42,
+          "matched_alias": "Irkiniai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 32,
+      "original": "Варкали",
+      "key": "varkali",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.92,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284650",
+          "name": "Alkai",
+          "lat": 56.0438308,
+          "lon": 21.9407635,
+          "score": 0.5714,
+          "matched_alias": "Alkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284674",
+          "name": "Vilkai",
+          "lat": 56.0418611,
+          "lon": 21.9644455,
+          "score": 0.5714,
+          "matched_alias": "Vilkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.3486,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowA_0095-0096.json",
+      "scan": 96,
+      "entry_no": 33,
+      "original": "Бусси[?]",
+      "key": "bussi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351334",
+          "name": "Bubėnai",
+          "lat": 55.7816548,
+          "lon": 21.9059401,
+          "score": 0.4286,
+          "matched_alias": "Bubėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009422",
+          "name": "Bulikai",
+          "lat": 55.9489534,
+          "lon": 21.5907069,
+          "score": 0.4286,
+          "matched_alias": "Bulikai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380207329",
+          "name": "Kupšiai",
+          "lat": 55.9040076,
+          "lon": 21.5711212,
+          "score": 0.42,
+          "matched_alias": "Kupšiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468983243",
+          "name": "Bučniai",
+          "lat": 55.9549293,
+          "lon": 21.6552539,
+          "score": 0.42,
+          "matched_alias": "Bučniai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348517",
+          "name": "Kulskiai",
+          "lat": 55.9892425,
+          "lon": 21.9809377,
+          "score": 0.42,
+          "matched_alias": "Kulskiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 3,
+      "original": "Стелги[?]",
+      "key": "stelgi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350413",
+          "name": "Stalgas",
+          "lat": 55.8021594,
+          "lon": 21.8709582,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2453846920",
+          "name": "Stalgas",
+          "lat": 55.7941754,
+          "lon": 21.9026742,
+          "score": 0.72,
+          "matched_alias": "Stalgas",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.5867,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.5556,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2258028724",
+          "name": "Staneliai",
+          "lat": 55.9485631,
+          "lon": 21.9504888,
+          "score": 0.5556,
+          "matched_alias": "Staneliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 4,
+      "original": "Аздайши[?]",
+      "key": "azdaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.5867,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.5867,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2341566040",
+          "name": "Kadaičiai",
+          "lat": 55.9901043,
+          "lon": 21.7191367,
+          "score": 0.545,
+          "matched_alias": "Kadaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469284657",
+          "name": "Jazdauskiškiai",
+          "lat": 56.080539,
+          "lon": 21.9574635,
+          "score": 0.5354,
+          "matched_alias": "Jazdauskiškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350290",
+          "name": "Varnaičiai",
+          "lat": 55.893379,
+          "lon": 22.1412977,
+          "score": 0.4756,
+          "matched_alias": "Varnaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 5,
+      "original": "Шленеки[?]",
+      "key": "shleneki",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348592",
+          "name": "Šlečkai",
+          "lat": 55.9909925,
+          "lon": 21.956815,
+          "score": 0.6667,
+          "matched_alias": "Šlečkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2387069784",
+          "name": "Sėleniai",
+          "lat": 55.9838637,
+          "lon": 21.6267051,
+          "score": 0.625,
+          "matched_alias": "Sėleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348589",
+          "name": "Šlepečiai",
+          "lat": 55.9368448,
+          "lon": 21.935311,
+          "score": 0.5867,
+          "matched_alias": "Šlepečiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009453",
+          "name": "Šoniai",
+          "lat": 56.014412,
+          "lon": 22.0424749,
+          "score": 0.5,
+          "matched_alias": "Šoniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0417,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 6,
+      "original": "Норвайши[?]",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 7,
+      "original": "Пекутовы[?]",
+      "key": "pekutovi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.5556,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351339",
+          "name": "Pakutuvėnai",
+          "lat": 55.9108586,
+          "lon": 21.6662415,
+          "score": 0.5455,
+          "matched_alias": "Pakutuvėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350369",
+          "name": "Vieštovėnai",
+          "lat": 55.8519027,
+          "lon": 21.7373864,
+          "score": 0.4167,
+          "matched_alias": "Vieštovėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.375,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351071",
+          "name": "Degučiai",
+          "lat": 55.9256087,
+          "lon": 22.1378609,
+          "score": 0.375,
+          "matched_alias": "Дегуце",
+          "alias_tag": "name:ru",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0101,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 8,
+      "original": "Пошини[?]",
+      "key": "poshini",
+      "candidates": [
+        {
+          "place_id": "osm:node:2468807736",
+          "name": "Pauošniai",
+          "lat": 55.9742084,
+          "lon": 21.91735,
+          "score": 0.6,
+          "matched_alias": "Pauošniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348498",
+          "name": "Božiai",
+          "lat": 55.9525961,
+          "lon": 21.9068443,
+          "score": 0.5714,
+          "matched_alias": "Božiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469206495",
+          "name": "Plokščiai",
+          "lat": 56.0084601,
+          "lon": 21.849391,
+          "score": 0.5455,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:4067225087",
+          "name": "Plokščiai",
+          "lat": 56.0277003,
+          "lon": 21.9057389,
+          "score": 0.5455,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0286,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 93,
+      "entry_no": 9,
+      "original": "Мержемъ[?]",
+      "key": "merzhem",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.4914,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2440745680",
+          "name": "Beržoras",
+          "lat": 56.0258011,
+          "lon": 21.8106897,
+          "score": 0.4914,
+          "matched_alias": "Beržoras",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348552",
+          "name": "Paežerė",
+          "lat": 55.9785218,
+          "lon": 22.0539526,
+          "score": 0.375,
+          "matched_alias": "Paežerė",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009438",
+          "name": "Medsėdžiai",
+          "lat": 56.0605898,
+          "lon": 21.815234,
+          "score": 0.3636,
+          "matched_alias": "Medsėdžiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350260",
+          "name": "Lekemė",
+          "lat": 55.8514964,
+          "lon": 21.8460771,
+          "score": 0.3486,
+          "matched_alias": "Lekemė",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 10,
+      "original": "Молосѣли[?]",
+      "key": "moloseli",
+      "candidates": [
+        {
+          "place_id": "osm:node:2377285051",
+          "name": "Plateliai",
+          "lat": 56.0447015,
+          "lon": 21.7966346,
+          "score": 0.5,
+          "matched_alias": "Płotele",
+          "alias_tag": "alt_name:pl",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348532",
+          "name": "Molupiai",
+          "lat": 55.9882741,
+          "lon": 21.9231678,
+          "score": 0.5,
+          "matched_alias": "Molupiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:66838626",
+          "name": "Plateliai",
+          "lat": 56.0436425,
+          "lon": 21.8157718,
+          "score": 0.5,
+          "matched_alias": "Płotele",
+          "alias_tag": "alt_name:pl",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.42,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2380033494",
+          "name": "Stropeliai",
+          "lat": 55.9728304,
+          "lon": 21.5774138,
+          "score": 0.42,
+          "matched_alias": "Stropeliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 11,
+      "original": "Винговаты[?]",
+      "key": "vingovati",
+      "candidates": [
+        {
+          "place_id": "osm:node:2308609270",
+          "name": "Cigonaliai",
+          "lat": 55.9418397,
+          "lon": 21.5646383,
+          "score": 0.4756,
+          "matched_alias": "Cigonaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:888395779",
+          "name": "Medingėnai",
+          "lat": 55.8135742,
+          "lon": 22.0723099,
+          "score": 0.4545,
+          "matched_alias": "Medingėnai I",
+          "alias_tag": "alt_name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.4444,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.4444,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.4444,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0211,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 12,
+      "original": "Норвайши",
+      "key": "norvaishi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350671",
+          "name": "Narvaišiai",
+          "lat": 55.920015,
+          "lon": 21.7011922,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2340879500",
+          "name": "Narvaišiai",
+          "lat": 55.9358232,
+          "lon": 21.6907649,
+          "score": 0.8089,
+          "matched_alias": "Narvaišiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.5867,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350919",
+          "name": "Purvaičiai",
+          "lat": 55.8536204,
+          "lon": 21.9819026,
+          "score": 0.5867,
+          "matched_alias": "Purvaičiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.5,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 13,
+      "original": "Тожутовани[?]",
+      "key": "tozhutovani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350229",
+          "name": "Mižuikai",
+          "lat": 55.7797305,
+          "lon": 21.7458219,
+          "score": 0.4545,
+          "matched_alias": "Mižuikai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351445",
+          "name": "Užupiai",
+          "lat": 55.7574546,
+          "lon": 21.836252,
+          "score": 0.4545,
+          "matched_alias": "Užupiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.4545,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468807741",
+          "name": "Užupiai",
+          "lat": 55.9620725,
+          "lon": 21.9021501,
+          "score": 0.4545,
+          "matched_alias": "Užupiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348498",
+          "name": "Božiai",
+          "lat": 55.9525961,
+          "lon": 21.9068443,
+          "score": 0.4545,
+          "matched_alias": "Božiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 14,
+      "original": "Ольгопи[?]",
+      "key": "olgopi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.42,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348532",
+          "name": "Molupiai",
+          "lat": 55.9882741,
+          "lon": 21.9231678,
+          "score": 0.42,
+          "matched_alias": "Molupiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350403",
+          "name": "Smilgiai",
+          "lat": 55.8635751,
+          "lon": 22.0749431,
+          "score": 0.375,
+          "matched_alias": "Smilgiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350631",
+          "name": "Stalgėnai",
+          "lat": 55.8257947,
+          "lon": 21.8851689,
+          "score": 0.3333,
+          "matched_alias": "Stalgėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351071",
+          "name": "Degučiai",
+          "lat": 55.9256087,
+          "lon": 22.1378609,
+          "score": 0.3333,
+          "matched_alias": "Degotē",
+          "alias_tag": "name:bat-smg",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 15,
+      "original": "Уфлекши[?]",
+      "key": "uflekshi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469009421",
+          "name": "Aleksiai",
+          "lat": 55.999776,
+          "lon": 22.0348254,
+          "score": 0.545,
+          "matched_alias": "Aleksiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469284659",
+          "name": "Likšai",
+          "lat": 56.0542196,
+          "lon": 21.9217256,
+          "score": 0.5,
+          "matched_alias": "Likšai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351177",
+          "name": "Dilbšiai",
+          "lat": 55.9297539,
+          "lon": 21.9116587,
+          "score": 0.42,
+          "matched_alias": "Dilbšiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469348520",
+          "name": "Kėkštai",
+          "lat": 55.960181,
+          "lon": 21.9292118,
+          "score": 0.42,
+          "matched_alias": "Kėkštai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350962",
+          "name": "Užlieknis",
+          "lat": 55.8837816,
+          "lon": 21.9005574,
+          "score": 0.4,
+          "matched_alias": "Užlieknis",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.045,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 16,
+      "original": "Тургайки[?]",
+      "key": "turgaiki",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351724",
+          "name": "Tarvainiai",
+          "lat": 55.9538667,
+          "lon": 21.971104,
+          "score": 0.545,
+          "matched_alias": "Tarvainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2341566053",
+          "name": "Truikiai",
+          "lat": 55.9363415,
+          "lon": 21.8788569,
+          "score": 0.545,
+          "matched_alias": "Truikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.5,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351095",
+          "name": "Tilvikai",
+          "lat": 55.7918436,
+          "lon": 21.6291561,
+          "score": 0.5,
+          "matched_alias": "Tylwiki",
+          "alias_tag": "name:pl",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351476",
+          "name": "Norgalviai",
+          "lat": 55.7536261,
+          "lon": 21.9410926,
+          "score": 0.5,
+          "matched_alias": "Norgalviai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0093-0094.json",
+      "scan": 94,
+      "entry_no": 17,
+      "original": "Игары[?]",
+      "key": "igari",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469348541",
+          "name": "Nugariai",
+          "lat": 55.942967,
+          "lon": 21.9161089,
+          "score": 0.5867,
+          "matched_alias": "Nugariai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1570891721",
+          "name": "Brizgai",
+          "lat": 55.9789978,
+          "lon": 22.1012525,
+          "score": 0.4286,
+          "matched_alias": "Brizgai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2308609270",
+          "name": "Cigonaliai",
+          "lat": 55.9418397,
+          "lon": 21.5646383,
+          "score": 0.42,
+          "matched_alias": "Cigonaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468807743",
+          "name": "Šarkiai",
+          "lat": 55.8725145,
+          "lon": 21.9701014,
+          "score": 0.42,
+          "matched_alias": "Šarkiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469009434",
+          "name": "Liepgiriai",
+          "lat": 55.9431755,
+          "lon": 21.6438758,
+          "score": 0.42,
+          "matched_alias": "Liepgiriai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.1581,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 18,
+      "original": "Варкали[?]",
+      "key": "varkali",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.92,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284650",
+          "name": "Alkai",
+          "lat": 56.0438308,
+          "lon": 21.9407635,
+          "score": 0.5714,
+          "matched_alias": "Alkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284674",
+          "name": "Vilkai",
+          "lat": 56.0418611,
+          "lon": 21.9644455,
+          "score": 0.5714,
+          "matched_alias": "Vilkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.3486,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 19,
+      "original": "Видсейки[?]",
+      "key": "vidseiki",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351598",
+          "name": "Vydeikiai",
+          "lat": 55.9205843,
+          "lon": 22.0327559,
+          "score": 0.67,
+          "matched_alias": "Vydeikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2386115880",
+          "name": "Vydeikiai",
+          "lat": 55.9680625,
+          "lon": 21.7615898,
+          "score": 0.67,
+          "matched_alias": "Vydeikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2469009438",
+          "name": "Medsėdžiai",
+          "lat": 56.0605898,
+          "lon": 21.815234,
+          "score": 0.4545,
+          "matched_alias": "Medsėdžiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350229",
+          "name": "Mižuikai",
+          "lat": 55.7797305,
+          "lon": 21.7458219,
+          "score": 0.4444,
+          "matched_alias": "Mižuikai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351177",
+          "name": "Dilbšiai",
+          "lat": 55.9297539,
+          "lon": 21.9116587,
+          "score": 0.4444,
+          "matched_alias": "Dilbšiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 20,
+      "original": "Канеуды",
+      "key": "kaneudi",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350162",
+          "name": "Kantaučiai",
+          "lat": 55.9063727,
+          "lon": 22.0527297,
+          "score": 0.4756,
+          "matched_alias": "Kantaučiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350213",
+          "name": "Kapsūdžiai",
+          "lat": 55.885733,
+          "lon": 21.9797074,
+          "score": 0.4756,
+          "matched_alias": "Kapsūdžiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350989",
+          "name": "Karklėnai",
+          "lat": 55.8772928,
+          "lon": 21.6984756,
+          "score": 0.4444,
+          "matched_alias": "Karklėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351017",
+          "name": "Alksnėnai",
+          "lat": 55.9236973,
+          "lon": 21.7265766,
+          "score": 0.4444,
+          "matched_alias": "Alksnėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351154",
+          "name": "Kaušėnai",
+          "lat": 55.9162229,
+          "lon": 21.7914003,
+          "score": 0.4444,
+          "matched_alias": "Kaušėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 21,
+      "original": "въ М. Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 22,
+      "original": "Лукніяны[?]",
+      "key": "lukniiani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067351740",
+          "name": "Luknėnai",
+          "lat": 55.8179769,
+          "lon": 21.8307167,
+          "score": 0.6667,
+          "matched_alias": "Luknėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.5556,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5556,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380207333",
+          "name": "Lūgnaliai",
+          "lat": 55.8581517,
+          "lon": 21.5503395,
+          "score": 0.5556,
+          "matched_alias": "Lūgnaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468807732",
+          "name": "Liekniai",
+          "lat": 55.8409729,
+          "lon": 22.0336413,
+          "score": 0.5556,
+          "matched_alias": "Liekniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.1111,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 23,
+      "original": "въ М. Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 24,
+      "original": null,
+      "key": "",
+      "candidates": [],
+      "margin": 0,
+      "status": "no_readable_name",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 95,
+      "entry_no": 25,
+      "original": "Виксровяны[?]",
+      "key": "viksroviani",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350369",
+          "name": "Vieštovėnai",
+          "lat": 55.8519027,
+          "lon": 21.7373864,
+          "score": 0.5,
+          "matched_alias": "Vieštovėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009449",
+          "name": "Visvainiai",
+          "lat": 56.092427,
+          "lon": 21.8661977,
+          "score": 0.4655,
+          "matched_alias": "Visvainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.4545,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350423",
+          "name": "Vilkaičiai",
+          "lat": 55.9134581,
+          "lon": 22.1049643,
+          "score": 0.4545,
+          "matched_alias": "Vilkaičiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380033489",
+          "name": "Prystovai",
+          "lat": 55.9547568,
+          "lon": 21.5679608,
+          "score": 0.4545,
+          "matched_alias": "Prystovai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0345,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 26,
+      "original": "въ М. Плунганы",
+      "key": "plungani",
+      "candidates": [
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.92,
+          "matched_alias": "Plungė",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351013",
+          "name": "Kungiai",
+          "lat": 55.8075728,
+          "lon": 21.9737335,
+          "score": 0.52,
+          "matched_alias": "Kungiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2340841268",
+          "name": "Lubiai",
+          "lat": 55.890999,
+          "lon": 21.5836987,
+          "score": 0.5,
+          "matched_alias": "Lubiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983260",
+          "name": "Peleniai",
+          "lat": 56.0581839,
+          "lon": 22.0302405,
+          "score": 0.5,
+          "matched_alias": "Peleniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:8318926516",
+          "name": "Plikiai",
+          "lat": 55.8526735,
+          "lon": 22.1124744,
+          "score": 0.5,
+          "matched_alias": "Plikiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.4,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 27,
+      "original": "Погуши[?]",
+      "key": "pogushi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469284672",
+          "name": "Uogučiai",
+          "lat": 56.0817671,
+          "lon": 21.861633,
+          "score": 0.6343,
+          "matched_alias": "Uogučiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:32444802",
+          "name": "Plungė",
+          "lat": 55.9139294,
+          "lon": 21.8533903,
+          "score": 0.5714,
+          "matched_alias": "Pluñhi",
+          "alias_tag": "name:ay",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348510",
+          "name": "Jogaudai",
+          "lat": 55.9959266,
+          "lon": 21.9374645,
+          "score": 0.5,
+          "matched_alias": "Jogaudai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351071",
+          "name": "Degučiai",
+          "lat": 55.9256087,
+          "lon": 22.1378609,
+          "score": 0.4914,
+          "matched_alias": "Degučiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:2468983259",
+          "name": "Palūščiai",
+          "lat": 55.9531579,
+          "lon": 21.7003683,
+          "score": 0.4756,
+          "matched_alias": "Palūščiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0629,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 28,
+      "original": "Кліморы[?]",
+      "key": "klimori",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350074",
+          "name": "Lioliai",
+          "lat": 55.7582348,
+          "lon": 21.8505264,
+          "score": 0.4914,
+          "matched_alias": "Lioliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350581",
+          "name": "Lozoriai",
+          "lat": 55.7466738,
+          "lon": 21.9703156,
+          "score": 0.4914,
+          "matched_alias": "Lozoriai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350345",
+          "name": "Kuliai",
+          "lat": 55.8002491,
+          "lon": 21.6404711,
+          "score": 0.4286,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351564",
+          "name": "Kuliai",
+          "lat": 55.8059704,
+          "lon": 21.6539042,
+          "score": 0.4286,
+          "matched_alias": "Kuliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009450",
+          "name": "Yliai",
+          "lat": 56.0508191,
+          "lon": 22.0537914,
+          "score": 0.4286,
+          "matched_alias": "Yliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 29,
+      "original": "Верельварки Вельгополь[?]",
+      "key": "verelvarkivelgopol",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350253",
+          "name": "Sendvariai",
+          "lat": 55.8206164,
+          "lon": 21.9924254,
+          "score": 0.2778,
+          "matched_alias": "Sendvariai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.2778,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067351416",
+          "name": "Merkeliai",
+          "lat": 55.9224103,
+          "lon": 21.9366674,
+          "score": 0.2778,
+          "matched_alias": "Merkeliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2380207336",
+          "name": "Peceliai",
+          "lat": 55.9355733,
+          "lon": 21.5830539,
+          "score": 0.2778,
+          "matched_alias": "Peceliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468807729",
+          "name": "Bereniai",
+          "lat": 55.9593951,
+          "lon": 21.8784087,
+          "score": 0.2778,
+          "matched_alias": "Bereniai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 30,
+      "original": "Вишеваны[?]",
+      "key": "vishevani",
+      "candidates": [
+        {
+          "place_id": "osm:node:2468983257",
+          "name": "Mišėnai",
+          "lat": 55.970628,
+          "lon": 21.7106573,
+          "score": 0.6667,
+          "matched_alias": "Mišėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009449",
+          "name": "Visvainiai",
+          "lat": 56.092427,
+          "lon": 21.8661977,
+          "score": 0.5867,
+          "matched_alias": "Visvainiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350369",
+          "name": "Vieštovėnai",
+          "lat": 55.8519027,
+          "lon": 21.7373864,
+          "score": 0.5833,
+          "matched_alias": "Vieštovėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009425",
+          "name": "Dišliai",
+          "lat": 56.0129274,
+          "lon": 22.0221272,
+          "score": 0.5556,
+          "matched_alias": "Dišliai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348584",
+          "name": "Vaištarai",
+          "lat": 55.9618697,
+          "lon": 22.0405147,
+          "score": 0.5,
+          "matched_alias": "Vaištarai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.08,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 31,
+      "original": "Покиршне[?]",
+      "key": "pokirshne",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350351",
+          "name": "Noriškiai",
+          "lat": 55.9035898,
+          "lon": 21.8090591,
+          "score": 0.42,
+          "matched_alias": "Noriškiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2468807736",
+          "name": "Pauošniai",
+          "lat": 55.9742084,
+          "lon": 21.91735,
+          "score": 0.42,
+          "matched_alias": "Pauošniai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:1067351145",
+          "name": "Jovaišiškė",
+          "lat": 55.9105156,
+          "lon": 21.8839321,
+          "score": 0.4167,
+          "matched_alias": "Jovaišiškė",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2468983262",
+          "name": "Skirpsčiai",
+          "lat": 56.0439392,
+          "lon": 22.0012193,
+          "score": 0.3644,
+          "matched_alias": "Skirpsčiai",
+          "alias_tag": "name",
+          "method": "stem/stem"
+        },
+        {
+          "place_id": "osm:node:2469206495",
+          "name": "Plokščiai",
+          "lat": 56.0084601,
+          "lon": 21.849391,
+          "score": 0.3644,
+          "matched_alias": "Plokščiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        }
+      ],
+      "margin": 0.0,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 32,
+      "original": "Варкали",
+      "key": "varkali",
+      "candidates": [
+        {
+          "place_id": "osm:node:1067350971",
+          "name": "Varkaliai",
+          "lat": 55.8901579,
+          "lon": 21.8046457,
+          "score": 0.92,
+          "matched_alias": "Varkaliai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067350133",
+          "name": "Vitkai",
+          "lat": 55.810474,
+          "lon": 21.9135115,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:1067350153",
+          "name": "Vitkai",
+          "lat": 55.8034352,
+          "lon": 21.9012684,
+          "score": 0.5714,
+          "matched_alias": "Vitkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284650",
+          "name": "Alkai",
+          "lat": 56.0438308,
+          "lon": 21.9407635,
+          "score": 0.5714,
+          "matched_alias": "Alkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469284674",
+          "name": "Vilkai",
+          "lat": 56.0418611,
+          "lon": 21.9644455,
+          "score": 0.5714,
+          "matched_alias": "Vilkai",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.3486,
+      "status": "candidate_only",
+      "separated_candidate": true,
+      "confirmed_place_id": null
+    },
+    {
+      "source_file": "rowB_0095-0096.json",
+      "scan": 96,
+      "entry_no": 33,
+      "original": "Бурси[?]",
+      "key": "bursi",
+      "candidates": [
+        {
+          "place_id": "osm:node:2469009426",
+          "name": "Dyburiai",
+          "lat": 55.9351159,
+          "lon": 21.6128112,
+          "score": 0.5,
+          "matched_alias": "Dyburiai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:888395783",
+          "name": "Budrikiai",
+          "lat": 55.7536685,
+          "lon": 21.9146289,
+          "score": 0.4914,
+          "matched_alias": "Budrikiai",
+          "alias_tag": "name",
+          "method": "full/stem"
+        },
+        {
+          "place_id": "osm:node:1067351334",
+          "name": "Bubėnai",
+          "lat": 55.7816548,
+          "lon": 21.9059401,
+          "score": 0.4286,
+          "matched_alias": "Bubėnai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469009422",
+          "name": "Bulikai",
+          "lat": 55.9489534,
+          "lon": 21.5907069,
+          "score": 0.4286,
+          "matched_alias": "Bulikai",
+          "alias_tag": "name",
+          "method": "full/full"
+        },
+        {
+          "place_id": "osm:node:2469348548",
+          "name": "Paburgė",
+          "lat": 56.0272887,
+          "lon": 21.9372864,
+          "score": 0.4286,
+          "matched_alias": "Paburgė",
+          "alias_tag": "name",
+          "method": "full/full"
+        }
+      ],
+      "margin": 0.0086,
+      "status": "candidate_only",
+      "separated_candidate": false,
+      "confirmed_place_id": null
+    }
+  ],
+  "comparisons": [
+    {
+      "scan": 93,
+      "entry_no": 3,
+      "a": "Стелги[?]",
+      "b": "Стелги[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Stalgas",
+      "candidate_b": "Stalgas"
+    },
+    {
+      "scan": 93,
+      "entry_no": 4,
+      "a": "Аздайци[?]",
+      "b": "Аздайши[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Brazdeikiai",
+      "candidate_b": "Narvaišiai"
+    },
+    {
+      "scan": 93,
+      "entry_no": 5,
+      "a": "Шилекни[?]",
+      "b": "Шленеки[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Šlečkai",
+      "candidate_b": "Šlečkai"
+    },
+    {
+      "scan": 93,
+      "entry_no": 6,
+      "a": "Норвайши",
+      "b": "Норвайши[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Narvaišiai",
+      "candidate_b": "Narvaišiai"
+    },
+    {
+      "scan": 93,
+      "entry_no": 7,
+      "a": "Покутовы[?]",
+      "b": "Пекутовы[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Prystovai",
+      "candidate_b": "Prystovai"
+    },
+    {
+      "scan": 93,
+      "entry_no": 8,
+      "a": "Рушини[?]",
+      "b": "Пошини[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Rupšiai",
+      "candidate_b": "Pauošniai"
+    },
+    {
+      "scan": 93,
+      "entry_no": 9,
+      "a": "Меркеля[?]",
+      "b": "Мержемъ[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Merkeliai",
+      "candidate_b": "Merkeliai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 10,
+      "a": "Малоседи[?]",
+      "b": "Молосѣли[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Mardosai",
+      "candidate_b": "Plateliai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 11,
+      "a": "Винговаты[?]",
+      "b": "Винговаты[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Cigonaliai",
+      "candidate_b": "Cigonaliai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 12,
+      "a": "Норвайши",
+      "b": "Норвайши",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Narvaišiai",
+      "candidate_b": "Narvaišiai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 13,
+      "a": "Покутовани[?]",
+      "b": "Тожутовани[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Pakutuvėnai",
+      "candidate_b": "Mižuikai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 14,
+      "a": "Ермолъ-Олвопишъ[?]",
+      "b": "Ольгопи[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Molupiai",
+      "candidate_b": "Lioliai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 15,
+      "a": "Уплекши[?]",
+      "b": "Уфлекши[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Aleksiai",
+      "candidate_b": "Aleksiai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 16,
+      "a": "Тургаки[?]",
+      "b": "Тургайки[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Keturakiai",
+      "candidate_b": "Tarvainiai"
+    },
+    {
+      "scan": 94,
+      "entry_no": 17,
+      "a": "Нугары[?]",
+      "b": "Игары[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Nugariai",
+      "candidate_b": "Nugariai"
+    },
+    {
+      "scan": 95,
+      "entry_no": 18,
+      "a": "Варкалы[?]",
+      "b": "Варкали[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": true,
+      "candidate_a": "Varkaliai",
+      "candidate_b": "Varkaliai"
+    },
+    {
+      "scan": 95,
+      "entry_no": 19,
+      "a": "Видсейки[?]",
+      "b": "Видсейки[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Vydeikiai",
+      "candidate_b": "Vydeikiai"
+    },
+    {
+      "scan": 95,
+      "entry_no": 20,
+      "a": "Канеуды",
+      "b": "Канеуды",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Kantaučiai",
+      "candidate_b": "Kantaučiai"
+    },
+    {
+      "scan": 95,
+      "entry_no": 21,
+      "a": "М: Плунганы",
+      "b": "въ М. Плунганы",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": true,
+      "candidate_a": "Plungė",
+      "candidate_b": "Plungė"
+    },
+    {
+      "scan": 95,
+      "entry_no": 22,
+      "a": "Лукины[?]",
+      "b": "Лукніяны[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Lubiai",
+      "candidate_b": "Luknėnai"
+    },
+    {
+      "scan": 95,
+      "entry_no": 23,
+      "a": "М: Плунганы",
+      "b": "въ М. Плунганы",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": true,
+      "candidate_a": "Plungė",
+      "candidate_b": "Plungė"
+    },
+    {
+      "scan": 95,
+      "entry_no": 24,
+      "a": "[not on this row]",
+      "b": null,
+      "comparable": false,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": null,
+      "candidate_b": null
+    },
+    {
+      "scan": 95,
+      "entry_no": 25,
+      "a": "Винцровяны[?]",
+      "b": "Виксровяны[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Antsieniai",
+      "candidate_b": "Vieštovėnai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 26,
+      "a": "М: Плунганы",
+      "b": "въ М. Плунганы",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": true,
+      "candidate_a": "Plungė",
+      "candidate_b": "Plungė"
+    },
+    {
+      "scan": 96,
+      "entry_no": 27,
+      "a": "Погирши[?]",
+      "b": "Погуши[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Noriškiai",
+      "candidate_b": "Uogučiai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 28,
+      "a": "Климоры[?]",
+      "b": "Кліморы[?]",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": false,
+      "candidate_a": "Lioliai",
+      "candidate_b": "Lioliai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 29,
+      "a": "Бѣлополь[?]",
+      "b": "Верельварки Вельгополь[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Lioliai",
+      "candidate_b": "Sendvariai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 30,
+      "a": "Вишнявяны[?]",
+      "b": "Вишеваны[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Dišliai",
+      "candidate_b": "Mišėnai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 31,
+      "a": "Покиркшине[?]",
+      "b": "Покиршне[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Akmenskinė",
+      "candidate_b": "Noriškiai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 32,
+      "a": "Варкали",
+      "b": "Варкали",
+      "comparable": true,
+      "same_normalized_reading": true,
+      "same_top_candidate": true,
+      "same_separated_candidate": true,
+      "candidate_a": "Varkaliai",
+      "candidate_b": "Varkaliai"
+    },
+    {
+      "scan": 96,
+      "entry_no": 33,
+      "a": "Бусси[?]",
+      "b": "Бурси[?]",
+      "comparable": true,
+      "same_normalized_reading": false,
+      "same_top_candidate": false,
+      "same_separated_candidate": false,
+      "candidate_a": "Bubėnai",
+      "candidate_b": "Dyburiai"
+    }
+  ]
+}

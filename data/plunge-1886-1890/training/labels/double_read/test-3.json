@@ -1,0 +1,532 @@
+{
+ "batch": "test-3",
+ "A": [
+  {
+   "id": "0135_L3_baptism_01",
+   "text": "Тысяча восемьсотъ восемь",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_02",
+   "text": "десятъ восьмаго года Ок",
+   "sure": true,
+   "crop_ok": true,
+   "note": "восьмаго/года nearly joined"
+  },
+  {
+   "id": "0135_L3_baptism_03",
+   "text": "тября тридцатаго",
+   "sure": true,
+   "crop_ok": true,
+   "note": "connecting stroke between words, not a hyphen"
+  },
+  {
+   "id": "0135_L3_baptism_04",
+   "text": "дня въ Плунгянскомъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_05",
+   "text": "Р.К. Приходскомъ Ко-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_06",
+   "text": "стелѣ Викарнымъ Кс:",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_07",
+   "text": "[Авгулисомъ?] окрещен[.?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname; word ends н followed by a dot, no ъ visible"
+  },
+  {
+   "id": "0135_L3_baptism_08",
+   "text": "Младенецъ именемъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_09",
+   "text": "[Ф?]рузина, Со[всѣ?]ми",
+   "sure": false,
+   "crop_ok": true,
+   "note": "name underlined; initial ornate Ф/Д; с in всѣми may be omitted (looks like Совѣми)"
+  },
+  {
+   "id": "0135_L3_baptism_10",
+   "text": "обрядами Таинст[въ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "final letter unclear, possibly abbreviated"
+  },
+  {
+   "id": "0135_L3_parents_01",
+   "text": "-Крестьянъ Плунгян-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_02",
+   "text": "-ской волости Пет-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_03",
+   "text": "ра и Анны изъ Ми-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_04",
+   "text": "ла[шіовъ?] [Г?]ульбина",
+   "sure": false,
+   "crop_ok": true,
+   "note": "maiden name Ми-лашіовъ likely (gap after ла); surname continues next line"
+  },
+  {
+   "id": "0135_L3_parents_05",
+   "text": "совъ, законныхъ су-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_06",
+   "text": "пруговъ дочь родив-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_07",
+   "text": "шаяся 1888 года",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_08",
+   "text": "Октября 28го дня",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_09",
+   "text": "въ дерев[ни?] [Навелдз?][к?].",
+   "sure": false,
+   "crop_ok": true,
+   "note": "village name very uncertain; ends with a dot-like mark"
+  },
+  {
+   "id": "0135_L3_parents_10",
+   "text": "а. - сего Прихода",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading 'а.' ends the village name; final letter at the rule"
+  },
+  {
+   "id": "0135_L3_godparents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only ruled lines"
+  },
+  {
+   "id": "0135_L3_godparents_02",
+   "text": "Воспріемни-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_03",
+   "text": "ками были",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_04",
+   "text": "Іосифъ [Шу?]-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_05",
+   "text": "-[товисъ?] съ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_06",
+   "text": "Елеонорою",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_07",
+   "text": "[Гудасувною?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_08",
+   "text": "д[ѣ?]вицею.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "second letter looks like ъ/ѣ"
+  },
+  {
+   "id": "0135_L3_godparents_09",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "empty strip with ink blot and dash only"
+  }
+ ],
+ "B": [
+  {
+   "id": "0135_L3_baptism_01",
+   "text": "Тысяча восемьсотъ восемь-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end of line cut near rule"
+  },
+  {
+   "id": "0135_L3_baptism_02",
+   "text": "десятъ восьмаго года Ок-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_03",
+   "text": "тября-тридцатаго",
+   "sure": false,
+   "crop_ok": true,
+   "note": "dash between words"
+  },
+  {
+   "id": "0135_L3_baptism_04",
+   "text": "дня, въ Плунгянскомъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_05",
+   "text": "Р.К. Приходскомъ Ко-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_06",
+   "text": "стелѣ Викарнымъ Кс:",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_07",
+   "text": "[Авгу?]стомъ окрещенъ.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest name doubtful"
+  },
+  {
+   "id": "0135_L3_baptism_08",
+   "text": "Младенецъ именемъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_baptism_09",
+   "text": "[Эфрузина?], Совѣми",
+   "sure": false,
+   "crop_ok": true,
+   "note": "name underlined in source"
+  },
+  {
+   "id": "0135_L3_baptism_10",
+   "text": "обрядами Таинства",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_01",
+   "text": "-Крестьянъ Плунгян-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading dash"
+  },
+  {
+   "id": "0135_L3_parents_02",
+   "text": "-ской волости Пет-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading dash"
+  },
+  {
+   "id": "0135_L3_parents_03",
+   "text": "ра и Анны изъ Ми-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_04",
+   "text": "ла [міліъ?]. Булгина",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_05",
+   "text": "совъ, законныхъ Су-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_06",
+   "text": "пруговъ дочь родив-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_07",
+   "text": "шаяся 1888 года",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_08",
+   "text": "Октября 28го дня",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_09",
+   "text": "въ деревнѣ [Паведжа?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_parents_10",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "only table rules"
+  },
+  {
+   "id": "0135_L3_godparents_01",
+   "text": "Воспріеми-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_02",
+   "text": "ками были",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_03",
+   "text": "Іосифъ Шу-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_04",
+   "text": "-[ловитъ?] съ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_05",
+   "text": "[Елеонорою?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_06",
+   "text": "[Гудаевскаго?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_07",
+   "text": "[дѣвицею?].",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0135_L3_godparents_08",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "blank with blot"
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0135_L3_baptism_01",
+   "text": "Тысяча восемьсотъ восемь",
+   "status": "image_checked",
+   "note": "ь ends at the rule with its own flourish; no hyphen visible"
+  },
+  {
+   "id": "0135_L3_baptism_02",
+   "text": "десятъ восьмаго года Ок",
+   "status": "image_checked",
+   "note": "small curl after к is the letter's terminal, not a hyphen"
+  },
+  {
+   "id": "0135_L3_baptism_03",
+   "text": "тября тридцатаго",
+   "status": "image_checked",
+   "note": "hairline between words is the diagonal lead-in upstroke of the m-shaped т, not a dash"
+  },
+  {
+   "id": "0135_L3_baptism_04",
+   "text": "дня въ Плунгянскомъ",
+   "status": "image_checked",
+   "note": "no comma after дня; long diagonal stroke there comes from the line above"
+  },
+  {
+   "id": "0135_L3_baptism_06",
+   "text": "стелѣ Викарнымъ Кс:",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0135_L3_baptism_07",
+   "text": "Авгулисомъ окрещен.",
+   "status": "draft",
+   "note": "letters А-в-г-у-л-и-с-о-м-ъ read clearly; окрещен is abbreviated with a dot and has no ъ. Left as draft only because it is a priest's name"
+  },
+  {
+   "id": "0135_L3_baptism_09",
+   "text": "[Ф?]рузина, Со [вѣми?]",
+   "status": "draft",
+   "note": "name underlined; ornate looped initial with a long descending stem, most likely Ф (possibly Э+ф). Second word is written Со + в + tall ѣ + ми with no с; split follows word division"
+  },
+  {
+   "id": "0135_L3_baptism_10",
+   "text": "обрядами Таинст[в?]",
+   "status": "draft",
+   "note": "final b-shaped glyph at the rule (в or ъ) ends in a long upward flourish; word looks abbreviated, no final а visible"
+  },
+  {
+   "id": "0135_L3_parents_01",
+   "text": "-Крестьянъ Плунгян-",
+   "status": "image_checked",
+   "note": "stroke between ъ and П is a connecting stroke"
+  },
+  {
+   "id": "0135_L3_parents_02",
+   "text": "-ской волости Пет-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0135_L3_parents_03",
+   "text": "ра и Анны изъ Ми-",
+   "status": "image_checked",
+   "note": "short hyphen at the rule after Ми"
+  },
+  {
+   "id": "0135_L3_parents_04",
+   "text": "ла [шіовъ?] [Г?]ульбина",
+   "status": "draft",
+   "note": "wide gap after ла (Ми-ла...); three-stroke ш (or м), then dotted і, о, в, ъ. Surname runs on as Гульбина|совъ on the next line"
+  },
+  {
+   "id": "0135_L3_parents_05",
+   "text": "совъ, законныхъ [С?]у-",
+   "status": "draft",
+   "note": "С of Су- is clearly taller than the lowercase с in совъ, so it looks capital"
+  },
+  {
+   "id": "0135_L3_parents_06",
+   "text": "пруговъ дочь родив-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0135_L3_parents_07",
+   "text": "шаяся 1888 года",
+   "status": "image_checked",
+   "note": "mark above ш comes from the line above"
+  },
+  {
+   "id": "0135_L3_parents_08",
+   "text": "Октября 28го дня",
+   "status": "image_checked",
+   "note": "dots under the superscript are not transcribed"
+  },
+  {
+   "id": "0135_L3_parents_09",
+   "text": "въ деревни [Навелдзк.?]",
+   "status": "draft",
+   "note": "деревни (with и, not ѣ) is clear. Village name very uncertain (Н vs П initial); it continues as 'а.' on the next line"
+  },
+  {
+   "id": "0135_L3_parents_10",
+   "text": "а. - сего Прихода",
+   "status": "image_checked",
+   "note": "leading 'а.' ends the village name from the previous line; filler dash, no final period; last а touches the rule but is complete"
+  },
+  {
+   "id": "0135_L3_godparents_01",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "only table rules"
+  },
+  {
+   "id": "0135_L3_godparents_02",
+   "text": "Воспріемни-",
+   "status": "image_checked",
+   "note": "looped flourish before В belongs to the capital"
+  },
+  {
+   "id": "0135_L3_godparents_03",
+   "text": "ками были",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0135_L3_godparents_04",
+   "text": "Іосифъ [Ш?]у-",
+   "status": "draft",
+   "note": "ornate looped capital, most likely Ш"
+  },
+  {
+   "id": "0135_L3_godparents_05",
+   "text": "[-?][товичъ?] съ",
+   "status": "draft",
+   "note": "thin lead-in from the rule could be a line-start dash or the hairline into the m-shaped т. Surname: т, о, в, then about four strokes (ич?) and ъ"
+  },
+  {
+   "id": "0135_L3_godparents_06",
+   "text": "Елеонорою",
+   "status": "image_checked",
+   "note": "column rule cuts between р and о"
+  },
+  {
+   "id": "0135_L3_godparents_07",
+   "text": "[Г?]уда[с?]увною",
+   "status": "draft",
+   "note": "probably a Polish -ówna patronymic maiden form (Гудасувною); с/е ambiguity after а"
+  },
+  {
+   "id": "0135_L3_godparents_08",
+   "text": "д[ѣ?]вицею.",
+   "status": "draft",
+   "note": "second letter is b-shaped, ѣ vs ъ; ink blot above е is not text"
+  },
+  {
+   "id": "0135_L3_godparents_09",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "empty strip with an ink blot, rules and a stray short dash only"
+  }
+ ]
+}

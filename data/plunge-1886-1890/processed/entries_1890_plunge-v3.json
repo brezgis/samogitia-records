@@ -1,0 +1,7445 @@
+{
+ "source": "data/plunge-1886-1890/processed/year_draft_1890_plunge-v3.json",
+ "model": "<htr-store>/models/plunge-v3/model.safetensors",
+ "note": "Machine-extracted fields from machine drafts. Unverified.",
+ "entries": [
+  {
+   "row_id": "0192_R2",
+   "register_year": 1890,
+   "scan": 192,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0192_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Аколинаріи",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Дворянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Дворяне Аленсандеръ Ясдовскій съ Анною Приіямовскою довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемьсотъ девяно стаго года Января перваго дня въ Плунгянекомъ Р.К. Прияоъ скбмъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Аколинаріи, Со всами обрядами Таинства. -",
+    "parents": "Дворянъ Амбина иЮзефы изъ ченсновскихъ -Ясдовскихъ, законныхъ Супруговъ Сынъ родивщійся 1890 года Января годня, въ Мкѣ Плунгяны сего Трихода. -",
+    "godparents": "Воспріеининама были Дворяне Аленсандеръ Ясдовскій съ Анною Приіямовскою довицею."
+   }
+  },
+  {
+   "row_id": "0192_R3",
+   "register_year": 1890,
+   "scan": 192,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0192_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Тзефровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Тавелъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ольсядекои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "village": {
+     "value": "Уонунѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Леонъ Вандарисъ съ Бенигно Виитора Вакдариса Супрусою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-02",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностасо годаЯнваря втораго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс:Тзефровичемъ опрещенъ Мла роб денецъ именсемъ Тавелъ, совсѣ-р ки обрядами Таинст ва. -",
+    "parents": "Крестьянъ Ольсядекои вагости Фемикса и Доминцемиик Размусовъ Вакдарисовъ. законныхъ Супруговъ Сынъ ившійся 1890 года Января 2 дня, въ деревни Уонунѣ сего Прихода. -",
+    "godparents": "Воспріемнинами были Леонъ Вандарисъ съ Бенигно Виитора Вакдариса Супрусою."
+   }
+  },
+  {
+   "row_id": "0192_R4",
+   "register_year": 1890,
+   "scan": 192,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0192_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Тодеутъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Корцянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосиера",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Кугаріовъ Томашевскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Станиславъ Сурблисъ съ Анною Нугаревною довоцею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "нсяча восем:сотъ девяностагиъ года Інваря третьяго дня, въ ПлунъянскомъР.К. Пуихоскомъ Костелѣ. ПастоятелемъКс: Каноникомъ Петкевичемъ окрещенъ Младемецъ именемъ Тодеутъ, свскми обия дами Та инстба.-",
+    "parents": "Крестьянъ Корцянскон во лости Іосиера и Маріяны изъ Кугаріовъ Томашевскихъ, законныхъ Супруговъ Сынъ роднвшійся 1830 года Января дня, въ Мнѣ Плунгяны сего Прихода. -",
+    "godparents": "-Воспріемниками были Станиславъ Сурблисъ съ Анною Нугаревною довоцею."
+   }
+  },
+  {
+   "row_id": "0192_R5",
+   "register_year": 1890,
+   "scan": 192,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0192_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Кон-въстантинъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "кЛеона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агнѣшки",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мингеловъ Давлевъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Ірбановичъ съ Аннон Іоспфа Шимауса супругюю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-04",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "нсяча восемьсотъ девяностаго года Января четвертаго дня в Плунгянскомъ Р.К. Прихоскомъ Костелѣ Пастоятелемъ Кс: Канониномъ Пстневичемъ окрещенъ Младенецъ именемъ Кон-въ стантинъ совсѣми ббрядами Таиыства. -",
+    "parents": "Крестьянъ Плунгянской волостк Леона и Агнѣшки изъ Мингеловъ Давлевъ, законныхъ Супру говъ Сынъ родившійся 1890 года Ян варя 4  дня Миѣ ПЛунгяны сего првхода. -",
+    "godparents": "Воспріемникамо были Антонъ Ірбановичъ съ Аннон Іоспфа Шимауса супругюю"
+   }
+  },
+  {
+   "row_id": "0193_L1",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзеровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Курестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "аИгнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Францишки",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Якомасовъ Михало вскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Гонбыыгѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Янъ Пивоосъ съ Валеріен Рацевичевною давицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "иеяча восемьсотъ девяностаго да Января седмаго дня, въ лунгянскомъ Р.К. Приходскам сеелѣ Винарнымъ Ке Юзеровичемъ окрещенъ Младецъ именемъ барбара, Соѣми обрядами Таинства.",
+    "parents": "Курестьянъ Плунгянской во Рлоста Игнатія и Францишки изъ Якомасовъ Михало вскихъ, занонных супруговъ дочь родившаяся вдо года Января вго дня въ деревни Гонбыыгѣ, сего Прихода.",
+    "godparents": "хо спріемниками были Янъ Пивоосъ съ Валеріен Рацевичевною давицею. -"
+   }
+  },
+  {
+   "row_id": "0193_L1b",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_L1.jpg",
+   "split_from": "0193_L1",
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефео чемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ольсядекой волосты Антона и Тетронелиизъ Іонуміовъ Штульписнасовъ, закоттыяъ Супругов дочь родившаяся 1890 годаЯнваря вго дня, въдеревни ондынгѣ, сего Прихода. Крестьянъ Плунъянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "ондынгѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Янъ Выристисъ съ Стани гславою Павлов скою дѣвицсн. Воспріемниками были Павелъ стонисъ съ БарбаПетраЛингоса супхугою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-7 Кысяча восемьсотъ девяноста го ода Январяседмаго дня, въ гнгя нскомъ Р.К. Приходеномъ остелѣ Викарнымъ Кс: Юзефео чемъ окрещенъ Младенецъ менемъ Станиелава, совсѣми обрядами Таинства. -І Та пеяча восемьсотъ девя но стагода Января седмаго дня въ Плунгянскомъ Р.К. Приходскемъ Костелѣ Винарнымъ Кс: Юозефо вичемъ окрещенъ Младенецъ именемъ Барбара, со всѣми обрядами Таинства. -Р",
+    "parents": "Крестьянъ Ольсядекой волосты Антона и Тетронелиизъ Іонуміовъ Штульписнасовъ, закоттыяъ Супругов дочь родившаяся 1890 годаЯнваря вго дня, въдеревни ондынгѣ, сего Прихода. Крестьянъ Плунъянской воло сти Яна и Констанціи ъизъ Домарковъ Бальсіовъ законныхъ Супруговъ дочь родившаяся 1890 года Января 6г дня, въ деревни Нарвине сего Прихода.",
+    "godparents": "Воспріемниками были Янъ Выристисъ съ Стани гславою Павлов скою дѣвицсн. Воспріемниками были Павелъ стонисъ съ БарбаПетраЛингоса супхугою"
+   }
+  },
+  {
+   "row_id": "0193_L2",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "village": {
+     "value": "Полусцѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казикыръ Домарка с Суфрозаною Адама Салиса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-07",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-06",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "исяча оо семьсотъ девяностаго года Января седмаго дня, въ Плунгянскомъ. Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенекъ именемъ Казимиръ, совспъ ми обрядами Таинства.-",
+    "parents": "Крестьянъ Плунгянской воло сти Якуба и Анныизъ вДомарковъ Петрутисовъ законныхъ Супруговъ Сынъ родившійся 1890 года Января 6го дня въ деревни Полусцѣ сего Прихода. -",
+    "godparents": "Воспріемниками были Казикыръ Домарка с Суфрозаною Адама Салиса супругою."
+   }
+  },
+  {
+   "row_id": "0193_L3",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "ѣ Абруціовъ Браминскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Францишек Тетрикась съ Маріанно Брансинсою Тъ виею м",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-08",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностагоІ годаЯнваря восьмаго дня, въ плунгянскомъ Р.К. Приходскол Костелѣ Настоятелемъ Кс: Кесткевичемъ окрещенъ Мла нецъ именемъ Анна, совсѣ ми обрядами Таинст ва. -",
+    "parents": "Крестьянъ Плунгянской воло сти Бонифаціяи Анны изъ ѣ Абруціовъ Браминскихъ законныхь Супруговъ дочь родившая ся 1890 года Января7го дня, въ Мнѣ. Плунгяны сего Прихода. -",
+    "godparents": "Воспріемниками были Францишек Тетрикась съ Маріанно Брансинсою Тъ виею м"
+   }
+  },
+  {
+   "row_id": "0193_L3b",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_L3.jpg",
+   "split_from": "0193_L3",
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Тинтеминскои во",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Сомисовъ Лингисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "норишки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Винценти Бразсйкисъ Петронелею Антона Браникиса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго сода Января восьмаго дня, въ Плунгянскомъ Р.К. Приход скомъ Костелѣ Викарнымъ Кс. Юзефровичемъ окрещенъ Младе кецъ именемъ Петръ, со всѣмъ обтрядами Таинства. -",
+    "parents": "Крестьянъ Тинтеминскои во-Вос лости Игнатіяи Барба -изъ Сомисовъ Лингисовъ, законныхъ Супруговъ Сынъ родивчнійся 1890 года й Января вго дня, въ деревни норишкисего Прихода.",
+    "godparents": "Воспріем.нами были Винценти Бразсйкисъ Петронелею Антона Браникиса супругою"
+   }
+  },
+  {
+   "row_id": "0193_R1",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефго вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бннтелинскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катаржины",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Лаивисовъ Беціовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "village": {
+     "value": "Яздаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ бригаловскій съ Катаржиною станислава Давгентиса супруг",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-08",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "неяча восемьсотъ девяностагоК года Января восьмаго дня, въ Плунгянскомъ РК. Приходскомъ Костелѣ Винарнымъ Кс. Юзефго вичемъ окрещенъ Младенецърод именемъ Казимиръ, со всѣ-ря ми обрядами Таинства. -",
+    "parents": "рестьянъ Бннтелинскои во лости Казимира и Катаржины изъ Лаивисовъ Беціовъ -законныхъ Супруговъ Сынъ родившійся 1896 года Ян варя 8го дня, въ деревни Яздаицѣ сего Прихода. -",
+    "godparents": "Воспріемниками были Казимиръ бригаловскій съ Катаржиною станислава Давгентиса супруг."
+   }
+  },
+  {
+   "row_id": "0193_R2",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 9,
+     "source": "model"
+    },
+    "priest": {
+     "value": "нзсфровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Домицели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Равдисовъ Рутисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Тдяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Станиславъ. Карвоишъ съ Барбарою Бернотасовною дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-09",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсотъ девяностаги года Января девятаго дня, въ Плунгянскомъ Р.К. Триходскомъ Костела Викарнымъ Кс: нзсфровичемъ окрещенъ Младенецъ именемъ Казимиръ, со всѣми обрядами Таинстви. -",
+    "parents": "Крестьянъ Плунгянскон во В лости Казимира и Домицели изъ Равдисовъ Рутисовъ, законныхъ Супруговъ сынъ родившійся 189о года Января 8г дня, въ деревни Тдянысего Прихода. -",
+    "godparents": "оспріемниками были Станиславъ. Карвоишъ съ Барбарою Бернотасовною дѣвицею."
+   }
+  },
+  {
+   "row_id": "0193_R3",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петронели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Такиневъ Пативевъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "village": {
+     "value": "Юден ки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Иванъ Лявданскійсъ Маріяною Францита Брасукмиса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-13",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсотъ девяностаго года. Ян варятрина дцатаго дня въПлунгянскомъ Р.К.Преиходекомъ Костелѣ Альтаристомъ Кс: шинскимъ опрещенъ Младс-ро иецъ именемъ Антони, Совсѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскои волости Антона и Петронели изъ Такиневъ Пативевъ, законныхъ Супруговъ Сынъ родившійся 1890 года. Января 12го дня, въ деревни Юден ки сего Прихода. -",
+    "godparents": "Воспріемниками были Иванъ Лявданскійсъ Маріяною Францита Брасукмиса супругою."
+   }
+  },
+  {
+   "row_id": "0193_R4",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Доминцеряря",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Августина",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбари",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Козло вской Таммасовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "village": {
+     "value": "Пру -селѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іосифъ Бурневскій съ Маріяною Константина Талимаса Супру -гою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-13",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяго восемьсотъ девяностаго года Января тринадцатаго ня въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Альтарыстомъ Кс: Ішминскимъ окрещенъ р Младенецъ именемъ Доминце ря ря, совсѣми обрядами Таинства.",
+    "parents": "Крестьянъ Плунгянской волости Августина и Барбари изъ Козло вской Таммасовъ законныхъ Супруговъ дочь родившаяся 1890 года Января 12го дня, въ деревни Пру -селѣ сего Прихода.",
+    "godparents": "Воспріемниками были Іосифъ Бурневскій съ Маріяною Константина Талимаса Супру -гою."
+   }
+  },
+  {
+   "row_id": "0193_R5",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "priest": {
+     "value": "сЮзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ,со-ЯнвеѣмиобрядамиТаинства",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лепла вни",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Болесла Крызниновскій съ Маріяною Симатисо вноб дывицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-14",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаги года Января четирнадцатаго днся, в. Плунгянскомъ Р.К. При-Ке скомъ Костелѣ Викарнымъ сЮзефовичемъ окрещенъ ладенецъ именемъ Петръ, со-Ян веѣми обрядами Таинства.",
+    "parents": "Крестьянъ Плунгянскои воло сти Петра и Анны икъ лче вскихъ Симаитисовъ, законныхъ Супруговъ Синъ родившіся 1890 года варя 13го дня, въ деревни Лепла внисего Прихода. -",
+    "godparents": "Воспріемникамибыли Болесла Крызниновскій съ Маріяною Симатисо вноб дывицею. -"
+   }
+  },
+  {
+   "row_id": "0193_R6",
+   "register_year": 1890,
+   "scan": 193,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0193_R6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянско",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Урбоновъ Драншасовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Парвоише",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Игнатій Піотровскій А Магдаленою Бальсо внон давицен",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-22",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тсяла восемьсттъ девяностаго. года Января двадцать втораго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Ви карнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Барбара, со всѣми ббря даМи Таинства.-",
+    "parents": "Крестьянъ Плунгянско волости Яна и Маріяны изъ Урбоновъ Драншасовъ законныхъ Супруговъ дочь родившаяся 1820 года января 21го дня, въ деревни Парвоише сего Прихода. -",
+    "godparents": "Воспріемниками были Игнатій Піотровскій А Магдаленою Бальсо внон давицен."
+   }
+  },
+  {
+   "row_id": "0194_L1",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбара",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Лялюговъ Венгалисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 16,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ложи",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ыгнатій Лялюга съ Людвикою Людвика Богойлы су пру гою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-17",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-16",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Ксяча восемьсотъ девянистаго да Января семнадцатаго дня, въ Плунгянскомъ Р.К. риходскомъ Костелѣ Винымъ Кс: Аефовичемъ орещенъ Младенецъ имеиемъ Барбара, совсѣми рядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон волости Антона и Анны изъ Лялюговъ Венгалисовъ, законныхъ упруговъ дочь родившаяся 1890 года Января 16г ня, въ деревни Ложи сего прихода. -",
+    "godparents": "зоспріемниками были ыгнатій Лялюга съ Людвикою Людвика Богойлы су пру гою."
+   }
+  },
+  {
+   "row_id": "0194_L2",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатов ской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лонкославкѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ Латакас съ Пляцидою Антона шимвича Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-18",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяза восемьсотъ девяноста огода Января восемьнадцанаго дня, въ Плунгянскомъ К. Приходскомъ Костелѣ мнарнымъ Кс. Юзефо вичеМъ ретенъ Младенецъ менемъ Янъ, со всѣми обрядами Таинства. -",
+    "parents": "Крестьянки Бернатов ской волости Анны Пулковны, незаконноронденныи Сынъ родившійся 1890 года Января 12го дня, въ деревни Лонкославкѣ сего при хода. -",
+    "godparents": "Воспріемника ми были Казимиръ Латакас съ Пляцидою Антона шимвича Супругою."
+   }
+  },
+  {
+   "row_id": "0194_L3",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзсфовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Юзефъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "игнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Лялюговъ Виткусовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 20,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мишяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "доахимъ Каза ровсній съ Барсарою Антона Шаниниса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-20",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяноста го года Января двадцать перваго дня, в. Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Юзсфовичемъ опрещенъ Младенецъ именемъ Юзефъ, со всѣми обрядами Таинстнва. -",
+    "parents": "Крестьянъ Плунгянской волости игнатія и Барбары изъ Лялюговъ Виткусовъ, законныхъ Супруговъ сннъ родившійся 1890 года января 20го дня, въ деревни Мишяны сего Прихода. -",
+    "godparents": "Воспріемниками были доахимъ Каза ровсній съ Барсарою Антона Шаниниса супругою."
+   }
+  },
+  {
+   "row_id": "0194_L4",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ворненской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Варнялисовъ бочдановичей",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 11,
+     "source": "model"
+    },
+    "village": {
+     "value": "Кепуряны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Дворяне Семео Мартинович съ Юыефою Петра ну товця суп гою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-11",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ деваноста го года Января двадцать оерваго дня, въ Плунгянскомъ Р.К. Приходсномъ Костелѣ Викарнымъ Кс. Юзефовичемъ окрещенъ Младенецъ именемъ Анна, Со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Ворненской волости Яна и Маріяны изъ Варнялисовъ бочдановичей, законныхъ Супруговъ доч одившаяся 1890 года января 11го дня, въ деревни Кепуряны сего Прихода. -",
+    "godparents": "Вос пріемниккми были Дворяне Семео Мартинович съ Юыефою Петра ну товця суп гою"
+   }
+  },
+  {
+   "row_id": "0194_L5",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "priest": {
+     "value": "ККс: Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Зузанна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Игнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Викиторій",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Диборнсовъ Алима со",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 19,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лукняны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-19",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Января двадцатъ перваго дня, въ Плунгянскол Р.К. Приходсхомъ Косте лѣ Викарнымъ ККс: Юзефовичемъ окрещенъ Мла денецъ именемъ Зузанна, совсѣми обрядами Таин",
+    "parents": "Крестьянъ Плунгянской волости Игнатія и Вик и торій изъ Диборнсовъ Алима сов аконныхъ супруговъ дочь родившая -ся 1890 года Января 19дня. в деревни Лукняны -сего Прихода. -",
+    "godparents": "Восп, ніемника -ми икм Ю.зесъшаимиись ся Вероки кою Али - ъ мо вноі деви цею."
+   }
+  },
+  {
+   "row_id": "0194_R1",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Францишекъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Торанской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Шгни тій Руйбисъ -съ Катартиною Витково вдовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-22",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ девяностаго оба Января двадцать третьяго дня, въ ПлунКянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ КсЮзефовичемъ окрещенъ Младенецъ именемъ Фран цишекъ Со всѣми обрядами Таинства.-",
+    "parents": "Крестьянки Торанской воло сти Агаты завец ко вны незаконно ронденный Сынъ ро дившійся 1890 года Января 22го дня, въ Мнѣ Плунгяны сего При хода. -",
+    "godparents": "Воспріемникамй были Шгни тій Руйбисъ -съ Катартиною Витково вдовою."
+   }
+  },
+  {
+   "row_id": "0194_R2",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Брониелава",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Андрея",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Филомены",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Крыповъ Венгаліовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Венгалисъ съ зузанною Домаза Крина супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-23",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ деваностаго года Января овадцѣть Третьяго дня в Плунгянскомъ Р.К. Прих одскомъ Костемъ Кастоятелемъ Кс. Пстиевичемъ окрещенъ Младе нецъ именемъ Брониелава. Со всѣми обрядами Та",
+    "parents": "Крестьянъ Плунгянской волости Андрея и Филомены изъ Крыповъ Венгаліовъ, законныхъ Супруговъ дочь родившаяся 890 года Января 23го дня, въ Мнѣ Плунгяны сего Приинства. хода. -",
+    "godparents": "Воспріемникамъ были Петръ Венгалисъ съ зузанною Домаза Крина супругою."
+   }
+  },
+  {
+   "row_id": "0194_R3",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзеено вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Адольфина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "(Плунгя1 Ретовской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Викентія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Рымкевичен Завацкихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Фран цишснъ Рымне вичъ съ Валеріею Савнорисовною дѣ вицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-24",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-Тысяча восемьсотъ девяностаго года Января двадцать четвертаго дня, въ Плунгянскомъ Р.К. Приходскомъ Косте лѣ Викарнымъ Кс: Юзеено вичемъ окрещенъ Младенецъ именемъ Адольфина, совсѣми обрядами Таинства.",
+    "parents": "Крестьянъ (Плунгя1 Ретовской волости Викентія и Анны изъ Рымкевичен Завацкихъ законныхъ Супруговъ дочь родившаяся 1880 года Января 21ъ дня въ Мнѣ Плун -гяны сего Прихода-",
+    "godparents": "Воспріемника ми были Фран цишснъ Рымне вичъ съ Валеріею Савнорисовною дѣ вицею."
+   }
+  },
+  {
+   "row_id": "0194_R3b",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_R3.jpg",
+   "split_from": "0194_R3",
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефата",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Смилингіовъ Петровскихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "village": {
+     "value": "Павсодзѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Тульбинъ съ Антониною станевичевною давицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-25",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяноста го года. Інваря двадцать тятаго дня, въ Плунгянскомъ Р.К. Пиходскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Анна, со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянском волости Юзефата и Барбары изъ Смилингіовъ Петровскихъ законныхъ Супруговъ дочьродившаясЯ 1890 года Енваря 21го дня, въ деревни Павсодзѣ сего Прихода. -",
+    "godparents": "Воспріемниками были Антонъ Тульбинъ съ Антониною станевичевною давицею."
+   }
+  },
+  {
+   "row_id": "0194_R4",
+   "register_year": 1890,
+   "scan": 194,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/plunge-1886-1890/processed/rows/0194_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": "цзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Владиславъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянпи",
+     "source": "model"
+    },
+    "township": {
+     "value": "Корцянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзефъ Валу нисъ съ Магдаменою Домарковною довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-25",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-24",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсттъ девяноста го года Анваря двадцать пятаго дня, въ Плунгянскомъ Р.К. Приходскомъ Ко стелѣ Вокарнымъ Кс. цзефовичемъ окрещенъ Младенецъ именемъ Владиславъ Со всѣми обрядами Таинства.",
+    "parents": "Крестьянпи Корцянской волости Барбары Повловской, незаконно рождсыныи Сынъ родившійся 1890 года Января 24го дня, въ деревни Воиткяхъ. Корцянскаго прихода. -",
+    "godparents": "Воспріемниками были Юзефъ Валу нисъ съ Магдаменою Домарковною довицею."
+   }
+  },
+  {
+   "row_id": "0195_L1",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "дранцишекъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянско",
+     "source": "model"
+    },
+    "father": {
+     "value": "Пранцишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Леоноры",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Кузавасовъ Кумгавеновъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Венгалисъ съ Аполо ніею явлеики совною довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "сяча восемьсотъ девяностаго ода Января двадцатьтятагов ня, в. Плунгянскомъ Р.К. Присодскомъ Костелѣ Викарымъ Кс: Юзитровичемъ окрснъ Младенецъ именемъ дранцишекъ Со всѣмиобябами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон оло сти Пранцишка и Леоноры изъ Кузавасовъ Кумгавеновъ, законныяъ супруговъ Сынъ родивтіися 1820 года Января 25 дня, в Мнѣ Плунгяны сего Прихода. -",
+    "godparents": "Воспріемнинама были Антонъ Венгалисъ съ Аполо ніею явлеики совною довицею."
+   }
+  },
+  {
+   "row_id": "0195_L2",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянск",
+     "source": "model"
+    },
+    "father": {
+     "value": "Игнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "вМариіяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Стонпусовъ Петровснихъ 1",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "village": {
+     "value": "Карвоиніи",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ енгалисъ съ Амеліею Петовскою дѣвицею. да",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-26",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "рыеяча восемссотъ девяностаги да Января двадцать шеаго дня, въ Плунгянском. К. Приходскомъ Костелѣ Викарнымъ Кс: Юзефровичемъ окрещенъ Младенещцъд менемъ Петронеля совеѣми обрядами Таинст ва. -",
+    "parents": "Крестьянъ Плунгянско олости Игнатія и вМариіяны изъ Стонпусовъ Петровснихъ 1законныхъ Супруговъ дочьродившаяся 1890 года Января 25го дня, в деревни Карвоиніи, сего Прихо",
+    "godparents": "Воспріемниками были Казимиръ енгалисъ съ Амеліею Петовскою дѣвицею. да. -"
+   }
+  },
+  {
+   "row_id": "0195_L3",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Азефо висмъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянсхой",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Аготи",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Виденков: Паневіовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "village": {
+     "value": "Юдейки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ Венгались съ Константин Варнелисъсъ Маріяною Шнатія Домарни су пругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-27",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыесяча восемьсотъ девяностаго года Января двадцать седмаго дня, въ Плунгянскѣмъ Р.К. Приходскомъ Костелѣ микарнымъ Кс: Азефо висмъ окрещенъ Младенецъ именемъ Петронеля, со всп и обрядами Таинства.",
+    "parents": "Крестьянъ Плунгянсхой волісти Юзефа и Аготи изъ Виденков: Паневіовъ законныхъ Супруговъ доч родившаяся 1890 года Января 25го дня, въ деревни Юдейкисего -Прихода. -",
+    "godparents": "Воспріемниками были Казимиръ Венгались съ Константин Варнелисъсъ Маріяною Шнатія Домарни су пругою."
+   }
+  },
+  {
+   "row_id": "0195_L4",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзсфовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Констанція",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мардо",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Ксендзъ Антонъ Юефовичъ съ Аиксан дрою Педговдовою вдовон",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-27",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-26",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Высяча восемьсотъ девяностаго года Января двадцать седмаго бня въ Плунгянскомъ р В.К. ПриходскомъКостелѣ Викарнымъ Кс. Юзсфовичемъ окрещенъ Младенецъ име немъ Констанція, со всѣ ми обрядами Таинства. су",
+    "parents": "Крестьянъ Плунгянскои вло сти Юзефраи Леоноынзъ Ваиткусовъ Миламіовъ, законныхъ &Супруговъ дочь родившаясся 1890 года Января 26 -дня, въ деревни Мардо Сего Прихода. -",
+    "godparents": "Воспріемниками были Ксендзъ Антонъ Юефовичъ съ Аиксан дрою Педговдовою вдовон."
+   }
+  },
+  {
+   "row_id": "0195_L5",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 29,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "а",
+     "source": "model"
+    },
+    "township": {
+     "value": "Крестьянъ Корцянсконъ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "village": {
+     "value": "Альксняны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-29",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-28",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяност го года Января двадцать девятаго. дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викараымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Янъ Со всѣми обрядами Таны ства. -",
+    "parents": "а Крестьянъ Корцянсконъ воло сти Францишка и Филомены иѣъ Кловасовъ Дауконтовъ законныхъ Супруговъ сынъ родившіися 1890 года Января 28го дня въ деревни Алькснянысего прихода. -",
+    "godparents": "Воспремникамиѣла Янъ Клова съ Барбо рою Кло во вною бавок"
+   }
+  },
+  {
+   "row_id": "0195_R1",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 30,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефеовиче",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Домининъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "village": {
+     "value": "Капсудзѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кинценты Луковски съ Людвикою сен кевиче Тною дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-30",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-28",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ девянонаго года Января тридцатаго дня, въ Плунгянском Р.К. Приходскбмъ Костелѣ икарнымъ Кс: Юзефеовичемъ крещенъ Младенецъ менемъ Домининъ со всѣси обрядами Таинства-",
+    "parents": "Крестьянъ Бернатовскон вомости Доминика ъи Маріянынзъ Латаковъ Бѣлевскихъ за кон ныхъ Супруговъ ынъ родившійся 1890 года Января 28го дня, П дерев нѣ Капсудзѣсего Прихода",
+    "godparents": "Воспріемнинами были Кинценты Луковски съ Людвикою сен кевиче Тною дѣвицею .-"
+   }
+  },
+  {
+   "row_id": "0195_R2",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 30,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефови чемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріяна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Тельтевскихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мѣщанъ Владислѣва и Анны изъ Фишеровъ Янневичеи, законныхъ Супру говъ дочь родившаяся ъ 1890 года Января 21го дня въ Мгѣ Плунгяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Дворяне Флоріянъ Стра винскій съ Маріяною Транъдѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-01-30",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-01-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемсотъ девянотаго годаЯнваря тридцата го дня, въ Плунгянскомъ К. Приходекомъ Костелѣ Винарнымъ Кс: Юзефови чемъ окрещенъ Младенец именемъ Марія на, совсѣми обрядами Т.а аинс Мѣсяцъ",
+    "parents": "Тельтевскихъ Мѣщанъ Владислѣва и Анны изъ Фишеровъ Янневичеи, законныхъ Супру говъ дочь родившаяся ъ 1890 года Января 21го дня въ Мгѣ Плунгянысего тва. -прихода.Февраль. 11",
+    "godparents": "Воспріемниками были Дворяне Флоріянъ Стра винскій съ Маріяною Транъдѣвицею."
+   }
+  },
+  {
+   "row_id": "0195_R3",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимиръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскоб",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "village": {
+     "value": "Катсудза",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ Лукошюс съ Анною сируціо вою вдовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-01",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячавосемьсотъ девяностаго года Февраля перваго дня, въ Плунгянскомъ Р.К. Прих одскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Казимиръ, со веѣми сбряоами Таинства. -",
+    "parents": "Крестьянки Плунгянскоб волости Праснльды Мончевны незаконнорожденныи Сынъ родившійся 1890 года Феораля 1го дня, въ деревни Катсудза сего Трихода. -",
+    "godparents": "Воспріемниками были Казимиръ Лукошюс съ Анною сируціо вою вдовою -"
+   }
+  },
+  {
+   "row_id": "0195_R4",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Тадеутъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крест:янъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянеком",
+     "source": "model"
+    },
+    "father": {
+     "value": "Тадсуна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Доминцели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Русіовъ ор вилло въ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Францитекъ Корвиллосъ Анною чесновскою дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-02",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Февраля второго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Тадеутъ, совсѣми обрядамиса-",
+    "parents": "Крест:янъ Плунгянеком волости Тадсуна и Доминцели изъ Русіовъ ор вилло въ, законных супруговъ Сннъ родившійся 1891 года Феораля 2го дня, въ Мвг Плунгяны сего Прихвда. -",
+    "godparents": "Воспріемниками были Францитекъ Корвиллосъ Анною чесновскою дѣвицею."
+   }
+  },
+  {
+   "row_id": "0195_R5",
+   "register_year": 1890,
+   "scan": 195,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/plunge-1886-1890/processed/rows/0195_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовскон ть",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "воже",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзефъ Мончисъ съ Ельтбѣтою Винентія Антулиса Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячавосемесотъ девяностаго года Февралятреть я го дня, въ Плунгянскомъ д.К. Прих одскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Антони, со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Бернатовскон ть-волости Юзефка и Филоменыизъ Венцкусовъ Саусерисовъ, законныхъ супруговъ Сынъ родившійся 1890 года Феьраля зго дня, въ деревни воже, сего прихода. -",
+    "godparents": "Воспріемниками были Юзефъ Мончисъ съ Ельтбѣтою Винентія Антулиса Супругою."
+   }
+  },
+  {
+   "row_id": "0196_L1",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефеоичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францинна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Кататѣтаны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Крыкщьокасов Стонкусовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Лунняны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Криищѣкасъ съ Пет юнелею Августина Моцку -са супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ынеяча восемьсотъ де ваностагоъ ода Февралячетвертаго дня, ъ Плунгянскомъ Р.К. Прих одекомм Костелѣ Викарнымъ Кс: Юзефеоичемъ окрещенъ Младенецъ менемъ Петръ, со веими об -ядами Таинства. -",
+    "parents": "Кестьянъ Плунгянскои воло В сти Францинна и Кататѣтаны изъ Крыкщьокасов Стонкусовъ, зоконныхъ Супруговъ Сынъ родившійся 189в года Февраляз:о дня въ дерев иЛунняны сего Прихода.",
+    "godparents": "оспріемникамы были Петръ Криищѣкасъ съ Пет юнелею Августина Моцку -са супругою."
+   }
+  },
+  {
+   "row_id": "0196_L2",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефто вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернато вскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "н Давлисовъ Давгинтисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "village": {
+     "value": "рерислѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "домининъ Янковскійсъ саломею Давлисовною дѣвоцею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-04",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ де вяностаг оба Феврася четвертаго дня, ПлунгянскомъР.К. Приходеком оетеми Викарнымъ Кс. Юзефто вичемъ окременъ Младенецъ име немъ Петръ со всеми обядами Таинства. -",
+    "parents": "Крестьянъ Бернато вскои воло сти Казимира и Анны изъ н Давлисовъ Давгинтисовъ, законныхъ Супруговъ Сынъ родившіися 1890 года невраля 2о дня, въ древни рерислѣ сего Прихода. -",
+    "godparents": "-Воспріемникама были домининъ Янковскійсъ саломею Давлисовною дѣвоцею."
+   }
+  },
+  {
+   "row_id": "0196_L3",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефровъчемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Маріяна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Корцянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "village": {
+     "value": "Стонаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзетъ Павъ шолисъ съ Констанціею Леона Стольнеса Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-04",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго ода Февраля четвертаго дня, въ Плунгянскомъ Р.К. Приходекомъ Костемиь Викарнымъ Кс:Юзефровъчемъ окрещенъ Младенецъ именемъ Маріяна, со всѣмы ро обрядами Таинства. -",
+    "parents": "Крестьянъ Корцянскои валости Юзефа и Адольтриныпъ ъ Рацевичен Ваишнорасн законныхъ Супруговъ дѣ родившаяся 1890 года Февроля 4го дня, въ деревни Стонаицѣ сего прихода. -",
+    "godparents": "Воспріемникомо былиЮзетъ Павъ шолисъ съ Констанціею Леона Стольнеса Супругою."
+   }
+  },
+  {
+   "row_id": "0196_L4",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "priest": {
+     "value": null,
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Величковъ Пильвиковъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "village": {
+     "value": "Кальнитки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Пикодемъ Юрншусъ съ ъПетронелею реоса супугою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-05",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ оевяностаго7 ода Февраля пятаго дня, въ Плунгя нскомъ Р.К. Приходскомъ Костелѣ Винпуннмъ Кс: Юзефтровачемъ окрешенъ Младенецъ име немъ Казимира, со всѣми обФъ рядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон воло сти Станиславаи Петронели изъ Величковъ Пильвиковъ, законныхъ Супругов дочь родившаяся 1890 года б. Февраля 4го дня, въ деревни Кальнитки, сего Прихода.-",
+    "godparents": "Воспріемниками были Пикодемъ Юрншусъ съ ъПетронелею реоса супугою."
+   }
+  },
+  {
+   "row_id": "0196_L5",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефтго вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Агата",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянско",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Янковскихъ Залециихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "village": {
+     "value": "Повсодзѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзефъ Юшко съ Теодорою Василевскою дѣ вицесю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-06",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Февраля шестаго дня, въ ПлунгянскомъР.К. Приходскомъ Костеян Винарнымъ Кс: Юзефтго вичемъ окрещенъ Младененименемъ Агата, Совсѣмиоб рядами Таинства. -",
+    "parents": "-Крестьянъ Плунгянско волости Юзефа и Анны изъ Янковскихъ Залециихъ -зако нныхъ Супруговъ дочь роъдившаяся 1890 года Февраля -5го дня, въ деревни Повсодзѣ сего прихода. -",
+    "godparents": "Воспріемнии были Юзефъ Юшко съ Теодорою Василевскою дѣ вицесю."
+   }
+  },
+  {
+   "row_id": "0196_L6",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемь",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ріяна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Ваиновскихъ Урниххсовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Уупк",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "иисіи Юшко съ Разаліеюо Шаиинисовн ю доваѣцси",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-07",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Февраля седмаго дня, въ Плунгянскомъ Р.К. Вика/ Приходскомъ Костелѣ Ви карнымъ Кс: Юзефовичемь окред щенъ Младенецъ именемъ ріяна, Со всѣми обрями Таинства. -",
+    "parents": "Крестьянъ Бернатовской волости Юзефра и Анны изъ Ваиновскихъ Урниххсовъ законныхъ Супруговъ дось роившаяся 1890 года Февраля вго дня, въ деревни Уупк сего прихода. -",
+    "godparents": "Воспріемниками были иисіи Юшко съ Разаліеюо Шаиинисовн ю доваѣцси."
+   }
+  },
+  {
+   "row_id": "0196_R1",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзеовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Едвартъск.миобрядамиТаиыства",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Росіенскихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Мищанъ уетова и Барбары изъ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "раля ровн 7го дня, въ Олсняны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Констанпинъ Воловнъ Анною Келеою довацею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ деваностаго ода Февраля десятаго дня, въ лунгянскомъ Р.К. Приходекем остелѣ Випарнымъ Кс: Юзеовичемъ окрещенъ Млодееъ именемъ Едвартъ ск.ми обрядами Таиыства.",
+    "parents": "Росіенскихъ Мищанъ уетова и Барбары изъ Воловичей Келеровъ, заомныхъ Супруговъ Сынъ родв іися 187о года ревраля ровн 7го дня, въ Олсняны -сего Прихода. -",
+    "godparents": "оспріемниками ыли Констанпинъ Воловнъ Анною Келеою довацею -"
+   }
+  },
+  {
+   "row_id": "0196_R2",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "priest": {
+     "value": "с:Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Емилія",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Парвои ие",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Францишенъ Парвонійна съ Маякою ранцитка Бальсиса -супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-10",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "неяча восемьсотъ девяностаго ода Февраля десятаго дня, въ Плнгянскомъ Р.К. Приходкомь Костелт Викарнымъ с:Юзефовичемъ окрещенъ Мласнецъ именемъ Емилія, Совсѣни обрядами Таинсте ва. -",
+    "parents": "рестьянъ Плунгянскон воло ти Казимираи гнаци цъ Баровскихъ Вашкисовъ аконныхъ Супруговъ дочь родившаяся 1890гоба Февраля го дня, въ деревни Парвои ие сего Прихода. -",
+    "godparents": "ВоспріемнинаМи были Францишенъ Парвонійна съ Маякою ранцитка Бальсиса -супругою."
+   }
+  },
+  {
+   "row_id": "0196_R3",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Домитцеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянекон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Стол гѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Мартишюсъсъ оминцелею Себалевною вдовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Пысяча восемьсотъ девяноста гоМ года Февраля одннадцатаго онся Плунгянскімъ Р.К. Прих одекомъ костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младнецъ именемъ Домитцеля, со веими обрядами Таинст ва--",
+    "parents": "рестьянъ Плунгянекон во лости Петра и Еввынъ Яновичей Кингисовъ, занонныхъ Супруговъ доч родившаяся 1830 года Ревра ля 10го дня въ деревни Стол гѣсего Прихода. -",
+    "godparents": "Воспремниками были Антонъ Мартишюсъсъ оминцелею Себалевною вдовою."
+   }
+  },
+  {
+   "row_id": "0196_R4",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефро вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Лесонора",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "village": {
+     "value": "Каспаритика",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Алчевскій съ Барбарон Антона Раи буниса Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-13",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысята восемьсотъ девяностаго года Февраля тринадцатаго дня, въ Плунгянскомъ Т.К. Прих о скомъ Костелѣ Винарнымъ Кс: Юзефро вичемъ окрещенъ Младенецъ именемъ Лесонора, совеѣми обрядами Таинст ва.",
+    "parents": "Крестьянки Бернатовской волости Анны Пиниковны не законно рот денная дочь родившаяся 1890 года Фревраля 12 дня въ деревни Каспаритика сего Прихода. -",
+    "godparents": "Воспріемниками были Петръ Алчевскій съ Барбарон Антона Раи буниса Супругою. -."
+   }
+  },
+  {
+   "row_id": "0196_R5",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефровичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мернелѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзефъ Нармонтъ съ Вероникою Такисовною совиуею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-13",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-12",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ деваностаго года Февралятринадцатаго дня, въ Плунгянскомъ Р.К. При-нз ходскомъ Костелѣ Викарнымъ Кс: Юзефровичемъ окрещенъ Мла денецъ именемъ Петронеля, со веѣми обрядами Таинства.",
+    "parents": "Крестьянъ Бернатовскон волости Винцента и Леоноры гТавлисовъ Шарисовъ, нъзаконныхъ Супруговъ дочь родившаяся 1890 года Февраля 12го дня, въ деревни Мернелѣ сего Прихода. -",
+    "godparents": "Восприсмнииами были Юзефъ Нармонтъ съ Вероникою Такисовною совиуею."
+   }
+  },
+  {
+   "row_id": "0196_R6",
+   "register_year": 1890,
+   "scan": 196,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0196_R6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Юзефъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Пинтелишском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Лукотіовъ Яковсц кихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 15,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Доминикъ Лукошнсъ съ Емиліею Викентія Пашковскагосупругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-13",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-15",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "-Тысяча восемьсотъ девяностаго года Февраля тринадцатаио дня въ Плунгянскомъ Р.К. Прихобскомъ Костемѣ Викарнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Юзефъ, совсѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Пинтелишском волости Юзефа и Анны изъ Лукотіовъ Яковсц кихъ, законныхъ Супруговъ сынъ родившіися 1890 года Февраля 15го дня, въ февни Кавшаны сего Прихода. -",
+    "godparents": "Воспріемниками были Доминикъ Лукошнсъ съ Емиліею Викентія Пашковскагосупругою."
+   }
+  },
+  {
+   "row_id": "0197_L1",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Барбаа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Милонаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Леонардъ Кенетовичъ съ Барбарою -Ваитка те дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-14",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяно -К. стаго года Февраля четирнадцатаго дня, въ Плунгяыскомъ Р.КК. Приходскомъ Костелѣ Вокарнымъ Кс. Авгулисомъ окрещенъ Младенецъ именемъ Барба а Совсамиобрядами Таии",
+    "parents": "рестьянъ Плунгянской волости Перонима и Теи дорыизъ Рудо вичовъ Бернотасовъ зано нныхъ Супругов дочь родившаяся 1890 года Фрев раля Пъо дня, въ деревни Милонаицѣ сего Прихода. ства. -",
+    "godparents": "Воспріемниками были Леонардъ Кенетовичъ съ Барбарою -Ваитка те дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0197_L1b",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_L1.jpg",
+   "split_from": "0197_L1",
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "нзефо вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Юляна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянск об",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Ла вриннов Урбоновъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "village": {
+     "value": "Покутовяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Пюдвинъ Рымневич съ 1лимніею Адама Зинневича Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-18",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъде вяноста го года Февраля восемьнадцатаго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: нзефо вичемъ окрещенъ Младенецъ именемъ Юляна, со всѣми обгядами Таинства. -",
+    "parents": "Крестьянъ Плунгянск об воло сти Антонаи Птъ ронели изъ Ла вриннов Урбоновъ, законныхъ Супруговъ дочь родившаяся 1890 года Февраля 17го дня, въ деревни Покутовяны сего Прихода. -",
+    "godparents": "Воспріемниками былПюдвинъ Рымневич съ 1лимніею Адама Зинневича Супругою."
+   }
+  },
+  {
+   "row_id": "0197_L2",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 20,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Ю зефовиемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Леонора",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казимиръ Драншасъ съ Аннѣю шаиисовноо иіовоцею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-20",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Фревраля двадца таго дня, въ Плунгянскомъ РК. Приходскомъ Костелѣ Викарнымъ Кс:Ю зефовиемъ окрещенъ Младенецъ именемъ Леонора, со всѣми об ядами Таинства. б",
+    "parents": "Крестьянъ Плунгянскои воло сти Францитка и Марціяныиъ Паргоъ нисовъ Кузавасовъ, занонныхъ Супруговъ -дочь родившаяся 187 года Февраля 19го дня, въ М Клунгяны сего Прихо да.",
+    "godparents": "Воспріемниками были Казимиръ Драншасъ съ Аннѣю шаиисовноо иіовоцею."
+   }
+  },
+  {
+   "row_id": "0197_L3",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Домыника",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агаты",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "юрчисовъ, Павицкихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Игнатіи Боровсній съ Антониною Доминиа. Вии пуса Супууугам",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-22",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тнсяча восемьсотъ девя ностаго года Певраля двадцать втораго дня, въ Плунгянскомъ Р.К. Пиходскомъ Костелѣ Викарным Кс: Юзефовичемъ окреценъ Младенецъ имП немъ Казимира совсѣми об рядами Таинства",
+    "parents": "Крестьянъ Плунгянскои волости Домыника и Агаты изъ юрчисовъ, Павицкихъ закоыныхъ Супруговъ дѣчь родившаяся 1890 года Февраля 21го дня, въ Мнг цунгяна сего трихода.",
+    "godparents": "Воспріемникамо были Игнатіи Боровсній съ Антониною Доминиа. Вии пуса Супууугам."
+   }
+  },
+  {
+   "row_id": "0197_L4",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Андрися",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Теодоры",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мешковскихъ Кнстисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ковшяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ТадеумъМетновсніисАнною Андериковною дѣв. деоа",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяно К стаго года Февраля двадцаті третьяго дня, въ Плунгянскомъ б.К. Приходскомъ Костелѣ Викарнымъ Кс: Юзефовичемъ окрещенъМладенец именемъ Казимира, Совсѣми обрядами Таинства",
+    "parents": "рестьянъ Плунгянской во гости Андрися и Теодоры изъ Мешковскихъ Кнстисовъ, законныхъ Супруговъ дочь родившаяся 1890 года Февраля 23го дня, въ деревни Ковшянысего прихода. ",
+    "godparents": "Коспріем. никами хыли ТадеумъМетновсніисАнною Андериковною дѣв. деоа."
+   }
+  },
+  {
+   "row_id": "0197_R1",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Ав цлисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Павелъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянско",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "village": {
+     "value": "Гулаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Рамоносъ съ Петронелею Русате дъ вицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Пысяча восемьсотъ девяно-І таго года Февраля двадать третьягб дня, въ Плунянскомъ Р.К. Приходскомъ Состелѣ Викарны мъ Кс Ав цлисомъ окрещенъ Младенецъ именемъ Павелъ, со всмъ ми обнядами Таинства.",
+    "parents": "Крестьянъ Плунгянской олости Іосифа и Анны зБальсевичовъ Бартаин совъ законныхъ Сутпруговъ сынъ родивиііся 1890 года ревраля 23о дня, въ деревни Гулаицѣ сего Прихода. -",
+    "godparents": "оспріемниками были Петръ Рамоносъ съ Петронелею Русате дъ вицею."
+   }
+  },
+  {
+   "row_id": "0197_R2",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгу щисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Пиколаи",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Фрестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ворненскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "village": {
+     "value": "Кансудзи",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "игнатіі Тупеи но съ Марія ною Каль никате дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-22",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсотъ девяноста-І го года Февраля двадцать цетьяго дня, въ ПлунгянскомъР.К. Приходсномъ Костели Винарнымъ Кс: Авгу щисомъ окрещенъ Младенец именемъ Пиколаи, со всѣни обрябами Таинстива.",
+    "parents": "Фрестьянъ Ворненскои волости Іосифа и Теодори зъ Мартинковъ Кальни ка совъ,законныхъ Супруговъ сынъ родившійся 1890 года г Февраля 22о дня, въ деневни Кансудзи сего",
+    "godparents": "Воспріемниками были игнатіі Тупеи но съ Марія ною Каль никате дѣвицею"
+   }
+  },
+  {
+   "row_id": "0197_R3",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Азеовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антон",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернато вской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "village": {
+     "value": "Лонносла вкѣъ а",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Бенедиктъ Тройъ новскі съ Іозефон Іоникоъ нон дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-24",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Февраля двадцать четвершаго дыя, въ Плунъ гянскомъ Р.К. Приходскъмъ Костелѣ Викарнымъ Кс. Азеовичемъ окрещенъ Младенецъ именемъ Антони. всѣми обрядами Таинств",
+    "parents": "Крестьянъ Бернато вской вомости Антона и Антонины тзъ Вагноріовъ Троиновскихъ законныъ супруговъ Сынъ родившіися 1890 года Февраля2К дня въ деревни Лонносла вкѣъ а -сего Прихода. -",
+    "godparents": "Воспріемника ми были Бенедиктъ Тройъ новскі съ Іозефон Іоникоъ нон дѣвицею"
+   }
+  },
+  {
+   "row_id": "0197_R4",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 24,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефо вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Александра",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Дворянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ковшя ны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кеены Янъ Авгулисъ съ Бронисла вою Кроцкою дѣводс",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-24",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемісотъ девяностаго года Февраля двадцать четвертаго дня, въ Плунгян скомъ Р.К. Приходскомъ Костелѣ ВикарнымъКс: Юзефо вичемъ опрещенъ Младенецъ именемъ Александра, со всѣмиобрядами Таинства. -",
+    "parents": "Дворянъ Каѣтана-Поха Адама и Людвини -изъ Узневичей Піотров скихъ, законныхъ Супруговъ дочь родившаяся 1890 года Февраля21. дня въ деревни Ковшя ны сего Прихода. -",
+    "godparents": "Воспріемнини ми были Кеены Янъ Авгулисъ съ Бронисла вою Кроцкою дѣводс."
+   }
+  },
+  {
+   "row_id": "0197_R5",
+   "register_year": 1890,
+   "scan": 197,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0197_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефо ви чемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Агнетка",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Воивилловъ Таубисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "village": {
+     "value": "сталгѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Шгна тій Таубисъ с Агнешкою Шгнатія Таубиса супруою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-25",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-23",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячавосемьсотъ девяно стаго года Февраля двадцать пятаго днся, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Ви карнымъ Кс: Юзефо ви чемъ окрещенъ Младенецъ именемъ Агнетка со всѣми обрядами Таинетва. -",
+    "parents": "Крестьянъ Плунгянском волости Юзефа и Анны изъ Воивилловъ Таубисовъ, законныхъ Супруговъ дочь родившая ся 1890 года Февраля 23го дня, въ деревни сталгѣ сего Прихода.",
+    "godparents": "Воспріемниками были Шгна тій Таубисъ с Агнешкою Шгнатія Таубиса супруою. "
+   }
+  },
+  {
+   "row_id": "0198_L1",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефровиче",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Петра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Пешронели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Лупотіовъ Нармонтовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model"
+    },
+    "village": {
+     "value": "яздаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Станиславъ Давгентисъ съ Анно ю Пармон то внон дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-25",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-21",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Фе враля Пвадцать пята го дня. въ Плунгянскомя Р.К. Приходскомъ Костелѣъ икарнымъ Кс. Юзефровичемъ крещенъ Младенецъ име немъ Анна, со всѣми обрядами Таинетва.",
+    "parents": "Крестьянъ Плунгянском волости Петра и Пешронели изъ Лупотіовъ Нармонтовъ законныл Супруговъ дочь родившаяся 1890 года Февраля 21го дня, въ деревни яздаицѣ сего Прихода.-",
+    "godparents": "Воспріемниками были Станиславъ Давгентисъ съ Анно ю Пармон то внон дѣвицею."
+   }
+  },
+  {
+   "row_id": "0198_L2",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Людвниъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Тельшевскихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "village": {
+     "value": "Миъ Плунгяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Янъ Яцевичъ съ Теклею Вацлава закршевскаго супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемьсотъ девяноста го го да Февраля двадцать нятаго дыя, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс Авгулисомъ опрещенъ Кладенецъ именемъ Люд вниъ, Со всѣмиобрядами аинства.",
+    "parents": "-Тельшевскихъ Мѣщанъ Людвика и Іозефы изъ Капріовъ Лейтвейзисовъ законныхъ Супругоб дочо сынъ родившіися 1890 года Февраля 2о дня, въ офревни Миъ Плунгянысег Прихода. -",
+    "godparents": "Во спріемниками были Янъ Яцевичъ съ Теклею Вацлава закршевскаго супругою."
+   }
+  },
+  {
+   "row_id": "0198_L3",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Веронина",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Дворянни",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "village": {
+     "value": "Эесуна",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Дворянѣ Казимръ Тырнгиле вичъ съ Аенѣм коюо Куповскою дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-26",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаг года Февраля двадцать шестаго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Авгулисомъ окрещенъ Младенецъ именемъ Веронина, Со всѣми обрядами Таинства. -",
+    "parents": "Дворянни зофій Мор ковскон, незаконнорожденная доче родившаяся 1890 года Февраля 25го дыя, въ деревни Эесуна сег бхроідда.-",
+    "godparents": "-Воспріемнина ми были Дворянѣ Казимръ Тырнгиле вичъ съ Аенѣм коюо Куповскою дѣвицею."
+   }
+  },
+  {
+   "row_id": "0198_L4",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзсфо вичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскомъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Магдамены",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Пишилиснаука-К тисовъ Валунсисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "village": {
+     "value": "Видеини",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Кролисъ съ Розаліею Михало вспою. довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-27",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-27",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Фревраля двадцатьседмаго дня. въ Плунгянскомъ Р.К. Приходскбмъ Костемѣ, Викарнымъ Кс. Юзсфо вичемъ окрещенъ Младенецъ именемъ Анна Со всѣми обядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскомъ волости Юзефа и Магдамены изъ Пишилиснаука-К тисовъ Валунсисовъ, законныхъ Супруговъ дѣ родившаяся 1890 года Февраля 27одня, въ деревни Видеини сего Прихода. -",
+    "godparents": "Воспріемника ми были Петръ Кролисъ съ Розаліею Михало вспою. довицею."
+   }
+  },
+  {
+   "row_id": "0198_L5",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефовичемъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Евва",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Антонины",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Бим вскияъ Буивидовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "village": {
+     "value": "Яздаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ли Францишекъ Бимвскіобсъ Анною вилевекою доваусю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-27",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-27",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяно стаго года Февралядвад цатьседмаго дня, въ Плутгянскомъ Р.К. Прихоскимъ Костелѣ Винпрнымъ Кс: Юзефовичемъ окрещенъ Младенецъ именемъ Евва, совееми обрядами Та-",
+    "parents": "Крестьянъ Плунгянской волости Юзефа и Антонины изъ Бим вскияъ Буивидовъ законныхъ Супруговъ дочь родившая Ся 1890 года Февраля 27о дня въ деревни Яздаицѣ сего Прихода. -",
+    "godparents": "Воспріемниками былли Францишекъ Бимвскіобсъ Анною вилевекою доваусю."
+   }
+  },
+  {
+   "row_id": "0198_R1",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Юзефо висмъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Пет",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Гантелитскомъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Юефа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Магдамны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Ленновскихъ Катонасовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 2,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "village": {
+     "value": "Казо а. -ны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Ксенеъ Антони Юзефо вичъ съ Маіяною Стефановичевною дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-02-28",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-02-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Кысяча восемьсотъ девяноста-І огода Феврѣля двадцать осьмаго дня, въ Плунгянскем Р.К. Приходскомъ Костемѣ зикарнымъ Кс: Юзефо висмъ окрещенъ Младенецъ именемъ Петръ овсѣми обрядами Таинсть. Мѣсяцъ.",
+    "parents": "Крестьянъ Гантелитскомъ Колости Юефа и Магдамны изъ Ленновскихъ Катонасовъ, законныя Супруговъ сынъ родившійся 1890 года Февраля 17го дня, въ деревни Казо а. -ны сего Прихода.Мартъ.",
+    "godparents": "Воспріемника ми были Ксенеъ Антони Юзефо вичъ съ Маіяною Стефановичевною дѣвицею."
+   }
+  },
+  {
+   "row_id": "0198_R2",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулис",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Зузанна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянско",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Тутовтовъ, Ла русовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "village": {
+     "value": "Сталгалѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "в-Казиміръ Тутовтасъ съ Леоно рою Іосифа Страу куса Супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъіеваностаго года Марта вснора со дня, въ Плунгянскомъ Р. К. Прих вдскомъ Костелѣ Викарнымъ Кс: Авгулисомъ прещенъ Младенецъ именемъ Зузанна, Со всѣми обрябаки Таинства. -",
+    "parents": "Кестьянъ Плунгянском оло сти Яна и Анны изъ Тутовтовъ, Ла русовъ, законныхъ супруговъ дочь роднвшая ся 1890 года Марта 1г дня, въ деревни Сталгалѣ сего Прихода. -",
+    "godparents": "Воспріемниками были в-Казиміръ Тутовтасъ съ Леоно рою Іосифа Страу куса Супругою. -"
+   }
+  },
+  {
+   "row_id": "0198_R3",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Валенты",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Корцянском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Шгнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Юліяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Друнгяловъ Будрнсовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ленгири",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Юзефъ будрисъ съ Магдаленоюи Антона Арунгялы Супруго. хода",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-02",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ТПысяча восемссотъ девяностаго года Мартавтоаго дня, въ ПЛунгянскомъ Р.К. Приходскомъ Костелн Викарнымъ Кс: Авгулисомъ окрещенъ Младенецъ именемъ Валенты, со всѣъ ни обрядами Таинства.",
+    "parents": "Крестьянъ Корцянском волости Шгнатія и Юлія ны изъ Друнгяловъ Будрнсовъ, законныхъ супруговъ Сынъ.родившійся 1890 года Марта 1го дня, въ деревни -Ленгири сего При",
+    "godparents": "Воспріемникими были Юзефъ будрисъ съ Магдаленоюи Антона Арунгялы Супруго. хода. -"
+   }
+  },
+  {
+   "row_id": "0198_R4",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Доминцеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернато вско",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "village": {
+     "value": "Поушнѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Бартломеи Столнелисъ съ Людвикѣн Іосиека стропаса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-03",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девянотаго года Марта треть зго дня, въ Плунгянскомъ Р.К. Прих Рдскомъ Костелѣ Викариымъ Кс: Авгулисомъ. окрещенъ Младенецъ именемъ Доминцеля,. Совсѣми обрядами Таинства. -",
+    "parents": "Крестьянки Бернато вско волости Маріяны Столнелисо вны, неза конно ронденная доч роди вшаяся 1818 года Марта 3го дня въ деревни Поушнѣ сего Прихода. -",
+    "godparents": "й Воспріемниками были Бартломеи Столнелисъ съ Людвикѣн Іосиека стропаса супругою."
+   }
+  },
+  {
+   "row_id": "0198_R5",
+   "register_year": 1890,
+   "scan": 198,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0198_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казиміра",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Панатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Еввъ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Терло вскихъ Ванкисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "village": {
+     "value": "Митя -ны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Игнатій ТерловсмійЛ Іозефою Іоахимо Казаровскаго -супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-04",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячи восемьсотъ девяноста го года Марта четвертаго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Авгулисомъ окрещенъ Мла денецъ именемъ Казиміра. Совсѣмиобтядами Таинетва.",
+    "parents": "Крестьянъ Плунгянском воло сти Панатія и Еввъ изъ Терло вскихъ Ванкисовъ законныхъ Супруговъ дочь родившая ся 1890 года Марта 1го дня, Вдеревни Митя -ны сего Прихода.-",
+    "godparents": "Воспріемникаи ми были Игнатій ТерловсмійЛ Іозефою Іоахимо Казаровскаго -супругою."
+   }
+  },
+  {
+   "row_id": "0199_L1",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ялександеръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Дворянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Уерубаицѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Педминасъ съ змиліею Каспера Педвиллы супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Мартачетвертаго дня, въ Плунгянскомъ Р.К. Пиходскомъ Костел Витарнымъ Ке. Авгумисомъ окрещенъ Младенецъ именемъ Ялександеръ, Совсѣни обрядами Таинства.",
+    "parents": "Дворянъ Яна иЭмилій изъ Петрупіовъ Биндвилловъ, законныхъ Супругов Сынъ родивиійся 189огода Марта 1го дня, въ деревни Уерубаицѣ сего брихода.",
+    "godparents": "Воспріемннками были Антонъ Педминасъ съ змиліею Каспера Педвиллы супругою."
+   }
+  },
+  {
+   "row_id": "0199_L2",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгу лсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Казиміръ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьяньъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 2,
+     "source": "model"
+    },
+    "village": {
+     "value": "Виттовяны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іосиеъ Бѣлявсхіи сънляною Юркьта тею давюуею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-02",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяга восемьсотъ девяноста со гоба Мартта четвернаго дня, въ Плунгя нскомъ Р.К. Приходсхомъ костем ВикарнымъКс: Авгу лсомъ окрещенъ Младенецъ именемъ Казиміръ, со всѣми обрядами Таинства. -",
+    "parents": "Крестьяньъ Плунгянскои воль сти Станиславаи Доминцеми пзъ Юрнатіовъ Милю шовъ, законныхъ Супру говъ Сынъ родившійся 1890 гобм Марта2 однявъ деревни Виттовяны сего Прихода",
+    "godparents": "Воспріемниками были Іосиеъ Бѣлявсхіи сънляною Юркьта тею давюуею."
+   }
+  },
+  {
+   "row_id": "0199_L3",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Бырбра",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казиміръ Срибалис съ Анною Антона Бурвиса Купругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-04",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсотъ девяностаго гобда Марша четвертаго дня. въ Плунгянскомъ Р.К. Триходскомъ Костель Викарнымъ КсАвгулисомъ окрещенъ Младенецъ именемъ Бырбра, Со всѣмиобкядами Таинства. -",
+    "parents": "Крестьянъ Плунгянской вело сти Инатія и Теодори исъ шимко въ Бурвисовъ, заком ныхъ Супруговъ дось родившаяся 1890 года Марта 4ъ дня, въ Мне Плунгяны сего Прихода: -",
+    "godparents": "Воспріемниками были Казиміръ Срибалис съ Анною Антона Бурвиса Купругою."
+   }
+  },
+  {
+   "row_id": "0199_L4",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Петронеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мѣмновскихъ Симутисов",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "village": {
+     "value": "Парвойше",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Антонъ Урбанъ съ Леонорою Домаркатею дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-05",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча внсемьсотъ девяністагоъ года Марта пятаго дня, въ Плунгянскомъ Р.К. Прихобскомъ Костелѣ Викарным. Кс: Авгулисомъ окрещенъ Мла денецъ именемъ Петронеля, овсѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскои воло сти Антона и Анны изъ Мѣмновскихъ Симутисов законныхъ Супруговъ дочь родившаяся 1890 года Марта 5го дня, въ деревни Парвойше еего Прихода. -",
+    "godparents": "-Воспріемникями были Антонъ Урбанъ съ Леонорою Домаркатею дѣвицею."
+   }
+  },
+  {
+   "row_id": "0199_L5",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгушсомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Игнатін",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Винентіяи Петронелиизъ Нагроцкихъ шлеинисовъ,законныхъ Супруговъ Сынъ родившіися 1890 года Марта 4го дня, въ деревни Мажсявосы Кулевсекаго Прихоба Плунгянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Пнатіи ЛЧлоча съ Пнетаою нагроцкою давицен",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-06",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-04",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Марта шестаго дня, въ Плунгянскомъ Р.К. Пииходекомъ Костелѣ Викарнымъ Кс: Авгушсомъ окрещенъ Мласнецъ именемъ Игнатін, со встми обрядами Таинства. -",
+    "parents": "Крестьянъ Винентіяи Петронелиизъ Нагроцкихъ шлеинисовъ,законныхъ Супруговъ Сынъ родившіися 1890 года Марта 4го дня, въ деревни Мажсявосы Кулевсекаго Прихоба Плунгянской волости",
+    "godparents": "Воспріемницѣмки дыли Пнатіи ЛЧлоча съ Пнетаою нагроцкою давицен."
+   }
+  },
+  {
+   "row_id": "0199_L6",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_L6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "priest": {
+     "value": "с: Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Пет-сгонеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 5,
+     "source": "model"
+    },
+    "village": {
+     "value": "Уленнѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іо сифъ Бупвидъ съ Агнкшиоіо кранцишка заборскаго супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-06",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-05",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Марта шестаго дня. в Плунгянскомъ Р.К. Прихо скомъ Костелѣ Викарнымъ Кес: Авгулисомъ окрещенъ Младенецъ именемъ Пет-с гонеля  Совсѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянской волости Антона и Барбарыизъ Забетіовъ Кнюкштовъ, законныхъ Су пруговъ дозь родившая. 1890 года Марта 5го днвъ деревни Уленнѣ сего Прихода. -",
+    "godparents": "Воспріемн.ами были Іо сифъ Бупвидъ съ Агнкшиоіо кранцишка заборскаго супругою."
+   }
+  },
+  {
+   "row_id": "0199_R1",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгугисѣмъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Іозефа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовской",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Казиміръ Тыркшлевичъ съ Анѣлею Іосифа Юндзиль супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Рысяча восемьсотъ девяностаго оба Марта шестаго дня, въ лунгянскомъ Р.К. Приходекомъ Костелѣ Викарнымъ Кс: Авгугисѣмъ окрещенъ Младенецъ зменемъ Іозефа, со всѣми ѣрядами Таинства. -",
+    "parents": "Крестьянки Бернатовской волости Еввы Лютиковны, незаконнороне денная дочь родившаяся 1890 года Марта вго дня, въ Маѣ Плунгяны сего Прихода. -",
+    "godparents": "Воспріемниками были Казиміръ Тыркшлевичъ съ Анѣлею Іосифа Юндзиль супругою."
+   }
+  },
+  {
+   "row_id": "0199_R2",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгу мисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "СтаниславъвеѣмиорядамиТаинства",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянеком",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Людовихъ",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Михало вскихъ Мачюи тисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 6,
+     "source": "model"
+    },
+    "village": {
+     "value": "Полусцѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Александеръ Мачюитисъ съ Петронелею Патротайею бовицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-07",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-06",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсстъ девяностаго года Марта седмаго дня, въ лунгянскомъ Р.К. Прих одскомъ Костелѣ Викарнымъ Кс: Авгу мисомъ окрещенъ Младенецъ именемъ Станиславъ веѣми оря дами Таинства-",
+    "parents": "Крестьянъ Плунгянеком волости Іосифа и Людовихъ изъ Михало вскихъ Мачюи тисовъ замонныяъ Супруговъ дочь родившаяся 1890 года Марта6 дня, въ беревни Полусцѣ сего Прихо",
+    "godparents": "Воспріемниками были Александеръ Мачюитисъ съ Петронелею Патротайею бовицею."
+   }
+  },
+  {
+   "row_id": "0199_R3",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казиміра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петсгронели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Липшіовъ Рага инисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Олксняны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Мацѣй Бумбло вскій съ Петронелею Петка шею дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тисяча восемьсттъ девяностаго года Марта восьмаго дня, въ Плунгянскомъ Р.К. Приходском Костелѣ Викорнымъ Кс: Авумисомъ окрещенъ Младенец именемъ Янъ со ссѣми об ря дами Таинетва. -",
+    "parents": "Крестьянъ Плунгянскон воло сти Казиміра и Петсгронели изъ Липшіовъ Рага инисовъ, законныхъ ъ Супруговъ Сннъ родившійе 18.30 года Марта 7го дня въ деревни Олксняны сего Прих ода.",
+    "godparents": "Воспріемниками были Мацѣй Бумбло вскій съ Петронелею Петка шею дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0199_R4",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгугисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Евва",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Тельтевскихъ",
+     "source": "model"
+    },
+    "township": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 8,
+     "source": "model"
+    },
+    "village": {
+     "value": "Касперитки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Адамъ Бумблисъ съ Доминцелею Яна Войтневича супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-08",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-08",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "нсяча восемьсотъ девяностаго года Марта вісьмаго дня, въ Плунгянскомъ Р.К. Приходском Костелѣ Винарнымъ Кс: Авгугисомъ окрещенъ Младенецъ именемъ Евва, со всѣми обрядами Таинства. -р",
+    "parents": "Тельтевскихъ Мѣманъ Антона и Барбары изъ ъ Пениніовъ Райбужисовъ законныхъ Супруговъ дочь родившаяся 1890 года Марта 8го дня, въ деревни Касперитки сего Прихода. -",
+    "godparents": "Воспріемниками были Адамъ Бумблисъ съ Доминцелею Яна Войтневича супругою. -"
+   }
+  },
+  {
+   "row_id": "0199_R5",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 11,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ельжбыта",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Торанскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іоспфа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "БудріовъЗовадзски",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 9,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кеендъ хъ Янъ Авгулисъ съ Людвикою Плковскою дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-11",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-09",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "рысяча восемьсотъ девяноста го года Марта одинадцатаго дня, въ Плунгянскомъ РК. Приход скомъ Кістелѣ Викарнымъ Кс. Авгумисомъ окрещенъ Младесцъ именемъ Ельжбыта, со всѣми обрядами Таинств.",
+    "parents": "Крестьянъ Торанскон волости Іоспфа и Анны изъ БудріовъЗовадзски законныхъ Супруговъ дочь родившаяся 1890 года Мар. та 9го дня, въ Миѣ Плуна. гянысего Прихода.-",
+    "godparents": "Воспріемниками были Кеендъ хъ Янъ Авгулисъ съ Людвикою Плковскою дѣвицею."
+   }
+  },
+  {
+   "row_id": "0199_R6",
+   "register_year": 1890,
+   "scan": 199,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0199_R6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 11,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "зенонъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Игнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агненки",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Палкотіовъ Юргутис овъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Константинъ Юргуовъ тисъ съАнною Юрнатею довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-11",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча воссмьсотъ де вяноста го года Марта одинадцатаго дня въ Плунгянскомъ Р.К. Приход скомъ Костелѣ Викарнымъ Кс: Авгумисомъ окрещенъ Мла декецъ именемъ зенонъ со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон волости Игнатія и Агнен ки изъ Палкотіовъ Юргутис овъ,законныхъ су пруъ сынъ родившійся 1890 года Марта 1о дня, въ Маѣ Плунгя нисего Прнлода",
+    "godparents": "Воспріемниками были Константинъ Юргуовъ тисъ съАнною Юрнатею довицею -"
+   }
+  },
+  {
+   "row_id": "0200_L1",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": ". Ав гмисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Францишенъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іоспфа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Вероники",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "шимховъ Рудисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ Рудисъ съ Доминцелею Купульскою ѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго соба Мартачетирнадцатаго ня, въ Плунгянскомъ Р.К. ТПриходскомъ Костелѣ Викарнымъ Кс:. Ав гмисомъ окрещенъ Младенецъ именемъ Францишенъ, совсѣнн обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскои воли сти Іоспфа и Вероники изъ шимховъ Рудисовъ, законныхъ Супруговъ сынъ родившійся 1891 года Марта. 1о дня, въ деревни Лаздени імсядскаго Прихода. -",
+    "godparents": "Воспріемниками были Петръ Рудисъ съ Доминцелею Купульскою ѣвицею."
+   }
+  },
+  {
+   "row_id": "0200_L2",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "priest": {
+     "value": "ьКс. Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "ФранцитенъсѣмиобрябамиТаинстваТсячавосемьсотъдевяностагогодаМартачетырнадцатагоня,въПлунгянскомъ.Р.К.ПрихобскомъКостелѣВихарнымъКсАвгулисомъокрещенъМладенецъименемъАнна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "ПетронелипъПратукіовъВаиеисовзаконныхъСупруговъсынродившійся1890годаМар-йта13годня,въдеревниМер-келѣсегоПрихода.КрестьянъБернатовекоиволостиФранцинкаиПетронели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Руйбіовъ Симутисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 5,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мер -келѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Петръ йдавгентисъ ъсъ Анною Фрамзишка Лукомнса супругою. Воспріемникамъ были Перонимъ стонисъ съ Катарнсиною Казиміра Рамонаса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-14",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ыеяча восемьсотъ девянистаго года Марта четырнадцатаго дня, въ Плунгянскомъ Р.К. Пренхов скомъ К остелѣ ВикарнымьКс. Авгулисомъ окрещенъ Младе нецъ именемъ Францитенъ сѣми обрябами Таинства Тсяча восемьсотъ девяностаго года Марта четырнадцатаго ня, въ Плунгянскомъ.Р.К. Прих об скомъ Костелѣ Вихарнымъ Кс Авгулисомъ окрещенъ Младенецъ именемъ Анна, со всѣма обрядами Таинства. -",
+    "parents": "Крестьянъ Бернатовскон во лости Яна и Петронели пъ Пратукіовъ Ваиеисов законныхъ Супруговъ сын родившійся 1890 года Мар-й та 13го дня, въ деревни Мер -келѣ сего Прихода. Крестьянъ Бернатовекои воло сти Францинка и Петро нели изъ Руйбіовъ Симутисовъ, законныхъ Супруговъ дочь одившаяся 1890 года Марта 13го дня въ деревни Трункѣ сего Прихода. -",
+    "godparents": "Воспріемниками были Петръ йдавгентисъ ъсъ Анною Фрамзишка Лукомнса супругою. Воспріемникамъ были Перонимъ стонисъ съ Катарнсиною Казиміра Рамонаса супругою."
+   }
+  },
+  {
+   "row_id": "0200_L2b",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_L2.jpg",
+   "split_from": "0200_L2",
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Доминцеля",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестъянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Франциика",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Богдановичен Порвилловъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 13,
+     "source": "model"
+    },
+    "village": {
+     "value": "Трун нѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Францишскъ Лелюга съ Анною Іоспера Будриса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-14",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-13",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Марта четирнадцатаго ня, въ Плунгянсномъ Р.К. Пих од скомъ Костелѣ Винарнымъ Кс. Авгулисомъ окрещенъ Младенецъименемъ Доминцеля, совеѣми обрядами Таинства.-",
+    "parents": "Крестъянъ Бернатовской воло сти Франциика и Анны изъ Богдановичен Порвилловъ,законныхъ Супруговъ дочь родившаяся 1890 года Марта 13го дня, въ деревни Трун нѣ сего Прихода. -",
+    "godparents": "-Воспріемниками были Францишскъ Лелюга съ Анною Іоспера Будриса супругою."
+   }
+  },
+  {
+   "row_id": "0200_L3",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Анна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model"
+    },
+    "village": {
+     "value": "Ноншки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Станиелавъ Іумша съ Аннок Адама Станонкуса супруго",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-14",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-01",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тыеяча восемьсотъ девяностаго года Марта четырнадцатаго дня, въ ТКунгянскомъ Р.К. Приоскомъ Костелѣ Винарнымъ Авгулисомъ окрещенъ Мла енецъ именемъ Анна Со всѣни об ядами Таинства. -р",
+    "parents": "Крестьянъ Плунгянскои волости Павла и Вероникинзъ Стапонковъ Сымоновскихъ,законныхъ Сутруговъ дочь роди вшаяся 1896 года Кар та 1го дня, въ деревни Ноншки сего Прихода. -",
+    "godparents": "Воспріемниками были Станиелавъ Іумша съ Аннок Адама Станонкуса супруго."
+   }
+  },
+  {
+   "row_id": "0200_L4",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_L4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 15,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Аюдвика",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ринтемишскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іоспфа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петронели",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Сурбліовъ Остров скихъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 14,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "вендая. Янъ Авгулись съ Алеисандреюо Пдговдовою одовою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-15",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-14",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Марта пятнадцатаго дня. въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс. Авгулисомъ окрещенъ Младенецъ именемъ Аюдвика, Со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Ринтемишскон волости Іоспфа и Петронели изъ Сурбліовъ Остров скихъ законныхъ Супру говъ дочь родившаяся 1890 года. Карта 14го дня, въ Мнѣ Плунгяны сего Прихода. -",
+    "godparents": "Воспріемниками были вендая. Янъ Авгулись съ Алеисандреюо Пдговдовою одовою."
+   }
+  },
+  {
+   "row_id": "0200_R1",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулнеомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крстьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катарнесины",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мингеловъ Симаитисов",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Лун няны",
+     "source": "model"
+    },
+    "godparents": {
+     "value": null,
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-18",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ девяноста го года Марита восемьнадцатаго дноПЛунгянскомъ Р.К. Прих одскомъ Костелѣ Викарнымъ Авгулнеомъ окрещенъро Младенецъ именемъ Янъ, Со вспни обрядями Таинства. -",
+    "parents": "Крстьянъ Плунгянской волости Яна и Катарнесины изъ Мингеловъ Симаитисов законныхъ Супруго въ сын родившійся 1830 года Марта 15го дня, въ деревни Лун нянысего Прихода. -",
+    "godparents": "Воспріемниками бым Апоминарій Таусг нисъ съ Марціяною Зенона Вишневскаго супругою."
+   }
+  },
+  {
+   "row_id": "0200_R2",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "еАвгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Вацлавъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Ворненскои",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Агнетки",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Сточковъ Шимновъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 16,
+     "source": "model"
+    },
+    "village": {
+     "value": "Капсуды",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Камиль Тоувальдъ съ Петронелею Константина Цыртовта супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-16",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "псяча восемьсотъ девяностаго обда Марта восемьнадцатаго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣъ. Викарнымъ еАвгулисомъ опрещенъ Мласнецъ именемъ Вацлавъ сосми обрядами Таинства.",
+    "parents": "Крестьянъ Ворненскои волости Яна и Агнетки изъ Сточковъ Шимновъ, законныхъ Супруговъ сынъ родивиіея 1890 года Марта 16го дня, въдеревни Капсуды сего Прихода.",
+    "godparents": "Воспріемниками были Камиль Тоувальдъ съ Петронелею Константина Цыртовта супругою."
+   }
+  },
+  {
+   "row_id": "0200_R3",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Зузанна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Викторіи",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Будрикасобъ Ваичисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Леополь Малевсній съ Теодорою Перонима Крииков скаго Супругон",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-18",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Кысяча восемсотъ де вяностаго года Марта восемьнадцатаго ня, въ Плунгянскомъ Р.К. Прихоб скомъ Костелѣ Викарнымъ Кс:Авгулисомъ опренщенъ Младенецъ именемъ Зузанна, со веѣми обрядами Таинсева.",
+    "parents": "Крестьянъ Плунгянской во лости Яна и Викторіи изъ Будрикасобъ Ваичисовъ, законныхъ Супруговъ дочь родившаяся 1890 года Марта 17го дня, въ имѣній ива. Пельдншки се го Прихода",
+    "godparents": "Воспріемникамибыли Леополь Малевсній съ Теодорою Перонима Крииков скаго Супругон -"
+   }
+  },
+  {
+   "row_id": "0200_R4",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 18,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Юзефа",
+     "source": "model"
+    },
+    "estate": {
+     "value": "рестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Яна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Казрагіовъ Русснсовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Викентій Скульскіи ъ Агнешкою зрагате дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-18",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго года Марта восемьнадцатаго дня, въ Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Авгумисомъ окрещенъ Младенецъ именемъ Юзефа, совсѣми обрядами Таинства. -",
+    "parents": "рестьянъ Плунгянскон во гости Яна и Маріяны из Казрагіовъ Русснсовъ, зантнъ ныхъ супруговъ дочь роднв-с шаяся 1890 года Марта Ка 18го дня, въ деревни Лунняны Кулевскаго Прихода",
+    "godparents": "Воспріемниками были Викентій Скульскіи ъ Агнешкою зрагате дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0200_R5",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R5.jpg",
+   "split_from": null,
+   "fields": {
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Людвиг",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской. о",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мачуптисовъ Маценисовъ",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 17,
+     "source": "model"
+    },
+    "village": {
+     "value": "Полусцѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іоснфръ Магуйтисъ съ Людовикою До марко вною дѣ вицею. схода",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-17",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго обда Марта девятнадцатаъ дня, въ Плунгянскомъ Р.К. Приходскбмъ Костелѣ Викарнымъ Кс: Авгулисомъ окрещенъ Кладенецъ именемъ Людвигео всѣми обрядами Таинетва.",
+    "parents": "Крестьянъ Плунгянской. оволо сти Антонаи Маріяны изъ Мачуптисовъ Маценисовъ з оконныхъ С пруговъ дос родившая ся а 1890 года Марта 17о дня въ деревни Полусцѣ сего Три",
+    "godparents": "Воспріемниками Выли Іоснфръ Магуйтисъ съ Людовикою До марко вною дѣ вицею. схода. -"
+   }
+  },
+  {
+   "row_id": "0200_R6",
+   "register_year": 1890,
+   "scan": 200,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0200_R6.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 19,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Ан-рна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казиміра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катернины",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Мотеигковъ Іона тисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 19,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іоспфъ чульдисъ ст Анною Лонате довицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-19",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-19",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ девяностаго года Марта девятнадцатаго дня, въ Плунгянскомъ Р.К. Приходеномъ Костелѣ Ви парнымъ Кс. Авгулисомъ окрещенъ Млоденецъ именемъ Ан-р на, со всѣпи обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон волости Казиміра и Катернины изъ Мотеигковъ Іона тисовъ, законныхъ Супруговъ дочь роди вшаяся 1890 года Марта 19о дня, въ Ми ѣ Плунгяны сего Прияода.",
+    "godparents": "Воспріемниками были Іоспфъ чульдисъ ст Анною Лонате довицею. -"
+   }
+  },
+  {
+   "row_id": "0201_L1",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_L1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Павелъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Бернатовскомъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Еввы",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Кнюкттовъ Кадисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "village": {
+     "value": "Кектты",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Янъ Кадисг ст барбарого Адама Кнюкшты сопругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-23",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-22",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тисяка восемьсттъ девяностаго года Марта двадцатьтрета зо дня, въ Плунгянекомъ Р.К. Прих одскомъ Костелѣ. Викаръ сымъ Кс: Авгумисомъ опреиенъ Младенецъ именемъ Павелъ, со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Бернатовскомъ -волости Антона и Еввы изъ Кнюкттовъ Кадисовъзаконныхъ Супруговъ сннъ родившійся 1890 года Марта 22го бня, въ деревни Кектты, сего Прихода. -",
+    "godparents": "Воспріемника ми были Янъ Кадисг ст барбарого Адама Кнюкшты сопругою. -"
+   }
+  },
+  {
+   "row_id": "0201_L1b",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_L1.jpg",
+   "split_from": "0201_L1",
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 23,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Зузанна",
+     "source": "model"
+    },
+    "estate": {
+     "value": "бКрестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскос ть",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Братинскихъ Раговскияъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model"
+    },
+    "village": {
+     "value": "Мардосы",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Адамъ Іечюсъ съ Трасыль дою Анта на Мазримаса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-23",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-22",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаъ года. Марта двадцатьтретиъ яго дня, въ Плунгянекомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс. Авгумисомъ окрещенъ Младенецъ име немъ Зузанна, со всѣми обря дами Таинства. -",
+    "parents": "бКрестьянъ Плунгянскос ть- волости Антона иМаріяны изъ Братинскихъ Раговскияъ, законныхъ супруговъ дочь родившаяся 1890 года Марта 22одня, въ деревни Мардосы сего Прихода. -",
+    "godparents": "Воспріемниками были Адамъ Іечюсъ съ Трасыль дою Анта на Мазримаса супругою."
+   }
+  },
+  {
+   "row_id": "0201_L2",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_L2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Адамъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Гинтеми нском",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іоспеа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Филомены",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Ретшіовъ Петкинисовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "village": {
+     "value": "Букон тынки",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Аколинаріи Педвилло съ Ка тарнсинога Антонія 9онуна супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-25",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьсотъ девяностаго ода Марта двадцать пятаго дня. въ Плунгянскомъ .К. Прих одскомъ Костелѣ Викарнымъ Кс: Авгулисомъ окрещенъ Младенецъ имеемъ Адамъ со всѣми обрядами Таинство.",
+    "parents": "Крестьянъ Гинтеми нском воло сти Іоспеа и Фило мены изъ Ретшіовъ Петкинисовъ, законныяСупруговъ Сынъ родившіи ся 1890 года Марта. 25го дня, въ деревни Букон тынкисего Прихода-",
+    "godparents": "Воспріемника -ми были Аколинаріи Педвилло съ Ка тарнсинога Антонія 9онуна супругою."
+   }
+  },
+  {
+   "row_id": "0201_L2b",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_L2.jpg",
+   "split_from": "0201_L2",
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Янъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "бернатовском",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "village": {
+     "value": "Мило шацѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "шгнатіи Вилкасъ съ Анною Казиміра Друнгилисасупругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-26",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемьстъ деваностаго года Марта двадцать шеста го дня, въ ПлунгянскомъР. К. Приходскомъ Костелѣ Ви карнымъ Кс: Авгулисомъ окретенъ Младенецъ именемъ Янъ, со всѣми обря дами Таинства. -",
+    "parents": "Крестьянъ бернатовском воло сти Филомены Кубилю совнн нсзакомъ -но рожденныи Сынъ родившійся 1830 года Марта 26го дня, въ деревни Мило шацѣ сего Прихода. -",
+    "godparents": "Воспріемниками были шгнатіи Вилкасъ съ Анною Казиміра Друнгилисасупругою."
+   }
+  },
+  {
+   "row_id": "0201_L3",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_L3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Аполонія",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянской",
+     "source": "model"
+    },
+    "father": {
+     "value": "Пнатія",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяны",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Даранговсиихъ Талимасовъ",
+     "source": "model"
+    },
+    "sex": {
+     "value": "F",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 25,
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Янъ Венгалисъ съ Апилоню Кявмкатени дѣвицею",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-26",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-25",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ТТысяча восемьсотъ девяностаго сода Марта двадцать шестаго дня, в. Плунгянскомъ Р.К. Приходскомъ Костелѣ Викарнымъ Кс: Авгулисомъ окрнещенъ Младенецъ именемъ Аполонія, со всѣми обрядами Таин ства. -",
+    "parents": "Крестьянъ Плунгянской волости Пнатія и Маріяны изъ Даранговсиихъ Талимасовъ, закониыхъ супруговъ дочь родившаяся 1890 года Марта 25 го дня в Мг ѣ Плунгянысего Прихода. -",
+    "godparents": "Воспріемниками были Янъ Венгалисъ съ Апилоню Кявмкатени дѣвицею."
+   }
+  },
+  {
+   "row_id": "0201_R1",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_R1.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Іоспеъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянки",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
+     "value": null,
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": "Варановскои Дунавской вдовы не",
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model"
+    },
+    "village": {
+     "value": "Варколѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Іоспфъ квнора съ Леонорою Августы на Плумбнуког -супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячо восем: сотъ девя носта огода Марта двадцать дмаго дня, въ Плунгянкомъ Р.К. Приходскомъ Коспелѣ Викарнымъ Кс: Авгумисомъ окрещенъ Младенецъ именемъ Іоспеъ со вст ми обрядами Таинства-",
+    "parents": "Крестьянки Плунгянскои волости Анны изъ Варановскои Дунавской вдовы незаконнороноденныи Сынъ родившійся 1890 года Мар тх 26го дня въ деревни -Варколѣ сего Прихода.",
+    "godparents": "Воспріемниками были Іоспфъ квнора съ Леонорою Августы на Плумбнуког -супругою. .-"
+   }
+  },
+  {
+   "row_id": "0201_R2",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_R2.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 27,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисокъ окре шенъ Младенецъ именемъ Филомена, со всѣми обрядами Таинства. Тысяга восемьсттъ девяноста го года Мартадвадцань седмаго дня, въ Плунгяненки. К Приходскомъ Кіостелѣ Викаренымъ Кс: Авгумисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Филомена",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Кресть.янъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянском",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 26,
+     "source": "model"
+    },
+    "village": {
+     "value": "Летливкѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "ФФран ци шскъ остро скій съ Маріясною Пакѣльнишкхтею дѣви цею. Воспремникаъми былиФранца шенъ Чарвински -съ Филоменоюн Фортунитта симиса супругою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-27",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-26",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "Тысячя восемьсотъ девяностаго года Мартаддадцать седмаго дня, въ Плун гянскомъ Р.К. Приходскомъ Костелѣ Винарнымъ Кс: Авгулисокъ окре шенъ Младенецъ именемъ Филомена, со всѣми обрядами Таинства. Тысяга восемьсттъ девяноста го года Мартадвадцань седмаго дня, въ Плунгяненки. К Приходскомъ Кіостелѣ Викаренымъ Кс: Авгумисомъ. окрещенъ Младенецъ именемъ Леонъ, совсѣми обиядами Таинства. -",
+    "parents": "Кресть.янъ Плунгянском воло сти Антонк и Доминцелимзъ Барта шіовъ Петровскихъзаконныхъ Супруговъ дочо родившая ся 1890 годъМарта 26го дня въ деревни Летливкѣ сего Прихода. Крестьянъ Плунгянскон волости Яна и Анны иъ мнъ Буткіовъ Мачунтисовъ, зыконныхъ супру говъ Сынъ робнотінся 1891 года Марта 26 дня. въ деревни Меркелѣ сего Прихода. -",
+    "godparents": "Вос пріемника ми были ФФран ци шскъ остро скій съ Маріясною Пакѣльнишкхтею дѣви цею. Воспремникаъми былиФранца шенъ Чарвински -съ Филоменоюн Фортунитта симиса супругою."
+   }
+  },
+  {
+   "row_id": "0201_R3",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_R3.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Адамъ",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскои",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model"
+    },
+    "village": {
+     "value": "Стамѣ",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "?гнатіі Мамсковскі съ Ельбытою Францишка бячюса супру гю",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-28",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-28",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ бевяностаго сода. Марта двадцать восьмаго дня, въ Плунгянскомъ д.К. Приходскомъ Костелѣ Викарнымъ Кс: Авгулисомъ окрещенъ Младенецъ именемъ Адамъ, со всѣми обрядами ТТаинства. -",
+    "parents": "Крестьянъ Плунгянскои воло сти Антона и Парціянынзъ Миліовъ Реми нисовъ, законныхъ супруговъ Сынъ родившіися 1890 года Марта 28го днл въ деревни Стамѣ сего Прихода. -",
+    "godparents": "Воспріемник ми были ?гнатіі Мамсковскі съ Ельбытою Францишка бячюса супру гю."
+   }
+  },
+  {
+   "row_id": "0201_R4",
+   "register_year": 1890,
+   "scan": 201,
+   "page": "R",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/plunge-1886-1890/processed/rows/0201_R4.jpg",
+   "split_from": null,
+   "fields": {
+    "baptism_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "baptism_day": {
+     "value": 29,
+     "source": "model"
+    },
+    "priest": {
+     "value": "Авгулисомъ",
+     "source": "model"
+    },
+    "child_name": {
+     "value": "Антони",
+     "source": "model"
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model"
+    },
+    "township": {
+     "value": "Плунгянскон",
+     "source": "model"
+    },
+    "maiden_and_surname": {
+     "value": null,
+     "source": "model"
+    },
+    "sex": {
+     "value": "M",
+     "source": "model"
+    },
+    "birth_month": {
+     "value": 3,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 29,
+     "source": "model"
+    },
+    "village": {
+     "value": "Іоданы",
+     "source": "model"
+    },
+    "godparents": {
+     "value": "Кеендзъ Янъ Авгулисъ съ Анною Игнитія Чесновскаго супрушгою",
+     "source": "model"
+    },
+    "baptism_date": {
+     "value": "1890-03-29",
+     "source": "model"
+    },
+    "birth_date": {
+     "value": "1890-03-29",
+     "source": "model"
+    }
+   },
+   "text": {
+    "baptism": "ысяча восемьсотъ девяностаго года Марта двадцать девято го дня, въ Плунгянскомъ Р.К. Пиходскомъ Постелѣ Викарнымъ Кс. Авгулисомъ окрещенъ Младенецъ рменемъ Антони со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Плунгянскон воло сти Гоминика и Маріяны исъ Урбонасовъ Равицкихъ, законныхъ супруговъ сынъ родившійся 1890 года Марта 29го дня, въ деревни Іоданы сего Прихода. -",
+    "godparents": "-Воспріемнико ми были Кеендзъ Янъ Авгулисъ съ Анною Игнитія Чесновскаго супрушгою."
+   }
+  }
+ ]
+}

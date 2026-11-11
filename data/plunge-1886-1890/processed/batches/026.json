@@ -1,0 +1,97 @@
+{
+  "status": "pending",
+  "independent_reads_required": 2,
+  "instructions": "src/READING_INSTRUCTIONS.md",
+  "rows": [
+    {
+      "row_id": "0143_R4",
+      "scan": 143,
+      "page": "R",
+      "row_index": 4,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": null,
+      "entry_no_status": "not_read",
+      "image": "data/plunge-1886-1890/processed/rows/0143_R4.jpg",
+      "source": "data/plunge-1886-1890/pages/0143.jpg",
+      "source_sha256": "50c97e52ef1f0f4b05c4e2a554b17659d382465401a036067664bcfa402501db",
+      "image_sha256": "0485ac43ac6aecc2a91bb65c9de1265031aad188f919b8ac746597281feae711",
+      "bbox": [
+        2356,
+        2763,
+        4712,
+        3830
+      ],
+      "focal_y": [
+        2833,
+        3680
+      ],
+      "layout_status": "image_checked_approximate",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 432
+    },
+    {
+      "row_id": "0144_L1",
+      "scan": 144,
+      "page": "L",
+      "row_index": 1,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": 433,
+      "entry_no_status": "image_read",
+      "image": "data/plunge-1886-1890/processed/rows/0144_L1.jpg",
+      "source": "data/plunge-1886-1890/pages/0144.jpg",
+      "source_sha256": "e55a6ed2aba8d0d79a5463df8dd3b41819cae9c21615e3c3bd89f7aefa65c653",
+      "image_sha256": "0bd168c77b900597c13c93655d0a9ebcd9de59a24454184aafa88456619fe156",
+      "bbox": [
+        0,
+        680,
+        2337,
+        1559
+      ],
+      "focal_y": [
+        750,
+        1409
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 433
+    },
+    {
+      "row_id": "0144_L2",
+      "scan": 144,
+      "page": "L",
+      "row_index": 2,
+      "kind": "baptism",
+      "register_year": 1888,
+      "entry_no": 434,
+      "entry_no_status": "image_read",
+      "image": "data/plunge-1886-1890/processed/rows/0144_L2.jpg",
+      "source": "data/plunge-1886-1890/pages/0144.jpg",
+      "source_sha256": "e55a6ed2aba8d0d79a5463df8dd3b41819cae9c21615e3c3bd89f7aefa65c653",
+      "image_sha256": "f9fe08f8c92b5e40ff4fbcad417e2cd9a9a97784f9768a6fb8850c6bccd3efff",
+      "bbox": [
+        0,
+        1339,
+        2337,
+        2271
+      ],
+      "focal_y": [
+        1409,
+        2121
+      ],
+      "layout_status": "automatic_unreviewed",
+      "in_target_year": true,
+      "transcription_status": "pending",
+      "hand_group": "later_candidate",
+      "hand_group_status": "provisional_scan_range",
+      "expected_entry_no": 434
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "run_id": "pilot-009e94a435eaa978-20261111T055445503311Z",
+ "kind": "pilot",
+ "dataset_id": "009e94a435eaa978",
+ "counts": {
+  "train": 634,
+  "validation": 147,
+  "test": 123
+ },
+ "hands_by_split": {
+  "train": {
+   "early_candidate": 251,
+   "later_candidate": 243,
+   "unknown": 140
+  },
+  "validation": {
+   "early_candidate": 62,
+   "later_candidate": 55,
+   "unknown": 30
+  },
+  "test": {
+   "early_candidate": 51,
+   "later_candidate": 40,
+   "unknown": 32
+  }
+ },
+ "base_model": "<htr-store>/models/ppocrv6-small/small.safetensors",
+ "base_model_sha256": "3108259779f5abfed3908a1c9eafba64d17e4a2a169368c539ecfeff04c018f3",
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "command": [
+  ".venv-htr/bin/ketos",
+  "-d",
+  "cuda:0",
+  "--seed",
+  "1888",
+  "train",
+  "-f",
+  "path",
+  "--linetype",
+  "bbox",
+  "-t",
+  "data/plunge-1886-1890/training/exports/009e94a435eaa978/train.txt",
+  "-e",
+  "data/plunge-1886-1890/training/exports/009e94a435eaa978/validation.txt",
+  "--load",
+  "<htr-store>/models/ppocrv6-small/small.safetensors",
+  "--resize",
+  "union",
+  "--batch-size",
+  "8",
+  "--lrate",
+  "0.0001",
+  "--epochs",
+  "40",
+  "--quit",
+  "fixed",
+  "--augment",
+  "-o",
+  "<htr-store>/runs/pilot-009e94a435eaa978-20261111T055445503311Z"
+ ],
+ "output_dir": "<htr-store>/runs/pilot-009e94a435eaa978-20261111T055445503311Z",
+ "started": "2026-11-11T05:54:45.513994+00:00",
+ "outcome": "v2: 40 epochs, lrate 1e-4, augment, from PP-OCRv6 small base. Dataset 009e94a435eaa978: 634 train / 147 val / 123 test (adds 202 lines of the 1886-87 hand from a blind Opus+Sonnet double reading). predict_lines.py on validation, CER v1 -> v2: all 0.130 -> 0.080; 1886-87 hand 0.350 -> 0.153; early 1888 hand 0.084 -> 0.064; later hand 0.051 -> 0.056 (55 lines). Test set not evaluated. Weights: <htr-store>/models/plunge-v2/model.safetensors",
+ "model_sha256": "4c9ddd41108801cdf97cd82601c64ff56791715ede93374396220f1d15beca77"
+}

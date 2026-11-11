@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plungė Baptisms Review</title>
+<style>
+:root {
+  --bg: #f6f3ec; --panel: #fffdf8; --ink: #1f1c17; --muted: #6b6457; --line: #e2dccf;
+  --accent: #7a3e1d; --checked: #2f6b3a; --checked-bg: #e3efe1; --model: #8a5a00; --model-bg: #fbf0d9;
+  --mixed: #3d5a80; --mixed-bg: #e3eaf3; --sel: #efe6d4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17150f; --panel: #201d16; --ink: #ece6d8; --muted: #a39b8a; --line: #3a352b;
+    --accent: #e0a070; --checked: #8fd19a; --checked-bg: #1f3323; --model: #f0c060; --model-bg: #3a2e14;
+    --mixed: #9cb8e0; --mixed-bg: #1e2a3a; --sel: #2e291f;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: baseline; }
+header h1 { font-size: 18px; margin: 0; font-weight: 650; }
+header .note { color: var(--muted); font-size: 13px; }
+.layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 56px); }
+aside { border-right: 1px solid var(--line); display: flex; flex-direction: column; max-height: calc(100vh - 56px); position: sticky; top: 0; }
+.controls { padding: 10px; display: grid; gap: 8px; border-bottom: 1px solid var(--line); }
+.controls input, .controls select { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); font: inherit; }
+.count { color: var(--muted); font-size: 12px; }
+ul { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+li { padding: 8px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+li:hover { background: var(--sel); }
+li.active { background: var(--sel); box-shadow: inset 3px 0 0 var(--accent); }
+li .t { font-weight: 600; }
+li .s { color: var(--muted); font-size: 12px; }
+main { padding: 16px 20px 40px; min-width: 0; }
+.scan { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px; }
+.scan img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 10px 0 14px; color: var(--muted); font-size: 13px; }
+.meta a { color: var(--accent); }
+.grid { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(300px, 1.3fr); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+.card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 8px; }
+table { border-collapse: collapse; width: 100%; }
+td { padding: 5px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.k { color: var(--muted); width: 38%; font-size: 13px; }
+td.v { font-family: "PT Serif", Georgia, serif; font-size: 16px; }
+.badge { display: inline-block; font: 11px/1 system-ui, sans-serif; padding: 3px 6px; border-radius: 10px; margin-left: 6px; vertical-align: 2px; }
+.b-checked { color: var(--checked); background: var(--checked-bg); }
+.b-model { color: var(--model); background: var(--model-bg); }
+.b-mixed { color: var(--mixed); background: var(--mixed-bg); }
+.empty { color: var(--muted); font-style: italic; font-family: system-ui, sans-serif; font-size: 13px; }
+.cell { margin-bottom: 12px; }
+.cell h3 { margin: 0 0 3px; font-size: 13px; color: var(--muted); font-weight: 600; }
+.cell p { margin: 0; font-family: "PT Serif", Georgia, serif; font-size: 16px; }
+.legend { font-size: 12px; color: var(--muted); margin-top: 10px; }
+.side { margin: 12px 0; }
+.side .rend { color: var(--muted); font-size: 14px; }
+.cols { margin-top: 16px; } .cols summary { cursor: pointer; font-weight: 600; color: var(--muted); }
+td .ru { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.warn { background: var(--model-bg); color: var(--model); border-radius: 6px; padding: 7px 10px; margin-bottom: 10px; font-size: 13px; }
+.cell p.ru { color: var(--muted); font-size: 14px; margin-top: 4px; border-left: 2px solid var(--line); padding-left: 8px; }
+.lang { margin-left: auto; display: flex; gap: 4px; }
+.lang button { font: 13px system-ui, sans-serif; padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); cursor: pointer; }
+.lang button.on { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+.tog { float: right; font: 12px system-ui, sans-serif; text-transform: none; letter-spacing: 0; padding: 3px 8px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); cursor: pointer; }
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; max-height: 45vh; border-right: 0; border-bottom: 1px solid var(--line); }
+  .grid { grid-template-columns: 1fr; }
+  main { padding: 12px 16px 32px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="h1"></h1>
+  <span class="note" id="note"></span>
+  <div class="lang"><button id="lang-en" type="button">EN</button><button id="lang-lt" type="button">LT</button></div>
+</header>
+<div class="layout">
+  <aside>
+    <div class="controls">
+      <input id="q" type="search">
+      <select id="year"></select>
+      <select id="month"></select>
+      <select id="split"></select>
+      <div class="count" id="count"></div>
+    </div>
+    <ul id="list"></ul>
+  </aside>
+  <main id="detail"><p class="empty">…</p></main>
+</div>
+<script>
+const MONTH_KEYS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const STR = {
+  en: {
+    h1: 'Plungė baptisms, 1886–1890: machine draft review',
+    note: 'Model drafts, unverified. Names are often wrong; check against the scan.',
+    search: 'Search English, Lithuanian or Cyrillic, e.g. Šimkus, Брезг…',
+    allYears: 'All years', allMonths: 'All months', allEntries: 'All entries', withChecked: 'With checked lines',
+    count: (a, b) => `${a} of ${b} entries`, entry: 'Entry', scan: 'scan', checkedLines: (n) => `${n} checked lines`,
+    hand: 'hand', fullPage: 'full page scan', splitFrom: (r) => `split from ${r}: the scan shows both entries`,
+    fields: 'Extracted fields', translation: 'English translation', showRu: 'Show Russian draft', hideRu: 'Hide Russian draft',
+    notFound: 'not found', empty: 'empty', notTranslated: 'not translated yet', note2: "Translator's note",
+    legendFields: (c, m, o) => `${c} from verified lines · ${m} partly verified · ${o} model draft only`,
+    legendTr: 'Translated from the machine draft. Names are romanized as the model read them and may be misread. The Lithuanian version follows a fixed glossary and has not been reviewed by a native speaker.',
+    warn: 'Another entry start appears inside this entry: possibly an entry the layout missed.',
+    badge: {checked: 'checked', mixed: 'mixed', model: 'model'},
+    labels: {sex: 'Sex', birth_date: 'Born', baptism_date: 'Baptised', child_name: 'Child', father: 'Father', mother: 'Mother',
+      maiden_and_surname: 'Maiden name + surname', estate: 'Estate', township: 'Township (волость)', village: 'Village',
+      priest: 'Priest', godparents: 'Godparents'},
+    cells: {baptism: 'Baptism', parents: 'Parents', godparents: 'Godparents'},
+    sex: {M: 'boy', F: 'girl'},
+    months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+    loading: 'Loading…',
+    columns: 'Register columns (printed headings)', colNo: 'Column', side: 'Side columns (1–3)',
+    margin: 'Margin surname', number: 'No.', sexL: 'Sex', bday: 'Day of birth', cday: 'Day of baptism', notes: 'Later notes',
+    sideNote: 'Read once by Claude Sonnet from the scan; unverified.',
+  },
+  lt: {
+    h1: 'Plungės krikšto metrikos, 1886–1890: mašininių juodraščių peržiūra',
+    note: 'Modelio juodraščiai, nepatikrinti. Vardai dažnai perskaityti klaidingai – tikrinkite pagal skenuotą vaizdą.',
+    search: 'Ieškokite lietuviškai, angliškai arba kirilica, pvz. Šimkus, Брезг…',
+    allYears: 'Visi metai', allMonths: 'Visi mėnesiai', allEntries: 'Visi įrašai', withChecked: 'Su patikrintomis eilutėmis',
+    count: (a, b) => `${a} iš ${b} įrašų`, entry: 'Įrašas', scan: 'skenas', checkedLines: (n) => `patikrintų eilučių: ${n}`,
+    hand: 'rašysena', fullPage: 'visas lapas', splitFrom: (r) => `atskirta nuo ${r}: vaizde matyti abu įrašai`,
+    fields: 'Išskirti duomenys', translation: 'Vertimas į lietuvių kalbą', showRu: 'Rodyti rusišką juodraštį', hideRu: 'Slėpti rusišką juodraštį',
+    notFound: 'nerasta', empty: 'tuščia', notTranslated: 'dar neišversta', note2: 'Vertėjo pastaba',
+    legendFields: (c, m, o) => `${c} iš patikrintų eilučių · ${m} iš dalies patikrinta · ${o} tik modelio juodraštis`,
+    legendTr: 'Išversta iš mašininio juodraščio. Vardai ir vietovardžiai perrašyti lietuviška rašyba taip, kaip juos perskaitė modelis, ir gali būti klaidingi. Vertimas atliktas pagal pastovų terminų žodynėlį ir nebuvo patikrintas gimtakalbio.',
+    warn: 'Šio įrašo viduje aptikta kito įrašo pradžia: galbūt automatinis išdėstymas praleido įrašą.',
+    badge: {checked: 'patikrinta', mixed: 'iš dalies', model: 'modelis'},
+    labels: {sex: 'Lytis', birth_date: 'Gimė', baptism_date: 'Pakrikštyta(s)', child_name: 'Vaikas', father: 'Tėvas', mother: 'Motina',
+      maiden_and_surname: 'Mergautinė pavardė + pavardė', estate: 'Luomas', township: 'Valsčius (волость)', village: 'Kaimas',
+      priest: 'Kunigas', godparents: 'Krikštatėviai'},
+    cells: {baptism: 'Krikštas', parents: 'Tėvai', godparents: 'Krikštatėviai'},
+    sex: {M: 'berniukas', F: 'mergaitė'},
+    months: ['sausis','vasaris','kovas','balandis','gegužė','birželis','liepa','rugpjūtis','rugsėjis','spalis','lapkritis','gruodis'],
+    loading: 'Kraunama…',
+    columns: 'Knygos stulpeliai (spausdintos antraštės)', colNo: 'Stulpelis', side: 'Šoniniai stulpeliai (1–3)',
+    margin: 'Pavardė paraštėje', number: 'Nr.', sexL: 'Lytis', bday: 'Gimimo diena', cday: 'Krikšto diena', notes: 'Vėlesnės pastabos',
+    sideNote: 'Vieną kartą perskaityta Claude Sonnet iš skenuoto vaizdo; nepatikrinta.',
+  },
+};
+
+const COLUMNS = [
+  {ru: 'Прозваніе крещаемыхъ', en: 'Surname of the baptised (written sideways in the margin)', lt: 'Krikštijamųjų pavardė (įrašyta paraštėje skersai)'},
+  {ru: '№', en: 'No.', lt: 'Nr.'},
+  {ru: 'Число: рожденія / крещенія', en: 'Date: of birth / of baptism', lt: 'Data: gimimo / krikšto'},
+  {ru: 'Когда, гдѣ, кто и кѣмъ, одною-ли водою или со всѣми обрядами таинства окрещенъ?', en: 'When, where, who and by whom was baptised, and with water only or with all the rites of the sacrament?', lt: 'Kada, kur, kas ir kieno pakrikštytas – tik vandeniu ar su visomis sakramento apeigomis?'},
+  {ru: 'Какихъ родителей и къ какому сословію или обществу они принадлежатъ, когда и гдѣ, т. е. въ какомъ приходѣ родился крещаемый?', en: 'Of which parents, and to which estate or community do they belong; when and where, i.e. in which parish, was the baptised born?', lt: 'Kokių tėvų ir kuriam luomui ar bendruomenei jie priklauso; kada ir kur, t. y. kurioje parapijoje, gimė krikštijamasis?'},
+  {ru: 'Кто были по имени и прозванію воспріемниками при св. крещеніи и кто присутствовалъ?', en: 'Who, by name and surname, were the godparents at holy baptism, and who was present?', lt: 'Kas, nurodant vardą ir pavardę, buvo krikštatėviai per šventąjį krikštą ir kas dalyvavo?'},
+  {ru: 'Рукоприкладство свидѣтелей записки по желанію', en: 'Signatures of witnesses to the record, if desired', lt: 'Liudytojų parašai (pagal pageidavimą)'},
+];
+const FIELD_ORDER = ['sex', 'birth_date', 'baptism_date', 'child_name', 'father', 'mother', 'maiden_and_surname',
+  'estate', 'township', 'village', 'priest', 'godparents'];
+const CELL_ORDER = ['baptism', 'parents', 'godparents'];
+let lang = 'en';
+try { const l = localStorage.getItem('review.lang'); if (l === 'lt' || l === 'en') lang = l; } catch (_) {}
+let showRu = false;
+let DATA = [], shown = [], current = null;
+const $ = (id) => document.getElementById(id);
+const S = () => STR[lang];
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const fold = (s) => (s || '').toLowerCase().replace(/ѣ/g, 'е').replace(/і/g, 'и').replace(/ъ/g, '').replace(/\s+/g, '');
+const monthName = (k) => k ? S().months[MONTH_KEYS.indexOf(k)] : '—';
+
+function badge(src) { return `<span class="badge b-${src}">${S().badge[src] || src}</span>`; }
+function tr(e) {
+  if (!e.en) return null;
+  return lang === 'lt'
+    ? {baptism: e.en.baptism_lt, parents: e.en.parents_lt, godparents: e.en.godparents_lt, issues: e.en.issues_lt}
+    : {baptism: e.en.baptism_en, parents: e.en.parents_en, godparents: e.en.godparents_en, issues: e.en.issues};
+}
+function title(e) {
+  const c = (e.fields.child_name || {}).value;
+  const sur = e.side && e.side.margin_surname ? (lang === 'lt' ? e.side.margin_lt : e.side.margin_en) || e.side.margin_surname : '';
+  const no = e.side && e.side.entry_no ? e.side.entry_no : (e.n == null ? '' : e.n);
+  return `${S().entry} ${no}${c ? ' · ' + esc(c) : ''}${sur ? ' · ' + esc(sur) : ''}`;
+}
+function fieldValue(k, f) {
+  if (!f || f.value == null || f.value === '') return `<span class="empty">${S().notFound}</span>`;
+  const v = k === 'sex' ? (S().sex[f.value] || f.value) : f.value;
+  return `${esc(v)}${badge(f.source)}`;
+}
+
+function sideBox(e) {
+  const s = e.side;
+  if (!s) return '';
+  const unc = new Set(s.uncertain || []);
+  const q = (k, v) => v ? esc(v) + (unc.has(k) ? ' <span class="badge b-model">?</span>' : '') : `<span class="empty">${S().notFound}</span>`;
+  const rend = lang === 'lt' ? s.margin_lt : s.margin_en;
+  const notes = lang === 'lt' ? s.notes_lt : s.notes_en;
+  const sex = s.sex && s.sex !== '?' ? S().sex[s.sex] : '';
+  return `<div class="card side"><h2>${S().side}</h2><table>
+    <tr><td class="k">${S().margin}</td><td class="v">${q('margin_surname', s.margin_surname)}${rend ? ` <span class="rend">(${esc(rend)})</span>` : ''}</td></tr>
+    <tr><td class="k">${S().number}</td><td class="v">${q('entry_no', s.entry_no)}</td></tr>
+    <tr><td class="k">${S().sexL}</td><td class="v">${q('sex', sex ? sex + (s.sex_letter ? ' (' + s.sex_letter + ')' : '') : '')}</td></tr>
+    <tr><td class="k">${S().bday}</td><td class="v">${q('birth_day', s.birth_day)}</td></tr>
+    <tr><td class="k">${S().cday}</td><td class="v">${q('baptism_day', s.baptism_day)}</td></tr>
+    ${s.notes_ru ? `<tr><td class="k">${S().notes}</td><td class="v">${esc(notes || '')}<div class="ru">${esc(s.notes_ru)}</div></td></tr>` : ''}
+    </table><div class="legend">${S().sideNote}</div></div>`;
+}
+function setStatic() {
+  document.documentElement.lang = lang;
+  $('h1').textContent = S().h1; $('note').textContent = S().note; $('q').placeholder = S().search;
+  $('lang-en').classList.toggle('on', lang === 'en'); $('lang-lt').classList.toggle('on', lang === 'lt');
+  const y = $('year').value, m = $('month').value, s = $('split').value;
+  const years = [...new Set(DATA.map((e) => e.year))].sort();
+  $('year').innerHTML = `<option value="">${S().allYears}</option>` + years.map((v) => `<option value="${v}">${v}</option>`).join('');
+  const months = MONTH_KEYS.filter((k) => DATA.some((e) => e.month === k));
+  $('month').innerHTML = `<option value="">${S().allMonths}</option>` + months.map((k) => `<option value="${k}">${monthName(k)}</option>`).join('');
+  $('split').innerHTML = `<option value="">${S().allEntries}</option><option value="checked">${S().withChecked}</option>`;
+  $('year').value = y; $('month').value = m; $('split').value = s;
+}
+function render() {
+  const q = fold($('q').value), m = $('month').value, s = $('split').value, y = $('year').value;
+  shown = DATA.filter((e) => (!y || String(e.year) === y) && (!m || e.month === m) && (!s || e.checked_lines > 0) &&
+    (!q || fold(Object.values(e.text).join(' ') + ' ' + (e.en ? [e.en.baptism_en, e.en.parents_en, e.en.godparents_en,
+      e.en.baptism_lt, e.en.parents_lt, e.en.godparents_lt].join(' ') : '') +
+      (e.side ? ' ' + [e.side.margin_surname, e.side.margin_en, e.side.margin_lt].join(' ') : '')).includes(q)));
+  $('count').textContent = S().count(shown.length, DATA.length);
+  $('list').innerHTML = shown.map((e, i) =>
+    `<li data-i="${i}" class="${e === current ? 'active' : ''}"><div class="t">${title(e)}</div>
+     <div class="s">${e.year} ${monthName(e.month)} · ${S().scan} ${e.scan} · ${esc(e.row)}${e.checked_lines ? ' · ' + S().checkedLines(e.checked_lines) : ''}</div></li>`).join('');
+}
+function show(e) {
+  if (!e) { $('detail').innerHTML = ''; return; }
+  current = e;
+  document.querySelectorAll('li').forEach((li) => li.classList.toggle('active', shown[li.dataset.i] === e));
+  const rows = FIELD_ORDER.map((k) => `<tr><td class="k">${S().labels[k]}</td><td class="v">${fieldValue(k, e.fields[k])}</td></tr>`).join('');
+  const t = tr(e);
+  const cells = CELL_ORDER.map((k) => {
+    const ru = esc(e.text[k] || '') || `<span class="empty">${S().empty}</span>`;
+    const v = t && t[k] ? esc(t[k]) : `<span class="empty">${S().notTranslated}</span>`;
+    return `<div class="cell"><h3>${S().cells[k]}</h3><p>${v}</p>${showRu ? `<p class="ru">${ru}</p>` : ''}</div>`;
+  }).join('');
+  const issues = t && t.issues ? `<div class="legend">${S().note2}: ${esc(t.issues)}</div>` : '';
+  const toggle = `<button class="tog" id="tog" type="button">${showRu ? S().hideRu : S().showRu}</button>`;
+  $('detail').innerHTML = `
+    ${e.warning ? `<div class="warn">⚠ ${S().warn}</div>` : ''}
+    <div class="scan"><img src="${e.img}" alt="${esc(e.row)}" loading="lazy"></div>
+    <div class="meta"><span>${e.year}</span><span>${esc(e.row)}${e.split_from ? ' (' + esc(S().splitFrom(e.split_from)) + ')' : ''}</span>
+      <span>${S().scan} ${e.scan}</span><span>${S().hand}: ${esc(e.hand || '?')}</span>
+      <span>${S().checkedLines(e.checked_lines)}</span><a href="${e.page}" target="_blank" rel="noopener">${S().fullPage}</a></div>
+    ${sideBox(e)}
+    <div class="grid">
+      <div class="card"><h2>${S().fields}</h2><table>${rows}</table>
+        <div class="legend">${S().legendFields(badge('checked'), badge('mixed'), badge('model'))}</div></div>
+      <div class="card"><h2>${S().translation} ${toggle}</h2>${cells}${issues}
+        <div class="legend">${S().legendTr}</div></div>
+    </div>
+    <details class="card cols"><summary>${S().columns}</summary><table>${COLUMNS.map((c, i) =>
+      `<tr><td class="k">${S().colNo} ${i + 1}</td><td class="v">${esc(c[lang])}<div class="ru">${esc(c.ru)}</div></td></tr>`).join('')}</table></details>`;
+  $('tog').onclick = () => { showRu = !showRu; show(e); };
+  try { localStorage.setItem('review.row', e.row); } catch (_) {}
+}
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('review.lang', l); } catch (_) {}
+  setStatic(); render(); show(current);
+}
+$('lang-en').onclick = () => setLang('en');
+$('lang-lt').onclick = () => setLang('lt');
+$('list').addEventListener('click', (ev) => { const li = ev.target.closest('li'); if (li) show(shown[li.dataset.i]); });
+['q', 'year', 'month', 'split'].forEach((id) => $(id).addEventListener('input', render));
+document.addEventListener('keydown', (ev) => {
+  if (ev.target.tagName === 'INPUT' || ev.target.tagName === 'SELECT' || !current) return;
+  const i = shown.indexOf(current);
+  if (ev.key === 'j' || ev.key === 'ArrowDown') { if (shown[i + 1]) { show(shown[i + 1]); ev.preventDefault(); } }
+  if (ev.key === 'k' || ev.key === 'ArrowUp') { if (shown[i - 1]) { show(shown[i - 1]); ev.preventDefault(); } }
+});
+$('detail').innerHTML = `<p class="empty">${S().loading}</p>`;
+fetch('data.json').then((r) => r.json()).then((d) => {
+  DATA = d.entries;
+  setStatic();
+  render();
+  let start = null;
+  try { start = localStorage.getItem('review.row'); } catch (_) {}
+  show(DATA.find((e) => e.row === start) || shown[0]);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "reviewer": "Claude Opus 5.5 visual transcription (single reader)",
+  "baseline_seen": true,
+  "notes": "VALIDATION spread (114), later hand. Read after right-edge rule snapping.",
+  "lines": [
+    {"id": "0114_L2_baptism_01", "status": "rejected_crop", "note": "Rule fragment."},
+    {"id": "0114_L2_baptism_02", "text": "Тысяча восемьсотъ восемьде-", "status": "image_checked", "note": "Speck beyond the rule not transcribed."},
+    {"id": "0114_L2_baptism_03", "text": "сятъ восьмаго года Мая сем-", "status": "image_checked"},
+    {"id": "0114_L2_baptism_04", "text": "надцатаго дня, въ Плун- [иг?]", "status": "draft", "note": "Spill beyond the rule."},
+    {"id": "0114_L2_baptism_05", "text": "гянскомъ Р.К. Приход-", "status": "image_checked", "note": "Speck at right."},
+    {"id": "0114_L2_baptism_06", "text": "скомъ Костелѣ Викарнымъ", "status": "image_checked"},
+    {"id": "0114_L2_baptism_07", "text": "Кс: Юзефовичемъ окрещенъ", "status": "image_checked"},
+    {"id": "0114_L2_baptism_08", "text": "Младенецъ именемъ", "status": "image_checked"},
+    {"id": "0114_L2_baptism_09", "text": "[?], со всѣми обрядами [Т?]", "status": "draft", "note": "Faded name at left; spill at right."},
+    {"id": "0114_L2_parents_01", "text": "[К?]рестьянъ Плунгянской воло", "status": "draft"},
+    {"id": "0114_L2_parents_02", "text": "[ти?] Францишка и Розаліи", "status": "draft"},
+    {"id": "0114_L2_parents_03", "text": "[ъ?] Алимасовъ Михалов", "status": "draft"},
+    {"id": "0114_L2_parents_04", "text": "[кихъ?], законныхъ Супру", "status": "draft"},
+    {"id": "0114_L2_parents_05", "text": "говъ дочь родившаяся 1888", "status": "image_checked"},
+    {"id": "0114_L2_parents_06", "text": "года Мая 1[6?]го дня, въ деревни", "status": "draft"},
+    {"id": "0114_L2_parents_07", "text": "тали сего Прихода. -", "status": "image_checked"},
+    {"id": "0114_L2_parents_08", "text": "[Т?]аинства. -", "status": "draft"},
+    {"id": "0114_L2_godparents_01", "text": "Воспріемниками", "status": "image_checked", "note": "Speck at left."},
+    {"id": "0114_L2_godparents_02", "text": "были Викарный", "status": "image_checked"},
+    {"id": "0114_L2_godparents_03", "text": "[-?]Кс: Антоній Юзе", "status": "draft"},
+    {"id": "0114_L2_godparents_04", "text": "фовичъ съ [Гарда?]", "status": "draft"},
+    {"id": "0114_L2_godparents_05", "text": "[ою Гавдешев?]", "status": "draft"},
+    {"id": "0114_L2_godparents_06", "text": "ною дѣвицею.", "status": "image_checked"}
+  ]
+}

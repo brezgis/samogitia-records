@@ -1,0 +1,1038 @@
+{
+ "batch": "b24-train-3",
+ "A": [
+  {
+   "id": "0057_R1_baptism_01",
+   "text": "Тысяча восемьсотъ де",
+   "sure": true,
+   "crop_ok": true,
+   "note": "no hyphen visible after де"
+  },
+  {
+   "id": "0057_R1_baptism_02",
+   "text": "[вя?]носто седьмаго года",
+   "sure": false,
+   "crop_ok": true,
+   "note": "вя written as ligature resembling и"
+  },
+  {
+   "id": "0057_R1_baptism_03",
+   "text": "Іюня двадцатаго дня.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_04",
+   "text": "въ Плунгянскомъ Р.К. при-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_05",
+   "text": "ходскомъ Костелѣ м",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_06",
+   "text": "ѣстнымъ викарнымъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_07",
+   "text": "Кс. Шанковскимъ окре-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_08",
+   "text": "щено дитя именемъ:",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_09",
+   "text": "Иванъ со всѣми обря",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_10",
+   "text": "дами Таинства.",
+   "sure": true,
+   "crop_ok": true,
+   "note": "stroke above from line above ignored"
+  },
+  {
+   "id": "0057_R1_parents_01",
+   "text": "-Подкидышъ",
+   "sure": true,
+   "crop_ok": true,
+   "note": "foundling; rest of cell blank, small dashes at left margin ignored"
+  },
+  {
+   "id": "0057_R1_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_02",
+   "text": "были Петръ Коль",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_03",
+   "text": "скій съ Екате-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_04",
+   "text": "риною Л[ю?]двига",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_05",
+   "text": "Кайриса супру",
+   "sure": false,
+   "crop_ok": true,
+   "note": "surname reading likely but not certain"
+  },
+  {
+   "id": "0057_R1_godparents_06",
+   "text": "гою.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_01",
+   "text": "Тысяча восемьсотъ девя",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_02",
+   "text": "носто седьмаго года, (въ)",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_03",
+   "text": "Сентября пятаго дня, въ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "punctuation after дня could be dot"
+  },
+  {
+   "id": "0066_R3_baptism_04",
+   "text": "Плунгянскомъ Р.К. приход",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_05",
+   "text": "скомъ Костелѣ мѣстнымъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "final ъ at right edge faint"
+  },
+  {
+   "id": "0066_R3_baptism_06",
+   "text": "викарнымъ Кс. Шанковск[и?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "word continues past right edge"
+  },
+  {
+   "id": "0066_R3_baptism_07",
+   "text": "окрещено дитя именемъ:",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_08",
+   "text": "Викентій, со всѣми обря",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_09",
+   "text": "дами Таинства.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_01",
+   "text": "-Крестьянъ [Бернатовской?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_02",
+   "text": "волости Ивана и Мар-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_03",
+   "text": "[іаны?] изъ [Мадришковъ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_04",
+   "text": "-[Савдаргасовъ?] закон",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_05",
+   "text": "н. суп. сынъ родившійся",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_06",
+   "text": "[шъ?] 3 Сентября 1897 года",
+   "sure": false,
+   "crop_ok": true,
+   "note": "first glyphs unclear"
+  },
+  {
+   "id": "0066_R3_parents_07",
+   "text": "въ дер. [Беуликъ?] Плунгянс-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_08",
+   "text": "каго прихода.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true,
+   "note": "small mark at left is stray, not transcribed"
+  },
+  {
+   "id": "0066_R3_godparents_02",
+   "text": "были Варфоломей",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_03",
+   "text": "Жилинскій съ Фран",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_04",
+   "text": "цишкою [Мкейкусъ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_05",
+   "text": "скою дѣвицею.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_01",
+   "text": "Тысяча восемьсотъ де-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_02",
+   "text": "вяносто седьмаго года",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_03",
+   "text": "[О?]ктября двадцать [восьм?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_04",
+   "text": "аго дня, въ Плунгянскомъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_05",
+   "text": "Р.К. приходскомъ Костел[ѣ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_06",
+   "text": "мѣстнымъ викарнымъ Кс.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "Кс blotted"
+  },
+  {
+   "id": "0073_L2_baptism_07",
+   "text": "Шанковскимъ окрещено",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_08",
+   "text": "дитя именемъ: Матв[ѣ?]й,",
+   "sure": false,
+   "crop_ok": true,
+   "note": "name underlined"
+  },
+  {
+   "id": "0073_L2_baptism_09",
+   "text": "со всѣми обрядами",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_10",
+   "text": "Таинства.",
+   "sure": true,
+   "crop_ok": true,
+   "note": "leading flourish not transcribed"
+  },
+  {
+   "id": "0073_L2_parents_01",
+   "text": "Крестьянъ Жор[а?]нской",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_02",
+   "text": "волости Матв[ѣ?]я и",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_03",
+   "text": "[о?]-Варвары изъ [Вупей?]-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading small glyph may be stray"
+  },
+  {
+   "id": "0073_L2_parents_04",
+   "text": "[кисовъ?] [Жутавтасовъ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_05",
+   "text": "закон. суп. сынъ родив-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_06",
+   "text": "шійся 25 Октября",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_07",
+   "text": "1897 года, въ М. Плун-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_08",
+   "text": "гянахъ того-же при-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_09",
+   "text": "хода.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_02",
+   "text": "были Стани[сла?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "word ends at right edge; mark beyond rule unclear"
+  },
+  {
+   "id": "0073_L2_godparents_03",
+   "text": "[Жутавтъ?] съ Фи-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_04",
+   "text": "ломеною Яцеви-",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_05",
+   "text": "чевою вдовою.",
+   "sure": false,
+   "crop_ok": true
+  }
+ ],
+ "B": [
+  {
+   "id": "0057_R1_baptism_01",
+   "text": "Тысяча восемьсотъ де",
+   "sure": false,
+   "crop_ok": true,
+   "note": "line end cut by rule; hyphen unclear"
+  },
+  {
+   "id": "0057_R1_baptism_02",
+   "text": "[ино?]сто седьмаго года [да?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "start and final glyph unclear"
+  },
+  {
+   "id": "0057_R1_baptism_03",
+   "text": "Іюня двадцатаго дня,",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_04",
+   "text": "въ Плунгянскомъ Р. К. при-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_05",
+   "text": "ходскомъ Костелѣ м[ѣ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_06",
+   "text": "стнымъ викарнымъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading dash-like stroke ignored"
+  },
+  {
+   "id": "0057_R1_baptism_07",
+   "text": "Кс. [Шапковскимъ?] окре-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_08",
+   "text": "щено дитя именемъ:",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_baptism_09",
+   "text": "[Иванъ?] со всѣми обря-",
+   "sure": false,
+   "crop_ok": false,
+   "note": "capitals cut at top edge, name hidden"
+  },
+  {
+   "id": "0057_R1_baptism_10",
+   "text": "[дами?] Таинства.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "stray stroke above"
+  },
+  {
+   "id": "0057_R1_parents_01",
+   "text": "-Подкидышъ",
+   "sure": false,
+   "crop_ok": true,
+   "note": "foundling; large blank crop; leading dash"
+  },
+  {
+   "id": "0057_R1_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_02",
+   "text": "были Петръ Кол[б?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_03",
+   "text": "екій съ Екате-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_04",
+   "text": "[ринаго?] Людвига",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_05",
+   "text": "Кайриса супру-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0057_R1_godparents_06",
+   "text": "[гою?].",
+   "sure": false,
+   "crop_ok": true,
+   "note": "text at top edge, rest blank"
+  },
+  {
+   "id": "0066_R3_baptism_01",
+   "text": "Тысяча восемьсотъ девя[?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "last glyphs cut at right"
+  },
+  {
+   "id": "0066_R3_baptism_02",
+   "text": "носто седьмаго года, (въ)",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_03",
+   "text": "Сентября пятаго дня, въ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_04",
+   "text": "Плунгянскимъ Р. К. приход",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end cut"
+  },
+  {
+   "id": "0066_R3_baptism_05",
+   "text": "скимъ Костелѣ мѣстнымъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_06",
+   "text": "викарнымъ Кс. Шапковски[й?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_07",
+   "text": "окрещено дитя именемъ:",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_08",
+   "text": "Викентій, со всѣми обря",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_baptism_09",
+   "text": "[дами?] Таинства.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_01",
+   "text": "-Крестьянъ Бернатовск[ой?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_02",
+   "text": "волости Ивана и Мар-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_03",
+   "text": "[ины?] изъ [Мацкинсовъ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_04",
+   "text": "-[Савдарішовъ?] закон",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_05",
+   "text": "изъ суп. сынъ родившійся",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_06",
+   "text": "[въ?] 3 Сентября 189[7?] года",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_07",
+   "text": "въ дер. [Бугихъ?] Плунгянс-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_parents_08",
+   "text": "каго прихода.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true,
+   "note": "stray flourish at left ignored"
+  },
+  {
+   "id": "0066_R3_godparents_02",
+   "text": "были Варѳоломей",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_03",
+   "text": "Жилинскій съ Фра",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_04",
+   "text": "[цишкою?] [Мвйкевъ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0066_R3_godparents_05",
+   "text": "ск[ою?] дѣвицею.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_01",
+   "text": "Тысяча восемьсотъ де-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_02",
+   "text": "яносто седьмаго года",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_03",
+   "text": "[О?]ктября двадцать восьм",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end cut"
+  },
+  {
+   "id": "0073_L2_baptism_04",
+   "text": "аго дня, въ Плунгянскомъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_05",
+   "text": "Р. К. приходскомъ Костел[ѣ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_06",
+   "text": "мѣстнымъ викарнымъ Кс.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_07",
+   "text": "Шапковскимъ окрещено",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_08",
+   "text": "дитя именемъ: Матвѣй,",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_09",
+   "text": "со всѣми обрядами",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_baptism_10",
+   "text": "Таинства.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_01",
+   "text": "Крестьянъ Жор[а?]нской",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_02",
+   "text": "волости Матвѣя и",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_03",
+   "text": "-Варвары изъ Бумей-",
+   "sure": false,
+   "crop_ok": true,
+   "note": "stray glyph before dash"
+  },
+  {
+   "id": "0073_L2_parents_04",
+   "text": "киевъ Жутвитасовъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_05",
+   "text": "закон. суп. сынъ родив-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_06",
+   "text": "шійся 25 Октября",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_07",
+   "text": "1897 года, въ М. Плун-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_08",
+   "text": "гянахъ того-же при-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_parents_09",
+   "text": "хода.",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_01",
+   "text": "Воспріемниками",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_02",
+   "text": "были Станисла[въ?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_03",
+   "text": "Жутвитъ съ Фи-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_04",
+   "text": "[ломеною?] Яцеви-",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0073_L2_godparents_05",
+   "text": "[чевою?] вдовою.",
+   "sure": false,
+   "crop_ok": true
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0057_R1_baptism_02",
+   "text": "[я?]носто седьмаго года",
+   "status": "draft",
+   "note": "Previous line ends 'де'. The first glyph is u-shaped (я or a вя ligature), and no separate looped в is visible, so this is bracketed. Final 'а' has a long tail, with no extra 'да'."
+  },
+  {
+   "id": "0057_R1_baptism_03",
+   "text": "Іюня двадцатаго дня[,?]",
+   "status": "draft",
+   "note": "Final mark is a short slanted stroke at the baseline, more like a comma than a period."
+  },
+  {
+   "id": "0057_R1_baptism_04",
+   "text": "въ Плунгянскомъ Р.К. при-",
+   "status": "image_checked",
+   "note": "'Р.К.' is written tight, with no space."
+  },
+  {
+   "id": "0057_R1_baptism_05",
+   "text": "ходскомъ Костел[ѣ?] м",
+   "status": "draft",
+   "note": "Only 'м' after Костелѣ. Line 06 begins with the ѣ-like glyph."
+  },
+  {
+   "id": "0057_R1_baptism_06",
+   "text": "[ѣ?]стнымъ викарнымъ",
+   "status": "draft",
+   "note": "The first glyph is a crossbar fused with a looped с-like form. Read as ѣ+с, but not certain."
+  },
+  {
+   "id": "0057_R1_baptism_07",
+   "text": "Кс. Ша[н?]ковскимъ окре-",
+   "status": "draft",
+   "note": "The third letter of the surname is u-shaped, which is how this clerk writes н. п is less likely."
+  },
+  {
+   "id": "0057_R1_baptism_09",
+   "text": "Иванъ со всѣми обря",
+   "status": "image_checked",
+   "note": "Capitals are whole and legible. No hyphen after обря."
+  },
+  {
+   "id": "0057_R1_baptism_10",
+   "text": "дами Таинства.",
+   "status": "image_checked",
+   "note": "Stroke above from the line above is ignored."
+  },
+  {
+   "id": "0057_R1_godparents_02",
+   "text": "были Петръ Кол[ь?]",
+   "status": "draft",
+   "note": "Final glyph is ь or б. Its shape matches ъ in Петръ."
+  },
+  {
+   "id": "0057_R1_godparents_03",
+   "text": "скій съ Екате-",
+   "status": "image_checked",
+   "note": "The first glyph matches this clerk's looped с in 'съ'."
+  },
+  {
+   "id": "0057_R1_godparents_04",
+   "text": "рин[о?]ю Л[ю?]двига",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0057_R1_godparents_05",
+   "text": "Кайри[с?]а супру",
+   "status": "draft",
+   "note": "с is blotted. No hyphen visible at the end."
+  },
+  {
+   "id": "0057_R1_godparents_06",
+   "text": "гою.",
+   "status": "image_checked",
+   "note": "Rest of the crop is blank."
+  },
+  {
+   "id": "0066_R3_baptism_01",
+   "text": "Тысяча восемьсотъ дев[я?]",
+   "status": "draft",
+   "note": "Last glyph sits at the right edge and is only partly clear."
+  },
+  {
+   "id": "0066_R3_baptism_04",
+   "text": "Плунгянскомъ Р.К. прихо[д?]",
+   "status": "draft",
+   "note": "Final д is at the right edge."
+  },
+  {
+   "id": "0066_R3_baptism_05",
+   "text": "скомъ Костелѣ мѣстным[ъ?]",
+   "status": "draft",
+   "note": "Final ъ at the right edge is faint."
+  },
+  {
+   "id": "0066_R3_baptism_06",
+   "text": "викарнымъ Кс. Ша[н?]ковск[и?]",
+   "status": "draft",
+   "note": "Surname runs on past the crop edge."
+  },
+  {
+   "id": "0066_R3_baptism_09",
+   "text": "дами Таинства.",
+   "status": "image_checked",
+   "note": "The heavy stroke and tick above are from the line above and are ignored."
+  },
+  {
+   "id": "0066_R3_parents_01",
+   "text": "-Крестьянъ Бернатовск[ой?]",
+   "status": "draft",
+   "note": "Ending runs into the column rule."
+  },
+  {
+   "id": "0066_R3_parents_03",
+   "text": "[ины?] изъ [Мадришковъ?]",
+   "status": "draft",
+   "note": "Continues 'Мари-' from the line above."
+  },
+  {
+   "id": "0066_R3_parents_04",
+   "text": "-[Савдаргасовъ?] зако[н?]",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0066_R3_parents_05",
+   "text": "[н.?] суп. сынъ родившійся",
+   "status": "draft",
+   "note": "First glyphs look like и plus a small з-like mark. Probably 'н.', completing 'законн.'."
+  },
+  {
+   "id": "0066_R3_parents_06",
+   "text": "[шъ?] 3 Сентября 1897 года",
+   "status": "draft",
+   "note": "First glyphs (ш-like with a dot) are unclear."
+  },
+  {
+   "id": "0066_R3_parents_07",
+   "text": "въ дер. [Беугихъ?] Плунгянс-",
+   "status": "draft",
+   "note": "Village name: 'хъ' is clear, the middle letters are not."
+  },
+  {
+   "id": "0066_R3_godparents_02",
+   "text": "были Вар[ѳ?]оломей",
+   "status": "draft",
+   "note": "Looped glyph with no descender, so ѳ more likely than ф."
+  },
+  {
+   "id": "0066_R3_godparents_03",
+   "text": "Жилинскій съ Фра",
+   "status": "image_checked",
+   "note": "No н is visible before the rule. Next line starts 'цишкою'."
+  },
+  {
+   "id": "0066_R3_godparents_04",
+   "text": "цишкою [Мейков?]",
+   "status": "draft",
+   "note": "Surname continues '-скою' on the next line."
+  },
+  {
+   "id": "0066_R3_godparents_05",
+   "text": "ск[о?]ю дѣвицею.",
+   "status": "draft",
+   "note": "The glyph after к is i-like."
+  },
+  {
+   "id": "0073_L2_baptism_02",
+   "text": "[я?]носто седьмаго года",
+   "status": "draft",
+   "note": "Previous line ends 'де-'. Only a я-like glyph comes before 'носто', with no looped в; it may be a вя ligature."
+  },
+  {
+   "id": "0073_L2_baptism_03",
+   "text": "[О?]ктября двадцать вос[ьм?]",
+   "status": "draft",
+   "note": "Open О. The last glyphs touch the rule."
+  },
+  {
+   "id": "0073_L2_baptism_05",
+   "text": "Р.К. приходскомъ Костел[ѣ?]",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0073_L2_baptism_07",
+   "text": "Ша[н?]ковскимъ окрещено",
+   "status": "draft",
+   "note": "Left and right bars are rules."
+  },
+  {
+   "id": "0073_L2_baptism_08",
+   "text": "дитя именемъ: Матв[ѣ?]й,",
+   "status": "draft",
+   "note": "Name is underlined (not transcribed)."
+  },
+  {
+   "id": "0073_L2_parents_01",
+   "text": "Крестьянъ Жор[а?]нской",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0073_L2_parents_02",
+   "text": "[во?]лости Матв[ѣ?]я и",
+   "status": "draft",
+   "note": "Only an л-like glyph is visible before 'ости'. 'во' may be omitted or fused."
+  },
+  {
+   "id": "0073_L2_parents_03",
+   "text": "[ь?]-Варвары изъ [Бупей?]-",
+   "status": "draft",
+   "note": "A small whole ь-like glyph comes before the dash. The first letter of the surname is В or Б."
+  },
+  {
+   "id": "0073_L2_parents_04",
+   "text": "[кисовъ?] [Жутавтасовъ?]",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0073_L2_godparents_02",
+   "text": "были Станисл[а?]",
+   "status": "draft",
+   "note": "The last letter before the rule could be а or о. Beyond it are only rule strokes."
+  },
+  {
+   "id": "0073_L2_godparents_03",
+   "text": "[Жутавтъ?] съ Фи-",
+   "status": "draft",
+   "note": ""
+  },
+  {
+   "id": "0073_L2_godparents_04",
+   "text": "ломеною Яцеви-",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0073_L2_godparents_05",
+   "text": "чевою вдовою.",
+   "status": "image_checked",
+   "note": ""
+  }
+ ]
+}

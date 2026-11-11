@@ -1,0 +1,614 @@
+{
+ "batch": "validation-4",
+ "A": [
+  {
+   "id": "0094_L2_baptism_01",
+   "text": "[о?]брядами Таинства.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "tail of preceding entry; first letter may be only б (о possibly painted/merged)"
+  },
+  {
+   "id": "0094_L2_baptism_02",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "rule and stray strokes only"
+  },
+  {
+   "id": "0094_L2_baptism_03",
+   "text": "[с?]яча восемьсотъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_04",
+   "text": "емьдесятъ восьма",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_05",
+   "text": "го года Января деся[=?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "double-dot hyphen at right beyond rule"
+  },
+  {
+   "id": "0094_L2_baptism_06",
+   "text": "таго дня въ Плунгян",
+   "sure": false,
+   "crop_ok": true,
+   "note": "marks at right edge may be a = hyphen"
+  },
+  {
+   "id": "0094_L2_baptism_07",
+   "text": "скомъ Р.К. Приход=",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_08",
+   "text": "скомъ Костелѣ Ви=",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_09",
+   "text": "карнымъ Кс: Ю[децка?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "priest surname continues next line (вичемъ); dots at right edge maybe hyphen"
+  },
+  {
+   "id": "0094_L2_baptism_10",
+   "text": "вичемъ окрещенъ мла",
+   "sure": false,
+   "crop_ok": true,
+   "note": "large '1'-like stroke beyond right rule not transcribed (likely margin/flourish)"
+  },
+  {
+   "id": "0094_L2_baptism_11",
+   "text": "денецъ именемъ Ан",
+   "sure": true,
+   "crop_ok": true,
+   "note": "Ан underlined; small 3-like stroke below is stray"
+  },
+  {
+   "id": "0094_L2_baptism_12",
+   "text": "на со всѣми обряда",
+   "sure": false,
+   "crop_ok": true,
+   "note": "со всѣми written nearly joined"
+  },
+  {
+   "id": "0094_L2_baptism_13",
+   "text": "ми Таинства.",
+   "sure": true,
+   "crop_ok": true,
+   "note": "trailing flourish not transcribed"
+  },
+  {
+   "id": "0094_L2_baptism_14",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "rule and descenders only"
+  },
+  {
+   "id": "0094_L2_parents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "strokes from line above only"
+  },
+  {
+   "id": "0094_L2_parents_02",
+   "text": "[Корганъ?] Винцен=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_03",
+   "text": "та и [Анны?] изъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_04",
+   "text": "[Вашовскихъ?] [Климо?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "maiden name continues next line (-чевскихъ)"
+  },
+  {
+   "id": "0094_L2_parents_05",
+   "text": "чевскихъ закон=",
+   "sure": false,
+   "crop_ok": true,
+   "note": "first letter ч fairly sure; hyphen at right edge"
+  },
+  {
+   "id": "0094_L2_parents_06",
+   "text": "ныхъ супруговъ",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_07",
+   "text": "дочь родившаяся",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_08",
+   "text": "[1?]888. года Января",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading 1 is a tall stroke, may be partly stray; = at bottom-left not transcribed"
+  },
+  {
+   "id": "0094_L2_parents_09",
+   "text": "10.го дня въ дерев=",
+   "sure": false,
+   "crop_ok": true,
+   "note": "colon-like mark at left start ignored"
+  },
+  {
+   "id": "0094_L2_parents_10",
+   "text": "ни [Вишковяны?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_11",
+   "text": "сего прихода. —",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_01",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "rules and flourish only"
+  },
+  {
+   "id": "0094_L2_godparents_02",
+   "text": "[Вос?]пріемника",
+   "sure": false,
+   "crop_ok": true,
+   "note": "visible text starts with пріемника; Вос may be absent"
+  },
+  {
+   "id": "0094_L2_godparents_03",
+   "text": "ми были Ан=",
+   "sure": true,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_04",
+   "text": "ни Лукош[айтъ?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ending runs across thick rule"
+  },
+  {
+   "id": "0094_L2_godparents_05",
+   "text": "съ Казими=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_06",
+   "text": "ною Лав[рин?]=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_07",
+   "text": "новою вдовою,",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_08",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "closing flourish only"
+  },
+  {
+   "id": "0094_L2_godparents_09",
+   "text": "",
+   "sure": true,
+   "crop_ok": false,
+   "note": "rule only"
+  }
+ ],
+ "B": [
+  {
+   "id": "0094_L2_baptism_01",
+   "text": "[обрядами?] Таинства.",
+   "sure": false,
+   "crop_ok": true,
+   "note": "end of previous entry; first word doubtful"
+  },
+  {
+   "id": "0094_L2_baptism_02",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only rule and flourishes"
+  },
+  {
+   "id": "0094_L2_baptism_03",
+   "text": "[ача?] восемьсотъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_04",
+   "text": "семьдесятъ восьма",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_05",
+   "text": "го года Января дес[я?]",
+   "sure": false,
+   "crop_ok": true,
+   "note": "ending doubtful"
+  },
+  {
+   "id": "0094_L2_baptism_06",
+   "text": "таго дня въ Плунгян",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_07",
+   "text": "скомъ Р.К. Приходъ=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_08",
+   "text": "скомъ Костелѣ Ви=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_09",
+   "text": "карнымъ Кс: [Юдеро?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_10",
+   "text": "[вечимъ?] окрещенъ мла",
+   "sure": false,
+   "crop_ok": true,
+   "note": "first word doubtful; right-edge stroke ignored"
+  },
+  {
+   "id": "0094_L2_baptism_11",
+   "text": "денецъ именемъ Ан",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_12",
+   "text": "На со всѣми обряда",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_baptism_13",
+   "text": "ми Таинства.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_01",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only rule and flourish"
+  },
+  {
+   "id": "0094_L2_parents_02",
+   "text": "Крестьянъ Винцен=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_03",
+   "text": "та и Анніи изъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_04",
+   "text": "Валовскихъ [Кшиго?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_05",
+   "text": "[Кши?]чевскихъ закон",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_06",
+   "text": "ныхъ супруговъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_07",
+   "text": "дочь родившаяся",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_08",
+   "text": "[1?]888. года Января",
+   "sure": false,
+   "crop_ok": true,
+   "note": "leading partial 8 may be stray"
+  },
+  {
+   "id": "0094_L2_parents_09",
+   "text": "10го дня въ дерев=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_10",
+   "text": "ни [Винцовани?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_parents_11",
+   "text": "сего прихода. —",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_01",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only rule"
+  },
+  {
+   "id": "0094_L2_godparents_02",
+   "text": "[пріемникина?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_03",
+   "text": "ми были Ан.",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_04",
+   "text": "ии [Лукона?]",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_05",
+   "text": "съ Казаржи=",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_06",
+   "text": "ною Лавринъ",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_07",
+   "text": "[новою воровно?],",
+   "sure": false,
+   "crop_ok": true
+  },
+  {
+   "id": "0094_L2_godparents_08",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only a flourish"
+  },
+  {
+   "id": "0094_L2_godparents_09",
+   "text": "",
+   "sure": false,
+   "crop_ok": false,
+   "note": "only a rule"
+  }
+ ],
+ "adjudicate": [
+  {
+   "id": "0094_L2_baptism_01",
+   "text": "брядами Таинства.",
+   "status": "image_checked",
+   "note": "Starts with б and its lead-in stroke; I see no separate о. The о is presumably on the previous line."
+  },
+  {
+   "id": "0094_L2_baptism_03",
+   "text": "[ся?]ча восемьсотъ",
+   "status": "draft",
+   "note": "First two glyphs are e/a-like; probably с + я of Тысяча"
+  },
+  {
+   "id": "0094_L2_baptism_04",
+   "text": "емьдесятъ восьма",
+   "status": "image_checked",
+   "note": "Only one e-shaped glyph before м, so no с. The tick at the right rule is split across crops and not transcribed."
+  },
+  {
+   "id": "0094_L2_baptism_05",
+   "text": "го года Января деся[=?]",
+   "status": "draft",
+   "note": "Two short ticks right of the rule at baseline level, probably the = hyphen. The mark at top-right belongs to the line above."
+  },
+  {
+   "id": "0094_L2_baptism_06",
+   "text": "та[г?]о дня въ Плунгян[=?]",
+   "status": "draft",
+   "note": "г is looped and crossed by a descender from the line above. Low = ticks right of the rule."
+  },
+  {
+   "id": "0094_L2_baptism_07",
+   "text": "скомъ Р.К. [п?]риход=",
+   "status": "draft",
+   "note": "No ъ before =. The first letter of приход is about x-height, so probably lowercase п; the case is doubtful."
+  },
+  {
+   "id": "0094_L2_baptism_08",
+   "text": "скомъ Костелѣ Ви=",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0094_L2_baptism_09",
+   "text": "карнымъ Кс: Ю[дера?][=?]",
+   "status": "draft",
+   "note": "Priest surname continues as вичемъ. After Юде there is a descender glyph plus a 2-shaped bowl (р?) and a final а/о at the rule. Dots below at the rule may be =."
+  },
+  {
+   "id": "0094_L2_baptism_10",
+   "text": "вичемъ окрещенъ мла",
+   "status": "image_checked",
+   "note": "Large 1-like stroke beyond the right rule is margin/flourish, not transcribed"
+  },
+  {
+   "id": "0094_L2_baptism_11",
+   "text": "денецъ именемъ Ан",
+   "status": "image_checked",
+   "note": "Ан underlined; the 3-like stroke below is stray"
+  },
+  {
+   "id": "0094_L2_baptism_12",
+   "text": "На со всѣми обряда",
+   "status": "image_checked",
+   "note": "Н is ascender-height, so capital (name Ан-На). A single dot at bottom-right of the rule is not transcribed."
+  },
+  {
+   "id": "0094_L2_baptism_13",
+   "text": "ми Таинства.",
+   "status": "image_checked",
+   "note": "Trailing dash and upstroke after the period is a flourish"
+  },
+  {
+   "id": "0094_L2_baptism_14",
+   "text": "",
+   "status": "rejected_crop",
+   "note": "No crop file 0094_L2_baptism_14.png exists (baptism ends at _13). The corresponding rule strip, parents_01, has only a rule and descenders."
+  },
+  {
+   "id": "0094_L2_parents_02",
+   "text": "[Корганъ?] Винцен=",
+   "status": "draft",
+   "note": "The first word is not Крестьянъ: К, о/у, descender glyph, 2-shaped glyph, а, н, ъ. It may be Коранъ if the descender + 2 form a single р."
+  },
+  {
+   "id": "0094_L2_parents_03",
+   "text": "та и [Анеліи?] изъ",
+   "status": "draft",
+   "note": "After А there is a looped e-form, then strokes, a dotted і and и. The stroke count fits Анеліи better than Анніи; doubtful. The mark above та is stray."
+  },
+  {
+   "id": "0094_L2_parents_04",
+   "text": "[Валовскихъ?] К[лимо?]",
+   "status": "draft",
+   "note": "Ва + two-stroke glyph (л or ш?) + овскихъ. The second word crosses the rule (К + loop + и + hooked glyph + humps + о) and continues as чевскихъ."
+  },
+  {
+   "id": "0094_L2_parents_05",
+   "text": "[ч?]евскихъ закон",
+   "status": "draft",
+   "note": "First letter z-shaped (ч). The ticks at the rule top and bottom are not at text height, so I did not transcribe a hyphen."
+  },
+  {
+   "id": "0094_L2_parents_06",
+   "text": "ныхъ супруговъ",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0094_L2_parents_07",
+   "text": "дочь родившаяся",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0094_L2_parents_08",
+   "text": "888. года Января",
+   "status": "image_checked",
+   "note": "The looped stroke at upper-left is the descender of д from the line above (дочь), not a 1. The = at bottom-left is a rule tick or stray."
+  },
+  {
+   "id": "0094_L2_parents_09",
+   "text": "10.го дня въ дерев=",
+   "status": "image_checked",
+   "note": "го superscript, underlined. The mark on the left rule is ignored."
+  },
+  {
+   "id": "0094_L2_parents_10",
+   "text": "ни [Винцовани?]",
+   "status": "draft",
+   "note": "ц has the same z-with-descender shape as in Винцен. The final letter may be и or ы."
+  },
+  {
+   "id": "0094_L2_parents_11",
+   "text": "сего прихода. —",
+   "status": "image_checked",
+   "note": ""
+  },
+  {
+   "id": "0094_L2_godparents_02",
+   "text": "пріе[мни?]ка",
+   "status": "draft",
+   "note": "Вос is not in this crop. The middle humps (м/н/и) are hard to segment. The 2-like mark below the left side is the top of a letter from the next line."
+  },
+  {
+   "id": "0094_L2_godparents_03",
+   "text": "ми были Ан=",
+   "status": "image_checked",
+   "note": "Small stacked double tick after Ан is the clerk's = hyphen"
+  },
+  {
+   "id": "0094_L2_godparents_04",
+   "text": "ни Лукош[аъ?]",
+   "status": "draft",
+   "note": "After ш an а-like glyph sits at the thin/thick rule, followed by an unclear glyph beyond the thick rule"
+  },
+  {
+   "id": "0094_L2_godparents_05",
+   "text": "съ Ка[з?]ар[ж?]и=",
+   "status": "draft",
+   "note": "Probably intended Катаржи-ною, but the 3rd glyph is shaped like this clerk's з, not his m-like т. The long diagonal is the Л ascender from the line below."
+  },
+  {
+   "id": "0094_L2_godparents_06",
+   "text": "ною Лаврин=",
+   "status": "image_checked",
+   "note": "The speck above the н is stray. The = sits low, right of the н."
+  },
+  {
+   "id": "0094_L2_godparents_07",
+   "text": "новою вдовою,",
+   "status": "image_checked",
+   "note": "The д of вдовою has a long descender crossing the rule"
+  }
+ ]
+}

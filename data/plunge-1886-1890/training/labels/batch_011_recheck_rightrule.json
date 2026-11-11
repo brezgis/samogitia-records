@@ -1,0 +1,12 @@
+{
+  "reviewer": "Claude Opus 5.5 visual transcription (single reader)",
+  "baseline_seen": true,
+  "notes": "Re-review after refine_lines right-edge rule snapping. Remaining changed drafts keep their draft text and are re-merged so stored hashes match the current crops.",
+  "lines": [
+    {"id": "0096_L2_baptism_05", "text": "въ Плунгянскомъ Р.К[.?]", "status": "draft", "note": "Possible dot now visible after К."},
+    {"id": "0096_L3_parents_07", "text": "шаяся 1888 года Ян=", "status": "image_checked"},
+    {"id": "0096_L3_parents_08", "text": "варя 24го дня въ де[-?]", "status": "draft", "note": "Mark at the rule."},
+    {"id": "0111_R1_baptism_04", "text": "гянскомъ Р.К. Приходскомъ", "status": "image_checked", "note": "Glyph beyond the rule now excluded."},
+    {"id": "0111_R1_baptism_07", "text": "Младенецъ именемъ", "status": "image_checked", "note": "Mark beyond the rule now excluded."}
+  ]
+}

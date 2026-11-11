@@ -1,0 +1,251 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0011_R2",
+   "found": "klebonas kanauninkas Beresnevič [?]",
+   "expected": "klebonas kunigas [name]. 'kunigas' is missing. With the canon title the sample mostly reads 'klebonas kunigas kanauninkas [name]'"
+  },
+  {
+   "row_id": "0036_R3, 0039_R3, 0048_R3, 0052_L4, 0055_R1, 0142_R4",
+   "found": "klebonas kanauninkas kunigas [name]",
+   "expected": "klebonas kunigas [name] (+ kanauninkas). Three word orders appear across the sample (0007_R2, 0084_R3 and 0086_R2 use 'klebonas kunigas kanauninkas'), so pick one and use it everywhere"
+  },
+  {
+   "row_id": "0084_R3, 0086_R2",
+   "found": "Beresnevičius [?]",
+   "expected": "Clergy names stay in their recorded Polish form; Juozapavičius-style Lithuanianisation is explicitly not used. Use Beresniewicz (as in 0036/0039/0055)"
+  },
+  {
+   "row_id": "0007_R2, 0011_R2 (Beresnevič); 0048_R3, 0052_L4 (Beresnewicz)",
+   "found": "Beresnevič / Beresnewicz",
+   "expected": "One Polish form for the same parish priest, e.g. Beresniewicz, following the clergy rule"
+  },
+  {
+   "row_id": "0040_R3, 0042_L3, 0043_R3",
+   "found": "kunigas vikaras Jacevič",
+   "expected": "kunigas vikaras Jacewicz (Polish form, as in 0012-0035 and 0044-0063)"
+  },
+  {
+   "row_id": "0113_R4",
+   "found": "kunigas Józefowicz",
+   "expected": "kunigas vikaras Józefowicz (Викарнымъ Кс:). Check the source, but every other Józefowicz baptism has 'vikaras'"
+  },
+  {
+   "row_id": "0195_L4",
+   "found": "kunigas Antanas Juefovič [?]",
+   "expected": "Probably Юзефовичъ, which the glossary renders as Józefowicz. 0172_L2 gives the same priest as 'Antoni Józefowicz', so the given name is also inconsistent. Re-check the reading"
+  },
+  {
+   "row_id": "0152_L1",
+   "found": "klebonas kanauninkas kunigas [?]tkevič",
+   "expected": "Probably Петкевичъ, which the glossary renders as Petkiewicz (cf. 0142_R4). Re-check the reading"
+  },
+  {
+   "row_id": "0172_L2",
+   "found": "kun. Antoni Józefowicz",
+   "expected": "'kunigas' written out in the translated sentence ('kun.' is a notes abbreviation); keep the given name consistent with 0195_L4"
+  },
+  {
+   "row_id": "0187_L4",
+   "found": "1889 metų lapkričio penktą dieną",
+   "expected": "1889 metų lapkričio 5 dieną (numeral, per the date-form rule)"
+  },
+  {
+   "row_id": "0047_R3",
+   "found": "Ignaco",
+   "expected": "Igno (Игнацы = Ignas)"
+  },
+  {
+   "row_id": "0124_L5",
+   "found": "Ignaco Gutevskio [?] žmona",
+   "expected": "Igno Gutevskio [?] žmona"
+  },
+  {
+   "row_id": "0199_R6",
+   "found": "Ignaso",
+   "expected": "Igno"
+  },
+  {
+   "row_id": "0136_L1",
+   "found": "Antoni [?] Rusis",
+   "expected": "Antanas [?] Rusis (Антоній = Antanas; he is not clergy)"
+  },
+  {
+   "row_id": "0023_R2",
+   "found": "[F]ranc Benikas žmona",
+   "expected": "Pranciškaus [?] Beniko žmona (Францишекъ = Pranciškus; husband in the genitive)"
+  },
+  {
+   "row_id": "0149_L2",
+   "found": "Franc[?] Karvid [?]",
+   "expected": "Pranciškus [?] Karvid [?], if the reading is Францишекъ"
+  },
+  {
+   "row_id": "0040_R3",
+   "found": "Telševsko [?] miestiečių",
+   "expected": "Telšių miestiečių (as in 0157_L2). Тельшевскихъ is the town adjective, not a place name"
+  },
+  {
+   "row_id": "0191_L5",
+   "found": "Kilevsko [?] parapijos",
+   "expected": "Kulių parapijos (Кулевскій приходъ = Kulių parapija)"
+  },
+  {
+   "row_id": "0159_L1, 0187_L4, 0189_R5",
+   "found": "Beenatovsi [?] / Bunatovo [?] valsčiaus",
+   "expected": "Bernatovo [?] valsčiaus, if the source is Бернатовской (very likely, given how often it occurs in the sample)"
+  },
+  {
+   "row_id": "0034_L2",
+   "found": "Bonifaco Bielawskio",
+   "expected": "Beliavskio (Cyrillic transliteration as in 0006_L1/0199_L2; Polish 'w'/'ie' spelling is reserved for clergy)"
+  },
+  {
+   "row_id": "0012_R2 (Orlovskij), 0014_L1 (Meškovskij, Pavlovski), 0018_L1 (Prepovskij), 0065_R1 (Lukauski), 0067_L4 (Petrovski), 0152_L1 (Guovski), 0185_R3 (Masilevski, Ivanovski), 0188_L4 (Petrovski), 0191_L5 (Kruminski)",
+   "found": "-skij / -ski surname endings",
+   "expected": "Nominative singular -skis (glossary example Račkovskis; the sample itself has Petrovskis in 0105_R3 and Meškovskis in 0119_L4)"
+  },
+  {
+   "row_id": "0109_R4 (Pociusov, Ramonasov), 0111_L4 (Dolongovskich), 0197_R2 (Martinkov), 0169_L1 (Parvoišov, Voitkov), 0170_R4 (Stoniov, Lipšiov), 0185_R3 (Jurisov), 0038_L3 (Kekiov, Symaittisov); systematic -ov in 0006-0031, 0055, 0057, 0079, 0093, 0097, 0098, 0193, 0196 etc.",
+   "found": "Russian genitive-plural surname forms (изъ ...овъ / ...скихъ) transliterated with the case ending",
+   "expected": "Nominative singular where the declension is clear: Pocius, Ramonas, Dolongovskis [?], Martinkus [?] (cf. 0035_R3), Stonis, etc. Add [?] where the base is uncertain"
+  },
+  {
+   "row_id": "0081_R2 (Vamiovas, Kunriovas), 0083_R1 (Gadarčintisovas), 0103_R4 (Daumovas)",
+   "found": "Hybrid forms: Russian gen. pl. -ov plus Lithuanian -as",
+   "expected": "Nominative base without the Russian case suffix (e.g. Vamis [?], Daumas [?]), plus [?]"
+  },
+  {
+   "row_id": "Systematic: every two-parent entry (0006_L1 ... 0199_R6)",
+   "found": "'teisėtų sutuoktinių Jono ir Veronikos, gim. Beliavskis [?], Talimov [?]'. The father's surname and the mother's maiden name both stand after 'gim.', so both read as birth names",
+   "expected": "Glossary: '[mother], gim. [maiden]'. For example 'teisėtų sutuoktinių Jono Beliavskio [?] ir Veronikos, gim. Talimov [?]', or 'Jono ir Veronikos (gim. Talimov [?]) Beliavskių [?]'"
+  },
+  {
+   "row_id": "0095_R3",
+   "found": "valstietės Marijonos, gim. Ammovas [?], Meikovskaja [?]",
+   "expected": "No 'gim.' for an unmarried mother: 'valstietės Marijonos Meikovskajos [?] ...', with the second name in a bracketed note if both are written"
+  },
+  {
+   "row_id": "0175_L4",
+   "found": "Petronėlė Kreivaitė",
+   "expected": "Possible restoration: the parents' entry reads 'Krevis', and siblings elsewhere are rendered Vaitkate/Kalnikate. Transliterate exactly as written (e.g. Krevaite [?]); never restore an unwritten Lithuanian form"
+  }
+ ],
+ "grammar_problems": [
+  {
+   "row_id": "0026_L2",
+   "problem": "The husband's surname is in the nominative after a genitive given name.",
+   "fix": "Veronika, Juozapo Bunkaus žmona"
+  },
+  {
+   "row_id": "0027_R2",
+   "problem": "The husband's surname is in the nominative.",
+   "fix": "Liudvika [?], Antano Drymbos žmona"
+  },
+  {
+   "row_id": "0023_R2",
+   "problem": "The husband's surname is in the nominative.",
+   "fix": "Marijona, Pranciškaus [?] Beniko žmona"
+  },
+  {
+   "row_id": "0024_R2",
+   "problem": "The husband's surname is in the nominative.",
+   "fix": "Kotryna, Stanislovo Davkinčio [?] žmona"
+  },
+  {
+   "row_id": "0079_R3",
+   "problem": "The husband's surname is in the nominative.",
+   "fix": "Elžbieta [?], Francin [?] Jačo [?] žmona"
+  },
+  {
+   "row_id": "0157_L2",
+   "problem": "The husband's surname is in the nominative.",
+   "fix": "Karijana [?], Kaktan [?] Norvillo [?] žmona"
+  },
+  {
+   "row_id": "0006_L1",
+   "problem": "'Akurusios' has a feminine genitive ending (-ios) but stands for the husband's given name. This is probably a misreading.",
+   "fix": "Re-read the name. The husband's given name should be masculine genitive (-o/-io/-aus), e.g. '[neįskaitoma], [vardas?] Ravickio [?] žmona'"
+  },
+  {
+   "row_id": "0004_L1, 0042_L3, 0046_L3, 0073_R1",
+   "problem": "A genitive given name is paired with a nominative surname: 'Petronėlės Sfvatovskaja', 'Ievos Pruiniovna', 'Onos Benikovna', 'Marijonos Antonovna Jančevska'. 0034_L2 ('Juozapotos Česnovskos') and 0124_L5 ('Prasyldos Lubovnos') decline the surname.",
+   "fix": "Decline consistently: 'Petronėlės Sfvatovskajos [?]', 'Ievos Pruiniovnos [?]', 'Onos Benikovnos', 'Marijonos Antonovnos Jančevskos'"
+  },
+  {
+   "row_id": "0201_L2b",
+   "problem": "Plural 'valstiečių' is used for a single unmarried mother, and the word order breaks the formula.",
+   "fix": "Bernatovo [?] valsčiaus valstietės Filomenos Kubilius [?] nesantuokinis sūnus, gimęs 1830 [sic] m. kovo 26 d. ..."
+  },
+  {
+   "row_id": "0191_L5",
+   "problem": "The entry says both 'šios parapijos' and 'Kilevsko [?] parapijos', which contradict each other.",
+   "fix": "Kork.liany kaime, Kulių parapijos."
+  },
+  {
+   "row_id": "0004_L1, 0175_L4",
+   "problem": "'juodraštis' means a rough draft, not the register entry or handwriting. It is misused in '(juodraštis iškraipytas)' and '[juodraštyje taip pat ...]'.",
+   "fix": "'(įrašas iškraipytas)', '[įraše taip pat \"Marijona\"]', unless the source really is a draft copy"
+  },
+  {
+   "row_id": "0007_R2",
+   "problem": "A stray month heading 'vasario mėn.' is appended to the birth clause as if it were part of the sentence.",
+   "fix": "Delete it, or move it to a note: '[paraštėje: vasario mėn.]'"
+  },
+  {
+   "row_id": "0183_L4",
+   "problem": "A stray 'Spalis.' (a month heading) is appended to both the parents and baptism sentences.",
+   "fix": "Delete it, or move it to '[paraštėje: spalis]'"
+  },
+  {
+   "row_id": "0038_L3",
+   "problem": "'[atsitiktinis žodis: \"скабрь\"]' is unclear. The word is almost certainly the next month heading (декабрь/ноябрь), not a random word.",
+   "fix": "[pašalinis žodis, tikriausiai mėnesio antraštė: '...кабрь']"
+  },
+  {
+   "row_id": "0046_L3",
+   "problem": "'d.' is missing after the day placeholder, unlike 0123_L4.",
+   "fix": "gimęs 1887 m. vasario [diena neįskaitoma] d. Jazdicų [?] kaime"
+  },
+  {
+   "row_id": "0060_R1, 0120_L4, 0137_R4",
+   "problem": "Village names keep the Russian locative plural ending -ach ('Norvaišach', 'Gundinach', 'Stolgach') in front of the Lithuanian locative 'kaime'/'palivarke', so the case is marked twice.",
+   "fix": "Transliterate the base form: 'Norvaišių [?] kaime' (cf. 0053_R2), 'Gundinų [?] kaime', 'Stolgų [?] palivarke' (cf. Stolgi/Stalgi in 0028_R2 and 0170_R4)"
+  },
+  {
+   "row_id": "0014_L1, 0032_R2, 0036_R3, 0046_L3, 0047_R3, 0116_L4, 0144_L2, 0197_R2",
+   "problem": "Russian adjectival endings are treated as Lithuanian genitives before 'valsčiaus' ('Olsiadskoj', 'Olsiadsko', 'Korščianskos', 'Labeudzievskos', 'Vornensko/Povondensko', 'Toranskos', 'Vornenskio'). This is not grammatical Lithuanian.",
+   "fix": "Use the Lithuanian place genitive where it is identifiable: Ольсядская = Alsėdžių valsčiaus, Ворнянская = Varnių valsčiaus. Otherwise give the base with [?], e.g. 'Korščian[?] valsčiaus'"
+  },
+  {
+   "row_id": "0018_L1",
+   "problem": "'Juš­nio' contains an invisible soft hyphen (U+00AD) in the middle of the surname.",
+   "fix": "Jušnio [?]"
+  },
+  {
+   "row_id": "0199_R6",
+   "problem": "'kovo 1o [?] d.' has a letter 'o' in place of a zero.",
+   "fix": "kovo 10 [?] d."
+  },
+  {
+   "row_id": "0116_L4",
+   "problem": "'Povondensko [?] bendruomenės' is a literal calque of сельское общество.",
+   "fix": "Povondensko [?] seniūnijos (the usual term in Lithuanian historiography for сельское общество)"
+  }
+ ],
+ "glossary_suggestions": [
+  "'вдовою / вдовцомъ = našle / našlys' is wrong. 'našle' is the instrumental, copied from the Russian instrumental. In 'Krikštatėviai buvo A ir B, ...' the apposition is nominative, so the entry should read 'našlė / našlys'. Rows 0019_R1 and 0195_L4 already correctly use 'našlė', so do not 'fix' them toward the glossary.",
+  "'[B], [husband] žmona' should say explicitly that the husband's given name AND surname go in the genitive, with examples ('Juozapo Bunkaus žmona', 'Antano Drymbos žmona'). Six rows in the sample leave the surname in the nominative.",
+  "The maiden-name rule needs a full couple template, because the current one produces 'Jono ir Veronikos, gim. X, Y' in nearly every row. Suggested: 'teisėtų sutuoktinių Jono X-o ir Veronikos, gim. Y' (or 'Jono ir Veronikos (gim. Y) X-ų'). Also state that 'изъ Y-овъ' becomes the nominative singular base (Y), not 'Y-ov'.",
+  "Add Каноникъ = kanauninkas with one fixed order, e.g. 'klebonas kunigas kanauninkas [name]'. The sample currently has three orders, and one row drops 'kunigas'.",
+  "Say how surname suffixes are adapted: -скій becomes -skis (never -skij/-ski), and decide whether -ичъ becomes -ič or -ičius. The same godfather appears as 'Tyrkšlevičius' (0169_L1) and 'Tyrktlevič' (0175_L4), and Mickevič/Zubovičius/Cynovičius are mixed. Also decide feminine forms (-ская as -skaja vs -ska; -овна kept as written) and require them to decline in the genitive.",
+  "Add the identifiable volosts and towns so that Russian adjective endings stop being written as Lithuanian genitives: Ольсядская = Alsėdžių; Ворнянская = Varnių; Тельшевскій/Тельши = Telšių; Дорбянская = Darbėnų [?]; Лабардзская = Labardžių [?]; Андреевская = Andrejavo [?]. Add the rule that an unidentified volost is written as a transliterated base + [?], never with -skoj/-sko/-skos.",
+  "'Текля = Tekelė': the standard Lithuanian calendar and church form is 'Tekla'. Tekelė is a diminutive/folk variant and less suitable for a formal register translation.",
+  "Add 'Игнатій/Игнацы = Ignas (gen. Igno), never Ignacas/Ignasas' and 'Стефанъ = Steponas'. The sample has Ignaco/Ignaso and 'Stefano' (0152_L1) next to 'Steponas' (0084_R3).",
+  "Extend the clergy rule to given names and to clergy who appear as godparents (the sample has Antoni vs Antanas Józefowicz), and say that 'kunigas' is written out in sentences and 'kun.' is used only in notes.",
+  "Add Фольваркъ = palivarkas (0137_R4 already uses 'palivarke' correctly) and сельское общество = seniūnija.",
+  "Standardise the editorial markers: the sample mixes [sic], [kaip parašyta], [taip parašyta] and [kaip užrašyta]. Put stray marginal month headings in a fixed bracket form such as '[paraštėje: ...]', and do not use 'juodraštis' for the register entry.",
+  "'Bernatovo [?]': '-ovo' is a Russian-style genitive that looks like a Lithuanian genitive. Keep it as a placeholder, but say that it is one, and say that misreadings of Бернатовской (Bunatovo, Beenatovsi) are normalised to it."
+ ],
+ "overall": "I've read the glossary (docs/LT_GLOSSARY.md) and checked all 128 entries. The fixed baptism formula is applied very consistently. Almost every row has 'N metų [month] [day] dieną Plungės Romos katalikų parapijos bažnyčioje kunigas vikaras ... su visomis Sakramento apeigomis pakrikštijo kūdikį, vardu ...', and the gender agreement between sūnus/duktė, gimęs/gimusi and the child's name is correct throughout.\n\nThe main problems are structural and run through the whole sample:\n(1) The mother's maiden name is rendered as 'Jono ir Veronikos, gim. X, Y'. This puts the father's surname after 'gim.' as well, which is misleading. It breaks the glossary's '[mother], gim. [maiden]' rule in nearly every two-parent row.\n(2) Surnames keep Russian case endings (-ov, -skich, -skij, -ski, and hybrids like -ovas) instead of the nominative singular the glossary prescribes.\n(3) The husband's surname in 'X, Y-o žmona' is often left in the nominative (6 rows).\n(4) Clergy titles and names drift: three orders of klebonas/kanauninkas/kunigas, Jacevič vs Jacewicz, and Beresnevič/Beresnewicz/Beresniewicz/Beresnevičius.\n(5) Russian adjectival volost names (Olsiadskoj, Vornensko, Telševsko) are treated as Lithuanian genitives.\n\nSmaller problems: one date written in words (0187_L4), Ignaco/Ignaso/Antoni given-name forms, stray month headings inside sentences (0007_R2, 0183_L4), the mother wrongly given as plural 'valstiečių' in 0201_L2b, a contradiction between this parish and another one in 0191_L5, a soft-hyphen character in 0018_L1, and 'juodraštis' misused to mean the entry or handwriting.\n\nOne glossary entry is itself wrong: 'našle' should be 'našlė'. The rows already use the correct form, so they should not be changed to match the glossary. 'Tekelė' is better as 'Tekla'. Several gaps (canon title, surname-suffix policy, the volost list, the couple/maiden-name template) cause most of the inconsistency above.\n\nI did not flag names transliterated as read where the reading is merely uncertain. Outside the scope of the review, I also noticed baptism dates that come before the birth date in 0062_L4 and 0121_R4; both already carry [?], so they are worth re-checking against the image.\n\nI wrote no files."
+}
