@@ -1,0 +1,44 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0005_R1",
+   "found": "\"gimusi 1867 metų lapkričio 27 dieną Askemianų [?], šios parapijos\": the place-type word is missing.",
+   "expected": "Section 1 says every formula element is required and an absent word goes in brackets. Section 4.1 requires a type word after the genitive name. Write \"Askemianų [?] [kaime], šios parapijos\", the same way as 0049_R2 and 0070_R3. If the source does write the word, write \"Askemianų [?] kaime\"."
+  },
+  {
+   "row_id": "0072_R3",
+   "found": "\"Bukontiškų [?] vietovėje\"",
+   "expected": "Section 4.1 has a closed list of place-type words: kaime, miestelyje, mieste, dvare, palivarke, užusienyje, okolicoje, vienkiemyje. \"vietovėje\" is not on it. Use the matching 4.1 word (most likely \"Bukontiškų [?] kaime\" for деревня). If the source word really is not in 4.1, raise it as a glossary addition instead of making up a rendering."
+  },
+  {
+   "row_id": "0136_L2",
+   "found": "\"Rozalija, Juozapo [?] Gaileso [?] žmona\": the husband's surname has a Lithuanian -o genitive added to a base in -es.",
+   "expected": "Section 7.2, Step 1 and Step 2: a genitive -а after a consonant (Гайлеса) gives the consonant-final base, and only bases in -as/-is/-ys/-us/-ius/-a are declined. -es is not one of those. Write \"Rozalija, Juozapo [?] Gailes [?] žmona\"."
+  },
+  {
+   "row_id": "0193_R5",
+   "found": "\"Šlioų [?] kaime\"",
+   "expected": "Section 4.3, step 2: remove the locative and add -ių (after -яхъ) or -ų (after -ахъ). \"-ioų\" is neither ending. Write \"Šlių [?] kaime\" (from -яхъ) or \"Šliotų/…\" as the base requires. Compare 0140_L4, which has \"Šlio [?] kaime\" for what is probably the same village, so the two rows also break principle 2 (one form per place). Check the reading and use one form in both rows."
+  }
+ ],
+ "grammar_problems": [
+  {
+   "row_id": "0193_R5",
+   "problem": "\"Šlioų\" is not a possible Lithuanian genitive plural: an -ų ending cannot follow \"io\".",
+   "fix": "Šlių [?] kaime (or the 4.3 form for whatever the source locative is)"
+  },
+  {
+   "row_id": "0136_L2",
+   "problem": "\"Gaileso\" is a made-up -as/-is genitive for a base that does not decline under the glossary.",
+   "fix": "Rozalija, Juozapo [?] Gailes [?] žmona"
+  },
+  {
+   "row_id": "0005_R1",
+   "problem": "The genitive place name \"Askemianų [?]\" hangs without a head noun (kaime), so the place phrase is ungrammatical.",
+   "fix": "gimusi 1867 metų lapkričio 27 dieną Askemianų [?] [kaime], šios parapijos"
+  }
+ ],
+ "rows_checked": 124,
+ "rows_with_any_problem": 4,
+ "overall": "The sample follows the glossary very closely. I found 4 problems in 4 of 124 rows, all isolated, and no rule is broken systematically.\n\nThese all match the glossary in every row:\n- The fixed formula in all three fields, including bracketed missing words such as [Sakramento apeigomis], [pakrikštijo kūdikį, vardu], [kaime] and [teisėtų sutuoktinių].\n- \"pakrikštijo kūdikį, vardu\" for single children, and the twins construction in 0212_R2 (dvynius kūdikius, vardais; sūnūs (dvyniai), gimę; Pirmojo/antrojo kūdikio krikštatėviai).\n- Book 22 clergy forms and rank order (vietinis kunigas, vietinis kunigas vikaras/altaristas, vietinis klebonas kunigas, vietinis diakonas Kierpowski; Mongird, Wojnowicz, Wojtkiewicz, Pacewicz, Beresniewicz, Stefanowicz, Szyłejko). No Jacewicz appears.\n- Numeric year–month–day dates with \"metų\"/\"dieną\", and the placeholder vocabulary ([?], [neįskaitoma], [nenurodyta], [taip parašyta], [tekstas nutrūksta]).\n- Fixed village forms from 4.4 (Judeikų, Pruselių, Narvoišų, Kansudų, Vištovianų, Olksnianų, Pokutovianų and others) and Kulių parapijos.\n- Maiden names after \"gim.\" in the nominative feminine form, and unmarried mothers fully in the genitive (valstietės … -ovnos).\n- Godmother tags placed after the name (, mergina / , našlė / , [husband gen.] žmona), Template B for the soldier father in 0176_L2, and the singular-or-plural godparent status words.\n\nThe four problems:\n- A missing bracketed type word in 0005_R1.\n- A place-type word that is not in 4.1 (\"vietovėje\") in 0072_R3.\n- A Lithuanian -o genitive added to an undeclinable base (\"Gaileso\") in 0136_L2.\n- An impossible genitive \"Šlioų\" in 0193_R5, which also does not match \"Šlio\" in 0140_L4.\n\nTwo other possible principle-2 inconsistencies probably come from different source spellings, so I did not count them as errors, but they are worth checking against the images:\n- The godmother's husband Benediktas is \"Virketio\" in 0026_R1 but \"Virket [?]\" in 0087_R2.\n- The father \"Marcelio [?] Junzil [?]\" in 0160_L2 sits beside \"Marcelijus [?] Jundzil [?]\" in 0051_R3."
+}

@@ -1,0 +1,59 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0220_L8",
+   "found": "Banšai [?] kaime",
+   "expected": "A genitive before 'kaime', never a nominative (4.3, checklist 1). From a plural locative in -шахъ this is 'Banšų [?] kaime'."
+  },
+  {
+   "row_id": "0254_R6",
+   "found": "kunigas Laukšas pakrikštijo [tekstas nutrūksta]",
+   "expected": "Section 1 says every element is required, in a fixed order, even when the line breaks off. The break comes after 'pakrikštijo', so the missing element goes in brackets: 'kunigas Laukšas su visomis [Sakramento apeigomis] pakrikštijo [tekstas nutrūksta]' (or '[su visomis Sakramento apeigomis]'). Row 0236_R1b handles the same situation correctly."
+  },
+  {
+   "row_id": "0147_R1",
+   "found": "One unnumbered godparents sentence, '[Krikštatėviai] buvo Antanas Šaeikovskis [?] ir Ona, …', for a row holding two entries",
+   "expected": "8.6: number every field '(1) … (2) …'. Godparents should read '(1) Krikštatėviai buvo … (2) Krikštatėviai buvo …', with [neįskaitoma] or [tekstas nutrūksta] where one is missing."
+  },
+  {
+   "row_id": "0147_R1",
+   "found": "(1) Gintemin [?] valsčiaus valstiečių, Antano, Mykolo sūnaus, [neįskaitoma] ir Barboros …",
+   "expected": "Section 1 / Template A requires the formula word, bracketed if it is absent: 'Gintemin [?] valsčiaus valstiečių, [teisėtų sutuoktinių] Antano, Mykolo sūnaus, …'."
+  },
+  {
+   "row_id": "0147_R1",
+   "found": "(1) [1]904 metų",
+   "expected": "Placeholders table: unreadable digits are written '[?]' in their place ('[?]904 metų'). A bracketed restored digit is not part of the placeholder vocabulary."
+  },
+  {
+   "row_id": "0099_L2",
+   "found": "gimusi … Olgopol [?], Plungės parapijos",
+   "expected": "4.4 gives 'Olgopol [?] palivarke / dvare'. The place-type word is required; if the source omits it, it goes in brackets, as in 0039/0041 '[kaime]': 'Olgopol [?] [palivarke]' (or '[dvare]')."
+  },
+  {
+   "row_id": "0256_L5",
+   "found": "Telšių miestiečių … gim. Tarvid",
+   "expected": "This is the same family as 0022_R1, which has 'Telšių miesto miestiečių … gim. Tarvid [?]'. The estates table gives 'Telšių miesto miestiečių', and the 7.4 example table gives 'изъ Тарвидовъ → gim. Tarvid [?]'. Principle 2 calls for one form."
+  },
+  {
+   "row_id": "0108_R2",
+   "found": "Napoleon [?] Soslavskis [?]",
+   "expected": "0052_R4 writes the godfather 'Napoleonas [?] Sosnovskis'. Under principle 2 (one form per thing), the same unlisted given name should get one form across the book. Minor point."
+  }
+ ],
+ "grammar_problems": [
+  {
+   "row_id": "0147_R1",
+   "problem": "Entry (2)'s baptism field says 'pakrikštijo dvynius kūdikius, vardais Adomas ir [neįskaitoma]', but its parents field has the singular 'sūnus, gimęs'. The two fields disagree in number, and 8.1 needs a twin form here.",
+   "fix": "'sūnūs (dvyniai), gimę …' if both are boys. If the second child's sex is unreadable: '[sūnūs/sūnus ir duktė] (dvyniai), gimę …'."
+  },
+  {
+   "row_id": "0220_L8",
+   "problem": "The place name is in the nominative plural where the genitive is needed before 'kaime'.",
+   "fix": "'gimusi 1906 metų balandžio 8 dieną Banšų [?] kaime, šios parapijos.'"
+  }
+ ],
+ "rows_checked": 124,
+ "rows_with_any_problem": 6,
+ "overall": "The sample is very close to a clean application of the glossary. Six of the 124 rows have a problem, and only 0220_L8 (nominative village name) and 0147_R1 (two-entry row) are substantive. The other four are single slips: a dropped bracketed formula element (0254), a missing place-type word (0099), and two consistency slips against principle 2 (0256, 0108).\n\nThese rules hold throughout the sample:\n- the formula order and its bracketed placeholders\n- 'kūdikį, vardu' and the twin forms\n- numeral dates in year–month–day order\n- the book-25 clergy forms (Bublis, Bajorinas, Paškanis, Kuprewicz, Laukšas, Balandis, Jarulaitis with rank order)\n- the township forms (Bernatov [?], Gintemin [?], Kartenos [?], Toran [?])\n- 4.4 village genitives\n- patronymics as 'Juozapo, Juozapo sūnaus, X'\n- illegitimate-mother genitives ('valstietės merginos … -ovnos')\n- godmothers with ', mergina' or ', našlė' after the name\n- husband genitives with 'žmona'\n\nNo rule is broken systematically. The one weakly recurring pattern is the multi-entry and fragmentary rows (0147, 0254, 0262): the full-formula and numbering requirements of 8.6 and section 1 are applied less carefully there than in ordinary single entries.\n\nPoints I left alone because the sample doesn't show the source: early-1902 'vietinis kunigas vikaras' is plausible from the source. The [?] on Rynkiewicz is correct, because he is not in the book-25 list. Name readings are as transliterated."
+}

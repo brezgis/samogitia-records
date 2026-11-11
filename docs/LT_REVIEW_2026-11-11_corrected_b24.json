@@ -1,0 +1,28 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0048_L1",
+   "found": "(2) \"Liudvika, Antano Jundulo žmona\": the consonant-final surname is declined as an -as noun, with no [?]",
+   "expected": "\"Liudvika, Antano Jundul žmona\". §7.2 Step 1 gives Юндулъ, and the genitive Юндула, as the consonant-final form, unchanged in every case (\"Jonas Jundul\"). §7.2 Step 2 says such bases are not declined. Row 0206_R? already writes \"Dominyko Jundul žmona\" (0206_L5) and 0271_L4 writes \"Mykolas Jundul [?]\". Under principle 2 (one form per thing), Jundulo is the outlier."
+  },
+  {
+   "row_id": "0049_R5",
+   "found": "\"teisėtų sutuoktinių Kazimiero Buivido\": the family surname is declined as an -as noun",
+   "expected": "\"Kazimiero Buivid [?]\". §7.2 Step 3 and its example table say Буйвидовъ → \"Buivid [?]\": never decline an ambiguous genitive-plural stem as an -as noun. This applies unless the entry itself writes a nominative with an ending such as Буйвидасъ. That could not be checked against the source, so treat it as plausible."
+  },
+  {
+   "row_id": "0158_L1",
+   "found": "\"Gunbingos [?] kaime\": a Lithuanian -a genitive was given to a singular village name",
+   "expected": "\"Gunbing [?] kaime\". §4.3 step 4 says a singular form (locative -ѣ/-е or a nominative) gets the base + [?], undeclined, because the declension cannot be known. If the source has a plural locative -ахъ, the form would be \"Gunbingų [?]\". Plausible, not confirmed against the source."
+  },
+  {
+   "row_id": "0107_L4",
+   "found": "\"gimęs … Olgopol [?], šios parapijos\": no place-type word after the place name",
+   "expected": "\"Olgopol [?] palivarke\" (or \"dvare\" if the source writes имѣніе). §4.4 has the fixed entry \"Ольгополь (фольваркъ / имѣніе) → Olgopol [?] palivarke / dvare\", and 0187_R3 and 0209_R4 have \"Olgopol [?] palivarke\". If the source really omits the type word, mark it in brackets (§1). Do not leave a bare name."
+  }
+ ],
+ "grammar_problems": [],
+ "rows_checked": 155,
+ "rows_with_any_problem": 4,
+ "overall": "This sample is very close to a clean application of the glossary. Only 4 of 155 rows have problems, and those are isolated deviations, not systematic breaks. The following all match the glossary: the baptism formula (word order, \\\"su visomis Sakramento apeigomis\\\", bracketed missing words), \\\"pakrikštijo kūdikį, vardu\\\", the book-24 clergy forms (Baltruken, Szołkowski, Pujdak, Tomaszewicz, Paškanis, Kiršinas [?], Brzeziński, Butkiewicz, Lenkiewicz, Petkiewicz, Styrpejko, Ludwik Rynkiewicz, Wincenty Jarulaitis), numeral dates in year–month–day order with \\\"metų/dieną\\\", placeholders ([?], [neįskaitoma], [tekstas nutrūksta], [taip parašyta], [nenurodyta]), and the township forms (Bernatov [?], Gintemin [?], Toran [?], Žarėnų [?], Kartenos [?], plus mechanical bases for unlisted ones). Also correct: the fixed village genitives from §4.4, Case-1 nominative maiden names after \\\"gim.\\\", godmothers with \\\"-ska/-ovna, mergina\\\", unmarried-mother genitive phrases (\\\"valstietės … Kasperovičevnos nesantuokinė duktė\\\", plus the patronymic construction in 0025 and 0273), the single-twin wording (0042, 0247), the full formula repeated in multi-entry rows (0048, 0110), and godparents' plural status \\\"valstiečiai A ir B\\\". I found no real grammar or case-agreement errors. All four findings are surname or place forms where the mechanical rules in §7.2 and §4.3 were not followed (Jundulo, Buivido, Gunbingos) or a place-type word was dropped (Olgopol). No rule is still broken systematically. One soft consistency point under principle 2 (one form per thing), not counted as a violation: the Jundul family appears as Jundulo (0048), Jundul (0206, 0271), Jundulio [?] (0230) and Jundulos [?] (0233). The last two have [?] and may be different readings, but a check against the images would be worthwhile. Two things could not be verified without the Russian source. First, the alternation between plain \\\"kunigas Baltruken\\\" (1896–1899) and \\\"vietinis kunigas vikaras Baltruken\\\" (1898, 1900–1901); this was not flagged, since the scribe may have varied. Second, whether the -o/-os declension of a few fathers' surnames (e.g. Žutavto, Savdargo [?]) follows a written ending."
+}

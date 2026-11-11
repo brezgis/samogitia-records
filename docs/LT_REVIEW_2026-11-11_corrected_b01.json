@@ -1,0 +1,33 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0082_R2",
+   "found": "baptism \"1887 metų lapkričio 5 dieną\", birth \"gimusi 1887 metų lapkričio 7 dieną\": the birth comes after the baptism and the reading is left without a marker",
+   "expected": "Placeholders table (§3), the rule for a clear but impossible reading: add [taip parašyta] after the impossible number, e.g. \"lapkričio 7 [taip parašyta] dieną\". If either day is an unsure reading, mark that number with [?] instead."
+  },
+  {
+   "row_id": "0160_L1",
+   "found": "\"Marijona Vasilatė [?], mergina\" (Cyrillic е written as ė)",
+   "expected": "§7.1 letter table, е → e. Write \"Vasilate [?]\", which matches the transliteration used for Budrikate (0144), Pulkate (0176) and [?]ailate (0158)."
+  },
+  {
+   "row_id": "0199_L2",
+   "found": "\"[neįskaitoma] Jurktatė [?], mergina [?]\" (Cyrillic е written as ė)",
+   "expected": "§7.1 letter table, е → e. Write \"Jurktate [?]\", as in Budrikate and Pulkate in the same sample."
+  },
+  {
+   "row_id": "0160_L1",
+   "found": "\"gim. Darnentis [?] (iš Pokerų [?] kaimo), sūnus\": a parenthetical remark is put inside the parents formula after the maiden name",
+   "expected": "§1 parents template and §7.4: \"gim.\" is followed only by the maiden name in the nominative, then \"sūnus/duktė\". Translate a statement the source really makes in the sentence. Otherwise move the remark to the notes (§3: notes use „…“)."
+  },
+  {
+   "row_id": "0105_R3",
+   "found": "\"Norvainių [?] kaime\" here, but \"Norvainų [?] kaime\" in 0101_R2",
+   "expected": "Principle 2 and §4.3 step 1 (same village, same form). If both entries spell the place the same way in the source (-ахъ or -яхъ), make the two genitives match. If the source spellings really differ, this is not an error."
+  }
+ ],
+ "grammar_problems": [],
+ "rows_checked": 102,
+ "rows_with_any_problem": 4,
+ "overall": "The sample is very close to a clean application of the glossary. The formula is complete and in the right order in every row, and missing words are bracketed correctly ([Sakramento], [Sakramento apeigomis], [kunigas]). Every baptism uses \"pakrikštijo kūdikį, vardu\", and the twins entry (0043) follows §8.1 exactly. Dates are in numerals in year–month–day order with \"metų\" and \"dieną\". The township forms follow §4.5 (Bernatov [?], Gintemin [?], Toran [?], Kartenos [?]), and the township comes first. The §4.4 villages all have their fixed genitives, and singular-form villages are left as undeclined base + [?]. The book 1 clergy forms are correct throughout: Jacewicz, Józefowicz, Augulis, Beresniewicz, Petkiewicz, Abramowicz, Jurgaitis, Meritowicz [?], Prejałgowski. Maiden names after \"gim.\" are nominative Case 1 bases. Unmarried mothers are fully genitive (-skos, -ovnos), \"mergina\" comes after the godmother's name, husbands' surnames are in the genitive, and nothing is in Cyrillic, Polish letters or Russian endings.\n\nI found only isolated problems, with no rule broken systematically:\n- 0082: a birth after the baptism without [taip parašyta].\n- 0160 and 0199: ė written for Cyrillic е in a godmother's surname (\"Vasilatė\", \"Jurktatė\"), which also clashes with \"Budrikate\" and \"Pulkate\".\n- 0160: a parenthetical placed inside the \"gim.\" slot.\n- 0101/0105: one village with two different genitives (Norvainų vs Norvainių).\n\nThree points to check against the source, which I did not flag:\n- 0084 has \"klebonas kunigas Beresniewicz\" without \"kanauninkas\", unlike the other Beresniewicz rows. That is correct only if Каноникомъ is absent from the source.\n- 0119 has \"Telšių valdybos miestiečių\", which the glossary does not cover. The glossary's form for мѣщанъ города Тельши is \"Telšių miesto miestiečių\".\n- In five rows (0070, 0076, 0132, 0136, 0196) a bare \"[?]\" fills a whole day slot (\"liepos [?] dieną\"), while other rows write \"[neįskaitoma]\" for this. The placeholder table allows either reading, so this is a consistency question for the glossary, not an error."
+}

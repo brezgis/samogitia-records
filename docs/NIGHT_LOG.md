@@ -165,3 +165,35 @@ translation, model training ... as you can"). Entries are appended as work compl
 - Lithuanian: glossary being rewritten for 1849–1907 (Opus agent) with fixed decisions on maiden
   names, women's surnames, Russian endings, places and clergy; `pipeline/lt_fix_chunks.py` and
   `merge_lt_fix.py` prepared for a correction pass over all five books (250 chunks).
+- **Lithuanian correction pass** (207 Opus agents, ~21.9M tokens; glossary rewritten for
+  1849–1907 first): all 9,905 entries of the five translated books re-done against the glossary,
+  family surname reconciled with the margin in the same pass. English parents sentence changed
+  where the family surname became the margin reading: 956 entries in 1886–90, 1,113 in
+  1896–1902, 157 / 112 / 169 in the three newer books (old sentence kept in parents_en_before).
+  Opus review of a sample per book afterwards: rows with any problem 6/90 (1849–54), 4/124
+  (1867–74), 4/102 (1886–90), 4/155 (1896–1902), 6/124 (1902–07); no rule broken systematically
+  (docs/LT_REVIEW_2026-11-11_corrected_*.json). Found on the way: the 1867–74 priest is Pacewicz
+  (Пацевичъ, ~600 entries), not Jacewicz.
+- **Polish** (Anna's request): docs/PL_GLOSSARY.md (Opus; surnames transliterated into Polish
+  spelling, never Polonised); pilot on 1849–1854: 1,500 entries (32 Opus agents, ~3.7M tokens),
+  review 16/150 rows with a slip; three formula changes from the review applied by script
+  (pipeline/pl_formula_fix.py); name-spelling suggestions (-ówna, ł, rz) recorded as undecided.
+  Site has a Polski switch (interface in Polish everywhere; entries in Polish for 1849–1854).
+- **Site:** site/library.html, a shelf per parish on a time axis; every book runs on the same
+  code with book.js (site/make_library.py from site/library.json); parish-aware text; links to
+  neighbouring books; notes rebuilt; names note (recorded form / rendering / no identity claims,
+  also in README); page turn rebuilt as a bending leaf of hinged strips; a cover cloth and ribbon
+  per volume (11 more National Museum of Lithuania textiles, CC BY, in site/textiles/); two-page
+  form shown across both pages (1854–1857). Local: http://100.107.252.39:8750/library.html.
+- **Book 1827/1/20 (Oct 1854 – Aug 1857):** reading round 227 checked lines (hard hand: 129 of
+  587 lines agreed blind); v7 trained on six books (file 20 validation CER 5.4% -> 3.1%, other
+  books level with v6); redrafted with v7: 790 entries, margin columns read (786 surnames).
+  NOT translated yet.
+- **Rietavas (fond 1828):** all eight baptism books downloaded (1,778 scans, 1855–1905). 1828/1/7
+  (1877–82) and 1828/1/12 (1892–99) drafted with v7: rough (new hands, grey scans; year split
+  unreliable). Reading round on 1828/1/7: only 200 checked lines of 854, 263 crops rejected as
+  badly cut, so line splitting needs work on these scans. v8 training on seven books.
+- **Stopping point (Anna, usage limit):** no further agent runs. Open: translate 1854–1857;
+  Rietavas margin columns, line splitting, redraft, translation; Polish for the other books and
+  the undecided Polish name rules; glossary open questions for native readers; scans of four
+  Plungė books are not on GitHub Pages (size), so the public site shows them without page images.

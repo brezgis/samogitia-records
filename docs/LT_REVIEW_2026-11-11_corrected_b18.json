@@ -1,0 +1,38 @@
+{
+ "glossary_violations": [
+  {
+   "row_id": "0189_L3",
+   "found": "gim. Strzigovska",
+   "expected": "gim. Stržigovska (Principle 3 and 7.1: never Polish \"rz\" in the sentence; рж → rž)"
+  },
+  {
+   "row_id": "0044_R1",
+   "found": "(2) Krikštatėviai buvo valstietis Kazimieras Stan[…] [?]",
+   "expected": "Kazimieras Stan[neįskaitoma] (or Stan[tekstas nutrūksta] if the line breaks off). Section 3, Placeholders: one placeholder vocabulary, and \"[…]\" is not part of it"
+  },
+  {
+   "row_id": "0013_L1",
+   "found": "Benignos, gim. Bagdonovičius",
+   "expected": "Book 18 maiden names follow 7.4 Case 2: keep the written feminine form in the nominative (e.g. \"gim. Bagdonovičevna\" for урожденной Богдановичевны). If a masculine form really is written, 7.3 says to keep it as written and unchanged (\"Bagdonovič [?]\", as in Burmistrovič [?]). The Lithuanianized masculine -ičius is never right for a woman (7.3, Checklist 6/8)"
+  },
+  {
+   "row_id": "0117_L2",
+   "found": "teisėtų sutuoktinių Jono Kazgra [?]",
+   "expected": "If the base ends in -a, it declines (7.2 Step 1/2: -a → gen. -os): \"Jono Kazgros [?]\". If -a is not really the base, write the stem + [?] by Step 3. A man's surname in -a is never left undeclined in the genitive"
+  },
+  {
+   "row_id": "0006_L1",
+   "found": "teisėtų sutuoktinių Tado Papev [?]",
+   "expected": "Book 18 writes the family in the genitive plural, and 7.2 Step 3 says never keep -ov/-ev (\"no Stupelevo, no Mickov\"). The stem without the Russian ending is \"Tado Pap [?]\", unless the entry writes a nominative with an ending. This is a likely violation; check against the draft reading"
+  },
+  {
+   "row_id": "0058_L4",
+   "found": "teisėtų sutuoktinių Antano ir Eleonoros [?], gim. Jankont [?]",
+   "expected": "The family surname slot is empty and has no placeholder. Section 1: every element is required, and a missing one is marked in brackets in its place, e.g. \"Antano [nenurodyta] ir Eleonoros [?]\" (or [neįskaitoma] if it is illegible)"
+  }
+ ],
+ "grammar_problems": [],
+ "rows_checked": 90,
+ "rows_with_any_problem": 6,
+ "overall": "This sample is very close to a clean application of the glossary, and I found no rule that is still broken systematically. Six of the 90 rows have a problem, and each is an isolated slip:\n\n- **Alphabet:** \"Strzigovska\" in 0189 uses the Polish \"rz\".\n- **Placeholder:** 0044 uses \"[…]\", which is not in the glossary's placeholder list.\n- **Woman's maiden name in masculine -ičius:** \"gim. Bagdonovičius\" in 0013.\n- **Likely surname slips, to check against the drafts:** an -a surname left undeclined (\"Jono Kazgra\" in 0117) and a kept -ev ending (\"Papev\" in 0006).\n- **Missing placeholder:** the family surname slot in 0058 is empty with nothing in brackets.\n\nEverything else checks out across the whole sample:\n- **Formula:** order and wording are right, including \"Plungės Romos katalikų parapijos bažnyčioje\", \"su visomis Sakramento apeigomis\" (with brackets where words are missing) and \"pakrikštijo kūdikį, vardu\".\n- **Clergy:** the book 18 forms are exact (Ludwik Montwid, Wincenty Markiewicz, Szyłejko, Szarowski, Szurewicz, Dulewicz, Tukowski, Wołontowicz, Rajmund Stefanowicz, Kerwel), with ranks in the right order.\n- **Dates:** all in numerals, year–month–day, with \"metų\", \"dieną\" and ryte/vakare in the right place.\n- **Villages:** fixed genitive forms from table 4.4 (Luknianų, Jazdaičių, Žvirblaičių, Videikų, Kansudų and so on), with the parish after the place.\n- **Women's names:** maiden names after \"gim.\" are nominative feminine forms, godmothers take \", mergina\" / \", našlė\", and unmarried mothers are fully genitive (Onos Jonikuvnos, Kasperovičos).\n- **Special cases:** the twins entry 0173 follows 8.1 word for word, and the multi-entry rows (0044, 0061, 0155, 0160, 0166) are numbered with the full formula repeated in each entry.\n\nTwo things are not rule breaks but worth a look:\n- **Possible missing elements:** 0091 has no estate word in the parents field, and in 0097 the godfather has only one name (\"Valumn [?]\"). Both may simply follow the source.\n- **Principle 2 (one form per thing):** \"Kazimiero Gonuš [?]\" in 0072 and \"Kazimiero Jonuš [?]\" in 0155 look like the same Kepurianų family (both have the mother Pranciška, gim. Karačkovna), read two ways. Similar pairs: \"Šlein\" with and without [?] in 0160, and Sovdargovna/Savdargovna in the Luknianų entries 0104/0155.\n\nI found no Lithuanian grammar or case-agreement errors."
+}
