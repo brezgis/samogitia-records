@@ -22,6 +22,7 @@ const T = {
     colsH: "The printed columns", cols: [["Прозваніе крещаемыхъ", "Surname of the baptised, written sideways in the margin"], ["№", "Entry number"], ["Число рожденія / крещенія", "Day of birth / day of baptism"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "When, where, who and by whom was baptised, with water only or with all the rites?"], ["Какихъ родителей …?", "Of which parents, of which estate or community; when and where the child was born"], ["Кто были … воспріемниками …?", "Who, by name and surname, were the godparents, and who was present"], ["Рукоприкладство свидѣтелей …", "Signatures of witnesses, if desired"]],
     sideMargin: "In the margin", sideDiffer: x => `The machine read the surname inside the entry as “${x}”; the margin is the better reading.`, sideNo: "No.", sideBorn: "born", sideBapt: "baptised", sideNote: "Later note", sexM: "boy", sexF: "girl", sideBy: "Side columns read once by machine.",
     heads: {"margin": "Surname of the baptised", "no": "No.", "dates": "Day of birth / baptism", "baptism": "When, where, by whom baptised", "parents": "Parents, estate; when and where born", "godparents": "Godparents and those present", "sign": "Witnesses’ signatures"},
+    clothType: { skara: 'wool shawl', lovatiesė: 'bedspread' },
     clothH: 'The cloth and the ribbon',
     cloth1: 'The cover and the ribbon are real Samogitian textiles in the National Museum of Lithuania. The museum’s photographs are used under CC BY 4.0.',
     
@@ -49,6 +50,7 @@ const T = {
     colsH: "Spausdinti stulpeliai", cols: [["Прозваніе крещаемыхъ", "Krikštijamųjų pavardė, įrašyta paraštėje skersai"], ["№", "Įrašo numeris"], ["Число рожденія / крещенія", "Gimimo diena / krikšto diena"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kada, kur, kas ir kieno pakrikštytas – tik vandeniu ar su visomis apeigomis?"], ["Какихъ родителей …?", "Kokių tėvų, kokio luomo ar bendruomenės; kada ir kur gimė vaikas"], ["Кто были … воспріемниками …?", "Kas, nurodant vardą ir pavardę, buvo krikštatėviai ir kas dalyvavo"], ["Рукоприкладство свидѣтелей …", "Liudytojų parašai (pagal pageidavimą)"]],
     sideMargin: "Paraštėje", sideDiffer: x => `Įrašo tekste mašina pavardę perskaitė „${x}“; paraštės skaitymas patikimesnis.`, sideNo: "Nr.", sideBorn: "gimė", sideBapt: "pakrikštyta(s)", sideNote: "Vėlesnė pastaba", sexM: "berniukas", sexF: "mergaitė", sideBy: "Šoniniai stulpeliai perskaityti mašinos vieną kartą.",
     heads: {"margin": "Krikštijamųjų pavardė", "no": "Nr.", "dates": "Gimimo / krikšto diena", "baptism": "Kada, kur, kas pakrikštijo", "parents": "Tėvai, luomas; kada ir kur gimė", "godparents": "Krikštatėviai ir dalyvavusieji", "sign": "Liudytojų parašai"},
+    clothType: { skara: 'vilnonė skara', lovatiesė: 'lovatiesė' },
     clothH: 'Audinys ir juostelė',
     cloth1: 'Viršelis ir juostelė – tikri žemaitiški audiniai iš Lietuvos nacionalinio muziejaus rinkinių. Muziejaus nuotraukos naudojamos pagal CC BY 4.0 licenciją.',
     
@@ -76,6 +78,7 @@ const T = {
     colsH: 'Drukowane rubryki', cols: [["Прозваніе крещаемыхъ", "Nazwisko ochrzczonego, pisane bokiem na marginesie"], ["№", "Numer wpisu"], ["Число рожденія / крещенія", "Dzień urodzenia / dzień chrztu"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Kiedy, gdzie, kto i przez kogo został ochrzczony, tylko z wody czy ze wszystkimi obrzędami?"], ["Какихъ родителей …?", "Z jakich rodziców, jakiego stanu lub gminy; kiedy i gdzie urodziło się dziecko"], ["Кто были … воспріемниками …?", "Kto z imienia i nazwiska był rodzicami chrzestnymi i kto był obecny"], ["Рукоприкладство свидѣтелей …", "Podpisy świadków, według życzenia"]],
     sideMargin: "Na marginesie", sideDiffer: x => `W treści wpisu maszyna odczytała nazwisko jako „${x}”; odczyt z marginesu jest pewniejszy.`, sideNo: "Nr", sideBorn: "ur.", sideBapt: "ochrzcz.", sideNote: "Późniejsza adnotacja", sexM: "chłopiec", sexF: "dziewczynka", sideBy: "Boczne rubryki odczytane raz przez maszynę.",
     heads: {"margin": "Nazwisko ochrzczonego", "no": "Nr", "dates": "Dzień urodzenia / chrztu", "baptism": "Kiedy, gdzie, przez kogo ochrzczony", "parents": "Rodzice, stan; kiedy i gdzie urodzony", "godparents": "Rodzice chrzestni i obecni", "sign": "Podpisy świadków"},
+    clothType: { skara: 'chusta wełniana', lovatiesė: 'narzuta' },
     clothH: 'Tkanina i wstążka',
     cloth1: 'Okładka i wstążka to prawdziwe żmudzkie tkaniny ze zbiorów Litewskiego Muzeum Narodowego. Fotografie muzeum wykorzystano na licencji CC BY 4.0.',
     ph: 'Nazwisko, wieś lub data, lata 1886–1890', chooseH: 'Wybierz wpis', chooseP: 'Wskaż wiersz księgi, aby go przeczytać. Kliknij, aby pozostał otwarty.',
@@ -102,6 +105,7 @@ const T = {
     colsH: "Печатные графы", cols: [["Прозваніе крещаемыхъ", "Фамилия крещаемого, вписана поперёк на полях"], ["№", "Номер записи"], ["Число рожденія / крещенія", "День рождения / день крещения"], ["Когда, гдѣ, кто и кѣмъ … окрещенъ?", "Когда, где, кто и кем крещён, одною ли водою или со всеми обрядами"], ["Какихъ родителей …?", "Каких родителей, какого сословия или общества; когда и где родился"], ["Кто были … воспріемниками …?", "Кто по имени и фамилии были восприемниками и кто присутствовал"], ["Рукоприкладство свидѣтелей …", "Подписи свидетелей записи, по желанию"]],
     sideMargin: "На полях", sideDiffer: x => `В тексте записи машина прочла фамилию как «${x}»; чтение на полях надёжнее.`, sideNo: "№", sideBorn: "родился", sideBapt: "крещён", sideNote: "Позднейшая запись", sexM: "мальчик", sexF: "девочка", sideBy: "Боковые графы прочитаны машиной один раз.",
     heads: {"margin": "Прозваніе крещаемыхъ", "no": "№", "dates": "Число рожденія / крещенія", "baptism": "Когда, гдѣ, кто и кѣмъ окрещенъ", "parents": "Какихъ родителей …", "godparents": "Кто были воспріемниками …", "sign": "Рукоприкладство свидѣтелей"},
+    clothType: { skara: 'шерстяной платок', lovatiesė: 'покрывало' },
     clothH: 'Ткань и закладка',
     cloth1: 'Переплёт и закладка — настоящие жемайтские ткани из собрания Национального музея Литвы. Фотографии музея используются по лицензии CC BY 4.0.',
     
@@ -321,7 +325,70 @@ function chrome() {            // everything around the pages that depends on wh
 
 /* turning pages */
 let turning = false;
-function face(src, cls) { const f = el('div', 'face ' + (cls || '')); const i = el('img'); i.src = src; i.alt = ''; f.append(i, el('div', 'shade')); return f; }
+/* Page images got ready ahead of a turn: fetched and decoded, and kept (a few) so the leaf can
+   move the moment it is asked to. */
+const readied = new Map();
+function ready(src) {
+  if (!readied.has(src)) {
+    const im = new Image(); im.src = src;
+    readied.set(src, (im.decode ? im.decode() : new Promise(res => { im.onload = im.onerror = res; })).then(() => im, () => im));
+    if (readied.size > 12) readied.delete(readied.keys().next().value);
+  }
+  return readied.get(src);
+}
+
+/* The turning leaf. A sheet of paper bends: it is cut into narrow vertical strips, each hinged on
+   the one before it, so the free edge can lift ahead of the rest and settle after it. The first
+   strip is hinged at the spine and carries the turn; the others only add the bend. Each strip
+   shows its slice of the outgoing page on the front and of the incoming page on the back. */
+const STRIPS = 8, TURN_MS = 820;
+const FREEZE = params.has('turn') ? Math.max(0, Math.min(1, +params.get('turn'))) : null;   // #turn=0.4 holds a demonstration turn at 40%, to look at it
+function buildLeaf(old, next, dir) {
+  const stay = dir > 0 ? 'L' : 'R', turn = dir > 0 ? 'R' : 'L', fwd = dir > 0;
+  const hold = el('div', 'hold'), o = old[stay];
+  Object.assign(hold.style, { left: o.left + 'px', width: o.width + 'px', height: o.height + 'px', backgroundImage: `url("${o.src}")` });
+  const flip = el('div', 'flip ' + (fwd ? 'fwd' : 'back')), tp = old[turn];
+  Object.assign(flip.style, { left: tp.left + 'px', width: tp.width + 'px', height: tp.height + 'px' });
+  const cast = el('div', 'cast ' + (fwd ? 'fwd' : 'back'));
+  const segs = [];
+  let parent = flip;
+  for (let k = 0; k < STRIPS; k++) {
+    const seg = el('div', 'seg'), front = el('div', 'f front'), rear = el('div', 'f rear');
+    const fromLeft = k / (STRIPS - 1) * 100, fromRight = (STRIPS - 1 - k) / (STRIPS - 1) * 100;
+    front.style.backgroundImage = `url("${tp.src}")`; front.style.backgroundPositionX = (fwd ? fromLeft : fromRight) + '%';
+    rear.style.backgroundImage = `url("${next.pages[stay].img}")`; rear.style.backgroundPositionX = (fwd ? fromRight : fromLeft) + '%';
+    front.append(el('div', 'shade')); rear.append(el('div', 'shade'));
+    seg.append(front, rear); parent.append(seg); segs.push(seg); parent = seg;
+  }
+  return { nodes: [hold, cast, flip], segs, cast };
+}
+async function turnLeaf(leaf, dir) {
+  await new Promise(res => { requestAnimationFrame(res); setTimeout(res, 80); });       // one frame for the rebuilt spread under the leaf
+  const s = dir > 0 ? -1 : 1, opt = { duration: TURN_MS, fill: 'forwards' }, anims = [];
+  const rot = a => `rotateY(${(s * a).toFixed(2)}deg)`;
+  // the spine strip carries the whole turn, slow to leave and slow to land
+  anims.push(leaf.segs[0].animate([{ transform: rot(0) }, { transform: rot(180) }], { ...opt, easing: 'cubic-bezier(.42,0,.26,1)' }));
+  // every further strip bends on the one before: ahead of it while the page lifts, behind it while it falls
+  leaf.segs.slice(1).forEach((seg, k) => {
+    const lead = 4.2 + k * .9, lag = 3.4 + k * .75;
+    anims.push(seg.animate([
+      { transform: rot(0), easing: 'cubic-bezier(.3,0,.4,1)' },
+      { transform: rot(lead), offset: .2, easing: 'cubic-bezier(.4,0,.6,1)' },
+      { transform: rot(-lag), offset: .68, easing: 'cubic-bezier(.3,0,.3,1)' },
+      { transform: rot(0) }], opt));
+  });
+  // light: the outgoing side darkens as it turns from the lamp, the incoming side clears as it comes down
+  leaf.segs.forEach((seg, k) => {
+    // in the air the sheet lets the page under it show through, more toward its free edge
+    const thin = 1 - .3 * (k / (STRIPS - 1)) ** 1.6;
+    for (const f of seg.querySelectorAll(':scope > .f')) anims.push(f.animate([{ opacity: 1 }, { opacity: thin, offset: .22 }, { opacity: thin, offset: .78 }, { opacity: 1 }], opt));
+    anims.push(seg.querySelector('.front .shade').animate([{ opacity: 0 }, { opacity: .34, offset: .5 }, { opacity: .34 }], opt));
+    anims.push(seg.querySelector('.rear .shade').animate([{ opacity: .3 }, { opacity: .3, offset: .5 }, { opacity: 0 }], opt));
+  });
+  anims.push(leaf.cast.animate([{ opacity: 0 }, { opacity: 1, offset: .45 }, { opacity: 0 }], { ...opt, easing: 'ease-in-out' }));
+  if (FREEZE != null) { anims.forEach(a => { a.pause(); a.currentTime = TURN_MS * FREEZE; }); await new Promise(() => {}); }
+  await Promise.race([anims[0].finished.catch(() => {}), new Promise(res => setTimeout(res, TURN_MS + 500))]);
+}
 async function go(scan, row, quiet) {
   if (turning) return;
   const i = Math.max(0, Math.min(SPREADS.length - 1, SPREADS.findIndex(m => m.scan === scan)));
@@ -329,38 +396,22 @@ async function go(scan, row, quiet) {
   if (S && S.scan === scan) { if (row && byRow[row]) pick(row, true); return; }
   turning = true;
   const next = await loadSpread(scan);
-  if (S) await Promise.all([preload(next.pages.L.img), preload(next.pages.R.img)]);   // the first spread is laid out at once and its scans fill in
+  if (S) await Promise.race([Promise.all([ready(next.pages.L.img), ready(next.pages.R.img)]), new Promise(res => setTimeout(res, 900))]);   // instant when the neighbour was got ready; the first spread is laid out at once and its scans fill in
   const dir = S ? Math.sign(scan - S.scan) : 0;
   const old = dir && !quiet && !reduced() && pages.L && getComputedStyle(pages.R).display !== 'none' && getComputedStyle(pages.L).display !== 'none'
     ? Object.fromEntries(['L', 'R'].map(s => [s, { src: S.pages[s].img, left: pages[s].offsetLeft, width: pages[s].offsetWidth, height: pages[s].offsetHeight }])) : null;
-  // Build the turning leaf first and decode its three images, so nothing is decoded or laid
-  // out while the leaf is moving (that was the stutter at the start of a turn).
-  let hold, flip;
-  if (old) {
-    const stay = dir > 0 ? 'L' : 'R', turn = dir > 0 ? 'R' : 'L';
-    hold = face(old[stay].src, 'hold'); flip = el('div', 'flip ' + (dir > 0 ? 'fwd' : 'back'));
-    for (const [e, o] of [[hold, old[stay]], [flip, old[turn]]]) { e.style.left = o.left + 'px'; e.style.width = o.width + 'px'; e.style.height = o.height + 'px'; }
-    flip.append(face(old[turn].src, 'front'), face(next.pages[stay].img, 'rear'));
-    // (bounded: a browser that never settles decode() must not leave the book stuck mid-turn)
-    await Promise.race([new Promise(res => setTimeout(res, 600)),
-      Promise.all([hold, flip].flatMap(e => [...e.querySelectorAll('img')]).map(i => i.decode ? i.decode().catch(() => {}) : null))]);
-  }
+  let leaf;
+  if (old) leaf = buildLeaf(old, next, dir);        // made from the outgoing spread's measurements, before the rebuild
   S = next; pinned = row && S.entries.some(e => e.row === row) ? row : null; hovered = null;
   buildPages(); render(); chrome();
-  if (old) {
-    block.append(hold, flip);                       // same task as the rebuild: the new spread never shows early
-    await new Promise(res => { requestAnimationFrame(() => requestAnimationFrame(res)); setTimeout(res, 120); });   // let the rebuild's layout settle
-    const to = `rotateY(${dir > 0 ? -180 : 180}deg)`;
-    const turnAnim = flip.animate([{ transform: 'rotateY(0deg)' }, { transform: to }],
-      { duration: 900, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' });
-    // the shadow the leaf casts deepens as it stands up and fades as it lands
-    for (const s of flip.querySelectorAll('.shade')) s.animate([{ opacity: .35 }, { opacity: 1, offset: .5 }, { opacity: .35 }], { duration: 900, easing: 'linear' });
-    await Promise.race([turnAnim.finished.catch(() => {}), new Promise(res => setTimeout(res, 1400))]);
-    hold.remove(); flip.remove();
+  if (leaf) {
+    block.append(...leaf.nodes);                    // same task as the rebuild: the new spread never shows early
+    await turnLeaf(leaf, dir);
+    leaf.nodes.forEach(n => n.remove());
   }
   turning = false;
   if (pinned) pick(pinned, true);
-  for (const d of [1, -1]) { const m = SPREADS[i + d]; if (m) loadSpread(m.scan).then(n => { preload(n.pages.L.img); preload(n.pages.R.img); }); }
+  for (const d of [1, -1]) { const m = SPREADS[i + d]; if (m) loadSpread(m.scan).then(n => { ready(n.pages.L.img); ready(n.pages.R.img); }); }
 }
 const step = d => { const i = SPREADS.findIndex(m => m.scan === S.scan) + d; if (SPREADS[i]) go(SPREADS[i].scan); };
 function pick(row, focus) {
@@ -408,8 +459,11 @@ const form = $('#tryon'), AXES = ['cloth', 'ribbon', 'read', 'paper', 'room'];
 function applyLook() {
   params.forEach((v, k) => { if (form.elements[k]) form.elements[k].value = v; });
   for (const a of AXES) body.dataset[a] = form.elements[a].value || body.dataset[a];
-  $('#cover').style.backgroundImage = `url(img/cloth-${body.dataset.cloth}.jpg)`;
-  if (body.dataset.ribbon !== 'none') $('#ribbonImg').src = `img/ribbon-${body.dataset.ribbon}.webp`;
+  // each volume has its own cover cloth and ribbon (book.js); the address can still try others on
+  if (!params.get('cloth') && BK.cloth) body.dataset.cloth = BK.cloth;
+  if (!params.get('ribbon') && BK.ribbon) body.dataset.ribbon = BK.ribbon;
+  $('#cover').style.backgroundImage = `url(../textiles/cloth-${body.dataset.cloth}.jpg)`;
+  if (body.dataset.ribbon !== 'none') $('#ribbonImg').src = `../textiles/ribbon-${body.dataset.ribbon}.webp`;
   document.documentElement.style.setProperty('--sheer', form.elements.sheer.value / 100);
   document.documentElement.dataset.room = body.dataset.room;
 }
@@ -424,8 +478,10 @@ function setLang(l) {
   $('#sourcesH').textContent = L.sources; $('#dataLine').innerHTML = L.dataLine;
   $('#colsH').textContent = L.colsH;
   $('#cols').innerHTML = L.cols.map(([ru, x]) => `<li><span lang="ru">${esc(ru)}</span> — ${esc(x)}</li>`).join('');
-  const cr = [[L.cloth[body.dataset.cloth], LIMIS[body.dataset.cloth]], [L.ribbon[body.dataset.ribbon], LIMIS[body.dataset.ribbon]]].filter(c => c[0]);
-  $('#things').innerHTML = cr.map(([txt, id]) => `<figure><img src="img/src/${id}.jpg" alt="" loading="lazy"><figcaption>${txt.replace(/^[^:]+:\s*/, '').replace(/^./, c => c.toUpperCase())}. <a href="https://www.limis.lt/valuables/e/805191/${id}">${L.museum}</a>, CC BY 4.0.</figcaption></figure>`).join('');
+  const cl = body.dataset.cloth, meta = (LIB.cloths || {})[cl];       // later cloths are named by their museum number
+  const clothCap = L.cloth[cl] || (meta ? `c: ${L.clothType[meta.type] || meta.type}, ${meta.place}` : '');
+  const cr = [[clothCap, LIMIS[cl] || (meta && cl)], [L.ribbon[body.dataset.ribbon], LIMIS[body.dataset.ribbon]]].filter(c => c[0]);
+  $('#things').innerHTML = cr.map(([txt, id]) => `<figure><img src="../textiles/src/${id}.jpg" alt="" loading="lazy"><figcaption>${txt.replace(/^[^:]+:\s*/, '').replace(/^./, c => c.toUpperCase())}. <a href="https://www.limis.lt/valuables/e/805191/${id}">${L.museum}</a>, CC BY 4.0.</figcaption></figure>`).join('');
   if (S) { fillLeaves(); syncTurn(); render(); chrome(); }
   if ($('#q').value.trim() && !hits.hidden) runSearch();
 }
@@ -521,5 +577,5 @@ closeHits(); applyLook(); setLang(lang);
 // open at a random spread that has entries (a link with #s=… still opens where it points;
 // the ribbon's tail leads back to the marked entry)
 const randomScan = () => { const full = SPREADS.filter(m => m.n > 0); return full.length ? full[Math.floor(Math.random() * full.length)].scan : 0; };
-go(+params.get('s') || randomScan() || marked.scan || BK.scan, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } });
+go(+params.get('s') || randomScan() || marked.scan || BK.scan, params.get('pick'), true).then(() => { if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); } if (FREEZE != null) setTimeout(() => step(1), 700); });
 })();

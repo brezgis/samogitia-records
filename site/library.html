@@ -114,7 +114,6 @@ a.spine:hover,a.spine:focus-visible{height:164px}
 const LIB = window.LIBRARY || { span: [1845, 1910], parishes: [] };
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const CLOTH = { plunge: 'book/img/cloth-plunge.jpg', rietavas: 'book/img/cloth-telsiai.jpg' };
 const LANGNAME = { en: { en: 'English', lt: 'Lithuanian', pl: 'Polish' }, lt: { en: 'anglų', lt: 'lietuvių', pl: 'lenkų' },
   pl: { en: 'angielski', lt: 'litewski', pl: 'polski' }, ru: { en: 'английский', lt: 'литовский', pl: 'польский' } };
 const T = {
@@ -170,7 +169,7 @@ function draw() {
       const next = p.books[i + 1];
       const start = Math.max(b.years[0], prevEnd), end = Math.min(b.years[1] + 1, next ? next.years[0] + .5 : Infinity);
       prevEnd = end;
-      const style = `left:${pct(start)}%;width:calc(${pct(end) - pct(start)}% - 3px);` + (b.state === 'open' ? `background-image:url(${CLOTH[p.id] || CLOTH.plunge})` : '');
+      const style = `left:${pct(start)}%;width:calc(${pct(end) - pct(start)}% - 3px);` + (b.state === 'open' ? `background-image:url(textiles/cloth-${b.cloth || 'plunge'}.jpg)` : '');
       const years = `${b.years[0]}–${String(b.years[1]).slice(b.years[1] - b.years[0] < 10 && String(b.years[0]).slice(0, 2) === String(b.years[1]).slice(0, 2) ? 2 : 0)}`;
       if (b.state === 'open') {
         open++; total += b.entries;

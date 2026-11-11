@@ -15,12 +15,12 @@ ROOT = SITE.parent
 
 def main():
     lib = json.loads((SITE / 'library.json').read_text())
-    out = {'span': lib['span'], 'parishes': []}
+    out = {'span': lib['span'], 'cloths': lib.get('cloths', {}), 'parishes': []}
     for p in lib['parishes']:
         books = []
         for b in p['books']:
             d = SITE / b['dir']
-            rec = {'dir': b['dir'], 'years': b['years'], 'archive': b['archive']}
+            rec = {'dir': b['dir'], 'years': b['years'], 'archive': b['archive'], 'cloth': b.get('cloth', 'plunge')}
             if (d / 'data.js').exists():
                 n = langs = 0
                 counts = {}
@@ -32,7 +32,8 @@ def main():
                 rec.update(state='open', entries=n, langs=sorted(l for l, c in counts.items() if l != 'ru' and c > n * 0.5))
                 (d / 'book.js').write_text('window.BOOK=' + json.dumps(
                     {'parish': p['id'], 'dir': b['dir'], 'years': b['years'], 'archive': b['archive'],
-                     'scan': b.get('scan', 1), 'row': b.get('row', '')}, ensure_ascii=False) + ';\n')
+                     'scan': b.get('scan', 1), 'row': b.get('row', ''),
+                     'cloth': b.get('cloth', 'plunge'), 'ribbon': b.get('ribbon', 'mazeikiai')}, ensure_ascii=False) + ';\n')
             else:
                 pages = ROOT / b['data'] / 'pages'
                 rec['state'] = 'scanned' if pages.exists() and any(pages.iterdir()) else 'known'

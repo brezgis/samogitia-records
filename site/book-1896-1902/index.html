@@ -99,21 +99,22 @@ button,input{font:inherit;color:inherit}
 .leafnav output{white-space:nowrap;min-width:9.5em;text-align:right}
 .edge{position:absolute;top:0;bottom:0;width:3.2cqw;border:0;background:none;cursor:pointer;z-index:2;border-radius:inherit}
 #edgeL{left:0;cursor:w-resize} #edgeR{right:0;cursor:e-resize}
-.block{perspective:260cqw}
-.face{position:absolute;inset:0;background:var(--paper);overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
-.face img{display:block;width:100%;height:100%;mix-blend-mode:multiply;filter:brightness(1.16) contrast(1.12)}
-[data-paper="film"] .face{background:#fff}
-[data-paper="film"] .face img{mix-blend-mode:normal;filter:none}
-.face.hold{inset:auto;top:0;z-index:8}
-.flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;will-change:transform}   /* turned by app.js (Web Animations) */
-.flip.fwd{transform-origin:left center} .flip.back{transform-origin:right center}
-.flip .rear{transform:rotateY(180deg)}
-.flip .shade{position:absolute;inset:0;pointer-events:none}
-/* the turning leaf thins toward its free edge, so the page under it shows through as it lifts */
-.flip.fwd .front,.flip.back .rear{-webkit-mask-image:linear-gradient(to right,#000 45%,rgba(0,0,0,.62));mask-image:linear-gradient(to right,#000 45%,rgba(0,0,0,.62))}
-.flip.fwd .rear,.flip.back .front{-webkit-mask-image:linear-gradient(to left,#000 45%,rgba(0,0,0,.62));mask-image:linear-gradient(to left,#000 45%,rgba(0,0,0,.62))}
-.flip.fwd .front .shade,.flip.back .rear .shade{background:linear-gradient(to right,rgba(30,20,10,.3),transparent 26%)}
-.flip.fwd .rear .shade,.flip.back .front .shade{background:linear-gradient(to left,rgba(30,20,10,.3),transparent 26%)}
+.block{perspective:170cqw;perspective-origin:50% 42%}
+/* The turning leaf (app.js: buildLeaf, turnLeaf): strips of the page, each hinged on the last. */
+.hold{position:absolute;top:0;z-index:8;background:#fff center/100% 100% no-repeat}
+.flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;pointer-events:none}
+.seg{position:absolute;top:0;height:100%;width:calc(100% + .7px);transform-style:preserve-3d;will-change:transform}
+.flip>.seg{width:calc(12.5% + .7px)}                       /* 8 strips; the rest are as wide as their parent */
+.flip.fwd .seg{left:0;transform-origin:left center}   .flip.fwd .seg .seg{left:calc(100% - .7px)}
+.flip.back .seg{right:0;transform-origin:right center} .flip.back .seg .seg{right:calc(100% - .7px)}
+.seg>.f{position:absolute;inset:0;background:#fff 0 0/800% 100% no-repeat;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.seg>.rear{transform:rotateY(180deg)}
+.seg .shade{position:absolute;inset:0;background:#1d140b;opacity:0;pointer-events:none}
+[data-paper="warm"] .seg>.f,[data-paper="warm"] .hold{background-color:var(--paper);background-blend-mode:multiply}
+/* the shadow the lifted leaf throws on the pages beside the spine */
+.cast{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:0}
+.cast.fwd{background:linear-gradient(to right,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
+.cast.back{background:linear-gradient(to left,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
 /* on other spreads only the tail shows, from the cover's lower edge down (the ribbon starts 2.4cqw
    below the top and is 4.6cqw taller than the cover, so 7cqw of it hangs below) */
 .ribbon.tucked{clip-path:inset(calc(100% - 7cqw) -50% -1cqw -50%)}
