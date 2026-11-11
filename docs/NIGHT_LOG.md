@@ -122,3 +122,19 @@ translation, model training ... as you can"). Entries are appended as work compl
   cell and index now carry one surname; the translator's spelling is kept when it is the same name.
 - GUI: on spreads away from the bookmark the ribbon's tail floated detached below the book; it now
   hangs from the cover's lower edge.
+- Model v6 (5 books): validation CER 1886–90 6.6%, 1896–1902 8.7%, 1902–07 6.6%, 1867–74 6.4%,
+  1849–54 10.5%. Better than v5 on the three new books, so books 25, 22 and 18 were redrafted with
+  v6 (books 1 and 24 keep their v3/v4 drafts and translations).
+- Books 25, 22, 18 translated EN+LT from the v6 drafts (142 Sonnet chunks + 3 Opus reviews,
+  ~7.9M tokens; two chunks came back with 8/40 entries and were re-run): 2,059 + 2,062 + 1,501 =
+  5,622 entries -> processed/translations/translations_v6_book{25,22,18}.json. Translators were
+  given the margin surname with each entry and told to treat the two writings as one name.
+- Lithuanian reviews (docs/LT_REVIEW_2026-11-11_book{25,22,18}.json) again found systematic slips:
+  maiden names after "gim." (-ska / -skis / -ovna mixed), village names not in the genitive before
+  "kaime", Russian endings left on surnames (-ago, -aja, -ov), inconsistent clergy and township
+  spellings, spelled-out dates, patronymics rendered four ways (1900s). The glossary is dated for
+  1886–1890 and lacks 1850s–70s and 1900s terms. Not yet corrected.
+- Reading GUIs: 1902–1907 on :8745, 1867–1874 on :8746, 1849–1854 on :8747. Page turn reworked
+  (images decoded before the leaf moves; Web Animations; bounded waits).
+- Known gap: parse_entries.py rarely extracts father/mother in books 25, 22, 18 (formula variants),
+  so search by parent name is weak there.
