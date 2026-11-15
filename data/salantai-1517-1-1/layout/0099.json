@@ -34,9 +34,195 @@
     3605,
     3722
    ],
-   "rows": [],
+   "rows": [
+    {
+     "y0": 210,
+     "y1": 523,
+     "seen_on": [
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       210,
+       2413,
+       523
+      ],
+      "parents": [
+       2457,
+       214,
+       3338,
+       527
+      ],
+      "godparents": [
+       3338,
+       214,
+       4192,
+       527
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 523,
+     "y1": 1056,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       523,
+       2413,
+       1056
+      ],
+      "parents": [
+       2457,
+       527,
+       3338,
+       1060
+      ],
+      "godparents": [
+       3338,
+       527,
+       4192,
+       1060
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1056,
+     "y1": 1627,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       1056,
+       2413,
+       1627
+      ],
+      "parents": [
+       2457,
+       1060,
+       3338,
+       1631
+      ],
+      "godparents": [
+       3338,
+       1060,
+       4192,
+       1631
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1627,
+     "y1": 2176,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       1627,
+       2413,
+       2176
+      ],
+      "parents": [
+       2457,
+       1631,
+       3338,
+       2180
+      ],
+      "godparents": [
+       3338,
+       1631,
+       4192,
+       2180
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2176,
+     "y1": 2570,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       2176,
+       2413,
+       2570
+      ],
+      "parents": [
+       2457,
+       2180,
+       3338,
+       2574
+      ],
+      "godparents": [
+       3338,
+       2180,
+       4192,
+       2574
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2570,
+     "y1": 3608,
+     "seen_on": [
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1194,
+       2570,
+       2413,
+       3608
+      ],
+      "parents": [
+       2457,
+       2574,
+       3338,
+       3612
+      ],
+      "godparents": [
+       3338,
+       2574,
+       4192,
+       3612
+      ]
+     },
+     "suspect": true
+    }
+   ],
    "form": "spread",
-   "spread_note": "no joined rows: left table not found"
+   "spread_note": "baptism column closed at the right page (its own right rule was not found)",
+   "spread": {
+    "delta_y": 4,
+    "baptism_x": [
+     1194,
+     2413
+    ],
+    "right_cols": [
+     2457,
+     3338,
+     4192,
+     4701
+    ]
+   }
   },
   {
    "page": "R",

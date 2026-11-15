@@ -6,8 +6,14 @@ Usage (GPU only), .venv-htr/bin/python -I pipeline/train_crnn.py ...
       (the test split is never read). Fixed epoch count, no best-epoch picking. Writes
       OUT_DIR/<variant>.json ({id, text, pred, conf}) and prints character error overall, on
       lines with a word outside the frequent formula vocabulary ("name lines") and on the rest.
-  final OUT.pt [--aug strong] [--epochs 30] [--seed 1] [--with-test]
-      one model on all checked train+validation lines (with --with-test: every checked line).
+  final OUT.pt [--aug strong] [--epochs 30] [--seed 1] [--with-test] [--splits train] [--repeat BOOK=N ...]
+      one model on all checked train+validation lines (with --with-test: every checked line;
+      --splits train: train lines only, to compare recipes on the validation lines;
+      --repeat salantai-1517-1-1=3: that book's lines appear N times per epoch).
+
+A line whose annotation carries the proposal's `line` record (sloped writing, segment_lines.py)
+is levelled exactly as predict_crnn.py levels it before recognition (the same function), so
+training and prediction see the same pixels. Lines without the record are used as they are.
 
 Variants: base = width jitter and a slight tilt (the first fine-tuning recipe); strong = also shear,
 blur, stroke thickening/thinning, contrast and brightness; ens3 = three seeds of `strong`, frame
@@ -28,7 +34,9 @@ import torch.nn.functional as F
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'local_models'))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from run_rabus import CRNN  # noqa: E402
+from predict_crnn import level  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = Path('/mnt/ssd240gb/anna/samogitia-htr/llm/rabus-ru/best_model.pt')
@@ -51,14 +59,16 @@ def checked_lines(splits):
         book = f.parts[-3]
         for a in json.loads(f.read_text()):
             if a['status'] == 'image_checked' and a['split'] in splits and a['text'].strip():
-                out.append({'id': f"{book}/{a['id']}", 'book': book, 'scan': a['scan'], 'image': a['image'], 'text': a['text'].strip()})
+                out.append({'id': f"{book}/{a['id']}", 'book': book, 'scan': a['scan'], 'image': a['image'], 'text': a['text'].strip(),
+                            'bbox': a.get('bbox'), 'line': a.get('line'), 'mask_fill': a.get('mask_fill')})
     return out
 
 
 def pixels(line):
-    """The line image at height 128 as a float tensor in [-1, 1], cached on the line."""
+    """The line image (levelled if it was written at a slope) at height 128 as a float tensor
+    in [-1, 1], cached on the line."""
     if 'px' not in line:
-        im = Image.open(ROOT / line['image']).convert('L')
+        im = level(Image.open(ROOT / line['image']).convert('L'), line)
         im = im.resize((max(16, int(H * im.width / im.height)), H), Image.LANCZOS)
         line['px'] = torch.from_numpy(np.asarray(im, dtype=np.uint8).copy())
     return (line['px'].float() / 255 - 0.5) / 0.5
@@ -184,17 +194,22 @@ def main():
     ap.add_argument('--aug', default='strong')
     ap.add_argument('--seed', type=int, default=1)
     ap.add_argument('--with-test', action='store_true')
+    ap.add_argument('--splits', nargs='+', default=['train', 'validation'])
+    ap.add_argument('--repeat', nargs='*', default=[], metavar='BOOK=N')
     args = ap.parse_args()
     assert torch.cuda.is_available(), 'GPU only'
     sd, idx2char = base_model()
     if args.mode == 'final':
-        lines = checked_lines(('train', 'validation', 'test') if args.with_test else ('train', 'validation'))
+        lines = checked_lines(('train', 'validation', 'test') if args.with_test else tuple(args.splits))
         for l in lines:
             pixels(l)
+        times = {b: int(n) for b, n in (r.split('=') for r in args.repeat)}
+        assert all(any(l['book'] == b for l in lines) for b in times), 'unknown book in --repeat'
+        lines = [l for l in lines for _ in range(times.get(l['book'], 1))]    # repeats share the cached pixels
         net = train(lines, idx2char, sd, args.epochs, args.seed, args.aug)
         args.out.parent.mkdir(parents=True, exist_ok=True)
         torch.save({'model_state_dict': net.state_dict(), 'idx2char': idx2char}, args.out)
-        print(len(lines), 'lines ->', args.out)
+        print(len(lines), 'lines', dict(Counter(l['book'] for l in lines)), '->', args.out)
         return
     lines = checked_lines(('train', 'validation'))
     for l in lines:

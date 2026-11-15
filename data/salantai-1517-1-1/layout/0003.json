@@ -37,9 +37,139 @@
     3756,
     3791
    ],
-   "rows": [],
+   "rows": [
+    {
+     "y0": 463,
+     "y1": 1186,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1173,
+       463,
+       2414,
+       1186
+      ],
+      "parents": [
+       2372,
+       484,
+       3237,
+       1207
+      ],
+      "godparents": [
+       3237,
+       484,
+       4070,
+       1207
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1186,
+     "y1": 1869,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1173,
+       1186,
+       2414,
+       1869
+      ],
+      "parents": [
+       2372,
+       1207,
+       3237,
+       1890
+      ],
+      "godparents": [
+       3237,
+       1207,
+       4070,
+       1890
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1869,
+     "y1": 2695,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1173,
+       1869,
+       2414,
+       2695
+      ],
+      "parents": [
+       2372,
+       1890,
+       3237,
+       2716
+      ],
+      "godparents": [
+       3237,
+       1890,
+       4070,
+       2716
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2695,
+     "y1": 3762,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1173,
+       2695,
+       2414,
+       3762
+      ],
+      "parents": [
+       2372,
+       2716,
+       3237,
+       3783
+      ],
+      "godparents": [
+       3237,
+       2716,
+       4070,
+       3783
+      ]
+     },
+     "suspect": false
+    }
+   ],
    "form": "spread",
-   "spread_note": "no joined rows: left table not found"
+   "spread_note": "baptism column closed at the right page (its own right rule was not found)",
+   "spread": {
+    "delta_y": 21,
+    "baptism_x": [
+     1173,
+     2414
+    ],
+    "right_cols": [
+     2372,
+     3237,
+     4070,
+     4599
+    ]
+   }
   },
   {
    "page": "R",

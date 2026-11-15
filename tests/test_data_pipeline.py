@@ -136,6 +136,61 @@ class DraftAssembly(unittest.TestCase):
         self.assertTrue(ad.is_column_start('godparents', 'оспріемниками были'))
         self.assertFalse(ad.is_column_start('parents', 'ныхъ Супруговъ сынъ'))
         self.assertFalse(ad.is_column_start('godparents', 'ми были Юзефъ'))
+        for t in ['Крентьянъ Іосифа и Марты', 'Крестинъ Іеррія и Ка', 'Тельшевскаго Мѣщанина Ферды']:
+            self.assertTrue(ad.is_column_start('parents', t), t)
+        for t in ['19 Тысяча восемсотъ шестьдесятъ', 'Тысоча восемсотъ', 'Тысча Косемсотъ']:
+            self.assertTrue(ad.is_entry_start(t), t)
+        for t in ['Таинства. -', 'тоже.', 'дня въ деревни']:
+            self.assertFalse(ad.is_entry_start(t), t)
+
+    def test_month_heading_is_recognised_conservatively(self):
+        ad = module('assemble_drafts')
+        self.assertEqual([ad.heading_month(t) for t in ['Ноябрь.', 'оябрь', 'Авгусmъ', 'Май', 'тоже.', 'Мѣсяцъ']],
+                         [11, 11, 8, 5, 0, 0])
+        for t in ['Ноября', 'Мая', 'Іюля', 'Прихода. -', 'Супругою. -', 'года Ноябрь', '']:
+            self.assertIsNone(ad.heading_month(t), t)
+
+    def test_previous_entry_tail_and_heading_leave_the_next_entry(self):
+        """Layout puts the row boundary a line too high: the first entry's last line and a month
+        heading lie inside the second row, and the line boxes overlap."""
+        ad = module('assemble_drafts')
+        def line(n, row, cell, top, bottom, core, text):
+            x = {'baptism': 100, 'parents': 600, 'godparents': 1100}[cell]
+            return ({'id': f'{row}_{cell}_{n:02}', 'row_id': row, 'cell': cell, 'bbox': [x, top, x + 400, bottom],
+                     'line': {'x': x + 200, 'slope': -0.03, 'band': [top, bottom], 'core': [core, core + 18]}}, text)
+        made = [line(1, 'A', 'baptism', 100, 220, 150, 'Тысяча восемсотъ'), line(2, 'A', 'baptism', 190, 300, 240, 'окрещенъ Янъ'),
+                line(1, 'A', 'parents', 100, 220, 150, 'Крестьянъ Яна и'), line(1, 'A', 'godparents', 100, 220, 150, 'Воспріемниками были'),
+                # filed under row B by the layout (B starts at y=390):
+                line(1, 'B', 'baptism', 380, 520, 440, 'Со всѣми обрядами Таинства. -'),
+                line(2, 'B', 'baptism', 450, 600, 540, 'Тысяча восемсотъ'), line(3, 'B', 'baptism', 570, 700, 630, 'шестьдесятъ перваго'),
+                line(1, 'B', 'parents', 380, 470, 420, 'Прихода. -'), line(2, 'B', 'parents', 430, 530, 480, 'Ноябрь.'),
+                line(3, 'B', 'parents', 500, 620, 560, 'Крестьянъ Іосифа и'),
+                line(1, 'B', 'godparents', 400, 500, 450, 'тоже.'), line(2, 'B', 'godparents', 480, 600, 550, 'Воспріемниками были:')]
+        props, text_of = [p for p, _ in made], {p['id']: t for p, t in made}
+        queue = [{'row_id': 'A', 'scan': 1, 'page': 'L', 'focal_y': [100, 390]}, {'row_id': 'B', 'scan': 1, 'page': 'L', 'focal_y': [390, 800]}]
+        by_row, _ = ad.reassign(queue, props, text_of)
+        texts = {r: [text_of[p['id']] for p in ls] for r, ls in by_row.items()}
+        self.assertEqual(texts['A'], ['Тысяча восемсотъ', 'окрещенъ Янъ', 'Со всѣми обрядами Таинства. -', 'Крестьянъ Яна и',
+                                      'Прихода. -', 'Воспріемниками были'])
+        self.assertEqual(texts['B'], ['Тысяча восемсотъ', 'шестьдесятъ перваго', 'Крестьянъ Іосифа и', 'Воспріемниками были:'])
+        self.assertEqual({c: [text_of[p['id']] for p in ps] for c, ps in ad.reassign.headings['B'].items()},
+                         {'parents': ['Ноябрь.'], 'godparents': ['тоже.']})
+
+
+class SingleReadingMerge(unittest.TestCase):
+    def test_refuses_ids_of_another_book_and_demotes_doubtful_checked_lines(self):
+        ms = module('merge_single_reading')
+        props = {'0001_L1_baptism_01': {'scan': 1, 'row_id': '0001_L1', 'cell': 'baptism', 'bbox': [0, 0, 9, 9], 'split': 'train',
+                                        'line': {'x': 5, 'slope': -0.03, 'band': [1, 8], 'core': [3, 6]}},
+                 '0001_L1_baptism_02': {'scan': 1, 'row_id': '0001_L1', 'cell': 'baptism', 'bbox': [0, 9, 9, 18], 'split': 'train'}}
+        with self.assertRaises(ValueError):
+            ms.build([{'id': '0099_L9_baptism_01', 'text': 'x', 'status': 'draft', 'note': ''}], props, 'r', 'b')
+        recs, demoted = ms.build([{'id': '0001_L1_baptism_01', 'text': 'Тысяча  восемсотъ', 'status': 'image_checked', 'note': ''},
+                                  {'id': '0001_L1_baptism_02', 'text': '', 'status': 'image_checked', 'note': ''}], props, 'r', 'b')
+        self.assertEqual([(x['status'], x['text']) for x in recs], [('image_checked', 'Тысяча восемсотъ'), ('rejected_crop', None)])
+        self.assertEqual(demoted, ['0001_L1_baptism_02'])
+        self.assertEqual(recs[0]['line']['slope'], -0.03)
+        self.assertFalse(recs[0]['independent_verification'] or recs[0]['baseline_seen'])
 
 
 class YearInference(unittest.TestCase):

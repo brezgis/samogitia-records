@@ -7,6 +7,11 @@ its line crops in order. A line uses its checked label (image_checked /
 independently_checked) when one exists, otherwise the model prediction. Rejected crops
 are skipped. Line-end '-' or '=' joins to the next line without a space.
 
+Which entry a line belongs to is decided here (`reassign`), not by the layout row in its id:
+the last lines of an entry often lie below the next layout row's top. A month heading written
+between two entries ("Ноябрь.", "тоже.") is taken out of the text and kept on the entry it
+stands above as `heading` (with `heading_month` when the month is read).
+
 Outputs processed/year_draft_<model>.json and .csv. THESE ARE MACHINE DRAFTS: model
 text is unverified (about 7% character error on held-out lines; names are worse),
 and line boundaries can merge or drop text. Do not treat them as transcriptions.
@@ -17,6 +22,9 @@ import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from parse_entries import lev  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / __import__('os').environ.get('SAMOGITIA_BOOK', 'data/plunge-1886-1890')
@@ -41,9 +49,14 @@ SNAP = 260   # px: how far a stored entry boundary may move to a detected entry 
 
 
 def is_entry_start(text):
-    """Baptism column of every entry opens with "Тысяча восемьсотъ ..."."""
-    s = re.sub(r'\s+', '', text or '').lower().replace('и', 'ы')
-    return bool(re.match(r'.{0,2}[ын][се][яа]ч', s)) or s.startswith('тысяч')
+    """Baptism column of every entry opens with "Тысяча восемьсотъ ...", sometimes after the
+    entry's number ("19 Тысяча"); the word may be misread ("Тысоча", "Тасяча", "Тысча")."""
+    text = re.sub(r'^[\s\d.,\-=]+', '', text or '')
+    s = re.sub(r'\s+', '', text).lower().replace('и', 'ы')
+    if re.match(r'.{0,2}[ын][се][яа]ч', s) or s.startswith('тысяч'):
+        return True
+    word = re.sub(r'[\W\d_]', '', text.split()[0].lower()) if text.split() else ''
+    return word.startswith('т') and 5 <= len(word) <= 7 and lev(word, 'тысяча') <= 1
 
 
 def is_column_start(cell, text):
@@ -52,8 +65,48 @@ def is_column_start(cell, text):
         return is_entry_start(text)
     s = re.sub(r'\s+', '', text or '').lower().lstrip('-=.,')
     if cell == 'parents':
-        return 'стьян' in s[:9] or s.startswith(('двор', 'мещ', 'мѣщ', 'шлях', 'однодв'))
+        if 'стьян' in s[:9] or s.startswith(('двор', 'мещ', 'мѣщ', 'шлях', 'однодв')):
+            return True
+        # the estate word misread ("Крентьянъ", "Крестинъ", "Критьинъ"), or an estate named after
+        # a qualifier ("Тельшевскаго Мѣщанина", "Билетнаго Солдата")
+        word = re.sub(r'[^\w]', '', (text or '').split()[0].lower()) if (text or '').split() else ''
+        d = lev(word, 'крестьянъ') if 6 <= len(word) <= 11 else 9
+        return d <= 2 or (d == 3 and word.startswith('кр') and word.endswith('нъ')) \
+            or any(w in s[:30] for w in ('мѣщан', 'мещан', 'солдат'))
     return bool(re.search(r'сп[рp][іи]?е', s[:8])) or s.startswith(('воспр', 'оспр'))
+
+
+HEADING_MONTHS = ['январь', 'февраль', 'мартъ', 'апрѣль', 'май', 'іюнь', 'іюль', 'августъ', 'сентябрь', 'октябрь',
+                  'ноябрь', 'декабрь']
+
+
+def heading_month(text):
+    """A line that is nothing but a month heading: the month's number (nominative month name,
+    as clerks write it between entries), 0 for "тоже" / "Мѣсяцъ" (a heading without a month
+    name), None for anything else. Long names may be one letter off ("оябрь"); short ones and
+    the genitive of dates ("Ноября") never match."""
+    s = re.sub(r'[\W\d_]', '', (text or '').lower()).replace('m', 'т').replace('i', 'і').replace('и', 'і')
+    if not 3 <= len(s) <= 9:
+        return None
+    if s in ('тоже', 'мѣсяцъ', 'мѣсяц', 'месяцъ'):
+        return 0
+    for n, m in enumerate(HEADING_MONTHS, 1):
+        m = m.replace('и', 'і')
+        if s in (m, m.rstrip('ъ')):
+            return n
+        if len(m) >= 6 and m.endswith('ь') and s != m[:-1] + 'я' and lev(s, m) <= 1:
+            return n
+    return None
+
+
+def line_y(p):
+    """Height of a line's letter bodies (the `line` record of segment_lines.py when the
+    proposal has one, else the middle of its box): boxes of neighbouring lines overlap, and a
+    sloped line's box is much taller than its writing, so box edges do not order lines."""
+    line = p.get('line')
+    if line and line.get('core'):
+        return (line['core'][0] + line['core'][1]) / 2
+    return (p['bbox'][1] + p['bbox'][3]) / 2
 
 
 def reassign(queue, props, text_of, split_missed=False, numbered=None):
@@ -64,7 +117,12 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
     opening that column (estate word for parents, "Воспріемн..." for godparents) within SNAP px of
     the baptism boundary, because columns are not always level. A line belongs to the entry whose
     boundary for its column lies above the line's vertical centre. Boundaries without a nearby
-    detected opening are kept. Returns (lines by row_id, {row_id: {cell: (old_y, new_y)}}).
+    detected opening are kept. Where a boundary is a detected opening line, membership is by
+    position relative to that line itself (`line_y`): everything above it belongs to the entry
+    before, however much the boxes overlap. Month headings standing directly above a detected
+    opening are removed from the lines and left in `reassign.headings` ({row_id: {cell: [line]}})
+    for the entry they stand above.
+    Returns (lines by row_id, {row_id: {cell: (old_y, new_y)}}).
     """
     side = defaultdict(list)
     for q in queue:
@@ -75,7 +133,7 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
         if p['row_id'] in row_side:
             line_side[row_side[p['row_id']]].append(p)
     by_row, snapped = defaultdict(list), {}
-    split_rows, folded = [], []
+    split_rows, folded, headings = [], [], {}
 
     def snap(y0, starts):
         near = [s for s in starts if abs(s - y0) <= SNAP]
@@ -84,8 +142,11 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
     for key, qs in side.items():
         qs = sorted(qs, key=lambda q: q['focal_y'][0])
         lines = line_side[key]
-        starts = {c: sorted(p['bbox'][1] for p in lines if p['cell'] == c and is_column_start(c, text_of.get(p['id'])))
-                  for c in ('baptism', 'parents', 'godparents')}
+        opening = {c: [p for p in lines if p['cell'] == c and is_column_start(c, text_of.get(p['id']))]
+                   for c in ('baptism', 'parents', 'godparents')}
+        starts = {c: sorted(p['bbox'][1] for p in ps) for c, ps in opening.items()}
+        # a boundary taken from an opening line (its box top - 8) -> that line's own height
+        at = {(c, p['bbox'][1] - 8): line_y(p) for c, ps in opening.items() for p in ps}
         if numbered is not None:
             # a layout row with neither an entry start near its top nor an entry number in the
             # side column is the second half of an entry the layout cut in two: fold it into
@@ -136,13 +197,35 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
                 continue            # above the side's first (snapped) entry start: previous-year/header carry-over
             owner = bs[0][1]
             for y, rid in bs:
-                if cy >= y:
+                # a boundary that is an opening line: compare with that line; otherwise with the layout's y
+                if (line_y(p) >= at[p['cell'], y] - 1) if (p['cell'], y) in at else (cy >= y):
                     owner = rid
             by_row[owner].append(p)
+        # month headings: up to two heading lines directly above an entry's opening line (blank
+        # crops between them ignored) come out of the text, wherever the boundary put them
+        owner_of = {p['id']: rid for rid in {r for bs in bounds.values() for _, r in bs} for p in by_row.get(rid, [])}
+        for c, ps in opening.items():
+            col = sorted((p for p in lines if p['cell'] == c), key=line_y)
+            for o in ps:
+                if o['id'] not in owner_of:
+                    continue
+                k, found = col.index(o) - 1, []
+                while k >= 0 and len(found) < 2 and line_y(o) - line_y(col[k]) <= SNAP:
+                    t = text_of.get(col[k]['id']) or ''
+                    if heading_month(t) is not None:
+                        found.append(col[k])
+                    elif re.sub(r'[\W_]', '', t):
+                        break
+                    k -= 1
+                for h in found:
+                    if h['id'] in owner_of:     # (a line above the side's first entry has no owner)
+                        by_row[owner_of.pop(h['id'])].remove(h)
+                    headings.setdefault(owner_of[o['id']], {}).setdefault(c, []).insert(0, h)
     order = {'baptism': 0, 'parents': 1, 'godparents': 2}
     for rid in by_row:
         by_row[rid].sort(key=lambda p: (order[p['cell']], p['bbox'][1]))
     reassign.folded = folded
+    reassign.headings = headings
     return (by_row, snapped, split_rows) if split_missed else (by_row, snapped)
 
 
@@ -191,7 +274,11 @@ def main():
                'expected_entry_no': q.get('expected_entry_no'), 'hand_group': q.get('hand_group'),
                'image': q['image'], 'lines': len(lines), 'lines_checked': 0, 'lines_independent': 0,
                'lines_model': 0, 'lines_rejected': 0, 'boundary_snapped': snapped.get(q['row_id']),
-               'split_from': q.get('split_from'), 'focal_y': q.get('focal_y')}
+               'split_from': q.get('split_from'), 'focal_y': q.get('focal_y'), 'heading': None, 'heading_month': None}
+        heads = [text_of[p['id']].strip() for cell in CELLS for p in reassign.headings.get(q['row_id'], {}).get(cell, [])]
+        if heads:
+            rec['heading'] = ' '.join(heads)
+            rec['heading_month'] = next((m for m in map(heading_month, heads) if m), None)
         for cell in CELLS:
             parts = []
             for p in lines:

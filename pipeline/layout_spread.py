@@ -69,6 +69,13 @@ def join(lay, delta_default):
     out_R['merged_into'] = 'L'
     bap = baptism_span(sorted(L.get('cols') or [])) if L.get('ok') else None
     right = fit_right(sorted(R.get('cols') or [])) if R.get('ok') else None
+    if not bap and L.get('ok') and R.get('ok') and L.get('cols') and R.get('x0'):
+        # the left page's last rule (the gutter edge of the baptism column) was not found: the
+        # column then runs from the last rule that was found to just before the right page
+        a, b = max(L['cols']), R['x0'] - 8
+        if b - a > 900:
+            bap = (a, b)
+            out_L['spread_note'] = 'baptism column closed at the right page (its own right rule was not found)'
     if not bap or not right:
         out_L['spread_note'] = 'no joined rows: ' + ('left table not found' if not bap else 'right table not found')
         return {**lay, 'pages': [out_L, out_R]}, None

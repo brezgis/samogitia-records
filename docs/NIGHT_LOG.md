@@ -343,3 +343,48 @@ translation, model training ... as you can"). Entries are appended as work compl
   Recognizer **crnn-ru-v3** uploaded to brezgis/samogitia-plunge-htr with an updated card. Default
   search scope is the open book's parish. Standing rule: dataset updates and significant model
   updates are pushed to Hugging Face.
+- **Salantai 1517/1/1, later on 2026-11-15.** `layout_spread.py` closes the baptism column at the right
+  page when its own rule is missed: 775 rows (was 529), 4 spreads without rows (was 42). Line cropping
+  reworked by an agent (`segment_lines.py`: margin above/below a cell, slanted rules, per-cell writing
+  slope, cuts mid-gap; `refine_lines.py`: no join across a rule unless a tail, printed rule as left
+  limit, neighbours' ink painted out, no-text crops dropped; `predict_crnn.py` levels sloped lines):
+  crops that look like two lines 841 -> 264, mean recognizer confidence 0.916 -> 0.926; control book
+  (20 scans of 1827/1/24, in scratch) 332 -> 31. **Re-running an already labelled book would move
+  lines: on the control 66 of 557 labelled ids would name a different line or none. Do not re-run
+  labelled books until labels are carried across by position.** Levelling is only in predict_crnn.py;
+  training on sloped crops needs the same step (done by hand for the test below).
+- **Full reading round on Salantai** (10 Opus readers x 3 entries, blind, ~1.2M tokens): 585 lines ->
+  200 image_checked (34%; 154 train, 28 validation, 18 test), 361 draft, 24 rejected (4%; the pilot
+  on the old crops rejected 12%). About 6,000 tokens per checked line. Yield depends on the clerk
+  (one hand: 4 of 47). Readers' notes: the previous entry's last line and month headings ("Ноябрь.",
+  "тоже.") filed under the next entry (three readers); unmasked ink from the line above in some crops;
+  a black fill rectangle in 0072_L2_godparents_02; small corrections written between lines. Outputs in
+  data/salantai-1517-1-1/training/labels/round_2026-11-15b/ (not merged into annotations.json).
+- Retraining with the 154 Salantai train lines (x3, levelled) beside the 2,936 lines: on the 46
+  held-out Salantai lines (1,103 characters) see the figures in the message to Anna; candidate weights
+  /mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v4-candidate.pt (not adopted, not uploaded).
+- **Lidar pilots** (outside this repository). Latvia, Taurene parish (the scene in
+  /mnt/ssd240gb/brezgi-lidar is Latvian, around Brežģis): page http://100.107.252.39:8815/, files in
+  /mnt/ssd240gb/anna/lidar-farmsteads/. Lithuania, a 6x6 km block south of Plungė (Luknėnai, Stalgas):
+  /home/anna/research/lidar-plunge/, images on http://100.107.252.39:8816/. Findings: traces survive
+  under trees and are mostly erased in drained fields; the 1944 German air photograph is the real
+  evidence of lost farmsteads; nothing ground-checked; lidar licence terms unread.
+- **Labels merged, assembly fixed, crnn-ru-v4** (agent, evening of 2026-11-15). `pipeline/merge_single_reading.py`
+  (book and round are required arguments; refuses ids not in that book): Salantai annotations.json has
+  585 records (200 image_checked: 154 train / 28 validation / 18 test; 361 draft; 24 rejected).
+  `assemble_drafts.py`: entry membership judged against the opening line itself (overlapping or
+  sloped boxes used to leave the previous entry's last line in the next one), month headings between
+  entries ("Ноябрь.", "тоже", "Мѣсяцъ") removed from the text and kept as `heading` / `heading_month`,
+  looser detection of openings; `parse_entries.py` passes the headings on. Salantai: entries starting
+  with their opening word, baptism 615 -> 658, parents 602 -> 617 of 714; 200 entries change text.
+  Plungė 1827/1/24 1898–99 (in scratch): 218 of 813 change, 183 of them only a filler dash moved; no
+  regression seen. The readers' "previous entry's tail" complaints came from sheets grouped by layout
+  row, not from assembly. Tests: 22 pass (3 new). `train_crnn.py` levels sloped lines with
+  predict_crnn's `level`; `final` takes --splits and --repeat BOOK=N.
+- **crnn-ru-v4** (2,936 lines + 182 Salantai lines x3): Salantai test 1.4% (6 errors in 431 characters,
+  18 lines) against 3.9% for v3, but the 485-line test set 4.2% against 3.9% (343 vs 317 errors; worse
+  on five of seven books). So v3 stays the general model (and the one on Hugging Face); **v4 is used
+  for Salantai only**. Salantai redrafted with v4, labels and the new assembly: 776 rows, of which
+  62–74 are printed column-heading rows and about 29 are fragments (real entries nearer 665).
+  parse_entries.py does not know this book's wording: father/mother 0 in every year, no baptism date
+  or priest in 1858 (dates in digits). GPU was shared with another of Anna's jobs (little-guy-sim).

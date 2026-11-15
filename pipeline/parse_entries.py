@@ -292,7 +292,7 @@ def main():
             s = cell_src.get((e['row_id'], cell), {'model'}) - {'skip'}
             fields[k] = {'value': v, 'source': 'checked' if s == {'checked'} else 'mixed' if 'checked' in s else 'model'}
         out.append({k: e.get(k) for k in ('row_id', 'register_year', 'scan', 'page', 'expected_entry_no', 'hand_group',
-                                          'split', 'image', 'split_from')}
+                                          'split', 'image', 'split_from', 'heading', 'heading_month')}
                    | {'fields': fields, 'text': {c: e[c] for c in ('baptism', 'parents', 'godparents')}})
     stem = src.stem.replace('year_draft_', '')
     dst = BOOK / f'processed/entries_{stem}.json'

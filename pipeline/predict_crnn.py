@@ -5,7 +5,8 @@ Usage: SAMOGITIA_BOOK=data/<book> .venv-htr/bin/python -I pipeline/predict_crnn.
 Writes training/predictions/<model-dir-name>-<UTC>/predictions.json and run.json in the same form
 as predict_lines.py, so assemble_drafts.py and the rest take either recognizer. With --set it
 instead reads a held-out line set (local_models/build_reading_set.py) and writes OUT.json for
-local_models/score_reading.py. Lines are batched by width and padded with white.
+local_models/score_reading.py; set lines that carry `bbox` and `line` are levelled like any
+other. Lines are batched by width and padded with white.
 Predictions are machine drafts, never labels. GPU only.
 """
 import argparse
@@ -39,19 +40,35 @@ def load_net(path):
     return net.cuda().eval(), idx2char
 
 
-def tensor(path):
-    im = Image.open(ROOT / path).convert('L')
+def level(im, item):
+    """A crop of writing that runs at a slope (segment_lines.py records it in `line`) is an
+    upright box with the line lying across it. Slide its columns so the line lies level and
+    fills the height, as the recognizer was trained to see lines. The crop file is untouched."""
+    line = (item or {}).get('line')
+    if not line or not line.get('slope') or not item.get('bbox'):
+        return im
+    x0, y0 = item['bbox'][0], item['bbox'][1]
+    top, bottom = line['band']
+    shift = top - y0 + line['slope'] * (x0 - line['x'])
+    fill = item.get('mask_fill')
+    return im.transform((im.width, max(8, bottom - top)), Image.AFFINE, (1, 0, 0, line['slope'], 1, shift),
+                        resample=Image.BILINEAR, fillcolor=255 if fill is None else fill)
+
+
+def tensor(path, item=None):
+    im = level(Image.open(ROOT / path).convert('L'), item)
     im = im.resize((max(16, int(128 * im.width / im.height)), 128), Image.LANCZOS)
     return (torch.from_numpy(np.asarray(im, dtype=np.float32) / 255) - 0.5) / 0.5
 
 
-def predict(net, idx2char, images, batch=48, with_probs=False):
-    """Text per image; with_probs also returns the per-step class probabilities (numpy, T x C)."""
+def predict(net, idx2char, images, batch=48, with_probs=False, items=None):
+    """Text per image; with_probs also returns the per-step class probabilities (numpy, T x C).
+    items: the proposals the images belong to (same order), so sloped lines are read level."""
     order = sorted(range(len(images)), key=lambda i: Image.open(ROOT / images[i]).size[0] / Image.open(ROOT / images[i]).size[1])
     out, probs = [None] * len(images), [None] * len(images)
     for k in range(0, len(order), batch):
         idx = order[k:k + batch]
-        xs = [tensor(images[i]) for i in idx]
+        xs = [tensor(images[i], items[i] if items else None) for i in idx]
         X = torch.ones(len(xs), 1, 128, max(x.shape[1] for x in xs))
         for n, x in enumerate(xs):
             X[n, 0, :, :x.shape[1]] = x
@@ -83,12 +100,12 @@ def main():
     if args.set:
         lines = json.loads(args.set[0].read_text())['lines']
         t = time.time()
-        texts = predict(net, idx2char, [l['image'] for l in lines])
+        texts = predict(net, idx2char, [l['image'] for l in lines], items=lines)
         s = round((time.time() - t) / len(lines), 4)
         args.set[1].write_text(json.dumps([{'id': l['id'], 'text': x, 'seconds': s} for l, x in zip(lines, texts)], ensure_ascii=False, indent=1))
         return 0
     items = [i for i in json.loads((BOOK / 'training' / SOURCES[args.ids_from]).read_text()) if i.get('image')]
-    texts = predict(net, idx2char, [i['image'] for i in items])
+    texts = predict(net, idx2char, [i['image'] for i in items], items=items)
     run_id = args.model.parent.name + '-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     out = BOOK / 'training/predictions' / run_id
     out.mkdir(parents=True)

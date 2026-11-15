@@ -39,9 +39,283 @@
     2991,
     3306
    ],
-   "rows": [],
+   "rows": [
+    {
+     "y0": 463,
+     "y1": 851,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       463,
+       2398,
+       851
+      ],
+      "parents": [
+       2420,
+       454,
+       3245,
+       842
+      ],
+      "godparents": [
+       3245,
+       454,
+       4158,
+       842
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 851,
+     "y1": 1193,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       851,
+       2398,
+       1193
+      ],
+      "parents": [
+       2420,
+       842,
+       3245,
+       1184
+      ],
+      "godparents": [
+       3245,
+       842,
+       4158,
+       1184
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1193,
+     "y1": 1563,
+     "seen_on": [
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       1193,
+       2398,
+       1563
+      ],
+      "parents": [
+       2420,
+       1184,
+       3245,
+       1554
+      ],
+      "godparents": [
+       3245,
+       1184,
+       4158,
+       1554
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1563,
+     "y1": 1982,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       1563,
+       2398,
+       1982
+      ],
+      "parents": [
+       2420,
+       1554,
+       3245,
+       1973
+      ],
+      "godparents": [
+       3245,
+       1554,
+       4158,
+       1973
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 1982,
+     "y1": 2297,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       1982,
+       2398,
+       2297
+      ],
+      "parents": [
+       2420,
+       1973,
+       3245,
+       2288
+      ],
+      "godparents": [
+       3245,
+       1973,
+       4158,
+       2288
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2297,
+     "y1": 2645,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       2297,
+       2398,
+       2645
+      ],
+      "parents": [
+       2420,
+       2288,
+       3245,
+       2636
+      ],
+      "godparents": [
+       3245,
+       2288,
+       4158,
+       2636
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2645,
+     "y1": 2983,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       2645,
+       2398,
+       2983
+      ],
+      "parents": [
+       2420,
+       2636,
+       3245,
+       2974
+      ],
+      "godparents": [
+       3245,
+       2636,
+       4158,
+       2974
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 2983,
+     "y1": 3302,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       2983,
+       2398,
+       3302
+      ],
+      "parents": [
+       2420,
+       2974,
+       3245,
+       3293
+      ],
+      "godparents": [
+       3245,
+       2974,
+       4158,
+       3293
+      ]
+     },
+     "suspect": false
+    },
+    {
+     "y0": 3302,
+     "y1": 3650,
+     "seen_on": [
+      "L",
+      "R"
+     ],
+     "cells": {
+      "baptism": [
+       1171,
+       3302,
+       2398,
+       3650
+      ],
+      "parents": [
+       2420,
+       3293,
+       3245,
+       3641
+      ],
+      "godparents": [
+       3245,
+       3293,
+       4158,
+       3641
+      ]
+     },
+     "suspect": false
+    }
+   ],
    "form": "spread",
-   "spread_note": "no joined rows: left table not found"
+   "spread_note": "baptism column closed at the right page (its own right rule was not found)",
+   "spread": {
+    "delta_y": -9,
+    "baptism_x": [
+     1171,
+     2398
+    ],
+    "right_cols": [
+     2420,
+     3245,
+     4158,
+     4612
+    ]
+   }
   },
   {
    "page": "R",
