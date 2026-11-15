@@ -1,5 +1,6 @@
 {
  "note": "The shelf of register books shown by the reading site. Edit here, then run: python3 site/make_library.py",
+ "note_start": "\"start\": true marks the books the site may open on (index.html at the repository root picks one at random). Give it only to books whose page images are published (see .gitignore: site/book*/img/pages).",
  "span": [
   1845,
   1910
@@ -75,6 +76,7 @@
       1890
      ],
      "archive": "1827/1/23",
+     "start": true,
      "data": "data/plunge-1886-1890",
      "scan": 93,
      "row": "0093_R3",
@@ -88,6 +90,7 @@
       1902
      ],
      "archive": "1827/1/24",
+     "start": true,
      "data": "data/plunge-1827-1-24",
      "scan": 46,
      "cloth": "1060376717",

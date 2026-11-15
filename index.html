@@ -1,16 +1,35 @@
 <!doctype html>
 <!-- GitHub Pages serves this repository's root, and the site lives in site/.
-     This page opens samogitia.brezgis.com to the shelf of books (site/library.html). -->
+     This page opens samogitia.brezgis.com on a book: one of the books marked "start" in
+     site/library.json (those whose page images are published), chosen at random. The book then
+     opens at a random spread, and its menu leads to every other book. An address that already
+     names a place (#s=...) goes to the 1886-1890 book, as before there were others. The page has
+     the book's background colour and shows nothing, so the hop is not seen. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Žemaičių metrikai</title>
-<meta name="description" content="Parish registers of Samogitia.">
-<link rel="canonical" href="https://samogitia.brezgis.com/site/library.html">
-<meta http-equiv="refresh" content="0; url=site/library.html">
-<script>location.replace('site/library.html' + location.search + location.hash);</script>
-<style>body { margin: 0; background: #d5d8cf; color: #22201c; font: 17px/1.5 Georgia, serif; display: grid; place-items: center; min-height: 100vh; } a { color: #8a2420; }</style>
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="site/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="site/apple-touch-icon.png">
+<meta name="description" content="Parish registers of Samogitia, read by machine and translated.">
+<link rel="canonical" href="https://samogitia.brezgis.com/site/book/">
+<noscript><meta http-equiv="refresh" content="0; url=site/book/"></noscript>
+<style>html { background: #d5d8cf; } body { margin: 0; background: #d5d8cf; color: #22201c; font: 17px/1.5 Georgia, serif; display: grid; place-items: center; min-height: 100vh; } a { color: #8a2420; }</style>
 </head>
-<body><p><a href="site/library.html">Open the registers.</a></p></body>
+<body><noscript><p><a href="site/book/">Open the register.</a></p></noscript>
+<script src="site/library.js"></script>
+<script>
+(function () {
+  var dirs = [];
+  try {
+    window.LIBRARY.parishes.forEach(function (p) { p.books.forEach(function (b) { if (b.start && b.state === 'open') dirs.push(b.dir); }); });
+  } catch (e) {}
+  var named = /(^|[#&])(s|pick)=/.test(location.hash);
+  var dir = named || !dirs.length ? 'book' : dirs[Math.floor(Math.random() * dirs.length)];
+  location.replace('site/' + dir + '/' + location.search + location.hash);
+})();
+</script>
+</body>
 </html>

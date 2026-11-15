@@ -309,8 +309,9 @@ def main(args):
         manifest.append({"scan": scan, "y": ys.most_common(1)[0][0] if ys else None, "n": len(spread["entries"]),
                          "from": dates[0][:7] if dates else None, "to": dates[-1][:7] if dates else None})
     boxes_path.write_text(json.dumps(boxes))
-    (OUT / "data.js").write_text("window.SPREADS=" + json.dumps(manifest) + ";\nwindow.INDEX="
-                                 + json.dumps(index, ensure_ascii=False) + ";\n")
+    # data.js is all the page needs to open; the search index (about a megabyte) is fetched afterwards
+    (OUT / "data.js").write_text("window.SPREADS=" + json.dumps(manifest) + ";\n")
+    (OUT / "index.js").write_text("window.INDEX=" + json.dumps(index, ensure_ascii=False) + ";\n")
     if "--textiles" in args:
         textiles(Path(args[args.index("--textiles") + 1]))
     print(len(scans), "spreads;", sum(m["n"] for m in manifest), "entries placed;", len(index), "in index")

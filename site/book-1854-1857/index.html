@@ -4,9 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Žemaičių metrikai</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- the web fonts arrive when they arrive: the stylesheet is not allowed to hold up the first paint -->
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --madder:#8c2b25; --spruce:#3f6557; --soot:#1f1b18; --ink:#2a211b;
@@ -28,11 +33,13 @@ button,input{font:inherit;color:inherit}
 [data-room="dusk"] :focus-visible{outline-color:#e0a79f}
 
 /* masthead */
-.mast{max-width:1480px;margin:0 auto;padding:26px 0 20px;display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap}
-.mast h1{font:400 clamp(28px,3.4vw,46px)/1.02 var(--serif);margin:0;letter-spacing:-.01em}
-.mast h1 a{color:inherit;text-decoration:none}
-.mast h1 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.14em}
-.mast p{margin:6px 0 0;color:var(--room-soft);font-size:14px}
+.mast{max-width:1480px;margin:0 auto;padding:18px 0 14px;display:flex;align-items:flex-end;gap:12px 24px;flex-wrap:wrap}
+.mast h1{font:400 clamp(27px,3vw,42px)/1.02 var(--serif);margin:0;letter-spacing:-.01em}
+.mast p{margin:0;color:var(--room-soft);font-size:14px}
+.mast .line{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-top:7px;min-height:28px}
+/* until the script has run the line says nothing; if that takes long, a quiet word that the book is on its way */
+#sub:empty::after{content:"Opening the register…";opacity:0;animation:late 0s 3s forwards}
+@keyframes late{to{opacity:1}}
 .find{margin-left:auto;position:relative;width:min(100%,340px)}
 .find input{width:100%;padding:9px 12px;border:1px solid var(--rule);border-radius:3px;background:var(--field)}
 .find input::placeholder{color:var(--room-soft)}
@@ -43,9 +50,16 @@ button,input{font:inherit;color:inherit}
 .langs span:hover{color:var(--room-ink)}
 .langs input:checked+span{color:var(--room-ink);border-bottom-color:var(--madder)}
 .langs input:focus-visible+span{outline:2px solid var(--madder);outline-offset:2px}
-.hits{position:absolute;z-index:70;top:calc(100% + 6px);right:0;width:min(92vw,460px);margin:0;padding:6px;list-style:none;
-  background:var(--field);border:1px solid var(--rule);border-radius:4px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5);max-height:min(62vh,640px);overflow:auto}
-.hits[hidden]{display:none}
+/* what the search box drops down: where to search (which registers, which years), then the results */
+.drop{position:absolute;z-index:70;top:calc(100% + 6px);right:0;width:min(92vw,460px);
+  background:var(--field);border:1px solid var(--rule);border-radius:4px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.drop:has(.hits[hidden]){display:none}
+.scope{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;padding:9px 12px 8px;border-bottom:1px solid var(--rule);font-size:13px;color:var(--room-soft)}
+.scope select,.scope input{font-size:13.5px;color:var(--room-ink);background:var(--room);border:1px solid var(--rule);border-radius:3px;padding:3px 6px}
+.scope select{max-width:100%;flex:1 1 150px;min-width:0}
+.scope input{width:4.6em;-moz-appearance:textfield;appearance:textfield}
+.scope label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.hits{margin:0;padding:6px;list-style:none;max-height:min(56vh,600px);overflow:auto}
 .hits button{display:grid;grid-template-columns:1fr auto;gap:0 12px;width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:3px;cursor:pointer}
 .hits button:hover,.hits button:focus-visible{background:rgba(140,43,37,.12)}
 .hits b{font:400 19px/1.2 var(--serif)}
@@ -55,10 +69,44 @@ button,input{font:inherit;color:inherit}
 .hits .away{opacity:.6;cursor:default}
 .hits .what{padding:7px 10px;color:var(--room-soft);font-size:12.5px}
 
+/* choosing a book and a year: a plain menu on the subtitle line */
+.pickwrap{position:relative}
+.pick{display:inline-flex;align-items:center;gap:7px;margin:0;padding:3px 8px 3px 10px;border:1px solid var(--rule);border-radius:3px;
+  background:none;cursor:pointer;font-size:14px;color:var(--room-ink)}
+.pick:hover,.pick[aria-expanded="true"]{border-color:var(--room-ink)}
+.pick svg{width:9px;height:6px;fill:none;stroke:currentColor;stroke-width:1.4;flex:none}
+.pick[hidden]{display:none}
+.menu{position:absolute;z-index:70;top:calc(100% + 6px);left:0;width:min(88vw,330px);max-height:min(70vh,620px);overflow:auto;padding:6px 6px 8px;
+  background:var(--field);border:1px solid var(--rule);border-radius:4px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.menu[hidden]{display:none}
+/* a parish is a line that opens to its books; one is open at a time, the open book's parish to begin with */
+.menu .par{display:flex;align-items:baseline;gap:8px;width:100%;margin:0;padding:7px 10px;border:0;border-radius:3px;background:none;cursor:pointer;
+  text-align:left;font-size:15px;color:var(--room-ink)}
+.menu .par::before{content:"";flex:none;width:5px;height:5px;margin:0 3px 2px 1px;border:solid var(--room-soft);border-width:0 1.4px 1.4px 0;transform:rotate(-45deg);transition:transform .12s}
+.menu .par[aria-expanded="true"]::before{transform:rotate(45deg)}
+.menu .par[aria-expanded="true"]{font-weight:600}
+.menu .par span{flex:1}
+.menu .par i{font-style:normal;font-weight:400;font-size:12.5px;color:var(--room-soft);white-space:nowrap}
+.menu .par:hover,.menu .par:focus-visible{background:rgba(140,43,37,.12)}
+.menu h4{font:400 12.5px/1 var(--sans);color:var(--room-soft);margin:0;padding:8px 10px 4px 26px}
+.menu section ul{padding:0 0 6px 16px}
+.menu ul{list-style:none;margin:0;padding:0}
+.menu .bk{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:6px 10px;border-radius:3px;text-decoration:none;color:var(--room-ink);font-size:15px}
+.menu .bk i{font-style:normal;font-size:12.5px;color:var(--room-soft);white-space:nowrap}
+.menu a.bk:hover,.menu a.bk:focus-visible{background:rgba(140,43,37,.12)}
+.menu .here .bk{font-weight:600}
+.menu .here .bk i{font-weight:400;color:var(--madder)}
+[data-room="dusk"] .menu .here .bk i{color:#e0a79f}
+.menu .wait .bk{color:var(--room-soft)}
+.menu .yrs{display:flex;flex-wrap:wrap;gap:2px;padding:0 6px 6px}
+.menu .yrs button{border:0;background:none;border-radius:3px;padding:5px 8px;font-size:14px;cursor:pointer;color:var(--room-ink)}
+.menu .yrs button:hover{background:rgba(140,43,37,.12)}
+.menu .yrs button[aria-current="true"]{box-shadow:inset 0 -2px 0 var(--madder)}
+
 /* the book */
 .book{container-type:inline-size;max-width:1480px;margin:0 auto;position:relative}
 .cover{position:relative;padding:3cqw 3.2cqw 3.4cqw;border-radius:.7cqw;
-  background:var(--soot) center/cover;
+  background:#6a4b46 url(../textiles/cloth-plunge.jpg) center/cover;
   box-shadow:0 .2cqw .3cqw rgba(0,0,0,.35),0 2.2cqw 3.4cqw -1.4cqw rgba(20,24,20,.55);}
 .cover::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
   box-shadow:inset 0 0 0 1px rgba(0,0,0,.35),inset 0 .25cqw .5cqw rgba(255,255,255,.12),inset 0 -.5cqw .9cqw rgba(0,0,0,.35)}
@@ -67,8 +115,15 @@ button,input{font:inherit;color:inherit}
     .16cqw .16cqw 0 #cfc5ad,.3cqw .3cqw 0 #8f8672,.46cqw .46cqw 0 #d6ccb4,.6cqw .6cqw 0 #8f8672,
     -.16cqw .16cqw 0 #cfc5ad,-.3cqw .3cqw 0 #8f8672,-.46cqw .46cqw 0 #d6ccb4,-.6cqw .6cqw 0 #8f8672,
     0 .9cqw 1.4cqw rgba(0,0,0,.55)}
-.block{background:#17130f;align-items:start}
-.block:empty{aspect-ratio:1.5}          /* the book keeps its shape while the first spread loads */
+.block{background:#ddd8cb;align-items:start}          /* paper, where a page is shorter than the one facing it */
+/* Before any script or data: the book lies open at two empty ruled pages (the markup has them).
+   The first spread replaces them, by the opening riffle on a fresh visit. */
+.page.ph{aspect-ratio:1 / 1.63}
+/* A loose sheet photographed in the book (a letter, a half page, a cover): the page under it is
+   plain paper and the sheet lies on it at its own proportions (app.js: layout). */
+.page.insert,[data-paper="film"] .page.insert{background:#e9e6dc}
+[data-paper="warm"] .page.insert{background:var(--paper)}
+.page.insert>img{position:absolute;box-shadow:0 0 0 1px rgba(60,48,36,.18),0 .25cqw .5cqw -.1cqw rgba(40,28,16,.45),0 1cqw 1.6cqw -.9cqw rgba(40,28,16,.5)}
 .page>img{color:transparent}            /* no caption text over the paper while a scan is still arriving */
 .page{position:relative;background:var(--paper);isolation:isolate;overflow:visible}
 .page>img{display:block;width:100%;height:100%;mix-blend-mode:multiply;filter:brightness(1.16) contrast(1.12);user-select:none;-webkit-user-drag:none}
@@ -88,26 +143,32 @@ button,input{font:inherit;color:inherit}
 .years{display:flex;gap:2px}
 .years button{border-color:transparent;font:400 17px/1 var(--serif);padding:4px 7px}
 .years button[aria-current="true"]{box-shadow:inset 0 -2px 0 var(--madder)}
-/* the parish's neighbouring books, before and after this book's years */
 .years{align-items:baseline}
-.years a{font:400 13.5px/1 var(--sans);color:var(--room-soft);text-decoration:none;padding:4px 7px;white-space:nowrap;border-radius:3px}
-.years a:hover{color:var(--room-ink);box-shadow:inset 0 -1px 0 var(--room-soft)}
-.years a.before{margin-right:6px;border-right:1px solid var(--rule);border-radius:0;padding-right:12px}
-.years a.after{margin-left:6px;border-left:1px solid var(--rule);border-radius:0;padding-left:12px}
-@media (max-width:860px){.years a{display:none}}
 .leafnav input[type=range]{flex:1 1 120px;min-width:80px;accent-color:var(--madder)}
 .leafnav output{white-space:nowrap;min-width:9.5em;text-align:right}
-.edge{position:absolute;top:0;bottom:0;width:3.2cqw;border:0;background:none;cursor:pointer;z-index:2;border-radius:inherit}
-#edgeL{left:0;cursor:w-resize} #edgeR{right:0;cursor:e-resize}
+/* Turning by the side of the book. .edge: the cover beside each page and the outermost sliver of the
+   page (entry text starts about 1 to 3% in, so 1.5% of the page is free), over everything. .pe: the
+   rest of the outer 7% of the page, under the entry rows, so a row that reaches there wins. On hover
+   the page's edge shades a little, as if lifted. One page at a time, both sides of that page turn. */
+.edge{position:absolute;top:0;bottom:0;width:3.9cqw;border:0;padding:0;background:none;cursor:pointer;z-index:5;border-radius:inherit}
+#edgeL{left:0} #edgeR{right:0}
+.edge:disabled{cursor:default}
+.pe{position:absolute;top:0;bottom:0;width:7%;z-index:3;border:0;padding:0;background:none;cursor:pointer}
+.pe.out{transition:background .15s}
+.page[data-side="L"] .pe.out,.page[data-side="R"] .pe.in{left:0} .page[data-side="R"] .pe.out,.page[data-side="L"] .pe.in{right:0}
+.pe.in{display:none}
+.page[data-side="L"] .pe.out:hover,.cover:has(#edgeL:enabled:hover) .page[data-side="L"] .pe.out{background:linear-gradient(to right,rgba(40,26,14,.2),rgba(40,26,14,.07) 45%,transparent)}
+.page[data-side="R"] .pe.out:hover,.cover:has(#edgeR:enabled:hover) .page[data-side="R"] .pe.out{background:linear-gradient(to left,rgba(40,26,14,.2),rgba(40,26,14,.07) 45%,transparent)}
+.book.at-first .page[data-side="L"] .pe.out,.book.at-last .page[data-side="R"] .pe.out{display:none}
 .block{perspective:170cqw;perspective-origin:50% 42%}
 /* The turning leaf (app.js: buildLeaf, turnLeaf): strips of the page, each hinged on the last. */
 .hold{position:absolute;top:0;z-index:8;background:#fff center/100% 100% no-repeat}
 .flip{position:absolute;top:0;z-index:9;transform-style:preserve-3d;pointer-events:none}
 .seg{position:absolute;top:0;height:100%;width:calc(100% + .7px);transform-style:preserve-3d;will-change:transform}
-.flip>.seg{width:calc(12.5% + .7px)}                       /* 8 strips; the rest are as wide as their parent */
+.flip>.seg{width:calc(100% / var(--n,8) + .7px)}           /* --n strips; the rest are as wide as their parent */
 .flip.fwd .seg{left:0;transform-origin:left center}   .flip.fwd .seg .seg{left:calc(100% - .7px)}
 .flip.back .seg{right:0;transform-origin:right center} .flip.back .seg .seg{right:calc(100% - .7px)}
-.seg>.f{position:absolute;inset:0;background:#fff 0 0/800% 100% no-repeat;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.seg>.f{position:absolute;inset:0;background:#fff 0 0/calc(var(--n,8)*100%) 100% no-repeat;backface-visibility:hidden;-webkit-backface-visibility:hidden}
 .seg>.rear{transform:rotateY(180deg)}
 .seg .shade{position:absolute;inset:0;background:#1d140b;opacity:0;pointer-events:none}
 [data-paper="warm"] .seg>.f,[data-paper="warm"] .hold{background-color:var(--paper);background-blend-mode:multiply}
@@ -115,6 +176,18 @@ button,input{font:inherit;color:inherit}
 .cast{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:0}
 .cast.fwd{background:linear-gradient(to right,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
 .cast.back{background:linear-gradient(to left,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
+/* The opening riffle (app.js: riffle): leaves that have no scan yet are an empty ruled form, the
+   printed table of the register without its handwriting. */
+.seg>.f.blank,.hold.blank,.page.blank{background:#eceae3 0 0/100% 100% no-repeat}
+.seg>.f.blank{background-size:calc(var(--n,8)*100%) 100%}
+.seg>.f.loose,.hold.loose{background-color:#e9e6dc}
+[data-paper="warm"] .seg>.f.loose,[data-paper="warm"] .hold.loose{background-color:var(--paper);background-blend-mode:multiply}
+.seg>.f.blank,.hold.blank,.page.blank{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 320' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23474038' stroke-opacity='.3' stroke-width='.5'%3E%3Cpath d='M12 16H188V304H12ZM12 50H188M12 134H188M12 219H188M22 16V304M30 16V304M38 26V304M38 26H22M92 16V304M146 16V304M176 16V304'/%3E%3C/g%3E%3Cg stroke='%23474038' stroke-opacity='.15' stroke-width='1.6' stroke-dasharray='9 3 14 2 6 4'%3E%3Cpath d='M42 24H88M42 30H86M42 36H80M96 24H142M96 30H140M96 36H130M150 24H173M150 30H172M150 36H170'/%3E%3C/g%3E%3C/svg%3E")}
+[data-paper="warm"] .seg>.f.blank,[data-paper="warm"] .hold.blank,[data-paper="warm"] .page.blank{background-color:var(--paper)}
+/* during the riffle the eye is higher over the book, so the lifted leaves stay inside the cover and off the header */
+.book.riffling .block{perspective:250cqw;perspective-origin:50% 10%}
+.book.riffling .block>.page{pointer-events:none}
+.book.riffling .ribbon{clip-path:inset(calc(100% - 7cqw) -50% -1cqw -50%)}
 /* on other spreads only the tail shows, from the cover's lower edge down (the ribbon starts 2.4cqw
    below the top and is 4.6cqw taller than the cover, so 7cqw of it hangs below) */
 .ribbon.tucked{clip-path:inset(calc(100% - 7cqw) -50% -1cqw -50%)}
@@ -164,12 +237,16 @@ button,input{font:inherit;color:inherit}
   pointer-events:none;filter:drop-shadow(.12cqw .16cqw .16cqw rgba(20,12,6,.55))}
 .ribbon img{width:100%;height:100%;object-fit:cover;object-position:bottom;display:block}
 .ribbon button{position:absolute;left:-40%;right:-40%;bottom:0;height:9cqw;border:0;background:none;cursor:pointer;pointer-events:auto;border-radius:4px}
-[data-ribbon="none"] .ribbon{display:none}
 
 /* the desk: what the open entry says, fixed under the book */
 .desk{position:fixed;z-index:60;left:0;right:0;bottom:0;background:var(--room);border-top:1px solid var(--rule);
   padding:14px clamp(12px,2vw,36px) 16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.1fr);gap:8px 40px;
   align-items:start;max-height:32vh;overflow:auto;box-shadow:0 -18px 30px -26px rgba(0,0,0,.55)}
+.desk{transition:opacity .3s,visibility .3s}
+.desk.idle,.desk.closed,.desk:has(#cap:empty){opacity:0;visibility:hidden;pointer-events:none}   /* :empty: before the script has run */
+.desk .x{position:absolute;top:6px;right:clamp(8px,1.4vw,24px);margin:0;border:0;padding:2px 8px 4px;font-size:20px;line-height:1;color:var(--room-soft);border-radius:3px}
+.desk .x:hover{color:var(--room-ink);background:rgba(37,43,39,.08)}
+.desk .about{padding-right:18px}
 .desk h2{font:400 25px/1.1 var(--serif);margin:0}
 .desk p{margin:5px 0 0;color:var(--room-soft);font-size:13.5px;line-height:1.45}
 .desk .ru{font:400 15.5px/1.5 var(--serif);color:var(--room-ink);margin:2px 0 0}
@@ -228,20 +305,32 @@ button,input{font:inherit;color:inherit}
   .book[data-show="R"] .ribbon{right:auto;left:3cqw}
   .slip{position:fixed;left:8px!important;right:8px;top:auto!important;bottom:calc(38vh + 8px);width:auto;transform:none;max-height:52vh;overflow:auto;font-size:15px}
   .leaf{font-size:clamp(10px,2cqw,15px)}
-  .desk{grid-template-columns:1fr;max-height:38vh}
+  .desk{grid-template-columns:1fr;max-height:34vh;padding-top:11px;padding-bottom:12px;gap:6px}
+  .desk h2{font-size:21px}
+  #key{display:none}                             /* the key to the marks waits until an entry is open */
+  body:has(.book.has-pick) #key{display:block}
   .turn{display:inline-block!important}
-  .tryon{max-height:112px;overflow:auto}
+  .mast{padding:14px 0 10px}
+  .find{width:100%}
+  .langs{justify-content:flex-start;margin-left:-9px}
+  .years{display:none}                           /* the years are in the menu on the subtitle line */
+  .pe.in{display:block}                          /* one page showing: its inner side turns too */
+  .pe{width:9%}
+  .book.at-first .page[data-side="L"] .pe.out,.book.at-last .page[data-side="R"] .pe.out{display:none}
+  .leafnav{gap:8px 10px}
+  .leafnav output{min-width:0}
 }
 .turn{display:none;margin:0 0 10px;border:1px solid var(--rule);background:none;border-radius:3px;padding:6px 11px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
-<body data-cloth="plunge" data-ribbon="mazeikiai" data-read="one" data-paper="film" data-room="day">
+<body data-read="one" data-paper="film" data-room="day">
 
 <header class="mast">
   <div>
-    <h1><a id="title" href="../library.html">Žemaičių metrikai</a></h1>
-    <p id="sub"></p>
+    <h1 id="title">Žemaičių metrikai</h1>
+    <div class="line"><div class="pickwrap"><button type="button" class="pick" id="pick" aria-haspopup="true" aria-expanded="false" aria-controls="menu" hidden><span id="pickT"></span><svg viewBox="0 0 9 6" aria-hidden="true"><path d="M1 1l3.5 3.5L8 1"/></svg></button>
+      <nav class="menu" id="menu" hidden></nav></div><p id="sub"></p></div>
   </div>
   <div class="find">
     <fieldset class="langs"><legend>Language</legend>
@@ -251,7 +340,11 @@ button,input{font:inherit;color:inherit}
       <label><input type="radio" name="lang" value="ru"><span lang="ru">Русский</span></label>
     </fieldset>
     <input id="q" type="search" placeholder="" aria-label="" autocomplete="off">
-    <ul class="hits" id="hits"></ul>
+    <div class="drop" id="drop">
+      <div class="scope"><select id="scope"></select>
+        <label><span id="yearsT"></span><input id="y0" type="number" inputmode="numeric"> – <input id="y1" type="number" inputmode="numeric"></label></div>
+      <ul class="hits" id="hits" hidden></ul>
+    </div>
   </div>
 </header>
 
@@ -267,8 +360,8 @@ button,input{font:inherit;color:inherit}
   <div class="book" id="book">
     <div class="cover" id="cover">
       <button type="button" class="edge" id="edgeL"></button><button type="button" class="edge" id="edgeR"></button>
-      <div class="block" id="block"></div>
-      <div class="ribbon"><img id="ribbonImg" alt=""><button type="button" id="ribbonBtn" aria-label="Open at the ribbon"></button></div>
+      <div class="block" id="block"><div class="page ph blank" data-side="L"><div class="fold"></div></div><div class="page ph blank" data-side="R"><div class="fold"></div></div></div>
+      <div class="ribbon tucked"><img id="ribbonImg" src="../textiles/ribbon-mazeikiai.webp" alt=""><button type="button" id="ribbonBtn" aria-label="Open at the ribbon"></button></div>
     </div>
   </div>
 
@@ -282,7 +375,8 @@ button,input{font:inherit;color:inherit}
   </section>
 </main>
 
-<aside class="desk" aria-label="About this entry">
+<aside class="desk" id="desk" aria-label="About this entry">
+  <button type="button" class="x" id="deskX">×</button>
   <div id="cap" aria-live="polite"></div>
   <p class="ru" id="ru" lang="ru"></p>
   <div class="about">
@@ -292,17 +386,6 @@ button,input{font:inherit;color:inherit}
 </aside>
 
 <form class="tryon" id="tryon" hidden>
-  <fieldset><legend>Cloth</legend>
-    <label><input type="radio" name="cloth" value="plunge"><span>Plungė check</span></label>
-    <label><input type="radio" name="cloth" value="kretinga"><span>Kretinga stripe</span></label>
-    <label><input type="radio" name="cloth" value="telsiai"><span>Telšiai zigzag</span></label>
-  </fieldset>
-  <fieldset><legend>Ribbon</legend>
-    <label><input type="radio" name="ribbon" value="mazeikiai"><span>Red sash</span></label>
-    <label><input type="radio" name="ribbon" value="taurage"><span>Tasselled cord</span></label>
-    <label><input type="radio" name="ribbon" value="ukrinai"><span>Many-coloured</span></label>
-    <label><input type="radio" name="ribbon" value="none"><span>None</span></label>
-  </fieldset>
   <fieldset><legend>English</legend>
     <label><input type="radio" name="read" value="one"><span>Over one entry</span></label>
     <label><input type="radio" name="read" value="every"><span>Over the whole page</span></label>
@@ -325,7 +408,6 @@ button,input{font:inherit;color:inherit}
 <script src="../library.js"></script>
 <script src="book.js"></script>
 <script src="data.js"></script>
-<script src="vendor/minisearch.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

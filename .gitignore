@@ -43,6 +43,12 @@ site/book*/img/pages/
 !site/book/img/pages/*.jpg
 !site/book-1896-1902/img/pages/
 !site/book-1896-1902/img/pages/*.jpg
+# the site's icon (site/make_favicon.py)
+!site/favicon-32.png
+!site/apple-touch-icon.png
+# small copies of every book's pages for the opening riffle (site/make_thumbs.py), about 45 MB in all: published for every book
+!site/book*/img/thumbs/
+!site/book*/img/thumbs/*.webp
 !site/book*/img/cloth-*.jpg
 !site/book*/img/src/
 !site/book*/img/src/*.jpg
@@ -52,3 +58,6 @@ data/*/processed/rows
 data/*/training/proposals_years_v2
 data/*/training/proposals_v2
 data/*/rows
+# scans as downloaded, when pages/ holds an enlarged copy (Salantai: 3200 px scans scaled x1.5 for the layout step)
+data/*/pages_orig
+data/download_queue.status.json

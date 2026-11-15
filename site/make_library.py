@@ -1,12 +1,16 @@
-"""Build site/library.js (the shelf of books) and each book site's book.js from site/library.json.
+"""Build site/library.js (the list of books in every book's menu) and each book site's book.js from site/library.json.
 
 Usage: python3 site/make_library.py
 For every book in library.json: if its site folder exists and has data.js, the book is "open"
 (entries and translated-language counts are read from its spreads); otherwise it is listed as
 "scanned" (downloaded, not read yet) when its data folder has scans, else "known". Each open
-book's folder gets book.js (window.BOOK), which app.js reads for the parish, years and archive id.
+book's folder gets book.js (window.BOOK), which app.js reads for the parish, years and archive id,
+and for the book's usual page proportion (ratio: the median height/width of its pages), by which a
+loose sheet photographed in the book is told from a page. Every book has the same cover cloth and
+ribbon, so the cloth and ribbon fields of library.json are not passed on.
 """
 import json
+import statistics
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
@@ -15,17 +19,24 @@ ROOT = SITE.parent
 
 def main():
     lib = json.loads((SITE / 'library.json').read_text())
-    out = {'span': lib['span'], 'cloths': lib.get('cloths', {}), 'parishes': []}
+    out = {'parishes': []}
     for p in lib['parishes']:
         books = []
         for b in p['books']:
             d = SITE / b['dir']
-            rec = {'dir': b['dir'], 'years': b['years'], 'archive': b['archive'], 'cloth': b.get('cloth', 'plunge')}
+            rec = {'dir': b['dir'], 'years': b['years'], 'archive': b['archive']}
+            if b.get('kind'):           # 'marriages', 'deaths'; a book without one is a book of baptisms
+                rec['kind'] = b['kind']
+            if b.get('start'):          # the site may open on this book (root index.html): its page images are published
+                rec['start'] = True
             if (d / 'data.js').exists():
                 n = langs = 0
                 counts = {}
+                ratios = []
                 for f in (d / 'spreads').glob('*.json'):
-                    for e in json.loads(f.read_text())['entries']:
+                    spread = json.loads(f.read_text())
+                    ratios += [pg['h'] / pg['w'] for pg in spread['pages'].values()]
+                    for e in spread['entries']:
                         n += 1
                         for l in e['html']:
                             counts[l] = counts.get(l, 0) + 1
@@ -33,7 +44,7 @@ def main():
                 (d / 'book.js').write_text('window.BOOK=' + json.dumps(
                     {'parish': p['id'], 'dir': b['dir'], 'years': b['years'], 'archive': b['archive'],
                      'scan': b.get('scan', 1), 'row': b.get('row', ''),
-                     'cloth': b.get('cloth', 'plunge'), 'ribbon': b.get('ribbon', 'mazeikiai')}, ensure_ascii=False) + ';\n')
+                     'ratio': round(statistics.median(ratios), 3) if ratios else 1.62}, ensure_ascii=False) + ';\n')
             else:
                 pages = ROOT / b['data'] / 'pages'
                 rec['state'] = 'scanned' if pages.exists() and any(pages.iterdir()) else 'known'
