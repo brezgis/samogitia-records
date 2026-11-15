@@ -335,3 +335,11 @@ translation, model training ... as you can"). Entries are appended as work compl
   line-initial letters ("оспріемниками"), line-end marks look like dots/colons (no convention
   yet), struck-through words are not covered by the guide. Outputs in
   data/salantai-1517-1-1/training/labels/round_2026-11-15/; not merged into annotations.json.
+- **Shipped** (Anna: "ship what we have"; pushed to GitHub, three commits). Page images are no longer
+  in the repository: all six books' pages (2,736 WebP files, 778 MB; `site/make_pages_webp.py`,
+  quality 35, about 46% of the JPEGs) are in the Hugging Face dataset **brezgis/samogita-records**
+  (Anna's repo and spelling) under pages/<parish>-<fond>-<inv>-<file>/, with a card; the published
+  site loads them from there (`?pages=hf` / `?pages=local` override; other hosts use local files).
+  Recognizer **crnn-ru-v3** uploaded to brezgis/samogitia-plunge-htr with an updated card. Default
+  search scope is the open book's parish. Standing rule: dataset updates and significant model
+  updates are pushed to Hugging Face.
