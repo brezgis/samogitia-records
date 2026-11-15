@@ -57,3 +57,8 @@ data/*/rows
 # scans as downloaded, when pages/ holds an enlarged copy (Salantai: 3200 px scans scaled x1.5 for the layout step)
 data/*/pages_orig
 data/download_queue.status.json
+# the one cloth the site uses and the two museum photographs shown in its credits (CC BY 4.0)
+!site/textiles/cloth-plunge.jpg
+!site/textiles/src/
+!site/textiles/src/1056757085.jpg
+!site/textiles/src/914006288.jpg
