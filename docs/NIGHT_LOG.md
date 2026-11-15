@@ -197,3 +197,141 @@ translation, model training ... as you can"). Entries are appended as work compl
   Rietavas margin columns, line splitting, redraft, translation; Polish for the other books and
   the undecided Polish name rules; glossary open questions for native readers; scans of four
   Plungė books are not on GitHub Pages (size), so the public site shows them without page images.
+
+## Local models tried in place of agents, 2026-11-12 (Anna: "the readings with Sonnets are very expensive")
+- Scripts in `pipeline/local_models/` (build_reading_set, run_reading, score_reading, run_side,
+  build_translation_set, run_translation, score_translation); models, sets and outputs in
+  /mnt/ssd240gb/anna/samogitia-htr/llm/ (served by ~/tools/llama.cpp's llama-server).
+- **Line reading**, 485 held-out checked lines (test split of seven books); recognizer v8 on them:
+  CER 7.5%. On every fourth line (122; v8 6.8%): Qwen3-VL 8B (Q4) blind 86%, with four worked
+  examples of the same book 40%, correcting the v8 draft against the image 21.7% (made 62 lines
+  worse, 20 better). CHURRO 3B (historical-document model) produced invented text (CER > 100%).
+- **Side columns**, 33 entries of 1890, Qwen3-VL 8B against the Sonnet reading: entry number same in
+  16, birth day 19, baptism day 20 (a trailing full stop counted as a difference, so a little
+  low); margin surname identical in 1 of 30, about half the letters different.
+- **Translation**, 40 entries (8 per book), Gemma 4 12B (QAT Q4) with the full glossary in the prompt,
+  3–5 s per entry: the Lithuanian baptism sentence is close to the agents' (10 of 40 identical), but
+  the date differs in 6 of 40 baptism and 6 of 40 parents sentences; parents sentences misplace the
+  family surname, leave case endings wrong, ignore the margin surname, and do not recover garbled
+  words (Дварянъ taken as a man's name). Usable as a rough draft only.
+- **2026-11-13, continued.** A current llama.cpp was built at /mnt/ssd240gb/anna/samogitia-htr/llm/llama.cpp-new
+  (the May build cannot load Gemma 4's image projector); the small models were deleted.
+- **Open Russian recognizer** achimrabus/crnn-ctc-russian (CRNN+CTC, 43 MB, Apache-2.0, trained on 202,603
+  lines incl. 19th-c. parish registers, pre-reform spelling): untouched it reads the 485 held-out lines at
+  CER 18.1%. Fine-tuned 40 epochs (~5 min) on the 2,462 checked train lines of all books
+  (`pipeline/local_models/finetune_rabus.py`; weights in llm/rabus-ru-ft/): validation 3.4%, **held-out
+  test 4.0% against 7.5% for Kraken v8** (exact lines 61% vs 39%; better on every book: 1849–54 5.3 vs
+  10.3, 1854–57 2.7 vs 3.7, 1867–74 6.0 vs 10.3, 1886–90 3.1 vs 6.1, 1896–1902 3.8 vs 7.6, 1902–07 3.2 vs
+  6.0, Rietavas 8.3 vs 16.2). The two recognizers give the identical line for 181 of 485; 157 of those
+  equal the label (most of the rest differ only in spacing around a hyphen). Not yet used for drafting.
+- **Vision chat models on line reading** (122 lines; v8 6.8%): Gemma 4 12B blind 76%, with examples 57%,
+  correcting v8 19.3%; Qwen3.6 27B (Q3_K_M) blind 33%, with examples 30%, correcting v8 10.4% (37 lines
+  better, 38 worse). Side columns (33 entries): neither matched more than 1 of 30 margin surnames;
+  numbers same as the agent in about half.
+- **Translation, Qwen3.6 27B** (Q3_K_M, ~11 s per entry and language): Lithuanian baptism sentence
+  identical to the agents' in 21 of 40 (Gemma 10) and the glossary's clergy forms and sentence order
+  are followed, but the date differs in 8 of 37 well-formed answers, and it invents content (a month
+  changed, "Ona, Gabrieliaus duktė", a township made from a given name). 3 of 40 Lithuanian and 5 of 8
+  Polish answers were cut off at the 900-token limit, so Polish is not assessed.
+
+## Cheaper pipeline trial, 2026-11-15 (Anna: redraft a book with the new recognizer; count what a template could translate)
+- `pipeline/predict_crnn.py`: batched drafting with the fine-tuned CRNN (weights
+  /mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v1/best_model.pt), same output form as predict_lines.py.
+  Batched it scores 3.9% on the 485 held-out lines. A whole book (50–68k lines) takes about 4–6 minutes.
+- Books 1827/1/24 (1896–1902) and 1827/1/25 (1902–1907) drafted with both crnn-ru-v1 and Kraken v8
+  (new files year_draft_/entries_<year>_crnn-ru-v1 and _plunge-v8; existing drafts, translations,
+  surnames.json and site data untouched).
+- `assemble_drafts.py`: a line ending " -" no longer leaves a space inside the joined word.
+- `parse_entries.py` extended for the other books' wording: "закон. / зак. суп.", birth dates as
+  "16 Іюня сего 1897 года", "1899 года 25 Февраля", "Января1 дня" or in words, and "изъ" misread or
+  fused to the mother's name. Fields found, old -> new parser on the same drafts (no field fell):
+  1896–1902 birth date 449 -> 2,268 of 2,603, parents' surname 466 -> 1,906; 1902–07 birth date
+  0 -> 1,349 of 2,101, father 162 -> 944; 1886–90 father 536 -> 724 of 1,267; 1867–74 and 1849–54
+  birth date 3 -> 1,362 and 9 -> 859, but father/mother still 0 there ("урожденной", no township).
+- `pipeline/local_models/compare_drafts.py` (writes nothing). 1896–1902, Kraken v8 -> CRNN, new parser:
+  baptism day equal to the side column 1,933 -> 2,149 of 2,427; birth day 1,621 -> 1,974 of 2,484; all
+  six fields parsed 699 -> 1,148; parsed surname agreeing with the margin 32% -> 45%. (The margin
+  surname is found whole among the words of the parents column in 60% of entries with either
+  recognizer, 46% in 1902–07; that test is too coarse to show a letter-level gain.) Measured on the
+  485 held-out lines: lines with a word outside the frequent formula vocabulary (226), v8 8.3% ->
+  CRNN 5.4% CER; such words reproduced exactly 163 -> 196 of 266; formula-only lines 6.8% -> 2.5%.
+  So the CRNN is better on names as well, by a smaller margin than on the formula.
+- **Template-ready entries** (all six fields parsed and both days equal to the agent-read side column):
+  933 of 2,603 (36%) in 1896–1902, 466 of 2,117 (22%) in 1902–07. Requiring also that the parsed
+  surname agrees with the margin: 420 (16%) and 201 (9%). Against the agents' Lithuanian on those
+  entries: baptism date the same in 892 of 932 and 448 of 463; birth date the same in 95% where the
+  agent sentence has a date.
+- Caution found on the way: in July 1897 (scans 59–62) the CRNN reads "Іюля" as "Іюня" in about four
+  entries of ten; the agents' July is right (months run in order). Dates from a template need a
+  month-order check like the existing year fit.
+- Agreed lines as free training data: on train-split spreads of the two books, v8 and the CRNN give
+  the same text for 23,154 of 92,948 lines; 10,720 of those contain a word outside the frequent formula
+  vocabulary. Kept in /mnt/ssd240gb/anna/samogitia-htr/llm/eval/pseudo_train_b24_b25.json, never in
+  annotations.json.
+- **crnn-ru-v2** (checked lines x3 + the 23,154 agreed lines, 12 epochs, ~20 min; models/crnn-ru-v2):
+  validation 2.7% (v1 3.4%); held-out test 3.9% overall, the same as v1 (exact lines 64% against 61%).
+  Per-book differences are within noise (40–70 lines each). No measurable gain on the test: v1 stays
+  the working model. Combining the two recognizers line by line was not tried: Kraken alone is right
+  on only 30 of the 485 lines. Their disagreement is not a usable flag either: they differ on 304 of 485.
+- `assemble_drafts.py`: the hyphen join now needs a letter before the dash (762 of 67,984 lines in
+  1896–1902 end in punctuation and a dash and must not be glued). Tests: 19 pass.
+- Not done: no template translator written, no book's published drafts or translations replaced.
+
+## 2026-11-15, afternoon (Anna: improve the model further; 2–3 Sonnets + Opus; UI pass; download service; images on the live site)
+- **Download service**: user unit `samogitia-download.service` (enabled; `systemctl --user status|stop
+  samogitia-download`, log with `journalctl --user -u samogitia-download`). Runs
+  `pipeline/download_queue.py data/download_queue.json`: 37 birth registers of 1849–1915 found through
+  the archive search (Plungė, Salantai, Plateliai, Kantaučiai, Kuliai, Kartena, Telšiai; Alsėdžiai had
+  none in range), one request at a time with a 1 s pause, into data/<parish>-<id>/pages on the system
+  drive (92 GB free at the start); it stops by itself when less than 45 GB is free. Status in
+  data/download_queue.status.json. The four Plungė "LVIA_3005_63_*" records (1883–1912 drafts, which
+  would cover the missing 1891–95) answer 404: catalogue only, no scans on epaveldas. Salantai scans
+  are large (about 8 MB a page), so the space floor will be reached before the queue ends.
+- **UI pass** (separate agent; site/ and root index.html only, not committed): the root page opens a
+  book (random between 1886–1890 and 1896–1902, the two with published scans) instead of the shelf; an
+  opening riffle of six leaves to a random spread (~1.8 s, skippable, fade on phones / reduced motion,
+  none on deep links); an "Other books" dialog in the book; phone layout fixes. Preview on
+  http://100.107.252.39:8971/. Animation smoothness and real clicks not verified (headless only).
+- **Live site images**: the site's own page images for all six books are 1.69 GB (two books, 625 MB,
+  are published); GitHub Pages allows about 1 GB. WebP at the same size would be 54–64% of that
+  (0.9–1.1 GB): not enough room without shrinking the pages. Undecided: see the message to Anna.
+- **Model**: `pipeline/train_crnn.py` (5-fold cross-validation over spreads on the 2,936 checked
+  train+validation lines, fixed 30 epochs, images cached, stronger augmentation, 3-seed averaging,
+  learning curve). Error breakdown of crnn-ru-v1 on the test lines: 315 character errors, of which
+  about 88 are punctuation/spacing and 12 capitalisation; the rest (2.7% of characters) are letters.
+- **Reading round** (3 Sonnet readers, blind, 120 lines each): 360 parents/godparents lines of
+  1902–1907 from train-split spreads that contain a non-formula word, taken from the recognizer's
+  0.87–0.935 confidence band (the very lowest band is mostly bad crops and later margin notes).
+- **Reading round result** (3 Sonnet readers ~270k tokens, 1 Opus adjudicator ~221k): the readers marked
+  336 of 345 usable lines unsure and gave the recognizer's exact text on 11; 15 crops rejected. Opus
+  adjudicated one reader's 120 lines from the image with both readings in view: 16 image_checked,
+  98 draft, 6 rejected; nearer to the writing: reader 55, recognizer 45, both 14, neither 6. So about
+  half a million tokens bought 16 trainable lines: on middling-hard name lines of this hand neither
+  Sonnet nor Opus reads with confidence, and the round was not extended to the other 240 lines.
+  Nothing merged into annotations.json; all outputs kept in
+  data/plunge-1827-1-25/training/labels/round_2026-11-15/. Opus's notes: the reader miscounts minims
+  in names (и/н/ш/л) and over-brackets; the recognizer has good letter shapes and endings but invents
+  letters in names, drops spaces ("заксуп.") and transcribes stamps and pencil dates as text.
+- **Cross-validation of training variants** (5 folds over spreads, 2,936 checked lines, 30 epochs, no
+  epoch picking; character error all / name lines / formula lines): first recipe 3.84 / 4.84 / 3.08;
+  stronger augmentation 3.72 / 4.89 / 2.82; three seeds averaged 3.55 / 4.51 / 2.81; half the labels
+  4.79 / 5.93 / 3.91; a quarter 6.01 / 6.75 / 5.44. So each doubling of labels still takes off about
+  1.1 points; augmentation and averaging are worth 0.1–0.3. Confidence (mean probability of the
+  chosen class) orders lines by error: lowest fifth 9.0% CER, highest fifth 1.3% (fold 0).
+  **crnn-ru-v3** = stronger augmentation on all 2,936 train+validation lines: held-out test 3.9%
+  (exact 63%; v1 3.9%, 61%). v3 is the working model from here; `run_book.sh` drafts with a CRNN when
+  the model name starts with "crnn-".
+- **Salantai 1517/1/1 (1856–1862, 128 scans, two-page form)**: the scans are 3,200 px wide, and the
+  layout step's pixel thresholds found no rows; pages/ now holds copies enlarged x1.5 (originals in
+  pages_orig/, ignored by git). Then: 529 entry rows, 9,625 line crops, years 1857–1862 detected
+  (1856 not), crnn-ru-v1 draft readable. 42 of 128 spreads still have no rows (not looked into).
+- **Whole-entry reading pilot on Salantai** (4 Opus readers, blind, 3 entries each, ~394k tokens):
+  226 lines -> 66 image_checked (29%; 43 train, 11 validation, 12 test), 134 draft, 26 rejected
+  crops. About 6,000 tokens per checked line; the checked lines are mostly formula, names stay
+  drafts. On the checked lines the recognizer's draft is 5.3% off (23 of 66 identical). Retraining
+  with the 43 train lines (x5): the 23 held-out Salantai lines go from 4.9% to 3.5% CER (568
+  characters, 28 -> 20 errors: indicative only). Readers' notes: line crops on this book often
+  merge two lines or cut one (slanted baptism column on scan 15), the masking paints out real
+  line-initial letters ("оспріемниками"), line-end marks look like dots/colons (no convention
+  yet), struck-through words are not covered by the guide. Outputs in
+  data/salantai-1517-1-1/training/labels/round_2026-11-15/; not merged into annotations.json.

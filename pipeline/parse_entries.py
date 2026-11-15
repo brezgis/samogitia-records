@@ -103,12 +103,24 @@ class Text:
         return s or None
 
 
-def month_after(tx, pos):
+def letters_only(w):
+    return re.sub(r'[^А-Яа-яЁёѢѣІі]', '', w)
+
+
+def find_abbrev(tx, pattern, start=0):
+    """An abbreviation matched by regex on the original text, as flat-view (start, end), or None."""
+    m = re.compile(pattern).search(tx.orig, tx.map[start] if start < len(tx.map) else len(tx.orig))
+    if not m:
+        return None
+    return (next(i for i, k in enumerate(tx.map) if k >= m.start()), next(i for i, k in enumerate(tx.map) if k >= m.end()))
+
+
+def month_after(tx, pos, window=6):
     best = None
     for n, names in MONTHS.items():
         for name in names:
             r = tx.find(name, pos)
-            if r and r[0] - pos <= 6:
+            if r and r[0] - pos <= window:
                 d = lev(tx.flat[r[0]:r[1]], strip(name))
                 if best is None or d < best[0]:
                     best = (d, n, r)
@@ -171,8 +183,17 @@ def parse(entry):
         parts = re.split(r'\s+и\s+', names, maxsplit=1)
         out['father'] = parts[0] if len(parts) == 2 else None
         out['mother'] = parts[1] if len(parts) == 2 else None
-    zak = P.find('законныхъ', izy[1] if izy else 0)
+    zak = P.find('законныхъ', izy[1] if izy else 0) or find_abbrev(P, r'[Зз]ак(?:он)?\s*[.:]|[Зз]акон(?=\s)', izy[1] if izy else 0)
     out['maiden_and_surname'] = P.between(izy[1], zak[0]) if izy and zak else None
+    if vol and zak and not izy:
+        # "изъ" misread or fused with the mother's name ("Вероникизъ", "иъ"): father = before " и ",
+        # mother = the next word, the rest (minus a short leftover of "изъ") = maiden name and surname
+        parts = re.split(r'\s+и\s+', P.between(vol[1], zak[0]) or '', maxsplit=1)
+        if len(parts) == 2 and len(parts[1].split()) >= 3:
+            w = parts[1].split()
+            rest = w[2:] if len(letters_only(w[1])) <= 3 else w[1:]
+            out['father'], out['mother'] = parts[0], re.sub(r'[иі]?[зд]ъ?$', '', w[0]) if len(w[0]) > 6 else w[0]
+            out['maiden_and_surname'] = ' '.join(rest) or None
     syn, doch = P.find('сынъ'), P.find('дочь')
     if syn and not doch:
         out['sex'] = 'M'
@@ -189,6 +210,23 @@ def parse(entry):
             rest = P.orig[P.map[mr[1]]:]
             dm = re.match(r'\s*[=\-.,]*\s*(\d{1,2})', rest)
             out['birth_day'] = int(dm.group(1)) if dm and 1 <= int(dm.group(1)) <= 31 else None
+    if not (out.get('birth_month') and out.get('birth_day')):
+        # other orders: "родившійся 16 Іюня сего 1897 года", "1899 года 25 Февраля", "Января1 дня",
+        # day in words ("седмаго дня"). The month is looked for anywhere after "родивш".
+        rod = P.find('родивш')
+        if rod:
+            m, mr = month_after(P, rod[1], window=40)
+            if mr:
+                before = P.orig[P.map[rod[1]]:P.map[mr[0]]]
+                after = P.orig[P.map[mr[1]]:]
+                db = re.search(r'(?<!\d)(\d{1,2})\W*$', before)
+                da = re.match(r'\W*(\d{1,2})(?!\s*\d)', after)
+                d = int((db or da).group(1)) if (db or da) else None
+                if d is None:
+                    dn = P.find('дня', mr[1])
+                    d = ordinal(P.between(mr[1], dn[0])) if dn and dn[0] - mr[1] <= 24 else None
+                if d and 1 <= d <= 31:
+                    out['birth_month'], out['birth_day'] = m, d
     dv = P.find('деревн')
     if not dv:
         # later clerks abbreviate "въ деревнѣ" as "въ дер."

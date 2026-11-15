@@ -1,0 +1,1372 @@
+{
+ "model": {
+  "run_id": "crnn-ru-v1-20261115T201117Z",
+  "kind": "machine_draft_predictions",
+  "pipeline": "CRNN-CTC (pipeline/predict_crnn.py), greedy decoding",
+  "model_path": "/mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v1/best_model.pt",
+  "model_sha256": "36cf70a639e937299c60f3c6de2775a2fe7fa1dec1db6321695fbf8378de7769",
+  "input": "line_proposals_years_v2.json",
+  "lines": 9625,
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "note": "Machine predictions, not labels."
+ },
+ "note": "Outputs processed/year_draft_<model>.json and .csv. THESE ARE MACHINE DRAFTS: model\ntext is unverified (about 7% character error on held-out lines; names are worse),\nand line boundaries can merge or drop text. Do not treat them as transcriptions.",
+ "entries": [
+  {
+   "row_id": "0103_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L1.jpg",
+   "lines": 8,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 8,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     198,
+     320
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    198,
+    512
+   ],
+   "baptism": "коса. суъ со исмъ отноюо иа содою. ааа соосыми обрдамми паиоста окрешена",
+   "parents": "Какихъ родителей косда исхъ .с. въ какомъ приходъ родилса преиестивам.",
+   "godparents": "воспріемники при Со. Крещеніи и о присустводамъ.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0103_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L2.jpg",
+   "lines": 16,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 16,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    512,
+    871
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Апрѣля восемнадцатаго дня въ Салантовскомъ Приходскомъ Р. К. Костелѣ Атстнымъ Викарнымъ Ксендгомъ Петромъ Стантовъ совсѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Іосифа и Анны урожденной Жебровской Клюкштов Законныхъ Супруговъ Сынъ родившійс 1861. года Апрѣло 18 дня въ деревни Барздзяхъ самонтовскаго Прихода. -",
+   "godparents": "Воспріемниками были: Крестьятъ: Антотй Пресомъ съ Анноо Мат Восупмниками были-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0103_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L3.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     871,
+     991
+    ],
+    "parents": [
+     871,
+     977
+    ],
+    "godparents": [
+     871,
+     991
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    871,
+    1539
+   ],
+   "baptism": "Тысяча восемсотъ шетьдесятъ перваго года Апрѣля девятнадцатаго дня въ Салонтовскомъ Приходскомъ Р. К. Костелѣ Мннтнымъ Альтаристомъ Ксендзомъ Іанномъ Арваивичемъ окрещено дитя именемъ Казимиръ, Со всѣми обрядами Таинства",
+   "parents": "- Крестьянъ Іосифа и Анны урожденной Дронутисовной Мартинкусовъ Законныхъ Супруговъ сынъ родившійсь 186. года Апрѣля 12. дня въ деревни Киркшохъ Солантов скаго Прихода -",
+   "godparents": "Мѣстный Альтаристъ Ксендзъ боенъ Арвасьичъ съ Петронелею Мартин новего дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0103_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L4.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1539,
+    2105
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Апрѣля двадцать третьяго дня въ Салантовскомъ Приходскомъ Р. К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Арвасевичемъ окрещено дитя именемъ Гервій, совсѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Антона и Барбары урожденной Каубрисовной Размасовъ Законныхъ супруговъ Сынъ родившійс 1861. года Апрѣля 23 днявъ деревни Теймятъ Салантовскаго Прихода. -",
+   "godparents": "Воспріемниками были: Крестьяни: Казимиръ ауприъ съ Моникою Игнацею Разнаса Супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0103_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L5.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2105,
+    2612
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Апрѣля двадцать четвертаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Алтаристомъ Кандзомъ Іоанномъ Арвасевичемъ окрещено дитя именемъ Ант ми обрядами Таинства. Мѣсяцъ -",
+   "parents": "теятаи Анны Августовной дѣвица незаконнорожден ной дочь родившась 1861. года Апрѣля двадцать четвертаго орѣли Тузаръ Саман товскаго Прихода. Май.",
+   "godparents": "отріемниками были: Крестьянъ: Антоній Козловскій съ Моріянною Адами Рамоно Ссупругою. Тоже.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0103_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 103,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0103_L6.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2612,
+     2750
+    ],
+    "parents": [
+     2612,
+     2729
+    ],
+    "godparents": [
+     2612,
+     2786
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2612,
+    3640
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Таясемаго днявъ самантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ. Кондзомъ Воонтомъ Арвольичмъ окрещено дитя именемъ Бенедоктъ, совсѣми обрядами Таинстова.",
+   "parents": "Крестьянъ Дервной Петро сов немо урожденной Шымкусовсой Кнюкистовъ Законныхъ Супруговъ Сотородившійся 1861го замая 7й дня въ деревни Сплянахъ Салантавскаго Прихода. -",
+   "godparents": "оспріемниками дыи Крестьяти Казимиръ Конгонло съ Езефатою Іосира Жимата Супругсота.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L1.jpg",
+   "lines": 8,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 8,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     173,
+     333
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    173,
+    494
+   ],
+   "baptism": "Коса. сто о исомъ отною т иодоав с соосѣмиобрякми кииста окрещенъ",
+   "parents": "какихъ родитемсъ, когда и съ .с. въ какомъ приходъ родияса пекенак.",
+   "godparents": "воспремики при Се. Крещеніи и то присуаннаватъ.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L2.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    494,
+    1001
+   ],
+   "baptism": "Тысяча восемсото шестьдесятъ перваго года Маядесятаго дня въ Салантовскомъ Приход скомо Р.К: Костелѣ Мѣстнымъ Алвтористомъ Ксендзомъ Іоанномъ Арваиьичемъ окрещено дитя именемъ Іосидъ, Со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Антона и Анны урожденной Эиниковной Мем исовъ Законныхъ Супруговъ Сынъ родившійся 1861. года Мая Юго дня въ деревни Пальмятъ Салантовскаго Прихода. -",
+   "godparents": "Воспріемниками были: Крестьянъ дервий страншасъ съ Моникою Францишка Нумгавдеча Супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L3.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1001,
+    1596
+   ],
+   "baptism": "Тысяча восемсотъ местьдесятъ перваго года мая одинадцатаго днявъ Салантовскомъ риходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Контрымомъ окрещно дитя именемъ Анна, со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Францишка и Моники урожденной Беронтовной Гальдоковъ Законныхъ супруговъ дочь родившась 1861 года Мая 11. дня въ деревни Жали нахъ Салантовского Прикода. -",
+   "godparents": "Воспріемниками были: Крестьяни: Янъ Іонкусъ съ Моникою Строповною дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L4.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1596,
+    2207
+   ],
+   "baptism": "- Тысяча восемсотъ шесть десятъ перваго года мая тринадцатаго дня въ Саланиодскомъ Приходскомъ Р: К. Костелѣ мѣстнымъ Викарнымъ Кседзомъ Іосифомъ Замекимъ окрещено дитя именнемъ Алксандѣ, совсѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Антона и Катакины урожденной Іоцковной Анувисовъ Законныхъ Супру говъ Сынъ родившійсь 1861 года Мая 13. днявъ деревни Арлянахъ самантовскаго Прихода.",
+   "godparents": "Востріемниками были: Крестьяти: Іосифъ Берташнсъ съ двою Петра мортиткра супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L5.jpg",
+   "lines": 16,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 16,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2207,
+    2641
+   ],
+   "baptism": "- Тысяча восимкотоместьдесятъ перваго года Маятринадцатаго дня въ Салатновскомъ Приходскомъ Р.К. Костелѣмѣснтымъ Алвтристомъ Кандзомъ Іоанномъ Арвосевичемъ окрещено дитя миами Созефатъ - Константы, Со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Аосифа и Маріянны урожденной Прейдисовной Равцихъ Законныхъ супруговъ Сонъ родившійся 1861. года Мая 13. днявъ мѣстани внатиаритогово Прихода",
+   "godparents": "Воспріемниками были: Крестьянъ Казимиръ Станюсъ съ Логорою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0104_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 104,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0104_L6.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2641,
+     2746
+    ],
+    "parents": [
+     2641,
+     2715
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2641,
+    3577
+   ],
+   "baptism": "Тысяча восмсотъ шѣтьдесятъ перваго года Маяшествнадцатаго дня въ Салантовскомъ Приходскомъ Р. К. Костелѣмѣстнымъ Викарнымъ нязомъ Іосифомъ Замскимъ окрещено дитя именамы Антоній Янъ. Совсѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Францишка и Ан а пыурожденной Прейбисовной Путисовъ Законныхъ Супруговъ Сонородившійсь 18ы. годамая 16. дня въ деревни Барудрятъ Санантовскаго Прихода. - -",
+   "godparents": "оспріемниками были оетьяти Антоній Соболевскій съ Анною бустваи давикш",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L1.jpg",
+   "lines": 9,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 9,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     199,
+     325
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    199,
+    519
+   ],
+   "baptism": "кога, гдъ, кго икенъ, отоеюо да вогою, или со всѣми обряяами паиста отреиет",
+   "parents": "Какихъ родителсй, когда и сдѣ, к.с. въ какомъ приходъ родияса крещенный -",
+   "godparents": "воспріемника при Се. Крещени и то приуатвовамъ.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L2.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    519,
+    993
+   ],
+   "baptism": "Тысяча восенотъ шестьдесятъ перваго года Іюня двадиять девятаго дня въ Сананновскомъ Приходскомъ Р.:К. Костелѣ Лѣѣстным Викарнымъ Ксендзомъ Іосифомъ Замекимъ окрещено дитяименемъ Петръ со всѣми обрядами Таинстра. -",
+   "parents": "Крестьянъ Антона и Гелены урожденной Бавровнай Сендровскихъ Законнихъ Супруговъ Ситродевшійсь 18К. года Іюня 29 дня въ деревни исндр. влани оснаго Прихода. - -",
+   "godparents": "Воспріемниками были. Крестьятъ Іосифъ Сендровдскій съ двою венр Босираистаот та",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L3.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     993,
+     1152
+    ],
+    "parents": [
+     993,
+     1157
+    ],
+    "godparents": [
+     993,
+     1152
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    993,
+    1834
+   ],
+   "baptism": "Тысяча восемьсотъ шестьдесятъ перваго года Іюня двадцать девятаго дня въ самонтовскомъ Приходскомъ Р. К. Иостелѣ Мѣстнымъ Альтаристомъ Кандзомъ воастомъ Контрымомъ окрещена дитя именемъ Піотръ, Со всѣми обря ами Таинства. - Мѣсяцъ. -",
+   "parents": "Крестьянъ Мотеуша ио Мокади урожденной Петрути совной Норвиліовъ Законныхъ Супруговъ Сынъ родив шійсь 1861. года Іюно 29. дня въ деревни Шевшкоръ Санантовскаго Прихода. Доль",
+   "godparents": "ествьятъ Антоній Вичюмнъ съ Барбарою веито ваою дѣвицкею. - тоже -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L4.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1834,
+     1993
+    ],
+    "parents": [
+     1834,
+     1990
+    ],
+    "godparents": [
+     1834,
+     2008
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1834,
+    2515
+   ],
+   "baptism": "Тысяча восемсотошестьдесятъ перваго года Іюля третьяго дня въ санаог Приходскомъ Р: К: Костелѣ мтетнымъ Викарнымъ Кседзомъ Іосифомъ Замскимъ окремно дитяименстъ",
+   "parents": "Крестьянъ Антона и Барсодв Просуровденной Юцисовною размасовъ Законныхъ Супру говъ дочь родившась 1861. года ая2 днявъ деревни  Ми хода. - -",
+   "godparents": "Воспріемниками были рестьятъ Антоній Томашевскій съ Катариною Вагоносовною дѣвицею. - -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L5.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2515,
+     2652
+    ],
+    "godparents": [
+     2515,
+     2664
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2515,
+    3262
+   ],
+   "baptism": "оороара, Совсѣмми опрхда яча восемсотъ шестьдесятъ перваго года Іюлясаго дня въ Салантовскомъ иходскомъ Р. К. Костелѣ мѣстнымъ Викарнымъ Ксндомъ Іомифомъ Замскимъ окрещено дитя именемъ Магдамна со всѣѣми обрядами Таинства.",
+   "parents": "Крестьянъ Томата идмли ми урожденной Кабелино лій Яновкихъ Законныхъ Супруговъ дочьродившас 1864 года Іюля въ дня въ деревни Рентцор соконтовсаго Прихода. -",
+   "godparents": "Воспріеммнкками были остьятъ Казимиръ Сѣмашко съ Магудалесою Кабалиновноѣю дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0107_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 107,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0107_L6.jpg",
+   "lines": 16,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 16,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3262,
+    3668
+   ],
+   "baptism": "Тысяча вомесотъ шстьдесятъ перваго года Іюлядванадцатаго дня въ сонантовскомъ иходскомъ Р. К. Костелѣ мѣстнымъ Викарнымъ Кандзомъ Іосифомъ Замскимъ окрещено дитя именемъ Антоній - Янъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Антона и Людови соуровдеой Карвойшовною Герстовъ Законныхъ Супруговъ Сын родившійсв 1861 года гля 16 дня въ дервни Гекедо Аилантовскаго Прихода",
+   "godparents": "Воспріемниками были ретьяниъ Янъ Норвойш съ Котариною Іосифи Буткра Супригою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L1.jpg",
+   "lines": 11,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 11,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     198,
+     319
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    198,
+    512
+   ],
+   "baptism": "кода, -дѣ, кго икемъ, одою ии водою, или со всѣмиоорками камиста отреиею",
+   "parents": "какихъ родитемей, когда и ехъ =.с. въ какомъ приходъ родился крещенный. -",
+   "godparents": "кго были по имами и прозданію воспріемники при Со. Крещеній и кго присуствавамъ.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L2.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    512,
+    1125
+   ],
+   "baptism": "Тысячо восемьсотъ шмстьдесятъ перваго ода Іюля двона дцятаго дня въ Сананновскомъ Приходскомъ Р. Кс: Костелѣ Атетнымъ Альтаристомъ Кседзомъ Янолъ Контрыомъ окрещено дитя именемъ Борбара совсѣми обрядами Таинства",
+   "parents": "Крестьянъ Казимира и Барбарыурожденной Боровской Брьездовскихъ Законныхъ Супруговъ дочь родившас 1861 года Іюля 12. дня въ деревни Жейліяхъ сомантовского Прихода. -",
+   "godparents": "Воспріемниками были Крестьятъ Зосиодъ сымунисъ съ Барбарою Антона Розмаса Супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L3.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1125,
+    1764
+   ],
+   "baptism": "Тысяча восемсотъ шмстьдесятъ перваго года Іюля тринадцатаго дня въ Салантовскомъ Приходскомъ Р.К: Костелѣ Атстнымъ Викарнымъ Кседзомъ Іосифомъ Залескимъ окрежно днтяименемъ Казимиръ, со всѣми обрядами Таинства.",
+   "parents": "Крестьянъ Бонифація и Моники урожденной Ляксюго вной Милюсовъ Законныхъ Супруговъ сынъ родившійсь 1864 года Іюля 13. днявъ деревни Пкицятъ Стантовскаго Прихода.",
+   "godparents": "Воспріемниками были Крестьянѣ Іосифъ Грвадовскій съ Розаліею дервега Разіовскаго супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L4.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1764,
+    2394
+   ],
+   "baptism": "Тысяча восемсото мсстьдесятъ перваго года Іюля девятнадцатаго дня въ Самонтовскомъ Приходскомъ Р. К. Костелѣ Мѣстнымъ Алтаристомъ Кандомо Яномъ тсн отвасевичемъ окрещено дстяименемъ Магдамна, со всѣми обрядами Таин-",
+   "parents": "Крестьянъ Андрвся и Магда конны урожденной Аластовной Вичюлисовъ За корныхъ Супруговъ дочьрадив шас 1881 года Іюля 19. дня въ деревни Шевшкоръ Сылою товскаго Прихода.",
+   "godparents": "Воспріемниками были Крестьянъ Іосифъ Анн сысъ съ Барборою Рримовноюо дѣваицаи",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L5.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2394,
+    3073
+   ],
+   "baptism": "Тысяча восемсотъ истьдеятъ Гууа года Іюлядвадцатаго дня въ салантов скомъ Приходскомъ Р. К. Костелѣ Мѣст нымъ Викарнымъ Ксендзомъ Іосифомъ Заланимъ окрещено дитяимененъ Францининъ, со всѣми обряда ми Таинства -",
+   "parents": "Крестьянъ Антона и Мар ты уровденной Мылюав-р ной Петрутисовъ Законныхъ Супруговъ сынъ родив шійсо 1861 года Іюля 20. - днявъ деревни Оряноръ Салатновскаюо При хода. -",
+   "godparents": "отріемниками были крестьятъ Францишенъ Мылосъ съ Эриулею Антона Жутоса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0108_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 108,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0108_L6.jpg",
+   "lines": 17,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 17,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     3073,
+     3116
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    3073,
+    3639
+   ],
+   "baptism": "Тысяча восемсотъ истьдесятъ перваго года Іюло двадцать восьмаго дня въ Салентов скомъ Приходскомъ Р.К. Костелѣ Атернымъ Викарнымъ Кондцомъ Іосифомъ Залескимъ Окрещего днтяименемъ Антоми, Со всѣми обрядами Тоин",
+   "parents": "Крестьянъ Антона и Анны урождиной Матури совной Вастивсихъ Закон ныхъ Супруговъ сыно родовшійс 1861. года Іюля 28. дня въ деревни Ланваръ Салонтовскаго Прихода",
+   "godparents": "оспріемниками были: престьятъ Козловскай съ Моріянною ІосиАкшинса супругою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L1.jpg",
+   "lines": 15,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 15,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     196,
+     319
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    196,
+    499
+   ],
+   "baptism": "коса ыъ со ныъ одаого са согою. паи соосыобрями паиста окреметъМѣсяцъ. . -",
+   "parents": "Какицъ родителей, когда и схъ .с. въ какомъ приходъ родияся прещенивій. Августъ -",
+   "godparents": "ооспріемники при Со. Крещеній и кго присуствовалъ тоже.- -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L2.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     499,
+     648
+    ],
+    "parents": [
+     499,
+     667
+    ],
+    "godparents": [
+     499,
+     690
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    499,
+    1253
+   ],
+   "baptism": "Тысяча выемсотъ шестьдесятъ перваго хода Августа третьяго днявъ Санентовскомъ Приходскомъ Р. К. Костелѣ Атетнымъ Викарнымъ Кседзомъ Іосифомъ Дамскимъ окрещено дитя именемъ Ра зимиръ- Со всѣми обрядами Таинства.",
+   "parents": "Крестьянъ Іосифа и Аполо пи урожденной Вашкисовная Филивиче въ Закон ныхъ Супруговъ сыно родившійсь 1861. года Августа 3го дня въ деревни Подъ тузыи Салатновсаго Прихода. -",
+   "godparents": "Воспріемниками были Крестьянъ Кистетъ Страншасъ съ Барбарою Казимира Жабинскаго супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L3.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1253,
+    1775
+   ],
+   "baptism": "Тысяча восемьото шестьдесятъ перваго года Августа третьяго дня въ Солетновсомъ Приходскомъ Р. К. Костелѣястнымъ Викарнымъ Кседзомъ Гасеифомъ Залескимъ окрещено дитяименемъ Аннъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Іосида и Элопоро урожденной Кеговной Габоровъ Законныхъ Супруговъ дочь родившась 1861. года Августа 3. дня въ Феревни Шидороъ Самоскаго Пр",
+   "godparents": "- Воспріемниками были: Крестьяни Фрожцинин Миколовскій съ Атониною Іосифа Стткуся Супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L4.jpg",
+   "lines": 17,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 17,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1775,
+     1832
+    ],
+    "parents": [
+     1775,
+     1836
+    ],
+    "godparents": [
+     1775,
+     1850
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1775,
+    2393
+   ],
+   "baptism": "Тысяча восемсотъ шстьдесятъ перваго года Августа четвертаго дня въ Салантовскомъ рходскомъ Р. К. Костелѣ мѣетнымъ Викарнымъ Ксндзомъ Іосифомъ Залакомъ окрещено дитя именемъ Долиникъ Совсѣми орядами Таинства. -",
+   "parents": "Крестьянъ Іосифа и Барборы уровденной Гасовскутъ Тымклхсовъ Законныхъ Сетлновъ сонъ родившійсь 1861. года Августа 3. дня въ деревни Имборохъ Солантовкаго Прихода.",
+   "godparents": "Воспріемниками были Крестьянъ Якубо Роглоъ съ Анною Станислава Ромибрима супругто. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L5.jpg",
+   "lines": 14,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 14,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2393,
+    2765
+   ],
+   "baptism": "ысяча восемсотъ пястьдесятъ перо= Ю Августа четвертаго дня въ Салантовскамъ гиходскомъ Р. К. Костелѣ Мѣстнымъ Викарнымъ Кандзомъ Іосифомъ Замечимъ окрещмни бллзнецы имнами Ка",
+   "parents": "ажки Транцишка и Антонины урожденной Контры шовной Восериовъ Заноннихъ Супруговъ дочери родив шясь 186. года Августа",
+   "godparents": "Воспріемниками были рей Крестьянни осидъ Ленетонисъ съ Розаліею Фронтаики Васильмаго супру-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L6.jpg",
+   "lines": 7,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 7,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2765,
+    3028
+   ],
+   "baptism": "Барбора 2- Гинна со всѣми обрядами Таинства. -",
+   "parents": "4. днявъ деревни Анмтайнятъ Сононтов онаго Прихода.",
+   "godparents": "стокита съ Ементмау довню. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0109_L7",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 109,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0109_L7.jpg",
+   "lines": 16,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 16,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3028,
+    3477
+   ],
+   "baptism": "Тысяча восемсотъ шистьдесятъ перваго года Августа шистаго дня въ Сонтн товскомъ Приходскомъ Р. К. Костелѣ Атчет ный Викарный Канд Іосифъ Залеоним окрещено дитя именемъ Петронеля со всѣми обрядами Таинства. -",
+   "parents": "я Крестьянъ Антона а Петронеми урожден ной Вичюсовной Мышкусовъ законныхъ Супруговъ дочь родившось 1861. года Августи во дня въ онѣенмт Стемря",
+   "godparents": "Воспріемниками были орянинъ Івидъ Лиса съ Возамею Кистія нина Каритора тоорь",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L1.jpg",
+   "lines": 10,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 10,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     190,
+     314
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    190,
+    501
+   ],
+   "baptism": "когда. ъ, кго нымъ, отаг л кодою, или со всѣми орами пааиста отраеист",
+   "parents": "какихъ родителсй, когда и снъ.с., въ какомъ приходъ родился креиентива.",
+   "godparents": "ооспремики при Со. Крещеніи и по присуанавамъ.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L2.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    501,
+    990
+   ],
+   "baptism": "Тысяча восеесотъ исоть десятъ перваго года Августа восьмаго дня въ Салантовскомъ приходскомъ Р:.К. Костелѣ Атетнымъ Викарнымъ Ксендомъ Іосиофемъ Замокимъ окрено дитамменемъ Ка-",
+   "parents": "Крестьянъ Казимира и Барба ры урожденной Станіовной Кубылюсовъ Законныхъ Супруговъ Сынъ родивнімь 1861. гоза Августа 8. днявъ деревни Фриянаръ Салонтовского Прихода. -",
+   "godparents": "Воспріемниками были: Крестьятъ Антоній Вососъ съ Модамикою Кубилисовною дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L3.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     990,
+     1093
+    ],
+    "parents": [
+     990,
+     1091
+    ],
+    "godparents": [
+     990,
+     1098
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    990,
+    1702
+   ],
+   "baptism": "Тысяча восеотъ шмоть десятъ перваго года Августа двавадцатаго дня въ Солонтовкамъ Приходскомъ Р. К. Костелѣ Атстнымъ Викарнымъ Кседзомъ Іосифомъ Замескимъ окрещено дитя именемъ Антоній со всѣми обрядами Тоини ства. -",
+   "parents": "Крестьянъ Іосифо и Мада ленны урожденной Газиусов ною Корвишіовъ Законныхъ Супруговъ Сынъ родившійсь 1861. года Августа К. днявъдеревни Тугорь Салонтовскаго Прихода -",
+   "godparents": "Воспріемниками были: Крестьянъ Іосифъ Августисъ съ Петронелею Зосиода Парадути супрусою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L4.jpg",
+   "lines": 11,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 11,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1702,
+    2038
+   ],
+   "baptism": "яча восемсотъ местьдесятъ перввго года Августа тринаматаго днявъ Салантов скомъ Приходскомъ Р.К. Костелѣ Мѣет нымъ Викарнымъ Ксндцомъ Воспролъ",
+   "parents": "Крестьянъ Игацеко й Претръ неми урожденной Свогосовиви Скардовскуъ Закон ныхъ Супруговъ дочь родив-",
+   "godparents": "Восріемниками были Крестьяни Францишъ -іъ Анаси",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L5.jpg",
+   "lines": 9,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 9,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2038,
+    2313
+   ],
+   "baptism": "Замскимъ окрещено дитя именемъя Анастазія - Петронеля, Совсѣмии обря ами Таинства -",
+   "parents": "шась 1861. года Августа К. дня въ деревни Пабрянор Соконтлвскаго Прихода.",
+   "godparents": "ціею Стонковского дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L6.jpg",
+   "lines": 8,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 8,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2313,
+    2607
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Августа тринадцатаго дня въ С тив скомъ Приходскомъ Р.Н. Костелѣ Мност-",
+   "parents": "Крестьянъ Антона и Маге денной Стырыгодаой Тымклюсовъ За-",
+   "godparents": "Воспріемниками были: Крестьяни Іоинфами",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L7",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L7.jpg",
+   "lines": 9,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 9,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2607,
+    2970
+   ],
+   "baptism": "нымъ икарнымъ Псспріомъ Абы скимъ окрещно дитя именемъ Антоній, со всѣми обрядами Таинства. -",
+   "parents": "родившій  1884 года Августа 15. днявъ деревни Имдерода Салатновскаго прихода.",
+   "godparents": "ТраимитТваика брва-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0110_L8",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 110,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0110_L8.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2970,
+    3583
+   ],
+   "baptism": "восемсотъ местьдесятъ пербаго года Августашествнадцатаго дня въ солантовскомъ Приходскомъ Р. К. Косте лѣъ Мѣстнымъ Викарнымъ Ксендзомъ Іоспромъ Залескимъ окрещено дитя именемъ Антоти, Совсѣми обряда ми Таинства. -",
+   "parents": "Крестьянъ Томама и рон имит урожденной Прушинской Вайницкисовъ Законныхъ Супруговъ Сынъ родившійся 1881. года Августа К. дня въ деревни Ланбар Салантовскаго Прихода. -",
+   "godparents": "Воспріемниками были рестьятъ Моъ Борановскихъ съ Ангою Лавговато рваиюа-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L1",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L1.jpg",
+   "lines": 12,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 12,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     190,
+     313
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    190,
+    500
+   ],
+   "baptism": "коа. стъ со исмъ отною ги согою, пти соосыми -- ордами паииста отреметъ",
+   "parents": "какихъ родитеясъ когда и соъ .с. въ какомъ приходъ родился преиентвом. Тоябрь",
+   "godparents": "кго были по имами и прожанію воспріемики при Се. Крещеніи и ко присуатовамъ. тоже-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L2",
+   "register_year": 1861,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L2.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     500,
+     627
+    ],
+    "godparents": [
+     500,
+     625
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    500,
+    1079
+   ],
+   "baptism": "Тысяча восемсотъ шеоть десятъ перваго года Августа двадцатьпятаго дня во Саментовскомъ Приходскомъ Р.:К. Костелѣ Мтетнымъ Виткарнымъ Ксендзомъ Косифомъ Золескимъ окрещено дитамми немъ Іосифъ, Совстни обрядами Тоин ства. -",
+   "parents": "Бестьянъ реифа и Магдакенны урожденной Мешкисовной Бертамгосовъ Законныхъ Супруговъ Сынъ родившійся 186. года Нояоръ салантовтаго Прихода .",
+   "godparents": "Воспріемниками были: Крестьянинъ Антоній Апнувисъ съ Анною Казимира Нулпаддиса Супругою. - -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L3",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L3.jpg",
+   "lines": 17,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 17,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     1079,
+     1227
+    ],
+    "godparents": [
+     1079,
+     1226
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1079,
+    1638
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года Августа тридцатаго дня въ Салатновскомъ Приходскомъ Р.К. Костелѣ Ангетнымъ Викарнымъ Ксендомъ Іосифомъ Заликимъ окрещено дитя именами Адамъ Косифъ, совсѣми обрядами Таинства",
+   "parents": "Крестьянъ Антона и Магдамнны урожденной Бравинского Римкусовъ Законныхъ Супруговъ Сынъ родившійсь 1861 года Ноября 3го дня въ деревни Кулиодор. Сарантовсаго Прихода. -",
+   "godparents": "Воспріемниками были: Кретьянъ Антоній Аинвкій съ Бербарою супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L4",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L4.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     1638,
+     1831
+    ],
+    "godparents": [
+     1638,
+     1827
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1638,
+    2289
+   ],
+   "baptism": "Мѣсяцъ сяча восмсотъ шестьдесятъ терваго года Сентября терваго дня въ Салантовскомъ При ходскомъ Р. К. Костелѣ мѣстнымъ Аикарнымъ Ксндеомъ Іосифомъ Замескимъ окрещено дитя тменемъ Антоній совт ми обрядами Таинства. -",
+   "parents": "Крестьянъ Іосифа и Моники урожденной Висконтовной Бальтрымовъ Законныхъ сыно родившійй 1861. года Ноября 5 днявъ девни Тинтелятъ Галан рвснаго Прихода. -",
+   "godparents": "- Воспріемниками были: Крестьятъ Антоній Больтрымаю съ атариною Висконтовногю дѣвимю. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L5",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L5.jpg",
+   "lines": 15,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 15,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2289,
+     2453
+    ],
+    "godparents": [
+     2289,
+     2439
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2289,
+    2892
+   ],
+   "baptism": "Тысяча восемсотъ шестьдесятъ перваго года нтяября третьяго дня въ Санан.. иходскомъ Р. К. Костелѣ Ашетнымъ Альтариотомъ Ксендомъ Янолъ Арвос чемъ окрещено дитя именемъ Анто ній Со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Францишка и Францишкій урождитой Виркетисовной Панальтникисо въ Законныхъ Супруговъ дочьродившосъ",
+   "godparents": "- Воспріемниками были. Крестьятъ Іосифъ Дрогастогъ Магдами",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0112_L6",
+   "register_year": 1861,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 112,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/salantai-1517-1-1/processed/rows/0112_L6.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2892,
+    3581
+   ],
+   "baptism": "а восесотъ шестьдесятъ перваго года обря четвертаго днявъ Салон говскомъ Приходскомъ Р. К. Костелѣ Мѣстнымъ Викарнымъ Ксендзомъ Іосифомъ калскимъ Окрещено дитя именемъ сѣвий Ссовсѣми обрядами Таинтъ.",
+   "parents": "о0. года Ноября 7= дня въ деревни Нлавральотъ Саломъ тормаго Прихода. Крестьянъ Казимира и Уриули урожденной Витковной Ма луковъ Законныхъ Супруговъ дочь родившась 1861. года Ноября въ дня в деревни Баидотохъ Салантовскаго Прихода.",
+   "godparents": "руса супригог. - - Воспріемниками были. Крестьятъ Янъ сымнайныъ съ Катариною Спридайловною дѣви",
+   "boundary_warning": null
+  }
+ ]
+}

@@ -1,0 +1,4217 @@
+{
+ "model": {
+  "run_id": "crnn-ru-v1-20261115T182250Z",
+  "kind": "machine_draft_predictions",
+  "pipeline": "CRNN-CTC (pipeline/predict_crnn.py), greedy decoding",
+  "model_path": "/mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v1/best_model.pt",
+  "model_sha256": "36cf70a639e937299c60f3c6de2775a2fe7fa1dec1db6321695fbf8378de7769",
+  "input": "line_proposals_years_v2.json",
+  "lines": 49909,
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "note": "Machine predictions, not labels."
+ },
+ "note": "Outputs processed/year_draft_<model>.json and .csv. THESE ARE MACHINE DRAFTS: model\ntext is unverified (about 7% character error on held-out lines; names are worse),\nand line boundaries can merge or drop text. Do not treat them as transcriptions.",
+ "entries": [
+  {
+   "row_id": "0254_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_L1.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     664,
+     743
+    ],
+    "parents": [
+     664,
+     748
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    664,
+    1312
+   ],
+   "baptism": ".1907 годъ Тысяча девятьсотъ седьмаго года Янворя перваго дня въ Плунгянскомъ Р.К приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Константинъ со всѣми обрядами Таинства. -",
+   "parents": "мцъ Январь Крестьянъ Гинтели ской волости Іосифа Іасифова и Вероники урожденной Станонкусъ Белявскимъ зуканныхъ супруговъ сынъ родившійся 29 Декабря 1902 годо въ Мкѣ Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемникамои были Казимиръ дівивъ съ Суган ною Чесновскою дѣѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_L2.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1312,
+    1807
+   ],
+   "baptism": "Тысяча девятъсотъ седь маго года Января третяго дня въ Плунгянскомъ Р.=К. приходсками Костелѣ Кс Баландисомъ окрещенъ младенецъ имеконныхъ немъ Павлинасовсѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Козимиео Игнатяева и Вероники урожденной Станонкусъ Павловскихъ за супруговъ дочь родившаяся1 Явора 1907 года въ деревни Париш кахъ сего прихода. -",
+   "godparents": "Воспріемника ми были Іосифъ -Шавкимъ съ Анною Шавѣимъ дѣвицею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_L3.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1807,
+    2282
+   ],
+   "baptism": "Тысяча девятъсотъ седь маго года Января третя го дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Баландисомъ окрещенъ младенецъ именемъ Домицеля со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Игнатія Иванова и Людви ки урожденной Буй видъ Орловскихъ законныхъ супруговъ дочи родившаяся 1 Января 1907 года въ деревни Видейкахъ сего приходам",
+   "godparents": "Воспріомниками -были Иванъ =Орловскій съ Петронелею Бурвш дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 254,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_L4.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2282,
+    2790
+   ],
+   "baptism": "Тысяча девятьсотъ седомаго года Января четвертаго дня въ Паун гянскомъ Р.=К. приходскомъ Костелѣ Ксѣ Багоринасомъ окрещенъ мла денецъ именемъ Людвика со всѣми обря дами Таинства",
+   "parents": "Подкиримъ пешзвѣстныхъ родприхоюа. -",
+   "godparents": "-Воспріемниками были Казимиръ Тыркаилевичъ съ Теклею Рыдинъ дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_L5.jpg",
+   "lines": 27,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 27,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2790,
+    3627
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Январа шестаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Баландисомъ окрещенъ младенецъ именемъ іяна со всѣми обрѣадамти Таинства Пруаи",
+   "parents": "Кррестьянъ Плунгянской волости Игатія Леонова и Анны урожденлой Минейко вѣлявскихъ законныхъ супруговъ дочь родившаяся 4 Ярворя 1907 года въ деревн тихъ сего прихода. -",
+   "godparents": "Воспріемниками Алошлю Чуне съ Варваго Билавскою дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 254,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     672,
+     723
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    672,
+    1063
+   ],
+   "baptism": "Тысякадевятьсотъ седьмаго года Января шестаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Но. да денецъ именетмъ Таріяна со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости ведрачной До-оспріе мецелъ Петровны Ма жонехъ дѣвица дочь 1907 года въ деревни Покерахъ сего прихода -",
+   "godparents": "беятникамти -были Антони Коргевскій съ Ма ріяною Іосифа Строна супруго гою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R2.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1063,
+     1273
+    ],
+    "parents": [
+     1063,
+     1274
+    ],
+    "godparents": [
+     1063,
+     1278
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1063,
+    1920
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января седьмаго дня въ Плунгянскомъ Р.К. приходскомъ Костелѣ Кс. Паун тасомъ окрещенъ младенецъ именемъ Агатасо всѣми обрядами Таинства",
+   "parents": "Крестьянъ Бернатовскай волости Викентія Фран цева и Маріяны урождан ной Станисъ Салисовъ законныхъ супруговъ дочь родившаяся 7 Января 1907 года въ деревни Прайнакъ сего прихода. -",
+   "godparents": "Воспріемниками -были Францъ Латакасъ съ Анною Ничаюсъ дѣвицею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 254,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R3.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1920,
+    2393
+   ],
+   "baptism": "Тысяча девятьсотъ седтаго Крестья года Января седьмаго дня въ Плунгянскомъ Р.=К. приход скомъ Костелѣ Кс. Лаукига сомъ окрещенъ младенецъ одлямии Таинства. -",
+   "parents": "Плунгянской волости Франца Августв лова и Варвары урожденной Томашевской Веркисовъ законтныхъ супруговъ дочь года въ М. Плунгянахъ -",
+   "godparents": "Воспріемниками -были Іоаинъ Томашевскій съ Сусанною Томашевскою дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 254,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R4.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2393,
+     2501
+    ],
+    "parents": [
+     2393,
+     2470
+    ],
+    "godparents": [
+     2393,
+     2486
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2393,
+    2709
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 254,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R5.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2709,
+     2501
+    ],
+    "parents": [
+     2709,
+     2470
+    ],
+    "godparents": [
+     2709,
+     2486
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2709,
+    3049
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января седьмаго дня въ ходав. съ Кс: Паунинасомъ окре-ъ щенцъ младенецъ именемъ Дотленикъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернатовской волости Франца Домилинова оліяны урождесой пиростисъ Видейкисовъ законныхъ супруговъ сынъ родившійся 5 Января 1907 года въ дер Ваймайцеа прихода",
+   "godparents": "Воспріемниками были Воаднеловъ Петрейникъ съ Аиною Влупетисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0254_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 254,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0254_R6.jpg",
+   "lines": 13,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 13,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3049,
+    3377
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января восьмаго дня въ Плунгянскомъ Р.=К. приходском Іостелѣ Кс. Лруншасомъ окрещу",
+   "parents": "Крестьянъ Плунгянской волости Аннтона Антонова и Грасильды урожденной Іонъ Бурлшовъ законных",
+   "godparents": "Воспріемниками были Францъ убелисъ съ маріи ною Франца",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    665,
+    958
+   ],
+   "baptism": "Тысячо девятьсотъ седьмаго года Января девятаго дня въ Плунгянскомъ Р.=Ксприходскомъ Костелѣ Кслоунименемъ Домицелясо всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской воа лости Антона Инатвева и Маріяны урожденъ Пакольнишкисъ Маяее скихъ законныхъ супруговъ 1907 года въ деревни Видей нахъ сего прихода.",
+   "godparents": "Воспріемниками были Тадеутъ Балтунисъ съ Констанцею ишкиса супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L2.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     958,
+     1118
+    ],
+    "parents": [
+     958,
+     1119
+    ],
+    "godparents": [
+     958,
+     1116
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    958,
+    1563
+   ],
+   "baptism": "Тысяча девятъсотъ седьма го года Января десятаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лаук гасомъ окрещенъ младескихъ нецъ именемъ Юстынъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Антона Людвикова и Юліяны урожденной Шмокасъ Тышко законныхъ супруговъ сынъ родившійся 9 Января 907 года въ деревни Вишитевянахъ сего прихода",
+   "godparents": "Воспріемниками были Леонъ Минсего съ двою Викентія Шакинисо супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L3.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1563,
+    1946
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января десятаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Баландисотъ окрещенъ младенецъ именемъ Францимъ =оя ри о",
+   "parents": "Крестьянъ Тиителишской волости Франца Викентаева и Магдалены урожденной Біевской 98овичейзаконныхъ супруговъ сынъ родившійся 8янва8907 года въ деревни",
+   "godparents": "Воспріемниками были Іосифъ Клова съ Іаліяною Яиикасъ дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L4.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1946,
+     2008
+    ],
+    "godparents": [
+     1946,
+     2021
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1946,
+    2340
+   ],
+   "baptism": "Тысяча девятьсотъ седимаго года Января одинадцатаго дня въ Плунгянскомъ Р::К. приходскомъ Костелѣ Паримнасоъ окрещенъ младененъ именемъ Домицеля со всѣ",
+   "parents": "Крестьянъ Плунгянской волости Казитира Казиспуова  Иеновефа урожденной Шленетисъ Наркусовъ законнныхъ супруговъ дочь родившая Мааря 1907 года въ деревн норвайсахъ сего прихода",
+   "godparents": "Воспріемниками были Павелъ Каркусъ съ Домицеею Парейчисъ дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L5.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2340,
+     2390
+    ],
+    "godparents": [
+     2340,
+     2441
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2340,
+    2605
+   ],
+   "baptism": "ми обрядами ТаинстваКосяча девятьсотъ содъ маго года Января четырнадцатаго дня въ Плунгян стелѣ Кс. Паунекасомъ окрещенъ младенецъ име немъ Мальвина со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Жоранской волости Винентія Виментьеваг Вероники ской Казрашисовъ заканныхъ су пруговъ дочь родившая 7 Января 1907 сада въ Мкѣ- Плунгяновъ сего прихода",
+   "godparents": "Воспріемниками были Франъ ГедонноВъ ствяю славоюо Санисъ дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_L7",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_L7.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     2921,
+     2992
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2921,
+    3308
+   ],
+   "baptism": "Тысяча девятьсотъ седимаго года Января четырнадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Косталѣ Ксендзомъ Ааупа сомъ окрещенъ ммладенецъ именеммъ Фрамнииас овикни бадкаси а",
+   "parents": "Крестьянъ Бернатовской волости Андрпя Антонова и Домницели урожденной Вигогорской -Гавицкихъ законныхъ супруговъ сынъ родиввянваря 190ро да въ деревни Меркаля шотрихда. -",
+   "godparents": "Воспріемниками были Казмиръ Тачунтихъ съ Анною Гарганисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    695,
+    1207
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго Р года Января четырнадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лаунмасотъ окрещенъ младенецъ именемъ Мами обрядами Таинства. -",
+   "parents": "крестьянъ Плунгянской волости Іоанна Никодлова и Маріяны урожден ной Іановской Яновскиъ законныхъ супруговъ дочь родившаяся 11 Января 1907 года въ деревни Вигейнахъ сего прихода",
+   "godparents": "Воспріемниками были Антони Гонуиъ съ Анною Прульдевицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R2.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1207,
+    1493
+   ],
+   "baptism": "Тысяча девятьсотъ седьяга го года Января четыриод цатаго дня въ Плунгянскамо Р.=К. приходскомъ Костелѣ младененъ именемъ Геленасо всѣми обрядами Таннства. -",
+   "parents": "-Крестьянъ Плунгянской =волости Дофтника Достиликова и Анто мны урожденной Спа левичъ Шакинисовъ за конныхъ супруговъ дочь родившаяся 12 Января 1907 года въ деревни Нау содво сего прихода",
+   "godparents": "Воспріемниками были Петръ -Шакинмѣ съ Шакиниса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 255,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R3.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1493,
+     1741
+    ],
+    "parents": [
+     1493,
+     1741
+    ],
+    "godparents": [
+     1493,
+     1741
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1493,
+    1845
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R4.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1845,
+     1741
+    ],
+    "parents": [
+     1845,
+     1741
+    ],
+    "godparents": [
+     1845,
+     1741
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1845,
+    2185
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января четырнадцатаго дня въ Плунгянскомъ Р.=Кприходскомъ Костелѣ Кс. Лаунтасомъ окрещенъ младененъ именемъ Францишекъ совсѣ ми обрядами Таинства",
+   "parents": "Крестьянъ Корцянской ворова и Петронели Шлейнисъ Норвайеиевъ законныхъ супруговъ сынъ родившійся 7 Января 1907 года въ деревни Нарвайніясъ сего прихода. -",
+   "godparents": "были Іасцфъмо Валуоъ съ Варварою Нарвайтъ спь гю3358",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R5.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2185,
+    2448
+   ],
+   "baptism": "Тысячо девятьсотъ седима го года Января четырнадгесатаго дня въ Плунгянском Р.=К. приходскомъ Костелѣ младенецъ именемъ Антоиъ со всѣми обрядами Таин-ли ства. -",
+   "parents": "Крестьянъ Плунгянской волости Антона и Маріи урожденрой Струнасъ Юцесовъ законы 11Января 1907 года въ деревСтононцахъ сего прихода",
+   "godparents": "Воспріемниками были Франнъ Плиндеръ съ Татою лвсна Нарваима спруою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R6.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2448,
+     2622
+    ],
+    "parents": [
+     2448,
+     2591
+    ],
+    "godparents": [
+     2448,
+     2622
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2448,
+    2721
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R7",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R7.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2721,
+     2622
+    ],
+    "parents": [
+     2721,
+     2591
+    ],
+    "godparents": [
+     2721,
+     2622
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2721,
+    3048
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года япобря четыриадевтаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лаунтасотъ окрещенъ младенецъ именемъ Адамъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернатовской вои Варвары урожденной Норвойтъ Іоникасовъ законныхъ супруговъ сынъ родившійся 10Января 1407 года въ деревни Пелононы Олсядскаго прихода",
+   "godparents": "иками были Вицентій Іонихъ съ Анною Іосифа Чесновскаго супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0255_R8",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 255,
+   "page": "R",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0255_R8.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3048,
+    3320
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Яиваря четырнадцата го дня въ Плунгянскомъ Р... приходскомъ Костелѣ Кс. младенецъ именемъ Спаниславъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Бернатавском =волости Карсраломѣя Іосифова и Анны урожденной Павдрусъ Ангнаровъраннъ супруговъ сынъ родившійся 9 Января 199го да въ деревни Трусою сего прихода. -",
+   "godparents": "Воспріемниками были Антони ганихъ съ Мадѣвицею .",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    667,
+    937
+   ],
+   "baptism": "Тысяча девятьсотъ сефьяго го года Января четырнадца таго дня въ Плунгянскомъ приходскомъ Костелѣ Кс. младенецъ именемъ Кронислава со всѣми обрядами Таинства -",
+   "parents": "Крестьянъ Жоранской -волости ЮОліяна и Анны изъ Войцековскихъ Грасовъ законныхъ супруг говъ дочь родившаяся ЯЯнваря 1907 года въ Мнао Плунгянахъ -",
+   "godparents": "Воспріемниками были Іосифъ Яковицій съ Лунорса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 256,
+   "page": "L",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L2.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     937,
+     1138
+    ],
+    "parents": [
+     937,
+     1144
+    ],
+    "godparents": [
+     937,
+     1159
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    937,
+    1285
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L3.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1285,
+     1138
+    ],
+    "parents": [
+     1285,
+     1144
+    ],
+    "godparents": [
+     1285,
+     1159
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1285,
+    1547
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Января четырнадК. приходскомъ Костелѣ Кс. Лаунгнагомъ окрещенъ мла денецъ именемъ Пвасовсѣми обрядами Таинства",
+   "parents": "Крестьянъ Олсядсной волости Петраго Варшто Пратузасовъ, законныхъ супруговъ дось родившаяся 9Янворя 1907 года въ деревни ходянахъ сего прихода",
+   "godparents": "Воспріемниками были Мисомиъ Квеоеъ Анною Іосифа Станкусо супругоюо",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L4.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1547,
+    1856
+   ],
+   "baptism": "Тысяча девятьсотъ содвмаго года Января пятьнадцатаго дня въ Плунгян скомъ Р.:К. приходскомъ Костелѣ Кс. Лаукшасомъ окрещенъ младенецъ именемъ Анна со всѣми обрядами Таинства.",
+   "parents": "Крестьянъ Плунгянской волости Іоанно мнатаева и Анны урожден ной Янковской Стаканисовъ законныхъ яся 44 Января 1907 года въ деревни Кекентахъ сего прихода-",
+   "godparents": "Воспріемниками были Деканъ Ксендзъ Прунай гнихъ съ Ворварою супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L5.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1856,
+     2050
+    ],
+    "parents": [
+     1856,
+     2050
+    ],
+    "godparents": [
+     1856,
+     2044
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1856,
+    2310
+   ],
+   "baptism": "Тысячадевятьсотъ седьмаго года Января пятьнадцатаго дня въ Плунгянскомъ Р.К. приходскомъ Костелѣ младенецъ именемъ Ева со всѣми обрядами Таинства",
+   "parents": "Тельновскихъ мѣщонъ Іосифа Іосифоваш Анны урожденной Тарвихъ Рамановскивъ законныхъ супруговъ дочродившая сявалойра1907 года въ Мнѣ. Пунсякам сего прихода",
+   "godparents": "Воспріемниками были Цыпріяно Стонеусъ съ ввою евею Супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "L",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L6.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2310,
+     2505
+    ],
+    "parents": [
+     2310,
+     2528
+    ],
+    "godparents": [
+     2310,
+     2531
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2310,
+    2738
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L7",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L7.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2738,
+     2505
+    ],
+    "parents": [
+     2738,
+     2528
+    ],
+    "godparents": [
+     2738,
+     2531
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2738,
+    3003
+   ],
+   "baptism": "Тысяча девятьсотъ шестаг го года Января шестьной цатаго дня въ Плунгян шст Р.=К. приходскомъ Костелѣ Кс. БаландисомъВ окрещенъ ммаденецъ именемъ Францъ со всѣмис обрядами Таинства. -",
+   "parents": "Крестьянъ Гинтелицской волости Іосифа Казимирава и Анны урожденной Буткусъ ашнисовъ законныхъ супруговъ сынъ родившій ся 13 Января 1997 года въ Мкѣ. Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемниками были Іосифъ ною Рылицат ною дѣвицеюа. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_L8",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 256,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_L8.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3003,
+    3629
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Января Семьнодца снаго дня въ Плунгянскомъ Р.=Ко приходскомъ Инсталѣ Кс. Баландисомъ секрещенъ младенея именемъ Маргана со всѣми обрядами Таинства. -",
+   "parents": "-Крестьянъ Плунгян волоста Іосифа Іоаннова и Соломены урожденной Доумгои -нелисовъ дочь родившаяся Байваря 1907 года въ деревни Пунномя сего прихода.",
+   "godparents": "атиниска Воспріемниками были Іосифъ Гричойтил. съ Кинстанею Строднасъ дѣ вицеею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_R1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    691,
+    1334
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января восемьнадцата го дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лаунинасомъ окрещенъ мла делецъ именемъ Станиславосовсѣами обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской -волости Петри Домишикова и Пеодоры урожденной Петровской -Шулинскихъ законныхъ супруговъ дочь родаю. шаяся 17 Января 1907 года въ дер Труйнаяъ сего прихода",
+   "godparents": "Воспріемниками были Петръ Вайнорусъ съ Петронелею Ляцою дѣицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_R2.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1334,
+    1886
+   ],
+   "baptism": "Тысяча девотьсотъ седьмого года Январа девятьнодцатого дня въ Плунгянскомъ Р=К приходскомъ Костелѣ Кс. Лаукига сомъ окрещенъ младенемъ именемъ Антони со всѣми обрядами Таинства",
+   "parents": "Тельшевскихъ меѣщанъ Ганатся Фаликсова и урожденной Монтрымъ наркусовъ законныхъ супруговсымъ родившій ся 17 Янвдр 1907 года въ мкѣ Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемниками былии Антоми Скарисъ съ Маріяною Іосифа бебѣзы супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_monotone_page_fit",
+   "scan": 256,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_R3.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1886,
+    2387
+   ],
+   "baptism": "Тысяча девятьсотъ шеста го года Января девятьно цатаго дня въ Плунгянском Р.=К. приходскомъ Костелѣ Кс. Лаукинссомъ окрещенъ младенецъ именемъ Станиславъ со всѣмиобря дами Таинства",
+   "parents": "Крестьянни Плунгянской волости внюдра ной Анны Антонов ны Петрейкисъ дѣвицы сынъ родившійся 17 Января 1907 года въ мсѣ Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемниками были Антоми Веркисъ съ Игабелеюо Лютыка дѣвицею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 256,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_R4.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2387,
+    2757
+   ],
+   "baptism": "Тысячо девятьсотъ седь маго года Января двадца таго дня въ Пунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лаунгнасомъ окре Францишекъ со всѣми обрядами Таинства-",
+   "parents": "Крестьянъ Плунгянской восости Іосифа Восп Фронцева и Евы урождетой Якумавъ Алиласовъ законныхъ супруговъ сынъ родившій ся 18 Января 1907 года въ делевни Прусаляхъ сего при хода. -",
+   "godparents": "ріемниками были Павелъ Перкоргосъ съ Ворварою Алу-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0256_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 256,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0256_R5.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2757,
+     2983
+    ],
+    "parents": [
+     2757,
+     2979
+    ],
+    "godparents": [
+     2757,
+     2991
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2757,
+    3316
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Января двадцать перваго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Баландисомъ окремени младенецъ именемъ Адамъ со всѣми об-див рядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Іосифа Станиславова и Маріяны урожденной Витофъ Тѣс супруговъ сынъ родившійся 17 Января 1907 года въ деревни Виш тавянахъ сего прихода",
+   "godparents": "Воспріемниками были Адемъ Былявеній съ Барбарою Козмуа Мпшсковскаго супругою -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 257,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_L1.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    682,
+    1182
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Января двадцать перваго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кс. Лауниласомъ окрещенъ младенелъ именемъ Клеобфра Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Домминикаго Амелій изъ Доронгодскихъ Волончусовъ закон ныхъ супруговъ дочь -родившаяся 20янПлунгянавъ сего прихода",
+   "godparents": "Воспріемникамибыли Казимиръ Тыркшлевичъ съ Уриунею елечисъ дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 257,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_L2.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1182,
+     1249
+    ],
+    "parents": [
+     1182,
+     1270
+    ],
+    "godparents": [
+     1182,
+     1270
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1182,
+    1640
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Января двадцатъ перваго дня въ Плунгянскомъ Р.=К. при ходскомъ Костелѣ Кс. младенецъ именемъ Елена со всѣми обрядами Таинства.",
+   "parents": "Крестьянъ Плунгянской волости Викен тія Винентвеваго Пе тронели урожденной Петрутисъ Мисупруговъ дочь родившаяся 14 Января 1907 года въ мнѣ Плунгяновъ сего прихода. -",
+   "godparents": "Воспріемниками были Ксендъ Бо лесловъ Баландисъ съ Софіею целскою дѣви-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_L3.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1640,
+     1889
+    ],
+    "parents": [
+     1640,
+     1874
+    ],
+    "godparents": [
+     1640,
+     1886
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1640,
+    2430
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января дводцатъ второго дня, въ Плунгянскомъ Р.=К.при ходскомъ Костелѣ Кс. Баландисомъ окрещенъ младенецъ именемъ Кон стантинъ со всѣми обря дами Таинства. -",
+   "parents": "Крестьянъ Ретовской волости Іосифа Боне вентурова и Магдале ны урожденной Козлов ской Розронечовъ законныхъ супруговъ -сынъ родившійся 2 =Января 1907 года въ Мнш Плунгянахъ. -",
+   "godparents": "Воспріемниками -были Константинъ Петрутисъ съ Домицелею Іосифа норвилы супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_L4.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2430,
+    2966
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января двадцатъ третяго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендомъ Лауншасотъ окре щенъ младенецъ мненемъ Аина со всѣми обрядами Таинсства",
+   "parents": "Крестьянъ Плунгянского волости Іосифа и Анны урожденной Дор маркъ Бальсиковъ законныхъ супруговъ -дочь родившався 88 Января 1907 годавъ деревни Бурбойца сего прихода. -",
+   "godparents": "Воспріемникам были Антони Дамаркъ съ Анною Боанна До морко супругою .",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_L5.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     2966,
+     3007
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2966,
+    3641
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Января двода цатъ четвертаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландна сомъ окрещенъ младенецъ именемъ Елена со всѣми обрядами Таинства. -",
+   "parents": "Дворянъ Даиника Казимировича и Софи урожденной Жуковскойм ульчинскихъ законныхъ супруговъ дочь родившався 2Ялвадя 1907 года въ деревни пруЛуннянахъ сего прихода. -",
+   "godparents": "Зоспріемникам были Антонъ Юоркусъ съ Анною Франца Мацкеви осурою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 257,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    652,
+    932
+   ],
+   "baptism": "девятьсотъ седьмаго года Января двадцатъ четвертаго дня въ Плунгянскомъ Р.=К. приходском кандисотъ окрещенъ младенецъ именемъ Пепръ со всѣми обрядами Таинства -",
+   "parents": "Крестьянъ Плунгянской волости Досемнаядамовича и Людвики урож денной Гаубисъ Уріаговъ сынъ родившійся 22 Января 1907 года въ въ деревни Іоданы сего прихода. -",
+   "godparents": "Воспріемниками были Петръ Черновскійсъ ва Бупвида супряугою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 257,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R2.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     932,
+     1172
+    ],
+    "parents": [
+     932,
+     1172
+    ],
+    "godparents": [
+     932,
+     1172
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    932,
+    1278
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R3.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1278,
+     1172
+    ],
+    "parents": [
+     1278,
+     1172
+    ],
+    "godparents": [
+     1278,
+     1172
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1278,
+    1623
+   ],
+   "baptism": "Тысячо девятьсотъ седьмаго года Января аводертасоцъмаго дня въ Плунгянскомъ Ро=К. приходскомъ Костелѣ ксендзомъ Лоунгнасомъ окрещенъ младенецъ имеход немъ Филоменасовсѣ я",
+   "parents": "пельшевскихъ мѣщцонъ урожденнай Гаиггаасъ Гайбуркисовъ гоконныхъ супруговъ дочь ившаяся 27 Янва1907 года въ Мнѣ Плунгяная сего прихода",
+   "godparents": "были Викентій Казрачисъ съ Зузанною Гудвоонъ дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R4.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     1623,
+     1674
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1623,
+    2176
+   ],
+   "baptism": "Тысяча девятьсотъ седьмо го года Января двадцать седьмаго дня въ Плунгянскомъ Р..К. приходскомъ Костелѣ Ксендзомъ Лауншасомъ окрещенъ младенецъ именемъ Іоаниъ со всѣми обрядами Таинства",
+   "parents": "Крестьялъ Плунгянской волости Игнатія Іоан лова и Варвары урож денной Казрачихсъ Рыли кусовъ законныхъ супруговъ сынъ родившій ся 27 Января 1907 года въ днѣ. Плунгянахъ",
+   "godparents": "-Воспріемниками были Юліянъ =Жалимасъ съ Экатериною Людвика Казуриса супругою1322",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 257,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R5.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2176,
+    2795
+   ],
+   "baptism": "Тысяча девятъсотъ седь маго года Января двадцать восьмаго дня въ Плунгянскомъ Р.=Кприходскомъ Костелѣ Ксенозомъ Лауконасомъ они щенъ младенецъ именемъ Агата со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернатовской волости Фран-Воспріе циска и Антонины урожденной Мушко ской Латаковъ закон ныхъ супруговъ дочь родившаяся 26 Января 1907 года въ деревни Перколахъ сего прихода. -",
+   "godparents": "иниками были Латанъ -съ Анною Латакъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0257_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 257,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0257_R6.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2795,
+    3061
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Января двадцатъ восьмаго дня въ ходскомъ Костелѣ Ксендзомъ Лаунгасомъ окре щенъ младенецъ именемъ Викентій совсѣми обрядами Тани-ря ства. -",
+   "parents": "Крестьянъ Плунгянской волости Константина Винентв восакъ Дометилы урожденной Матузасъ Бурбовъ закон ныхъ супруговъ сынъ родившійся 2 4Япва ря 1907 года въ деревми Нарваймахъ сего прихода. -",
+   "godparents": "Воспріемниками были Игнати Маріяною Бурбодѣвицаю",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 258,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_L1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    629,
+    926
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января двадцатъ восьмаго дня въ Плунгянскомъ Р.=К. Ксендзомъ Лаунгнасомъ окрещенъ младенемъ именемъ Тарціянасовсѣ ми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Игнатія и Маріяны урожденнио Гліожеръ Рурилнисова дочь родившаяся 26 Января 1907 года въ деревни Лукнянахъ сего прихода",
+   "godparents": "Воспріомниками были Францимекъ Гедовдъ ковскою дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 258,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_L3.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1234,
+    1832
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января двадцатъ восьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лоур масотъ окрещенъ мадденецъ именемъ Варва расовсками обрядами Таню",
+   "parents": "Крестьянъ Благовѣщаго ской волости Игнатія иъ Домитыны урожденой Стурвисъ -Стонкусовъ законныхъ супруговъ дочь родившаяся 77 Января -1907 года въ деревни Оѣвска нахъ сего прихода .",
+   "godparents": "Воспріемниками были Фелинсъ Буткусъ съ двою Томошевскаю дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 258,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_L4.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1832,
+    2433
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Января тридцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукию сомъ окрещенъ младенецъ именемъ Игнатій со всѣми обрядами Таин ства. -",
+   "parents": "Тельшевенихъ мѣщанъ Игнатія Бонифацевича и Петронели урожденной Яна ской Наркусовъ законныхъ супруговъ сынъ родившійся 39 Янвяря 1907 года въ Мизъ Таунгянихъ сего прихо",
+   "godparents": "Воспріемниками -были Казимиръ -Янушевичъ съ Агношкою Видейкисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 258,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_L5.jpg",
+   "lines": 27,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 27,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2433,
+    2792
+   ],
+   "baptism": "Тамсача девятьсятъ седима К рапоелодаг Плунгянсками Р.=К. приходскомъ Костелѣ Ксендзомъ Ллукгнасотъ окрещенъ младенецъ именемъ Петронела со всѣми обрядами Таинства.",
+   "parents": ". рестьянъ Бериатовской волости Іосифа Восл и Агаты урожденной Ступонкусъ Станисовъ законныхъ супруговъ дочь родившаяся 2 Зянкари 1ыргодо въ дередни Шлентяхъ сего прихода -",
+   "godparents": "-. кіемниками были Іоаннъ Бѣ лявеній съ Петронелею Норвило дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_L6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 258,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_L6.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2792,
+     2899
+    ],
+    "parents": [
+     2792,
+     2906
+    ],
+    "godparents": [
+     2792,
+     2980
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2792,
+    3458
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Января тридцать перваго дня въ Перунгян конъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лауе масомъ окрещенъ младенецъ именемъ КонСтанція со всѣми обря",
+   "parents": "Крестьянъ Ольсядской волости Дамини-В ка и Маріяны урожденной Кадисъ диикисовъ законныхъ супруговъ дочь родившаяся 30 Ян-варя 1907 года въ деревни Побрутгями Кла-",
+   "godparents": "оспріемниками были Іоаинъ Ришикисъ съ Констанцею Пенуга Спаниуса супругою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 258,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_R1.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    627,
+    972
+   ],
+   "baptism": "Тысячо девятьсотъ седьма го года Января тридцатьъ перваго дня въ Плунгян=ка скомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Паун нецъ именемъ Антонъ со всѣми обрядами Таинства. -Февральмицъ",
+   "parents": "Крестьянъ Плунгянской волости Анта Іоаннова и Казими ры урожденной Гефдвойнъ Кобылосовъ сынъ родившійся 21 Января 1907 года въ мнсъ Плунгянахъ сего прихода.",
+   "godparents": "Воспріемниками -были Іосифъ Готе Іозефаго Винекоія Дар-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_R1b",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 258,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_R1.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     1286,
+     1217
+    ]
+   },
+   "split_from": "0258_R1",
+   "focal_y": [
+    1286,
+    1295
+   ],
+   "baptism": "Тысяча девятьсотъ седъ маго года Фа евраля втораго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландикомъ окрещенъ младенецъ име немъ Юстына со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянском волости ІоанноАвгустынова и Варвары урожденной Паш лювъ Ізнисовъ законныхъ супруговъ дочь родившаяся 1 Февриля 1907 года въ дер. Ленлавнохъ",
+   "godparents": "-Воспріемника ми были Петръ узнисъ съ Петвронелего Изнисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 258,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_R3.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1780,
+    2335
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля втасого дня въ Плунгянскомъ Р=К. приходскомъ Косте лѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Казимиръ совсѣми обрядами Таинства",
+   "parents": "Крестьянъ Мосядской Воспріе волости Іоанна Іоанновай Петронели урожденной Іемелисъ Шмотовъ законныхъ супруговъ сынъ родивший ся 1 Февро 1907 года въ Имѣ дльскомъ сего прихода",
+   "godparents": "ріемниками были Іосифъ Гавицкійсъ Апною Антона аукшаса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 258,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_R4.jpg",
+   "lines": 17,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 17,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2335,
+    2936
+   ],
+   "baptism": "Тысяча девятьсотъ седъ маго года Февраля третяго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Ладп шасомъ окрещенъ Мла денецъ именемъ Герора со всѣми обрядами Таинства. -",
+   "parents": "Подкидиянъ исемъ Воспріе стныхъ родителей",
+   "godparents": "ріемниками были Казимиръ Тыркилевичъсъ Теклао Рениил дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0258_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 258,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0258_R5.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2936,
+    3257
+   ],
+   "baptism": "Тысяча девятьсотъ седѣмаго года Февраля четвер тнаго дня въ Плунгянскомъ Р=: К. приходскомъ Костелѣ Мсендзомъ Паунгласотъ окрещенъ младенецъ именемъ Ко=Февр офаса со всѣми обрядами Таинства",
+   "parents": "Дворянъ Адальфа -Эдуардовичагомицели урожденной Шакисъ Богуаковъ законныхъ супруговъ дочь родившаясяя раля 1997 года въ девни Ужупяхъ сего прихода. -",
+   "godparents": "ріемниками были Матвѣй Андрѣясомъ съ Алною вамссисъ днягою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_L1.jpg",
+   "lines": 27,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 27,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    657,
+    1261
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Февраля четвертаго дня въ Плун гянскомъ Р.=К. прихода скомъ Костелѣ Ксендзомъ Ааунгасотъ окрещенъ Младенецъ именемъ Зу-Занна со всѣмми обрядами Таинства. -65. Оя",
+   "parents": "=Крестьянъ Плунгянской волости Антона и Домнталы урожденной Поцгосъ Войткусовъ законныхъ супруговъ дочь родившаяся 2 Февраля 1907 года въ Мнѣ Плу нахъ сего прихода -",
+   "godparents": "Воспріемниками были Казимиръ Наркусъ съ Зузонною Антона Петровскоосупругою.МьсКо",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_L2.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1261,
+    1717
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля четвертаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукенасомъ окрещенъ младенемъ именемъ Іоаннъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгян ской волости Папи на Іосифова и Верони ки урожденной Фребалисъ Ярисовъ законныхъ супруговъ сынъ родившійся1 Февраля 1907 года въ снолини сего прихода. -",
+   "godparents": "Воспріемниками были Францнцъ Ярисъ съ Анною Павла Наркуса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_L3.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1717,
+    2248
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля четвертао днявъ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Паунигасомъ окрещенъ младенецъ именемъ Іоаннъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Гинтелуской волости Казимида Казимировича и Анны урожденной Банисъ Газмуковъ закон ныхъ супруговъ сынъ родившійся 4 Февраля 1907 года въ деревни Тнгу блайцахъ сего прихода",
+   "godparents": "Воспріемниками были Игнатій кембро съ Варвакою Лейвисоваго ведовою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 259,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_L4.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2248,
+    2661
+   ],
+   "baptism": "Тысяча девятьсотъ седъ яаго года Феврагянестаго дня, въ Плунгянскимъ Р.=К. приходскомъ Костелѣ Ксендзомъ Балон дисотъ окрещенъ младенецъ именемъ Станиса да со всѣми обрдами Таимнта",
+   "parents": "Крестьянъ Плунгянской воллости Фуанца Ивалова г Францишки урожденною -Мачундской Войгисовъ законныхъ супруговъ дочо родившвйвя смна Блитолъ сего прихда -",
+   "godparents": "Воспріемниками были Адомъ Магуроскій съ Вероникою Мачурскоюо дѣви-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_L5.jpg",
+   "lines": 32,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 32,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2661,
+     2741
+    ],
+    "parents": [
+     2661,
+     2790
+    ],
+    "godparents": [
+     2661,
+     2794
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2661,
+    3337
+   ],
+   "baptism": "Тысячо девятьсотъ седь маго года Февраля седимаго дня въ Плунгян скомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Францишскъ совсѣ ства. я",
+   "parents": "Крестьянъ Плунгянской волости Франца Іоспероваго Таты урожденнми Маш ковской Індуловъ законныхъ супруговъ децъ родившійся 5Февраля 1907 года въ деревни Покарывицею сего прихда. -",
+   "godparents": "Воспріемника ми. были Францъ клонштлосъ Сусанною ео дѣ -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_R1.jpg",
+   "lines": 30,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 29,
+   "lines_rejected": 1,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    680,
+    1286
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля девятаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещены младенццы бли гнецъ Станиславъ и Станислава со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости впанми слава Антонова и. До мицем урожденной Цыртовтъ Пруусовъ законныхъ супруговъ дѣти родившійся 8 Февраля 1907 года въ детевни Покутовянахъ Куневскаго прихода",
+   "godparents": "Воспріемниками были: Станислава Игнатій Гуизусъ съ Емилею Казимира Шлажиса Супругою Станиславы Францъ Цвртовтъ съ Анною Казимра Цыртовта супру гою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 259,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_R2.jpg",
+   "lines": 24,
+   "lines_checked": 18,
+   "lines_independent": 13,
+   "lines_model": 6,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1286,
+    1903
+   ],
+   "baptism": "Тысяча девятьсотъ седь мого года Февраля одинадцатаго дня въ Плунсянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукичасомъ окрещенмладенецъ именемъ Агата со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Казими на Викентаева и Анны урожденной Кавецкой Кяулейкисовъ законныхъ супруговъ дочь родившаяся 5 Февраля 907 года въ деревни Лекемямахъ сего прихода",
+   "godparents": "Воспріемниками были Іосифъ Кяулейкисъ съ Пратою Кавецкою дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 259,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_R3.jpg",
+   "lines": 18,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 18,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1903,
+    2360
+   ],
+   "baptism": "Тысячо девятьсотъ седьмагогода Февраля одинадца таго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ ксендзомъ Лаунгасомъ окре щенъ младенецъ именемъ говъ Антоншнасо всѣмиобря",
+   "parents": "Крестоянъ Плунгянской волости Франца Ива лова и Анны урожденной Буйвидъ Уріона совъ законныхъ супру дочь родившаяся 2 Февраля 1907 года въ Тдона.",
+   "godparents": "Воспріемниками были Юрій Буа =контъ съ Аиною дакиимсъ дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 259,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_R4.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2360,
+    2790
+   ],
+   "baptism": "Тысяча девятьсотъ оедьята го года Февраля одиладцатаго дня въ Плунгянскомъ Р.=К. приходскомъ костелѣ Ксендзомъ Базанонсомъ окрещенъ младенецъ именемъ Петр со всѣми обрядами Таинства",
+   "parents": "ельшевскаоъ моидами Лгдвина Іосигрова и Домицели урожденной Вонеткусъ Рамоновскихъ законныхъ су Эеевраля 1907 года въ деревни Покерадъ сегоприхода",
+   "godparents": "Воспрьеямни косити были: Августынъ Занутъ съ паріен гою Іосифа гою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0259_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 259,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0259_R5.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2790,
+     2941
+    ],
+    "parents": [
+     2790,
+     2950
+    ],
+    "godparents": [
+     2790,
+     2941
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2790,
+    3273
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Февраля одинадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Кендзомъ Фр Заканднеомъ окрещенъ младенецъ именемъ Казимиръ со всѣми обрядѣами Таинства",
+   "parents": "Крестьянъ Бернатовской волости Геронима Антоноваи Домицели урожденной законныхъ супруговъ сынъ родившійся 5 Фобраля 1907 года въ деревмии Іенленняхъ сего при",
+   "godparents": "ріемниками ыли Варфамѣй Беренисъ въ Амелею при ло дѣвикею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 260,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_L1.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    683,
+    1238
+   ],
+   "baptism": "Тысяча девятьсотъ пседьяго года Февраля одинадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ уродъ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Тадецаъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Тодерна Петроваго Петронели гденной Кнейто Григолевскихъ законныхъ супруговъ сынъ родившій ся 10 Февраля 1997 года въ деревни Покутовянахъ Куневскаго прихода",
+   "godparents": "Воспріемниками были Целестимъ Стропуъ съ Маріяною Кненто брѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 260,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_L2.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1238,
+    1508
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Февраля одиладцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Балан дисотъ окрещенъ младец ммамецы именами: Бролислава съ Ева со всѣми обрядами Таинства",
+   "parents": "Дворянъ Адольфра В Францевича и Вероники урожденной шлевиисъ Виткеви очериродившійсяя Февраля 1907 года въ деревни Кленнтавъ сего прихода. -",
+   "godparents": "оспріемниками были: Брониславы Казимиръ Грицюсъ ъ Варварою Игнатія риголевскаго супругою. - Овы Петръ Размусъ съ Свою бачииуръ дѣвицею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 260,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_L4.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     1826,
+     1882
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1826,
+    2369
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля одинадцата го дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Антонъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернятовской волости Антонѣ Антоновича с Анны урождерной Куссосъ Жуковскихъ законныхъ супруговъ сынъ родившай ся 7 Февраля 1907 года въ деревни Труйкахъ сего прихода. -",
+   "godparents": "Воспріемниками были Антонъ Брелисъ съ Іоанною: Ивана Геверихо супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 260,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_L5.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2369,
+    2935
+   ],
+   "baptism": "Тысячадевятьсотъ седимаго года Февраля тринадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландиксомтъ окрещенъ младенецъ именемъ Вераника со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернатовской волости Франна и Юліяны урожден ной Павловской Бурівидовъ законныхъ супруговъ дочь родившаяся 11 Февраля 1907 годо въ миѣ- Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемниками были Антони Буткусъ съ Пе тронелею былипухо дѣвиею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_L6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 260,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_L6.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     2935,
+     3001
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2935,
+    3436
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля три надцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаунмасомъ окрещенъ младенецъ именемъ Іостына со всѣми оба",
+   "parents": "Крестьянъ Тителишъ кой волости Францичка и Магдалены урожденной Мачунъ ской Вогуцкихъза конныхъ супруговъ дочь родившаяся Февраля 1907 года въ деревни виролай -",
+   "godparents": "Воспріемника ми были Корбертъ Лукомуса Домицачею своею супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 260,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_R1.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    674,
+    1333
+   ],
+   "baptism": "Тысяча девятьсотъ сефмаго года Февдаля пять надцатаго дня въ Плун гянскомъ Р.=К прихдекан Костелѣ Ксендзомъ Лаукшасомъ окрещенъ младенецъ именемъ Антонисо всѣми обрядами Февро Таинства. -",
+   "parents": "Крестьянъ Плунгом ской волости Випентія Михаилова и Леоноры урожден ной Янутъ Кукунгскихъ законныхъ супру -говъ сынъ родившійся 14 раля 1907 года въ оеравни Норвайснавъ сего прихода",
+   "godparents": "д Воспріемниками были Антони Добылосъ съ Маріяною Бальною дѣвицоею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 260,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_R2.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1333,
+    1908
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Февраля пятъ надцатаго дня въ Плунгя скомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаук шасотъ окрещенъ младенецъ именемъ Юстина со всѣми обрядами Ташн ства. -",
+   "parents": "Крестьянъ Бернатовской волости Іосифа Воспрі и Варвары урожденной Свпрунисъ Іоникасовъ законныхъ супруговъ сочь родившаяся 13 Фе враля 1907 года въ деревни -Корваймахъ сего придода. -",
+   "godparents": "мниками были Августымъ Томошевенкійсъ съ Агнесою Казимира Чесновскаго супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 260,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_R3.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1908,
+    2271
+   ],
+   "baptism": "Тысяча девятьсотъ седимаго года Февраля восемадца таго дня въ Плунгянскомсва Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Сымеонъ со всѣмм обрядами Таинства.",
+   "parents": "Крестьянъ Лабарузеевской волости Франца Фран-В и возалій урожден ной Виткусъ Скудовъ законныхъ супруговъ сынъ 1907 года въ деревни Стол галъ сего прихода.",
+   "godparents": "оспріемниками были ЮОстынъ Сребянисъ съ Варворою Іосила осупругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0260_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 260,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0260_R4.jpg",
+   "lines": 40,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 40,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2271,
+     2473
+    ],
+    "parents": [
+     2271,
+     2491
+    ],
+    "godparents": [
+     2271,
+     2512
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2271,
+    2818
+   ],
+   "baptism": "Тысяча девятьсотъ шестаго ода Февраля восемьнадцатаго дня въ Плунгянскомъ ъК. приходскаго Костела Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Константинъ со всѣми обрядами Таинства Тысяа девятьсотъ седьмаода Февраля восемьнадцатаго дня въ Плунгянкомъ Р.-в приходскомъ остелѣ Ксендзомъ Бакндисомъ окрещенъ гладенецъ именемъ ліяна со всѣми",
+   "parents": "Крестьянки Плунгянской волости влѣбра=ной Анны Перонимов ны Рргейко дѣвинысымъ родившійся 16 Февраля г0ргодакрропремход Крестьянъ Слурнгоюн -ской волости Юалія азимирова и Маріяны урожденМлшковской Жалимасовъ законныхъ супруговъ дочь дившаяся 12 Фева",
+   "godparents": "Воспріемниками -были Антони Рупейно съ Людвикою Іоанна дабонасо супругою ыни Леонъ Жа часъ съ УрауМѣшковскю ецею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 261,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_L1.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    676,
+    968
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля восемнадцатаго дня въ Плунгянскомъ Р.=К. при ходскомъ Костелѣ Ксендзомъ Лауимасотъ окрещенъ младенецъ именемъ Алифасъ со всѣми обрядами Таин ства. -",
+   "parents": "Крестьянки Плунгян ской волости внѣбряч ной Варвары Викентоевны Шлейнисъ ся 15 Февраля 1907 года въ Мнѣ. Плунгяная сего прихода",
+   "godparents": "Воспріемникамибыли Викентій Пилинсъ съ Петро Гончевскаго супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 261,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_L3.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1287,
+    1799
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Февраля восемнадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Паун гасомъ окрещенъ младенецъ именемъ Ланъсо всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Франца Францева и Филоме ны урожожденной -Буквидъ Кведеровъ законныхъ супруговъ сынъ родившай свъ 16 Февра ля 1907 года въ деревни Зоданахъ сего прихода",
+   "godparents": "Воспріемника ми были Іосифъ -Ругмисъ съ Маріяною Буйвидъ дѣвицею 1955746",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 261,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_L4.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1799,
+    2353
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Феврала восетьнод цатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Паун масомъ окрещенъ мла денецъ именемъ Леонъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Франца Дотиникова и Анны урожденной -Вигиневской Грыце совъ законныхъ супруговъ сынъ родившійся 17 Февраля 1907 года въ Варкаляхъ сего прихода",
+   "godparents": "Воспріемникамиъ были Іоаинъ Вишневскій съ Вервараю своею супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 261,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_L5.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2353,
+    2906
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля девятьгода цатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Констан грасовсѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Іоанна Доми икова и Людвики урожденной ДомариВеркетисовъ законныхъ супруговъ дочя родившаявся 18Февра ля 1907 годаа въ деревня Гондвимъ сего прихода",
+   "godparents": "Воспріемниками были Іоанъ Домаркъ съ Маріяною Игнатія Бутнуса супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_L6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 261,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_L6.jpg",
+   "lines": 27,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 27,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     2906,
+     3002
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2906,
+    3672
+   ],
+   "baptism": "Тысячадевятьсотъ седь маго года Февраля двадъ цатаго дня въ Плунгян скомъ Р.:К. приходскомъ Костелѣ Ксендзомъ Баландикомъ окрещенъ младенецъ именемъ Іелена со всѣми обрядами Таинства. -",
+   "parents": "сКрестьянъ Плунгянска волости Антона и малики урожденной можейко Югиковъ законныхъ супруговъ дочь родившаяся 19еревраля 1907 года въ деревн ми Годанахъ сего прихода. -",
+   "godparents": "Воспріемниками были Іосифъ Стонкусъ съ Петро нелею Викентія дошна Супругоюгъ",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 261,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_R1.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    657,
+    927
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаг года Февраля двидцотъ вта рого дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ окрещенъ младененъ именемъ Зенхода со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянскаго волости АвгустинаАв. густынова и Зенанды урождеснной Паунейкихъ супруговъ дочь родившая ся 19 Февраля 1907 года въ деревни Стомѣ сего прихода. -",
+   "godparents": "Воспріемниками были Антонъ Рымиусъ съ Ка зимирою Кяулейкисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 261,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_R2.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     927,
+     1166
+    ],
+    "parents": [
+     927,
+     1174
+    ],
+    "godparents": [
+     927,
+     1102
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    927,
+    1464
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Февраля двадцотъ четвертаго дня въ Плунгянскомъ Р.=К. приход урод Балаодисомъ окрещенъ младенецъ именемъ Константинъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянскаго волости Іааса Іоси фоваи Домицели родесной Юоргмъ ныхъ супруговъ сынъ родившійся 24 Февраля 1907 года въ деревни Лекетянахъ сего прихода",
+   "godparents": "Воспріо мимдами были Станиславъ Галенетисо съ Додѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 261,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_R4.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1761,
+    2089
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Февраля двада цать пятаго дня въ Плун гянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландссотъ опремядъ младенецъ именемъ Ка Зесмиръ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Антона -Іосифова и Петронели урожденной Лютинъ Вильзанскихъ зконныхъ суи говъ сынъ родившійся 23 Феврваля 6907 года въ Млѣ. Плунгянахъ сего прихода. -",
+   "godparents": "Воспріемниками были Августынъ Венсалисъ съ Людовикою Казими супругою ндкаою -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_R4b",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 261,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_R4.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": "0261_R4",
+   "focal_y": [
+    2347,
+    2356
+   ],
+   "baptism": "Тысяча девятьсотъ седимаго года Февраля двод цатъ шестаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Казимиръ со всѣми обрядами Таинства. -",
+   "parents": "Крестоянъ Гнтелмшской волости Казимира Казимирова имагдалены Гачтусъ Островскихъ зконных супруговъ сынъ родившай ся 24 Февраля 1907 годавъ деревни Сеорблячъ сего прихода. -",
+   "godparents": "Воспріемниками были Домипир Петровскійсъ Аонешкой Петро станиса супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0261_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 261,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0261_R6.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2910,
+    3322
+   ],
+   "baptism": "Тысяча девятьсотъ седьтаго года Февраля дводсатъ седьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Боландисомъ окрещенъ ммладенемъ стелъ Игнатрив обрядами Таинства",
+   "parents": "Крестьянъ Плунгянскаго вокада Павла Іоаннова го Маріяни урожденной блафъ укшасовъ законныхъ супруговъ сынъ родившійся 26 Февраля 907 года въ деревни ъ Кулевприхода. -",
+   "godparents": "оспріемниками были Іоаннъ утесъ Варва рою Дамили ка Цытрраса",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_L1.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    634,
+    912
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Февраля двадцать восьмаго дня въ Плунгян скомъ Ро-К. приходскомъ Ко-сомъ окрещенъ младенецъ именемъ Плексавдръ совсѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Казимеуа Ка зимирова и Евы урож скмой ступамиъ Аапруговъ сынъ родившій ся 27 Февраля 1907года въ дер. Пакутовамахъ куревскаго прихода",
+   "godparents": "Воспріемниками были Адимъ Са лисъ съ Анною Доуьшаса. супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_L1b",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_L1.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": "0262_L1",
+   "focal_y": [
+    1176,
+    1185
+   ],
+   "baptism": "Тысяча девятъсотъ седьмаго года Февраля двадцатъ восьмаго дня, въ Глунгянскомъ Р.-Пприходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Юстына со всѣм ми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянского волости Антона Ан тоноваго Анны урож денна Петрунтисъ Островскихъ закон ныхъ супруговъ дочь родившаяся 27 Февраля 1907 года въ деревни Ленлавкохъ сего прихода",
+   "godparents": "Воспріемниками были: Константинъ Пональиишнисъ Петронелею Петруротисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 262,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_L3.jpg",
+   "lines": 28,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 28,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1760,
+    2358
+   ],
+   "baptism": "Тысяча девятьсотъ седв маго года Февраля двадцатъ васьмаго дня въ Плунгянскомъ Р.-К. приходскомъ Костелѣ Ксендзомъ Баландисотъ окрещенъ младенецъ именемъ Іосеинъ совсѣми об дами Таинства",
+   "parents": "Крестьянъ Плунгянскй волости Викентія Вос Петрова и Елены урожденной Фувврусъ Абрутисовъ законныхъ супруговъ сынъ родившійся 28 Февраля 1907 года въ Мнѣ. Плунгянахъ сего прихода.мцъ",
+   "godparents": "пріемниками были: Францъ Ваврусъ съ Апною Бонифація Брежинскаго супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_L4.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2358,
+     2439
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2358,
+    2821
+   ],
+   "baptism": "Тысяча девять стъ саряаъ го года Марта перваго дня Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзоми оландисонъ окрещенъ младенецъ именемъ саннъ со всѣми обряда-",
+   "parents": "Крестьянъ Плунгянской волости Францае Францева и Анныдро оденной Шлейнисъ Балисовъ законныхъ супруговъ сынъ родившійся 28 Февраля 1 907",
+   "godparents": "ріемниками были Юліянъ Былискій съ Маною еваею супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 262,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_L5.jpg",
+   "lines": 30,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 30,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2821,
+    3624
+   ],
+   "baptism": "ми Таинства.Косача девятисотъ седьгода Марта пердня въ Плунгяномъ Р.=К. приходскомъ остелѣ Ксендзомъ Банисомъ окрещенъ енецъ именемъ свріилъ со всѣми обря и Таинства -",
+   "parents": "ше сего прихода рестьанъ Плунгянской волости Іосифа Воспріе каимирова и Тадаурожденной Шлимасъ Ясаинскихъ законныхъ супруговъ сынъ родившійсявъ евраля 19097 года въ еевни Вайналида сего прихода. -",
+   "godparents": "мнинами были Францъ. Ясаинскій съ кагмирою Юргсъ дѣвивою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R1.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    663,
+    961
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Марта второго дня въ Плунгянскомъ Р.=К. приходскомъ Костели Ксендзомъ Болондисомъ окрещенъ младенецъ именемъ Петръ со всѣми обрядами Таинства.",
+   "parents": "Крестьянъ Гинтелиш ской волости Фран цаго Петронели урож денной Вишневской супруговъ сынъ родившійся 2 Тарта1907го давъ деревни Іонленнядъ сего прихода. -",
+   "godparents": "Воспріемниками были Казимиръ Можейко съ Версурпругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R2.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     961,
+     1210
+    ],
+    "parents": [
+     961,
+     1210
+    ],
+    "godparents": [
+     961,
+     1247
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    961,
+    1779
+   ],
+   "baptism": "Тысячо девятьсотъ седьмаго года Марта втарого дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Станиславъ со всѣми обрядами Таинства",
+   "parents": ".Подкидимъ несвесто ныхъ родителей -",
+   "godparents": "-Воспріемниками были: Ксендъ Баландисъ съ Брониславою Биранисъ дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R3.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1779,
+    2147
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Мартатретяго дня въ Плунгянскомъ Р.К. приходскомъ Костелѣ Ксендзомъ Іоун нецъ именемъ Францишекъ со всѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Алонзія Винентвева ио Петро нели урожденной Мыгуковской Войткусовъ законныхъ супруговъ тя 1907 года въ дер. Аидынѣсего прихода",
+   "godparents": "Воспріемниками были Казимиръ Вонткусъ съ Таріянанммш цею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_baptism_words",
+   "scan": 262,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R4.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2147,
+     2303
+    ],
+    "parents": [
+     2147,
+     2322
+    ],
+    "godparents": [
+     2147,
+     2303
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2147,
+    2529
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R5.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2529,
+     2303
+    ],
+    "parents": [
+     2529,
+     2322
+    ],
+    "godparents": [
+     2529,
+     2303
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2529,
+    2805
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Мартачетверта го дря въ Плунгянскомъ лѣ Ксендзомъ Ладимасынъ окрещенымладенцы бличецыъ Іосифъ и Течиславъ со всѣмиобря",
+   "parents": "Крестьянъ Жаринской Воспріам волости ІосифаИинатаеваи Домицели Кучискихъ зиканныхъ супруговъ дѣти родившій 27 Февроля 1907 года въмнѣ Плунгяникъ его приходаа",
+   "godparents": "были Іосифа Игна тій Шонисъ. съ супругою.Мечиства: Бронцеловъ Ноликиника сдена дѣвшею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0262_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 262,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0262_R6.jpg",
+   "lines": 28,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 28,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2805,
+     2918
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2805,
+    3104
+   ],
+   "baptism": "дами Таинства девятьсотъ седь маго года Марта четвер наго дня въ ПлунгянР.=К. приходскомъ Костелѣ Ксепромъ Лау носотъ окрещенъ мла енецъ именемъ дено со всѣми обрядаста-",
+   "parents": "Крестьянъ Плунгянской волости Игнитія Маріяны урежденной Юревичъ Поцюсовъ законныхъ супру совъ дочь родившаяся Марта 1907 года въ блгкомъ со прихода",
+   "godparents": "ріемниками ыли Іосифъ Антоновсти съ Татою Юреднвиею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_L1.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    648,
+    937
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Марта четвертаго дня въ Плунгянскомъ Р=К. приходскомъ Костоокрещенъ младенецъ Викентій со всѣмиобрядами Таинства",
+   "parents": "Крестьянъ Гантелинской волости ІосифаІосифа васо Варвары урожденной Заборисъ Наркеговъ сынъ родившійся 28 Января 1907 года въ деревни Сорблявъ сего прихода",
+   "godparents": "Воспріемниками были Антони Заборисъ с Вероцнною Казимира Зобориса супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 263,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_L2.jpg",
+   "lines": 28,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 28,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     937,
+     1142
+    ],
+    "parents": [
+     937,
+     1139
+    ],
+    "godparents": [
+     937,
+     1140
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    937,
+    1716
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Марташестаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Балондисомъ окрещенъ младенецъ именемъ Валеріаговсѣми обрядами Тамнства. -",
+   "parents": "Крестьянъ Плунгянской волости Викентія Антоноваъ Маріяныурожденной Юудулъ Кауейнисовъ законныхъ супру говъ дочь родившався -ЗМарта 1907 года носва. Плунгянахъ",
+   "godparents": "Воспріемниками были Іосифъ Турскійсъ вленою Аполинарія Юрутиса супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_L3.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "godparents": [
+     1716,
+     1771
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1716,
+    2078
+   ],
+   "baptism": "Тысяча девятьсотъ седьяго го года Тарташестаго дня въ Плунгянскомъ Р.=К. приходскомъ Косте=л лѣ Ксендзомъ Баландиименемъ Іоаннъ со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Казимира В Іоаннова и Королины урожденной Стунелисъ Лалоговогародившійся 6 Марта 1907 года въ Мнѣ. Плунгянахъ сего прихода. -",
+   "godparents": "оспріемниками были Антонъ Стефановичъ съ Людвикою дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 263,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_L4.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2078,
+     2261
+    ],
+    "parents": [
+     2078,
+     2292
+    ],
+    "godparents": [
+     2078,
+     2291
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2078,
+    2843
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Марто седьмаго днявъ Плунгянскомъ Р.К приходскомъ Костелѣ Ксн дзомъ Лауимасомъ окрещенъ младенецъ именемъ Павелъ со всѣ ход ми обрядами Таинства",
+   "parents": "-Крестьянъ Плунгянской волости Петра Викентоева и Агаты -урожденной Саударихъ Войткусовъ законныхъ супруговъ сынъ дившійся 5Марта 1907 года въ деревни Іондыми сего прихода",
+   "godparents": "Воспріемниками были Казимиръ Сымайтисъ съ Елеморою Кнгокшто дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_L5.jpg",
+   "lines": 28,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 28,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2843,
+    3664
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Марта седьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаун шасомъ окрещенъ мла денецъ именемъ Ю0стына со всѣми обрясками Тбаинства",
+   "parents": "Крестьянъ Плунгянской волости Викторинаг Домитины урожденной Гавойъ Гебѣжовъ законны супруговъ дочь родившаяся Марта 1907 года въ деревн Вайнанцяхъ сего прихода",
+   "godparents": "Воспріо-инота ми былиСтаилаговъ Каулейкисъ съ Магяною Конста тина Жалима са супру гою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_R1.jpg",
+   "lines": 17,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 17,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    659,
+    1203
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Марта восьмаго дня въ Плунгянском Р.=К. приходскомъ Косте лѣ Ксендзомъ Лаукшасомъ окрещенъ младенецъ именемъ Антонъ со всѣми обрядами Таинства",
+   "parents": "Подкидимъ месъ вость чо даинква.",
+   "godparents": "Воспріемниками были Казимиръ Пляинисъ съ Юоліялою Бѣльскогюо дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_R2.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1203,
+    1729
+   ],
+   "baptism": "Тысяча девятъсотъ седъ мого года Марта десятаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Паунгнасомъ окрещенъ младенецъ име немъ Игнатійсо всѣми обрядами Таинства а",
+   "parents": "Крестьянъ Плунгянской волости Петра Фрон цева и Анны урожденной Мачульской Впу пелисовъ законныхъ У пруговъ сынъ родившійся 10 Марта 1907 года въ Ольгокомъ сего прихода",
+   "godparents": "-Воспріемниками были Игнатій Іозсадзинскій съ Францискою Ямонтъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 263,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_R3.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1729,
+    2345
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Марта одилад цатаго дня въ Плунгянскомъ Р=К. приходскомъ Костелѣ Ксендзомъ Лоуршасотъ окрещенъ млаенецъ именемъ Авгусовсѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Іосифа Воспріе -Станиславоваго Таріяны урожденной Саукалъ Гальдыкасовъ законныхъ супруговъ сынъ родившійся 7 Марта 1907 года въ Олзгопо лѣсего прихода",
+   "godparents": "исками были Франциска Сауналъ съ Юст ною Августыла Саукало супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 263,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_R4.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2345,
+    2865
+   ],
+   "baptism": "девятьсотъ седьмаго года Марта обилад сатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лоукшчасотъ окрещенъ младенецъ имеремъ Станиславъ со всѣми од",
+   "parents": "Крестьянъ Плунгянской волости Франца -Казимирова и Анны урожденной Мацеевской Ізнисовъ законных супруговъ сынъ р одившійся 9 Марта 1907 года въ Мнѣ Плунгянахъ",
+   "godparents": "Воспріемниками ыіли Гасифъ Антоновскій съ Омилего своею супругою -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0263_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 263,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0263_R5.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2865,
+     2973
+    ],
+    "parents": [
+     2865,
+     2987
+    ],
+    "godparents": [
+     2865,
+     3054
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2865,
+    3633
+   ],
+   "baptism": "Тысяча девятьсотъ седьма года Марта двѣнадцата одня въ Плунгянскомъ сКприходскомъ Костелѣ Ксендзомъ Баландисомъ окрещенъ младенецъ именемъ Станисла ми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгян ской волости Казимира и Людовики урожденной Стонкусъ Маццевекихъ законныхъ супруговъ родившаяся Марта 1907 года деревни Видейкахъ прихода. -",
+   "godparents": "зоспріемниками дали Франнъ оплавскійсъ тою Забѣдѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 264,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L1.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    656,
+    1130
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Марта двѣнадца таго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландскомъ окрещенъ младенецъ именемъ Домицеласовъми обрядами Таинства -",
+   "parents": "Крестьянъ Плунгянской волости Франциса Францова гъ Агнешки урожден ной Старкусъ Домарковъ законныхъ супруговъ дочь родившаяся 1а Марта 1907 года. въ дер. Помри це сего прихода. -",
+   "godparents": "Воспріемниками были Игнати Вашкисъ съ сваеюо Евоюсупругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "L",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L2.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1130,
+     1248
+    ],
+    "parents": [
+     1130,
+     1240
+    ],
+    "godparents": [
+     1130,
+     1230
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1130,
+    1498
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L3.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1498,
+     1248
+    ],
+    "parents": [
+     1498,
+     1240
+    ],
+    "godparents": [
+     1498,
+     1230
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1498,
+    1817
+   ],
+   "baptism": "Тысяча девятьсотъ седъ мого года Марта пятьнадцатаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лауктасомъ окрещенъ младенецъ именемъ Домицеля со всѣми обряда ми Таинства",
+   "parents": "Крестьянъ Бернатовеной волости Ворфа ломѣя Варероломѣсваг Домицами уроЛатаковъ законныъ супруговъ дочь родивша ся 12 Марта 1907 года въ деревни Іокуняхъ сег го прихода. -",
+   "godparents": "Воспріемниками были Доминикъ Ластакъ съ Масаодтѣвицкею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L4.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1817,
+    2452
+   ],
+   "baptism": "Тысяча девятьсотъ седъ маго года Марта семь надцатаго дня въ Плун сянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Поукіасомъ окрещенъ младенецъ именемъ Фран щнекъ со всѣми обрядами нахъ Таинства",
+   "parents": "Крестьянъ Плунгянской волости Іосифа Фрин -цоваго Екатерины урожденной Веркетис Ю0ревичейзаконныхъ супруговъ сынъ родившійся 13 Марта 1907 -года въ Мнѣ Плунгясего прихода",
+   "godparents": "Воспріемника ми были Игнастій Сауналъ съ Варвараю Беледикта сымчевиогео дпругою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 264,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L5.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2452,
+    2963
+   ],
+   "baptism": "Тысяча девятьсотъ седъь маго года Марто восемь надцатаго дня въ Плунгянскомъ Р.Кприходскомъ Костелѣ Ксендзомъ Лаунма сомъ окрещенъ младенецъ семенерхо дакми Таинства",
+   "parents": "Крестьянъ Бернатовской волости Іослфа Никодсмова и Маз далены урожденной -Картоитъ Бутовичей законныхъ супруговъ сынъ родив-винею шійся 17 Мара 1997 года въ дер. Тарвойняссао прихода",
+   "godparents": "Воспріемниками были Антонъ Антоловичъ съ Станислагою Бенюшисъ дъ-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_L6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "L",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_L6.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2963,
+    3667
+   ],
+   "baptism": "Тысячо девятьсотъ седьаго года Марта девятъ надцатаго дня въ Плунгянскомъ Ро=К. приходКостелѣ Ксендзомъ Баландикомъ окрещенъ младенецр именемъ Ааспар со всѣми обря ками Таинства",
+   "parents": "Крестьянъ Гинтелимъ ской волости Іоанна Антонова с Агнеш но урожденной Анковской аляюсов законныхъ супруговъ сынъ родившійся 16 Марта 1907 года въ деревни Кекентахъ сего прихода. -",
+   "godparents": "Воспріемника ми были Іоаннъ Монейко съ Маріяною Тайягосъ дѣвицею 15Ко д4 гев",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_R1.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    687,
+    1309
+   ],
+   "baptism": "Тысяча девятьсотъ сед маго года Марта двадцатъ перваго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукшасомъ окрещенъ младенецъ именемъ Казимиръ совсѣми обрядами Таинства",
+   "parents": "Крестьянъ Плунгянской волости Анто на Антоноваго Катероссины урожден ной Норванинъ Шулинскихъ законныхъ супруговъ сынъ родившійся 20 марта 1907 года въ Мни Плунгяхъ сего прихода. -",
+   "godparents": "Воспріемниками были Казимир Микутисъ съ Маріяною Войт пуъ дѣвицею.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_R2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_R2.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1309,
+    1911
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года двадцатъ вта саго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисымъ окрещенъ младенецъ именемъ Францашекъ со всѣми обряда ми Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Іосифа Востр Іосифрова и Котар жины урожденной Сименовской Ретишсовъ законныхъ супруговъ сынъ родившійся 20 Марта 1907 года въ дер. Присамамъ сего прихода",
+   "godparents": "ріемниками были Францъ Берташгосъ съ Евою Газиусъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_R3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 264,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_R3.jpg",
+   "lines": 13,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 13,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1911,
+    2216
+   ],
+   "baptism": "Тысяча девятьсотъ седим го года Марта двадцатъ втарого дня въ Плунгяискомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Ба=",
+   "parents": "Крестьянъ Плунгянской волости Іосифа Іосифова и Катаржеины урожеденной Мачетил Веткеровъ законныхъ",
+   "godparents": "Воспріемниками были Игнатій Виткусъ съ двою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 264,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_R4.jpg",
+   "lines": 33,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 33,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2216,
+    2492
+   ],
+   "baptism": "кандисомъ окрещенъ мла денецъ именемъ Іосифъ со всѣми обрядами Таинство года въ сача освость оста вом маго года Мартодвадцать пятаго дня въ Плунгянскомъ Р.=К. приходскомъ костелѣ Ксендзомъ Лаун мачомъ окрещенъ младенецъ имедемъ Юостыла со всѣми орадами Таинства",
+   "parents": "супруговъ сынъ родившійся 21 Марта 1907 деревни Мисанахъ сего Крестьянъ Плунгяйской волости Викен-Воспріе тіяс Варвары урооденной Домариттунелисовъ закон ныхъ супруговъ сынъ родившійся 23 Марта 1907 года въ деревни Карзаннахъ сего прихода",
+   "godparents": "со супругою . В52. Р.3 633 2ониками были Владыславъ Бальсевичъ съ Анною Гардимусъ дѣѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0264_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 264,
+   "page": "R",
+   "split": "validation",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0264_R6.jpg",
+   "lines": 32,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 32,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2986,
+    3659
+   ],
+   "baptism": "Тысяча девятьсотъ седьмаго года Морта двадцатъ седьмаго дня въ Плунгянскомъ Р.=К. приходскомъ слъ Ксендзомъ Лаупнтасотъ окрещенъ мла енезъ именемъ Августынъ со всѣми обрыи Таинства вматки исте 930 п. тау:с: зак",
+   "parents": "Крестьянъ Плунгя н ской волостиАвгу Игнатіева Петронели урожденой Давяюсъ ушевскихъ законсупруговъ сыга дившійся 26 Марта 1907 года въ мкн Плунгянахъ сего при.- Паіока",
+   "godparents": "мниками сти Павелъ съ омицелею авлюсъ дѣвиПипде, ватретета изам",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0265_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 265,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0265_L1.jpg",
+   "lines": 28,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 28,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    682,
+    1322
+   ],
+   "baptism": "Тысяча девятьсотъ седъ маго года Марта дводцатъ седьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукмасомъ окрещенъ младенецъ именемъ Домитиласо всѣми обрядами Таинства.Апрѣ",
+   "parents": "Крестьянъ Берлатовской волости Павла и Анны урожденной Тильвикасъ Венцвексисъ чвлянівш супруговъ дочь родившаяся 2вМарта 1907 года въ деревни Кепурянахъ Контовскаго прихода.лв мцъ. -",
+   "godparents": "Воспріемниками были Петръ совскій съ Д тилою Га всикхо дѣвицею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0265_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 265,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0265_L2.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1322,
+     1404
+    ],
+    "parents": [
+     1322,
+     1400
+    ],
+    "godparents": [
+     1322,
+     1417
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1322,
+    1974
+   ],
+   "baptism": "Тысяча девятьсотъ сецъмаго года Апрѣля перваго дня въ Плунгянскомъ Р.=К приходскомъ Костелѣъ Ксендзомъ Спудагомъ окрещенъ младенецъ именемъ Вацлавъ совсѣ ми абрядами Таинства и",
+   "parents": "Крестьянъ Плунгянской волости Игнатія Викентьева иъ Констанцій урожденной Войтвеуръ Саудареовъ закотныхъ супруговъ сынъ родив шйся 24Марта 1907 года въ дер. Гондыті",
+   "godparents": "Воспріемниками были Фра Кургиктис съ Легнорою Франца Маш ковскаго супру гою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0265_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 265,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0265_L3.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1974,
+    2526
+   ],
+   "baptism": "Тысяча девятьсотъ седима го года Апрѣля перва го дня въ Плунгянскомъ Р..К. приходскомъ Котелѣ Ксендзомъ Спра сомъ окрещенъ младенецъ именемъ Агнешка со всѣми обрядами Танн ства. -",
+   "parents": "Крестьянъ Плунгянской волости Петра Воспріе Іосифован Анны орожденной Гуркевкой Вайнорисовъ законныхъ супруговъ доь родившаяся 29 =марта 1907 года въ деревни Троскахъ сего прихода",
+   "godparents": "мникам были Игнотих Магуйтисъ Людвикою на Брезеею го ъ",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0265_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 265,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0265_L4.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2526,
+    3020
+   ],
+   "baptism": "Тысяча девятьсотъ седьма го года Апрѣля перваго дня въ Плунгянскомъ Р.К приходскомъ Костелѣ Ксендзомъ Баляндисотъ окрещенъ младенецъ именемъ Мечиславъ со всѣми обряда ми Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Викентія Іоданнова и Францишки урожденной Абрутен Пеленбеецивъ законныхъ супруговъ сынъ родившійся 29карта 1907 года въ мнѣблунгя наяъ сего прихода. -",
+   "godparents": "Воспріемни были Францъ Ваврусъ съ егою Антона Петровскай супругою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0265_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 265,
+   "page": "L",
+   "split": "test",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0265_L5.jpg",
+   "lines": 27,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 27,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    3020,
+    3638
+   ],
+   "baptism": "Тысяча девятьсотъ седь маго года Апрѣля третяго дня въ Плунгянскомъи Р.=К. приходскомъ Костелѣ Ксендзомъ Баландисотъ окрещенъ младенацименемъ Пранславъ со всѣми обрядам ки Таинства. -",
+   "parents": "Крестьянъ Берназговской волости Антма Инатьева го Сукинны урожденнойтаворусъ Станисовъ законныхъ супруговъ сынъ родившійся Водвск Крмодая сего приходаа",
+   "godparents": ". Воспріемниками были Іосифъ Стонкусъ Аатою огосъ дѣвицею -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0266_R1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 266,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0266_R1.jpg",
+   "lines": 47,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 47,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    723,
+    1023
+   ],
+   "baptism": "3 Тысяча девятьсотъ седъ аго года Апрѣлятре тяго дня въ Плунгян =скомъ Р.=Коприходскомъ дисотъ окрещенъ младе =нецъ именемъ Виканти го всѣми обрядами Таинства д 4 5 Тысяча девятьсотъ седьда.маго года Апрѣляпя таго дня въ Плунгянрейскомъ Р.=К. приходскомъ най дисотъ окрещенъ младе каинецъ именемъ Антони со всѣми обрядами Таинстванихъ -",
+   "parents": "Крестьянъ Плунгянскаго волгости Юеріа Іора вонАнны урожденной Ивельнихъ Петроеговъ сынъ родившійся =Апрѣля 1997 года въ фовни Виденнохъ сего прихода Крестьянъ Плунгянского =волости Викентія Іасифовай Вероники урожденной Жеймисъ Минейковъ законнохъ Супруровъ сынъ ровошійся 4 Апрѣля 1907 года въ деревни Года сего прихода",
+   "godparents": "Воспріемниками были Викена тій Петровский Іосифо Кискі стоо супругою.Воспріемниками были Іоаннъ Спряукасъ съ Могдаленою ПунтаКильчев спргозупругою. N: 94732",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0266_R4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 266,
+   "page": "R",
+   "split": null,
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0266_R4.jpg",
+   "lines": 0,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 0,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1596,
+     1846
+    ],
+    "parents": [
+     1596,
+     1869
+    ],
+    "godparents": [
+     1596,
+     1846
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1596,
+    1970
+   ],
+   "baptism": "",
+   "parents": "",
+   "godparents": "",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0266_R5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 266,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0266_R5.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     1970,
+     1846
+    ],
+    "parents": [
+     1970,
+     1869
+    ],
+    "godparents": [
+     1970,
+     1846
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    1970,
+    2308
+   ],
+   "baptism": "в Тысяча девятьсотъ седьмаго года Апрѣля шестаго дня въ Плунгян скомъ Р.въ приходскомъ Костелѣ Ксендзомъ Лаук шасомъ окрещенъ младе нецъ именемъ Станила со всѣми обрядами Таинства дер",
+   "parents": "Крестьянъ ПлунгянАнтонова и Петроне ли урожденной Тулаарт кисъ Мартомусовъ законныхъ супруговъ сынъ родувшііся .Прусемяхъ сего прихода",
+   "godparents": "авспрамниками были Іоаинъ Мартмиеръ съ Домитилою Кулейкисъ дѣвицею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0266_R6",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 266,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0266_R6.jpg",
+   "lines": 24,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 24,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2308,
+     2395
+    ],
+    "parents": [
+     2308,
+     2395
+    ],
+    "godparents": [
+     2308,
+     2440
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2308,
+    2841
+   ],
+   "baptism": "в Тысяча девятьсотъ седьма го года Апрѣля шестаго дня въ Плунгянскомъ Р.=К. при ходскомъ Костелѣ Ксендзомъ Ваунгасомъ окрещенъ мла денецъ именемъ Зузанна со всѣми обрядами Таинствало -",
+   "parents": "Тельшевскихъ мѣсцомъ Францаи Домитпы -лы урожденной Дауснтисъ Сослисовъ -закотныхъ супруговъ всъ дочь родившаяся З Апри 11907 года въ дер. Мерсистъ сегтри",
+   "godparents": "Воспріемниками дыли Іоаннъ Снасъ Верониою своего супру о.С. О 138708",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0266_R7",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 266,
+   "page": "R",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0266_R7.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "baptism": [
+     2841,
+     2894
+    ],
+    "parents": [
+     2841,
+     2913
+    ],
+    "godparents": [
+     2841,
+     2921
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2841,
+    3478
+   ],
+   "baptism": "Тысяча девятьсотъ седьтаго года Апрѣлястьмаго дня въ Плунгян скомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Деканомъ Ярунайтисомъ окрещенъ младенецъ сиенемъ Маргна",
+   "parents": "Крестьянъ Плунгян о волости Іосира осифова и Зузанна урожденной Упрынятно ггнисовъ закон ныхъ супруговъ дочь родившаямъ сѣля 1907 года",
+   "godparents": "Воспріемнника ми были Викел Іондулъ съ Анною ФраЛуконра прагоюо. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0267_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 267,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0267_L1.jpg",
+   "lines": 22,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 22,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    699,
+    1206
+   ],
+   "baptism": "Тысяча девятьсотъ седьяаго года Апрѣля седьмаго дня въ Плунгянскомъ Р.=К. при ходскомъ Костелѣ Ксндзомъ Баландисомъ окрещенъ младенецъ именемъ Пе тронелія со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Францо Фран цева го Козимиры уро жденной ВеЯнисъ Ступеликовъ законных супруговъ дочь родившаяся 6 Апрѣля 1907 года въ Мко. Плангянсао",
+   "godparents": "Воспріоемниками были Францъ Бразевекій съ Маріяною воего супругою.",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0267_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 267,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0267_L2.jpg",
+   "lines": 26,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 26,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1206,
+    1807
+   ],
+   "baptism": "Тысяча девятъсотъ седьмаго года Апрѣля восьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ Ксендзомъ Лаукшасотъ окрещенъ младенецъ именемъ Прамига ры со всѣми обрядами Танн ства. -",
+   "parents": "Крестьянъ Плунгянской волости Константина Іосифова и Варвары урожденнм -Роговской Пакало микисовъ законыхъ супруговъ сынъ родившійся 5 Апрѣля 1907 года въ Іондыли сего прихода. -",
+   "godparents": "Воспріемника былео: Игнати Рачговскій съ Аюешкою Анто но Доуконасо супругою. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0267_L3",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 267,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0267_L3.jpg",
+   "lines": 23,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 23,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1807,
+    2316
+   ],
+   "baptism": "Тысяча девотъсотъ седьма го года Апрѣля восьмаго дня въ Плунгянскомъ Р:К. приходскомъ Костелѣ Ксендзомъ Паукшасомъ окрещенъ младенецъ именемъ Іосифъ со всѣми оде родами Таинства. -",
+   "parents": "Крестьянъ Бернатовской волости Антоно Викентоеваи Констан цій урожденной Фпрау ковъ Станнусовъ законныхъ супруговъ семъ родившамя 5 Апрыля 1907 года 8I3.4888 доа",
+   "godparents": "Воспраетъ ми были ина тій Сегапон кусъ съ Верефою кармонтъ дѣвоцею. -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0267_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 267,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0267_L4.jpg",
+   "lines": 21,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 21,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2316,
+    2690
+   ],
+   "baptism": "Тысяча девятьсотъ седь мого года Апрѣля восьмаго дня въ Плунгянскомъ Р.=К. приход-урож скомъ Костелѣ Ксендзомъ Лауншасотъ окрещенъ",
+   "parents": "Крестьянъ Гинтеличиской волости Воспр Казимира и РІозефы рожденной Завадъ ской Булавскихъ за конныхъ супруговъ диь родившаясяп Апрѣля 1907 года въ Плунгянахъ сего при",
+   "godparents": "отна мъ были АнтыДенгалисъ съ Анаспасею",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0267_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 267,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0267_L5.jpg",
+   "lines": 32,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 32,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2690,
+     2938
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2690,
+    3186
+   ],
+   "baptism": "младенецъ именемъ -зефасо всѣми обрядами Таинства.а девятьсотъ седимаго года Апрѣла восьмаго дня въ Плунгянскомъ Р.=К. приходскомъ Костелѣ ксендзомъ Лаунга сомъ окрещенъ младе нецъ именемъ Юліясо всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Бернатовволости ФренТодутева и Маріяны урожденнойи законныхъ супруговъ дочь родившаяся Марта 1907 года въ Мкк. Плунгянахъ сего прихда. -",
+   "godparents": "довицею. оспріааа был сновсійсъ каа арк -",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0268_L1",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 268,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0268_L1.jpg",
+   "lines": 20,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 20,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    703,
+    1131
+   ],
+   "baptism": "Тысяча девятьсотъ седьяаго года Апрѣля седьяаго дня въ Плунгянскомъ Р.К. при ходскомъ Костелѣ Кондзомъ Баландисомъ окрещенъ младенецъ именемъ Пе троненса со всѣми обрядами Таинства. -",
+   "parents": "Крестьянъ Плунгянской волости Францо Фасн цеваго Казимиры урожденной Взелимъ Ступеликовъ законни супруговъ дочь родившаяся 6 Апрѣля 1909р",
+   "godparents": "Воспремниками были Фуганцъ Брачдовскій съ Таріяною свамо супругою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0268_L2",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 268,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0268_L2.jpg",
+   "lines": 25,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 25,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1131,
+    1544
+   ],
+   "baptism": "Тысяча девятьсотъ седьсаго года Апрѣля вось маго дня въ Плунгянскомъ Р.-К. приходскомъ Костелѣ Ксендсомъ Лауре шгасотъ окрещенъ тяае нецъ именемъ Ппомига ры со всѣми обрядами Тамн ства. -",
+   "parents": "Фоевотвсяомъ Паих скойо волости Константина Іосифова гъ Варвары урожден -Гоговской Пакаль супруговъ сынъ родившійся ГАпрѣля 1107 года въ Гондыми сего прихода. -",
+   "godparents": "Вастріемъ аца дыли гамн Раловский съ Агнашкою Анто са Доуншасо прудгою",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0268_L4",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 268,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0268_L4.jpg",
+   "lines": 16,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 16,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    1810,
+    2082
+   ],
+   "baptism": "Тысяча девотъсотъ седьма го года Апрѣля восьмаго дня въ Плунгянскомъ Р.К. приходскомъ Костелѣ",
+   "parents": "Крестцомъ Бернатова ской волости Антоно Викентьеваи Констан ни урожденной С зконныхъ супруговъ смъ родившам Пууыля 1907 года 39нц зак",
+   "godparents": "В8 оепрімни и быллии Игна тій Стапол",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0268_L5",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_birth_digits_and_page",
+   "scan": 268,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0268_L5.jpg",
+   "lines": 30,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 30,
+   "lines_rejected": 0,
+   "boundary_snapped": {
+    "parents": [
+     2082,
+     2322
+    ]
+   },
+   "split_from": null,
+   "focal_y": [
+    2082,
+    2433
+   ],
+   "baptism": "окрещенъ младенецъ именемъ Іосейръ совсѣмнадрядами Таинства Тылачо деватьсотъ сед восьмаго дня въ Плунгянскомъ Р..К. прихд скомъ Костелѣ Ксендюо Паунтасомъ окрещенъ младенецъ именемъ м обрядами Таинства. -",
+   "parents": "Крестьянъ диитеКозимира и Розефи рожденной Завадъ кай Булавскихъо конныхъ супруговъ драда Апрѣля 100ргода Плунгва-",
+   "godparents": "нартонтъ дѣ вицею.а сти были Антои ВсталисПнасасею Буловскею дквинем-",
+   "boundary_warning": null
+  },
+  {
+   "row_id": "0268_L7",
+   "register_year": 1907,
+   "register_year_status": "inferred_from_page_majority",
+   "scan": 268,
+   "page": "L",
+   "split": "train",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "image": "data/plunge-1827-1-25/processed/rows/0268_L7.jpg",
+   "lines": 19,
+   "lines_checked": 0,
+   "lines_independent": 0,
+   "lines_model": 19,
+   "lines_rejected": 0,
+   "boundary_snapped": null,
+   "split_from": null,
+   "focal_y": [
+    2940,
+    3316
+   ],
+   "baptism": "а девятьсотъ седамаго года Ппряса восьмаго дня въ Плунгянскомъ Р.К приходскомъ Костелѣ ксетономъ Ланна",
+   "parents": "Бернатевваоста Таддрсва имапротденій Кобылисъ Бернгане законныхъ упру",
+   "godparents": "срт тан свташ",
+   "boundary_warning": null
+  }
+ ]
+}

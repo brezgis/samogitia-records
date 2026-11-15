@@ -26,8 +26,12 @@ nice .venv/bin/python -I pipeline/refine_lines.py --in-json training/line_propos
 rm -rf "$BOOK/training/proposals_years" "$BOOK/debug"   # first-stage crops/overlays: regenerable, large
 mkdir -p "$BOOK/training" "$BOOK/processed"
 [ -f "$BOOK/training/annotations.json" ] || echo "[]" > "$BOOK/training/annotations.json"   # a new book has no labels yet
-PRED=$(pipeline/draft_shards.sh "/mnt/ssd240gb/anna/samogitia-htr/models/$MODEL/model.safetensors" years_v2 6 | tail -1)
-rm -rf "$BOOK"/training/predictions/*shard*
+if [[ "$MODEL" == crnn-* ]]; then   # CRNN recognizer (pipeline/predict_crnn.py): one process, a few minutes per book
+  PRED=$(.venv-htr/bin/python pipeline/predict_crnn.py --model "/mnt/ssd240gb/anna/samogitia-htr/models/$MODEL/best_model.pt" --ids-from years_v2 | tail -1)
+else
+  PRED=$(pipeline/draft_shards.sh "/mnt/ssd240gb/anna/samogitia-htr/models/$MODEL/model.safetensors" years_v2 6 | tail -1)
+  rm -rf "$BOOK"/training/predictions/*shard*
+fi
 echo "drafts: $PRED"
 echo "$PRED" > "$BOOK/processed/latest_predictions.txt"
 .venv/bin/python -I pipeline/infer_years.py "$PRED" > "$BOOK/processed/years_pass1.json"

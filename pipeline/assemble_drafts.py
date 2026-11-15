@@ -31,8 +31,8 @@ def join_lines(parts):
             continue
         if not out:
             out = t
-        elif re.search(r'[-=]$', out):
-            out = re.sub(r'[-=]$', '', out) + re.sub(r'^[-=]', '', t)
+        elif re.search(r'[^\W\d_]\s*[-=]$', out):      # a letter before the dash: a divided word ("пругою. -" is not)
+            out = re.sub(r'\s*[-=]$', '', out) + re.sub(r'^[-=]\s*', '', t)   # "Воспріемни -" + "ками": no space left behind
         else:
             out = out + ' ' + t
     return out

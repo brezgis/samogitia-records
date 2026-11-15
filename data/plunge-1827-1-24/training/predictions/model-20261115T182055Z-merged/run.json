@@ -1,0 +1,21 @@
+{
+ "run_id": "model-20261115T182055Z-merged",
+ "kind": "machine_draft_predictions",
+ "pipeline": "ketos-test data module",
+ "model_path": "/mnt/ssd240gb/anna/samogitia-htr/models/plunge-v8/model.safetensors",
+ "model_sha256": "1e2d97a9b87ac52169c452b5b34730539bdadf6cd7577bafcf72b6d93f160e64",
+ "input": "line_proposals_years_v2.json",
+ "lines": 67984,
+ "kraken": "7.1.1",
+ "torch": "2.14.0+cu130",
+ "gpu": "NVIDIA GeForce RTX 5070 Ti",
+ "note": "Machine predictions, not labels.",
+ "merged_from": [
+  "model-20261115T182055Z-shard0of6",
+  "model-20261115T182056Z-shard1of6",
+  "model-20261115T182056Z-shard2of6",
+  "model-20261115T182055Z-shard3of6",
+  "model-20261115T182056Z-shard4of6",
+  "model-20261115T182056Z-shard5of6"
+ ]
+}
