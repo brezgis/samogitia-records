@@ -403,3 +403,22 @@ translation, model training ... as you can"). Entries are appended as work compl
   father 0 -> 588, baptism date 498 -> 609, priest 402 -> 635, birth date 410 -> 508. On
   1827/1/24 1898–99 the assembled text is unchanged; the text-only fold agrees with the numbered fold
   on 72 of 74 rows. Tests: 32 pass. The Plungė books' published entries files were NOT regenerated.
+- **Opus translation pilot on Salantai** (6 translators x 40 entries, EN+LT, ~1.0M tokens, about 4,100 per
+  entry against ~1,400 for Sonnet on the Plungė books): fluent, glossary followed, nothing invented;
+  outputs in data/salantai-1517-1-1/processed/translations/pilot_2026-11-15/ (not merged, not on the
+  site). Found: 239 of 240 entries have a doubtful name; the same priest is "Aleszewski [?]" in one chunk
+  and "Chmielewski [?]" in the next; scan 11 has the godparents' text in the parents column; scans 24–25
+  and 34 have entries split across page breaks and columns out of step; the first 14 entries are Nov–Dec
+  1856 but labelled 1857; May baptisms with June/July births; glossary lacks Salantai's clergy, a
+  village table, "-атъ" endings, "пополудни", "Администраторъ", a soldier on leave, several given names.
+  The other 435 entries were not translated.
+- **Neural field tagger** (agent; code and tables in pipeline/neural_parser/, RESULTS.md; models in
+  /mnt/ssd240gb/anna/samogitia-htr/neural-parser/). Silver labels for 9,905 entries from the agents'
+  names lists and the rule parser (measured 7.7% wrong on 704 labels, mostly span edges). A
+  character-level tagger, leave-one-book-out, name fields, F1 within 2 characters against the agents'
+  spans only: 85.9 / 90.8 / 93.6 / 91.5 / 88.0 on the five Plungė books against 67.0 / 76.1 / 76.7 /
+  66.4 / 67.0 for the rules; XLM-R and rubert are within 0.6 of the character model. Side-column
+  checks agree (family surname = margin: 32–60% tagger, 22–44% rules; birth day 63–74% against 54–65%).
+  On Salantai and 1827/1/20, of 50 disagreeing entries read per book: tagger right 126 and 139 fields,
+  rules right 12 and 8. No human gold; 46% of silver spans are rule-made. Parser bugs found, not
+  fixed: "Мая" matched inside "родившаяся"; "волости" matched inside surnames like "Волонтетвъ".
