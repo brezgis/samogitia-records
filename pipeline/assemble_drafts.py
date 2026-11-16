@@ -12,6 +12,16 @@ the last lines of an entry often lie below the next layout row's top. A month he
 between two entries ("Ноябрь.", "тоже.") is taken out of the text and kept on the entry it
 stands above as `heading` (with `heading_month` when the month is read).
 
+Two kinds of layout row are not entries and are left out: a row at the top of a page side that
+holds the form's printed column headings ("Когда, гдѣ, кто и кѣмъ, одною ли водою ...", "Какихъ
+родителей ...", "Кто были ... воспріемники ..."), and the lower part of an entry the layout cut
+in two, which is folded into the entry above. The second is decided from the entry numbers of
+the side column where the book has them (processed/side_columns.json), otherwise from the text
+alone: a row with no column opening of its own that is not the first of its side. A row that
+keeps its place but whose baptism column has no "Тысяча восемьсотъ" opening gets a `boundary_warning`.
+The draft file records the rows left out as `rows_dropped_as_printed_heading` and
+`rows_folded_into_previous`.
+
 Outputs processed/year_draft_<model>.json and .csv. THESE ARE MACHINE DRAFTS: model
 text is unverified (about 7% character error on held-out lines; names are worse),
 and line boundaries can merge or drop text. Do not treat them as transcriptions.
@@ -24,7 +34,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from parse_entries import lev  # noqa: E402
+from parse_entries import approx_find, lev  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / __import__('os').environ.get('SAMOGITIA_BOOK', 'data/plunge-1886-1890')
@@ -57,6 +67,13 @@ def is_entry_start(text):
         return True
     word = re.sub(r'[\W\d_]', '', text.split()[0].lower()) if text.split() else ''
     return word.startswith('т') and 5 <= len(word) <= 7 and lev(word, 'тысяча') <= 1
+
+
+def opens_with_year(text):
+    """The year formula's second word within the first letters of a baptism text: an entry whose
+    "Тысяча" was cut off by the crop or misread ("сяча восемьсотъ", "восемьсотъ девяносто") is whole."""
+    head = re.sub(r'[\W\d_]', '', (text or '').lower())[:45]
+    return bool(approx_find(head, 'восемсот', max_ratio=0.3) or approx_find(head, 'девятьсот', max_ratio=0.3))
 
 
 def is_column_start(cell, text):
@@ -99,6 +116,27 @@ def heading_month(text):
     return None
 
 
+# distinctive words of the printed column headings (the baptism heading's tail, "со всѣми обрядами
+# таинства окрещенъ", is left out: every entry has those words)
+PRINTED_HEADING = {'baptism': ['когдагдектоикемъ', 'одноюливодою', 'илисовсеми'],
+                   'parents': ['какихъродителей', 'когдаигде', 'въкакомъприходе', 'родилсякрещенный'],
+                   'godparents': ['ктобылипоимени', 'ипрозванию', 'присвкрещении', 'иктоприсутствовалъ']}
+
+
+def printed_heading_columns(texts):
+    """How many of the three column texts read as the form's printed heading: at least two of the
+    column's distinctive phrases found approximately, and no entry opening in the column."""
+    n = 0
+    for cell, phrases in PRINTED_HEADING.items():
+        t = texts.get(cell) or ''
+        flat = re.sub(r'[\W\d_]', '', t.lower()).replace('ѣ', 'е').replace('і', 'и').replace('ъ', '')
+        if len(flat) < 12 or (cell != 'godparents' and is_column_start(cell, t)):
+            continue        # (the godparents heading itself may begin "воспріемники при Св. Крещеніи")
+        hits = sum(1 for ph in phrases if approx_find(flat, ph.replace('ъ', ''), max_ratio=0.3))
+        n += hits >= 2
+    return n
+
+
 def line_y(p):
     """Height of a line's letter bodies (the `line` record of segment_lines.py when the
     proposal has one, else the middle of its box): boxes of neighbouring lines overlap, and a
@@ -109,7 +147,7 @@ def line_y(p):
     return (p['bbox'][1] + p['bbox'][3]) / 2
 
 
-def reassign(queue, props, text_of, split_missed=False, numbered=None):
+def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold=False):
     """Re-derive entry membership from detected column openings (layout boundaries are approximate).
 
     Per page side: each stored boundary (row focal_y start) first snaps to the nearest baptism
@@ -122,6 +160,13 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
     before, however much the boxes overlap. Month headings standing directly above a detected
     opening are removed from the lines and left in `reassign.headings` ({row_id: {cell: [line]}})
     for the entry they stand above.
+
+    Before that, a first row of a side whose columns read as the printed headings (two columns
+    at least, see `printed_heading_columns`) and which holds no entry start is taken out with its
+    lines (`reassign.heading_rows`). With `text_fold` (books without side-column entry numbers) a
+    later row of the side that has no opening line of its own in any of the three columns is the
+    lower part of the entry above and is folded into it (`reassign.folded`); a row with an opening
+    in the parents or godparents column only is kept (main() flags it).
     Returns (lines by row_id, {row_id: {cell: (old_y, new_y)}}).
     """
     side = defaultdict(list)
@@ -133,7 +178,7 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
         if p['row_id'] in row_side:
             line_side[row_side[p['row_id']]].append(p)
     by_row, snapped = defaultdict(list), {}
-    split_rows, folded, headings = [], [], {}
+    split_rows, folded, headings, heading_rows = [], [], {}, []
 
     def snap(y0, starts):
         near = [s for s in starts if abs(s - y0) <= SNAP]
@@ -142,6 +187,25 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
     for key, qs in side.items():
         qs = sorted(qs, key=lambda q: q['focal_y'][0])
         lines = line_side[key]
+        # the printed column headings: the side's first layout row, by its own lines' text
+        own, below_heading = defaultdict(list), False
+        for p in sorted((p for p in lines if p['row_id'] == qs[0]['row_id']), key=line_y):
+            own[p['cell']].append(p)
+        if printed_heading_columns({c: ' '.join(text_of.get(p['id']) or '' for p in ps) for c, ps in own.items()}) >= 2 \
+                and not any(is_entry_start(text_of.get(p['id'])) for p in own['baptism']):
+            gone = set()
+            for c, ps in own.items():
+                for p in ps:
+                    t = text_of.get(p['id'])
+                    if is_column_start(c, t) and not (c == 'godparents' and re.search(r'крещ|прису', (t or '').lower())):
+                        break           # an entry's first line caught in the heading row stays
+                    gone.add(p['id'])
+            lines = [p for p in lines if p['id'] not in gone]
+            heading_rows.append(qs[0]['row_id'])
+            below_heading = True
+            qs = qs[1:]
+            if not qs:
+                continue
         opening = {c: [p for p in lines if p['cell'] == c and is_column_start(c, text_of.get(p['id']))]
                    for c in ('baptism', 'parents', 'godparents')}
         starts = {c: sorted(p['bbox'][1] for p in ps) for c, ps in opening.items()}
@@ -159,6 +223,24 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
                     folded.append(q['row_id'])
                     continue
                 kept.append(q)
+            qs = kept
+        elif text_fold:
+            # no entry numbers to go by: an opening line belongs to the row whose top is nearest
+            # (not more than SNAP above it); a row left without one in all three columns, below the
+            # side's first row, continues the entry above. Not folded (main() flags it instead) when the
+            # entry above already holds two openings of one column: then an entry start was missed
+            # there and the existing snapping deals with it.
+            tops = [q['focal_y'][0] for q in qs]
+            kept, kept_lo = [], None
+            for i, q in enumerate(qs):
+                lo = tops[i] - min(SNAP, (tops[i] - tops[i - 1]) / 2) if i else float('-inf')
+                hi = tops[i + 1] - min(SNAP, (tops[i + 1] - tops[i]) / 2) if i + 1 < len(qs) else float('inf')
+                if kept and not any(lo <= s < hi for c in starts for s in starts[c]) \
+                        and all(sum(kept_lo <= s < lo for s in starts[c]) <= 1 for c in starts):
+                    folded.append(q['row_id'])
+                    continue
+                kept.append(q)
+                kept_lo = lo
             qs = kept
         if split_missed:
             # entry starts far from every stored boundary are entries the layout merged into a
@@ -195,6 +277,9 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
             bs = bounds[p['cell']]
             if cy < bs[0][0] - 40 and bs[0][0] != qs[0]['focal_y'][0]:
                 continue            # above the side's first (snapped) entry start: previous-year/header carry-over
+            if below_heading and ((line_y(p) < at[p['cell'], bs[0][0]] - 1) if (p['cell'], bs[0][0]) in at
+                                  else (cy < bs[0][0])):
+                continue            # between the printed heading and the side's first entry: the heading's last line
             owner = bs[0][1]
             for y, rid in bs:
                 # a boundary that is an opening line: compare with that line; otherwise with the layout's y
@@ -225,6 +310,7 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None):
     for rid in by_row:
         by_row[rid].sort(key=lambda p: (order[p['cell']], p['bbox'][1]))
     reassign.folded = folded
+    reassign.heading_rows = heading_rows
     reassign.headings = headings
     return (by_row, snapped, split_rows) if split_missed else (by_row, snapped)
 
@@ -258,9 +344,14 @@ def main():
     if args.year and side_path.exists():
         side = json.loads(side_path.read_text())
         numbered = {r for r, v in side.items() if re.sub(r'\D', '', v.get('entry_no') or '')}
+    left_out = {'heading': [], 'folded': []}
     if args.year:
-        by_row, snapped, split_rows = reassign(all_rows, props, text_of, split_missed=True, numbered=numbered)
-        queue = [q for q in queue if q['row_id'] not in set(reassign.folded)]
+        by_row, snapped, split_rows = reassign(all_rows, props, text_of, split_missed=True, numbered=numbered,
+                                               text_fold=numbered is None)
+        in_year = {q['row_id'] for q in queue}
+        left_out = {'heading': [r for r in reassign.heading_rows if r in in_year],
+                    'folded': [r for r in reassign.folded if r in in_year]}
+        queue = [q for q in queue if q['row_id'] not in set(reassign.folded) | set(reassign.heading_rows)]
         queue = sorted(queue + [r for r in split_rows if r['register_year'] == args.year],
                        key=lambda q: (q['scan'], q['page'], q['focal_y'][0]))
     else:
@@ -299,12 +390,20 @@ def main():
         later = [p for p in lines if p['cell'] == 'baptism'][2:]
         rec['boundary_warning'] = ('another entry start appears inside this entry: possibly an entry the layout missed'
                                    if any(is_entry_start(text_of.get(p['id'])) for p in later) else None)
+        first = [p for p in lines if p['cell'] == 'baptism'][:3]
+        if args.year and not rec['boundary_warning'] and not any(is_entry_start(text_of.get(p['id'])) for p in first) \
+                and not opens_with_year(rec['baptism']):
+            rec['boundary_warning'] = ('the baptism column does not open with "Тысяча восемьсотъ": a fragment, a continuation '
+                                       'from the page before, or an entry whose first lines are missing' if rec['baptism'].strip()
+                                       else 'the baptism column is empty')
         entries.append(rec)
     stem = Path(model['model_path']).parent.name
     if args.year:
         stem = f'{args.year}_{stem}'
     out_json = BOOK / f'processed/year_draft_{stem}.json'
     out_json.write_text(json.dumps({'model': model, 'note': __doc__.split('\n\n')[-1].strip(),
+                                    'rows_dropped_as_printed_heading': left_out['heading'],
+                                    'rows_folded_into_previous': left_out['folded'],
                                     'entries': entries}, ensure_ascii=False, indent=1))
     with open(BOOK / f'processed/year_draft_{stem}.csv', 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=[k for k in entries[0] if k != 'image'] + ['image'])
@@ -312,7 +411,9 @@ def main():
         w.writerows(entries)
     tot = {k: sum(e[k] for e in entries) for k in ('lines', 'lines_checked', 'lines_independent', 'lines_model', 'lines_rejected')}
     print(json.dumps({'entries': len(entries), **tot, 'boundaries_snapped': len(snapped),
-                      'rows_folded_into_previous': len(getattr(reassign, 'folded', [])),
+                      'rows_folded_into_previous': len(left_out['folded']),
+                      'rows_dropped_as_printed_heading': len(left_out['heading']),
+                      'entries_flagged': sum(1 for e in entries if e['boundary_warning']),
                       'out': str(out_json.relative_to(ROOT))}))
     return 0
 

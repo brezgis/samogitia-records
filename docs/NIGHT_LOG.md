@@ -388,3 +388,18 @@ translation, model training ... as you can"). Entries are appended as work compl
   62–74 are printed column-heading rows and about 29 are fragments (real entries nearer 665).
   parse_entries.py does not know this book's wording: father/mother 0 in every year, no baptism date
   or priest in 1858 (dates in digits). GPU was shared with another of Anna's jobs (little-guy-sim).
+- **Parser for the older wording; heading rows and fragments** (agent, night of 2026-11-15). `parse_entries.py`
+  now reads "… [father] и [mother] урожденной [maiden] [surname] законныхъ …" without a township,
+  dates in digits, priests after "Ксендзомъ / онаго Кс."; priest and village values are trimmed of
+  the introducing words and the parish. Old -> new on the same drafts, in memory (no Plungė file
+  rewritten; no field lost a value anywhere): father/mother 1849–54 1 -> 1,146 of 1,515; 1854–57
+  0 -> 629 of 790; 1867–74 0 -> 1,599 of 2,064; 1902–07 1,108 -> 1,374 of 2,117; priest 1902–07
+  165 -> 1,844, 1896–1902 1,703 -> 2,535, 1886–90 968 -> 1,238. Read against the draft text, 40
+  newly filled entries per book: 39, 39, 36, 38 of 40 fully right in the four older-wording books,
+  35 and 32 of 40 in 1902–07 (fathers with patronymics are the weak spot).
+  `assemble_drafts.py` drops printed column-heading rows at the top of a page side and, where a book
+  has no side-column numbers, folds a fragment row into the entry above by text (flags what it keeps
+  but doubts). **Salantai: 776 rows -> 677 entries** (75 heading rows dropped, 24 folded, 12 flagged);
+  father 0 -> 588, baptism date 498 -> 609, priest 402 -> 635, birth date 410 -> 508. On
+  1827/1/24 1898–99 the assembled text is unchanged; the text-only fold agrees with the numbered fold
+  on 72 of 74 rows. Tests: 32 pass. The Plungė books' published entries files were NOT regenerated.

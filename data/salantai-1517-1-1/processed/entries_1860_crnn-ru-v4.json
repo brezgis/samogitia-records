@@ -4,58 +4,6 @@
  "note": "Machine-extracted fields from machine drafts. Unverified.",
  "entries": [
   {
-   "row_id": "0080_L1",
-   "register_year": 1860,
-   "scan": 80,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0080_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "baptism_month": {
-     "value": null,
-     "source": "model"
-    },
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "какихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "когда, гдъ, кто ике, одною ми возою, няи со всѣмъобрядами таинства окрещенъ",
-    "parents": "какихъ родителей, когда и гдъ г.с. въ каконъ приходъ родился крещенный.",
-    "godparents": "оспріемника при съ Крещениа и то присуствовам."
-   }
-  },
-  {
    "row_id": "0080_L2",
    "register_year": 1860,
    "scan": 80,
@@ -77,7 +25,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -93,7 +41,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Блавдновной Гайліовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Адама",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріяни",
      "source": "model"
     },
     "sex": {
@@ -141,7 +97,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -157,7 +113,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Кнзкистовной Серафиновъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Филина",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -217,7 +181,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ ПетромъСташковскимъ",
+     "value": "ПетромъСташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -233,7 +197,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Симайтисовной Гамоновъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Лона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Розаліи",
      "source": "model"
     },
     "sex": {
@@ -293,7 +265,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -309,7 +281,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Забуровной Жаби-скихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
      "source": "model"
     },
     "sex": {
@@ -325,7 +305,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Тузохъ Салантовскаго",
+     "value": "Тузохъ",
      "source": "model"
     },
     "godparents": {
@@ -369,7 +349,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -385,7 +365,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Петрутисовной Вичюлисовъ та",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Евы",
      "source": "model"
     },
     "sex": {
@@ -401,7 +389,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Шевчикохъ Салон товскаго",
+     "value": "Шевчикохъ",
      "source": "model"
     },
     "godparents": {
@@ -420,107 +408,7 @@
    "text": {
     "baptism": "Тысяча восемсотъ шявтьдесятаго года Января семнадцатаго дня въ Салан товскомъ Приходскомъ Р.К. Костелѣ Мѣстныйъ Викарнымъ Ксендзомъ Петромъ Сташковскимъ окрещено дитя именемъ Моника со всѣми обрядами Таинства. -",
     "parents": "-Крестьянъ Антона и Евы урожденной Петрутисовной Вичюлисовъ та Законныхъ Супруговъ дочь родившась 1860. года Января 17го дня въ деревни Шевчикохъ Салон товскаго Прихода. -",
-    "godparents": "Воспріемниками были Крестьянъ Адамъ Ктойнисъ съ Лонадеею Матеуша Норвиллы -Супругою. -"
-   }
-  },
-  {
-   "row_id": "0080_L7",
-   "register_year": 1860,
-   "scan": 80,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0080_L7.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": null,
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "",
-    "parents": "",
-    "godparents": "- -"
-   }
-  },
-  {
-   "row_id": "0081_L1",
-   "register_year": 1860,
-   "scan": 81,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0081_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "baptism_month": {
-     "value": null,
-     "source": "model"
-    },
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "какихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "когда, гзѣ, кто икынъ, отноюо ли возою, пяи со всѣми обрядами таинства окрещенъ -",
-    "parents": "какихъ родителей, хогда и 1з6, г.с., въ каконъ приходъ родияся крещенцый.",
-    "godparents": "воспріемника при Съ. Крещена и тго присучствовамъ."
+    "godparents": "Воспріемниками были Крестьянъ Адамъ Ктойнисъ съ Лонадеею Матеуша Норвиллы -Супругою. - - -"
    }
   },
   {
@@ -545,7 +433,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоаноли Арвосевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -561,7 +449,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Равей ровной Расперовичевъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Франца",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анодсніи",
      "source": "model"
     },
     "sex": {
@@ -605,7 +501,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Стан ковскимъ",
+     "value": "Петромъ Стан ковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -621,7 +517,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Приммою товной Шимасовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Игнацею",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Розаліи",
      "source": "model"
     },
     "sex": {
@@ -637,7 +541,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Клавнам вохъ Салантовскаго",
+     "value": "Клавнам вохъ",
      "source": "model"
     },
     "godparents": {
@@ -681,7 +585,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ ПетроСташковскимъ",
+     "value": "ПетроСташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -697,7 +601,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Бавжисовног Сендковскихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Іелены",
      "source": "model"
     },
     "sex": {
@@ -761,7 +673,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Орлянахъ девскаго",
+     "value": "Орлянахъ",
      "source": "model"
     },
     "godparents": {
@@ -793,7 +705,7 @@
    "heading_month": null,
    "fields": {
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -809,7 +721,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Посюсовной Вонц кусовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Мателума",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -869,7 +789,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -885,7 +805,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Осовской Потлавскихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Феликса",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -901,7 +829,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Рекицяхъ Салантовскаго",
+     "value": "Рекицяхъ",
      "source": "model"
     },
     "godparents": {
@@ -945,7 +873,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петро.- ташковскимъ",
+     "value": "Петро.- ташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -961,7 +889,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Валтрушковной Юрковъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Станислава",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Марціяны",
      "source": "model"
     },
     "sex": {
@@ -977,7 +913,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Клавуам вохъ Саланновскаго",
+     "value": "Клавуам вохъ",
      "source": "model"
     },
     "godparents": {
@@ -1021,7 +957,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -1037,7 +973,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Томашив ской Буткевичевъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катаримы",
      "source": "model"
     },
     "sex": {
@@ -1053,7 +997,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Оскацяхъ Салантовскаго",
+     "value": "Оскацяхъ",
      "source": "model"
     },
     "godparents": {
@@ -1097,7 +1041,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Стамковскимъ",
+     "value": "Петромъ Стамковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -1113,7 +1057,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Ляшіовной Принисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Бантяны",
      "source": "model"
     },
     "sex": {
@@ -1129,7 +1081,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жеймяхъ Салантовскаго",
+     "value": "Жеймяхъ",
      "source": "model"
     },
     "godparents": {
@@ -1173,7 +1125,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоаномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -1189,7 +1141,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Станновной Срагисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іервею",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катарины",
      "source": "model"
     },
     "sex": {
@@ -1249,7 +1209,7 @@
      "source": "mixed"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасе вичемъ",
      "source": "mixed"
     },
     "child_name": {
@@ -1265,7 +1225,15 @@
      "source": "mixed"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Берташевнойс Морейковъ",
+     "source": "mixed"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "mixed"
+    },
+    "mother": {
+     "value": "Моники",
      "source": "mixed"
     },
     "sex": {
@@ -1281,7 +1249,7 @@
      "source": "mixed"
     },
     "village": {
-     "value": "Двор сникохъ Салантовскаго",
+     "value": "Двор сникохъ",
      "source": "mixed"
     },
     "godparents": {
@@ -1301,54 +1269,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго Года Мая тридцатаго дня въ Салантовскомъ Пре ходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Арвасе вичемъ окрещено дитя именемъ Іосифъ Со всѣми обрядами Таинства. -",
     "parents": "Крестьянъ Іосифа и Моники урожденной Берташевнойс Морейковъ Законныхъ Супру говъ Сынъ родившійся 1860 годМая 30. дня въ деревни Двор сникохъ Салантовскаго Прихода. -",
     "godparents": "Воспріемниками были Крестьянъ Іосифъ Іонкусъ съ Барбарою Яна Равейкиса Супругою. -"
-   }
-  },
-  {
-   "row_id": "0083_L1",
-   "register_year": 1860,
-   "scan": 83,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0083_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "хога, гяв, тто инымъ, одноюо д содою, ими со всѣми обрядами таинства окрещенъ",
-    "parents": "- Какихъ родителей, хогда и едъ, .с. съ каконъ прихохъ родияся крещенный.",
-    "godparents": "оспріемники при Со. Крещеніи и тго присудствовалъ."
    }
   },
   {
@@ -1373,7 +1293,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -1389,7 +1309,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Кубилевной Квассовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антрона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -1405,7 +1333,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Шевшикахъ Салантовскаго",
+     "value": "Шевшикахъ",
      "source": "model"
     },
     "godparents": {
@@ -1449,7 +1377,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташиковскимъ",
+     "value": "Петромъ Сташиковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -1465,7 +1393,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Рубисовной Вай четовскихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Леонольда",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -1541,7 +1477,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Даукшовном Вичлисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбаны",
      "source": "model"
     },
     "sex": {
@@ -1557,7 +1501,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Мазонахъ Салантов скаго",
+     "value": "Мазонахъ",
      "source": "model"
     },
     "godparents": {
@@ -1601,7 +1545,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арванви имъ",
      "source": "model"
     },
     "child_name": {
@@ -1617,7 +1561,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Стонков ной Реткусовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катакрты",
      "source": "model"
     },
     "sex": {
@@ -1633,7 +1585,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Барздзяхъ Саланто скаго",
+     "value": "Барздзяхъ",
      "source": "model"
     },
     "godparents": {
@@ -1677,7 +1629,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзом Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -1693,7 +1645,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Тыревичевной Мартин кусовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Зарбары",
      "source": "model"
     },
     "sex": {
@@ -1709,7 +1669,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жомишяхъ Салантовскаго",
+     "value": "Жомишяхъ",
      "source": "model"
     },
     "godparents": {
@@ -1729,54 +1689,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго года Іюня восьмаго дня въ Салантов. скомъ Приходскомъ Р.К. Костемъ Мѣстнымъ Викарнымъ Ксендзом Петромъ Сташковскимъ окрещено дитя именемъ Казимиръ, Со всѣми обрядами Таинства. - - -",
     "parents": "Крестьянъ Антона и Зарбары урожденной Тыревичевной Мартин кусовъ Законныхъ Супруговъ сынъ родившійся 1860. года Іюня 8го дня въ деревни Жомишяхъ Салантовскаго Прихода. -",
     "godparents": "Воспріемниками были Крестьянъ Казимиръ Станкусъ съ Юліянною Станисловъ Савдрова Супругою. -"
-   }
-  },
-  {
-   "row_id": "0084_L1",
-   "register_year": 1860,
-   "scan": 84,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "validation",
-   "image": "data/salantai-1517-1-1/processed/rows/0084_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "котя, сѣ, то итыѣ, отною ми созою, ими совсѣмобрядами таинства окрещенъ",
-    "parents": "- Какихъ родителей, когда и езъ, =.с., въ ваконъ приходъ родился крещениый.",
-    "godparents": "оспріемника при Со. Крещеніи и тто присудатовалъ."
    }
   },
   {
@@ -1801,7 +1713,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -1817,7 +1729,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Воссеровной Іахаловичевъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Станислава",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Эльзоеты",
      "source": "model"
     },
     "sex": {
@@ -1877,11 +1797,11 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
-     "value": null,
+     "value": "Кранцишенъ",
      "source": "model"
     },
     "estate": {
@@ -1893,82 +1813,50 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Гейдровной Пакальиишкисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
      "value": "M",
      "source": "model"
     },
+    "birth_month": {
+     "value": 6,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 12,
+     "source": "model"
+    },
     "village": {
-     "value": "ой Пакальиишкисовъ Законных",
+     "value": "Юдунянохъ",
      "source": "model"
     },
     "godparents": {
-     "value": "Крестьянъ Матеушъ Яггнскій съ Двою",
+     "value": "Крестьянъ Матеушъ Яггнскій съ Двою Эндровною дѣвицею",
      "source": "model"
     },
     "baptism_date": {
      "value": "1860-06-12",
      "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "Тысяча восемсотъ шестьдесятаго года Іюня дванадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ",
-    "parents": "Крестьянъ Францишка и Анны урожденной Гейдровной Пакальиишкисовъ Законных Супруговъ Сынъ родившіійсь",
-    "godparents": "Воспріемниками были Крестьянъ Матеушъ Яггнскій съ Двою"
-   }
-  },
-  {
-   "row_id": "0084_L4",
-   "register_year": 1860,
-   "scan": 84,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "validation",
-   "image": "data/salantai-1517-1-1/processed/rows/0084_L4.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
     },
-    "child_name": {
-     "value": "Кранцишенъ",
-     "source": "model"
-    },
-    "estate": {
-     "value": "1860.",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "village": {
-     "value": "Юдунянохъ Салонтов скаго",
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
+    "birth_date": {
+     "value": "1860-06-12",
      "source": "model"
     }
    },
    "text": {
-    "baptism": "Альтаристомъ Ксендзомъ Іоанномъ Арвасевичемъ окрещено дитя именемъ Кранцишенъ, Со всѣми обрядами Таинства. -",
-    "parents": "1860. года Іюня 12го дня въ де ревни Юдунянохъ Салонтов скаго Прихода. -",
-    "godparents": "Эндровною дѣвицею. -"
+    "baptism": "Тысяча восемсотъ шестьдесятаго года Іюня дванадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Арвасевичемъ окрещено дитя именемъ Кранцишенъ, Со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Францишка и Анны урожденной Гейдровной Пакальиишкисовъ Законных Супруговъ Сынъ родившіійсь 1860. года Іюня 12го дня въ де ревни Юдунянохъ Салонтов скаго Прихода. -",
+    "godparents": "Воспріемниками были Крестьянъ Матеушъ Яггнскій съ Двою Эндровною дѣвицею. -"
    }
   },
   {
@@ -1993,7 +1881,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Контрымомъ",
      "source": "model"
     },
     "child_name": {
@@ -2009,7 +1897,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Вайцевной Пельдсоовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model"
+    },
+    "mother": {
+     "value": "ЮлиАнны",
      "source": "model"
     },
     "sex": {
@@ -2025,7 +1921,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Кумиодахъ Салантовскаго При",
+     "value": "Кумиодахъ",
      "source": "model"
     },
     "godparents": {
@@ -2069,7 +1965,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Станц ковскимъ",
+     "value": "Петромъ Станц ковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2085,7 +1981,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Гебитисовной Пальшисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Перонима",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катарины",
      "source": "model"
     },
     "sex": {
@@ -2101,7 +2005,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Куналят Салантовскаго",
+     "value": "Куналят",
      "source": "model"
     },
     "godparents": {
@@ -2145,7 +2049,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2161,7 +2065,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Мешкисовной Станковъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Микаила",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Магдалены",
      "source": "model"
     },
     "sex": {
@@ -2177,7 +2089,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жалимар Салантовскаго",
+     "value": "Жалимар",
      "source": "model"
     },
     "godparents": {
@@ -2197,58 +2109,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго Года Іоня восемнадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ мѣстнымъ Викарнымъ Ксендзомъ Петромъ Сташковскимъ окрещено ди тя именемъ Магдалена, Со всѣми обрядами Таинства. -",
     "parents": "Крестьянъ Микаила и Магдалены сурожденной Мешкисовной Станковъ Законныхъ Супруговъ дочь родившас 1860. года Іюня 18го дня въ деревни Жалимар Салантовскаго Прихода -",
     "godparents": "Воспріемниками были Крестьянъ Францишекъ Рутисъ съ Моникою Мешкисовною дѣвицею."
-   }
-  },
-  {
-   "row_id": "0085_L1",
-   "register_year": 1860,
-   "scan": 85,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "test",
-   "image": "data/salantai-1517-1-1/processed/rows/0085_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "baptism_month": {
-     "value": null,
-     "source": "model"
-    },
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "какихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "когда, гдѣ, сто икенъ, одною лѣ созою, няи со всѣми обрядами таинства окрещенъ -",
-    "parents": "какихъ родичелей, когд и гзъ, г.с., въ каконъ приходъ родился крещенный.",
-    "godparents": "воспріемники при Съ. Крещеній и тго присучствоватъ."
    }
   },
   {
@@ -2273,7 +2133,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташ новскимъ",
+     "value": "Петромъ Сташ новскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2289,7 +2149,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Градіовной Брхождовскивъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Франна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Бандары",
      "source": "model"
     },
     "sex": {
@@ -2349,7 +2217,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -2365,7 +2233,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Рамо товскй Будрисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Леопольда",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Вероники",
      "source": "model"
     },
     "sex": {
@@ -2449,7 +2325,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Орляновъ Салантовскаго",
+     "value": "Орляновъ",
      "source": "model"
     },
     "godparents": {
@@ -2505,6 +2381,14 @@
      "source": "model"
     },
     "maiden_and_surname": {
+     "value": "Василевскай Гриневичевъ Титулярныхъ Совстниковъ",
+     "source": "model"
+    },
+    "father": {
+     "value": null,
+     "source": "model"
+    },
+    "mother": {
      "value": null,
      "source": "model"
     },
@@ -2561,7 +2445,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петро Сташковскимъ",
+     "value": "Петро Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2577,7 +2461,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Лекнюсовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Франца",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Аноміоніий",
      "source": "model"
     },
     "sex": {
@@ -2616,54 +2508,6 @@
    }
   },
   {
-   "row_id": "0086_L1",
-   "register_year": 1860,
-   "scan": 86,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0086_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "вог. съ   сотою, иза со всьми обрадами таинста опрещенъ: -",
-    "parents": "- Какихъ родичелей, хогда и гдъ, гс., въ ссконъ приходъ родился крещениый.",
-    "godparents": "оспріемники при Съ. Крещеніи и сто присунствовалъ."
-   }
-  },
-  {
    "row_id": "0086_L2",
    "register_year": 1860,
    "scan": 86,
@@ -2685,7 +2529,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташ ковскимъ",
+     "value": "Петромъ Сташ ковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2701,7 +2545,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Каминской Прейдисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Людовики",
      "source": "model"
     },
     "sex": {
@@ -2717,7 +2569,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Парздзяхъ Салантов скаго",
+     "value": "Парздзяхъ",
      "source": "model"
     },
     "godparents": {
@@ -2761,7 +2613,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2777,7 +2629,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "БерташевнойЕидпіовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Михайла",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -2833,7 +2693,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -2849,7 +2709,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Жыкисъ най Шлейнюсовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Тадеуша",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
      "source": "model"
     },
     "sex": {
@@ -2865,7 +2733,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Грбоицяхъ Салантовскаго",
+     "value": "Грбоицяхъ",
      "source": "model"
     },
     "godparents": {
@@ -2909,7 +2777,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташков скимъ",
+     "value": "Петромъ Сташков скимъ",
      "source": "model"
     },
     "child_name": {
@@ -2941,7 +2809,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Баидотахъ Салантовскаго",
+     "value": "Баидотахъ",
      "source": "model"
     },
     "godparents": {
@@ -2985,7 +2853,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвосевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -3001,7 +2869,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Козіовскай ыаа Пушкаргсовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Маріянны",
      "source": "model"
     },
     "sex": {
@@ -3017,7 +2893,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Лайвятъ Салантовскаго",
+     "value": "Лайвятъ",
      "source": "model"
     },
     "godparents": {
@@ -3037,58 +2913,6 @@
     "baptism": "Тысяча восемсотъ шестьдесята го года Іюля тринадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Арвосевичемъ окрещено дитя имменемъ Барбара, Со всѣми обрядами Таинства. -",
     "parents": "Крестьянъ Іосифа и Маріянны урожденной Козіовскай ыаа Пушкаргсовъ Законныхъ Супруговъ дочь родившась 1860. года Сентября 24. дня въ деревни Лайвятъ Салантовскаго Прихода. -",
     "godparents": "Воспріемниками были Крестьянъ Янъ Іонкусъ съ Катериною Пушкоріосовною девицею. -"
-   }
-  },
-  {
-   "row_id": "0087_L1",
-   "register_year": 1860,
-   "scan": 87,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0087_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "baptism_month": {
-     "value": null,
-     "source": "model"
-    },
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "кннихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "когда, 176, тто исынъ, сдною яи созою, ими со всѣмиъ обрядами таинства окрещенъ",
-    "parents": "кннихъ родиемъ, хога и 1зъ, г.с. въ каконъ приходъ родился крещенный.",
-    "godparents": "воспріемники при Съ Крещеній и сго присучетоватъ."
    }
   },
   {
@@ -3129,7 +2953,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Прижинской Гліоферисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Иацеюл",
+     "source": "model"
+    },
+    "mother": {
+     "value": "БарБары",
      "source": "model"
     },
     "sex": {
@@ -3145,7 +2977,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Скавдаляхъ Салантовскаго Прихо",
+     "value": "Скавдаляхъ",
      "source": "model"
     },
     "godparents": {
@@ -3189,7 +3021,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Контрымомъ",
      "source": "model"
     },
     "child_name": {
@@ -3205,7 +3037,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Венцкусовной Станзайтисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Петра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Магдаленны",
      "source": "model"
     },
     "sex": {
@@ -3221,7 +3061,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Тузахъ Салантовскаго",
+     "value": "Тузахъ",
      "source": "model"
     },
     "godparents": {
@@ -3265,7 +3105,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Контримомъ",
      "source": "model"
     },
     "child_name": {
@@ -3281,7 +3121,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Стоннов наи Пузелисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
      "source": "model"
     },
     "sex": {
@@ -3297,7 +3145,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Барудзяфъ Салантовскаго",
+     "value": "Барудзяфъ",
      "source": "model"
     },
     "godparents": {
@@ -3357,7 +3205,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Размовнаи Валончисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Матья",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Рудебі",
      "source": "model"
     },
     "sex": {
@@ -3413,7 +3269,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -3429,7 +3285,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Вичюсовной Петкусовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Гемны",
      "source": "model"
     },
     "sex": {
@@ -3468,54 +3332,6 @@
    }
   },
   {
-   "row_id": "0088_L1",
-   "register_year": 1860,
-   "scan": 88,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0088_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "какихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": "по итпати и претдянію остіемники при Съ Крещеніи и тто присудствовалъ",
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "гою. с  со, ча со сь обрядами таинста окрещенъ: -",
-    "parents": "какихъ рожиелей, хога и езъ, г.С., въ Каконъ приходъ родияся крещенцы.",
-    "godparents": "Ксго были по итпати и претдянію остіемники при Съ Крещеніи и тто присудствовалъ."
-   }
-  },
-  {
    "row_id": "0088_L2",
    "register_year": 1860,
    "scan": 88,
@@ -3537,7 +3353,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзмъ Петромъ Сташ новскимъ",
+     "value": "Петромъ Сташ новскимъ",
      "source": "model"
     },
     "child_name": {
@@ -3553,7 +3369,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Швел евнай Дѣкантовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Розаліи",
      "source": "model"
     },
     "sex": {
@@ -3613,7 +3437,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Контрымомъ",
      "source": "model"
     },
     "child_name": {
@@ -3629,7 +3453,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "фиПругосовъ лидайтисовно",
+     "source": "model"
+    },
+    "father": {
+     "value": "Александра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
      "source": "model"
     },
     "sex": {
@@ -3645,7 +3477,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жеймяхъ Салантовскаго",
+     "value": "Жеймяхъ",
      "source": "model"
     },
     "godparents": {
@@ -3689,7 +3521,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арволевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -3705,7 +3537,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Яннконтовной Симойтисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишева",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Магдалены",
      "source": "model"
     },
     "sex": {
@@ -3732,54 +3572,6 @@
    }
   },
   {
-   "row_id": "0088_L5",
-   "register_year": 1860,
-   "scan": 88,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": null,
-   "image": "data/salantai-1517-1-1/processed/rows/0088_L5.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": null,
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "",
-    "parents": "",
-    "godparents": ""
-   }
-  },
-  {
    "row_id": "0088_L6",
    "register_year": 1860,
    "scan": 88,
@@ -3801,7 +3593,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "ІоанномъАрвосевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -3817,7 +3609,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Довлевцай Лавкисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Юліянны",
      "source": "model"
     },
     "sex": {
@@ -3877,7 +3677,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -3893,7 +3693,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Рамоновной Лавкисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Францишки",
      "source": "model"
     },
     "sex": {
@@ -3909,7 +3717,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жеймяхъ Салантовскаго",
+     "value": "Жеймяхъ",
      "source": "model"
     },
     "godparents": {
@@ -3929,58 +3737,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго года Октября восьмаго дня въ Салатновскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомъ Ксендзомъ Іоанномъ Арвасевичемъ окрещено дитя именемъ Мадилена, Со всѣми обряда ми Таинства. -",
     "parents": "- Крестьянъ Антона и Францишки урожденной Рамоновной Лавкисовъ Законныхъ Супруговъ дочь родившасо 1860. года Октября 8го дня въ деревни Жеймяхъ Салантовскаго Прихода.",
     "godparents": "Воспріемниками были Крестьянъ Викомиъ Валончгосъ съ Могдаленною Рамоновною дѣвицею. -"
-   }
-  },
-  {
-   "row_id": "0089_L1",
-   "register_year": 1860,
-   "scan": 89,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0089_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "какиъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "sex": {
-     "value": "M",
-     "source": "model"
-    },
-    "godparents": {
-     "value": "по итпями и прозоанію оспріемники при Съ. Крещеніи и сго присутствовахъ",
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "кося, сѣ, то исыл, отою ми содою, ами совсѣмъ обрядами таинства окрещенъ а",
-    "parents": "какиъ родиелей, когда и едъ, г.с., съ накомъ приходъ родияся крещенный",
-    "godparents": "Кго былиъ по итпями и прозоанію оспріемники при Съ. Крещеніи и сго присутствовахъ."
    }
   },
   {
@@ -4005,7 +3761,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -4021,7 +3777,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Бружровной Норвилііовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Барбары",
      "source": "model"
     },
     "sex": {
@@ -4037,7 +3801,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Пецяхъ Салан товскаго",
+     "value": "Пецяхъ",
      "source": "model"
     },
     "godparents": {
@@ -4081,7 +3845,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвосевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -4097,7 +3861,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Вашкисовной Доброволь скихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Феликса",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Аполіоніи",
      "source": "model"
     },
     "sex": {
@@ -4113,7 +3885,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Гарьденяхъ Салантовскаго",
+     "value": "Гарьденяхъ",
      "source": "model"
     },
     "godparents": {
@@ -4173,7 +3945,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Кубилевной Мылюсовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -4189,7 +3969,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Зекецятъ Салантовскаго",
+     "value": "Зекецятъ",
      "source": "model"
     },
     "godparents": {
@@ -4233,7 +4013,7 @@
      "source": "mixed"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвайвичемъ",
      "source": "mixed"
     },
     "child_name": {
@@ -4249,7 +4029,15 @@
      "source": "mixed"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Шыдей кисовной Вайткусовъ",
+     "source": "mixed"
+    },
+    "father": {
+     "value": "Доминика",
+     "source": "mixed"
+    },
+    "mother": {
+     "value": "Марціянны",
      "source": "mixed"
     },
     "sex": {
@@ -4265,7 +4053,7 @@
      "source": "mixed"
     },
     "village": {
-     "value": "Тузотъ Салантовскаго",
+     "value": "Тузотъ",
      "source": "mixed"
     },
     "godparents": {
@@ -4309,7 +4097,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -4325,7 +4113,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Дѣконтовной Рутисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Аноцталіоніи",
      "source": "model"
     },
     "sex": {
@@ -4341,7 +4137,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жалимахъ Салантовскаго",
+     "value": "Жалимахъ",
      "source": "model"
     },
     "godparents": {
@@ -4361,54 +4157,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго Года Октября шествнадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Викарнымъ Ксендзомъ Петромъ Сташковскимъ окрещно дитя именемъ Францишенъ Совсѣ ми обрядами Таинства. - -.",
     "parents": "Крестьянъ Францишка и Аноцта ліоніи урожден ной Дѣконтовной Рутисовъ Законныхъ Супруговъ Сынъ родившійся 1860. года Октября 16. дня въ деревни Жалимахъ Салантовскаго Прихода. -",
     "godparents": "Воспріемниками были: Крестьянъ НикодемтъВостомисъ съ Петронелею Маикисовною дѣвицею. - -"
-   }
-  },
-  {
-   "row_id": "0090_L1",
-   "register_year": 1860,
-   "scan": 90,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0090_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "канихъ",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "косъ, сѣѣ, то нстъ, отою ми содою, ими совсѣобряжами таинства окрещенъ а",
-    "parents": "канихъ родичелей, когда и езъ, .с., въ каконъ приходъ родияся крещенный. -",
-    "godparents": "воспріемники при Съ Крещеній и тго присусствовасъ."
    }
   },
   {
@@ -4433,7 +4181,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ ПетромъСташковскимъ",
+     "value": "ПетромъСташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -4449,7 +4197,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Рамоновной Дибурисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Вороки",
      "source": "model"
     },
     "sex": {
@@ -4465,7 +4221,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Оскеляхъ Салантов скаго",
+     "value": "Оскеляхъ",
      "source": "model"
     },
     "godparents": {
@@ -4509,7 +4265,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Казимиромъ Бѣльскимъ",
      "source": "model"
     },
     "child_name": {
@@ -4525,7 +4281,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Мацкевичвной Вичюсовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Леона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анастазіи",
      "source": "model"
     },
     "sex": {
@@ -4541,7 +4305,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Нармонтохъ аланновскаго",
+     "value": "Нармонтохъ",
      "source": "model"
     },
     "godparents": {
@@ -4601,7 +4365,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Шявлисовной Виршшліовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Шимтна",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Людовики",
      "source": "model"
     },
     "sex": {
@@ -4609,7 +4381,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Жалимахъ Салан товскаго",
+     "value": "Жалимахъ",
      "source": "model"
     },
     "godparents": {
@@ -4649,11 +4421,11 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
-     "value": null,
+     "value": "иПетръ-Повелъ",
      "source": "model"
     },
     "estate": {
@@ -4665,78 +4437,50 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Кнюкштов ной Карбовскихъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Петра",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петронели",
      "source": "model"
     },
     "sex": {
      "value": "M",
      "source": "model"
     },
+    "birth_month": {
+     "value": 10,
+     "source": "model"
+    },
+    "birth_day": {
+     "value": 10,
+     "source": "model"
+    },
+    "village": {
+     "value": "Юрзаицяхъ",
+     "source": "model"
+    },
     "godparents": {
-     "value": "Крестьянъ Лонъ Куншисъ съ Барбарою Ков",
+     "value": "Крестьянъ Лонъ Куншисъ съ Барбарою Ковловскою дѣвицею",
      "source": "model"
     },
     "baptism_date": {
      "value": "1860-10-19",
      "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "Тысяча восемсотъ шестьдесятаго года Октября девятнадцатаго дня въ Саонтрв скомъ Приходскомъ Р.К. Костелѣ Мюлинымъ Алвтаристомъ Ксендзомъ Іоан-",
-    "parents": "Крестьянъ Петра и Петронели урожденной Кнюкштов ной Карбовскихъ Законныхъ Супруговъ Сынъ родившійсь",
-    "godparents": "Воспріемниками были: Крестьянъ Лонъ Куншисъ съ Барбарою Ков-"
-   }
-  },
-  {
-   "row_id": "0090_L6",
-   "register_year": 1860,
-   "scan": 90,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0090_L6.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
     },
-    "child_name": {
-     "value": "иПетръ-Повелъ",
-     "source": "model"
-    },
-    "estate": {
-     "value": "1860.",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "village": {
-     "value": "Юрзаицяхъ Салантовскаго",
-     "source": "model"
-    },
-    "godparents": {
-     "value": null,
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
+    "birth_date": {
+     "value": "1860-10-10",
      "source": "model"
     }
    },
    "text": {
-    "baptism": "номъ Арвасевичемъ окрещено дитя именами Петръ- Повелъ. Со всѣми обрядами Таинства. -",
-    "parents": "1860. года Октября 10. дня въ деревни Юрзаицяхъ Салантовскаго Прихода. -",
-    "godparents": "ловскою дѣвицею. -"
+    "baptism": "Тысяча восемсотъ шестьдесятаго года Октября девятнадцатаго дня въ Саонтрв скомъ Приходскомъ Р.К. Костелѣ Мюлинымъ Алвтаристомъ Ксендзомъ Іоанномъ Арвасевичемъ окрещено дитя именами Петръ- Повелъ. Со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Петра и Петронели урожденной Кнюкштов ной Карбовскихъ Законныхъ Супруговъ Сынъ родившійсь 1860. года Октября 10. дня въ деревни Юрзаицяхъ Салантовскаго Прихода. -",
+    "godparents": "Воспріемниками были: Крестьянъ Лонъ Куншисъ съ Барбарою Ковловскою дѣвицею. -"
    }
   },
   {
@@ -4761,7 +4505,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -4777,7 +4521,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Вончкусовной Монствлй іовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Анны",
      "source": "model"
     },
     "sex": {
@@ -4793,7 +4545,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Эрлянахъ Салантовскаго",
+     "value": "Эрлянахъ",
      "source": "model"
     },
     "godparents": {
@@ -4813,54 +4565,6 @@
     "baptism": "Тысяча восемсотъ шестьдесятаго года Октября двадцатаго дня въ Салантовскомъ Приходскомъ Р.К. Костелѣ Мѣстнымъ Альтаристомѣ Ксендзомъ Іоанномъ Арвасевичемъокрещено дитя именемъ Моника Со всѣми обрядами Таинства. -",
     "parents": "Крестьянъ Антона и Анны урожденной Вончкусовной Монствлй іовъ Законныхъ Супруговъ дочь родившась 1860. года Октября 26. дня въ деревни Эрлянахъ Салантовскаго",
     "godparents": "Воспріемниками были: Крестьянъ Антоній Пиктунвисо съ Геленою Антона Сендровскаго Супругою. -"
-   }
-  },
-  {
-   "row_id": "0091_L1",
-   "register_year": 1860,
-   "scan": 91,
-   "page": "L",
-   "expected_entry_no": null,
-   "hand_group": "unknown",
-   "split": "train",
-   "image": "data/salantai-1517-1-1/processed/rows/0091_L1.jpg",
-   "split_from": null,
-   "heading": null,
-   "heading_month": null,
-   "fields": {
-    "priest": {
-     "value": null,
-     "source": "model"
-    },
-    "child_name": {
-     "value": null,
-     "source": "model"
-    },
-    "estate": {
-     "value": "",
-     "source": "model"
-    },
-    "township": {
-     "value": null,
-     "source": "model"
-    },
-    "maiden_and_surname": {
-     "value": null,
-     "source": "model"
-    },
-    "godparents": {
-     "value": "по иекатнъ и прожоьяніею оспріемника при Съ. Крещеніи и то присустовоъ",
-     "source": "model"
-    },
-    "baptism_date": {
-     "value": null,
-     "source": "model"
-    }
-   },
-   "text": {
-    "baptism": "хоса, сзъ, сто нстлъ, отого ми гозою, ими соосѣми обрядами таисти окрещенъ: -",
-    "parents": "- какихъ родителей, когда и гдъ, .с. въ каконъ приходъ родился крещенный.",
-    "godparents": "нето выли по иекатнъ и прожоьяніею оспріемника при Съ. Крещеніи и то присустовоъ."
    }
   },
   {
@@ -4885,7 +4589,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -4901,7 +4605,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Монствийловной Кнюкштовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Эвы",
      "source": "model"
     },
     "sex": {
@@ -4917,7 +4629,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Орлянотъ Салантовскаго",
+     "value": "Орлянотъ",
      "source": "model"
     },
     "godparents": {
@@ -4961,7 +4673,7 @@
      "source": "model"
     },
     "priest": {
-     "value": null,
+     "value": "Іоанномъ Арвасевичемъ",
      "source": "model"
     },
     "child_name": {
@@ -4977,7 +4689,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Кнгокштовной Довконтовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Миколая",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Петронели",
      "source": "model"
     },
     "sex": {
@@ -4993,7 +4713,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Бардзяхтъ Саланновскаго",
+     "value": "Бардзяхтъ",
      "source": "model"
     },
     "godparents": {
@@ -5037,7 +4757,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -5053,7 +4773,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Анувисовной Кнзакштовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Іосифа",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Катарины",
      "source": "model"
     },
     "sex": {
@@ -5061,7 +4789,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Барудзятъ Салантовскаго",
+     "value": "Барудзятъ",
      "source": "model"
     },
     "godparents": {
@@ -5101,7 +4829,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -5117,7 +4845,15 @@
      "source": "model"
     },
     "maiden_and_surname": {
-     "value": null,
+     "value": "Стран шовной Рубисовъ",
+     "source": "model"
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model"
+    },
+    "mother": {
+     "value": "Банда",
      "source": "model"
     },
     "sex": {
@@ -5133,7 +4869,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Шевшкохъ Салантовскаго",
+     "value": "Шевшкохъ",
      "source": "model"
     },
     "godparents": {
@@ -5177,7 +4913,7 @@
      "source": "model"
     },
     "priest": {
-     "value": "ендзомъ Петромъ Сташковскимъ",
+     "value": "Петромъ Сташковскимъ",
      "source": "model"
     },
     "child_name": {
@@ -5209,7 +4945,7 @@
      "source": "model"
     },
     "village": {
-     "value": "Фардзяхъ Салантовскаго",
+     "value": "Фардзяхъ",
      "source": "model"
     },
     "godparents": {
