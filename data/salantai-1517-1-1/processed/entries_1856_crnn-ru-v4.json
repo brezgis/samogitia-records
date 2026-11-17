@@ -1,0 +1,2049 @@
+{
+ "source": "data/salantai-1517-1-1/processed/year_draft_1856_crnn-ru-v4.json",
+ "model": "/mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v4/best_model.pt",
+ "note": "Machine-extracted fields from machine drafts. Unverified.",
+ "tagger": {
+  "spans": "/home/anna/projects/samogitia-parishes/data/salantai-1517-1-1/processed/tagger_spans_1856_crnn-ru-v4.json",
+  "model": "/mnt/ssd240gb/anna/samogitia-htr/models/field-tagger-v1/char__none__s1.pt",
+  "model_md5": "3b08c544db6fd73c3d97de6ddd920833",
+  "stale": 0,
+  "threshold": {
+   "default": 0.8,
+   "SURNAME": 0.5
+  },
+  "priest": "combine",
+  "township_wording": false
+ },
+ "entries": [
+  {
+   "row_id": "0003_L1",
+   "register_year": 1856,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0003_L1.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "baptism_day": {
+     "value": 22,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "priest": {
+     "value": "Іоанномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9786
+    },
+    "child_name": {
+     "value": "Францишекъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Ридиовна Сыму тисовъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "mother": {
+     "value": "Катартыны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 11,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "village": {
+     "value": "Гуговузявъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9917
+    },
+    "godparents": {
+     "value": "Крестьяни Францишекъ Лимъ съ Барбарою Іозефа Сымутма Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-11-22",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "birth_date": {
+     "value": "1856-11-22",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "maiden_name": {
+     "value": "Ридиовна",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9925,
+     "alt": {
+      "value": "Ридиовна Сыму",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Сыму тисовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8601,
+     "alt": {
+      "value": "тисовъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Францишекъ Лимъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "godmother": {
+     "value": "Барбарою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "godmother_status": {
+     "value": "Іозефа Сымутма Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9703
+    }
+   },
+   "text": {
+    "baptism": "- Тысяча Восемсотъ Пятьдесятъ Шестаго Года Ноября двадцать второго дня въ Салантовскомъ Приходскомъ Римско-Католическомъ Костелѣ, мѣстнымъ Викарнымъ Ксендзомъ Іоанномъ Монкевичемъ окрещенъ младенецъ Именемъ Францишекъ с всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Казимира -и Катартыны урожден -ной Ридиовна Сыму тисовъ законныхъ Супруговъ сынъ, родившійся сего Года Ноября двадцать второго дня поутру Салантовскаго Прихода въ Деревни Гуговузявъ. -",
+    "godparents": "Воспріемниками были Крестьяни Францишекъ Лимъ съ Барбарою Іозефа Сымутма Супругою. - -"
+   }
+  },
+  {
+   "row_id": "0003_L2",
+   "register_year": 1856,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0003_L2.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 11,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Іоанномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9785
+    },
+    "child_name": {
+     "value": "Антонъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Станіовны Рункисовъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозифата",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "mother": {
+     "value": "Антонины",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 11,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "birth_day": {
+     "value": 27,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "village": {
+     "value": "Жудганахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9932
+    },
+    "godparents": {
+     "value": "Крестьяна Янъ Пет ровскій съ Магдаленого Станіовною двицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-11-26",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-11-27",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "maiden_name": {
+     "value": "Станіовны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9935
+    },
+    "family_surname": {
+     "value": "Рункисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9922
+    },
+    "godfather": {
+     "value": "Янъ Пет ровскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9959
+    },
+    "godmother": {
+     "value": "Магдаленого Станіовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9885
+    },
+    "godmother_status": {
+     "value": "двицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ шестаго года Ноября двадцать сесого дня въ Салантовскомъ Приходскомъ РимскоКатолическомъ Костелѣ мѣстнымъ Викарнымъ Ксендзомъ Іоанномъ Монкевичемъ окрещенъ младенецъ именемъ Антонъ со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Іозифата и Антонины урожденной Станіовны Рункисовъ законныхъ Супруговъ сынъ, родившійся сего года Ноября двадцать семого дня поутру Салантовскаго Прихода въ Деревни Жудганахъ. -",
+    "godparents": "Воспріемниками были Крестьяна Янъ Пет ровскій съ Магдаленого Станіовною двицею. -"
+   }
+  },
+  {
+   "row_id": "0003_L3",
+   "register_year": 1856,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0003_L3.jpg",
+   "split_from": null,
+   "heading": "Декабръ.",
+   "heading_month": 12,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
+    },
+    "priest": {
+     "value": "Іоснномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9799
+    },
+    "child_name": {
+     "value": "Франційа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "estate": {
+     "value": "Крестьямъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Самутовна Волонтетвъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Казимира",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "mother": {
+     "value": "Барбары",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "sex": {
+     "value": "F",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "village": {
+     "value": "Орлянахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9925
+    },
+    "godparents": {
+     "value": "Кресььинѣ Антонъ Дынаръ съ Францишкою Свмутисовною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-01",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
+    },
+    "birth_date": {
+     "value": "1856-12-01",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "maiden_name": {
+     "value": "Самутовна",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "family_surname": {
+     "value": "Волонтетвъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9925
+    },
+    "godfather": {
+     "value": "Антонъ Дынаръ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.996,
+     "alt": {
+      "value": "Кресььинѣ Антонъ Дынаръ",
+      "by": "rules"
+     }
+    },
+    "godmother": {
+     "value": "Францишкою Свмутисовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9856
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ шестаго года Декабря перваго днятвъ Салантовскомъ Приходскомъ Рижско- Котолическомъ Костелѣрмиестнымъ Викарнымъ Ксендзомсъ Іоснномъ Монкевичемъ окрещенъ младенецъ Именемъ Франційа со всѣми обрядами Таинства -",
+    "parents": "Крестьямъ Казимира и Барбары урожденной Самутовна Волонтетвъ законныхъ Супруговъ дочъ, родившаяся сего Года Декабря первого дня поутру Салансковскаго Прихода въ Деревни Орлянахъ. -",
+    "godparents": "Воспріемниками были Кресььинѣ Антонъ Дынаръ съ Францишкою Свмутисовною дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0003_L4",
+   "register_year": 1856,
+   "scan": 3,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0003_L4.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Кондзрмъ Каспромъ Янушевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8786
+    },
+    "child_name": {
+     "value": "Іозефъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9863
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Паунсовнѣ Мачер нео въ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
+    },
+    "village": {
+     "value": "Меймахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9931
+    },
+    "godparents": {
+     "value": "Крестьянъ Михаилъ Абрутисъ съ Юльіан ною Мачерніовною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-01",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-01",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
+    },
+    "maiden_name": {
+     "value": "Паунсовнѣ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9928,
+     "alt": {
+      "value": "Паунсовнѣ Мачер нео",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Мач",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.5485,
+     "alt": {
+      "value": "въ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Михаилъ Абрутисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "godmother": {
+     "value": "Юльіан ною Мачерніовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Оятьдесятъ шестаго Года Декабря перваго дня въ Силантовскомъ Приходскомъ ре ско-Католическомъ Костелѣуиѣстнымъ Викарнымъ Кондзрмъ Каспромъ Янушевичемъ окрещенъ младенецъ именемъ Іозефъ со всѣми обрядами Таине ства. -",
+    "parents": "Крестьянъ Антона и Анны урожденной Паунсовнѣ Мачер нео въ законныхъ - Супруговъ сынъ родившія сего года Декабря первого дня Салан товскаго Прихода въ Деревни Меймахъ -",
+    "godparents": "Воспріемниками были Крестьянъ Михаилъ Абрутисъ съ Юльіан ною Мачерніовною дѣвицею. - - -"
+   }
+  },
+  {
+   "row_id": "0004_L1",
+   "register_year": 1856,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/salantai-1517-1-1/processed/rows/0004_L1.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "baptism_day": {
+     "value": 2,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "priest": {
+     "value": "Коспромъ Янушевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9348
+    },
+    "child_name": {
+     "value": "Іозефъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9873
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Скпруттовны Бене отисовъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозефа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "mother": {
+     "value": "Кагдалены",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "village": {
+     "value": "Имборахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9767
+    },
+    "godparents": {
+     "value": "Крестьяны Бонифац Бенстисъ съ Барбаро Доминика Вайгя Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-02",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
+    },
+    "maiden_name": {
+     "value": "Скпруттовны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9884,
+     "alt": {
+      "value": "Скпруттовны Бене",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Бене отисовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8499,
+     "alt": {
+      "value": "отисовъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Бонифац Бенстисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Барбаро",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9944
+    },
+    "godmother_status": {
+     "value": "Доминика Вайгя Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9725
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9949
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9949
+    }
+   },
+   "text": {
+    "baptism": "- Тысяча Восемсотъ Пятьдесятъ Шестого Года Декабря второго дня въ Салантовскомъ Приходскомъ Римско-Котолическомъ Костелѣ мѣстнымъ Викарнымъ Ксендзомъ Коспромъ Янушевичемъ окрещенъ ладенецъ именемъ Іозефъ со всѣми обрядами Таинства -",
+    "parents": "Крестьянъ Іозефа и Кагдалены урижденной ъСкпруттовны Бене отисовъ законныхъ Супруговъ сынъ, родивекъ нмся сего Года Декабр втаро дня всчеромъ Аалантовскаго Приходъ въ Деревни Имборахъ",
+    "godparents": "Воспріемниками были Крестьяны Бонифац Бенстисъ съ Барбаро Доминика Вайгя Супругою. - -"
+   }
+  },
+  {
+   "row_id": "0004_L2",
+   "register_year": 1856,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/salantai-1517-1-1/processed/rows/0004_L2.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Коспрімъ Януетевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9529
+    },
+    "child_name": {
+     "value": "Францишекъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "и МаловныРугиніовъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Мартина",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "mother": {
+     "value": "ъНаріянны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8627
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "birth_day": {
+     "value": 3,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "village": {
+     "value": "Теимаръ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "godparents": {
+     "value": "Крестьянъ Антонъ Мартинкусъ съ Анною Францишка Разма Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-03",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-03",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "maiden_name": {
+     "value": "Маловны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9896,
+     "alt": {
+      "value": "и",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Ругиніовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9722,
+     "alt": {
+      "value": "МаловныРугиніовъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Антонъ Мартинкусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "godmother": {
+     "value": "Анною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "godmother_status": {
+     "value": "Францишка Разма Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9722
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ шестого года Декабря третяго дня въ Салантовскомъ Приходскомъ Римско-Католическомъ Костелѣ мѣ стнымъ Викарнымъ Ксендзомъ Коспрімъ Януетевичемъ окрещенъ младенецъ именемъ Францишекъ со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Мартина и въ Наріянны урожденной и МаловныРугиніовъ законныхъ Супруговъ сынъ родившійся сего года Декабря третяго дня роутру, Салантовскаго прихода въ Деревни Теимаръ. -",
+    "godparents": "Воспріемниками были Крестьянъ Антонъ Мартинкусъ съ Анною Францишка Разма Супругою. -"
+   }
+  },
+  {
+   "row_id": "0004_L3",
+   "register_year": 1856,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/salantai-1517-1-1/processed/rows/0004_L3.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 3,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Іоанномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9773
+    },
+    "child_name": {
+     "value": "Казимиръ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "estate": {
+     "value": "е-рестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.984
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "дебитовны Мубетговъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Каликсти",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9449
+    },
+    "mother": {
+     "value": "Парбары",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9928
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
+    },
+    "birth_day": {
+     "value": 3,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
+    },
+    "village": {
+     "value": "Немахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9823
+    },
+    "godparents": {
+     "value": "Крестьяна Августинъ Скирутисъ съ Агничшкою Аопріяна Забитли Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-03",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-03",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
+    },
+    "maiden_name": {
+     "value": "дебитовны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9741
+    },
+    "family_surname": {
+     "value": "Мубетговъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9794
+    },
+    "godfather": {
+     "value": "Августинъ Скирутисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother": {
+     "value": "Агничшкою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "godmother_status": {
+     "value": "Аопріяна Забитли Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9832
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ Шестаго Года Декабря третяго дня въ Салантовскомъ Приходскомъ Римско-Католическомъ Кс мѣстнымъ Викарнымъ Клндзомъ Іоанномъ Монкевичемъ Окрещенъ младенецъ Именемъ Казимиръ со всѣми обрядами Таин ства. -",
+    "parents": "е-рестьянъ Каликсти Парбары урожденной дебитовны Мубетговъ законныхъ Супруговъ сынъ, родивсшійся сго года Декабря третьяго дня всчеромъ Салантовскаго Приховъ. Деревни Немахъ. -",
+    "godparents": "Воспріемниками были Крестьяна Августинъ Скирутисъ съ Агничшкою Аопріяна Забитли Супругою"
+   }
+  },
+  {
+   "row_id": "0004_L4",
+   "register_year": 1856,
+   "scan": 4,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "validation",
+   "image": "data/salantai-1517-1-1/processed/rows/0004_L4.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 16,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Іоснномъ Мон кевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9785
+    },
+    "child_name": {
+     "value": "Аполонія",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "иЖаиміовна Венковъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозефа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "mother": {
+     "value": "цероники",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "sex": {
+     "value": "F",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9353
+    },
+    "birth_day": {
+     "value": 16,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9353
+    },
+    "village": {
+     "value": "Гарздзахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9926
+    },
+    "godparents": {
+     "value": "Крестьяна Франциешекъ Жейммъ съ Аполоніею Леона Эгяинскаго Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-16",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-16",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9353
+    },
+    "maiden_name": {
+     "value": "иЖаиміовна",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9739
+    },
+    "family_surname": {
+     "value": "Венковъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.991
+    },
+    "godfather": {
+     "value": "Франциешекъ Жейммъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Аполоніею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "godmother_status": {
+     "value": "Леона Эгяинскаго Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9783
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ Шестаго Года Декабря шестнадцатого дня въ Салантовскомъ Приходскомъ Римско-Китолическомъ Костелѣ, мѣстнымъ Викарнымъ Кондзомъ Іоснномъ Мон кевичемъ окрещенъ Младенецъ именемъ Аполонія со всѣми обрядами Таинства и",
+    "parents": "Крестьянъ Іозефа и цероники урожденной иЖаиміовна Венковъ законныхъ Супруговъ дочъ, родив шаяся сю хода Декабря щестадцатого дня поупру алантовскаго Прихос въ Деревни Гарздзахъ -",
+    "godparents": "Воспріемниками были Крестьяна Франциешекъ Жейммъ съ Аполоніею Леона Эгяинскаго Супругою. - - -"
+   }
+  },
+  {
+   "row_id": "0005_L1",
+   "register_year": 1856,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/salantai-1517-1-1/processed/rows/0005_L1.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 20,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Каспромъ Апушевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9201
+    },
+    "child_name": {
+     "value": "Доминикъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Бончковско Монствиловъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "mother": {
+     "value": "М.ны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9905,
+     "alt": {
+      "value": "ны",
+      "by": "rules"
+     }
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "birth_day": {
+     "value": 20,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "village": {
+     "value": "Орлянахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9927
+    },
+    "godparents": {
+     "value": "Крестьяни Іисефъ Нармонтъ съ Бар барою Іозиефа Байтупа Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-20",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-20",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "maiden_name": {
+     "value": "Бончковско",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9956
+    },
+    "family_surname": {
+     "value": "Монствиловъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9918
+    },
+    "godfather": {
+     "value": "Іисефъ Нармонтъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother": {
+     "value": "Бар барою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godmother_status": {
+     "value": "Іозиефа Байтупа Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9801
+    }
+   },
+   "text": {
+    "baptism": "Тасяча В осемсотъ Пятьдесятъ шестого года Декабря двадцатого дня въ Салантовскомъ Приходскомъ РимскоКотолическомъ Костелѣ, мѣстнымъ Викарнымъ Киндзомъ Каспромъ Апушевичемъ окрещенъ младенецъ Именемъ Доминикъ со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Антона и М. ны урожденной Бончковско Монствиловъ за конныхъ Супруговъ сынъ родившійся сего Года Декабря двадцатаго дня поутру Салантовскаго Прихода въ Деревни Орлянахъ. -",
+    "godparents": "Воспріемниками были Крестьяни Іисефъ Нармонтъ съ Бар барою Іозиефа Байтупа Супругою. -"
+   }
+  },
+  {
+   "row_id": "0005_L2",
+   "register_year": 1856,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/salantai-1517-1-1/processed/rows/0005_L2.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 21,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Коспромъ Янушевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9346
+    },
+    "child_name": {
+     "value": "Іозефъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9869
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Бар ташіовны Мейміов",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Стефана",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "mother": {
+     "value": "Петронслли",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9135
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "birth_day": {
+     "value": 21,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "village": {
+     "value": "Гарденахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
+    },
+    "godparents": {
+     "value": "Крестьяни Іозефъ Барташюсъ съ Петро неллею Антони Кнюстиса Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-21",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-21",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "maiden_name": {
+     "value": "Бар ташіовны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9932
+    },
+    "family_surname": {
+     "value": "Мейміов",
+     "source": "model",
+     "by": "both",
+     "conf": 0.989
+    },
+    "godfather": {
+     "value": "Іозефъ Барташюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "godmother": {
+     "value": "Петро неллею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
+    },
+    "godmother_status": {
+     "value": "Антони Кнюстиса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9851
+    }
+   },
+   "text": {
+    "baptism": "Тасяча Восемсотъ Пятьдесятъ шестого года Декабря двадцать первого дня въ Салантовскомъ Приходскомъ РимскоКотолическомъ Костелѣ, мѣстнымъ Викарнымъ Ксендзомъ Коспромъ Янушевичемъ окрещенъ младенецъ Именемъ Іозефъ со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Стефана и Петронслл и урожденной Бар ташіовны Мейміов законныхъ Супруговъ сынъ родившійся сего Года Декобря двадцать первого дня поутру, Салантовскаго Прихода въ Деревни Гарденахъ. -",
+    "godparents": "Воспріемниками были Крестьяни Іозефъ Барташюсъ съ Петро неллею Антони Кнюстиса Супругою"
+   }
+  },
+  {
+   "row_id": "0005_L3",
+   "register_year": 1856,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/salantai-1517-1-1/processed/rows/0005_L3.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 26,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Іоанномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.979
+    },
+    "child_name": {
+     "value": "Магдалена",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "АнужіовныКнюкштов",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозефа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "mother": {
+     "value": "Витвартыны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9967
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9939
+    },
+    "birth_day": {
+     "value": 26,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9939
+    },
+    "godparents": {
+     "value": "Крестьянъ Іосифъ Сымайтисъ съ Антониною Ануровною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-26",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-26",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9939
+    },
+    "maiden_name": {
+     "value": "Анужіовны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9873,
+     "alt": {
+      "value": "АнужіовныКнюкштов",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Кнюкштов",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9831
+    },
+    "village": {
+     "value": "Барздзяхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9771
+    },
+    "godfather": {
+     "value": "Іосифъ Сымайтисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
+    },
+    "godmother": {
+     "value": "Антониною Ануровною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9913
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Патьдесятъ шестого Года Декабря двадцать шестого дня въ Салантовскомъ Приходскомъ Римско-Католическомъ Костелѣ мѣстнымъ Викарнымъ Ксендзомъ Іоанномъ Монкевичемъ окрещенъ младенецъ именемъ Магдалена со всѣми обряда ми Таинства. -",
+    "parents": "Крестьянъ Іозефа и Витвартыны урожденной АнужіовныКнюкштов законныхъ Супруговъ дичъ родившаяся сего Года Декабря двадцать шестого дня около полудня, Салантовскаго Прихода ы дсвни Барздзяхъ",
+    "godparents": "Воспріемниками были Крестьянъ Іосифъ Сымайтисъ съ Антониною Ануровною дѣвицею. -"
+   }
+  },
+  {
+   "row_id": "0005_L4",
+   "register_year": 1856,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/salantai-1517-1-1/processed/rows/0005_L4.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "ІоанномКевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9808
+    },
+    "child_name": {
+     "value": "Францишекъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "estate": {
+     "value": "нъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8919
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Вен ковны Якштовъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозефа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
+    },
+    "mother": {
+     "value": "Кетроксяли",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "village": {
+     "value": "Тугахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9939
+    },
+    "godparents": {
+     "value": "Косндзъ Іоанъ Монкевичъ съ Крестьянкою Агнышкою Венцковною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Вен ковны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9856
+    },
+    "family_surname": {
+     "value": "Якштовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9823
+    },
+    "godfather": {
+     "value": "Іоанъ Монкевичъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9968,
+     "alt": {
+      "value": "Косндзъ Іоанъ Монкевичъ",
+      "by": "rules"
+     }
+    },
+    "godmother": {
+     "value": "Агнышкою Венцковною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.984
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9974
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9974
+    },
+    "birth_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9974
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Патьдесятъ шестого года Декабря двадцать востого дня въ Салантовскомъ Приходскомъ Римско Котолическомъ Костелѣ мѣстномъ Викарнымъ Ксендзомъ ІоанномКевичемъ окрещенъ младенецъ именемъ Францишекъ со всѣми обрядами Таинства -",
+    "parents": "нъ Іозефа и Кетроксяли урожденной Вен ковны Якштовъ законныхъ Супруговъ сынъ вдашійся сего Года Декября двадцать востаго дня поутру. Салантовскаго Прихода въ Деревни Тугахъ. -",
+    "godparents": "Воспріемниками были Косндзъ Іоанъ Монкевичъ съ Крестьянкою Агнышкою Венцковною дѣвицею. - -"
+   }
+  },
+  {
+   "row_id": "0005_L5",
+   "register_year": 1856,
+   "scan": 5,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "test",
+   "image": "data/salantai-1517-1-1/processed/rows/0005_L5.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Каспромъ Янушевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9186
+    },
+    "child_name": {
+     "value": "Антонъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9962
+    },
+    "estate": {
+     "value": "Крестьинъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Прыхаинтовны ъ Петровскихъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Іозефа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "mother": {
+     "value": "Улеоноры",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "village": {
+     "value": "Кулигодахъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9934
+    },
+    "godparents": {
+     "value": "Крестьянъ Антонъ Вайчюсъ съ Луціею Францишка Рымику и Супругою",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "maiden_name": {
+     "value": "Прыхаинтовны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9936
+    },
+    "family_surname": {
+     "value": "Петровскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9886
+    },
+    "godfather": {
+     "value": "Антонъ Вайчюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "godmother": {
+     "value": "Луціею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "godmother_status": {
+     "value": "Францишка Рымику и Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Пятьдесятъ ше-- стого Года Декабря двадцать восма дня въ Салантовскомъ Приходскомъ Римско-Католическомъ Костелѣ мѣстнымъ Викарнымъ Ксендзомъ Каспромъ Янушевичемъ Окрещенъ Младенецъ именемъ Антонъ со всѣми обрядами Таинства",
+    "parents": "Крестьинъ Іозефа и Улеоноры урожденной Прыхаинтовны ъ Петровскихъ законныхъ Супругявъ сынъ, родив шійся сего Года ДДекабря двадцать восемого дняпоутру. Саланто вскаго Прихода ввъ Деревни Кулигодахъ. -",
+    "godparents": "Воспріемниками были Крестьянъ Антонъ Вайчюсъ съ Луціею Францишка Рымику и Супругою. -"
+   }
+  },
+  {
+   "row_id": "0006_L1",
+   "register_year": 1856,
+   "scan": 6,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0006_L1.jpg",
+   "split_from": null,
+   "heading": null,
+   "heading_month": null,
+   "fields": {
+    "baptism_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": 28,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Іоанномъ Монкевичемъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9762
+    },
+    "child_name": {
+     "value": "Іергнви-Антонъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9575
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Матуговна Василевскихъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 12,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "birth_day": {
+     "value": 28,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "village": {
+     "value": "Бай дотатъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8594
+    },
+    "godparents": {
+     "value": "Крестьянъ Іоатимъ Васмевскій съ розаліею Бейнаровною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1856-12-28",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "maiden_name": {
+     "value": "Матуговна",
+     "source": "model",
+     "by": "both",
+     "conf": 0.996
+    },
+    "family_surname": {
+     "value": "Василевскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9901
+    },
+    "godfather": {
+     "value": "Іоатимъ Васмевскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "godmother": {
+     "value": "розаліею Бейнаровною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.986
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    }
+   },
+   "text": {
+    "baptism": "Тысяча Восемсотъ Патьдесятъ шестаго года Декабря двадцать восмаго дня хъ Салантовскомъ Приходскомъ Римско- Католическомъ Костелѣринстнымъ Викарнымъ Ксендзомъ Іоанномъ Монкевичемъ окрещенъ младенецъ Именами Іергнви - Антонъ со всѣми обрядами Таинства1857. Іодъ.",
+    "parents": "Крестьянъ Антона и Анны урожденной Матуговна Василевскихъ законныхъ Су пруговъ сынъ, родившіій сего Года Декабря двад цать восемого дня поер ру, Салантовскаго Бра хода въ Деревни Бай дотатъ. - Мысяцъ.",
+    "godparents": "Виспріемниками были Крестьянъ Іоатимъ Васмевскій съ розаліею Бейнаровною дѣвицею. -"
+   }
+  }
+ ]
+}

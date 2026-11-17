@@ -1,0 +1,6589 @@
+{
+ "draft": "data/salantai-1517-1-1/processed/year_draft_1862_crnn-ru-v4.json",
+ "model": "/mnt/ssd240gb/anna/samogitia-htr/models/field-tagger-v1/char__none__s1.pt",
+ "model_md5": "3b08c544db6fd73c3d97de6ddd920833",
+ "fields": [
+  "BAPT_DATE",
+  "PRIEST",
+  "CHILD",
+  "ESTATE",
+  "TOWNSHIP",
+  "FATHER",
+  "MOTHER",
+  "MAIDEN",
+  "SURNAME",
+  "BIRTH_DATE",
+  "VILLAGE",
+  "GODFATHER",
+  "GODMOTHER",
+  "GM_STATUS"
+ ],
+ "entries": [
+  {
+   "row_id": "0116_L6",
+   "hash": {
+    "baptism": "11858e677752",
+    "parents": "8537e17455d9",
+    "godparents": "5d713675c9c8"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 58,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго года Января второвдня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 120,
+     "e": 132,
+     "text": "Ллгдскимъ Ви",
+     "conf": 0.9017
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 172,
+     "e": 188,
+     "text": "еонольс Доминикъ",
+     "conf": 0.9712
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Долимиком",
+     "conf": 0.9735
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 30,
+     "text": "Петронелій",
+     "conf": 0.9945
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 54,
+     "text": "Станкусовной",
+     "conf": 0.9964
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 55,
+     "e": 67,
+     "text": "Венцлавстихъ",
+     "conf": 0.9896
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 102,
+     "e": 127,
+     "text": "1862. года Января 1го дня",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 149,
+     "text": "Бурбайцятъ",
+     "conf": 0.9968
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 29,
+     "e": 47,
+     "text": "Матвей Лисоевичъ ъ",
+     "conf": 0.9672
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 74,
+     "text": "Каролинною Болондревною",
+     "conf": 0.9904
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 75,
+     "e": 82,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0117_L2",
+   "hash": {
+    "baptism": "4f321495f0b0",
+    "parents": "cd15924992a8",
+    "godparents": "f700371dd51a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 60,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января шестаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 133,
+     "e": 150,
+     "text": "Іосифомъ Дамскимъ",
+     "conf": 0.9762
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 180,
+     "text": "Антоній",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Антона",
+     "conf": 0.9975
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 24,
+     "text": "Ан ны",
+     "conf": 0.9886
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 36,
+     "e": 49,
+     "text": "Берташюсовной",
+     "conf": 0.9961
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 60,
+     "text": "Венцкусовъ",
+     "conf": 0.9909
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 97,
+     "e": 123,
+     "text": "1862. года Янва ря 6го дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 135,
+     "e": 148,
+     "text": "Клавъ гатвохъ",
+     "conf": 0.9359
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 48,
+     "text": "Доминикъ Берташісъ",
+     "conf": 0.9977
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 61,
+     "text": "Антониною",
+     "conf": 0.9968
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 88,
+     "text": "Вавртенца Вешкуса Супругою",
+     "conf": 0.9889
+    }
+   ]
+  },
+  {
+   "row_id": "0117_L3",
+   "hash": {
+    "baptism": "a58528a8b25e",
+    "parents": "e8a959c7f1b1",
+    "godparents": "5ee02594511e"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 66,
+     "text": "Тысяча восемсотъ шестьдесятъ второг года Января четырнадцатаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 143,
+     "e": 161,
+     "text": "Яномъ Арвасевичемъ",
+     "conf": 0.9583
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 184,
+     "e": 191,
+     "text": "Агнешка",
+     "conf": 0.9975
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Іосифа",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 28,
+     "text": "Марціямны",
+     "conf": 0.9983
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 49,
+     "text": "Янковской",
+     "conf": 0.9925
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 60,
+     "text": "Миламюсовъ",
+     "conf": 0.9894
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 96,
+     "e": 123,
+     "text": "1862. года Янва ря 19го дня",
+     "conf": 0.9988
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 144,
+     "text": "на срянахъ",
+     "conf": 0.9293
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 25,
+     "e": 40,
+     "text": "Кантонъ Вайнюсъ",
+     "conf": 0.9959
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 44,
+     "e": 66,
+     "text": "Петронелею Миламсовною",
+     "conf": 0.9902
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 67,
+     "e": 74,
+     "text": "дѣвицею",
+     "conf": 0.9995
+    }
+   ]
+  },
+  {
+   "row_id": "0117_L4",
+   "hash": {
+    "baptism": "644426f05189",
+    "parents": "eb1abad8923f",
+    "godparents": "aa2a48560b4a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января четырнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 158,
+     "text": "Янылъ Арвасевичемъ",
+     "conf": 0.966
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 182,
+     "e": 188,
+     "text": "Іосифъ",
+     "conf": 0.9961
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Іосифа",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 23,
+     "text": "Анны",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 46,
+     "text": "Кнзкштовцой",
+     "conf": 0.9932
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 47,
+     "e": 56,
+     "text": "Лавнисовъ",
+     "conf": 0.9883
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 89,
+     "e": 115,
+     "text": "1862. года Января 14го дня",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 127,
+     "e": 133,
+     "text": "Пацефъ",
+     "conf": 0.9934
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 47,
+     "text": "Іосифъ Стонкусъ",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 61,
+     "text": "Марціянною",
+     "conf": 0.9967
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 85,
+     "text": "Іосифа ПрейбисоСупругою",
+     "conf": 0.9783
+    }
+   ]
+  },
+  {
+   "row_id": "0117_L5",
+   "hash": {
+    "baptism": "97d58bf17a0f",
+    "parents": "5e72282695e1",
+    "godparents": "85783e7609a5"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "Тысяча восемсотъ шестьдесятъ вторего года Января шестьнга дцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 160,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9734
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 189,
+     "text": "Іосифъ",
+     "conf": 0.9959
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Маться",
+     "conf": 0.9964
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 23,
+     "text": "Анны",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 49,
+     "text": "Филиповичевной",
+     "conf": 0.995
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 61,
+     "text": "Августисовъ",
+     "conf": 0.9902
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 126,
+     "text": "1862 года Января 15го дня",
+     "conf": 0.999
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 138,
+     "e": 145,
+     "text": "Лайвяръ",
+     "conf": 0.9946
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 46,
+     "text": "Геронимъ Милюсъ",
+     "conf": 0.9977
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 55,
+     "text": "Анною",
+     "conf": 0.997
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 56,
+     "e": 77,
+     "text": "Яна Норвяніы супругою",
+     "conf": 0.9388
+    }
+   ]
+  },
+  {
+   "row_id": "0117_L6",
+   "hash": {
+    "baptism": "6e7b788f8c98",
+    "parents": "646b400a2462",
+    "godparents": "90a40b3d397d"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января восемнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 158,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9706
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 181,
+     "e": 196,
+     "text": "Катарина - Анна",
+     "conf": 0.9336
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 10,
+     "text": "Крестьянки",
+     "conf": 0.9997
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 11,
+     "e": 16,
+     "text": "Секли",
+     "conf": 0.9778
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 17,
+     "e": 27,
+     "text": "Навловской",
+     "conf": 0.6823
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 71,
+     "e": 97,
+     "text": "1862. года Января 17го дня",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 109,
+     "e": 115,
+     "text": "Тузахъ",
+     "conf": 0.9914
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 48,
+     "text": "Тоташъ Нов ловскій",
+     "conf": 0.9968
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 62,
+     "text": "Каторинною",
+     "conf": 0.9944
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 63,
+     "e": 86,
+     "text": "Рилина сѣбрыма Супругою",
+     "conf": 0.983
+    }
+   ]
+  },
+  {
+   "row_id": "0118_L2",
+   "hash": {
+    "baptism": "6fb1eb54f215",
+    "parents": "5189a20a9796",
+    "godparents": "32e47e049408"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января двадцать второго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 159,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.976
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 182,
+     "e": 191,
+     "text": "Аполіонія",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишка",
+     "conf": 0.9871
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 28,
+     "text": "Аполіоніи",
+     "conf": 0.8986
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 49,
+     "text": "Леаневной",
+     "conf": 0.9959
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 56,
+     "text": "Яксовъ",
+     "conf": 0.9875
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 92,
+     "e": 117,
+     "text": "1862. года Января 22. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 129,
+     "e": 139,
+     "text": "едговдзяхъ",
+     "conf": 0.9893
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 49,
+     "text": "Казимиръ Виршшелій",
+     "conf": 0.9984
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 53,
+     "e": 67,
+     "text": "Анною Лановною",
+     "conf": 0.9896
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 68,
+     "e": 75,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0118_L3",
+   "hash": {
+    "baptism": "dc6f682fa42b",
+    "parents": "4a78bce67cc9",
+    "godparents": "b08cc5a4c38a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "Тысяча восемсотъ шестьдесятъ виораго года Января двадеать втораго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 159,
+     "text": "Іосифомъ Замснемъ",
+     "conf": 0.9742
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 182,
+     "e": 190,
+     "text": "Маріянна",
+     "conf": 0.9984
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 15,
+     "text": "Петра",
+     "conf": 0.9962
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 27,
+     "text": "фелиціяты",
+     "conf": 0.9961
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 39,
+     "e": 51,
+     "text": "Миц кусовной",
+     "conf": 0.9937
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 52,
+     "e": 65,
+     "text": "Пакальнишкисо",
+     "conf": 0.989
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 126,
+     "text": "1862 года Января 22го дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 148,
+     "text": "Салонотъи",
+     "conf": 0.9321
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 49,
+     "text": "Іосифъ Рафаловичъ",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 63,
+     "e": 86,
+     "text": "Маріянною Монцеыччвноюо",
+     "conf": 0.9626
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 87,
+     "e": 95,
+     "text": "дѣви цею",
+     "conf": 0.9982
+    }
+   ]
+  },
+  {
+   "row_id": "0118_L4",
+   "hash": {
+    "baptism": "3af586ed8950",
+    "parents": "f07d577e75c4",
+    "godparents": "9627e7d08af7"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января двадцать пятаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 158,
+     "text": "Іосифомъ Замоніемъ",
+     "conf": 0.9693
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 182,
+     "e": 188,
+     "text": "Моника",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Іосифай",
+     "conf": 0.9607
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 24,
+     "text": "Приули",
+     "conf": 0.9957
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 36,
+     "e": 48,
+     "text": "Грыцгосо ной",
+     "conf": 0.9873
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 59,
+     "text": "Стропусовъ",
+     "conf": 0.988
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 93,
+     "e": 119,
+     "text": "1802. года Января 24го дня",
+     "conf": 0.999
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 131,
+     "e": 139,
+     "text": "Орлянахъ",
+     "conf": 0.9887
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 47,
+     "text": "Янъ Кеотровскій",
+     "conf": 0.9965
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 69,
+     "text": "Молиною Строповною",
+     "conf": 0.9888
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 70,
+     "e": 77,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0118_L5",
+   "hash": {
+    "baptism": "e41bc7004950",
+    "parents": "e0109084902a",
+    "godparents": "e4ca9f065964"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ о года Января двадцать пятаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 151,
+     "text": "Іосифомъ Залесимъ",
+     "conf": 0.9732
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 183,
+     "text": "Францишекъ",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 0,
+     "e": 4,
+     "text": "КЯна",
+     "conf": 0.9316
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 7,
+     "e": 14,
+     "text": "Лонарды",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 26,
+     "e": 37,
+     "text": "Багдоновной",
+     "conf": 0.995
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 38,
+     "e": 45,
+     "text": "Линдовъ",
+     "conf": 0.9887
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 82,
+     "e": 106,
+     "text": "1862 года Января 25. дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 110,
+     "e": 128,
+     "text": "Мѣстечкѣ салантохъ",
+     "conf": 0.8121
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 50,
+     "text": "Францининъ Бружасъ",
+     "conf": 0.9979
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 54,
+     "e": 74,
+     "text": "Барбарого Жельвовною",
+     "conf": 0.9819
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 74,
+     "e": 81,
+     "text": "дѣвицею",
+     "conf": 0.991
+    }
+   ]
+  },
+  {
+   "row_id": "0118_L6",
+   "hash": {
+    "baptism": "72e7465c7e8d",
+    "parents": "20c611232ffb",
+    "godparents": "e4f0d8476721"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ порого Года Января двадцать семаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 155,
+     "text": "Іосифомъ Залески",
+     "conf": 0.9699
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 178,
+     "e": 184,
+     "text": "Іосифъ",
+     "conf": 0.9953
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 8,
+     "text": "Дворятнъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 9,
+     "e": 15,
+     "text": "Іосифа",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 26,
+     "text": "Антонины",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 38,
+     "e": 52,
+     "text": "Лякстутисовной",
+     "conf": 0.9951
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 63,
+     "text": "Вискантовъ",
+     "conf": 0.9888
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 125,
+     "text": "1862. года Января 27 дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 135,
+     "e": 142,
+     "text": "Лайвяхъ",
+     "conf": 0.9915
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 52,
+     "text": "Францименъ Барановскій",
+     "conf": 0.998
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 56,
+     "e": 82,
+     "text": "Барбарою Казбарой тисовною",
+     "conf": 0.963
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 83,
+     "e": 90,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0119_L2",
+   "hash": {
+    "baptism": "c1d985636ccd",
+    "parents": "3121ba44e559",
+    "godparents": "7083c911472a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Января двади Тридцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 144,
+     "e": 163,
+     "text": "Яномъ Арвасевиичемъ",
+     "conf": 0.9612
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 186,
+     "e": 192,
+     "text": "Іелена",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "феликса",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 25,
+     "text": "Пеены",
+     "conf": 0.9985
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 49,
+     "text": "Мицкусов ной",
+     "conf": 0.9897
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 62,
+     "text": "Сендровскихъ",
+     "conf": 0.9894
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 99,
+     "e": 123,
+     "text": "1862 года Января 29. дня",
+     "conf": 0.999
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 135,
+     "e": 144,
+     "text": "Баргаляхъ",
+     "conf": 0.9915
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Симеонъ =Мицкусъ",
+     "conf": 0.9962
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 66,
+     "text": "Анною Сендровсою",
+     "conf": 0.9894
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 67,
+     "e": 74,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0119_L3",
+   "hash": {
+    "baptism": "f29e256ad433",
+    "parents": "fc002296ad6d",
+    "godparents": "c5406d80ac9e"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шесьдесятъ второго Года Января тридцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 152,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.972
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 179,
+     "text": "Агешка",
+     "conf": 0.9974
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишка",
+     "conf": 0.9968
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 30,
+     "text": "Людовики",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 56,
+     "text": "Филиновсчевной",
+     "conf": 0.9953
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 57,
+     "e": 66,
+     "text": "Туроскихъ",
+     "conf": 0.9909
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 102,
+     "e": 125,
+     "text": "1862 года Января 22 дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 137,
+     "e": 147,
+     "text": "Кулисодоръ",
+     "conf": 0.9932
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 48,
+     "text": "Казимиръ Домаркосъ",
+     "conf": 0.9983
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 57,
+     "text": "Анною",
+     "conf": 0.997
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 58,
+     "e": 82,
+     "text": "Іосифа Прейднеа Супругою",
+     "conf": 0.9817
+    }
+   ]
+  },
+  {
+   "row_id": "0119_L4",
+   "hash": {
+    "baptism": "81322d4b1315",
+    "parents": "112e57b4b3b1",
+    "godparents": "390eb3ba7bc0"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 60,
+     "text": "Тысяча восемсотъ шестьдесятъ второго ода Февраля перваго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 133,
+     "e": 145,
+     "text": "Арвасевичемъ",
+     "conf": 0.9793
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 168,
+     "e": 177,
+     "text": "Петронеля",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Антона",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 23,
+     "text": "Анны",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 45,
+     "text": "Рамоновной",
+     "conf": 0.9956
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 46,
+     "e": 57,
+     "text": "Козловскихъ",
+     "conf": 0.9894
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 90,
+     "e": 115,
+     "text": "1862. года Февраля 1. дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 127,
+     "e": 133,
+     "text": "Тузохъ",
+     "conf": 0.9943
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 45,
+     "text": "Янъ розиовскій",
+     "conf": 0.9948
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 59,
+     "text": "Петронелею",
+     "conf": 0.9983
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 60,
+     "e": 87,
+     "text": "Іосифа Труй кевсча Супругою",
+     "conf": 0.9909
+    }
+   ]
+  },
+  {
+   "row_id": "0119_L5",
+   "hash": {
+    "baptism": "ec0b30d1857e",
+    "parents": "47577b351d11",
+    "godparents": "3c8ceecc68bf"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 61,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго года февраля второго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 152,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9719
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 175,
+     "e": 191,
+     "text": "Суонимъ - Іосифъ",
+     "conf": 0.9401
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Марціяна",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 25,
+     "text": "Анны",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 49,
+     "text": "Висконтовной",
+     "conf": 0.9942
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 56,
+     "text": "Яссовъ",
+     "conf": 0.9879
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 91,
+     "e": 116,
+     "text": "1862. года февраля 12 дня",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 128,
+     "e": 141,
+     "text": "Клавъ гальахъ",
+     "conf": 0.9651
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 45,
+     "text": "Антоній Вецкусъ",
+     "conf": 0.9966
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 72,
+     "text": "Каролиною Берташюсового",
+     "conf": 0.9743
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 73,
+     "e": 79,
+     "text": "вдовою",
+     "conf": 0.997
+    }
+   ]
+  },
+  {
+   "row_id": "0119_L6",
+   "hash": {
+    "baptism": "ceb1b8991632",
+    "parents": "37b685239ba4",
+    "godparents": "818d79f641f7"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 61,
+     "text": "Тысяча восемсотъ шестьдесятъ орова года Февраля чтвертаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 152,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9808
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Іосифъ",
+     "conf": 0.9958
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 26,
+     "text": "Юліянны",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 38,
+     "e": 50,
+     "text": "Станкусовной",
+     "conf": 0.9962
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 51,
+     "e": 60,
+     "text": "Миктосовъ",
+     "conf": 0.9908
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 97,
+     "e": 113,
+     "text": "1862. года февра",
+     "conf": 0.9743
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 29,
+     "e": 45,
+     "text": "Іосифъ Каминскій",
+     "conf": 0.998
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 70,
+     "text": "Магдаленною Францишна",
+     "conf": 0.9247
+    }
+   ]
+  },
+  {
+   "row_id": "0120_L2",
+   "hash": {
+    "baptism": "33930035c310",
+    "parents": "065320d587f5",
+    "godparents": "8928b8c37215"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 60,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Февраля пятаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 132,
+     "e": 150,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9727
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 183,
+     "text": "Францишекъ",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 11,
+     "text": "Давинстняго",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 12,
+     "e": 29,
+     "text": "Сондата Францишка",
+     "conf": 0.9096
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 32,
+     "e": 36,
+     "text": "Анны",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 48,
+     "e": 58,
+     "text": "Ветошевной",
+     "conf": 0.9955
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 59,
+     "e": 69,
+     "text": "Нарвиліовъ",
+     "conf": 0.9885
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 107,
+     "e": 132,
+     "text": "1862 года февраля 5го дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 144,
+     "e": 153,
+     "text": "Юдупянохъ",
+     "conf": 0.9931
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 39,
+     "text": "Янъ Кинфа",
+     "conf": 0.9953
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 43,
+     "e": 61,
+     "text": "Анною Беа нюшевною",
+     "conf": 0.9841
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 69,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0120_L4",
+   "hash": {
+    "baptism": "6533647633df",
+    "parents": "08788c144fdb",
+    "godparents": "2180e13b1c4d"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 61,
+     "text": "Тысяча восемсотъ шестьдесятъ второго ода Февраля восьмаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 133,
+     "e": 150,
+     "text": "Іосифомъ Галскимъ",
+     "conf": 0.9722
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 179,
+     "text": "Юліянъ",
+     "conf": 0.9965
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Микаста",
+     "conf": 0.9983
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 28,
+     "text": "Катарины",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 50,
+     "text": "Яки товной",
+     "conf": 0.9892
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 51,
+     "e": 63,
+     "text": "Спсулькисовъ",
+     "conf": 0.9857
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 127,
+     "text": "1862. года Февраля 8го дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 146,
+     "text": "Лайватъ",
+     "conf": 0.9963
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Адамъ Стоюойтись",
+     "conf": 0.9961
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 61,
+     "text": "Анолипаріею",
+     "conf": 0.9972
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 84,
+     "text": "Іосифа Якш та Супругою",
+     "conf": 0.9823
+    }
+   ]
+  },
+  {
+   "row_id": "0120_L5",
+   "hash": {
+    "baptism": "934bd730877e",
+    "parents": "e66f24e504f0",
+    "godparents": "4165f2aac8ea"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 65,
+     "text": "Тысяча восемсотъ шестьдесятъ второгогода Февраля дванадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 160,
+     "text": "Яномъ Арвасевичемъ",
+     "conf": 0.958
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 187,
+     "text": "Анна",
+     "conf": 0.9969
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишка",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 31,
+     "text": "Аоліоніий",
+     "conf": 0.9972
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 43,
+     "e": 56,
+     "text": "Іоыейкисовной",
+     "conf": 0.9966
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 57,
+     "e": 70,
+     "text": "Касперовичевъ",
+     "conf": 0.9908
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 106,
+     "e": 122,
+     "text": "1862. года Февра",
+     "conf": 0.9802
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 135,
+     "e": 142,
+     "text": "Лайвстъ",
+     "conf": 0.9946
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Іосифъ Пушкорюсъ",
+     "conf": 0.9975
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 57,
+     "text": "Анною м",
+     "conf": 0.8298
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 57,
+     "e": 83,
+     "text": "атеумо Пучинскаго супругою",
+     "conf": 0.8646
+    }
+   ]
+  },
+  {
+   "row_id": "0120_L6",
+   "hash": {
+    "baptism": "ac45e4abc523",
+    "parents": "12a384b52f44",
+    "godparents": "ee22aa9fcc9f"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ второго Года Февраля итырнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 130,
+     "e": 148,
+     "text": "Іосифомъ Галескимъ",
+     "conf": 0.9698
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 176,
+     "e": 199,
+     "text": "Кау Янъ, дай Ма гдалена",
+     "conf": 0.842
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 10,
+     "text": "Крестьянии",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 11,
+     "e": 20,
+     "text": "Петронеми",
+     "conf": 0.9937
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 21,
+     "e": 33,
+     "text": "Брхоздовской",
+     "conf": 0.7931
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 62,
+     "e": 88,
+     "text": "1862. года Февраля 11. дня",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 100,
+     "e": 106,
+     "text": "Ренеци",
+     "conf": 0.9965
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 34,
+     "e": 53,
+     "text": "Іосифъ Микалов скій",
+     "conf": 0.9949
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 57,
+     "e": 78,
+     "text": "Петронелею Стротовною",
+     "conf": 0.9722
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 79,
+     "e": 86,
+     "text": "дѣвицею",
+     "conf": 0.8912
+    }
+   ]
+  },
+  {
+   "row_id": "0120_L7",
+   "hash": {
+    "baptism": "e9c79f03e9cf",
+    "parents": "f7a574f7ab4a",
+    "godparents": "93f6a46bf2c2"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 65,
+     "text": "Тысяча восемсотъ шестьдесятъвторою ода Февраля четырнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 137,
+     "e": 154,
+     "text": "Іосифомъ Самскимъ",
+     "conf": 0.9465
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 176,
+     "e": 183,
+     "text": "Антоній",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Іосифа",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 26,
+     "text": "Барбары",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 38,
+     "e": 48,
+     "text": "Бснюловной",
+     "conf": 0.9953
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 60,
+     "text": "Шаблинскихъ",
+     "conf": 0.9913
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 95,
+     "e": 120,
+     "text": "1862 года Февраля 14годня",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 132,
+     "e": 138,
+     "text": "Пельди",
+     "conf": 0.9966
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 33,
+     "e": 48,
+     "text": "Казимиръ Висмлъ",
+     "conf": 0.9979
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 68,
+     "text": "Анцею Тентлевною",
+     "conf": 0.989
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 68,
+     "e": 76,
+     "text": "ддѣвицею",
+     "conf": 0.9733
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L2",
+   "hash": {
+    "baptism": "47af40141c44",
+    "parents": "c1eab47897c7",
+    "godparents": "43a1cd37e262"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 36,
+     "e": 54,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9262
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 77,
+     "e": 85,
+     "text": "Казимиръ",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 6,
+     "e": 9,
+     "text": "овъ",
+     "conf": 0.4333
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 24,
+     "e": 50,
+     "text": "1862. года Февраля 15. дня",
+     "conf": 0.9946
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 62,
+     "e": 71,
+     "text": "Юдунянохъ",
+     "conf": 0.9881
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 6,
+     "e": 29,
+     "text": "Казимиа Судиса супругою",
+     "conf": 0.459
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L3",
+   "hash": {
+    "baptism": "c28f048995c1",
+    "parents": "40687b57a2da",
+    "godparents": "adb3ce6a012d"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Февраля восемнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 141,
+     "e": 159,
+     "text": "Іосифомъ Залестимъ",
+     "conf": 0.9726
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 189,
+     "text": "Гелена",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 10,
+     "text": "Крестьянни",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 11,
+     "e": 28,
+     "text": "Барбары Кентровны",
+     "conf": 0.7753
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 70,
+     "e": 95,
+     "text": "1862. года Февраля 18 дня",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 107,
+     "e": 115,
+     "text": "Кулаляхъ",
+     "conf": 0.9929
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 50,
+     "text": "Францишенъ Матулисъ",
+     "conf": 0.9983
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 54,
+     "e": 72,
+     "text": "Марціянною Канавою",
+     "conf": 0.9896
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 73,
+     "e": 79,
+     "text": "вдовою",
+     "conf": 0.9973
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L5",
+   "hash": {
+    "baptism": "cc51eeb87939",
+    "parents": "c03232afca3f",
+    "godparents": "cce95519392d"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "Тысяча восемсотъ шестьдесятъ второго Года Февраля девятнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 158,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9704
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 181,
+     "e": 188,
+     "text": "Барбара",
+     "conf": 0.9985
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Тадеурша",
+     "conf": 0.9961
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 28,
+     "text": "Тео доры",
+     "conf": 0.9907
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 54,
+     "text": "Филиповичевной",
+     "conf": 0.9964
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 55,
+     "e": 67,
+     "text": "Призайтисавъ",
+     "conf": 0.9896
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 103,
+     "e": 130,
+     "text": "1862. года февра ля 12. дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 142,
+     "e": 151,
+     "text": "Юдурянахъ",
+     "conf": 0.9877
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 33,
+     "e": 49,
+     "text": "Казимиръ Кайрисъ",
+     "conf": 0.9983
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 53,
+     "e": 61,
+     "text": "Барбарою",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 85,
+     "text": "Алексатрооцюся Супругою",
+     "conf": 0.8945
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L6",
+   "hash": {
+    "baptism": "8580c3a36304",
+    "parents": "b9a5624eb55f",
+    "godparents": "163df01748aa"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ возартогода Февраля девятнадцатаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 157,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.971
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 181,
+     "e": 188,
+     "text": "Барбара",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Іосифой",
+     "conf": 0.9852
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 24,
+     "text": "Барбар",
+     "conf": 0.9554
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 36,
+     "e": 48,
+     "text": "Нармонтовной",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 58,
+     "text": "Павлюсовъ",
+     "conf": 0.9909
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 93,
+     "e": 118,
+     "text": "1862. года Февраля 19 дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 130,
+     "e": 139,
+     "text": "Якштамятъ",
+     "conf": 0.9935
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 50,
+     "text": "Іосифъ Піотровскій",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 54,
+     "e": 71,
+     "text": "Анною Буткусовною",
+     "conf": 0.9847
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 72,
+     "e": 79,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L7",
+   "hash": {
+    "baptism": "a1c0c1a1a24f",
+    "parents": "a3e3eca70f32",
+    "godparents": "d4ce5878a301"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Февраля девятнадцатого дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 157,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.9755
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 181,
+     "e": 187,
+     "text": "Беррій",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 15,
+     "text": "Леона",
+     "conf": 0.9957
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 25,
+     "text": "Розаліи",
+     "conf": 0.9974
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 51,
+     "text": "Сымайтисов ной",
+     "conf": 0.9912
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 52,
+     "e": 62,
+     "text": "Рамонасовъ",
+     "conf": 0.9868
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 102,
+     "e": 125,
+     "text": "1862. года февра ля дня",
+     "conf": 0.9988
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 137,
+     "e": 145,
+     "text": "Неренохъ",
+     "conf": 0.9935
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 45,
+     "text": "Юліянъ Новицкій",
+     "conf": 0.9971
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 59,
+     "text": "Аполіоніею",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 60,
+     "e": 97,
+     "text": "Крестьянина Адами Атчевскаго супругою",
+     "conf": 0.9941
+    }
+   ]
+  },
+  {
+   "row_id": "0121_L9",
+   "hash": {
+    "baptism": "99e3a39772d5",
+    "parents": "472de58df36c",
+    "godparents": "45ed46124394"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 64,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Февраля двадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 155,
+     "text": "Іосифолѣ дмскимъ",
+     "conf": 0.9873
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 176,
+     "e": 181,
+     "text": "Леонъ",
+     "conf": 0.9641
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 15,
+     "text": "Леона",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 22,
+     "text": "Анны",
+     "conf": 0.9975
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 34,
+     "e": 47,
+     "text": "Дварьіоновнай",
+     "conf": 0.9892
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 48,
+     "e": 59,
+     "text": "Смулькисовъ",
+     "conf": 0.9847
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 97,
+     "e": 122,
+     "text": "1862 года Февраля 20. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 45,
+     "text": "Іервій Виткусъ",
+     "conf": 0.9968
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 58,
+     "text": "Аномоніею",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 59,
+     "e": 82,
+     "text": "Яна Пушкоргоса Супругою",
+     "conf": 0.9717
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L2",
+   "hash": {
+    "baptism": "b72f9330db30",
+    "parents": "24380bdd792c",
+    "godparents": "1e24059e9384"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 64,
+     "text": "Тысяча восемсотъ шестьдесятъ второго. года Февралядвадцатаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 137,
+     "e": 154,
+     "text": "Рсифомъ Залескимъ",
+     "conf": 0.9528
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 177,
+     "e": 184,
+     "text": "Барбара",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Антона",
+     "conf": 0.9971
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 25,
+     "text": "Іогами",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 47,
+     "text": "Іейдровной",
+     "conf": 0.995
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 48,
+     "e": 61,
+     "text": "Двар гонасовъ",
+     "conf": 0.9142
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 96,
+     "e": 122,
+     "text": "1862 года Фе враля 20. дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 140,
+     "text": "Тузахъ",
+     "conf": 0.9917
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 44,
+     "text": "Іосифъ Рійбра",
+     "conf": 0.9972
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 48,
+     "e": 70,
+     "text": "Катариною Дварьоновною",
+     "conf": 0.9827
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 71,
+     "e": 78,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L3",
+   "hash": {
+    "baptism": "b592d1fa125b",
+    "parents": "24e96dba77e2",
+    "godparents": "6c48b97a3125"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 64,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года февраля двадцатаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 157,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9718
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 180,
+     "e": 188,
+     "text": "Марціяна",
+     "conf": 0.9987
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Антона",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 28,
+     "text": "Петронели",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 51,
+     "text": "Томашевской",
+     "conf": 0.9955
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 52,
+     "e": 62,
+     "text": "Давишасовъ",
+     "conf": 0.9926
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 98,
+     "e": 122,
+     "text": "1862 года Февраля 19 дня",
+     "conf": 0.999
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 142,
+     "text": "Сенецяхъ",
+     "conf": 0.9944
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 45,
+     "text": "Антоній Наркусъ",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 56,
+     "text": "Тересою",
+     "conf": 0.9969
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 57,
+     "e": 84,
+     "text": "Микала Павловскаго Супругою",
+     "conf": 0.9897
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L5",
+   "hash": {
+    "baptism": "9a255af5a7b5",
+    "parents": "4d0ec1eaf486",
+    "godparents": "a7425437c414"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "Тысяча восемсотъ шестьдесятъ второга года Февраля двадцатьшестаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 141,
+     "e": 159,
+     "text": "Іосидомъ Залескимъ",
+     "conf": 0.9841
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 182,
+     "e": 188,
+     "text": "Моника",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Долиника",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 30,
+     "text": "Петронели",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 51,
+     "text": "Берневной",
+     "conf": 0.9935
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 52,
+     "e": 61,
+     "text": "Ленкусовъ",
+     "conf": 0.9854
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 96,
+     "e": 122,
+     "text": "1862. года Февраля 25. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 145,
+     "text": "Скавдайцяхъ",
+     "conf": 0.9942
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 48,
+     "text": "Аліонзы охаповскій",
+     "conf": 0.9941
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 75,
+     "text": "Петронелею Прбашюсовною",
+     "conf": 0.9855
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 76,
+     "e": 83,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L6",
+   "hash": {
+    "baptism": "ed35eca03ffb",
+    "parents": "4e35d7620ead",
+    "godparents": "dd30599c7b2f"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 66,
+     "text": "Тысяча восемсотъ шестьдесятъ вотродгода Февраля двадцатьсемаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 158,
+     "text": "Іосидемъ Залескимъ",
+     "conf": 0.9878
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 177,
+     "e": 184,
+     "text": "Барбара",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 2,
+     "text": "бя",
+     "conf": 0.8123
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 4,
+     "e": 14,
+     "text": "ъ Казимира",
+     "conf": 0.9224
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 17,
+     "e": 21,
+     "text": "Анны",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 33,
+     "e": 44,
+     "text": "Меткисо ной",
+     "conf": 0.9932
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 45,
+     "e": 57,
+     "text": "Нуллавдисовъ",
+     "conf": 0.9881
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 91,
+     "e": 116,
+     "text": "1192 года Февраля 27. дня",
+     "conf": 0.9966
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 128,
+     "e": 139,
+     "text": "Якгтойцяхтъ",
+     "conf": 0.9922
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 44,
+     "text": "Іосифъ Руйко",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 48,
+     "e": 68,
+     "text": "Анною Алондерисовною",
+     "conf": 0.9863
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 69,
+     "e": 76,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L8",
+   "hash": {
+    "baptism": "71ab0bd91940",
+    "parents": "520a1bc969de",
+    "godparents": "90d70439fd9a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго года Февраля двадцатьсемаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 156,
+     "e": 165,
+     "text": "Больскиыъ",
+     "conf": 0.9879
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 189,
+     "e": 208,
+     "text": "Алехандеръ - Матвей",
+     "conf": 0.9653
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 7,
+     "text": "Дворянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 8,
+     "e": 15,
+     "text": "Феликса",
+     "conf": 0.9968
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 22,
+     "text": "Анны",
+     "conf": 0.9984
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 34,
+     "e": 42,
+     "text": "Осовской",
+     "conf": 0.9885
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 43,
+     "e": 54,
+     "text": "Понлавскихъ",
+     "conf": 0.9805
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 86,
+     "e": 111,
+     "text": "1862 года Февраля Р4. дня",
+     "conf": 0.9882
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 123,
+     "e": 131,
+     "text": "Геннцяхъ",
+     "conf": 0.9924
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 39,
+     "e": 56,
+     "text": "Казимиръ Бельскій",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 60,
+     "e": 73,
+     "text": "Алексон дрого",
+     "conf": 0.7592
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 74,
+     "e": 114,
+     "text": "Дворянина Болесла ва Абрамовича Супругог",
+     "conf": 0.8395
+    }
+   ]
+  },
+  {
+   "row_id": "0122_L9",
+   "hash": {
+    "baptism": "d4c968b30e78",
+    "parents": "e9eb8332f623",
+    "godparents": "d0fef03ea042"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 71,
+     "text": "Тысяча восемсотъ шестьдесятъ второго Года Февраля двадцать восьмаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 143,
+     "e": 161,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9718
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 187,
+     "text": "Анна",
+     "conf": 0.9964
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишка",
+     "conf": 0.9968
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 30,
+     "text": "Марія мы",
+     "conf": 0.9904
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 55,
+     "text": "Мартавичевной",
+     "conf": 0.9959
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 56,
+     "e": 66,
+     "text": "Абруниковъ",
+     "conf": 0.9912
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 102,
+     "e": 128,
+     "text": "1862. года Фовраля 28. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 141,
+     "e": 149,
+     "text": "Оскеняхъ",
+     "conf": 0.9897
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 52,
+     "text": "Казимиръ Романовскимсъ",
+     "conf": 0.9643
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 53,
+     "e": 78,
+     "text": "Магдаленною Абруншсовного",
+     "conf": 0.983
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 79,
+     "e": 87,
+     "text": "дѣ вицею",
+     "conf": 0.9972
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L2",
+   "hash": {
+    "baptism": "6fdf3d43df49",
+    "parents": "495771c7c4b3",
+    "godparents": "bc2d16bb1ff7"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 72,
+     "text": "Тысяча восемсотъ шестьдесятъ вопорого года Февраля двадцать восьмаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 144,
+     "e": 161,
+     "text": "Реифомъ Залескимъ",
+     "conf": 0.9454
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 187,
+     "text": "Анна",
+     "conf": 0.9969
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Марцина",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 28,
+     "text": "Маріянны",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 52,
+     "text": "Мылев- у ной",
+     "conf": 0.9596
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 63,
+     "text": "Буаинисовъ",
+     "conf": 0.9478
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 99,
+     "e": 124,
+     "text": "1862. года февраля 27 дня",
+     "conf": 0.9988
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 136,
+     "e": 144,
+     "text": "Мосимяхъ",
+     "conf": 0.9936
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 48,
+     "text": "Францишекъ Размасъ",
+     "conf": 0.9984
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 60,
+     "text": "Барборою",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 61,
+     "e": 87,
+     "text": "Антона Мартинпуси супругою",
+     "conf": 0.9451
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L3",
+   "hash": {
+    "baptism": "766ee0eac202",
+    "parents": "d98aeabf59bf",
+    "godparents": "8a3092a41530"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 71,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Девраля двадцать восьмаго дня",
+     "conf": 1.0
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 143,
+     "e": 160,
+     "text": "Ренфомъ Галескимъ",
+     "conf": 0.7853
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 186,
+     "text": "Ева",
+     "conf": 0.9959
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Филита",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 28,
+     "text": "Костарины",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 54,
+     "text": "Пушкорю совной",
+     "conf": 0.9659
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 55,
+     "e": 65,
+     "text": "Венцкусовъ",
+     "conf": 0.9786
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 126,
+     "text": "186г. года Февраля 27 дня",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 147,
+     "text": "Салантоф",
+     "conf": 0.992
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 47,
+     "text": "Антоній Венцкусъ",
+     "conf": 0.9972
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 61,
+     "text": "Аполіоніею",
+     "conf": 0.9977
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 86,
+     "text": "Адама Пушкорюса супругою",
+     "conf": 0.9763
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L4",
+   "hash": {
+    "baptism": "252cf13ac79e",
+    "parents": "59d6a510e7f7",
+    "godparents": "1f7f263b0f8a"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 59,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта второго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 132,
+     "e": 150,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.972
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 182,
+     "text": "Ката рина",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Іосифа",
+     "conf": 0.9976
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 29,
+     "text": "Магдалеены",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 41,
+     "e": 52,
+     "text": "Мачерневной",
+     "conf": 0.9954
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 63,
+     "text": "Тыревичевъ",
+     "conf": 0.9907
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 100,
+     "e": 122,
+     "text": "1862. года Марта 2 дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 141,
+     "text": "Жеймяхъ",
+     "conf": 0.9957
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 48,
+     "text": "Нихадемъ Тыревичъ",
+     "conf": 0.9969
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 70,
+     "text": "Коториною Яссовною",
+     "conf": 0.9833
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 71,
+     "e": 78,
+     "text": "дѣвицею",
+     "conf": 0.9992
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L5",
+   "hash": {
+    "baptism": "75d549a306b5",
+    "parents": "0948c82e33a5",
+    "godparents": "006aa94ffb41"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 59,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта втораго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 131,
+     "e": 144,
+     "text": "Іосифомъ Заца",
+     "conf": 0.9683
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 167,
+     "e": 175,
+     "text": "Казимиръ",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Казимира",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 30,
+     "text": "Петронели",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 52,
+     "text": "Зубисовнай",
+     "conf": 0.9948
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 63,
+     "text": "Пельдесовъ",
+     "conf": 0.9907
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 93,
+     "e": 117,
+     "text": "1862. года Марта 2го дня",
+     "conf": 0.9989
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 129,
+     "e": 139,
+     "text": "Кулисадотъ",
+     "conf": 0.9952
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 47,
+     "text": "Казимиръ Пельдюсъ",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 60,
+     "text": "Людовикою",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 61,
+     "e": 87,
+     "text": "Франца Туровскаго Супругою",
+     "conf": 0.9814
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L6",
+   "hash": {
+    "baptism": "4faae0164ac0",
+    "parents": "03ff4efaad92",
+    "godparents": "313adf4b022f"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта четвертаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 136,
+     "e": 157,
+     "text": "Донатомъ Шыгждовичемъ",
+     "conf": 0.9458
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 180,
+     "e": 197,
+     "text": "Антоній- Казимиръ",
+     "conf": 0.959
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Казимира",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 30,
+     "text": "Ка тарины",
+     "conf": 0.9891
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 51,
+     "text": "Размовной",
+     "conf": 0.9945
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 52,
+     "e": 62,
+     "text": "Сымутисовъ",
+     "conf": 0.9862
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 96,
+     "e": 112,
+     "text": "1862. арта 4 дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 124,
+     "e": 134,
+     "text": "Опдовдзятъ",
+     "conf": 0.9926
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 47,
+     "text": "Іосифъ Гельфинисъ",
+     "conf": 0.9967
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 69,
+     "text": "Барбарою Каминскою",
+     "conf": 0.993
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 70,
+     "e": 77,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0123_L7",
+   "hash": {
+    "baptism": "7599e78d592c",
+    "parents": "9c953c7f5590",
+    "godparents": "0f1dfb8eefaa"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ второго Года Марта Четвертаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 137,
+     "e": 154,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.976
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 177,
+     "e": 184,
+     "text": "Барбара",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишка",
+     "conf": 0.9971
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 30,
+     "text": "Антонины",
+     "conf": 0.9983
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 53,
+     "text": "Вайтелевная",
+     "conf": 0.9948
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 54,
+     "e": 66,
+     "text": "Пушкоргосовъ",
+     "conf": 0.9882
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 103,
+     "e": 125,
+     "text": "1862 года Марта 1о дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 137,
+     "e": 144,
+     "text": "Смельты",
+     "conf": 0.9989
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Казимиръ Пликусъ",
+     "conf": 0.9981
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 58,
+     "text": "Барбарою",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 59,
+     "e": 88,
+     "text": "Казимира Баввинскаго Супругою",
+     "conf": 0.9906
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L2",
+   "hash": {
+    "baptism": "920e8103df81",
+    "parents": "cf381f5083a3",
+    "godparents": "127c06059b25"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта четвертаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 152,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9742
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 175,
+     "e": 182,
+     "text": "Барбара",
+     "conf": 0.9985
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Тадеуша",
+     "conf": 0.9968
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 27,
+     "text": "Барбары",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 39,
+     "e": 52,
+     "text": "Равейкисовной",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 65,
+     "text": "Пумкорюосовъ",
+     "conf": 0.9881
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 100,
+     "e": 124,
+     "text": "1862. года Марта 4го дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 136,
+     "e": 143,
+     "text": "Лайвяхъ",
+     "conf": 0.9936
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 47,
+     "text": "Іосифъ Равейкисъ",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 60,
+     "text": "Маріянною",
+     "conf": 0.9962
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 61,
+     "e": 86,
+     "text": "Іосифа Пушпорюса Супругою",
+     "conf": 0.9822
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L3",
+   "hash": {
+    "baptism": "b4ba526b21b3",
+    "parents": "101e58db17a5",
+    "godparents": "96eac441a1f9"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 59,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго Года Марта шестаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 131,
+     "e": 149,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9721
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 172,
+     "e": 180,
+     "text": "Казимиръ",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 18,
+     "text": "Казимира",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 26,
+     "text": "Мотки",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 48,
+     "text": "Игнотов ной",
+     "conf": 0.993
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 62,
+     "text": "Брхоздовскихъ",
+     "conf": 0.989
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 99,
+     "e": 122,
+     "text": "1862. года Марта 5. дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 134,
+     "e": 139,
+     "text": "Жейми",
+     "conf": 0.9961
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 44,
+     "text": "Іосифъ Лавкисъ",
+     "conf": 0.9974
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 48,
+     "e": 71,
+     "text": "Петронелею Волонюсовною",
+     "conf": 0.9846
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 72,
+     "e": 79,
+     "text": "дѣвицею",
+     "conf": 0.9993
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L4",
+   "hash": {
+    "baptism": "32bc55c6b5f5",
+    "parents": "24257eb97dec",
+    "godparents": "9ca9b5d01957"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 64,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта одинадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 137,
+     "e": 155,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9716
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 178,
+     "e": 182,
+     "text": "Анна",
+     "conf": 0.9971
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Михайла",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 28,
+     "text": "Вероники",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 49,
+     "text": "Берневной",
+     "conf": 0.9942
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 59,
+     "text": "Жіойсковъ",
+     "conf": 0.9878
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 95,
+     "e": 118,
+     "text": "1862 года Марта 11. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 130,
+     "e": 140,
+     "text": "Кулисодохъ",
+     "conf": 0.9944
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 47,
+     "text": "Болифоцы Бенстисъ",
+     "conf": 0.9966
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 61,
+     "text": "Петронелею",
+     "conf": 0.9987
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 91,
+     "text": "Францишка Мартынкуса Супругою",
+     "conf": 0.9863
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L5",
+   "hash": {
+    "baptism": "91444710f148",
+    "parents": "696abeb2f3ab",
+    "godparents": "1150d3f9aad4"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 64,
+     "text": "Тысяча восемсотъ шестьдесятъ втонаго года Марта дванадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 127,
+     "e": 144,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.9754
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 167,
+     "e": 172,
+     "text": "Іемно",
+     "conf": 0.9934
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Марцина",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 25,
+     "text": "Кад.м",
+     "conf": 0.9956
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 46,
+     "text": "Павлевной",
+     "conf": 0.9951
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 47,
+     "e": 57,
+     "text": "Эндрушковъ",
+     "conf": 0.9891
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 93,
+     "e": 113,
+     "text": "1862 года Мар тайдся",
+     "conf": 0.9626
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 124,
+     "e": 133,
+     "text": "дкій быхъ",
+     "conf": 0.977
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 45,
+     "text": "ДанпльРеминюсъ",
+     "conf": 0.9958
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 68,
+     "text": "Гленою Брвождовскою",
+     "conf": 0.9857
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 69,
+     "e": 76,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L6",
+   "hash": {
+    "baptism": "985736fe207c",
+    "parents": "30e97251149b",
+    "godparents": "dd4b2098c4a0"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 65,
+     "text": "Тысяча восемсотъ шестьдесятъ второго Года Марта дванадццатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 136,
+     "e": 152,
+     "text": "Жифомъ Залескимъ",
+     "conf": 0.9689
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 170,
+     "e": 177,
+     "text": "Барбара",
+     "conf": 0.9659
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 11,
+     "text": "Крестьяннъъ",
+     "conf": 0.984
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 11,
+     "e": 15,
+     "text": "ЯЯна",
+     "conf": 0.9862
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 28,
+     "text": "Францил ки",
+     "conf": 0.991
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 40,
+     "e": 50,
+     "text": "Пѣкусовной",
+     "conf": 0.9953
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 51,
+     "e": 63,
+     "text": "Піотровскихъ",
+     "conf": 0.9905
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 100,
+     "e": 123,
+     "text": "1862 года Марта 12. дня",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 124,
+     "e": 132,
+     "text": "Орлянохъ",
+     "conf": 0.9768
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 46,
+     "text": "Іосифъ Стрепусъ",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 74,
+     "text": "Барба- пи ною Пѣкусовною",
+     "conf": 0.953
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 74,
+     "e": 81,
+     "text": "дѣвицею",
+     "conf": 0.9951
+    }
+   ]
+  },
+  {
+   "row_id": "0124_L7",
+   "hash": {
+    "baptism": "bfe3751c73af",
+    "parents": "75c2b3a962a9",
+    "godparents": "3e175ba6d7f9"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 65,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Марта пятьнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 137,
+     "e": 154,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.9762
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 177,
+     "e": 195,
+     "text": "Антоній Фра цишекъ",
+     "conf": 0.9853
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Франщенка",
+     "conf": 0.997
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 30,
+     "text": "Людовики",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 43,
+     "e": 54,
+     "text": "Микнюсовной",
+     "conf": 0.9957
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 55,
+     "e": 65,
+     "text": "Стонкусовъ",
+     "conf": 0.9909
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 101,
+     "e": 124,
+     "text": "1862. года Марта 18 дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 135,
+     "e": 144,
+     "text": "Барздзяхъ",
+     "conf": 0.9923
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 45,
+     "text": "Антоній Миктюсъ",
+     "conf": 0.9973
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 69,
+     "text": "Петроне ею Жейшовною",
+     "conf": 0.9851
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 70,
+     "e": 77,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L2",
+   "hash": {
+    "baptism": "109273dfbeef",
+    "parents": "a84764358d6c",
+    "godparents": "37ef06bd0edb"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 66,
+     "text": "у Тысяча восемсотъ шестьдесятъ второго года Марта семнадцатаго дня",
+     "conf": 0.9998
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 154,
+     "text": "Іосифо Заискимъ",
+     "conf": 0.9822
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 177,
+     "e": 184,
+     "text": "Барбара",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 13,
+     "text": "ГодаКрестьянъ",
+     "conf": 0.9946
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 14,
+     "e": 20,
+     "text": "Іосифа",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 23,
+     "e": 30,
+     "text": "Март то",
+     "conf": 0.9815
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 54,
+     "text": "Мотурисовной",
+     "conf": 0.996
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 67,
+     "e": 69,
+     "text": "въ",
+     "conf": 0.9546
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 107,
+     "e": 130,
+     "text": "1862. года Марта 17 дня",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 144,
+     "e": 155,
+     "text": "ѣ Салонтохъ",
+     "conf": 0.8376
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 43,
+     "text": "Адамъ Гайлюсь",
+     "conf": 0.9977
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 47,
+     "e": 56,
+     "text": "Маріянною",
+     "conf": 0.9975
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 57,
+     "e": 79,
+     "text": "Антона Кадиса Супругою",
+     "conf": 0.9814
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L3",
+   "hash": {
+    "baptism": "ea69cd0de34f",
+    "parents": "d59bde49e6d2",
+    "godparents": "08fbcae4764b"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 70,
+     "text": "18. Тысяча восемсотъ шестьдесятъ второго года Марта восемнадцатаго дня",
+     "conf": 0.9995
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 160,
+     "text": "Іосифомъ За мскимъ",
+     "conf": 0.9789
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 190,
+     "text": "Викт ры",
+     "conf": 0.9965
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Виктора",
+     "conf": 0.9986
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 24,
+     "text": "Анны",
+     "conf": 0.9972
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 48,
+     "text": "Мартышісовной",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 61,
+     "text": "мерстутисовъ",
+     "conf": 0.9888
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 100,
+     "e": 127,
+     "text": "1862. скто гда Марта 18 дня",
+     "conf": 0.9983
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 144,
+     "text": "оцятъ",
+     "conf": 0.9877
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 41,
+     "text": "Янъ Жиминсъ",
+     "conf": 0.997
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 45,
+     "e": 51,
+     "text": "Анѣлею",
+     "conf": 0.9984
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 52,
+     "e": 82,
+     "text": "Алексондра Виминского Супругою",
+     "conf": 0.9754
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L4",
+   "hash": {
+    "baptism": "6229e959cfad",
+    "parents": "aaeff227c4f5",
+    "godparents": "8bd5cb733faf"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "19 Тысяча восемсотъ шестьдесятъ второго года Мартдевятнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 157,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.9758
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 187,
+     "e": 195,
+     "text": "Магдално",
+     "conf": 0.9957
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 3,
+     "text": "ода",
+     "conf": 0.8456
+    },
+    {
+     "col": "parents",
+     "field": "TOWNSHIP",
+     "s": 8,
+     "e": 10,
+     "text": "ри",
+     "conf": 0.529
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 19,
+     "e": 26,
+     "text": "феликса",
+     "conf": 0.9856
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 29,
+     "e": 36,
+     "text": "Саломен",
+     "conf": 0.9906
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 51,
+     "e": 63,
+     "text": "Луковичевной",
+     "conf": 0.9964
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 64,
+     "e": 73,
+     "text": "Марвскихъ",
+     "conf": 0.9913
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 110,
+     "e": 132,
+     "text": "1862 года Марта 2о дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 144,
+     "e": 153,
+     "text": "Шевчикохъ",
+     "conf": 0.9933
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 49,
+     "text": "Казимиръ филтовичъ",
+     "conf": 0.9968
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 53,
+     "e": 62,
+     "text": "Теодорогю",
+     "conf": 0.9963
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 63,
+     "e": 88,
+     "text": "Антона Вайоннюсо супрурою",
+     "conf": 0.9607
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L5",
+   "hash": {
+    "baptism": "35027e62bdfd",
+    "parents": "534f573e3543",
+    "godparents": "d6ca5dbb0768"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 66,
+     "text": "20. Тысяча восемсотъ шестьдесятъ второго Года марта двадцатаго дня",
+     "conf": 0.9979
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 135,
+     "e": 153,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9674
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 176,
+     "e": 183,
+     "text": "Розалія",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 8,
+     "text": "аестьянъ",
+     "conf": 0.9996
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 9,
+     "e": 18,
+     "text": "Францишка",
+     "conf": 0.9965
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 21,
+     "e": 28,
+     "text": "Барборъ",
+     "conf": 0.9897
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 48,
+     "text": "Стракшовной",
+     "conf": 0.9955
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 51,
+     "text": "Зу",
+     "conf": 0.513
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 80,
+     "e": 100,
+     "text": "1862. года Марта дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 112,
+     "e": 120,
+     "text": "Шевипофъ",
+     "conf": 0.9948
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Антоній Квассосъ",
+     "conf": 0.9974
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 55,
+     "text": "Анною",
+     "conf": 0.9969
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 56,
+     "e": 76,
+     "text": "Іосифа Руйвиса Супру",
+     "conf": 0.9738
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L6",
+   "hash": {
+    "baptism": "e8c99ee32e31",
+    "parents": "8ce234100a2c",
+    "godparents": "0fdb81a386c4"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 68,
+     "text": "22. Тысяча восемсотъ шестьдесятъ второгодоМарта двадцать второго дня",
+     "conf": 0.9979
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 140,
+     "e": 156,
+     "text": "Іосифомъ Замским",
+     "conf": 0.9757
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 179,
+     "e": 187,
+     "text": "Казимиръ",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 7,
+     "e": 16,
+     "text": "Плонольда",
+     "conf": 0.995
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 23,
+     "text": "Анны",
+     "conf": 0.9871
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 31,
+     "e": 41,
+     "text": "Зубисовной",
+     "conf": 0.9969
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 42,
+     "e": 52,
+     "text": "Вайовскихъ",
+     "conf": 0.9905
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 86,
+     "e": 108,
+     "text": "1862. года Мар 22. дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 120,
+     "e": 128,
+     "text": "Теецяхтъ",
+     "conf": 0.9955
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 33,
+     "e": 41,
+     "text": "Янъ Шыма",
+     "conf": 0.9954
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 45,
+     "e": 53,
+     "text": "Моншикою",
+     "conf": 0.9971
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 54,
+     "e": 81,
+     "text": "Антона скр. - сиса Супругою",
+     "conf": 0.9778
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L7",
+   "hash": {
+    "baptism": "612ce13f5b0d",
+    "parents": "b54c7df555a5",
+    "godparents": "9915bac8e363"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 73,
+     "text": "14 Тысяча восемсотъ шестьдесятъ втораго Года Ма тадвадцать четвертаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 160,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9706
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 183,
+     "e": 189,
+     "text": "Іольфъ",
+     "conf": 0.996
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 11,
+     "text": "миКрестьянъ",
+     "conf": 0.9931
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 12,
+     "e": 25,
+     "text": "ПоминиППетроа",
+     "conf": 0.9686
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 39,
+     "e": 53,
+     "text": "Крын сковшевой",
+     "conf": 0.9869
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 54,
+     "e": 63,
+     "text": "Дѣкинтовъ",
+     "conf": 0.9889
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 99,
+     "e": 119,
+     "text": "1862. года Марта Кен",
+     "conf": 0.9669
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 131,
+     "e": 138,
+     "text": "Жейшахъ",
+     "conf": 0.9931
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 47,
+     "text": "Іолифаци Наркусъ",
+     "conf": 0.9975
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 73,
+     "text": "Петронелею Брас совною",
+     "conf": 0.9777
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 74,
+     "e": 81,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0125_L8",
+   "hash": {
+    "baptism": "848c97fadaa4",
+    "parents": "06fe633fa9f5",
+    "godparents": "8169f670f559"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 69,
+     "text": "94 Тысяча восемсотъ шестьдесятъ второго Года Мартадвадцать семаго дня",
+     "conf": 0.9994
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 139,
+     "e": 157,
+     "text": "Іосифомъ Замескимъ",
+     "conf": 0.9728
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 180,
+     "e": 187,
+     "text": "Барбора",
+     "conf": 0.998
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 8,
+     "text": "рестьонъ",
+     "conf": 0.9997
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 9,
+     "e": 15,
+     "text": "Помама",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 22,
+     "text": "Анны",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 32,
+     "e": 40,
+     "text": "Шымовкой",
+     "conf": 0.9949
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 41,
+     "e": 50,
+     "text": "Райтушовъ",
+     "conf": 0.9897
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 86,
+     "e": 108,
+     "text": "1862. года Марта 5 дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 120,
+     "e": 128,
+     "text": "Фрлянохъ",
+     "conf": 0.9919
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 48,
+     "text": "Казимиръ Волонюсъ",
+     "conf": 0.9971
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 52,
+     "e": 61,
+     "text": "Антоннною",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 82,
+     "text": "Антона Дейнора Супру",
+     "conf": 0.9487
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L2",
+   "hash": {
+    "baptism": "c78329474e95",
+    "parents": "06dfc525b5c4",
+    "godparents": "50cb60354f84"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года карта тридцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 138,
+     "e": 156,
+     "text": "Яномъ Арвосевичемъ",
+     "conf": 0.9597
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 179,
+     "e": 188,
+     "text": "Константы",
+     "conf": 0.9981
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Иыдора",
+     "conf": 0.9969
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 27,
+     "text": "Людовити",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 39,
+     "e": 49,
+     "text": "Іоциковной",
+     "conf": 0.9955
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 50,
+     "e": 62,
+     "text": "Бартаилосовъ",
+     "conf": 0.988
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 100,
+     "e": 124,
+     "text": "1862. года Марта 30. дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 136,
+     "e": 145,
+     "text": "Барздцяхъ",
+     "conf": 0.9933
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 45,
+     "text": "Казимиръ Юцисъ",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 49,
+     "e": 59,
+     "text": "Аполіоніею",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 60,
+     "e": 85,
+     "text": "Францишка Рутиса Супругою",
+     "conf": 0.9832
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L3",
+   "hash": {
+    "baptism": "668aac894c26",
+    "parents": "fa5f3f307918",
+    "godparents": "ec27f791793b"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 62,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго Года Марта тридцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 138,
+     "e": 156,
+     "text": "Яномъ Арвасевичемъ",
+     "conf": 0.9639
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 179,
+     "e": 185,
+     "text": "Іосифъ",
+     "conf": 0.9958
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 0.9999
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 15,
+     "text": "Леона",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 18,
+     "e": 22,
+     "text": "Анны",
+     "conf": 0.9973
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 47,
+     "text": "Довконтовной",
+     "conf": 0.9918
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 48,
+     "e": 61,
+     "text": "Скур довскихъ",
+     "conf": 0.9206
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 98,
+     "e": 119,
+     "text": "1862 года Марта Задня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 131,
+     "e": 140,
+     "text": "Барудцятъ",
+     "conf": 0.9949
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 46,
+     "text": "Іосифъ Нармонтъ",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 69,
+     "text": "Каториною Юрковскою",
+     "conf": 0.9903
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 70,
+     "e": 77,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L4",
+   "hash": {
+    "baptism": "eab04b4c51f6",
+    "parents": "00e63471dfa9",
+    "godparents": "31426554f87d"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 60,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Апрѣля шестаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 132,
+     "e": 150,
+     "text": "Іосифомъ Замескимъ",
+     "conf": 0.9736
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 173,
+     "e": 183,
+     "text": "Францишекъ",
+     "conf": 0.9977
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Беледикта",
+     "conf": 0.9975
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 30,
+     "text": "Людовики",
+     "conf": 0.9978
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 52,
+     "text": "Миккіовной",
+     "conf": 0.9943
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 53,
+     "e": 63,
+     "text": "Венцкусовъ",
+     "conf": 0.9849
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 116,
+     "e": 141,
+     "text": "1862. года Апрѣля 6го дня",
+     "conf": 0.999
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 153,
+     "e": 161,
+     "text": "Ииборотъ",
+     "conf": 0.9938
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 47,
+     "text": "Францишекъ Зубисъ",
+     "conf": 0.9971
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 51,
+     "e": 71,
+     "text": "Барбарою Реткусувною",
+     "conf": 0.9891
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 72,
+     "e": 79,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L5",
+   "hash": {
+    "baptism": "fa34e361a109",
+    "parents": "dbd23fe88ba9",
+    "godparents": "90dd4123398c"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 51,
+     "text": "Тысяча восемсотъ шестьдесятъ вт-к Апрѣля семаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 122,
+     "e": 140,
+     "text": "Янамъ Арвасевичемъ",
+     "conf": 0.97
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 168,
+     "e": 174,
+     "text": "Зервій",
+     "conf": 0.9963
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 7,
+     "text": "Крісфть",
+     "conf": 0.9926
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 8,
+     "e": 13,
+     "text": "ервею",
+     "conf": 0.9351
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 16,
+     "e": 24,
+     "text": "Катарина",
+     "conf": 0.9958
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 35,
+     "e": 47,
+     "text": "Стонкусовной",
+     "conf": 0.9954
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 48,
+     "e": 57,
+     "text": "Срагисовъ",
+     "conf": 0.9917
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 94,
+     "e": 118,
+     "text": "1862 года Апрѣля 7го дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 130,
+     "e": 135,
+     "text": "Имацд",
+     "conf": 0.9852
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 44,
+     "text": "Іосифъ Сранисъ",
+     "conf": 0.998
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 48,
+     "e": 57,
+     "text": "Катариною",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 58,
+     "e": 84,
+     "text": "Адама Стефановича супругою",
+     "conf": 0.9851
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L6",
+   "hash": {
+    "baptism": "96d79e6f3f78",
+    "parents": "bfafd92dc94f",
+    "godparents": "f724d7745f79"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 61,
+     "text": "Тысяча восемсотъ шестьдесятъ втораго Года Апрѣля девятаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 134,
+     "e": 151,
+     "text": "Іосифомъ Замскимъ",
+     "conf": 0.9762
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 174,
+     "e": 184,
+     "text": "Франлшшакъ",
+     "conf": 0.9982
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 17,
+     "text": "Кантана",
+     "conf": 0.9974
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 20,
+     "e": 24,
+     "text": "Анны",
+     "conf": 0.9979
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 36,
+     "e": 45,
+     "text": "Дарговной",
+     "conf": 0.9925
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 46,
+     "e": 60,
+     "text": "Рабра ловичевъ",
+     "conf": 0.8989
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 98,
+     "e": 119,
+     "text": "186ро да Апрпла 8 дея",
+     "conf": 0.9826
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 131,
+     "e": 148,
+     "text": "Ж.- стечки Салант",
+     "conf": 0.7186
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 31,
+     "e": 51,
+     "text": "Францишеки афаловичъ",
+     "conf": 0.9972
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 55,
+     "e": 62,
+     "text": "Моникою",
+     "conf": 0.9976
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 63,
+     "e": 93,
+     "text": "Станислава Іафаловича супругою",
+     "conf": 0.9884
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L7",
+   "hash": {
+    "baptism": "7558660c334b",
+    "parents": "8fd0b9f26729",
+    "godparents": "1423e38332ad"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 67,
+     "text": "Тысяча восемсотъ шестьдесятъ ви Содог года Апрѣля шестнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 142,
+     "e": 159,
+     "text": "Іосифомъ Гамскимъ",
+     "conf": 0.941
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 179,
+     "e": 185,
+     "text": "Іосифъ",
+     "conf": 0.9878
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 19,
+     "text": "Францишко",
+     "conf": 0.9947
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 22,
+     "e": 32,
+     "text": "Петро нели",
+     "conf": 0.9904
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 42,
+     "e": 53,
+     "text": "селонбицкой",
+     "conf": 0.9904
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 54,
+     "e": 65,
+     "text": "Сапрутисовъ",
+     "conf": 0.9894
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 103,
+     "e": 127,
+     "text": "1862. года Арутля 16 дня",
+     "conf": 0.9991
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 139,
+     "e": 147,
+     "text": "Сесяфохъ",
+     "conf": 0.9924
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 32,
+     "e": 52,
+     "text": "Винценты Голорвицкій",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 56,
+     "e": 79,
+     "text": "Петронилею Брвоздовскою",
+     "conf": 0.9863
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 80,
+     "e": 87,
+     "text": "дѣвицею",
+     "conf": 0.9994
+    }
+   ]
+  },
+  {
+   "row_id": "0126_L8",
+   "hash": {
+    "baptism": "cccc304fd35d",
+    "parents": "2d87c7ca614f",
+    "godparents": "08f72c84dcf7"
+   },
+   "spans": [
+    {
+     "col": "baptism",
+     "field": "BAPT_DATE",
+     "s": 0,
+     "e": 65,
+     "text": "Тысяча восемсотъ шестьдесятъ второго года Апр ля семнадцатаго дня",
+     "conf": 0.9999
+    },
+    {
+     "col": "baptism",
+     "field": "PRIEST",
+     "s": 136,
+     "e": 154,
+     "text": "Іосифомъ Залескимъ",
+     "conf": 0.9715
+    },
+    {
+     "col": "baptism",
+     "field": "CHILD",
+     "s": 175,
+     "e": 187,
+     "text": "Канимръ- Янъ",
+     "conf": 0.9762
+    },
+    {
+     "col": "parents",
+     "field": "ESTATE",
+     "s": 0,
+     "e": 9,
+     "text": "Крестьянъ",
+     "conf": 1.0
+    },
+    {
+     "col": "parents",
+     "field": "FATHER",
+     "s": 10,
+     "e": 16,
+     "text": "Антона",
+     "conf": 0.9971
+    },
+    {
+     "col": "parents",
+     "field": "MOTHER",
+     "s": 19,
+     "e": 26,
+     "text": "Вроники",
+     "conf": 0.9983
+    },
+    {
+     "col": "parents",
+     "field": "MAIDEN",
+     "s": 37,
+     "e": 48,
+     "text": "Ирнастовной",
+     "conf": 0.9952
+    },
+    {
+     "col": "parents",
+     "field": "SURNAME",
+     "s": 49,
+     "e": 58,
+     "text": "Каркусовъ",
+     "conf": 0.9902
+    },
+    {
+     "col": "parents",
+     "field": "BIRTH_DATE",
+     "s": 95,
+     "e": 120,
+     "text": "1862. года Апрѣля 16. дня",
+     "conf": 0.9992
+    },
+    {
+     "col": "parents",
+     "field": "VILLAGE",
+     "s": 132,
+     "e": 141,
+     "text": "Гѣдвдцятъ",
+     "conf": 0.9952
+    },
+    {
+     "col": "godparents",
+     "field": "GODFATHER",
+     "s": 30,
+     "e": 46,
+     "text": "Казимиръ Прнаста",
+     "conf": 0.9981
+    },
+    {
+     "col": "godparents",
+     "field": "GODMOTHER",
+     "s": 50,
+     "e": 61,
+     "text": "Магдаленною",
+     "conf": 0.9978
+    },
+    {
+     "col": "godparents",
+     "field": "GM_STATUS",
+     "s": 62,
+     "e": 84,
+     "text": "Петра Арнаста Супругою",
+     "conf": 0.9664
+    }
+   ]
+  }
+ ]
+}

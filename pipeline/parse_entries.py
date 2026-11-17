@@ -1,6 +1,7 @@
 """Extract structured fields from per-entry drafts using the register's fixed formula.
 
 Usage: .venv/bin/python -I pipeline/parse_entries.py processed/year_draft_<model>.json [--check-pilot]
+           [--tagger | --tagger-spans FILE] [--priest rules] [--out FILE]
 
 Drafts are noisy (spurious spaces, similar-letter confusions), so formula anchors
 ("именемъ", "волости", "законныхъ", "деревнѣ" ...) are located by approximate matching
@@ -18,10 +19,31 @@ on the text, not on the book. Three clean-ups apply to both wordings: the words 
 priest ("онаго Кс.", "Ксендзомъ") are not part of his name, the parish ("... Плунгянскаго
 прихода", "сего прихода") is not part of the village, and "урожд." is not part of the surname.
 
+A month name of three letters ("Мая") is matched exactly or as a word of its own, never inside
+another word (it used to be found in "родивш-аяс-я", "Н-ая-бря", "Ма-рта"); where the month cannot
+be read the day beside it is still returned, so a day may come without a month (and then without a
+date). A digit standing apart before a month name belongs to the day ("13 Юня" was read as the 1st),
+a digit written onto the name is its misread first letter ("7юня", "100ктября"). "волости" is not
+looked for behind the parents (surnames such as "Воловскихъ", "Волонтовны" resemble it), its
+abbreviation is also read as "Вол", "вос.", "восс.", and it ends before the father's name
+("вол. Ст|анислава").
+
 Each field records `source`: "checked" if every line of its column is a checked label,
 "mixed" or "model" otherwise. Model-sourced names are unreliable. Output:
-processed/entries_<model>.json. --check-pilot compares against processed/pilot_reference.csv
-(itself provisional machine adjudication, not ground truth).
+processed/entries_<model>.json (or --out FILE). --check-pilot compares against
+processed/pilot_reference.csv (itself provisional machine adjudication, not ground truth).
+
+Optional, off by default: the neural field tagger (pipeline/neural_parser). With --tagger the spans
+file `tagger_spans_<model>.json` beside the draft is read (written beforehand by
+`.venv-htr/bin/python pipeline/neural_parser/apply.py <draft>`; --tagger-spans names another file)
+and each field is chosen between the rules and the tagger as `neural_parser/combine.py` describes.
+Every field then carries, beside `value` and `source`, the key `by` (rules | tagger | both | none),
+`conf` (the tagger's confidence in its span, where it had one) and `alt` (the value not chosen), and
+five fields are added: maiden_name, family_surname, godfather, godmother, godmother_status. The old
+fields keep their names and meaning (`maiden_and_surname` and `godparents` stay the rules' own), and
+`source` is untouched: it says whether the TEXT was checked, `by` says who read the field out of it.
+Spans made on another version of the draft (the text is compared by hash) are ignored and counted.
+Without --tagger nothing changes.
 """
 import csv
 import json
@@ -51,6 +73,10 @@ ORDINALS['тридцатаго'] = 30
 for i, w in enumerate(UNITS, 1):
     ORDINALS['двадцать' + w] = 20 + i
 ORDINALS['тридцатьперваго'] = 31
+# "восмаго" / "востого" (Salantai's clerk, and the recognizer's reading of "восьмаго"): without it
+# "двадцать востого" is as near to "двадцать шестаго" as to "двадцать восьмаго" and the tie went to 26
+ORDINALS['восмаго'] = 8
+ORDINALS['двадцатьвосмаго'] = 28
 
 
 def strip(s):
@@ -127,23 +153,152 @@ def find_abbrev(tx, pattern, start=0):
 
 
 def month_after(tx, pos, window=6):
+    """The month name nearest in spelling that begins within `window` letters after flat position
+    `pos`: (month number, flat (start, end)) or (None, None).
+
+    A name of three letters ("Мая") is too short for a free approximate search: one error allowed in
+    three letters matches the ending of "родивш-аяс-я", the "ая" of "Наября" or the "Ма" of a misread
+    "Марта", and such a match used to win over the real month. It is found by `short_month_after`
+    instead, and an inexact "Мая" never wins over another month found with the same number of errors."""
     best = None
     for n, names in MONTHS.items():
         for name in names:
-            r = tx.find(name, pos)
+            key = strip(name)
+            if len(key) <= 3:
+                r, d = short_month_after(tx, key, pos, window)
+            else:
+                r = tx.find(name, pos)
+                d = lev(tx.flat[r[0]:r[1]], key) if r else None
             if r and r[0] - pos <= window:
-                d = lev(tx.flat[r[0]:r[1]], strip(name))
                 if best is None or d < best[0]:
                     best = (d, n, r)
-    return (best[1], best[2]) if best else (None, None)
+    if not best:
+        return None, None
+    _, n, r = best
+    # An inexact match may have taken the last digit of the day for the name's first letter ("13 Юня"
+    # matched as "3юня", which made the day 1): the digit goes back to the day if it is the second
+    # digit of a number up to 31 that stands apart from the name. A digit written onto the name, or
+    # standing alone before it, or ending a longer or impossible number, is the misread first letter
+    # ("7юня" for "Іюня", "100ктября" and "240 ктября" for "10 / 24 Октября", "19 9 юня", "99 юня").
+    a = tx.map[r[0]]
+    if r[1] - r[0] > 2 and tx.orig[a].isdigit() and tx.orig[a - 1:a].isdigit() and not tx.orig[max(0, a - 2):a - 1].isdigit() \
+            and int(tx.orig[a - 1:a + 1]) <= 31 and (tx.orig[a + 1:a + 2].isspace() or tx.orig[a + 1:a + 2].isupper()):
+        r = (r[0] + 1, r[1])
+    return n, r
+
+
+def short_month_after(tx, key, pos, window):
+    """A three-letter month name beginning within `window` letters after `pos`: (flat (start, end),
+    errors) or (None, None). Spelled exactly it is taken wherever it stands. Misread it must be a word
+    of its own in the original text ("сая 6 дня", "Мася 2.", "28 каявъ", "го да маи", "Твая 27"): three
+    to five letters, one of them wrong (two if "ая" or "Ма" is still there), with more errors against
+    every other month, not the abbreviation of another month ("Мар."), and not the ending of the
+    verb before it ("родивш|аяся", "родиь шаяся"). Two letters ("Ма", "ая") count only straight
+    after "года" (a window of six letters, the word beginning within four). A name that ran into the
+    day ("Моясетвертаго дня") counts if what follows its three letters reads as an ordinal."""
+    start = tx.map[pos] if pos < len(tx.map) else len(tx.orig)
+    others = [strip(nm) for names in MONTHS.values() for nm in names if strip(nm) != key]
+    k = tx.flat.find(key, pos)
+    if 0 <= k <= pos + window:
+        # not the "мая" inside another month's misread name ("Ггомаября")
+        a = tx.map[k]
+        word = strip(letters_only(re.search(r'[%s]*$' % LETTER, tx.orig[:a]).group() + re.match(r'[%s]*' % LETTER, tx.orig[a:]).group()))
+        if len(word) <= 5 or not (word.endswith(('ся', 'сь')) or any(approx_find(word, o) for o in others if len(o) > 4)):
+            return (k, k + len(key)), 0
+    for m in re.finditer(r'[%s]+' % LETTER, tx.orig[start:]):
+        s = flat_index(tx, start + m.start())
+        if s - pos > window:
+            break
+        if m.start() == 0 and start and tx.orig[start - 1].isalpha() and not tx.flat[:pos].endswith('да'):
+            continue                # the rest of the word the search began in, unless that was "года" ("годачная")
+        w = strip(m.group())
+        lead = re.match(r'(?:го|о)?да(?=..)', w)         # "годамая", "го да маи", "годама 28"
+        if lead and lev(w[lead.end():], key) < lev(w, key):
+            s, w = s + lead.end(), w[lead.end():]
+        else:
+            lead = None
+        w = re.sub(r'(?<=...)(?:в|дня)$', '', w) if len(w) > 4 else w      # "каявъ", "маядня"
+        if len(w) > 5 and w[0] == key[0] and lev(w[:len(key)], key) <= 1 and not any(o.startswith(w[:len(key)]) for o in others):
+            # the name ran into the day's ordinal ("Моясетвертаго", "Мааодинадцатаго", "Масячетвер таго")
+            rest = tx.orig[start + m.start():]
+            dn = Text(rest).find('дня')
+            words = rest[:Text(rest).map[dn[0]]] if dn and dn[0] <= 40 else ''
+            tail = strip(w[len(key):])
+            begins = any(lev(tail[i:i + n], strip(o)[:n]) <= (1 if n <= 5 else 2) for o in ORDINALS for i in (0, 1)
+                         for n in [min(len(tail) - i, 7)] if n >= 4)
+            if begins and ordinal(re.sub(r'^\W*[%s]{%d}' % (LETTER, len(key)), '', words, count=1)):
+                return (s, s + len(key)), 1.5
+        if not (2 if lead or (window <= 6 and s - pos <= 4) else 3) <= len(w) <= 5 or (w.endswith(('ся', 'сь')) and w[0] != key[0]):
+            continue
+        if len(w) >= 3 and any(o.startswith(w) for o in others):
+            continue
+        d = lev(w, key)
+        if d > 2 or (d == 2 and key[1:] not in w and not w.startswith(key[:2])):
+            continue
+        if d / max(len(w), len(key)) <= 0.5 and all(lev(w, o) > d for o in others):
+            return (s, s + len(w)), d + 0.5
+    return None, None
+
+
+def day_in_words(s):
+    """The ordinal day in a stretch that follows a month; a short leftover of the month's ending
+    before it is dropped ("Сентябр|ая семнадцатаго", "Декабр|я двадцатаго")."""
+    d = ordinal(s)
+    w = (s or '').split()
+    if not d and len(w) > 1 and len(letters_only(w[0])) <= 3:
+        d = ordinal(' '.join(w[1:]))
+    return d
+
+
+def nearest_ordinal(s):
+    """(day, errors) of the ordinal word nearest to `s`, or (None, None) if none is near enough."""
+    if not s:
+        return None, None
+    s = strip(s).replace(' ', '').replace('-', '').replace('=', '')
+    w, d = min(((w, lev(s, strip(w))) for w in ORDINALS), key=lambda x: x[1])
+    return (ORDINALS[w], d) if d <= max(2, len(w) // 4) else (None, None)
 
 
 def ordinal(s):
-    if not s:
+    return nearest_ordinal(s)[0]
+
+
+def day_after_unreadable_month(words):
+    """The day in "<unreadable month> <day>" (the words between "года" and "дня"), or None. The month
+    is one word, or two or three pieces of one ("Апрнъ го мя восмаго"); it may have run into the day
+    ("Маршестага", "Іомядвадцатъ девятаго", "Масячетвер таго"), so a long first word is cut where
+    the rest reads best as an ordinal. A word that holds "двадцать" / "тридцать" is never dropped,
+    and what is left must be long enough to be an ordinal ("таго" alone is not "пятаго")."""
+    w = list(words)
+    if len(w) >= 3 and len(letters_only(w[0])) <= 2:    # a stray mark before the month ("года в Іюомя ...")
+        w.pop(0)
+    if not w or w[0][0].isdigit():
         return None
-    s = strip(s).replace(' ', '').replace('-', '').replace('=', '')
-    w, d = min(((w, lev(s, strip(w))) for w in ORDINALS), key=lambda x: x[1])
-    return ORDINALS[w] if d <= max(2, len(w) // 4) else None
+    first = letters_only(w[0])
+    if (nearest_ordinal(' '.join(w))[1] or 9) <= 1 or nearest_ordinal(' '.join(w))[1] == 0:
+        return None                                     # no month at all: "года одинадцатаго дня" is not read
+    if len(first) > 8:
+        for c in range(3, len(first) - 1):
+            if len(first) - c + sum(len(letters_only(x)) for x in w[1:]) < 6:
+                break
+            day = ordinal(first[c:] + ''.join(w[1:]))
+            if day:
+                return day
+    tens = lambda x: any(approx_find(strip(letters_only(x)), t, 0, 0.4) for t in ('двадцать', 'тридцать'))
+    for k in range(1, min(4, len(w))):
+        # after the first word only pieces of one or two letters may be dropped ("го", "мя"), or the
+        # month itself where a stray word stood before it ("года Крестьянъ Февраля двѣнадцатаго"),
+        # never a word or a piece of the day ("двадезатъ", "Івоо цатаго")
+        piece = strip(letters_only(w[k - 1]))
+        is_month = any(approx_find(piece, strip(nm)) for names in MONTHS.values() for nm in names if len(strip(nm)) > 3)
+        if tens(w[k - 1]) or (k > 1 and not is_month and len(piece) > 2):
+            return None
+        rest = ' '.join(w[k:])
+        dm = re.fullmatch(r'(\d{1,2})\W*', rest)
+        day = int(dm.group(1)) if dm else ordinal(rest) if len(letters_only(rest)) >= 5 else None
+        if day and 1 <= day <= 31:
+            return day
+    return None
 
 LETTER = 'А-Яа-яЁёѢѣІі'
 # words that belong to the estate, not to the father's name ("Билетнаго Солдата Францишка и ...")
@@ -280,6 +435,55 @@ def split_parents(names, township=False):
     return father or None, mother or None
 
 
+def parents_before(stretch):
+    """True if the text between the estate and a supposed "волости" already holds the parents: an
+    "урожденной", an "изъ", or "<Name> и <Name>". Then the match is not the township's word but a
+    surname that resembles it ("Воловскихъ", "Волонтовны", "Добровольскихъ")."""
+    s = stretch or ''
+    if approx_find(Text(s).flat, 'урожденной') or re.search(r'(?<![%s])[Уу]р[оа][жш][дg]?[ъе]?\s*[.:]' % LETTER, s):
+        return True
+    if re.search(r'(?<![%s])[иі][зд]ъ(?![%s])' % (LETTER, LETTER), s):
+        return True
+    words = s.split()
+    for i in range(1, len(words) - 1):
+        if letters_only(words[i]) in ('и', 'і') and words[i - 1][0].isupper() and len(letters_only(words[i - 1])) >= 4 \
+                and not re.search(r'[сc]к[оo]?$', strip(letters_only(words[i - 1]))) \
+                and letters_only(words[i + 1])[:1].isupper():
+            return True         # not "Плунгянско и Вол.": a divided "...ской"
+    return False
+
+
+TOWNSHIP_ABBREV = re.compile(r'(?<![%s])[ВвB]о[лс]{1,2}[оъг]?\s?[.:]|(?<=[сc]к[оаеи][йиіняюмгъ]\s)[ВвB]олъ?(?=\s+[А-ЯІ][а-яѣі])' % LETTER)
+
+
+def find_township_word(P, start):
+    """Flat (start, end) of "волости" (approximate), or of its abbreviation ("Вол.", "вол:", misread
+    "Вос."), after the estate; None where the entry names no township. An inexact match is refused
+    when the parents already stand before it (`parents_before`: it is then a surname such as
+    "Воловскихъ" or "Волонтовны"), and the abbreviation is looked for instead. The anchor ends where
+    a new capitalised word begins ("вол. Ст|анислава", "воност И|гнатія")."""
+    limit = len(P.flat)
+    for _ in range(3):
+        vol = approx_find(P.flat[:limit], 'волости')
+        if not vol:
+            break
+        exact = P.flat[vol[0]:vol[1]] == 'волости'
+        if exact or not parents_before(P.between(start, vol[0]) if vol[0] > start else ''):
+            a, b = P.map[vol[0]], P.map[vol[1] - 1] + 1
+            cut = re.search(r'(?<=[%s.:])\s+(?=[А-ЯІ])' % LETTER, P.orig[a:b])
+            if cut and re.match(r'[ВвBб][оo]', P.orig[a:b]) \
+                    and not re.search(r'(?:ст[иаы]|ти)$|^.{3,}ст$', strip(letters_only(P.orig[a + cut.end():b]))) \
+                    and not approx_find(strip(letters_only(P.orig[a + cut.end():b])), 'лости', 0, 0.2):     # not "во В лости", "во В лосми"
+                vol = (vol[0], flat_index(P, a + cut.start()))
+            return vol
+        limit = vol[0]
+    for mv in TOWNSHIP_ABBREV.finditer(P.orig):
+        vol = (flat_index(P, mv.start()), flat_index(P, mv.end()))
+        if vol[0] >= start and not parents_before(P.between(start, vol[0]) if vol[0] > start else ''):
+            return vol
+    return None
+
+
 def parse(entry):
     out = {}
     B, P, G = Text(entry['baptism']), Text(entry['parents']), Text(entry['godparents'])
@@ -290,13 +494,21 @@ def parse(entry):
         out['baptism_month'] = m
         if mr:
             d = B.find('дня', mr[1])
-            out['baptism_day'] = ordinal(B.between(mr[1], d[0])) if d else None
+            out['baptism_day'] = day_in_words(B.between(mr[1], d[0])) if d else None
             if not out['baptism_day']:
                 # the day in digits: "года 22 Іюля", "года Іюля 22 дня"
                 db = re.search(r'(?<!\d)(\d{1,2})\W*$', B.orig[B.map[g[1]]:B.map[mr[0]]])
                 da = re.match(r'\W*(?:дня\W*)?(\d{1,2})(?!\s*\d)', B.orig[B.map[mr[1]]:])
                 day = int((db or da).group(1)) if (db or da) else None
                 out['baptism_day'] = day if day and 1 <= day <= 31 else None
+        if not out.get('baptism_day'):
+            # the month is unreadable ("года Таромя четвертаго дня"), or what was taken for it was
+            # not where the day could be read from: the day after it is still read
+            d = B.find('дня', g[1])
+            w = (B.between(g[1], d[0]) or '').split() if d and d[0] - g[1] <= 45 else []
+            day = day_after_unreadable_month(w)
+            if day:
+                out['baptism_day'] = day
     # "Кс" is too short to search the whole column (it matches inside "Тысяча"): look only
     # after "Викарнымъ", and take the priest's name up to "окрещенъ". Without "Викарнымъ" (or with
     # nothing after it) the other words that introduce a priest are tried (`priest_before`).
@@ -316,14 +528,8 @@ def parse(entry):
     # parents
     toks = P.orig.split()
     out['estate'] = toks[0].strip(' =-') if toks else None
-    vol = P.find('волости')
-    if not vol:
-        # the 1886-87 clerk abbreviates "волости" as "Вол."
-        mv = re.search(r'(?<![А-Яа-яЁёѢѣІі])[ВвB]ол\.', P.orig)
-        if mv:
-            vol = (next(i for i, k in enumerate(P.map) if k >= mv.start()),
-                   next(i for i, k in enumerate(P.map) if k >= mv.end()))
     est_end = P.find(out['estate']) if out['estate'] else None
+    vol = find_township_word(P, est_end[1] if est_end else 0)
     out['township'] = P.between(est_end[1], vol[0]) if vol and est_end else None
     izy = None
     if vol:
@@ -400,18 +606,38 @@ def parse(entry):
         # day in words ("седмаго дня"). The month is looked for anywhere after "родивш".
         rod = P.find('родивш')
         if rod:
-            m, mr = month_after(P, rod[1], window=40)
+            # the verb's own ending is not searched ("родивш|аяся" holds an "ая", a misread "ійся" an "Іюня")
+            k = P.map[rod[1]]
+            k += re.match(r'[а-яёѣі\s]{0,6}?[сc][яьа](?![а-яёѣі])|[а-яёѣі]{0,2}', P.orig[k:]).end()
+            vend = flat_index(P, k)
+            m, mr = month_after(P, vend, window=40 - (vend - rod[1]))
             if mr:
-                before = P.orig[P.map[rod[1]]:P.map[mr[0]]]
+                before = P.orig[k:P.map[mr[0]]]
                 after = P.orig[P.map[mr[1]]:]
                 db = re.search(r'(?<!\d)(\d{1,2})\W*$', before)
-                da = re.match(r'\W*(\d{1,2})(?!\s*\d)', after)
+                # "Февра|гмя 12 дня": a leftover of the name before the day, not after a three-letter name
+                # ("Ная бря 10" is not May 10)
+                left = r'[а-яёѣіъ]{0,4}' if all(len(strip(nm)) > 3 for nm in MONTHS[m]) else ''
+                da = re.match(left + r'\W*(\d{1,2})(?!\s*\d)', after)
                 d = int((db or da).group(1)) if (db or da) else None
                 if d is None:
                     dn = P.find('дня', mr[1])
-                    d = ordinal(P.between(mr[1], dn[0])) if dn and dn[0] - mr[1] <= 24 else None
+                    d = day_in_words(P.between(mr[1], dn[0])) if dn and dn[0] - mr[1] <= 24 else None
                 if d and 1 <= d <= 31:
                     out['birth_month'], out['birth_day'] = m, d
+            if not out.get('birth_month') and not out.get('birth_day'):
+                # the month is unreadable or not written ("1854 года Іюмья 22 дня", "родившаяся 25 Ігоня
+                # 1901 г.", "родившаяся четвертаго дня"): the day is still read
+                rest = P.orig[k:]
+                dn = P.find('дня', vend)
+                near = P.orig[k:P.map[dn[0]]] if dn and dn[0] - vend <= 45 else None
+                dm = re.search(r'[^\d\s]\W*(\d{1,2})(?:г?о|аго)?[^\d\s]?\W{0,2}д[а-яѣ][яь]', rest[:60])
+                dm = dm or re.match(r'[а-яёѣі\s]{0,8}(?:.{0,12}?(?:года|г\.))?\W*(\d{1,2})(?!\d)\W*[%s]{3,}' % LETTER, rest)
+                d = int(dm.group(1)) if dm else None
+                if d is None and near and not re.search(r'\d', near):
+                    d = day_in_words(near)
+                if d and 1 <= d <= 31:
+                    out['birth_day'] = d
     if not (out.get('birth_month') and out.get('birth_day')) and (syn or doch):
         # "... Супруговъ дочь 20 Ноября родилась въ деревни ...": the date straight after "сынъ" / "дочь"
         kid = syn if out.get('sex') == 'M' or not doch else doch
@@ -462,16 +688,25 @@ def parse(entry):
     for k in ('child_name', 'father', 'mother'):
         if out.get(k):
             out[k] = out[k].replace(' ', '')
-    # dates: the baptism falls in the register year; a birth in a later month than the
-    # baptism (e.g. December birth, January baptism) belongs to the previous year
-    ry = entry.get('register_year') or 1888
+    set_dates(out, entry.get('register_year'))
+    return out
+
+
+def set_dates(out, register_year):
+    """baptism_date / birth_date from the months and days in `out`: the baptism falls in the register
+    year; a birth in a later month than the baptism (e.g. December birth, January baptism) belongs to
+    the previous year."""
+    ry = register_year or 1888
     bm, bd = out.get('baptism_month'), out.get('baptism_day')
     out['baptism_date'] = f'{ry}-{bm:02d}-{bd:02d}' if bm and bd else None
     m, d = out.get('birth_month'), out.get('birth_day')
     if m and d:
         year = ry - 1 if bm and m > bm else ry
         out['birth_date'] = f'{year}-{m:02d}-{d:02d}'
-    return out
+
+
+def option(name):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv and sys.argv.index(name) + 1 < len(sys.argv) else None
 
 
 def main():
@@ -490,26 +725,48 @@ def main():
             'checked' if a and a['status'] in ('image_checked', 'independently_checked') else 'model')
         cell_src.setdefault((p['row_id'], p['cell']), set()).add(c)
     which = {'baptism': ['baptism_month', 'baptism_day', 'baptism_date', 'priest', 'child_name'],
-             'godparents': ['godparents']}
+             'godparents': ['godparents', 'godfather', 'godmother', 'godmother_status']}
+    stem = src.stem.replace('year_draft_', '')
+    combined = tagger = None
+    if '--tagger' in sys.argv or '--tagger-spans' in sys.argv:
+        # the optional field tagger: its spans are read from a file, so no torch is needed here
+        sys.path.insert(0, str(Path(__file__).resolve().parent / 'neural_parser'))
+        sys.modules.setdefault('parse_entries', sys.modules[__name__])
+        import combine
+        spans_file = Path(option('--tagger-spans') or src.with_name(f'tagger_spans_{stem}.json'))
+        if not spans_file.exists():
+            sys.exit(f'no tagger spans at {spans_file}: run .venv-htr/bin/python pipeline/neural_parser/apply.py {src} first')
+        tags, tagger = combine.load_spans(spans_file, draft['entries'])
+        priest = option('--priest') or 'combine'
+        combined = combine.combine_entries(draft['entries'], tags, priest=priest)
+        tagger |= {'threshold': combine.THRESHOLD, 'priest': priest, 'township_wording': combine.township_wording(draft['entries'])}
     out = []
-    for e in draft['entries']:
-        f = parse(e)
+    for i, e in enumerate(draft['entries']):
+        f = combined[i]['fields'] if combined else {k: {'value': v} for k, v in parse(e).items()}
         fields = {}
         for k, v in f.items():
             cell = next((c for c, ks in which.items() if k in ks), 'parents')
             s = cell_src.get((e['row_id'], cell), {'model'}) - {'skip'}
-            fields[k] = {'value': v, 'source': 'checked' if s == {'checked'} else 'mixed' if 'checked' in s else 'model'}
+            # `source`: was the text checked; `by` / `conf` / `alt` (only with --tagger): who read the field
+            fields[k] = {'value': v['value'], 'source': 'checked' if s == {'checked'} else 'mixed' if 'checked' in s else 'model'} \
+                | {x: v[x] for x in ('by', 'conf', 'alt') if x in v}
         out.append({k: e.get(k) for k in ('row_id', 'register_year', 'scan', 'page', 'expected_entry_no', 'hand_group',
                                           'split', 'image', 'split_from', 'heading', 'heading_month')}
                    | {'fields': fields, 'text': {c: e[c] for c in ('baptism', 'parents', 'godparents')}})
-    stem = src.stem.replace('year_draft_', '')
-    dst = BOOK / f'processed/entries_{stem}.json'
-    dst.write_text(json.dumps({'source': str(src.relative_to(ROOT)), 'model': draft.get('model', {}).get('model_path'),
-                               'note': 'Machine-extracted fields from machine drafts. Unverified.', 'entries': out},
-                              ensure_ascii=False, indent=1))
+    dst = Path(option('--out')) if option('--out') else BOOK / f'processed/entries_{stem}.json'
+    rel = lambda p: str(p.relative_to(ROOT)) if p.is_relative_to(ROOT) else str(p)
+    doc = {'source': rel(src), 'model': draft.get('model', {}).get('model_path'),
+           'note': 'Machine-extracted fields from machine drafts. Unverified.'}
+    if tagger:
+        doc['tagger'] = tagger
+    dst.write_text(json.dumps(doc | {'entries': out}, ensure_ascii=False, indent=1))
     keys = ['sex', 'baptism_date', 'birth_date', 'child_name', 'father', 'mother', 'village', 'priest']
-    print(json.dumps({'entries': len(out), 'filled': {k: sum(1 for e in out if e['fields'].get(k, {}).get('value')) for k in keys},
-                      'out': str(dst.relative_to(ROOT))}, ensure_ascii=False))
+    report = {'entries': len(out), 'filled': {k: sum(1 for e in out if e['fields'].get(k, {}).get('value')) for k in keys},
+              'out': rel(dst)}
+    if tagger:
+        report['tagger'] = {'stale': tagger['stale'], 'by': {b: sum(1 for e in out for v in e['fields'].values() if v.get('by') == b)
+                                                             for b in ('both', 'tagger', 'rules')}}
+    print(json.dumps(report, ensure_ascii=False))
     if '--check-pilot' in sys.argv:
         check_pilot(out)
     return 0

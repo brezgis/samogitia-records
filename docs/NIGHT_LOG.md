@@ -422,3 +422,41 @@ translation, model training ... as you can"). Entries are appended as work compl
   On Salantai and 1827/1/20, of 50 disagreeing entries read per book: tagger right 126 and 139 fields,
   rules right 12 and 8. No human gold; 46% of silver spans are rule-made. Parser bugs found, not
   fixed: "Мая" matched inside "родившаяся"; "волости" matched inside surnames like "Волонтетвъ".
+
+## 2026-11-16/17 (Anna: start the Salantai fixes, wire in the tagger, push)
+- **Eight Salantai scans whose two pages are not the same opening** (16, 25, 34, 79, 81, 86, 92, 112): the
+  left page's baptisms and the right page's parents/godparents belong to different entries and the
+  dates jump at the next scan; a leaf is missing between them (lost, or two leaves turned together
+  when photographed; the folio numbers would tell). About 44 entries affected; flagged, not re-paired.
+- `assemble_drafts.py`: a row whose "parents" cell is really the godparents column (scan 11: the
+  right-page template was placed one column too far right; the real parents column was never cropped)
+  is refiled and flagged; continuations at the top of a page side are folded into the last entry of
+  the previous side; out-of-step page sides flagged; `assemble()` is a pure function. The same template
+  fault is on plunge-1827-1-20 scan 4. Not re-laid-out (line ids). `infer_years.py`: a year word
+  divided at the line end, "семаго", round years, and a previous year at the start of a book are read
+  (Salantai: 14 entries of Nov–Dec 1856). **Salantai: 673 entries** (1856: 14, 1857: 142, 1858: 141,
+  1859: 130, 1860: 66, 1861: 121, 1862: 59), 38 flagged. run_book.sh still drops years with fewer than
+  20 rows (1856 was run by hand).
+- `pipeline/check_months.py`: fits the baptism months as non-decreasing through the book, using the
+  clerk's month headings; flags a month that breaks the order, a birth after the baptism, a birth month
+  that is a misreading. Salantai: 73 entries flagged; plunge-1827-1-24 (crnn-ru-v1, in scratch): 99, with
+  the known "Іюня for Іюля" of July 1897 caught (14 flags on scans 59–62).
+- docs/LT_GLOSSARY.md section 11, Salantai: formulas, twelve priests with one fixed form each
+  (Piotr Staszkowski ~201 entries; "Aleszewski" and "Chmielewski" are one man, "Kasper Chmielewski [?]"),
+  12 villages settled against OpenStreetMap places within 15 km (data/gazetteer/
+  osm_places_salantai_15km.json; 182 entries; modern names, an exception to "never restore", pending
+  Anna's word), "-атъ/-ятъ" = misread "-ахъ/-яхъ", missing terms and given names (all "proposed, not
+  reviewed by a native speaker").
+- **Field tagger in the pipeline** (off by default: FIELD_TAGGER=1 for run_book.sh, `--tagger` for
+  parse_entries.py; pipeline/neural_parser/apply.py, combine.py; weights models/field-tagger-v1). Per
+  field: both agree -> `by: both`; rules empty or different -> the tagger's span if its confidence is
+  at least 0.8 (0.5 for the family surname); township only where the rules find the wording in a
+  fifth of a file's entries; rules decode dates. On the two held-out books the combination scores
+  91.0 / 91.7 on name fields (tagger alone 90.8 / 91.6, rules 76.2 / 66.7). New fields maiden_name,
+  family_surname, godfather, godmother, godmother_status; old fields and keys unchanged.
+  Parser fixes on the way: "Мая" no longer found inside other words (1,062 birth months newly filled
+  across seven books, 1,027 fitting their neighbours), "волости" no longer matched inside surnames,
+  "Вол." variants, days kept beside an unreadable month, "восмаго", a digit standing before a month.
+  A handful of correct May readings in badly garbled text are now empty. Read by the agent on 40
+  Salantai entries: 464 of 480 fields right as delimited in the draft (village 35 of 40). Tests: 50.
+  Salantai re-parsed with the tagger on. Plungė entries files not regenerated.

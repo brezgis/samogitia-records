@@ -7,7 +7,8 @@ Usage:
   nice $PY pipeline/neural_parser/train_tagger.py --model char --heldout none --seed 1 --save
 Options: --model char|xlmr|rubert; --heldout BOOK|none (none = train on all five translated books and
 tag Salantai 1517/1/1 and Plungė 1827/1/20); --names-only (name fields trained on the agents' names
-spans alone, no rule-made name spans); --no-aug; --epochs N (default 10 for char, 3 for the encoders, as in every reported run); --save (keep the weights).
+spans alone, no rule-made name spans); --no-aug; --epochs N (default 10 for char, 3 for the encoders, as in every reported run); --save (keep the weights);
+--tag T (appended to the output names: a rerun then does not overwrite a reported run's predictions).
 Predictions: <scratch>/preds/<model>[_namesonly][_noaug]__<heldout>__s<seed>.jsonl
 
 Models. Each of the three columns is tagged on its own.
@@ -348,6 +349,7 @@ def main():
     ap.add_argument('--names-only', action='store_true')
     ap.add_argument('--no-aug', action='store_true')
     ap.add_argument('--save', action='store_true')
+    ap.add_argument('--tag', default='', help='suffix for the output names, so that a rerun does not overwrite a reported run')
     args = ap.parse_args()
     args.batch = args.batch or (64 if args.model == 'char' else 16)
     torch.manual_seed(args.seed)
@@ -373,7 +375,7 @@ def main():
     predict = [(e['text'][c], ci) for e in targets for ci, c in enumerate(COLS)]
     table = confusion_table(train_books)
     name = args.model + ('_namesonly' if args.names_only else '') + ('_noaug' if args.no_aug else '')
-    name = f'{name}__{args.heldout}__s{args.seed}'
+    name = f'{name}__{args.heldout}__s{args.seed}' + (f'__{args.tag}' if args.tag else '')
     (SCRATCH / 'preds').mkdir(exist_ok=True)
     (SCRATCH / 'models').mkdir(exist_ok=True)
     args.save_path = SCRATCH / 'models' / (name + '.pt')

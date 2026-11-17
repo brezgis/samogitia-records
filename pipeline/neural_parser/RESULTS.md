@@ -376,6 +376,8 @@ exactly where no trustworthy label exists to check it.
 
 ## 8. Found on the way (not changed: existing files were not touched)
 
+Both were fixed on 2026-11-16 (section 10; `parse_entries.py` docstring). The tables of sections 2–5 were made before the fix.
+
 - `parse_entries.py`: `month_after(P, rod[1], window=40)` can match "Мая" inside
   "родивш**аяс**я"; when the real month is misread by a letter the tie goes to May, so the birth
   month becomes 5 in some daughters' entries (1827/1/24 0124_R4, 0114_L2).
@@ -385,12 +387,195 @@ exactly where no trustworthy label exists to check it.
 ## 9. Files
 
 - Code: `pipeline/neural_parser/common.py`, `build_silver.py`, `train_tagger.py`, `evaluate.py`.
+- Pipeline step (section 10): `apply.py` (tagger -> spans file), `combine.py` (rules + tagger), `validate_combination.py`
+  (threshold and held-out scores; results in the scratch `results/combination_choose.md`, `combination_report.md`);
+  held-out weights `models/char__<book>__s1__lobo.pt`; stable copy of the all-books model in
+  `/mnt/ssd240gb/anna/samogitia-htr/models/field-tagger-v1/`.
 - Scratch `/mnt/ssd240gb/anna/samogitia-htr/neural-parser/` (about 0.8 GB): `silver/` (silver.jsonl,
   stats, the two audit samples), `preds/` (every run's predictions and the cached rule spans),
   `models/char__none__s1.pt` (5 MB) and `models/xlmr__none__s1.pt` (556 MB, half precision),
   `results/` (lobo.md/json, unlabelled.md, leakage.md, reading sheets, keys and verdicts), `logs/`
   (the log `--model_xlmr_--heldout_plunge-1827-1-22_--seed_1.log` is the discarded run; its rerun is `xlmr_22_s1_rerun.log`),
   `run_queue.sh`, `pylibs/`.
+
+## 10. The combination as a pipeline step (2026-11-16)
+
+Section 6 is now code. `apply.py` tags a draft and writes the spans with a confidence each (mean
+probability of the span's tag over its characters); `combine.py` chooses each field between the
+rules and the tagger; `parse_entries.py --tagger` writes the result (off by default; `FIELD_TAGGER=1`
+in `run_book.sh`). The two parser bugs of section 8 are fixed in `parse_entries.py`, so "rules"
+below is the fixed parser; "rules (published)" is the cached baseline of section 4.
+
+**Nothing here is measured against human-checked labels either.** The combination's settings were
+chosen on three held-out folds and it is reported on the other two; all five folds use the same
+silver, and the reported folds' rules and tagger figures were already known from section 4.
+
+### What the combination does
+
+- child, father, mother, maiden name, family surname, village, godfather, godmother, her status:
+  where rules and tagger agree (span ends within 2 characters, the same letters, or one is the other
+  less formula words such as "Крестьянинъ" or "... Салантовскаго прихода") the field is marked
+  `both`; otherwise the tagger's span is taken if its confidence reaches the threshold, else the
+  rules' value stays (or the field stays empty) and the tagger's span is kept as `alt`.
+- township: the tagger is heard only in a draft file where the rules themselves find "волости" /
+  "Вол." in at least a fifth of the entries; elsewhere its township is dropped.
+- dates: the rules' month and day; where the rules have no complete date, the tagger's phrase is
+  decoded with the rules' tables if its confidence reaches the threshold.
+- priest: section 6 left it undecided and the first specification was "keep the rules' value, tagger
+  as alternative". On every fold that is worse than treating the priest like a name after taking
+  "Кс." and titles off the tagger's span (PRIEST F1 ±2 against the agents' spans, choosing folds:
+  68.9 / 84.4 / 71.4 against 71.2 / 87.8 / 73.5; reported folds: 65.3 / 74.9 against 68.4 / 77.9,
+  tagger alone 68.1 / 77.2). So the default
+  is the name treatment; `--priest rules` gives the first specification.
+- estate, sex and the old fields `maiden_and_surname` and `godparents`: rules only.
+
+### Threshold (chosen on 1827/1/18, 1886–1890, 1827/1/25; each tagged by the model trained without it)
+
+Tagger spans the rules do not corroborate, where the agents listed the name (right = within 2
+characters of the agents' span):
+
+| confidence | rules gave another value: n | tagger right | rules right | rules gave nothing: n | tagger right |
+|---|---:|---:|---:|---:|---:|
+| 0.00–0.50 | 13 | 0% | 69% | 26 | 15% |
+| 0.50–0.60 | 67 | 9% | 66% | 74 | 34% |
+| 0.60–0.70 | 121 | 26% | 43% | 108 | 35% |
+| 0.70–0.80 | 251 | 44% | 30% | 250 | 34% |
+| 0.80–0.90 | 423 | 54% | 17% | 518 | 49% |
+| 0.90–0.95 | 351 | 56% | 15% | 548 | 71% |
+| 0.95–0.98 | 532 | 77% | 7% | 800 | 85% |
+| 0.98–1.00 | 2320 | 96% | 1% | 3404 | 97% |
+
+Rule used: the lowest confidence from which (a) a tagger span that contradicts the rules is right
+more often than the rules' value and (b) a span the rules cannot corroborate at all is right about
+as often as not. (a) holds from 0.7, (b) from 0.8: **threshold 0.8**. The family surname is the one
+field that does not follow the pattern: below 0.8 its spans are still right in 108 of 133 cases
+where the rules' last-word split says something else (the rules: 1) and in 66 of 113 where the rules
+have nothing, so its threshold is **0.5**. Maximising F1 was not the criterion: F1 is nearly flat
+from 0 to 0.8 (85.6–86.9 / 94.0–94.1 / 87.7–88.0 on the three folds), because a prediction where no
+gold exists is not counted against a system; the threshold is there for those unjudged spans. At the
+defaults 1,760 tagger spans are withheld on the three folds. Dates decoded from the
+tagger's phrase where the rules had none agree with the side column in 93–99% of 159 cases above
+0.98 and 86–100% of 66 between 0.8 and 0.98; only 9 fall below 0.8.
+
+Other choices looked at on the same three folds (name fields, micro F1 ±2 against the agents'
+spans; rules 67.1 / 77.1 / 67.0, tagger 85.1 / 93.7 / 87.9): defaults 87.6 / 94.2 / 88.1; agreed
+spans taken from the rules instead of the tagger 87.5 / 94.1 / 88.0 (and 1.3–1.6 points lower on
+exact edges: 83.4 / 89.5 / 83.8 against 84.8 / 91.1 / 85.1); township gate per entry 87.6 / 94.0 / 88.0, township never from the tagger 87.6 / 93.8
+/ 87.9; priest from the rules only 87.5 / 94.0 / 88.0. Largest per-field deficit of the defaults
+against the better single system on these folds: SURNAME −0.6 (1827/1/18), TOWNSHIP −0.5 and MAIDEN
+−0.3 (1886–1890), MAIDEN −0.3 (1827/1/25).
+
+### The two reported folds (settings fixed before they were scored)
+
+The combination's settings (threshold, township gate, priest, agreed spans) were not touched after
+these folds were first scored. The rule parser and the date decoder were: the day decoding faults
+found on Salantai and in a review of the parser diff were fixed afterwards, and the tables below are
+from the final code. The name-field figures did not move; the day rows moved by under one point.
+
+Name fields, F1 within 2 characters, gold = the agents' names spans only:
+
+| field | 1827/1/22: rules | tagger | combination | 1827/1/24: rules | tagger | combination |
+|---|---:|---:|---:|---:|---:|---:|
+| PRIEST | 63.7 | 68.1 | 68.4 | 70.0 | 77.2 | 77.9 |
+| CHILD | 83.5 | 93.6 | 93.6 | 76.5 | 97.7 | 97.6 |
+| TOWNSHIP | – | – | – | 77.1 | 83.3 | 83.6 |
+| FATHER | 86.9 | 92.1 | 92.5 | 78.0 | 97.1 | 97.2 |
+| MOTHER | 84.9 | 93.3 | 94.4 | 68.1 | 91.8 | 92.0 |
+| MAIDEN | 76.3 | 96.7 | 96.9 | 48.5 | 95.9 | 95.9 |
+| SURNAME | 79.2 | 94.9 | 94.7 | 59.4 | 94.6 | 94.5 |
+| VILLAGE | 61.7 | 88.9 | 89.1 | 44.0 | 93.6 | 93.5 |
+| GODFATHER | 77.1 | 96.0 | 95.9 | 84.1 | 95.6 | 95.7 |
+| GODMOTHER | 67.4 | 79.7 | 79.7 | 66.0 | 73.0 | 73.3 |
+| **micro** | 76.2 | 90.8 | **91.0** | 66.7 | 91.6 | **91.7** |
+
+Published in section 4 for the same folds: rules 76.1 and 66.4, char 90.8 (90.7, 90.9) and 91.5
+(91.5, 91.5). The tagger here is a retrained seed-1 model (weights had not been kept); it scores
+90.8 and 91.6. No name field of the combination is more than 0.2 below the better single system;
+the seed spread of section 4 is 0.0–0.5. Against all silver spans: rules 83.0 / 78.2, tagger 90.9 /
+91.0, combination 91.2 / 91.4.
+
+So on names the combination is the tagger, not better than it: +0.1 to +0.2 is inside the seed
+spread. What it adds is not visible in this table: the `both` mark (54–87% of the entries per name field in
+1867–74, 37–80% in 1896–1902), no invented townships in the early books (0 in 1867–74), the rules' dates,
+and low-confidence spans held back.
+
+Side-column checks (agreeing / produced / entries with a side-column value), as in section 4:
+
+| check | 1827/1/22: rules (published) | rules | tagger | combination | 1827/1/24: rules (published) | rules | tagger | combination |
+|---|---|---|---|---|---|---|---|---|
+| family surname = margin | 865 / 1640 / 1954 (44%) | 865 / 1640 (44%) | 1108 / 1875 (57%) | 1102 / 1869 (56%) | 544 / 958 / 1894 (29%) | 553 / 971 (29%) | 1125 / 1840 (59%) | 1125 / 1834 (59%) |
+| baptism day, decoded from the span | 1481 / 1630 / 2049 (72%) | 1472 / 1685 (72%) | 1537 / 2049 (75%) | 1527 / 1756 (75%) | 1863 / 1949 / 2422 (77%) | 1857 / 1975 (77%) | 1925 / 2420 (79%) | 1913 / 2038 (79%) |
+| birth day, decoded from the span | 1285 / 1350 / 2043 (63%) | 1445 / 1620 (71%) | 1496 / 2036 (73%) | 1504 / 1688 (74%) | 1469 / 1723 / 2479 (59%) | 1672 / 1956 (67%) | 1721 / 2456 (69%) | 1704 / 1991 (69%) |
+| baptism day, the output's own value | | 1762 / 1797 (86%) | | 1817 / 1853 (89%) | | 2027 / 2093 (84%) | | 2082 / 2151 (86%) |
+| birth day, the output's own value | | 1618 / 1728 (79%) | | 1677 / 1792 (82%) | | 1942 / 2147 (78%) | | 1973 / 2181 (80%) |
+
+"Decoded from the span" is section 4's measure: one decoder applied to each system's date span (for
+the rules, the adapter's span). "The output's own value" is the day `parse_entries.py` writes: the
+rules read a day in more ways than the span decoder does, which is why those rows are higher and
+why the combination keeps the rules' dates. The rules' own birth-day rise from 63% to 71% and 59% to
+67% is the "Мая inside родившаяся" fix. The margin count of the combination is 6 entries under the
+tagger's in 1867–74 (0.3%; the published seeds differ by 7). In the "decoded from the span" rows the
+combination is 10–17 entries (0.5–0.7%) under the tagger alone on three of the four day checks: it
+gives fewer dates (1,756 against 2,049 baptism spans in 1867–74) because it takes the tagger's phrase
+only where the rules have nothing and the phrase decodes under the stricter rule. Of the months it
+did take from the tagger, 133 of 141 fit the baptism months of the neighbouring entries in 1867–74
+and 99 of 104 in 1896–1902 (2 more have too few neighbours); every May among them (9 and 16) fits.
+
+### Salantai 1517/1/1 (all-books model, drafts as re-assembled 2026-11-17 00:11, 673 entries)
+
+Written to `/mnt/ssd240gb/anna/samogitia-htr/neural-parser/apply/entries_<year>_crnn-ru-v4.combined.json`
+(the book's own entries files were not touched).
+
+| field | filled | both agree | tagger, rules empty | tagger over a differing rules value | rules, tagger empty | rules kept, tagger differs below threshold | tagger withheld, rules empty | empty |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| child | 661 | 621 | 21 | 16 | 2 | 1 | 2 | 10 |
+| father | 631 | 574 | 42 | 11 | 0 | 4 | 1 | 41 |
+| mother | 647 | 584 | 58 | 3 | 1 | 1 | 14 | 12 |
+| maiden name | 633 | 532 | 28 | 71 | 0 | 2 | 0 | 40 |
+| family surname | 648 | 544 | 48 | 54 | 1 | 1 | 1 | 24 |
+| village | 642 | 414 | 61 | 152 | 0 | 15 | 17 | 14 |
+| godfather | 667 | 554 | 15 | 90 | 0 | 8 | 1 | 5 |
+| godmother | 638 | 439 | 161 | 35 | 0 | 3 | 30 | 5 |
+| godmother's status | 542 | 428 | 99 | 11 | 3 | 1 | 11 | 120 |
+| priest | 663 | 613 | 23 | 26 | 0 | 1 | 1 | 9 |
+| township | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 673 |
+| baptism day | 630 | 606 (same date decoded) | 14 | 3 | 32 (rules; tagger's phrase absent or not decodable) | 1 | 0 | 17 |
+| birth day | 553 | 481 (same date decoded) | 14 | 0 | 59 (as above; 19 of them a day without a month) | 1 | 2 | 116 |
+
+Of the 31 dates taken from the tagger's phrase (17 baptism, 14 birth), 30 have a month that fits
+the baptism months of the four entries before and after; three are May and all three fit.
+
+Forty entries drawn at random (seed 20261117) were read against the draft text by the agent that
+wrote this step (not against the image, and not blind): 464 of 480 fields right, 28 entries without
+an error. Right / wrong: baptism date 39 / 1, priest 39 / 1, child 39 / 1, father 39 / 1, mother
+40 / 0, maiden name 40 / 0, family surname 39 / 1, birth date 37 / 3, village 35 / 5, godfather
+39 / 1, godmother 39 / 1, her status 39 / 1. "Right" means the value is the field's words as the
+draft has them (a garbled name correctly delimited counts as right); a field present in the text
+but left empty counts as wrong; a date whose month or day the draft itself does not show counts as
+right when left empty. The village is the weak field: two were left empty, one is a rules' leftover
+("оъ"), one keeps "Мѣстечкѣ" fused to the name, one keeps it from the rules. The reading found two
+decoding faults that were then fixed in `parse_entries.py`, and the four dates concerned (entry 11's
+baptism, entry 12's baptism and birth, entry 21's baptism) are counted as they stand after the fix
+(before it: 460 of 480): "двадцать востого" was decoded as 26 (as near to "шестаго" as
+to "восьмаго"; `ORDINALS` now has "восмаго"), and "12 Юня" as the 1st (the month match took the "2"
+for the name's first letter).
+
+The date decoder: `combine.py` uses `decode_date(strict=True)`, which finds the month as the fixed
+rule parser does. The experiment's decoder (`strict=False`, the one behind every "decoded from the
+span" row here and in section 4) still looks for month names freely and gives May for "Іюмья 22" or
+"Наября"; it is kept only so those rows stay comparable, and they compare the day alone.
+
+### Not to be trusted yet
+
+- Any single name: a right span around a misread word is still a misread word.
+- `both` is corroboration by two systems that share training signal (the tagger learned partly from
+  the rules), not an independent check.
+- The threshold on a new parish or clerk: it was set on Plungė folds only. On Salantai 17 villages
+  and 30 godmothers were withheld that nobody has looked at.
+- Godmother and her status (F1 73–80 on the reported folds), fathers with patronymics (1902–07),
+  entries assembled from two rows, unmarried mothers (mother and surname in one phrase).
+- Dates: a wrong month from a misread name ("Іюмя" is given as June, "Мная" as May) is not caught
+  here; that is `check_months.py`'s job.
 
 ## Appendix: full leave-one-book-out tables (generated by `evaluate.py lobo`)
 

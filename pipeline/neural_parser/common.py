@@ -180,21 +180,35 @@ def birth_date_span(text):
     return trim(text, start, end)
 
 
-def decode_date(span_text):
+def decode_date(span_text, strict=False):
     """(month, day) read from a date phrase with parse_entries' month and ordinal tables; None where
-    not readable. The same decoder is applied to every system's span."""
+    not readable. The same decoder is applied to every system's span.
+
+    strict=False is the experiment's decoder, kept as it was for the day checks of sections 4 and 10
+    (it looks for every month name freely, so a three-letter "Мая" can be found inside another word;
+    those checks compare the day only). strict=True finds the month with `parse_entries.month_after`,
+    as the rule parser now does, after "года" where the phrase has one before the month: this is what
+    `combine.py` uses to write a date."""
     T = Text(span_text or '')
-    best = None
-    for n, names in pe.MONTHS.items():
-        for name in names:
-            r = T.find(name)
-            if r:
-                d = lev(T.flat[r[0]:r[1]], strip(name))
-                if best is None or d < best[0]:
-                    best = (d, n, r)
-    if not best:
-        return None, None
-    _, month, mr = best
+    if strict:
+        g = T.find('года')
+        month, mr = pe.month_after(T, g[1], window=10) if g else (None, None)
+        if not mr:
+            month, mr = pe.month_after(T, 0, window=len(T.flat))
+        if not mr:
+            return None, None
+    else:
+        best = None
+        for n, names in pe.MONTHS.items():
+            for name in names:
+                r = T.find(name)
+                if r:
+                    d = lev(T.flat[r[0]:r[1]], strip(name))
+                    if best is None or d < best[0]:
+                        best = (d, n, r)
+        if not best:
+            return None, None
+        _, month, mr = best
     before, after = T.orig[:_orig(T, mr[0])], T.orig[_orig(T, mr[1] - 1) + 1:]
     da = re.match(r'\W*(\d{1,2})(?!\s*\d)', after)
     db = re.search(r'(?<!\d)(\d{1,2})\W*$', before)
@@ -202,7 +216,7 @@ def decode_date(span_text):
     if day is None:
         dn = Text(after).find('дня')
         w = after[:Text(after).map[dn[0]]] if dn else after
-        day = pe.ordinal(w)
+        day = pe.day_in_words(w) if strict else pe.ordinal(w)
     return month, (day if day and 1 <= day <= 31 else None)
 
 
@@ -277,12 +291,13 @@ def godparent_spans(text):
 
 
 # ---------------------------------------------------------------- the rule baseline as spans
-def rule_spans(entry, stats=None):
+def rule_spans(entry, stats=None, parsed=None):
     """{col: {FIELD: (s, e)}} from parse() and the adapter. `stats` (a Counter) receives
-    'filled:<FIELD>' when parse() gave a value and 'located:<FIELD>' when the adapter placed it."""
+    'filled:<FIELD>' when parse() gave a value and 'located:<FIELD>' when the adapter placed it.
+    `parsed`: the result of parse() for this entry, if the caller already has it."""
     t = entry['text']
-    f = pe.parse({'baptism': t['baptism'], 'parents': t['parents'], 'godparents': t['godparents'],
-                  'register_year': entry.get('register_year')})
+    f = parsed or pe.parse({'baptism': t['baptism'], 'parents': t['parents'], 'godparents': t['godparents'],
+                            'register_year': entry.get('register_year')})
     out = {c: {} for c in COLS}
 
     def put(col, field, value, lo=0):

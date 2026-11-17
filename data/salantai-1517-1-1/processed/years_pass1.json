@@ -1,26 +1,29 @@
 {
  "rows": 775,
  "by_year": {
-  "1857": 167,
+  "1856": 14,
+  "1857": 153,
   "1858": 151,
   "1859": 150,
-  "1860": 76,
-  "1861": 155,
-  "1862": 76
+  "1860": 82,
+  "1861": 148,
+  "1862": 77
  },
  "first_row_of_year": {
-  "1857": "0003_L1",
+  "1856": "0003_L1",
+  "1857": "0006_L2",
   "1858": "0035_L1",
   "1859": "0054_L1",
   "1860": "0080_L1",
-  "1861": "0092_L1",
-  "1862": "0117_L1"
+  "1861": "0093_L1",
+  "1862": "0116_L6"
  },
  "order_conflicts": 0,
  "status": {
-  "inferred_monotone_page_fit": 84,
-  "inferred_from_page_majority": 158,
-  "inferred_from_birth_digits_and_page": 143,
-  "inferred_from_baptism_words": 390
+  "inferred_from_baptism_words": 547,
+  "inferred_monotone_page_fit": 37,
+  "inferred_year_turn_in_page": 2,
+  "inferred_from_page_majority": 143,
+  "inferred_from_birth_digits_and_page": 46
  }
 }

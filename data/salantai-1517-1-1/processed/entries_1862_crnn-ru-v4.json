@@ -2,7 +2,165 @@
  "source": "data/salantai-1517-1-1/processed/year_draft_1862_crnn-ru-v4.json",
  "model": "/mnt/ssd240gb/anna/samogitia-htr/models/crnn-ru-v4/best_model.pt",
  "note": "Machine-extracted fields from machine drafts. Unverified.",
+ "tagger": {
+  "spans": "/home/anna/projects/samogitia-parishes/data/salantai-1517-1-1/processed/tagger_spans_1862_crnn-ru-v4.json",
+  "model": "/mnt/ssd240gb/anna/samogitia-htr/models/field-tagger-v1/char__none__s1.pt",
+  "model_md5": "3b08c544db6fd73c3d97de6ddd920833",
+  "stale": 0,
+  "threshold": {
+   "default": 0.8,
+   "SURNAME": 0.5
+  },
+  "priest": "combine",
+  "township_wording": false
+ },
  "entries": [
+  {
+   "row_id": "0116_L6",
+   "register_year": 1862,
+   "scan": 116,
+   "page": "L",
+   "expected_entry_no": null,
+   "hand_group": "unknown",
+   "split": "train",
+   "image": "data/salantai-1517-1-1/processed/rows/0116_L6.jpg",
+   "split_from": null,
+   "heading": "Январь.",
+   "heading_month": 1,
+   "fields": {
+    "baptism_month": {
+     "value": 1,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
+    },
+    "priest": {
+     "value": "Ллгдскимъ Ви",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9017,
+     "alt": {
+      "value": "Іесифомъ Ллгдскимъ",
+      "by": "rules"
+     }
+    },
+    "child_name": {
+     "value": "еонольсДоминикъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9712
+    },
+    "estate": {
+     "value": "Крестьянъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "township": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_and_surname": {
+     "value": "Станкусовной Венцлавстихъ",
+     "source": "model",
+     "by": "rules"
+    },
+    "father": {
+     "value": "Долимиком",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9735
+    },
+    "mother": {
+     "value": "Петронелій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9945
+    },
+    "sex": {
+     "value": "M",
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_month": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "birth_day": {
+     "value": 1,
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "village": {
+     "value": "Бурбайцятъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godparents": {
+     "value": "Дворяннъ Матвей Лисоевичъ ъ съ Каролинною Болондревною дѣвицею",
+     "source": "model",
+     "by": "rules"
+    },
+    "baptism_date": {
+     "value": null,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
+    },
+    "birth_date": {
+     "value": "1862-01-01",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "maiden_name": {
+     "value": "Станкусовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9964
+    },
+    "family_surname": {
+     "value": "Венцлавстихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9896
+    },
+    "godfather": {
+     "value": "Матвей Лисоевичъ ъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9672
+    },
+    "godmother": {
+     "value": "Каролинною Болондревною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9904
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    }
+   },
+   "text": {
+    "baptism": "Тысяча восемсотъ шестьдесятъ втораго года Января второвдня въ Салантовскомъ Приходскам Р.К. Костелѣ мѣстнымъ . Іесифомъ Ллгдскимъ Викарнымъ Ксендзомъ окреще но дитя ммлами еонольс Доминикъ, Со всѣми обрядами Таинства. -",
+    "parents": "Крестьянъ Долимиком Петронелій урожденной Станкусовной Венцлавстихъ  Законныхъ супруговъ Сынъ родивши 1862. года Января 1го дня въ деревни Бурбайцятъ Плунгянскаго Прихода.",
+    "godparents": "Воспріемниками были Дворяннъ Матвей Лисоевичъ ъ съ Каролинною Болондревною дѣвицею. -"
+   }
+  },
   {
    "row_id": "0117_L2",
    "register_year": 1862,
@@ -18,67 +176,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 6,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Дамскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9762
     },
     "child_name": {
      "value": "Антоній",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Берташюсовной Венцкусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Антона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9886
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 6,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Клавъ гатвохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9359
     },
     "godparents": {
      "value": "Крестьянъ Доминикъ Берташісъ съ Антониною Вавртенца Вешкуса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-06",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-06",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Берташюсовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9961
+    },
+    "family_surname": {
+     "value": "Венцкусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "godfather": {
+     "value": "Доминикъ Берташісъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "godmother": {
+     "value": "Антониною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godmother_status": {
+     "value": "Вавртенца Вешкуса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9889
     }
    },
    "text": {
@@ -102,67 +318,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Яномъ Арвасевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9583
     },
     "child_name": {
      "value": "Агнешка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Янковской Миламюсовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "mother": {
      "value": "Марціямны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
     },
     "birth_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
     },
     "village": {
      "value": "на срянахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9293
     },
     "godparents": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "baptism_date": {
      "value": "1862-01-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-01-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
+    },
+    "maiden_name": {
+     "value": "Янковской",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9925
+    },
+    "family_surname": {
+     "value": "Миламюсовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9894
+    },
+    "godfather": {
+     "value": "Кантонъ Вайнюсъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9959
+    },
+    "godmother": {
+     "value": "Петронелею Миламсовною",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9902
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9995
     }
    },
    "text": {
@@ -186,67 +460,129 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Янылъ Арвасевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.966
     },
     "child_name": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9961
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Кнзкштовцой Лавнисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "birth_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "village": {
-     "value": "Пацефъ Саланвятагго",
-     "source": "model"
+     "value": "Пацефъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9934,
+     "alt": {
+      "value": "Пацефъ Саланвятагго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Стонкусъ съ Марціянною Іосифа ПрейбисоСупругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
+    },
+    "maiden_name": {
+     "value": "Кнзкштовцой",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9932
+    },
+    "family_surname": {
+     "value": "Лавнисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9883
+    },
+    "godfather": {
+     "value": "Іосифъ Стонкусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Марціянною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9967
+    },
+    "godmother_status": {
+     "value": "Іосифа ПрейбисоСупругою",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9783
     }
    },
    "text": {
@@ -270,67 +606,129 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 16,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9734
     },
     "child_name": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9959
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Филиповичевной Августисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Маться",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9964
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "birth_day": {
      "value": 15,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "village": {
-     "value": "Лайвяръ Салантов",
-     "source": "model"
+     "value": "Лайвяръ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9946,
+     "alt": {
+      "value": "Лайвяръ Салантов",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Геронимъ Милюсъ съ Анною Яна Норвяніы супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-16",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-15",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
+    },
+    "maiden_name": {
+     "value": "Филиповичевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.995
+    },
+    "family_surname": {
+     "value": "Августисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9902
+    },
+    "godfather": {
+     "value": "Геронимъ Милюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "godmother": {
+     "value": "Анною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "godmother_status": {
+     "value": "Яна Норвяніы супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9388
     }
    },
    "text": {
@@ -354,59 +752,123 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9706
     },
     "child_name": {
-     "value": "иКатарина-Анна",
-     "source": "model"
+     "value": "Катарина-Анна",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9336
     },
     "estate": {
      "value": "Крестьянки",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "birth_day": {
      "value": 17,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "village": {
      "value": "Тузахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9914
     },
     "godparents": {
      "value": "Крестьянъ Тоташъ Нов ловскій съ Каторинною Рилина сѣбрыма Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-17",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "father": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "mother": {
+     "value": "Секли",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9778
+    },
+    "maiden_name": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "family_surname": {
+     "value": "Навловской",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.6823
+    },
+    "godfather": {
+     "value": "Тоташъ Нов ловскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godmother": {
+     "value": "Каторинною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9944
+    },
+    "godmother_status": {
+     "value": "Рилина сѣбрыма Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.983
     }
    },
    "text": {
@@ -430,67 +892,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.976
     },
     "child_name": {
      "value": "Аполіонія",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Леаневной Яксовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": null,
-     "source": "model"
+     "value": "Францишка",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9871
     },
     "mother": {
-     "value": null,
-     "source": "model"
+     "value": "Аполіоніи",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8986
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "едговдзяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9893
     },
     "godparents": {
      "value": "Крестьяниъ Казимиръ Виршшелій съ Анною Лановною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Леаневной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9959
+    },
+    "family_surname": {
+     "value": "Яксовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9875
+    },
+    "godfather": {
+     "value": "Казимиръ Виршшелій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
+    },
+    "godmother": {
+     "value": "Анною Лановною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9896
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -514,63 +1034,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замснемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9742
     },
     "child_name": {
      "value": "Маріянна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Миц кусовной Пакальнишкисо",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Петра",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9962
     },
     "mother": {
      "value": "фелиціяты",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9961
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "godparents": {
      "value": "Крестьянинъ Іосифъ Рафаловичъ съ Дворянкою Маріянною Монцеыччвноюо дѣви цею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Миц кусовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9937
+    },
+    "family_surname": {
+     "value": "Пакальнишкисо",
+     "source": "model",
+     "by": "both",
+     "conf": 0.989
+    },
+    "village": {
+     "value": "Салонотъи",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9321
+    },
+    "godfather": {
+     "value": "Іосифъ Рафаловичъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Маріянною Монцеыччвноюо",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9626
+    },
+    "godmother_status": {
+     "value": "дѣви цею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     }
    },
    "text": {
@@ -594,67 +1176,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 25,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замоніемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9693
     },
     "child_name": {
      "value": "Моника",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Грыцгосо ной Стропусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифай",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9607
     },
     "mother": {
      "value": "Приули",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9957
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "birth_day": {
      "value": 24,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "village": {
      "value": "Орлянахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9887
     },
     "godparents": {
      "value": "Крестьяниъ: Янъ Кеотровскій съ Молиною Строповною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-25",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-24",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
+    },
+    "maiden_name": {
+     "value": "Грыцгосо ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9873
+    },
+    "family_surname": {
+     "value": "Стропусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.988
+    },
+    "godfather": {
+     "value": "Янъ Кеотровскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
+    },
+    "godmother": {
+     "value": "Молиною Строповною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9888
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -678,63 +1318,128 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 25,
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залесимъ",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9732
     },
     "child_name": {
      "value": "Францишекъ",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9981
     },
     "estate": {
      "value": "КЯна",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "rules"
     },
     "township": {
      "value": null,
-     "source": "mixed"
+     "source": "mixed",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Багдоновной Линдовъ",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "rules"
     },
     "father": {
-     "value": null,
-     "source": "mixed"
+     "value": "КЯна",
+     "source": "mixed",
+     "by": "tagger",
+     "conf": 0.9316
     },
     "mother": {
-     "value": null,
-     "source": "mixed"
+     "value": "Лонарды",
+     "source": "mixed",
+     "by": "tagger",
+     "conf": 0.9979
     },
     "sex": {
      "value": "M",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 25,
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9989
     },
     "godparents": {
      "value": "Крестьянъ: Францининъ Бружасъ съ Барбарого Жельвовноюдѣвицею",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-25",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-25",
-     "source": "mixed"
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Багдоновной",
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.995
+    },
+    "family_surname": {
+     "value": "Линдовъ",
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9887
+    },
+    "village": {
+     "value": "Мѣстечкѣ салантохъ",
+     "source": "mixed",
+     "by": "tagger",
+     "conf": 0.8121
+    },
+    "godfather": {
+     "value": "Францининъ Бружасъ",
+     "source": "mixed",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "godmother": {
+     "value": "Барбарого Жельвовною",
+     "source": "mixed",
+     "by": "tagger",
+     "conf": 0.9819,
+     "alt": {
+      "value": "Барбарого Жельвовноюдѣвицею",
+      "by": "rules"
+     }
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "mixed",
+     "by": "tagger",
+     "conf": 0.991
     }
    },
    "text": {
@@ -758,67 +1463,129 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Іосифомъ Залески",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9699
     },
     "child_name": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9953
     },
     "estate": {
      "value": "Дворятнъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Лякстутисовной Вискантовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "mother": {
      "value": "Антонины",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
-     "value": "Лайвяхъ Салантов",
-     "source": "model"
+     "value": "Лайвяхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9915,
+     "alt": {
+      "value": "Лайвяхъ Салантов",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Францименъ Барановскій съ Барбарою Казбарой тисовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-01-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Лякстутисовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9951
+    },
+    "family_surname": {
+     "value": "Вискантовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9888
+    },
+    "godfather": {
+     "value": "Францименъ Барановскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "godmother": {
+     "value": "Барбарою Казбарой тисовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.963
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -842,67 +1609,125 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Яномъ Арвасевиичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9612
     },
     "child_name": {
      "value": "Іелена",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мицкусов ной Сендровскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "феликса",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "mother": {
      "value": "Пеены",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9985
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "birth_day": {
      "value": 29,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "village": {
      "value": "Баргаляхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9915
     },
     "godparents": {
      "value": "Крестьянъ Симеонъ =Мицкусъ съ Анною Сендровсою дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-29",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
+    },
+    "maiden_name": {
+     "value": "Мицкусов ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9897
+    },
+    "family_surname": {
+     "value": "Сендровскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9894
+    },
+    "godfather": {
+     "value": "Симеонъ =Мицкусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9962
+    },
+    "godmother": {
+     "value": "Анною Сендровсою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9894
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -926,67 +1751,129 @@
    "fields": {
     "baptism_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 30,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.972
     },
     "child_name": {
      "value": "Агешка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Филиновсчевной Туроскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Францишка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
     },
     "mother": {
      "value": "Людовики",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
-     "value": "Кулисодоръ Салантовша го",
-     "source": "model"
+     "value": "Кулисодоръ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9932,
+     "alt": {
+      "value": "Кулисодоръ Салантовша го",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Домаркосъ съ Анною Іосифа Прейднеа Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-01-30",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-01-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Филиновсчевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9953
+    },
+    "family_surname": {
+     "value": "Туроскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "godfather": {
+     "value": "Казимиръ Домаркосъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "godmother": {
+     "value": "Анною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "godmother_status": {
+     "value": "Іосифа Прейднеа Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9817
     }
    },
    "text": {
@@ -1010,67 +1897,129 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
-     "value": "КоЯномъ Арвасевичемъ",
-     "source": "model"
+     "value": "Арвасевичемъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9793,
+     "alt": {
+      "value": "КоЯномъ Арвасевичемъ",
+      "by": "rules"
+     }
     },
     "child_name": {
      "value": "Петронеля",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Рамоновной Козловскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Антона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Тузохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9943
     },
     "godparents": {
      "value": "Крестьянъ Янъ розиовскій съ Петронелею Іосифа Труй кевсча Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-01",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-01",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Рамоновной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9956
+    },
+    "family_surname": {
+     "value": "Козловскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9894
+    },
+    "godfather": {
+     "value": "Янъ розиовскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
+    },
+    "godmother": {
+     "value": "Петронелею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "godmother_status": {
+     "value": "Іосифа Труй кевсча Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
     }
    },
    "text": {
@@ -1094,67 +2043,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9719
     },
     "child_name": {
-     "value": "иСуонимъ-Іосифъ",
-     "source": "model"
+     "value": "Суонимъ-Іосифъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9401
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Висконтовной Яссовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Марціяна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "birth_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "village": {
      "value": "Клавъ гальахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9651
     },
     "godparents": {
      "value": "Крестьянъ Антоній Вецкусъ съ Каролиною Берташюсового вдовою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
+    },
+    "maiden_name": {
+     "value": "Висконтовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9942
+    },
+    "family_surname": {
+     "value": "Яссовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9879
+    },
+    "godfather": {
+     "value": "Антоній Вецкусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
+    },
+    "godmother": {
+     "value": "Каролиною Берташюсового",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9743
+    },
+    "godmother_status": {
+     "value": "вдовою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     }
    },
    "text": {
@@ -1178,51 +2185,116 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9808
     },
     "child_name": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Станкусовной Миктосовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
     },
     "mother": {
      "value": "Юліянны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Каминскій съ Магдаленною Францишна",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Станкусовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9962
+    },
+    "family_surname": {
+     "value": "Миктосовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9908
+    },
+    "village": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "godfather": {
+     "value": "Іосифъ Каминскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "godmother": {
+     "value": "Магдаленною Францишна",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9247
+    },
+    "godmother_status": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9743
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9743
     }
    },
    "text": {
@@ -1246,67 +2318,129 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 5,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9727
     },
     "child_name": {
      "value": "Францишекъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "estate": {
      "value": "Давинстняго",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Ветошевной Нарвиліовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": "Францишка",
-     "source": "model"
+     "value": "СондатаФранцишка",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9096,
+     "alt": {
+      "value": "Францишка",
+      "by": "rules"
+     }
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 5,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Юдупянохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9931
     },
     "godparents": {
      "value": "Крестьянъ Янъ Кинфа съ Анною Беа нюшевною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-05",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-05",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Ветошевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9955
+    },
+    "family_surname": {
+     "value": "Нарвиліовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9885
+    },
+    "godfather": {
+     "value": "Янъ Кинфа",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9953
+    },
+    "godmother": {
+     "value": "Анною Беа нюшевною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9841
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -1330,67 +2464,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 8,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Галскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9722
     },
     "child_name": {
      "value": "Юліянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Яки товной Спсулькисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Микаста",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
     },
     "mother": {
      "value": "Катарины",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 8,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "Лайватъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "godparents": {
      "value": "Крестьянъ Адамъ Стоюойтись съ Анолипаріею Іосифа Якш та Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-08",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-08",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Яки товной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9892
+    },
+    "family_surname": {
+     "value": "Спсулькисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9857
+    },
+    "godfather": {
+     "value": "Адамъ Стоюойтись",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9961
+    },
+    "godmother": {
+     "value": "Анолипаріею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "godmother_status": {
+     "value": "Іосифа Якш та Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9823
     }
    },
    "text": {
@@ -1414,55 +2606,127 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Яномъ Арвасевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.958
     },
     "child_name": {
      "value": "Анна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Іоыейкисовной Касперовичевъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Францишка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "mother": {
      "value": "Аоліоніий",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
      "value": "Лайвстъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9946
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Пушкорюсъ съ Анною матеумо Пучинскаго супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Іоыейкисовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
+    },
+    "family_surname": {
+     "value": "Касперовичевъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9908
+    },
+    "godfather": {
+     "value": "Іосифъ Пушкорюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "godmother": {
+     "value": "Анною м",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8298,
+     "alt": {
+      "value": "Анною матеумо",
+      "by": "rules"
+     }
+    },
+    "godmother_status": {
+     "value": "атеумо Пучинскаго супругою",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8646,
+     "alt": {
+      "value": "Пучинскаго супругою",
+      "by": "rules"
+     }
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9802
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9802
     }
    },
    "text": {
@@ -1486,59 +2750,123 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
-     "value": null,
-     "source": "model"
+     "value": "Іосифомъ Галескимъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9698
     },
     "child_name": {
-     "value": null,
-     "source": "model"
+     "value": "КауЯнъ,дайМагдалена",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.842
     },
     "estate": {
      "value": "Крестьянии",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "birth_day": {
      "value": 11,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "village": {
      "value": "Ренеци",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
     },
     "godparents": {
      "value": "1го Крестьянъ Іосифъ Микалов скій съ Петронелею Стротовною дѣвицею. - 2ог Кре стрянъ Казимиръ Раровскій съ Грисулю Домблов ною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-11",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "father": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "mother": {
+     "value": "Петронеми",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9937
+    },
+    "maiden_name": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "family_surname": {
+     "value": "Брхоздовской",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.7931
+    },
+    "godfather": {
+     "value": "Іосифъ Микалов скій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9949
+    },
+    "godmother": {
+     "value": "Петронелею Стротовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9722
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8912
     }
    },
    "text": {
@@ -1562,67 +2890,133 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Самскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9465
     },
     "child_name": {
      "value": "Антоній",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Бснюловной Шаблинскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "mother": {
      "value": "Барбары",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "birth_day": {
      "value": 14,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "village": {
-     "value": "Пельди Салантовшаго",
-     "source": "model"
+     "value": "Пельди",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9966,
+     "alt": {
+      "value": "Пельди Салантовшаго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьяниъ Казимиръ Висмлъ съ Анцею Тентлевноюддѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-14",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
+    },
+    "maiden_name": {
+     "value": "Бснюловной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9953
+    },
+    "family_surname": {
+     "value": "Шаблинскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9913
+    },
+    "godfather": {
+     "value": "Казимиръ Висмлъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "godmother": {
+     "value": "Анцею Тентлевною",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.989,
+     "alt": {
+      "value": "Анцею Тентлевноюддѣвицею",
+      "by": "rules"
+     }
+    },
+    "godmother_status": {
+     "value": "ддѣвицею",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9733
     }
    },
    "text": {
@@ -1646,51 +3040,126 @@
    "fields": {
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9262
     },
     "child_name": {
      "value": "Казимиръ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "estate": {
      "value": "Супруговъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.4333,
+     "alt": {
+      "value": "овъ",
+      "by": "tagger",
+      "conf": 0.4333
+     }
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9946
     },
     "birth_day": {
      "value": 15,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9946
     },
     "village": {
      "value": "Юдунянохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9881
     },
     "godparents": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "baptism_date": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "birth_date": {
      "value": "1862-02-15",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9946
+    },
+    "father": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "mother": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "maiden_name": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "family_surname": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "godfather": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "godmother": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "godmother_status": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.459,
+     "alt": {
+      "value": "Казимиа Судиса супругою",
+      "by": "tagger",
+      "conf": 0.459
+     }
+    },
+    "baptism_month": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "baptism_day": {
+     "value": null,
+     "source": "model",
+     "by": "none"
     }
    },
    "text": {
@@ -1714,59 +3183,131 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залестимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9726
     },
     "child_name": {
      "value": "Гелена",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "estate": {
      "value": "Крестьянни",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "birth_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "village": {
-     "value": "Кулаляхъ Салан товсаг",
-     "source": "model"
+     "value": "Кулаляхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9929,
+     "alt": {
+      "value": "Кулаляхъ Салан товсаг",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьяниъ Францишенъ Матулисъ съ Марціянною Канавою вдовою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
+    },
+    "father": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "mother": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.7753,
+     "alt": {
+      "value": "БарбарыКентровны",
+      "by": "tagger",
+      "conf": 0.7753
+     }
+    },
+    "maiden_name": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "family_surname": {
+     "value": null,
+     "source": "model",
+     "by": "none"
+    },
+    "godfather": {
+     "value": "Францишенъ Матулисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "godmother": {
+     "value": "Марціянною Канавою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9896
+    },
+    "godmother_status": {
+     "value": "вдовою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     }
    },
    "text": {
@@ -1790,67 +3331,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9704
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9985
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Филиповичевной Призайтисавъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": null,
-     "source": "model"
+     "value": "Тадеурша",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9961
     },
     "mother": {
-     "value": null,
-     "source": "model"
+     "value": "Теодоры",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9907
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Юдурянахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9877
     },
     "godparents": {
      "value": "ли: Крестьянъ Казимиръ Кайрисъ съ Барбарою Алексатрооцюся Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Филиповичевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9964
+    },
+    "family_surname": {
+     "value": "Призайтисавъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9896
+    },
+    "godfather": {
+     "value": "Казимиръ Кайрисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "godmother": {
+     "value": "Барбарою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Алексатрооцюся Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8945
     }
    },
    "text": {
@@ -1874,67 +3473,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.971
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Нармонтовной Павлюсовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифой",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9852
     },
     "mother": {
      "value": "Барбар",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9554
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Якштамятъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9935
     },
     "godparents": {
      "value": "ми Крестьянъ Іосифъ Піотровскій съ Анною Буткусовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-02-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Нармонтовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "family_surname": {
+     "value": "Павлюсовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "godfather": {
+     "value": "Іосифъ Піотровскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Анною Буткусовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9847
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     }
    },
    "text": {
@@ -1958,55 +3615,119 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9755
     },
     "child_name": {
      "value": "Беррій",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Сымайтисов ной Рамонасовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Леона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9957
     },
     "mother": {
      "value": "Розаліи",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
      "value": "Неренохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9935
     },
     "godparents": {
      "value": "Дворянинъ Юліянъ Новицкій съ Аполіоніею Крестьянина Адами Атчевскаго супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
+    },
+    "maiden_name": {
+     "value": "Сымайтисов ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9912
+    },
+    "family_surname": {
+     "value": "Рамонасовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9868
+    },
+    "godfather": {
+     "value": "Юліянъ Новицкій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "godmother": {
+     "value": "Аполіоніею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother_status": {
+     "value": "Крестьянина Адами Атчевскаго супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9941
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9988
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9988
     }
    },
    "text": {
@@ -2030,67 +3751,124 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифолѣ дмскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9873
     },
     "child_name": {
      "value": "Леонъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9641
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Дварьіоновнай Смулькисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Леона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "godparents": {
      "value": "а: Крестьянъ Іервій Виткусъ съ Аномоніею Яна Пушкоргоса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Дварьіоновнай",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9892
+    },
+    "family_surname": {
+     "value": "Смулькисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9847
+    },
+    "godfather": {
+     "value": "Іервій Виткусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godmother": {
+     "value": "Аномоніею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Яна Пушкоргоса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9717
     }
    },
    "text": {
@@ -2114,67 +3892,133 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Рсифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9528
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Іейдровной Двар гонасовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Антона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
     },
     "mother": {
      "value": "Іогами",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
      "value": "Тузахъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9917
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Рійбра съ Катариною Дварьоновною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-02-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Іейдровной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.995,
+     "alt": {
+      "value": "Іейдровной Двар",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Двар гонасовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9142,
+     "alt": {
+      "value": "гонасовъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Іосифъ Рійбра",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "godmother": {
+     "value": "Катариною Дварьоновною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9827
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -2198,67 +4042,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9718
     },
     "child_name": {
      "value": "Марціяна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Томашевской Давишасовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Антона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "mother": {
      "value": "Петронели",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "birth_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "village": {
      "value": "Сенецяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9944
     },
     "godparents": {
      "value": "Крестьянъ Антоній Наркусъ съ Тересою Микала Павловскаго Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-02-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
+    },
+    "maiden_name": {
+     "value": "Томашевской",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9955
+    },
+    "family_surname": {
+     "value": "Давишасовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9926
+    },
+    "godfather": {
+     "value": "Антоній Наркусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Тересою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "godmother_status": {
+     "value": "Микала Павловскаго Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9897
     }
    },
    "text": {
@@ -2282,67 +4184,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 26,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосидомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9841
     },
     "child_name": {
      "value": "Моника",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Берневной Ленкусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Долиника",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "mother": {
      "value": "Петронели",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 25,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "Скавдайцяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9942
     },
     "godparents": {
      "value": "Крестьянъ Аліонзы охаповскій съ Петронелею Прбашюсовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-26",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-25",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Берневной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9935
+    },
+    "family_surname": {
+     "value": "Ленкусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9854
+    },
+    "godfather": {
+     "value": "Аліонзы охаповскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9941
+    },
+    "godmother": {
+     "value": "Петронелею Прбашюсовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9855
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     }
    },
    "text": {
@@ -2366,67 +4326,129 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосидемъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9878
     },
     "child_name": {
-     "value": null,
-     "source": "model"
+     "value": "Барбара",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9981
     },
     "estate": {
      "value": "бя",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.8123
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Меткисо ной Нуллавдисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": "Казимира",
-     "source": "model"
+     "value": "ъКазимира",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9224
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
     },
     "birth_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
     },
     "village": {
-     "value": "Якгтойцяхтъ Салантов",
-     "source": "model"
+     "value": "Якгтойцяхтъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9922,
+     "alt": {
+      "value": "Якгтойцяхтъ Салантов",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "д Крестьянъ Іосифъ Руйко съ Анною Алондерисовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
+    },
+    "maiden_name": {
+     "value": "Меткисо ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9932
+    },
+    "family_surname": {
+     "value": "Нуллавдисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9881
+    },
+    "godfather": {
+     "value": "Іосифъ Руйко",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Анною Алондерисовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9863
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     }
    },
    "text": {
@@ -2450,55 +4472,123 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
-     "value": "Казимиромъ Больскиыъ",
-     "source": "model"
+     "value": "Больскиыъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9879,
+     "alt": {
+      "value": "Казимиромъ Больскиыъ",
+      "by": "rules"
+     }
     },
     "child_name": {
-     "value": "иАлехандеръ-Матвей",
-     "source": "model"
+     "value": "Алехандеръ-Матвей",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9653
     },
     "estate": {
      "value": "Дворянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Осовской Понлавскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Феликса",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_day": {
+     "value": 4,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9882
     },
     "village": {
      "value": "Геннцяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9924
     },
     "godparents": {
      "value": "Настоятелъ Ксендзъ Казимиръ Бельскій съ Алексон дрого Дворянина Болесла ва Абрамовича Супругог - Присунствовали Іва рянинъ Болесловъ Абрамовичъ съ Павлиною Реймерсовного дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Осовской",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9885
+    },
+    "family_surname": {
+     "value": "Понлавскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9805
+    },
+    "godfather": {
+     "value": "Казимиръ Бельскій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Алексон дрого",
+     "source": "model",
+     "by": "both",
+     "conf": 0.7592
+    },
+    "godmother_status": {
+     "value": "Дворянина Болесла ва Абрамовича Супругог",
+     "source": "model",
+     "by": "both",
+     "conf": 0.8395
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9882
     }
    },
    "text": {
@@ -2522,67 +4612,133 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 28,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9718
     },
     "child_name": {
      "value": "Анна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9964
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мартавичевной Абруниковъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Францишка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
     },
     "mother": {
      "value": "Маріямы",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9904
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 28,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
-     "value": "ми Оскеняхъ",
-     "source": "model"
+     "value": "Оскеняхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9897,
+     "alt": {
+      "value": "ми Оскеняхъ",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Романовскимсъ Магдаленною Абруншсовного дѣ вицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-28",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-02-28",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Мартавичевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9959
+    },
+    "family_surname": {
+     "value": "Абруниковъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9912
+    },
+    "godfather": {
+     "value": "Казимиръ Романовскимсъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9643,
+     "alt": {
+      "value": "Казимиръ Романовскимсъ Магдаленною",
+      "by": "rules"
+     }
+    },
+    "godmother": {
+     "value": "Магдаленною Абруншсовного",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.983
+    },
+    "godmother_status": {
+     "value": "дѣ вицею",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9972
     }
    },
    "text": {
@@ -2606,67 +4762,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 28,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Реифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9454
     },
     "child_name": {
      "value": "Анна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мылев- у ной Буаинисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Марцина",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "mother": {
      "value": "Маріянны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
     },
     "birth_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
     },
     "village": {
      "value": "Мосимяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9936
     },
     "godparents": {
      "value": "Крестьянъ Францишекъ Размасъ съ Барборою Антона Мартинпуси супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-28",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-02-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9988
+    },
+    "maiden_name": {
+     "value": "Мылев- у ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9596
+    },
+    "family_surname": {
+     "value": "Буаинисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9478
+    },
+    "godfather": {
+     "value": "Францишекъ Размасъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
+    },
+    "godmother": {
+     "value": "Барборою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Антона Мартинпуси супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9451
     }
    },
    "text": {
@@ -2690,63 +4904,125 @@
    "fields": {
     "baptism_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "baptism_day": {
      "value": 28,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "priest": {
      "value": "Ренфомъ Галескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.7853
     },
     "child_name": {
      "value": "Ева",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9959
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Пушкорю совной Венцкусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Филита",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "mother": {
      "value": "Костарины",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "birth_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "godparents": {
      "value": "Крестьянъ Антоній Венцкусъ съ Аполіоніею Адама Пушкорюса супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-02-28",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "birth_date": {
      "value": "1862-02-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
+    },
+    "maiden_name": {
+     "value": "Пушкорю совной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9659
+    },
+    "family_surname": {
+     "value": "Венцкусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9786
+    },
+    "village": {
+     "value": "Салантоф",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.992
+    },
+    "godfather": {
+     "value": "Антоній Венцкусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "godmother": {
+     "value": "Аполіоніею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "godmother_status": {
+     "value": "Адама Пушкорюса супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9763
     }
    },
    "text": {
@@ -2770,67 +5046,129 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.972
     },
     "child_name": {
      "value": "Катарина",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мачерневной Тыревичевъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
     },
     "mother": {
      "value": "Магдалеены",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
-     "value": "Жеймяхъ Сален я",
-     "source": "model"
+     "value": "Жеймяхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9957,
+     "alt": {
+      "value": "Жеймяхъ Сален я",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Нихадемъ Тыревичъ съ Коториною Яссовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "maiden_name": {
+     "value": "Мачерневной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9954
+    },
+    "family_surname": {
+     "value": "Тыревичевъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9907
+    },
+    "godfather": {
+     "value": "Нихадемъ Тыревичъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "godmother": {
+     "value": "Коториною Яссовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9833
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     }
    },
    "text": {
@@ -2854,67 +5192,129 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Заца",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9683
     },
     "child_name": {
      "value": "Казимиръ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Зубисовнай Пельдесовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Казимира",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "mother": {
      "value": "Петронели",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "birth_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "village": {
-     "value": "Кулисадотъ Салантовмаго",
-     "source": "model"
+     "value": "Кулисадотъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9952,
+     "alt": {
+      "value": "Кулисадотъ Салантовмаго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Пельдюсъ съ Людовикою Франца Туровскаго Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
+    },
+    "maiden_name": {
+     "value": "Зубисовнай",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
+    },
+    "family_surname": {
+     "value": "Пельдесовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9907
+    },
+    "godfather": {
+     "value": "Казимиръ Пельдюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Людовикою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother_status": {
+     "value": "Франца Туровскаго Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9814
     }
    },
    "text": {
@@ -2938,67 +5338,129 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Донатомъ Шыгждовичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9458
     },
     "child_name": {
-     "value": null,
-     "source": "model"
+     "value": "Антоній-Казимиръ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.959
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Размовной Сымутисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Казимира",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "mother": {
      "value": "Катарины",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
-     "value": "Опдовдзятъ Сапантовшаго",
-     "source": "model"
+     "value": "Опдовдзятъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9926,
+     "alt": {
+      "value": "Опдовдзятъ Сапантовшаго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Гельфинисъ съ Барбарою Каминскою дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Размовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9945
+    },
+    "family_surname": {
+     "value": "Сымутисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9862
+    },
+    "godfather": {
+     "value": "Іосифъ Гельфинисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9967
+    },
+    "godmother": {
+     "value": "Барбарою Каминскою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.993
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -3022,67 +5484,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.976
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Вайтелевная Пушкоргосовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Францишка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
     },
     "mother": {
      "value": "Антонины",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 1,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
      "value": "Смельты",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9989
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Пликусъ съ Барбарою Казимира Баввинскаго Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-01",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "maiden_name": {
+     "value": "Вайтелевная",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
+    },
+    "family_surname": {
+     "value": "Пушкоргосовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9882
+    },
+    "godfather": {
+     "value": "Казимиръ Пликусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
+    },
+    "godmother": {
+     "value": "Барбарою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Казимира Баввинскаго Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9906
     }
    },
    "text": {
@@ -3106,67 +5626,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9742
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9985
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Равейкисовной Пумкорюосовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Тадеуша",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
     },
     "mother": {
      "value": "Барбары",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "Лайвяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9936
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Равейкисъ съ Маріянною Іосифа Пушпорюса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-04",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Равейкисовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
+    },
+    "family_surname": {
+     "value": "Пумкорюосовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9881
+    },
+    "godfather": {
+     "value": "Іосифъ Равейкисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Маріянною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9962
+    },
+    "godmother_status": {
+     "value": "Іосифа Пушпорюса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9822
     }
    },
    "text": {
@@ -3190,67 +5768,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 6,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9721
     },
     "child_name": {
      "value": "Казимиръ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Игнотов ной Брхоздовскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Казимира",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "mother": {
      "value": "Мотки",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 5,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
      "value": "Жейми",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9961
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Лавкисъ съ Петронелею Волонюсовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-06",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-05",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "maiden_name": {
+     "value": "Игнотов ной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.993
+    },
+    "family_surname": {
+     "value": "Брхоздовскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.989
+    },
+    "godfather": {
+     "value": "Іосифъ Лавкисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "godmother": {
+     "value": "Петронелею Волонюсовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9846
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9993
     }
    },
    "text": {
@@ -3274,67 +5910,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 11,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9716
     },
     "child_name": {
      "value": "Анна",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Берневной Жіойсковъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Михайла",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "mother": {
      "value": "Вероники",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 11,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "Кулисодохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9944
     },
     "godparents": {
      "value": "Крестьянъ Болифоцы Бенстисъ съ Петронелею Францишка Мартынкуса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-11",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-11",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Берневной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9942
+    },
+    "family_surname": {
+     "value": "Жіойсковъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9878
+    },
+    "godfather": {
+     "value": "Болифоцы Бенстисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9966
+    },
+    "godmother": {
+     "value": "Петронелею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9987
+    },
+    "godmother_status": {
+     "value": "Францишка Мартынкуса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9863
     }
    },
    "text": {
@@ -3358,55 +6052,119 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9754
     },
     "child_name": {
      "value": "Іемно",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9934
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Павлевной Эндрушковъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Марцина",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "mother": {
      "value": "Кад.м",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9956
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
      "value": "дкій быхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.977
     },
     "godparents": {
      "value": "Крестьянъ ДанпльРеминюсъ съ Гленою Брвождовскою дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Павлевной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9951
+    },
+    "family_surname": {
+     "value": "Эндрушковъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
+    },
+    "godfather": {
+     "value": "ДанпльРеминюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
+    },
+    "godmother": {
+     "value": "Гленою Брвождовскою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9857
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9626
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9626
     }
    },
    "text": {
@@ -3430,63 +6188,134 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Жифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9689
     },
     "child_name": {
-     "value": null,
-     "source": "model"
+     "value": "Барбара",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9659
     },
     "estate": {
      "value": "КрестьяннъъЯЯна",
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.984,
+     "alt": {
+      "value": "Крестьяннъъ",
+      "by": "tagger",
+      "conf": 0.984
+     }
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Пѣкусовной Піотровскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": null,
-     "source": "model"
+     "value": "ЯЯна",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9862
     },
     "mother": {
-     "value": null,
-     "source": "model"
+     "value": "Францилки",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.991
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "birth_day": {
      "value": 12,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Стрепусъ съ Барба- пи ною Пѣкусовноюдѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-12",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "maiden_name": {
+     "value": "Пѣкусовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9953
+    },
+    "family_surname": {
+     "value": "Піотровскихъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9905
+    },
+    "village": {
+     "value": "Орлянохъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9768
+    },
+    "godfather": {
+     "value": "Іосифъ Стрепусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Барба- пи ною Пѣкусовною",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.953,
+     "alt": {
+      "value": "Барба- пи",
+      "by": "rules"
+     }
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9951
     }
    },
    "text": {
@@ -3510,67 +6339,129 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 15,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9762
     },
     "child_name": {
      "value": "АнтонійФрацишекъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9853
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Микнюсовной Стонкусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Франщенка",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
     },
     "mother": {
      "value": "Людовики",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
-     "value": "Барздзяхъ Салан тов",
-     "source": "model"
+     "value": "Барздзяхъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9923,
+     "alt": {
+      "value": "Барздзяхъ Салан тов",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Антоній Миктюсъ съ Петроне ею Жейшовною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-15",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "maiden_name": {
+     "value": "Микнюсовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9957
+    },
+    "family_surname": {
+     "value": "Стонкусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9909
+    },
+    "godfather": {
+     "value": "Антоній Миктюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
+    },
+    "godmother": {
+     "value": "Петроне ею Жейшовною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9851
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     }
    },
    "text": {
@@ -3594,63 +6485,129 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9998
     },
     "baptism_day": {
      "value": 17,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9998
     },
     "priest": {
      "value": "Іосифо Заискимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9822
     },
     "child_name": {
      "value": "Барбара",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "estate": {
      "value": "ГодаКрестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9946
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мотурисовной тси крмиліо въ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Іосифа",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "mother": {
      "value": "Мартто",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9815
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "birth_day": {
      "value": 17,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "godparents": {
      "value": "Крестьянъ Адамъ Гайлюсь съ Маріянною Антона Кадиса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-17",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9998
     },
     "birth_date": {
      "value": "1862-03-17",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
+    },
+    "maiden_name": {
+     "value": "Мотурисовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.996,
+     "alt": {
+      "value": "Мотурисовной тси крмиліо",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "въ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9546
+    },
+    "village": {
+     "value": "ѣ Салонтохъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8376
+    },
+    "godfather": {
+     "value": "Адамъ Гайлюсь",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
+    },
+    "godmother": {
+     "value": "Маріянною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "godmother_status": {
+     "value": "Антона Кадиса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9814
     }
    },
    "text": {
@@ -3674,67 +6631,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
     },
     "baptism_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
     },
     "priest": {
      "value": "Іосифомъ За мскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9789
     },
     "child_name": {
      "value": "Виктры",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9965
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Мартышісовной мерстутисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Виктора",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9986
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
     },
     "birth_day": {
      "value": 18,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
     },
     "village": {
      "value": "оцятъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9877
     },
     "godparents": {
      "value": "Крестьянъ Янъ Жиминсъ съ Анѣлею Алексондра Виминского Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9995
     },
     "birth_date": {
      "value": "1862-03-18",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9983
+    },
+    "maiden_name": {
+     "value": "Мартышісовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
+    },
+    "family_surname": {
+     "value": "мерстутисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9888
+    },
+    "godfather": {
+     "value": "Янъ Жиминсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.997
+    },
+    "godmother": {
+     "value": "Анѣлею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9984
+    },
+    "godmother_status": {
+     "value": "Алексондра Виминского Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9754
     }
    },
    "text": {
@@ -3758,59 +6773,133 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 19,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9758
     },
     "child_name": {
-     "value": "Анна-Магдално",
-     "source": "model"
+     "value": "Магдално",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9957,
+     "alt": {
+      "value": "Анна-Магдално",
+      "by": "rules"
+     }
     },
     "estate": {
      "value": "ода.",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.8456
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "F",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 2,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
-     "value": "Шевчикохъ лантовскаг",
-     "source": "model"
+     "value": "Шевчикохъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9933,
+     "alt": {
+      "value": "Шевчикохъ лантовскаг",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ филтовичъ съ Теодорогю Антона Вайоннюсо супрурою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-19",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-02",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "father": {
+     "value": "феликса",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9856
+    },
+    "mother": {
+     "value": "Саломен",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9906
+    },
+    "maiden_name": {
+     "value": "Луковичевной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9964
+    },
+    "family_surname": {
+     "value": "Марвскихъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9913
+    },
+    "godfather": {
+     "value": "Казимиръ филтовичъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9968
+    },
+    "godmother": {
+     "value": "Теодорогю",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
+    },
+    "godmother_status": {
+     "value": "Антона Вайоннюсо супрурою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9607
     }
    },
    "text": {
@@ -3834,43 +6923,114 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "baptism_day": {
      "value": 20,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9674
     },
     "child_name": {
      "value": "Розалія",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "estate": {
      "value": "аестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9996
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "village": {
      "value": "Шевипофъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9948
     },
     "godparents": {
      "value": "Крестьянъ Антоній Квассосъ съ Анною Іосифа Руйвиса Супру",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-20",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "father": {
+     "value": "Францишка",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9965
+    },
+    "mother": {
+     "value": "Барборъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9897
+    },
+    "maiden_name": {
+     "value": "Стракшовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9955
+    },
+    "family_surname": {
+     "value": "Зу",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.513
+    },
+    "godfather": {
+     "value": "Антоній Квассосъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
+    },
+    "godmother": {
+     "value": "Анною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
+    },
+    "godmother_status": {
+     "value": "Іосифа Руйвиса Супру",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9738
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9991
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9991
     }
    },
    "text": {
@@ -3894,43 +7054,117 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "baptism_day": {
      "value": 22,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "priest": {
      "value": "Іосифомъ Замским",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9757
     },
     "child_name": {
      "value": "Казимиръ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "estate": {
      "value": "с",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
+    },
+    "birth_day": {
+     "value": 22,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9991
     },
     "village": {
-     "value": "Теецяхтъ самъ аго",
-     "source": "model"
+     "value": "Теецяхтъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9955,
+     "alt": {
+      "value": "Теецяхтъ самъ аго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянинъ Янъ Шыма съ Моншикою Антона скр. - сиса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-22",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
+    },
+    "father": {
+     "value": "Плонольда",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.995
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9871
+    },
+    "maiden_name": {
+     "value": "Зубисовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9969
+    },
+    "family_surname": {
+     "value": "Вайовскихъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9905
+    },
+    "godfather": {
+     "value": "Янъ Шыма",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9954
+    },
+    "godmother": {
+     "value": "Моншикою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "godmother_status": {
+     "value": "Антона скр. - сиса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9778
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9991
     }
    },
    "text": {
@@ -3954,55 +7188,122 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 24,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9706
     },
     "child_name": {
      "value": "Іольфъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.996
     },
     "estate": {
      "value": "миКрестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9931
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Крын сковшевой Дѣкинтовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
-     "value": null,
-     "source": "model"
+     "value": "ПоминиППетроа",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9686
     },
     "mother": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
-     "value": "Жейшахъ Састовкаго",
-     "source": "model"
+     "value": "Жейшахъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9931,
+     "alt": {
+      "value": "Жейшахъ Састовкаго",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьятъ Іолифаци Наркусъ съ Петронелею Брас совною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-24",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Крын сковшевой",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9869
+    },
+    "family_surname": {
+     "value": "Дѣкинтовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9889
+    },
+    "godfather": {
+     "value": "Іолифаци Наркусъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
+    },
+    "godmother": {
+     "value": "Петронелею Брас совною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9777
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9669
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9669
     }
    },
    "text": {
@@ -4026,55 +7327,120 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     },
     "baptism_day": {
      "value": 27,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     },
     "priest": {
      "value": "Іосифомъ Замескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9728
     },
     "child_name": {
      "value": "Барбора",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
     },
     "estate": {
      "value": "рестьонъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9997
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 5,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
      "value": "Фрлянохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9919
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Волонюсъ съ Антоннною Антона Дейнора Супру",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-27",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     },
     "birth_date": {
      "value": "1862-03-05",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "father": {
+     "value": "Помама",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9979
+    },
+    "mother": {
+     "value": "Анны",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9977
+    },
+    "maiden_name": {
+     "value": "Шымовкой",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9949
+    },
+    "family_surname": {
+     "value": "Райтушовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9897
+    },
+    "godfather": {
+     "value": "Казимиръ Волонюсъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "godmother": {
+     "value": "Антоннною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Антона Дейнора Супру",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9487
     }
    },
    "text": {
@@ -4098,67 +7464,125 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 30,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Яномъ Арвосевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9597
     },
     "child_name": {
      "value": "Константы",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Іоциковной Бартаилосовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Иыдора",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9969
     },
     "mother": {
      "value": "Людовити",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 30,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
      "value": "Барздцяхъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9933
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Юцисъ съ Аполіоніею Францишка Рутиса Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-30",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-03-30",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "maiden_name": {
+     "value": "Іоциковной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9955
+    },
+    "family_surname": {
+     "value": "Бартаилосовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.988
+    },
+    "godfather": {
+     "value": "Казимиръ Юцисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Аполіоніею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother_status": {
+     "value": "Францишка Рутиса Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9832
     }
    },
    "text": {
@@ -4182,55 +7606,127 @@
    "fields": {
     "baptism_month": {
      "value": 3,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 30,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Яномъ Арвасевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9639
     },
     "child_name": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9958
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Довконтовной Скур довскихъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Леона",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9973
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
      "value": "Барудцятъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9949
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Нармонтъ съ Каториною Юрковскою дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-03-30",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Довконтовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9918,
+     "alt": {
+      "value": "Довконтовной Скур",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Скур довскихъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9206,
+     "alt": {
+      "value": "довскихъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Іосифъ Нармонтъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother": {
+     "value": "Каториною Юрковскою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9903
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9991
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9991
     }
    },
    "text": {
@@ -4254,67 +7750,129 @@
    "fields": {
     "baptism_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 6,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9736
     },
     "child_name": {
      "value": "Францишекъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9977
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Миккіовной Венцкусовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Беледикта",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9975
     },
     "mother": {
      "value": "Людовики",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "birth_day": {
      "value": 6,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
     },
     "village": {
-     "value": "Ииборотъ Салан тов",
-     "source": "model"
+     "value": "Ииборотъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9938,
+     "alt": {
+      "value": "Ииборотъ Салан тов",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Францишекъ Зубисъ съ Барбарою Реткусувною дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-04-06",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-04-06",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.999
+    },
+    "maiden_name": {
+     "value": "Миккіовной",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9943
+    },
+    "family_surname": {
+     "value": "Венцкусовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9849
+    },
+    "godfather": {
+     "value": "Францишекъ Зубисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9971
+    },
+    "godmother": {
+     "value": "Барбарою Реткусувною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9891
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
     }
    },
    "text": {
@@ -4337,56 +7895,126 @@
    "heading_month": null,
    "fields": {
     "baptism_month": {
-     "value": null,
-     "source": "model"
+     "value": 4,
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Янамъ Арвасевичемъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.97
     },
     "child_name": {
      "value": "Зервій",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9963
     },
     "estate": {
      "value": "Крісфть",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9926
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "birth_day": {
      "value": 7,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
     },
     "village": {
      "value": "Имацд",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9852
     },
     "godparents": {
      "value": "Крестьянъ Іосифъ Сранисъ съ Катариною Адама Стефановича супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
-     "value": null,
-     "source": "model"
+     "value": "1862-04-07",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-04-07",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9991
+    },
+    "father": {
+     "value": "ервею",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9351
+    },
+    "mother": {
+     "value": "Катарина",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9958
+    },
+    "maiden_name": {
+     "value": "Стонкусовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9954
+    },
+    "family_surname": {
+     "value": "Срагисовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9917
+    },
+    "godfather": {
+     "value": "Іосифъ Сранисъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.998
+    },
+    "godmother": {
+     "value": "Катариною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother_status": {
+     "value": "Адама Стефановича супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9851
+    },
+    "baptism_day": {
+     "value": 7,
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9999
     }
    },
    "text": {
@@ -4410,55 +8038,132 @@
    "fields": {
     "baptism_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 9,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Замскимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9762
     },
     "child_name": {
      "value": "Франлшшакъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9982
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "Дарговной Рабра ловичевъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Кантана",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9974
     },
     "mother": {
      "value": "Анны",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9979
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "village": {
      "value": "Ж",
-     "source": "model"
+     "source": "model",
+     "by": "rules",
+     "conf": 0.7186,
+     "alt": {
+      "value": "Ж.- стечки Салант",
+      "by": "tagger",
+      "conf": 0.7186
+     }
     },
     "godparents": {
      "value": "Крестьянъ Францишеки афаловичъ съ Моникою Станислава Іафаловича супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-04-09",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "Дарговной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9925,
+     "alt": {
+      "value": "Дарговной Рабра",
+      "by": "rules"
+     }
+    },
+    "family_surname": {
+     "value": "Рабра ловичевъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.8989,
+     "alt": {
+      "value": "ловичевъ",
+      "by": "rules"
+     }
+    },
+    "godfather": {
+     "value": "Францишеки афаловичъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9972
+    },
+    "godmother": {
+     "value": "Моникою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9976
+    },
+    "godmother_status": {
+     "value": "Станислава Іафаловича супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9884
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9826
+    },
+    "birth_day": {
+     "value": null,
+     "source": "model",
+     "by": "none",
+     "conf": 0.9826
     }
    },
    "text": {
@@ -4482,55 +8187,123 @@
    "fields": {
     "baptism_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 16,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
-     "value": "хъ КсендзоІосифомъ Гамскимъ",
-     "source": "model"
+     "value": "Іосифомъ Гамскимъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.941,
+     "alt": {
+      "value": "хъ КсендзоІосифомъ Гамскимъ",
+      "by": "rules"
+     }
     },
     "child_name": {
      "value": "Іосифъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9878
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": "селонбицкой Сапрутисовъ",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "father": {
      "value": "Францишко",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9947
     },
     "mother": {
      "value": "Петронели",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9904
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
+    },
+    "birth_day": {
+     "value": 16,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9991
     },
     "village": {
      "value": "Сесяфохъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9924
     },
     "godparents": {
      "value": "Крестьянъ Винценты Голорвицкій съ Петронилею Брвоздовскою дѣвицею",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-04-16",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
+    },
+    "maiden_name": {
+     "value": "селонбицкой",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9904
+    },
+    "family_surname": {
+     "value": "Сапрутисовъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9894
+    },
+    "godfather": {
+     "value": "Винценты Голорвицкій",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother": {
+     "value": "Петронилею Брвоздовскою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9863
+    },
+    "godmother_status": {
+     "value": "дѣвицею",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9994
+    },
+    "birth_month": {
+     "value": null,
+     "source": "model",
+     "by": "rules",
+     "conf": 0.9991
     }
    },
    "text": {
@@ -4554,59 +8327,129 @@
    "fields": {
     "baptism_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "baptism_day": {
      "value": 17,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "priest": {
      "value": "Іосифомъ Залескимъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9715
     },
     "child_name": {
-     "value": "иКанимръ-Янъ",
-     "source": "model"
+     "value": "Канимръ-Янъ",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9762
     },
     "estate": {
      "value": "Крестьянъ",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 1.0
     },
     "township": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "maiden_and_surname": {
      "value": null,
-     "source": "model"
+     "source": "model",
+     "by": "none"
     },
     "sex": {
      "value": "M",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "birth_month": {
      "value": 4,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "birth_day": {
      "value": 16,
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
     },
     "village": {
-     "value": "Гѣдвдцятъ Саланто вна",
-     "source": "model"
+     "value": "Гѣдвдцятъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9952,
+     "alt": {
+      "value": "Гѣдвдцятъ Саланто вна",
+      "by": "rules"
+     }
     },
     "godparents": {
      "value": "Крестьянъ Казимиръ Прнаста съ Магдаленною Петра Арнаста Супругою",
-     "source": "model"
+     "source": "model",
+     "by": "rules"
     },
     "baptism_date": {
      "value": "1862-04-17",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9999
     },
     "birth_date": {
      "value": "1862-04-16",
-     "source": "model"
+     "source": "model",
+     "by": "both",
+     "conf": 0.9992
+    },
+    "father": {
+     "value": "Антона",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9971
+    },
+    "mother": {
+     "value": "Вроники",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9983
+    },
+    "maiden_name": {
+     "value": "Ирнастовной",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9952
+    },
+    "family_surname": {
+     "value": "Каркусовъ",
+     "source": "model",
+     "by": "tagger",
+     "conf": 0.9902
+    },
+    "godfather": {
+     "value": "Казимиръ Прнаста",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9981
+    },
+    "godmother": {
+     "value": "Магдаленною",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9978
+    },
+    "godmother_status": {
+     "value": "Петра Арнаста Супругою",
+     "source": "model",
+     "by": "both",
+     "conf": 0.9664
     }
    },
    "text": {

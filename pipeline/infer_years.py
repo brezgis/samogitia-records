@@ -9,6 +9,14 @@ Evidence per row (from the model's line drafts):
      year, so it only supports the same year or the following one).
 Row votes are pooled per page side (an entry's own cue wins where clear), then the sequence
 over scans is checked to be non-decreasing; rows that break it are flagged, not changed.
+
+A book often opens with the last entries of the year before (a register begun in November).
+Those few rows are too small a share of the book to count as a year of their own by the 2% rule,
+so the year just before the first well-supported one is also admitted when at least three rows
+at the start of the book name it in words and it wins the first page side(s). Where the year
+turns in the middle of a page side, the rows above the turn that name the old year (or, the
+decade misread, at least its last digit) keep it, and likewise the rows below the turn on the
+old year's last side that name the new one.
 Writes register_year, register_year_status and register_year_evidence into
 processed/queue_years.json (in place; the previous file is kept as queue_years.json.bak).
 """
@@ -21,7 +29,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / __import__('os').environ.get('SAMOGITIA_BOOK', 'data/plunge-1886-1890')
-UNITS = {'перв': 1, 'втор': 2, 'трет': 3, 'четверт': 4, 'пят': 5, 'шест': 6, 'седьм': 7, 'восьм': 8, 'осьм': 8, 'девят': 9}
+UNITS = {'сем': 7, 'перв': 1, 'втор': 2, 'трет': 3, 'четверт': 4, 'пят': 5, 'шест': 6, 'седьм': 7, 'восьм': 8, 'осьм': 8, 'девят': 9}
 
 
 def flat(s):
@@ -30,9 +38,10 @@ def flat(s):
 
 def word_year(text):
     """Register year written in words: "...восемьдесятъ седьмаго года", "...девяностаго года",
-    "...девяносто перваго года", "тысяча девятисотаго года", "...девятьсотъ третьяго года"."""
-    s = flat(text)
-    units = '|'.join(UNITS)
+    "...девяносто перваго года", "тысяча девятисотаго года", "...девятьсотъ третьяго года",
+    "...шестьдесятаго года" (a round year), "...пятьдесятъ семаго года" (семаго for седьмаго)."""
+    s = re.sub(r'[-=]', '', flat(text))        # a year word divided at the line end: "ше-" / "стаго"
+    units = '|'.join(u for u in UNITS if u != 'сем') + '|(?<!во)сем'     # "семаго" for седьмаго (not the "сем" of "восемь")
     m = re.search(r'девятьсот(' + units + r')', s)
     if m:
         return 1900 + UNITS[m.group(1)]
@@ -52,6 +61,10 @@ def word_year(text):
     m = re.search(r'пят[ьъ]?дес[яа]т\w{0,3}?(' + units + r')', s)
     if m:
         return 1850 + UNITS[m.group(1)]
+    # the round years of a decade: "пятидесятаго", "шестьдесятаго / шестидесятаго", ...
+    for stem, year in ((r'пят[ьи]?', 1850), (r'шест[ьи]?', 1860), (r'(?<!во)сем[ьи]?', 1870), (r'вос[еь]м[ьи]?', 1880)):
+        if re.search(stem + r'дес[яа]таг', s):
+            return year
     m = re.search(r'восемьдес[яа]т\w{0,3}?(' + units + r')', s) or \
         re.search(r'дес[яа]т\w{0,2}(' + units + r')\w{0,3}года', s)
     return 1880 + UNITS[m.group(1)] if m else None
@@ -65,12 +78,10 @@ def digit_year(text):
     return y if 1840 <= y <= 1915 else None
 
 
-def main():
-    pred_dir = Path(sys.argv[1])
-    preds = {p['id']: p for p in json.loads((pred_dir / 'predictions.json').read_text())}
-    qpath = BOOK / 'processed/queue_years.json'
-    queue = json.loads(qpath.read_text())
-    shutil.copy(qpath, qpath.with_suffix('.json.bak'))
+def infer(queue, preds, side=None):
+    """Fill register_year, register_year_status and register_year_evidence on the queue rows (in
+    place) from the line predictions ({id: {row_id, cell, text}}) and, if the book has them, the
+    side-column readings. Returns the number of rows that break the year order."""
     by_row = defaultdict(lambda: {'baptism': [], 'parents': []})
     for p in preds.values():
         if p['cell'] in ('baptism', 'parents'):
@@ -108,7 +119,8 @@ def main():
         total.update(v)
     support = sum(total.values()) or 1
     cand = sorted(y for y, c in total.items() if c / support >= 0.02)
-    if cand and sides:
+
+    def fit(cand):
         INF = float('inf')
         cost = [[sum(c for y2, c in side_votes[s].items() if y2 != y) for y in cand] for s in sides]
         best = [cost[0][:]]
@@ -128,6 +140,19 @@ def main():
             fitted[sides[i]] = cand[j]
             if back[i][j] is not None:
                 j = back[i][j]
+        return fitted
+
+    if cand and sides:
+        fitted = fit(cand)
+        # the tail of the year before, at the start of the book: admitted if the fit gives it the
+        # first side(s) and at least three rows there name it in words
+        before = cand[0] - 1
+        if total.get(before):
+            trial = fit([before] + cand)
+            lead = {s for s, y in trial.items() if y == before}
+            if sum(1 for q in queue if (q['scan'], q['page']) in lead
+                   and q['register_year_evidence']['baptism_words'] == before) >= 3:
+                fitted = trial
         for q in queue:
             if q.get('register_year_status') == 'hand_checked_layout':
                 continue
@@ -137,12 +162,40 @@ def main():
                 q['register_year'], q['register_year_status'] = y, 'inferred_monotone_page_fit'
             elif y is not None and q['register_year_status'] == 'no_evidence':
                 q['register_year'], q['register_year_status'] = y, 'inferred_monotone_page_fit'
+        # the year turns inside a page side: rows keep the year they name themselves
+        rows_of = defaultdict(list)
+        for q in sorted(queue, key=lambda q: q['focal_y'][0]):
+            rows_of[(q['scan'], q['page'])].append(q)
+
+        def names(q, y, other):
+            w = q['register_year_evidence']['baptism_words']
+            return w == y or bool(w and w != other and w % 10 == y % 10)     # (the decade misread: "1886" for 1856)
+
+        def turn(q, y):
+            if q.get('register_year_status') != 'hand_checked_layout' and q['register_year'] != y:
+                q['register_year_evidence']['before_year_turn'] = q['register_year']
+                q['register_year'], q['register_year_status'] = y, 'inferred_year_turn_in_page'
+
+        for a, b in zip(sides, sides[1:]):
+            y1, y2 = fitted[a], fitted[b]
+            if y2 != y1 + 1:
+                continue
+            rows = rows_of[b]                   # first side of the new year: its top rows may still be the old year
+            old = [i for i, q in enumerate(rows) if names(q, y1, y2)]
+            new = [i for i, q in enumerate(rows) if q['register_year_evidence']['baptism_words'] == y2]
+            if old and (not new or max(old) < min(new)):
+                for q in rows[:max(old) + 1]:
+                    turn(q, y1)
+            rows = rows_of[a]                   # last side of the old year: its bottom rows may be the new year
+            old = [i for i, q in enumerate(rows) if q['register_year_evidence']['baptism_words'] == y1]
+            new = [i for i, q in enumerate(rows) if names(q, y2, y1)]
+            if new and (not old or max(old) < min(new)):
+                for q in rows[min(new):]:
+                    turn(q, y2)
     # Entry numbers restart at 1 every January. With side-column readings available, split the
     # book's row sequence at number resets and give each stretch the majority year of its own
     # textual evidence (hand-checked rows count most and keep their year).
-    side_path = BOOK / 'processed/side_columns.json'
-    if side_path.exists():
-        side = json.loads(side_path.read_text())
+    if side:
         order = sorted(queue, key=lambda q: (q['scan'], q['page'], q['focal_y'][0]))
         segs, cur, last_n = [], [], None
         for q in order:
@@ -186,6 +239,17 @@ def main():
             flagged += 1
         else:
             last = y
+    return flagged
+
+
+def main():
+    pred_dir = Path(sys.argv[1])
+    preds = {p['id']: p for p in json.loads((pred_dir / 'predictions.json').read_text())}
+    qpath = BOOK / 'processed/queue_years.json'
+    queue = json.loads(qpath.read_text())
+    shutil.copy(qpath, qpath.with_suffix('.json.bak'))
+    side_path = BOOK / 'processed/side_columns.json'
+    flagged = infer(queue, preds, json.loads(side_path.read_text()) if side_path.exists() else None)
     qpath.write_text(json.dumps(queue, ensure_ascii=False, indent=1))
     years = Counter(q['register_year'] for q in queue)
     first = {}

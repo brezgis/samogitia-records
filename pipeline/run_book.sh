@@ -5,6 +5,16 @@
 # Steps: layout -> queue -> line split -> refine -> GPU draft -> year inference ->
 #        per-year assembly + field extraction -> side-column sheets.
 # Writes progress to stdout; prints the detected years at the end.
+#
+# Optional, off by default: FIELD_TAGGER=1 adds the neural field tagger to the field extraction.
+#   FIELD_TAGGER=1 pipeline/run_book.sh data/<book> crnn-ru-v3
+# Per year, pipeline/neural_parser/apply.py (HTR environment; GPU if free, else CPU, seconds per
+# year) writes processed/tagger_spans_<year>_<model>.json, and parse_entries.py is run with --tagger,
+# which chooses each field between the rules and the tagger (see neural_parser/combine.py) and adds
+# `by` / `conf` / `alt` and the fields maiden_name, family_surname, godfather, godmother,
+# godmother_status to processed/entries_<year>_<model>.json. Weights: $FIELD_TAGGER_MODEL, default
+# /mnt/ssd240gb/anna/samogitia-htr/models/field-tagger-v1/char__none__s1.pt. Without FIELD_TAGGER=1
+# nothing changes.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 BOOK=$1; MODEL=$2; SIDE=${3:-wide}
@@ -44,7 +54,12 @@ echo "years: $YEARS"
 for Y in $YEARS; do
   .venv/bin/python -I pipeline/assemble_drafts.py "$PRED" --queue processed/queue_years.json \
     --proposals training/line_proposals_years_v2.json --year "$Y" | cut -c1-80
-  .venv/bin/python -I pipeline/parse_entries.py "processed/year_draft_${Y}_${MODEL}.json" | cut -c1-160
+  if [[ "${FIELD_TAGGER:-0}" == 1 ]]; then
+    nice .venv-htr/bin/python pipeline/neural_parser/apply.py "$BOOK/processed/year_draft_${Y}_${MODEL}.json" | cut -c1-200
+    .venv/bin/python -I pipeline/parse_entries.py "processed/year_draft_${Y}_${MODEL}.json" --tagger | cut -c1-260
+  else
+    .venv/bin/python -I pipeline/parse_entries.py "processed/year_draft_${Y}_${MODEL}.json" | cut -c1-160
+  fi
 done
 SHEETS=${SIDE_SHEETS:-$TMPDIR/side_$(basename "$BOOK")}
 rm -rf "$SHEETS"

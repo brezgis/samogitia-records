@@ -997,3 +997,243 @@ historian should confirm. Changing any of them later would be a mechanical secon
 15. **"-осовъ" family names** (frequent in 1896–1902, e.g. Жимосовъ) are treated as an
     unrecognised ending (base "-os", undeclined), because "-ос" is often a misread "-юс" or
     "-ус". A reader may prefer a rule.
+
+---
+
+## 11. Salantai (1517/1/1, 1856–1862)
+
+This section is for the Salantai baptism register (LVIA 1517/1/1, November 1856 to 1862).
+Everything above applies, with the rules for the book of 1849–1854 (1827/1/18), whose
+wording is the same ("Викарнымъ / Альтаристомъ Ксендзомъ …", "урожденной [fem. form]
+[family, gen. pl.]", time of day, no townships). This section adds what is particular to
+Salantai. Where it differs from the sections above, this section decides for this book.
+It was compiled on 2026-11-16 from the machine drafts of all 677 entries (recognizer
+crnn-ru-v4), the 561 labelled lines of this book and the notes of the six translators of
+the first 240 entries. Nothing in it was reviewed by a native speaker or checked against
+an outside source.
+
+The book has several clerks. The first (1856–1857) writes dates in words, "окрещенъ
+младенецъ" and "сего года"; the clerk of 1858 writes dates in digits ("16 Мая"), "окрещено
+дитя" and no rank for the priest; from 1859 the dates are in words again with "окрещено
+дитя". All three wordings are translated with the one formula of section 1.
+
+### 11.1 Formula replacements
+
+| Russian (any spelling) | Lithuanian |
+|---|---|
+| въ Салантовскомъ Приходскомъ Римско-Католическомъ Костелѣ / въ Салантовскомъ Р.К. Приходскомъ Костелѣ ("Кастелѣ", "Р.К." garbled) | Salantų Romos katalikų parapijos bažnyčioje |
+| the same with "Приходскомъ" or "Р.К." really absent | Salantų Romos katalikų [parapijos] bažnyčioje / Salantų [Romos katalikų] parapijos bažnyčioje |
+| Салантовскаго Прихода | Salantų parapijos |
+| сего / здѣшняго / Здѣшняго Прихода | šios parapijos |
+| Здѣшнихъ Прихожанъ (after the village, clerk of autumn 1857) | šios parapijos (proposed, not reviewed by a native speaker; "of the parishioners of this parish" says no more than "of this parish") |
+| Салантовскаго Прихода … здѣшняго Прихода (the parish named twice in one sentence) | Salantų parapijos, once |
+| въ мѣстечкѣ Салантахъ (also "Мѣстечки", "Мѣстечко", "Мистечки", "мостикъ Салантохъ", "въ Деревни мѣстечкѣ Салантахъ") | Salantų miestelyje (never "kaime" for the town, even where the clerk writes "въ Деревни" before it) |
+| [X]скаго Прихода (another parish): Масядскаго, Плунгянскаго, Плотельскаго, Сядскаго | Mosėdžio parapijos, Plungės parapijos, Platelių parapijos, Sedos parapijos |
+| окрещенъ младенецъ / окрещено дитя, именемъ X | pakrikštijo kūdikį, vardu X (section 1) |
+| родившійся сего года Ноября … дня (no year in digits) | gimęs šių metų lapkričio … dieną (proposed, not reviewed by a native speaker; the year is not supplied) |
+| родившійся 2 сего Августа / 5 Мая (no year at all, clerk of 1858) | gimęs rugpjūčio 2 dieną / gegužės 5 dieną (no year is added) |
+
+The parish follows the place after a comma, also where the clerk writes it first
+("Салантовскаго Прихода въ Деревни Жеймяхъ" → "Žeimių kaime, Salantų parapijos"), as in 4.2.
+
+The register year runs from January, but the book opens with November and December 1856
+(scans 3 to 6: "… Пятьдесятъ Шестаго Года …"). Use the year written in the entry.
+
+### 11.2 Clergy of this book
+
+One fixed form each, as in section 5: Slavic surnames in Polish spelling, a surname the
+Russian text writes with a Lithuanian ending in Lithuanian letters. The forms were settled
+for the whole book: every priest phrase of the 677 drafted entries (the words between the
+church and "окрещенъ / окрещено") was collected and grouped by pattern (604 entries
+assigned to a priest, 73 broken or unreadable phrases left out), and compared with the
+labelled lines, which are readings from the page image and outrank the drafts. Counts are
+entries in the drafts and are approximate.
+
+| Russian (as written; drafts' misreadings in brackets) | Fixed form | Rank in this book | Years, entries | Confidence |
+|---|---|---|---|---|
+| Іоаннъ / Іоанъ Монкевичъ (Іосиномъ, Менкевичемъ, Мошкевичемъ, Манкеви-, Мо-жевичемъ) | Jan Monkiewicz | vietinis kunigas vikaras | Nov 1856–1857, about 57 | high: checked line "Викарный Ксендзъ Іоанъ Монкевичъ" (0018_L1), 47 drafts read "Монкевич-" exactly |
+| Каспръ Янушевичъ (Коспромъ, Апушевичемъ, Януетевичемъ, Ану-шевичемъ) | Kasper Januszewicz | vietinis kunigas vikaras | Nov 1856 to spring 1857 (scans 3–15), about 25 | high for the surname (23 drafts "Янушевич-", checked line "-шевичемъ" 0012_L2); the given name is read "Каспромъ" 23 times, a reader bracketed it |
+| Францишекъ Климовичъ (Плимовичемъ, Клитовичемъ, Кле ліовичемъ, "…товичемъ") | Franciszek Klimowicz | vietinis kunigas vikaras | July to November 1857, about 48 | high: checked line "Ксендзомъ Францишкомъ Климовичемъ" (0022_L1). The clerk of late 1857 drops the given name. He also stands godfather (0027_L5, 0032_L3). |
+| Іоаннъ / Янъ Контрымъ (Контримомъ in 1858, Контрисомъ, Іосиномъ Контрымомъ) | Jan Kontrym | vietinis kunigas altaristas (1857, 1859–1861); no rank written in 1858 | 1857–1861, about 28 | high: "Контрымомъ" 17 drafts, "Контрим-/Контрис-" 10 (all 1858 clerk), reader's line "[І?]оанномъ Контрымомъ" (0100_L6). "Іосиномъ" in 1857 is a misread "Іоанномъ", not Józef. |
+| Казимиръ Бѣльскій (Бильскомъ, вѣльскимъ, Былвскимъ, Больскиыъ) | Kazimierz Bielski | 1857: vietinis administratorius kunigas (Мѣстнымъ Администраторомъ Кс.); 1859–1862: vietinis klebonas kunigas (Мѣстнымъ Настоятелемъ Ксендзомъ) | 1857 (1), 1859–1862 (5); also among the witnesses and godparents of nobles' children | medium to high: seen on the crop 0018_L4_baptism_04 ("…истраторомъ Кс. Казимиромъ Бѣльскимъ"); few entries |
+| Петръ Сташковскій (ташковскимъ, Станковскимъ, Сташновскимъ, Стамковскимъ, Стантовскимъ, Стон ковскимъ) | Piotr Staszkowski | no rank written in 1858 (kunigas); from 1859 kunigas vikaras / vietinis kunigas vikaras, as written | 1858–1861, about 201 (68, 69, 27, 37) | high: three checked lines "Петромъ Сташков-скимъ" (0056_L2, 0078_L3, 0096_L4), 138 drafts read "Сташковск-" exactly. A reader's "Ст[аниш?]ев-скимъ" (0047_L8, over a tear) and "[Станиновскимъ?]" (0045_L6) are the same man. |
+| Каспръ Хмѣлевскій; the clerk of 1858 also writes the short "Хмѣльскимъ" (drafts: Амѣлевскимъ, Имѣлевскимъ, Алѣлевскимъ, Амѣмьскимъ, имѣшьскимъ, Алсѣсивскимъ, Ленѣлевскимъ, Плѣлевскимъ; readers: Х[мѣ?]лев-, Ли[пн?]евскимъ, [Шимилевскимъ?], [Литмевскимъ?]) | Kasper Chmielewski [?] | no rank written in 1858 (kunigas); 1859 kunigas vikaras | May 1858 to May 1859: about 50 entries in 1858, about 18 in 1859 | **one man; the name is probable, not documented.** See the note below. Write "Chmielewski [?]" every time (the [?] stays until a clergy list confirms the name) and never "Aleszewski", "Lipniewski" or "Szymilewski". |
+| Іоаннъ / Янъ Арвасевичъ (Арвосевичемъ, Арвайвич-, Арваствииемъ, Трвасев-, Првосевичемъ, [вассевичемъ?]) | Jan Arwasewicz | 1859: kunigas vikaras; 1860–1862: vietinis kunigas altaristas | 1859–1862, about 81 (21, 24, 28, 8) | high for the surname (59 drafts "Арвасевич-", readers' lines 0072_L2, 0082_L5, 0089_L5 agree, all bracketed or draft status) |
+| Іосифъ Залескій (Замскимъ, Замескимъ, Занескимъ, Галескимъ, Гамскимъ; readers: Залескимъ, Замес-, [Занечникомъ?]) | Józef Zaleski | vietinis kunigas vikaras | 1861–1862, about 88 | high: 48 drafts "Залеск-" against 22 "Зам(е)ск-" (л read as м); seen on the crop 0112_L4_baptism_05 ("Іосифомъ Залескимъ"). One checked line reads "Замес-" (0115_L4): the same man. |
+| Іосифъ Даукшасъ (Даукма-сомъ) | Józef Daukšas (given name in the Polish form, surname with its written Lithuanian ending in Lithuanian letters, as Paškanis in book 24; never "Juozapas Daukšas") | kunigas vikaras | 20 July 1859, 1 entry | medium: one entry, seen on the crop 0076_L3_baptism_04 ("Іосифомъ Даукша-") |
+| Его Преосвященствомъ Епархіальнымъ Епископомъ Матвеемъ Волончевскимъ (drafted "Сіо Предевященствомъ Тпарніяльномъ Энискономъ Матвеемъ Волоючв скимъ") | Maciej Wołonczewski; whole phrase: "Jo Ekscelencija vyskupijos vyskupas Maciej Wołonczewski" (proposed, not reviewed by a native speaker) | the diocesan bishop (Motiejus Valančius; say so only in the notes) | 26 June 1860, 1 entry (0085_L5, a titular councillor's son) | medium: seen on the crop 0085_L5_baptism_05 ("Епископомъ Матвеемъ Волончев-") |
+| Масядскимъ Викарнымъ Ксендзомъ Донатомъ Шыгждовичемъ (as drafted) | Mosėdžio parapijos kunigas vikaras Donat Szygżdowicz [?] | vicar of Mosėdis | 4 March 1862, 1 entry (0123_L6) | low: the surname is not settled (crop 0123_L6_baptism_06 looked at: "Ш[вы/ы]гждовичемъ"). Keep the [?]. |
+
+Not identified: "Викарнымъ К… Кантовикомъ" (0031_L3, 13 November 1857, one entry; perhaps
+Kontrym or Klimowicz badly read). Write "kunigas [neįskaitoma]" and report it.
+
+**The priest of 1858–1859 ("Aleszewski [?]" in 19 translated entries, "Chmielewski [?]" in 14).**
+These are one man. Evidence: (1) in 1859 the clerk writes the given name, and all 18
+entries of this group read "Каспромъ" + the same surname ("Каспромъ Амѣлевскимъ" and
+close variants 16 times), and they follow the 1858 clerk's group without a break (May 1858 to May 1859); no
+other priest of 1858–1859 is called Kasper (Januszewicz's last entry is in the spring of 1857); (2) the
+drafts' variants differ only in the first letter (А, И, Л, П, Я) and in л/м/с, the usual
+confusions; (3) on the crops the first letter is a capital with two crossing strokes,
+Х, followed by "мѣлевскимъ": 0058_L2_baptism_06, 0066_L3_baptism_04 and
+0067_L4_baptism_04 (clerk of 1859, "Каспромъ Хмѣлевскимъ"), 0037_L6_baptism_04 (clerk of
+1858, "Хмѣлевскимъ"), and 0043_L8_baptism_04 and 0050_L2_baptism_04 (clerk of 1858, a
+shorter word, "Хмѣльскимъ"). The recognizer gives А or И for this capital. (4) Against: four readers' lines, all bracketed, give
+"Х[мѣ?]лев-" (0067_L4), "Ли[пн?]евски[мъ?]" (0050_L7, 0061_L2), "[Шимилевскимъ?]"
+(0040_L2) and "[Литмевскимъ?]" (0044_L5); none is a checked line. The form is therefore
+fixed as "Kasper Chmielewski [?]": one man, one spelling in every entry, read from the
+image, and the [?] kept because the readers disagree and nobody has confirmed the name
+from a list of the diocese's clergy (Open questions, 11.6).
+
+Rank words not yet in section 2 (proposed, not reviewed by a native speaker):
+
+| Russian | Lithuanian |
+|---|---|
+| Мѣстнымъ Администраторомъ Кс. X | vietinis administratorius kunigas X (same word order as "vietinis klebonas kunigas X") |
+| Викаріемъ Кс. X (clerk of mid-1857) | kunigas vikaras X (the same as Викарнымъ) |
+| Его Преосвященствомъ Епархіальнымъ Епископомъ X | Jo Ekscelencija vyskupijos vyskupas X |
+| [X]скимъ Викарнымъ Ксендзомъ Y (vicar of another parish) | [X] parapijos kunigas vikaras Y |
+| a priest as godfather or witness: "Кс. Климовичъ", "Кс. Казимиръ Бѣльскій" | "kunigas Klimowicz", "kunigas Kazimierz Bielski", with the rank only if it is written |
+
+### 11.3 Villages of Salantai parish
+
+How the table was made. Modern settlements were taken from OpenStreetMap: every named
+`place` node within 15 km of Salantai (56.058°N 21.570°E; 145 nodes, 142 different names;
+file `data/gazetteer/osm_places_salantai_15km.json`, OpenStreetMap contributors, ODbL). The
+village string of each entry (the parser's `village` field, or the words after "въ
+деревни") was cut to the name itself: 575 of the 677 entries have one, in 446 different
+spellings. Each spelling was compared with every gazetteer name by the similarity of
+`pipeline/gazetteer.py` (1 minus edit distance over length, on Latin keys) after removing
+the Russian locative ending and the Lithuanian nominative ending, reading -цяхъ as -č- and
+-ав- as -au-. A spelling counts for a village when the best similarity is at least 0.70 and
+the next village is at least 0.10 behind. Result: 157 spellings (244 entries) fall to 37
+villages; 288 spellings (327 entries) fall to none.
+
+**Settled** means: at least five entries, at least two of them at similarity 0.85 or more,
+and no second gazetteer village within 0.10. Only settled villages take the modern
+Lithuanian name, without [?]. This is a deliberate exception to principle 1 for this table
+only; it does not extend to any village that is not in it. A similarity is not an
+identification: nobody has checked these against a historical list of the parish.
+
+| Russian (locative as usually drafted; other spellings seen) | Entries (of them at similarity ≥ 0.85) | Modern village (OSM) | Write | Status |
+|---|---|---|---|---|
+| Лайвяхъ (Лайвятъ, Лайвахъ, Лайватъ, Лайвъ, Лаивъ) | 36 (31) | Laiviai | Laivių kaime | settled |
+| Жеймяхъ (Жеимяхъ, Жейматъ, Жеймятъ, Жейми, Жейме, Жаймѣ) | 30 (21) | Žeimiai | Žeimių kaime | settled |
+| Тузахъ (Тузохъ, Тузехъ, Тузихъ, Тузотъ, Тузы) | 25 (21) | Tuzai | Tuzų kaime | settled |
+| Барздзяхъ (Барздзятъ, Барудзятъ, Баррдзяхъ, Барздяхъ, Гарздзахъ, Парздзяхъ) | 17 (12) | Barzdžiai | Barzdžių kaime | settled |
+| Имборахъ (Имборохъ, Имборъ, Имбарехъ, Имбарыхъ, Имборатъ) | 15 (2) | Imbarė | Imbarės kaime | settled (modal spelling at 0.80) |
+| Байдотахъ (Баидотахъ, Байдотатъ, Балдотахъ, Баидотохъ) | 14 (9) | Baidotai | Baidotų kaime | settled |
+| Песцяхъ (Песцятъ, Пеецяхъ, Пеецятъ, Пецяхъ, Тесцятъ) | 12 (4) | Pesčiai | Pesčių kaime | settled |
+| Кулисодахъ (Кулисодохъ, Кулисодотъ, Кулиходахъ, Кулигодахъ, Кулисоды) | 8 (3) | Kūlsodis | Kūlsodžio kaime | settled |
+| Жудгаляхъ (Жудгалъ, Жудганахъ, Жудгиляхъ, Жудаляхъ) | 7 (6) | Žudgalis | Žudgalio kaime | settled |
+| Якштайцяхъ (Якштаицяхъ, Якштойцяхъ, Якштаицъ, "Яки Стайцятъ") | 7 (2) | Jakštaičiai | Jakštaičių kaime | settled |
+| Скавдаляхъ (Скаудаляхъ) | 6 (5) | Skaudaliai | Skaudalių kaime | settled |
+| Кулаляхъ (Кулал, Куналят) | 5 (4) | Kulaliai | Kulalių kaime | settled |
+| Орлянахъ (Орлянохъ, Орлянатъ, Фрлянахъ, Эрлянахъ, Онлянахъ; "Орманы") | 28 (0) | candidate Erlėnai (0.50, tied with Leliūnai) | Orlianų [?] kaime | not settled: the most frequent village of the book has no clear match |
+| Юдупянахъ (Юдупянохъ, Юдурянахъ, Юдунянохъ, Юдупянатъ) | 19 (0) | candidate Juodupėnai (0.50, tied with Kūlupėnai) | Judupianų [?] kaime | not settled |
+| Шевчикахъ / Шевшикахъ (Шевчикохъ, Шевшкохъ, Шавчикахъ, Шевичкахъ) | 17 (1) | candidate Šaučikiai (0.75; two nodes of this name) | Ševčikų [?] kaime | not settled; one form for both spellings |
+| Тугахъ / Тугохъ | 9 (0) | perhaps the same as Тузахъ (Tuzai, 0.67; Tauzai 0.50) | Tugų [?] kaime | not settled; do not merge with Tuzų |
+| Клавгальвахъ (Клавцалвохъ, Клаунальвахъ, Клавдалвотъ, Клавнамвохъ, "Клау Кальвѣ") | 10 (0) | candidate Klausgalvai (0.78) | Klavgalvų [?] kaime | not settled |
+| Жалимахъ (Жалинахъ, Жалинохъ) | 6 (0) | Didieji Žalimai or Mažieji Žalimai | Žalimų [?] kaime | not settled (two villages) |
+| Неренахъ (Неренохъ, Неренатъ, Нерекохъ) | 5 (0) | candidate Nerėpai (0.80; two nodes) | Nerenų [?] kaime | not settled |
+| Сѣлянахъ (Сѣлянохъ, Сплянахъ, "Селянат") | 5 (0) | candidate Sėleniai (0.67) | Selianų [?] kaime | not settled |
+| Груншлавкахъ (Грумлавкахъ, Грутлавкахъ, Груншлавки) | 6 (0) | candidate Grūšlaukė (0.80) | Grunšlavkų [?] kaime | not settled |
+| Насрянахъ (Насрены, Настрянотъ) | 6 (1) | candidate Nasrėnai (0.71–0.86) | Nasrianų [?] kaime | not settled |
+| Дворчиникахъ (Дварчинимъ) | 4 (0) | candidate Dvarčininkai (0.82) | Dvorčinikų [?] kaime | not settled (four entries) |
+| Оскецяхъ (Оскацяхъ, Оскицяхъ, Оскецятъ) | 4 | none | Oskečių [?] kaime | unmatched |
+| Юрганцяхъ (Юргайцяхъ, Юрганцихъ, "Эдрганцятъ") | 5 | none (Burbaičiai 0.59–0.75 is a different name) | Jurgančių [?] kaime | unmatched |
+| Гаржделяхъ (Гаржделѣ, Гаржденяхъ, Гарденахъ) | 6 (2) | candidate Gargždelė (0.78–0.89) | Garždelių [?] kaime | not settled (three entries above 0.70) |
+| Киркшахъ / Каркшахъ | 3 (1) | candidate Kirkšiai | Kirkšų [?] kaime | not settled (three entries) |
+| Нармонтохъ, Багораляхъ / Байораль, Пальшяхъ, Тинтеляхъ, Мазонахъ, Гедговдзяхъ, Бурбайцяхъ (Плунгянскаго Прихода), Шатроминохъ (Масядскаго Прихода) | 1–2 each | candidates Narmantai, Bajoraliai, Palšiai, Tinteliai, Mažonai, Gedgaudžiai, Burbaičiai, Šatraminiai | mechanical form + [?]: Narmontų [?], Bagoralių [?], Palšių [?], Tintelių [?], Mazonų [?], Gedgovdzių [?], Burbaičių [?], Šatrominų [?] | not settled (too few entries) |
+
+Every other village is formed mechanically by 4.3 and keeps its [?]. A spelling that is
+plausibly one of the table's villages takes the table's form, including the drafts'
+misreadings shown in brackets.
+
+**The ending "-атъ / -ятъ" is a misread "-ахъ / -яхъ".** In this book a village name that
+the draft ends in -атъ, -ятъ (also -отъ, -аръ, -яръ, -авъ) is the plural locative -ахъ /
+-яхъ: treat it by step 2 of 4.3 (Лайвятъ → as Лайвяхъ; Песцятъ → as Песцяхъ; "Гуговузявъ",
+"Теимаръ" are locatives too, stem + -ų / -ių + [?]). Evidence: of the 575 village strings,
+230 end in -ахъ/-яхъ, 62 in -охъ/-ехъ and 59 in -атъ/-ятъ; the same village occurs both
+ways (Laiviai: 10 entries -яхъ/-ахъ, 13 -ятъ/-атъ; Pesčiai 4 and 6; Barzdžiai 11 and 4;
+Baidotai 7 and 2; Žeimiai 21 and 2; nine stems occur with both endings letter for letter);
+all ten village locatives in the labelled lines, read from the image, end in -ахъ/-яхъ and
+none in -атъ/-ятъ, among them 0014_L4_parents_10, which a reader gives as "[Сарздзяхъ?]"
+and the recognizer as "Барздзятъ"; and on the crops 0023_L1_parents_07 ("Лайвяхъ Здѣшняго
+Прихода") and 0060_L1_parents_06 ("Песцяхъ Здѣшняго прихода") the last letters are х and ъ
+written as one looped stroke, which the recognizer takes for тъ. The -атъ readings come
+mostly from the clerks of 1857 and 1859 (19 and 22 entries; 0 in 1858).
+"-охъ / -ехъ" (Тузохъ, Имборохъ, Юдупянохъ) is the same locative with the clerk's о for а.
+
+### 11.4 Terms not yet in the glossary
+
+All proposed, not reviewed by a native speaker.
+
+| Russian | Lithuanian | Note |
+|---|---|---|
+| пополудни (also drafted "пополу дня", "поколу дня", "пополудня") | po pietų | time of day, placed after "dieną" like "ryte" / "vakare": "gimęs 1857 metų liepos 6 dieną po pietų Laivių kaime" (proposed, not reviewed by a native speaker) |
+| Мѣстнымъ Администраторомъ Кс. X | vietinis administratorius kunigas X | the priest in charge of a parish without a parish priest (proposed, not reviewed by a native speaker) |
+| Билетнаго Солдата / Солдата за билетомъ (a soldier released on a leave ticket) | atostogų bilietą turinčio kareivio (gen., Template B) / atostogų bilietą turintis kareivis (nom.) | "Atostogų bilietą turinčio kareivio Juozapo … ir Liudvikos, gim. …, teisėtų sutuoktinių sūnus" (proposed, not reviewed by a native speaker; compare "neterminuotai atostogaujantis kareivis" for бессрочноотпускной) |
+| Здѣшнихъ Прихожанъ | šios parapijos | see 11.1 (proposed, not reviewed by a native speaker) |
+| въ мѣстечкѣ Салантахъ | Salantų miestelyje | see 11.1 (follows 4.1; proposed, not reviewed by a native speaker) |
+| Присутствовали A и B / при чемъ присутствовали … (witnesses named after the godparents, mostly at nobles' baptisms) | a second sentence in the godparents field: "Dalyvavo A ir B." | status words and ", mergina" / ", [husband, gen.] žmona" as for godparents: "Krikštatėviai buvo bajorai … ir …, mergina. Dalyvavo bajorai Juozapas … ir Olimpija …, mergina." (proposed, not reviewed by a native speaker) |
+| Прусскихъ подданныхъ | Prūsijos pavaldinių | already in section 2 (not reviewed by a native speaker) |
+| [father] Римско-Католическаго исповѣданія и [mother] Лютеранскаго исповѣданія | [father, gen.], Romos katalikų tikybos, ir [mother, gen.], liuteronų tikybos, gim. … | the confession follows the person it belongs to, between commas (proposed, not reviewed by a native speaker) |
+| Титулярный Совѣтникъ / Титулярнаго Совѣтника (godparent, husband) | titulinis patarėjas / titulinio patarėjo | already in section 2 (not reviewed by a native speaker) |
+| Титулярныхъ Совѣтниковъ (written in the plural for the parents) | Titulinio patarėjo [father, gen.] [surname, gen.] ir [mother, gen.], gim. …, teisėtų sutuoktinių sūnus | Template B: the rank is the father's (proposed, not reviewed by a native speaker) |
+| Капитанъ пограничной стражи (a witness, 0006_L2) | pasienio sargybos kapitonas | (proposed, not reviewed by a native speaker) |
+| дополненъ обрядъ Св. Крещенія надъ 16-лѣтнею дѣвицею … | as 8.4: "papildė krikštą 16 metų merginai, vardu X" | the only place where "merginai" replaces "kūdikiui": a girl of sixteen is not an infant (proposed, not reviewed by a native speaker) |
+
+### 11.5 Given names met in this book and missing from section 6
+
+All proposed, not reviewed by a native speaker. They are used like the names of section 6
+(standard form when the reading is plausibly that name, no [?] for the name itself).
+
+| Russian (spellings found) | Lithuanian nom. | gen. | Note (each: proposed, not reviewed by a native speaker) |
+|---|---|---|---|
+| Іозифатъ / Іозефатъ | Juozapatas | Juozapato | proposed, not reviewed by a native speaker |
+| Іозефата / Іозифата (woman; "Іозедатою") | Juozapota | Juozapotos | the form section 6 gives for Юзефа; proposed, not reviewed by a native speaker |
+| Каликстъ | Kalikstas | Kaliksto | proposed, not reviewed by a native speaker |
+| Луція / Люція | Liucija | Liucijos | proposed, not reviewed by a native speaker |
+| Мацей | Motiejus | Motiejaus | the same Lithuanian form as Матеушъ; proposed, not reviewed by a native speaker |
+| Дыонизій / Діонисій | Dionizas | Dionizo | proposed, not reviewed by a native speaker |
+| Фердынандъ / Фердинандъ | Ferdinandas | Ferdinando | proposed, not reviewed by a native speaker |
+| Арнольфъ | Arnulfas | Arnulfo | or Arnolfas, as written; proposed, not reviewed by a native speaker |
+| Филипъ / Филиппъ | Pilypas | Pilypo | proposed, not reviewed by a native speaker |
+| Леопольдъ | Leopoldas | Leopoldo | proposed, not reviewed by a native speaker |
+| Олимпія | Olimpija | Olimpijos | proposed, not reviewed by a native speaker |
+| Колумба | Kolumba | Kolumbos | proposed, not reviewed by a native speaker |
+| Пракседа | Prakseda | Praksedos | proposed, not reviewed by a native speaker |
+| Аполинара (woman) | Apolinara | Apolinaros | as written; the man's name Аполинаръ is Apolinaras (section 6); proposed, not reviewed by a native speaker |
+| Леокадія | Leokadija | Leokadijos | proposed, not reviewed by a native speaker |
+| Эмиліянна | Emilijona | Emilijonos | proposed, not reviewed by a native speaker |
+| Данѣлъ / Даніель | Danielius | Danieliaus | the form section 6 gives for Даніилъ; proposed, not reviewed by a native speaker |
+
+Spellings of this book for names already in section 6: Іозефъ, Іозифъ = Juozapas; Янъ =
+Jonas; Якубъ ("Якода", "Якуда") = Jokūbas; Катаржина ("Катартыны", "Каторжоны") = Kotryna;
+Марціянна = Marcijona; Францишекъ ("Францишокъ", "Вранцишкомъ") = Pranciškus; Казимержъ
+("Казимертъ", "Казимерша") = Kazimieras; Іелена / Гелена = Elena; Домишекъ / Домишка is
+probably Dominykas, with [?].
+
+### 11.6 Open questions for this book
+
+1. **Kasper Chmielewski [?]** (vicar, 1858–1859): read from the page images, not from a list
+   of the clergy of the Samogitian (Telšiai) diocese. A directory of the diocese for 1858
+   or 1859 would settle it, and also the given names and ranks of Staszkowski, Arwasewicz
+   and Zaleski, the spelling Kontrym / Kontrim, and whether Bielski was administrator in
+   1857 and parish priest from 1859.
+2. **Donat Szygżdowicz [?]**, vicar of Mosėdis (one entry, 1862), and the unread priest of
+   0031_L3.
+3. **Józef Daukšas**: Polish given name with a Lithuanian-letter surname follows the rule
+   of section 5 but looks mixed; "Daukszas" would be the all-Polish spelling.
+4. **Villages**: Орляны (28 entries, the most frequent village of the book) and Юдупяны (19)
+   have only weak candidates (Erlėnai, Juodupėnai). A historical list of the villages of
+   Salantai parish would settle them and the other "not settled" rows; until then they are
+   mechanical genitives with [?]. Whether Тугахъ is Тузахъ needs the page image.
+5. **Modern names for settled villages** (Laivių, Žeimių, Tuzų, Barzdžių, Imbarės, Baidotų,
+   Pesčių, Kūlsodžio, Žudgalio, Jakštaičių, Skaudalių, Kulalių) depart from principle 1.
+   The rest of the glossary keeps mechanical forms; a reader should say whether the two
+   kinds may stand side by side.
+6. **Terms and names of 11.4 and 11.5** are proposals: "po pietų", "vietinis
+   administratorius kunigas", "atostogų bilietą turintis kareivis", "Dalyvavo …", "Jo
+   Ekscelencija vyskupijos vyskupas", "liuteronų tikybos", Juozapatas, Kalikstas, Dionizas,
+   Arnulfas, Pilypas, Motiejus for Мацей.

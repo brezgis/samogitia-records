@@ -22,6 +22,32 @@ keeps its place but whose baptism column has no "Тысяча восемьсот
 The draft file records the rows left out as `rows_dropped_as_printed_heading` and
 `rows_folded_into_previous`.
 
+Rows and columns out of step (two-page forms above all, where the baptism text is on the left
+page and the parents and godparents on the right one):
+  * a row whose parents cell lies a whole column to the right of the baptism cell (the layout put
+    the right page's column template one column too far right, see `shifted_right_page`): the
+    lines filed as "parents" are the godparents column and are moved there, the lines filed as
+    "godparents" are the signatures column and are left out, and the entry is flagged: its
+    parents column was never cropped;
+  * a page side on which some row holds two openings of one column (and a neighbouring row has
+    text there but no opening), or an opening of the parents or godparents over a baptism that is
+    empty or only the rest of the baptism above: if all three columns have the same number of openings
+    and each column's openings lie at one steady distance (within SNAP) from the baptism openings,
+    the columns are paired by them in order (first with first, ...), `paired_by_openings`;
+    otherwise the layout pairing is kept, a baptism text without an opening joins the baptism
+    above it, and the rows concerned get a `pairing_warning`;
+  * the first row of a side with no baptism opening continues the last entry of the side before
+    (the previous scan, or the other page of the same scan): each of its columns that has no
+    opening is appended to that entry (`continued_on` names the row), unless the baptism it
+    would continue is already complete; a row emptied this way is left out and listed in
+    `rows_folded_across_pages`;
+  * a scan on which the child's sex in the baptism column (a name ending -а/-я, or in a consonant)
+    contradicts "сынъ"/"дочь" of the parents column in two entries or more (or in one, on a side
+    already found out of step): all its entries are flagged, because the two pages are then
+    probably not the same opening (a leaf missing or misbound). Nothing is re-paired there; each
+    entry also carries `sex_contradiction`. (pipeline/check_months.py finds more such scans from
+    the parsed dates.)
+
 Outputs processed/year_draft_<model>.json and .csv. THESE ARE MACHINE DRAFTS: model
 text is unverified (about 7% character error on held-out lines; names are worse),
 and line boundaries can merge or drop text. Do not treat them as transcriptions.
@@ -137,6 +163,50 @@ def printed_heading_columns(texts):
     return n
 
 
+def shifted_right_page(q):
+    """True for a row whose parents cell starts more than half its own width to the right of the
+    baptism cell's right edge: in a two-page form the right page's column template was placed one
+    column too far right (layout_spread.fit_right ties between two placements when the rule at the
+    gutter is missed), so "parents" is the godparents column and "godparents" the signatures."""
+    c = q.get('cells') or {}
+    if not (c.get('baptism') and c.get('parents')):
+        return False
+    return c['parents'][0] - c['baptism'][2] > 0.5 * (c['parents'][2] - c['parents'][0])
+
+
+def child_sex(baptism):
+    """'f' / 'm' when the single name between "именемъ" and "со всѣми" is clearly a girl's (ends
+    -а / -я) or a boy's (ends in a consonant, -ъ or -й), else None: names of under four letters,
+    names in -и/-е/-о/-ь, double names and names the draft split in two are not judged."""
+    m = re.search(r'имен[еа]м[ъиь]?\s+([^\s,.]+)[,.]?\s+(\S+)', baptism or '', re.I)
+    name = re.sub(r'[\W\d_]', '', m.group(1)).lower() if m else ''
+    after = re.sub(r'[\W\d_]', '', m.group(2)).lower() if m else ''
+    if len(name) < 4 or not (after in ('с', 'со', 'съ') or after.startswith('совс')):
+        return None
+    return 'f' if name[-1] in 'ая' else 'm' if name[-1] in 'ъйбвгджзклмнпрстфхцчшщ' else None
+
+
+def parents_sex(parents):
+    """'m' for a word "сынъ", 'f' for a word beginning "доч" in the parents column; None if neither or both."""
+    words = [re.sub(r'[\W\d_]', '', w).lower() for w in (parents or '').split()]
+    found = {'m' if w in ('сынъ', 'сынь', 'сын') else 'f' for w in words if w in ('сынъ', 'сынь', 'сын') or w.startswith('доч')}
+    return found.pop() if len(found) == 1 else None
+
+
+def baptism_finished(text):
+    """The baptism sentence has reached its closing formula ("... со всѣми обрядами таинства")."""
+    tail = re.sub(r'[\W\d_]', '', (text or '').lower())[-40:]
+    return bool(approx_find(tail, 'таинств', max_ratio=0.3) or approx_find(tail, 'обрядами', max_ratio=0.3))
+
+
+def can_continue(above, below):
+    """A baptism text `below` with no opening may be the rest of the baptism `above`: that one has
+    not reached its closing formula, and the two do not both hold "окрещенъ" (one sentence has one)."""
+    def has(t):
+        return bool(approx_find(re.sub(r'[\W\d_]', '', (t or '').lower()), 'окрещенъ', max_ratio=0.25))
+    return not baptism_finished(above) and not (has(above) and has(below))
+
+
 def line_y(p):
     """Height of a line's letter bodies (the `line` record of segment_lines.py when the
     proposal has one, else the middle of its box): boxes of neighbouring lines overlap, and a
@@ -147,7 +217,7 @@ def line_y(p):
     return (p['bbox'][1] + p['bbox'][3]) / 2
 
 
-def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold=False):
+def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold=False, repair=False):
     """Re-derive entry membership from detected column openings (layout boundaries are approximate).
 
     Per page side: each stored boundary (row focal_y start) first snaps to the nearest baptism
@@ -167,8 +237,19 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold
     later row of the side that has no opening line of its own in any of the three columns is the
     lower part of the entry above and is folded into it (`reassign.folded`); a row with an opening
     in the parents or godparents column only is kept (main() flags it).
+
+    With `repair` (register-year runs), columns out of step, a right page filed one column off and
+    continuations over a page turn are dealt with as the module docstring describes; what was done is left in
+    `reassign.shifted` (row ids), `reassign.paired_by_openings` (row ids), `reassign.out_of_step`
+    ({row_id: reason}), `reassign.continued` ({row_id: [rows of the next side appended to it]})
+    and `reassign.folded_across` ([[row, into]] for rows emptied by that).
     Returns (lines by row_id, {row_id: {cell: (old_y, new_y)}}).
     """
+    shifted = {q['row_id'] for q in queue if repair and shifted_right_page(q)}
+    if shifted:
+        # the right page's template is one column off: "parents" holds the godparents, "godparents" the signatures
+        props = [({**p, 'cell': 'godparents'} if p['row_id'] in shifted and p['cell'] == 'parents' else p)
+                 for p in props if not (p['row_id'] in shifted and p['cell'] == 'godparents')]
     side = defaultdict(list)
     for q in queue:
         side[(q['scan'], q['page'])].append(q)
@@ -179,13 +260,15 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold
             line_side[row_side[p['row_id']]].append(p)
     by_row, snapped = defaultdict(list), {}
     split_rows, folded, headings, heading_rows = [], [], {}, []
+    paired, out_of_step, continued, folded_across = [], {}, {}, []
+    prev_side = None            # (key, last row id) of the side before, in book order
 
     def snap(y0, starts):
         near = [s for s in starts if abs(s - y0) <= SNAP]
         return (min(near, key=lambda s: abs(s - y0)) - 8) if near else y0
 
-    for key, qs in side.items():
-        qs = sorted(qs, key=lambda q: q['focal_y'][0])
+    for key in sorted(side):
+        qs = sorted(side[key], key=lambda q: q['focal_y'][0])
         lines = line_side[key]
         # the printed column headings: the side's first layout row, by its own lines' text
         own, below_heading = defaultdict(list), False
@@ -272,20 +355,91 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold
                 if abs(y - y0) > 40:
                     snapped.setdefault(q['row_id'], {})[c] = (y0, int(y))
                 bounds[c].append((y, q['row_id']))
-        for p in lines:
-            cy = (p['bbox'][1] + p['bbox'][3]) / 2
-            bs = bounds[p['cell']]
-            if cy < bs[0][0] - 40 and bs[0][0] != qs[0]['focal_y'][0]:
-                continue            # above the side's first (snapped) entry start: previous-year/header carry-over
-            if below_heading and ((line_y(p) < at[p['cell'], bs[0][0]] - 1) if (p['cell'], bs[0][0]) in at
-                                  else (cy < bs[0][0])):
-                continue            # between the printed heading and the side's first entry: the heading's last line
-            owner = bs[0][1]
-            for y, rid in bs:
-                # a boundary that is an opening line: compare with that line; otherwise with the layout's y
-                if (line_y(p) >= at[p['cell'], y] - 1) if (p['cell'], y) in at else (cy >= y):
-                    owner = rid
-            by_row[owner].append(p)
+        def place(bounds):
+            got = defaultdict(list)
+            for p in lines:
+                cy = (p['bbox'][1] + p['bbox'][3]) / 2
+                bs = bounds[p['cell']]
+                if cy < bs[0][0] - 40 and bs[0][0] != qs[0]['focal_y'][0]:
+                    continue            # above the side's first (snapped) entry start: previous-year/header carry-over
+                if below_heading and ((line_y(p) < at[p['cell'], bs[0][0]] - 1) if (p['cell'], bs[0][0]) in at
+                                      else (cy < bs[0][0])):
+                    continue            # between the printed heading and the side's first entry: the heading's last line
+                owner = bs[0][1]
+                for y, rid in bs:
+                    # a boundary that is an opening line: compare with that line; otherwise with the layout's y
+                    if (line_y(p) >= at[p['cell'], y] - 1) if (p['cell'], y) in at else (cy >= y):
+                        owner = rid
+                got[owner].append(p)
+            return got
+
+        got = place(bounds)
+        open_ids = {c: {p['id'] for p in ps} for c, ps in opening.items()}
+
+        def owns(rid, c):
+            return sum(1 for p in got.get(rid, []) if p['cell'] == c and p['id'] in open_ids[c])
+
+        def col_text(rid, c):
+            return join_lines([text_of.get(p['id']) or '' for p in sorted(got.get(rid, []), key=line_y) if p['cell'] == c])
+
+        # columns out of step: a row with two openings of one column while the row before or after
+        # has text in that column but no opening (twins have two sets of godparents in one row:
+        # nothing is missing next to them), or a row with an opening of the parents/godparents
+        # whose baptism is empty or is the rest of the baptism above (a baptism that merely lost
+        # its opening words to the recognizer is a whole sentence after a finished one: not counted)
+        def lacks(i, c):
+            return 0 <= i < len(qs) and not owns(qs[i]['row_id'], c) and bool(re.sub(r'[\W_]', '', col_text(qs[i]['row_id'], c)))
+
+        def headless(i):
+            rid = qs[i]['row_id']
+            mine = col_text(rid, 'baptism')
+            if owns(rid, 'baptism') or opens_with_year(mine) or not (owns(rid, 'parents') or owns(rid, 'godparents')):
+                return False
+            if not re.sub(r'[\W_]', '', mine):
+                return True
+            above = col_text(qs[i - 1]['row_id'], 'baptism') if i else \
+                (join_lines([text_of.get(p['id']) or '' for p in by_row.get(prev_side[1], []) if p['cell'] == 'baptism'])
+                 if prev_side and key[0] - prev_side[0][0] in (0, 1) else None)
+            return above is not None and can_continue(above, mine)
+
+        odd = [q['row_id'] for i, q in enumerate(qs)
+               if any(owns(q['row_id'], c) > 1 and (lacks(i - 1, c) or lacks(i + 1, c)) for c in starts) or headless(i)]
+        if odd and repair:
+            n_open = {c: len(ps) for c, ps in opening.items()}
+            b_owner = [next((r for r, ps in got.items() if o in ps), None) for o in sorted(opening['baptism'], key=line_y)]
+            # how far each column's k-th opening lies below the k-th baptism opening: on one opening of
+            # the book this is the same all down the page (the two pages' offset), within SNAP
+            level = len(set(n_open.values())) == 1 and all(
+                max(d) - min(d) <= SNAP for d in ([line_y(o) - line_y(b) for o, b in zip(sorted(opening[c], key=line_y),
+                                                                                      sorted(opening['baptism'], key=line_y))]
+                                                  for c in ('parents', 'godparents')) if d)
+            if level and None not in b_owner and len(set(b_owner)) == len(b_owner):
+                # the same number of openings in each column, evenly placed: pair them in order
+                lead = [qs[0]] if qs[0]['row_id'] not in b_owner else []
+                keep = [q for q in qs if q['row_id'] in b_owner]
+                folded.extend(q['row_id'] for q in qs if q not in keep and q not in lead)
+                qs = lead + keep
+                bounds = {c: [(q['focal_y'][0], q['row_id']) for q in lead]
+                          + [(o['bbox'][1] - 8, rid) for o, rid in zip(sorted(opening[c], key=line_y), b_owner)] for c in starts}
+                got = place(bounds)
+                paired.extend(b_owner)
+            else:
+                why = ('columns out of step on this page side (entry openings found: baptism %d, parents %d, godparents %d; '
+                       'rows that do not fit: %s); the columns of a row may belong to different entries'
+                       % (n_open['baptism'], n_open['parents'], n_open['godparents'], ', '.join(odd)))
+                # a baptism text without an opening continues the baptism above it
+                bb = []
+                for i, b in enumerate(bounds['baptism']):
+                    if i == 0 or owns(b[1], 'baptism') or opens_with_year(col_text(b[1], 'baptism')) \
+                            or not can_continue(col_text(bb[-1][1], 'baptism'), col_text(b[1], 'baptism')):
+                        bb.append(b)
+                if len(bb) != len(bounds['baptism']):
+                    bounds['baptism'] = bb
+                    got = place(bounds)
+                for q in qs:
+                    out_of_step[q['row_id']] = why
+        for rid, ps in got.items():
+            by_row[rid].extend(ps)
         # month headings: up to two heading lines directly above an entry's opening line (blank
         # crops between them ignored) come out of the text, wherever the boundary put them
         owner_of = {p['id']: rid for rid in {r for bs in bounds.values() for _, r in bs} for p in by_row.get(rid, [])}
@@ -306,32 +460,57 @@ def reassign(queue, props, text_of, split_missed=False, numbered=None, text_fold
                     if h['id'] in owner_of:     # (a line above the side's first entry has no owner)
                         by_row[owner_of.pop(h['id'])].remove(h)
                     headings.setdefault(owner_of[o['id']], {}).setdefault(c, []).insert(0, h)
+        def row_text(rid, c):
+            return join_lines([text_of.get(p['id']) or '' for p in sorted(by_row.get(rid, []), key=lambda p: (row_side[p['row_id']], line_y(p)))
+                               if p['cell'] == c])
+
+        # a first row without a baptism opening continues the last entry of the side before
+        rid0 = qs[0]['row_id']
+        if repair and prev_side and (key[0] - prev_side[0][0] in (0, 1)) and not owns(rid0, 'baptism') \
+                and not opens_with_year(row_text(rid0, 'baptism')):
+            last = prev_side[1]
+            fragment = True
+            moved = []
+            if re.sub(r'[\W_]', '', row_text(rid0, 'baptism')) and not can_continue(row_text(last, 'baptism'), row_text(rid0, 'baptism')):
+                fragment = None     # the baptism above is complete: this row's own opening was not recognised
+            for c in CELLS if fragment is not None else ():
+                col = [p for p in by_row.get(rid0, []) if p['cell'] == c]
+                if col and not owns(rid0, c):
+                    moved.extend(col)
+            if moved:
+                by_row[last].extend(moved)
+                by_row[rid0] = [p for p in by_row[rid0] if p not in moved]
+                if any(re.sub(r'[\W_]', '', text_of.get(p['id']) or '') for p in moved):
+                    continued.setdefault(last, []).append(rid0)
+                if not by_row[rid0]:
+                    folded_across.append([rid0, last])
+                    del by_row[rid0]
+                    qs = qs[1:]
+        if qs:
+            prev_side = (key, qs[-1]['row_id'])
     order = {'baptism': 0, 'parents': 1, 'godparents': 2}
     for rid in by_row:
-        by_row[rid].sort(key=lambda p: (order[p['cell']], p['bbox'][1]))
+        by_row[rid].sort(key=lambda p: (order[p['cell']], row_side[p['row_id']], p['bbox'][1]))
+    reassign.shifted, reassign.paired_by_openings, reassign.out_of_step = sorted(shifted), paired, out_of_step
+    reassign.continued, reassign.folded_across = continued, folded_across
     reassign.folded = folded
     reassign.heading_rows = heading_rows
     reassign.headings = headings
     return (by_row, snapped, split_rows) if split_missed else (by_row, snapped)
 
 
-def main():
-    import argparse
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('pred_dir', type=Path)
-    ap.add_argument('--queue', default='processed/queue.json')
-    ap.add_argument('--proposals', default='training/line_proposals_v2.json')
-    ap.add_argument('--year', type=int, help='register year to output (default: the 1888 target rows)')
-    args = ap.parse_args()
-    pred_dir = args.pred_dir
+def assemble(book, pred_dir, queue='processed/queue.json', proposals='training/line_proposals_v2.json', year=None):
+    """Build the draft entries of one register year (or of the 1888 target rows) without writing
+    anything. Returns {'model', 'entries', 'snapped', 'left_out'}; main() writes the files."""
+    book, pred_dir = Path(book), Path(pred_dir)
     preds = {p['id']: p['text'] for p in json.loads((pred_dir / 'predictions.json').read_text())}
     model = json.loads((pred_dir / 'run.json').read_text())
-    ann = {a['id']: a for a in json.loads((BOOK / 'training/annotations.json').read_text())}
-    props = json.loads((BOOK / args.proposals).read_text())
-    all_rows = json.loads((BOOK / args.queue).read_text())
-    if args.year:
+    ann = {a['id']: a for a in json.loads((book / 'training/annotations.json').read_text())}
+    props = json.loads((book / proposals).read_text())
+    all_rows = json.loads((book / queue).read_text())
+    if year:
         all_rows = [q for q in all_rows if q.get('register_year')]
-        queue = [q for q in all_rows if q['register_year'] == args.year]
+        queue = [q for q in all_rows if q['register_year'] == year]
     else:
         all_rows = queue = [q for q in all_rows if q['in_target_year']]
     text_of = {}
@@ -340,19 +519,21 @@ def main():
         text_of[p['id']] = a['text'] if a and a.get('text') and a['status'] in ('image_checked', 'independently_checked') \
             else preds.get(p['id'], '')
     numbered = None
-    side_path = BOOK / 'processed/side_columns.json'
-    if args.year and side_path.exists():
+    side_path = book / 'processed/side_columns.json'
+    if year and side_path.exists():
         side = json.loads(side_path.read_text())
         numbered = {r for r, v in side.items() if re.sub(r'\D', '', v.get('entry_no') or '')}
-    left_out = {'heading': [], 'folded': []}
-    if args.year:
+    left_out = {'heading': [], 'folded': [], 'across': []}
+    if year:
         by_row, snapped, split_rows = reassign(all_rows, props, text_of, split_missed=True, numbered=numbered,
-                                               text_fold=numbered is None)
+                                               text_fold=numbered is None, repair=True)
         in_year = {q['row_id'] for q in queue}
         left_out = {'heading': [r for r in reassign.heading_rows if r in in_year],
-                    'folded': [r for r in reassign.folded if r in in_year]}
-        queue = [q for q in queue if q['row_id'] not in set(reassign.folded) | set(reassign.heading_rows)]
-        queue = sorted(queue + [r for r in split_rows if r['register_year'] == args.year],
+                    'folded': [r for r in reassign.folded if r in in_year],
+                    'across': [x for x in reassign.folded_across if x[0] in in_year]}
+        gone = set(reassign.folded) | set(reassign.heading_rows) | {x[0] for x in reassign.folded_across}
+        queue = [q for q in queue if q['row_id'] not in gone]
+        queue = sorted(queue + [r for r in split_rows if r['register_year'] == year and r['row_id'] not in gone],
                        key=lambda q: (q['scan'], q['page'], q['focal_y'][0]))
     else:
         by_row, snapped = reassign(all_rows, props, text_of)
@@ -391,12 +572,46 @@ def main():
         rec['boundary_warning'] = ('another entry start appears inside this entry: possibly an entry the layout missed'
                                    if any(is_entry_start(text_of.get(p['id'])) for p in later) else None)
         first = [p for p in lines if p['cell'] == 'baptism'][:3]
-        if args.year and not rec['boundary_warning'] and not any(is_entry_start(text_of.get(p['id'])) for p in first) \
+        if year and not rec['boundary_warning'] and not any(is_entry_start(text_of.get(p['id'])) for p in first) \
                 and not opens_with_year(rec['baptism']):
             rec['boundary_warning'] = ('the baptism column does not open with "Тысяча восемьсотъ": a fragment, a continuation '
                                        'from the page before, or an entry whose first lines are missing' if rec['baptism'].strip()
                                        else 'the baptism column is empty')
+        rec['continued_on'] = reassign.continued.get(q['row_id'])
+        rec['paired_by_openings'] = q['row_id'] in reassign.paired_by_openings
+        rec['pairing_warning'] = reassign.out_of_step.get(q['row_id'])
+        if q['row_id'] in reassign.shifted or q.get('split_from') in reassign.shifted:
+            rec['pairing_warning'] = ("the right page's columns were placed one column too far right on this scan: the text "
+                                      'cropped as "parents" is the godparents column (moved there) and the parents column '
+                                      'was not cropped at all; this scan needs a new layout')
         entries.append(rec)
+    # the child's sex in the baptism column against "сынъ"/"дочь" in the parents column, per scan
+    clash = defaultdict(list)
+    for e in entries:
+        a, b = child_sex(e['baptism']), parents_sex(e['parents'])
+        e['sex_contradiction'] = bool(a and b and a != b)
+        if e['sex_contradiction']:
+            clash[e['scan']].append(e['row_id'])
+    doubted = {e['scan'] for e in entries if e['pairing_warning']}
+    for e in entries:
+        if len(clash[e['scan']]) >= 2 or (clash[e['scan']] and e['scan'] in doubted):
+            e['pairing_warning'] = ((e['pairing_warning'] + '; ' if e['pairing_warning'] else '') + 'on this scan the child\'s sex in the baptism column contradicts the parents column in %d entries '
+                                    '(%s): the two pages are probably not the same opening (a leaf missing or misbound) or the '
+                                    'rows are out of step; baptism and parents/godparents may belong to different entries'
+                                    % (len(clash[e['scan']]), ', '.join(clash[e['scan']])))
+    return {'model': model, 'entries': entries, 'snapped': snapped, 'left_out': left_out}
+
+
+def main():
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument('pred_dir', type=Path)
+    ap.add_argument('--queue', default='processed/queue.json')
+    ap.add_argument('--proposals', default='training/line_proposals_v2.json')
+    ap.add_argument('--year', type=int, help='register year to output (default: the 1888 target rows)')
+    args = ap.parse_args()
+    res = assemble(BOOK, args.pred_dir, args.queue, args.proposals, args.year)
+    model, entries, snapped, left_out = res['model'], res['entries'], res['snapped'], res['left_out']
     stem = Path(model['model_path']).parent.name
     if args.year:
         stem = f'{args.year}_{stem}'
@@ -404,6 +619,7 @@ def main():
     out_json.write_text(json.dumps({'model': model, 'note': __doc__.split('\n\n')[-1].strip(),
                                     'rows_dropped_as_printed_heading': left_out['heading'],
                                     'rows_folded_into_previous': left_out['folded'],
+                                    'rows_folded_across_pages': left_out['across'],
                                     'entries': entries}, ensure_ascii=False, indent=1))
     with open(BOOK / f'processed/year_draft_{stem}.csv', 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=[k for k in entries[0] if k != 'image'] + ['image'])
@@ -412,8 +628,11 @@ def main():
     tot = {k: sum(e[k] for e in entries) for k in ('lines', 'lines_checked', 'lines_independent', 'lines_model', 'lines_rejected')}
     print(json.dumps({'entries': len(entries), **tot, 'boundaries_snapped': len(snapped),
                       'rows_folded_into_previous': len(left_out['folded']),
+                      'rows_folded_across_pages': len(left_out['across']),
                       'rows_dropped_as_printed_heading': len(left_out['heading']),
+                      'entries_paired_by_openings': sum(1 for e in entries if e['paired_by_openings']),
                       'entries_flagged': sum(1 for e in entries if e['boundary_warning']),
+                      'entries_with_pairing_warning': sum(1 for e in entries if e['pairing_warning']),
                       'out': str(out_json.relative_to(ROOT))}))
     return 0
 

@@ -1,0 +1,1929 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-17T04:47:32Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 720691287,
+  "lat": 56.0722205,
+  "lon": 21.4086546,
+  "tags": {
+    "name": "Grūšlaukė",
+    "place": "village",
+    "population": "530",
+    "post_code": "LT-97029",
+    "wikidata": "Q12656088",
+    "wikipedia": "lt:Grūšlaukė"
+  }
+},
+{
+  "type": "node",
+  "id": 747509313,
+  "lat": 56.1811664,
+  "lon": 21.4863911,
+  "tags": {
+    "name": "Daukšiai",
+    "name:lt": "Daukšiai",
+    "name:pl": "Dauksze",
+    "place": "village",
+    "population": "520",
+    "wikidata": "Q13191829",
+    "wikipedia": "lt:Daukšiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 747521982,
+  "lat": 56.1212485,
+  "lon": 21.7588690,
+  "tags": {
+    "name": "Šliktinė",
+    "place": "village",
+    "population": "269",
+    "wikidata": "Q14919561",
+    "wikipedia": "lt:Šliktinė"
+  }
+},
+{
+  "type": "node",
+  "id": 751723413,
+  "lat": 56.0594813,
+  "lon": 21.5686260,
+  "tags": {
+    "name": "Salantai",
+    "name:he": "סלנט",
+    "name:lt": "Salantai",
+    "name:lv": "Salanti",
+    "name:pl": "Sałanty",
+    "name:ru": "Салантай",
+    "name:uk": "Салантай",
+    "old_name:de": "Gränishof",
+    "place": "town",
+    "population": "1615",
+    "rank": "0",
+    "wikidata": "Q157516",
+    "wikipedia": "lt:Salantai"
+  }
+},
+{
+  "type": "node",
+  "id": 751779328,
+  "lat": 56.0987151,
+  "lon": 21.7046265,
+  "tags": {
+    "name": "Notėnai",
+    "place": "village",
+    "population": "352",
+    "wikidata": "Q13193056",
+    "wikipedia": "lt:Notėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 856458996,
+  "lat": 56.1790480,
+  "lon": 21.6655579,
+  "tags": {
+    "name": "Rukai",
+    "place": "village",
+    "population": "291",
+    "wikidata": "Q13193597",
+    "wikipedia": "lt:Rukai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 905194538,
+  "lat": 56.0099987,
+  "lon": 21.3533953,
+  "tags": {
+    "name": "Vaineikiai",
+    "place": "village",
+    "population": "146",
+    "wikidata": "Q13194020",
+    "wikipedia": "lt:Vaineikiai"
+  }
+},
+{
+  "type": "node",
+  "id": 905194641,
+  "lat": 55.9586255,
+  "lon": 21.4820309,
+  "tags": {
+    "name": "Kūlupėnai",
+    "place": "village",
+    "population": "1195",
+    "wikidata": "Q13410333",
+    "wikipedia": "lt:Kūlupėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 905209426,
+  "lat": 56.0697037,
+  "lon": 21.3442279,
+  "tags": {
+    "name": "Latveliai",
+    "place": "village",
+    "population": "37",
+    "wikidata": "Q12662496",
+    "wikipedia": "lt:Latveliai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 905209429,
+  "lat": 56.1083264,
+  "lon": 21.3598377,
+  "tags": {
+    "name": "Plokščiai",
+    "place": "village",
+    "population": "94",
+    "wikidata": "Q14919280",
+    "wikipedia": "lt:Plokščiai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 905426102,
+  "lat": 55.9900407,
+  "lon": 21.5182830,
+  "tags": {
+    "name": "Nasrėnai",
+    "place": "village",
+    "population": "124",
+    "wikidata": "Q12666348",
+    "wikipedia": "lt:Nasrėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 905426212,
+  "lat": 55.9275937,
+  "lon": 21.5422311,
+  "tags": {
+    "name": "Dauginčiai",
+    "place": "village",
+    "population": "170",
+    "wikidata": "Q12652537",
+    "wikipedia": "lt:Dauginčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 905426429,
+  "lat": 55.9981485,
+  "lon": 21.6775155,
+  "tags": {
+    "name": "Šateikiai",
+    "place": "village",
+    "population": "575",
+    "wikidata": "Q3501032",
+    "wikipedia": "lt:Šateikiai"
+  }
+},
+{
+  "type": "node",
+  "id": 1316308647,
+  "lat": 56.0075335,
+  "lon": 21.5334481,
+  "tags": {
+    "name": "Klausgalvai",
+    "place": "village",
+    "population": "80",
+    "wikidata": "Q12660846",
+    "wikipedia": "lt:Klausgalvai"
+  }
+},
+{
+  "type": "node",
+  "id": 1316308666,
+  "lat": 56.0133991,
+  "lon": 21.5573269,
+  "tags": {
+    "name": "Skaudaliai",
+    "place": "village",
+    "population": "76",
+    "wikidata": "Q14919383",
+    "wikipedia": "lt:Skaudaliai"
+  }
+},
+{
+  "type": "node",
+  "id": 1316308675,
+  "lat": 56.0138715,
+  "lon": 21.5392803,
+  "tags": {
+    "name": "Kalnalis",
+    "place": "village",
+    "population": "42",
+    "wikidata": "Q14918961",
+    "wikipedia": "lt:Kalnalis"
+  }
+},
+{
+  "type": "node",
+  "id": 1316308676,
+  "lat": 56.0300195,
+  "lon": 21.5320722,
+  "tags": {
+    "name": "Barzdžiai",
+    "place": "village",
+    "population": "108",
+    "wikidata": "Q11007858",
+    "wikipedia": "lt:Barzdžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 1717745163,
+  "lat": 56.0223365,
+  "lon": 21.5775353,
+  "tags": {
+    "name": "Imbarė",
+    "place": "village",
+    "population": "75",
+    "wikidata": "Q13192184",
+    "wikipedia": "lt:Imbarė"
+  }
+},
+{
+  "type": "node",
+  "id": 1901867964,
+  "lat": 56.1660700,
+  "lon": 21.5753527,
+  "tags": {
+    "name": "Mosėdis",
+    "name:lt": "Mosėdis",
+    "name:pl": "Masiady",
+    "name:ru": "Моседис",
+    "name:uk": "Моседіс",
+    "old_name:de": "Maischaden",
+    "place": "town",
+    "population": "1141",
+    "rank": "10",
+    "wikidata": "Q1949593",
+    "wikipedia": "lt:Mosėdis"
+  }
+},
+{
+  "type": "node",
+  "id": 2231126223,
+  "lat": 56.1316466,
+  "lon": 21.5769664,
+  "tags": {
+    "name": "Šaukliai",
+    "place": "village",
+    "population": "349",
+    "wikidata": "Q12679551",
+    "wikipedia": "lt:Šaukliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2236856655,
+  "lat": 56.0897539,
+  "lon": 21.5181934,
+  "tags": {
+    "name": "Juodupėnai",
+    "place": "village",
+    "population": "303",
+    "wikidata": "Q12658332",
+    "wikipedia": "lt:Juodupėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 2246102462,
+  "lat": 56.0835938,
+  "lon": 21.5751852,
+  "tags": {
+    "name": "Erlėnai",
+    "place": "village",
+    "population": "284",
+    "wikidata": "Q13191955",
+    "wikipedia": "lt:Erlėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 2248043436,
+  "lat": 56.0719135,
+  "lon": 21.6041601,
+  "tags": {
+    "name": "Laiviai",
+    "place": "village",
+    "population": "278",
+    "wikidata": "Q14919040",
+    "wikipedia": "lt:Laiviai"
+  }
+},
+{
+  "type": "node",
+  "id": 2308609270,
+  "lat": 55.9418397,
+  "lon": 21.5646383,
+  "tags": {
+    "name": "Cigonaliai",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q16446756",
+    "wikipedia": "lt:Cigonaliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2316080442,
+  "lat": 55.9354828,
+  "lon": 21.5031408,
+  "tags": {
+    "name": "Martynaičiai",
+    "place": "village",
+    "population": "32",
+    "wikidata": "Q12664634",
+    "wikipedia": "lt:Martynaičiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2316080446,
+  "lat": 55.9319932,
+  "lon": 21.4918289,
+  "tags": {
+    "name": "Vyšnių kalnas",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2334433495,
+  "lat": 56.0494920,
+  "lon": 21.7258016,
+  "tags": {
+    "name": "Gintališkė",
+    "place": "village",
+    "population": "192",
+    "wikidata": "Q12655478",
+    "wikipedia": "lt:Gintališkė"
+  }
+},
+{
+  "type": "node",
+  "id": 2334433508,
+  "lat": 56.0428020,
+  "lon": 21.5664611,
+  "tags": {
+    "name": "Žvainiai",
+    "place": "village",
+    "population": "188",
+    "wikidata": "Q13194468",
+    "wikipedia": "lt:Žvainiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2338390732,
+  "lat": 56.0553415,
+  "lon": 21.3679803,
+  "tags": {
+    "name": "Kumpikai",
+    "place": "village",
+    "population": "173",
+    "wikidata": "Q12661702",
+    "wikipedia": "lt:Kumpikai"
+  }
+},
+{
+  "type": "node",
+  "id": 2340777737,
+  "lat": 56.0913378,
+  "lon": 21.5928354,
+  "tags": {
+    "name": "Kalniškiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16455018",
+    "wikipedia": "lt:Kalniškiai (Imbarė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2341566040,
+  "lat": 55.9901043,
+  "lon": 21.7191367,
+  "tags": {
+    "name": "Kadaičiai",
+    "place": "village",
+    "population": "156",
+    "wikidata": "Q12659150",
+    "wikipedia": "lt:Kadaičiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344139050,
+  "lat": 56.1316576,
+  "lon": 21.6953797,
+  "tags": {
+    "name": "Vindeikiai",
+    "place": "village",
+    "population": "145",
+    "wikidata": "Q14919505",
+    "wikipedia": "lt:Vindeikiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2344179337,
+  "lat": 56.0694017,
+  "lon": 21.5646888,
+  "tags": {
+    "name": "Dvaralis",
+    "place": "village",
+    "population": "81",
+    "wikidata": "Q12653524",
+    "wikipedia": "lt:Dvaralis"
+  }
+},
+{
+  "type": "node",
+  "id": 2344179342,
+  "lat": 56.0597555,
+  "lon": 21.5044716,
+  "tags": {
+    "name": "Leliūnai",
+    "name:lt": "Leliūnai",
+    "name:pl": "Leluny",
+    "place": "village",
+    "population": "133",
+    "wikidata": "Q12662778",
+    "wikipedia": "lt:Leliūnai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2344258446,
+  "lat": 56.0129494,
+  "lon": 21.6264261,
+  "tags": {
+    "name": "Reketė",
+    "place": "village",
+    "population": "70",
+    "wikidata": "Q13193571",
+    "wikipedia": "lt:Reketė"
+  }
+},
+{
+  "type": "node",
+  "id": 2344258447,
+  "lat": 56.0624835,
+  "lon": 21.6637119,
+  "tags": {
+    "name": "Tuzai",
+    "place": "village",
+    "population": "70",
+    "wikidata": "Q12675460",
+    "wikipedia": "lt:Tuzai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289119,
+  "lat": 56.0309625,
+  "lon": 21.3785865,
+  "tags": {
+    "alt_name": "Akmenaliai",
+    "name": "Akmenalės",
+    "place": "village",
+    "population": "57",
+    "wikidata": "Q12647225",
+    "wikipedia": "lt:Akmenalės"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289120,
+  "lat": 55.9474733,
+  "lon": 21.4660296,
+  "tags": {
+    "name": "Asteikiai",
+    "place": "village",
+    "population": "57",
+    "wikidata": "Q12649365",
+    "wikipedia": "lt:Asteikiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289121,
+  "lat": 55.9486299,
+  "lon": 21.4342359,
+  "tags": {
+    "name": "Aukštkalviai",
+    "place": "village",
+    "population": "55",
+    "wikidata": "Q12649643",
+    "wikipedia": "lt:Aukštkalviai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289122,
+  "lat": 56.0517524,
+  "lon": 21.6008775,
+  "tags": {
+    "name": "Gargždelė",
+    "place": "village",
+    "population": "56",
+    "wikidata": "Q5523220",
+    "wikipedia": "lt:Gargždelė"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289125,
+  "lat": 56.0395979,
+  "lon": 21.3379568,
+  "tags": {
+    "name": "Šlaveitai",
+    "place": "village",
+    "population": "53",
+    "wikidata": "Q16478404",
+    "wikipedia": "lt:Šlaveitai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344289126,
+  "lat": 56.0354020,
+  "lon": 21.6419637,
+  "tags": {
+    "name": "Žeimiai",
+    "name:lt": "Žeimiai",
+    "name:pl": "Żejmy",
+    "place": "village",
+    "population": "62",
+    "wikidata": "Q12680587",
+    "wikipedia": "lt:Žeimiai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2344447974,
+  "lat": 56.0539321,
+  "lon": 21.5363159,
+  "tags": {
+    "name": "Pesčiai",
+    "place": "village",
+    "population": "31",
+    "wikidata": "Q16469369",
+    "wikipedia": "lt:Pesčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2344447976,
+  "lat": 55.9869001,
+  "lon": 21.4955451,
+  "tags": {
+    "name": "Tinteliai",
+    "place": "village",
+    "population": "18",
+    "wikidata": "Q12675059",
+    "wikipedia": "lt:Tinteliai (Kūlupėnai)"
+  }
+},
+{
+  "type": "node",
+  "id": 2344447977,
+  "lat": 56.0045558,
+  "lon": 21.5086596,
+  "tags": {
+    "name": "Šalynas",
+    "place": "village",
+    "population": "30",
+    "wikidata": "Q13194303",
+    "wikipedia": "lt:Šalynas"
+  }
+},
+{
+  "type": "node",
+  "id": 2344447978,
+  "lat": 55.9396385,
+  "lon": 21.4599918,
+  "tags": {
+    "name": "Šatilgalis",
+    "place": "village",
+    "population": "31",
+    "wikidata": "Q13194318",
+    "wikipedia": "lt:Šatilgalis"
+  }
+},
+{
+  "type": "node",
+  "id": 2349171919,
+  "lat": 56.0911784,
+  "lon": 21.6566298,
+  "tags": {
+    "name": "Panotėniai",
+    "place": "village",
+    "population": "25",
+    "wikidata": "Q16468725",
+    "wikipedia": "lt:Panotėniai"
+  }
+},
+{
+  "type": "node",
+  "id": 2351823874,
+  "lat": 56.0183232,
+  "lon": 21.7175295,
+  "tags": {
+    "name": "Šateikių Rūdaičiai",
+    "place": "village",
+    "population": "139",
+    "wikidata": "Q10967962",
+    "wikipedia": "lt:Šateikių Rūdaičiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2353185081,
+  "lat": 56.1420490,
+  "lon": 21.5236870,
+  "tags": {
+    "name": "Šatraminiai",
+    "place": "village",
+    "population": "134",
+    "wikidata": "Q12679541",
+    "wikipedia": "lt:Šatraminiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2359913240,
+  "lat": 56.0864361,
+  "lon": 21.7887979,
+  "tags": {
+    "name": "Dovainiai",
+    "place": "village",
+    "population": "127",
+    "wikidata": "Q11009391",
+    "wikipedia": "lt:Dovainiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2361410042,
+  "lat": 55.9602498,
+  "lon": 21.6338546,
+  "tags": {
+    "name": "Papieviai",
+    "place": "village",
+    "population": "124",
+    "wikidata": "Q11020018",
+    "wikipedia": "lt:Papieviai"
+  }
+},
+{
+  "type": "node",
+  "id": 2364731037,
+  "lat": 56.1619837,
+  "lon": 21.6518760,
+  "tags": {
+    "name": "Žebrokai",
+    "place": "village",
+    "population": "95",
+    "wikidata": "Q12680581",
+    "wikipedia": "lt:Žebrokai"
+  }
+},
+{
+  "type": "node",
+  "id": 2374718324,
+  "lat": 56.1608264,
+  "lon": 21.5391463,
+  "tags": {
+    "name": "Igariai",
+    "place": "village",
+    "population": "58",
+    "wikidata": "Q10999165",
+    "wikipedia": "lt:Igariai"
+  }
+},
+{
+  "type": "node",
+  "id": 2374718331,
+  "lat": 56.1526687,
+  "lon": 21.7107139,
+  "tags": {
+    "name": "Prialgava",
+    "place": "village",
+    "population": "61",
+    "wikidata": "Q16470115",
+    "wikipedia": "lt:Prialgava"
+  }
+},
+{
+  "type": "node",
+  "id": 2377285051,
+  "lat": 56.0447015,
+  "lon": 21.7966346,
+  "tags": {
+    "alt_name:pl": "Płotele",
+    "name": "Plateliai",
+    "name:lt": "Plateliai",
+    "name:pl": "Płótele",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q12669633",
+    "wikipedia": "lt:Plateliai (kaimas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2379617006,
+  "lat": 56.1033105,
+  "lon": 21.4874123,
+  "tags": {
+    "name": "Jakštaičiai",
+    "place": "village",
+    "population": "29",
+    "wikidata": "Q16453162",
+    "wikipedia": "lt:Jakštaičiai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2379617013,
+  "lat": 56.0943717,
+  "lon": 21.3628370,
+  "tags": {
+    "alt_name": "Mončiai",
+    "name": "Mančiai",
+    "place": "village",
+    "population": "28",
+    "wikidata": "Q14919120",
+    "wikipedia": "lt:Mančiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2379617017,
+  "lat": 55.9636162,
+  "lon": 21.5355816,
+  "tags": {
+    "name": "Sauseriai",
+    "place": "village",
+    "population": "29",
+    "wikidata": "Q12672532",
+    "wikipedia": "lt:Sauseriai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033473,
+  "lat": 56.0123494,
+  "lon": 21.4559346,
+  "tags": {
+    "name": "Didieji Žalimai",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q12652866",
+    "wikipedia": "lt:Didieji Žalimai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033477,
+  "lat": 55.9753880,
+  "lon": 21.5619639,
+  "tags": {
+    "name": "Grabšyčiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q12655773",
+    "wikipedia": "lt:Grabšyčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033482,
+  "lat": 55.9807409,
+  "lon": 21.5436173,
+  "tags": {
+    "name": "Kūlsodis",
+    "place": "village",
+    "population": "23",
+    "wikidata": "Q12662130",
+    "wikipedia": "lt:Kūlsodis"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033486,
+  "lat": 55.9617393,
+  "lon": 21.4494820,
+  "tags": {
+    "name": "Pipirai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16469728",
+    "wikipedia": "lt:Pipirai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033489,
+  "lat": 55.9547568,
+  "lon": 21.5679608,
+  "tags": {
+    "name": "Prystovai",
+    "place": "village",
+    "population": "11",
+    "wikidata": "Q12670321",
+    "wikipedia": "lt:Prystovai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380033494,
+  "lat": 55.9728304,
+  "lon": 21.5774138,
+  "tags": {
+    "name": "Stropeliai",
+    "place": "village",
+    "population": "18",
+    "wikidata": "Q16473501",
+    "wikipedia": "lt:Stropeliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147252,
+  "lat": 56.0762662,
+  "lon": 21.5423183,
+  "tags": {
+    "name": "Alkas",
+    "place": "village",
+    "population": "7",
+    "wikidata": "Q10981952",
+    "wikipedia": "lt:Alkas (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147256,
+  "lat": 56.0611204,
+  "lon": 21.4797854,
+  "tags": {
+    "name": "Bajoraliai",
+    "place": "village",
+    "population": "25",
+    "wikidata": "Q10997347",
+    "wikipedia": "lt:Bajoraliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147261,
+  "lat": 56.0608106,
+  "lon": 21.5201402,
+  "tags": {
+    "name": "Bargalis",
+    "place": "village",
+    "population": "12",
+    "wikidata": "Q13191620",
+    "wikipedia": "lt:Bargalis"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147265,
+  "lat": 56.0374532,
+  "lon": 21.5026330,
+  "tags": {
+    "name": "Barzdžių Medsėdžiai",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q12650495",
+    "wikipedia": "lt:Barzdžių Medsėdžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147269,
+  "lat": 56.0936941,
+  "lon": 21.6143023,
+  "tags": {
+    "name": "Dvarčininkai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16450088",
+    "wikipedia": "lt:Dvarčininkai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147273,
+  "lat": 56.0189715,
+  "lon": 21.6056121,
+  "tags": {
+    "name": "Gaivališkė",
+    "place": "village",
+    "population": "14",
+    "wikidata": "Q12654785",
+    "wikipedia": "lt:Gaivališkė"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147276,
+  "lat": 56.0367546,
+  "lon": 21.6066607,
+  "tags": {
+    "name": "Gedgaudžiai",
+    "place": "village",
+    "population": "9",
+    "wikidata": "Q13192011",
+    "wikipedia": "lt:Gedgaudžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147284,
+  "lat": 56.0709125,
+  "lon": 21.5744804,
+  "tags": {
+    "name": "Kadagynas",
+    "place": "village",
+    "population": "20",
+    "wikidata": "Q13192317",
+    "wikipedia": "lt:Kadagynas (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147287,
+  "lat": 56.0792171,
+  "lon": 21.5253749,
+  "tags": {
+    "name": "Kirkšiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16456433",
+    "wikipedia": "lt:Kirkšiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147290,
+  "lat": 56.0144070,
+  "lon": 21.4870779,
+  "tags": {
+    "name": "Klausgalvų Medsėdžiai",
+    "place": "village",
+    "population": "14",
+    "wikidata": "Q12660842",
+    "wikipedia": "lt:Klausgalvų Medsėdžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147293,
+  "lat": 56.0477665,
+  "lon": 21.5306945,
+  "tags": {
+    "name": "Klecininkai",
+    "place": "village",
+    "population": "19",
+    "wikidata": "Q13192463",
+    "wikipedia": "lt:Klecininkai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147296,
+  "lat": 56.0468169,
+  "lon": 21.4812785,
+  "tags": {
+    "name": "Mažieji Žalimai",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q12664888",
+    "wikipedia": "lt:Mažieji Žalimai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147299,
+  "lat": 56.1096499,
+  "lon": 21.4586230,
+  "tags": {
+    "name": "Narmantai",
+    "place": "village",
+    "population": "8",
+    "wikidata": "Q16465323",
+    "wikipedia": "lt:Narmantai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147300,
+  "lat": 56.0971232,
+  "lon": 21.6004142,
+  "tags": {
+    "name": "Nerėpai",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q12666761",
+    "wikipedia": "lt:Nerėpai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147301,
+  "lat": 56.0998607,
+  "lon": 21.5625089,
+  "tags": {
+    "name": "Šaučikiai",
+    "place": "village",
+    "population": "19",
+    "wikidata": "Q12679586",
+    "wikipedia": "lt:Šaučikiai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380147304,
+  "lat": 56.0638721,
+  "lon": 21.5429748,
+  "tags": {
+    "name": "Žudgalis",
+    "place": "village",
+    "population": "13",
+    "wikidata": "Q12680863",
+    "wikipedia": "lt:Žudgalis"
+  }
+},
+{
+  "type": "node",
+  "id": 2380207330,
+  "lat": 55.9439188,
+  "lon": 21.5218597,
+  "tags": {
+    "name": "Lapgaudžiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q14919042",
+    "wikipedia": "lt:Lapgaudžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380207336,
+  "lat": 55.9355733,
+  "lon": 21.5830539,
+  "tags": {
+    "name": "Peceliai",
+    "place": "village",
+    "population": "7",
+    "wikidata": "Q12669020",
+    "wikipedia": "lt:Peceliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380207339,
+  "lat": 55.9498931,
+  "lon": 21.5092880,
+  "tags": {
+    "name": "Sakuočiai",
+    "place": "village",
+    "population": "9",
+    "wikidata": "Q16471888",
+    "wikipedia": "lt:Sakuočiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397246,
+  "lat": 56.1058992,
+  "lon": 21.4005998,
+  "tags": {
+    "name": "Biržtvininkai",
+    "place": "village",
+    "population": "3",
+    "wikidata": "Q32144980",
+    "wikipedia": "lt:Biržtvininkai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397247,
+  "lat": 56.0628621,
+  "lon": 21.4529891,
+  "tags": {
+    "name": "Buginiai",
+    "place": "village",
+    "population": "4",
+    "wikidata": "Q13191694",
+    "wikipedia": "lt:Buginiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397248,
+  "lat": 56.0176798,
+  "lon": 21.3707339,
+  "tags": {
+    "name": "Darataičiai",
+    "place": "village",
+    "population": "3",
+    "wikidata": "Q13191805",
+    "wikipedia": "lt:Darataičiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397249,
+  "lat": 56.0872088,
+  "lon": 21.4177401,
+  "tags": {
+    "name": "Dirgalis",
+    "place": "village",
+    "population": "16",
+    "wikidata": "Q12653040",
+    "wikipedia": "lt:Dirgalis"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397253,
+  "lat": 55.9964026,
+  "lon": 21.3615524,
+  "tags": {
+    "alt_name": "Gargždupiai",
+    "name": "Gargždupis",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q12654910",
+    "wikipedia": "lt:Gargždupis"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397256,
+  "lat": 56.0381991,
+  "lon": 21.4267874,
+  "tags": {
+    "alt_name": "Kniežai",
+    "name": "Knėžai",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q12660983",
+    "wikipedia": "lt:Knėžai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397257,
+  "lat": 56.1296871,
+  "lon": 21.3704998,
+  "tags": {
+    "name": "Kuniginė",
+    "place": "village",
+    "population": "3",
+    "wikidata": "Q16457397",
+    "wikipedia": "lt:Kuniginė"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397258,
+  "lat": 56.0677287,
+  "lon": 21.4311952,
+  "tags": {
+    "name": "Laukeliai",
+    "place": "village",
+    "population": "12",
+    "wikidata": "Q12662537",
+    "wikipedia": "lt:Laukeliai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397260,
+  "lat": 56.0991434,
+  "lon": 21.4230756,
+  "tags": {
+    "name": "Mažonai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q12664910",
+    "wikipedia": "lt:Mažonai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397262,
+  "lat": 56.1349906,
+  "lon": 21.3989478,
+  "tags": {
+    "name": "Medininkai",
+    "name:lt": "Medininkai",
+    "name:pl": "Miedniki",
+    "old_name:de": "Mednick",
+    "place": "village",
+    "population": "2",
+    "wikidata": "Q13192841",
+    "wikipedia": "lt:Medininkai (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397265,
+  "lat": 56.1127467,
+  "lon": 21.4203513,
+  "tags": {
+    "name": "Peldžiai",
+    "place": "village",
+    "population": "15",
+    "wikidata": "Q16469285",
+    "wikipedia": "lt:Peldžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397267,
+  "lat": 56.1233867,
+  "lon": 21.4024492,
+  "tags": {
+    "name": "Pemperiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16469321",
+    "wikipedia": "lt:Pemperiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397269,
+  "lat": 56.0224351,
+  "lon": 21.3743542,
+  "tags": {
+    "name": "Rubiniškė",
+    "place": "village",
+    "population": "10",
+    "wikidata": "Q13193584",
+    "wikipedia": "lt:Rubiniškė"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397271,
+  "lat": 56.1244587,
+  "lon": 21.4212390,
+  "tags": {
+    "name": "Serapinai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16472274",
+    "wikipedia": "lt:Serapinai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397272,
+  "lat": 56.0609487,
+  "lon": 21.3907258,
+  "tags": {
+    "name": "Smeltė",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q13193802",
+    "wikipedia": "lt:Smeltė (Kretinga)"
+  }
+},
+{
+  "type": "node",
+  "id": 2380397275,
+  "lat": 55.9802776,
+  "lon": 21.3941917,
+  "tags": {
+    "name": "Vaineikių Medsėdžiai",
+    "place": "village",
+    "population": "10",
+    "wikidata": "Q12676174",
+    "wikipedia": "lt:Vaineikių Medsėdžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2380638808,
+  "lat": 56.1436364,
+  "lon": 21.3902304,
+  "tags": {
+    "name": "Medininkai",
+    "name:lt": "Medininkai",
+    "name:pl": "Miedniki",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q12665003",
+    "wikipedia": "lt:Medininkai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326186,
+  "lat": 56.0948902,
+  "lon": 21.6399558,
+  "tags": {
+    "name": "Baidotai",
+    "place": "village",
+    "population": "29",
+    "wikidata": "Q13191583",
+    "wikipedia": "lt:Baidotai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326193,
+  "lat": 56.1373816,
+  "lon": 21.7424073,
+  "tags": {
+    "name": "Brotykai",
+    "place": "village",
+    "population": "17",
+    "wikidata": "Q32144913",
+    "wikipedia": "lt:Brotykai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326200,
+  "lat": 56.1458542,
+  "lon": 21.7043861,
+  "tags": {
+    "name": "Burviai",
+    "place": "village",
+    "population": "3",
+    "wikidata": "Q13191705",
+    "wikipedia": "lt:Burviai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326216,
+  "lat": 56.1251402,
+  "lon": 21.7242651,
+  "tags": {
+    "name": "Jundulai",
+    "place": "village",
+    "population": "21",
+    "wikidata": "Q16454044",
+    "wikipedia": "lt:Jundulai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326222,
+  "lat": 56.1285128,
+  "lon": 21.6509022,
+  "tags": {
+    "name": "Kulaliai",
+    "place": "village",
+    "population": "6",
+    "wikidata": "Q14919013",
+    "wikipedia": "lt:Kulaliai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382326234,
+  "lat": 56.1130928,
+  "lon": 21.7497466,
+  "tags": {
+    "name": "Rusiškės",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16471679",
+    "wikipedia": "lt:Rusiškės"
+  }
+},
+{
+  "type": "node",
+  "id": 2382409002,
+  "lat": 56.1491800,
+  "lon": 21.4196818,
+  "tags": {
+    "name": "Ledžiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q32144840",
+    "wikipedia": "lt:Ledžiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382409007,
+  "lat": 56.1591611,
+  "lon": 21.5092204,
+  "tags": {
+    "name": "Šekai",
+    "place": "village",
+    "population": "10",
+    "wikidata": "Q32144827",
+    "wikipedia": "lt:Šekai"
+  }
+},
+{
+  "type": "node",
+  "id": 2382409008,
+  "lat": 56.1484143,
+  "lon": 21.4682402,
+  "tags": {
+    "name": "Žalgiriai",
+    "place": "village",
+    "population": "43",
+    "wikidata": "Q12680459",
+    "wikipedia": "lt:Žalgiriai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386463584,
+  "lat": 56.1834539,
+  "lon": 21.5173285,
+  "tags": {
+    "name": "Kusai",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q61379598",
+    "wikipedia": "lt:Kusai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386463585,
+  "lat": 56.1705465,
+  "lon": 21.5250345,
+  "tags": {
+    "name": "Mikulčiai",
+    "place": "village",
+    "population": "49",
+    "wikidata": "Q12665481",
+    "wikipedia": "lt:Mikulčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386463586,
+  "lat": 56.1860438,
+  "lon": 21.5526890,
+  "tags": {
+    "name": "Tauzai",
+    "place": "village",
+    "population": "40",
+    "wikidata": "Q32144780",
+    "wikipedia": "lt:Tauzai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474257,
+  "lat": 56.1715713,
+  "lon": 21.5554035,
+  "tags": {
+    "name": "Baksčiai",
+    "place": "village",
+    "population": "6",
+    "wikidata": "Q13191591",
+    "wikipedia": "lt:Baksčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474266,
+  "lat": 56.1776788,
+  "lon": 21.5522966,
+  "tags": {
+    "name": "Bobiliškės",
+    "place": "village",
+    "population": "4",
+    "wikidata": "Q13191683",
+    "wikipedia": "lt:Bobiliškės"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474272,
+  "lat": 56.1792751,
+  "lon": 21.6160218,
+  "tags": {
+    "name": "Gandlaukė",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q16451062",
+    "wikipedia": "lt:Gandlaukė"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474278,
+  "lat": 56.1684206,
+  "lon": 21.6033092,
+  "tags": {
+    "name": "Miesto Kalniškiai",
+    "place": "village",
+    "population": "28",
+    "wikidata": "Q16464548",
+    "wikipedia": "lt:Miesto Kalniškiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474285,
+  "lat": 56.1514659,
+  "lon": 21.5763394,
+  "tags": {
+    "name": "Naujukai",
+    "place": "village",
+    "population": "27",
+    "wikidata": "Q12666547",
+    "wikipedia": "lt:Naujukai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474289,
+  "lat": 56.1085621,
+  "lon": 21.6069243,
+  "tags": {
+    "name": "Nerėpai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q12666762",
+    "wikipedia": "lt:Nerėpai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474293,
+  "lat": 56.1869390,
+  "lon": 21.5862985,
+  "tags": {
+    "name": "Nevočiai",
+    "place": "village",
+    "population": "50",
+    "wikidata": "Q12666810",
+    "wikipedia": "lt:Nevočiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474299,
+  "lat": 56.1384793,
+  "lon": 21.5886493,
+  "tags": {
+    "name": "Paeiškūnė",
+    "place": "village",
+    "population": "4",
+    "wikidata": "Q16468076",
+    "wikipedia": "lt:Paeiškūnė"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474305,
+  "lat": 56.1773598,
+  "lon": 21.6029269,
+  "tags": {
+    "name": "Palaukė",
+    "place": "village",
+    "population": "11",
+    "wikidata": "Q16468490",
+    "wikipedia": "lt:Palaukė"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474310,
+  "lat": 56.1152398,
+  "lon": 21.5209593,
+  "tags": {
+    "name": "Palšiai",
+    "place": "village",
+    "population": "7",
+    "wikidata": "Q12668140",
+    "wikipedia": "lt:Palšiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474318,
+  "lat": 56.1158133,
+  "lon": 21.5525680,
+  "tags": {
+    "name": "Šaučikiai",
+    "place": "village",
+    "population": "7",
+    "wikidata": "Q12679582",
+    "wikipedia": "lt:Šaučikiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474325,
+  "lat": 56.1540399,
+  "lon": 21.6048101,
+  "tags": {
+    "name": "Šerkšniai",
+    "place": "village",
+    "population": "29",
+    "wikidata": "Q16478011",
+    "wikipedia": "lt:Šerkšniai"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474331,
+  "lat": 56.1462087,
+  "lon": 21.5603763,
+  "tags": {
+    "name": "Šilalė",
+    "name:lt": "Šilalė",
+    "name:pl": "Szyłele",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q12679799",
+    "wikipedia": "lt:Šilalė (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2386474337,
+  "lat": 56.1250759,
+  "lon": 21.6235707,
+  "tags": {
+    "name": "Šniukščiai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q32144766",
+    "wikipedia": "lt:Šniukščiai (Skuodas)"
+  }
+},
+{
+  "type": "node",
+  "id": 2387069784,
+  "lat": 55.9838637,
+  "lon": 21.6267051,
+  "tags": {
+    "name": "Sėleniai",
+    "place": "village",
+    "population": "93",
+    "wikidata": "Q14919380",
+    "wikipedia": "lt:Sėleniai"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983242,
+  "lat": 55.9746322,
+  "lon": 21.6677458,
+  "tags": {
+    "name": "Burbaičiai",
+    "place": "village",
+    "population": "22",
+    "wikidata": "Q12651666",
+    "wikipedia": "lt:Burbaičiai (Plungė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983243,
+  "lat": 55.9549293,
+  "lon": 21.6552539,
+  "tags": {
+    "name": "Bučniai",
+    "place": "village",
+    "population": "16",
+    "wikidata": "Q16446633",
+    "wikipedia": "lt:Bučniai"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983247,
+  "lat": 56.0739063,
+  "lon": 21.7565163,
+  "tags": {
+    "name": "Gilaičiai",
+    "place": "village",
+    "population": "65",
+    "wikidata": "Q12655413",
+    "wikipedia": "lt:Gilaičiai (Plungė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983257,
+  "lat": 55.9706280,
+  "lon": 21.7106573,
+  "tags": {
+    "name": "Mišėnai",
+    "place": "village",
+    "population": "27",
+    "wikidata": "Q12665751",
+    "wikipedia": "lt:Mišėnai"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983259,
+  "lat": 55.9531579,
+  "lon": 21.7003683,
+  "tags": {
+    "name": "Palūščiai",
+    "place": "village",
+    "population": "33",
+    "wikidata": "Q12668143",
+    "wikipedia": "lt:Palūščiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983261,
+  "lat": 56.0637693,
+  "lon": 21.7298941,
+  "tags": {
+    "name": "Rėžgaliai",
+    "place": "village",
+    "population": "39",
+    "wikidata": "Q12672041",
+    "wikipedia": "lt:Rėžgaliai (Plungė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983264,
+  "lat": 55.9472056,
+  "lon": 21.6118751,
+  "tags": {
+    "name": "Vaitkiai",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q16475121",
+    "wikipedia": "lt:Vaitkiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2468983267,
+  "lat": 56.0965746,
+  "lon": 21.7530238,
+  "tags": {
+    "name": "Zobielai",
+    "place": "village",
+    "population": "40",
+    "wikidata": "Q13194221",
+    "wikipedia": "lt:Zobielai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469009422,
+  "lat": 55.9489534,
+  "lon": 21.5907069,
+  "tags": {
+    "name": "Bulikai",
+    "place": "village",
+    "population": "0",
+    "wikidata": "Q12651626",
+    "wikipedia": "lt:Bulikai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469009426,
+  "lat": 55.9351159,
+  "lon": 21.6128112,
+  "tags": {
+    "name": "Dyburiai",
+    "place": "village",
+    "population": "30",
+    "wikidata": "Q13191936",
+    "wikipedia": "lt:Dyburiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469009434,
+  "lat": 55.9431755,
+  "lon": 21.6438758,
+  "tags": {
+    "name": "Liepgiriai",
+    "place": "village",
+    "population": "52",
+    "wikidata": "Q12663097",
+    "wikipedia": "lt:Liepgiriai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206473,
+  "lat": 56.0384405,
+  "lon": 21.7152115,
+  "tags": {
+    "name": "Antsieniai",
+    "place": "village",
+    "population": "8",
+    "wikidata": "Q12648911",
+    "wikipedia": "lt:Antsieniai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206478,
+  "lat": 56.0582451,
+  "lon": 21.7467959,
+  "tags": {
+    "name": "Atlaužai",
+    "place": "village",
+    "population": "5",
+    "wikidata": "Q12649426",
+    "wikipedia": "lt:Atlaužai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206481,
+  "lat": 56.0363960,
+  "lon": 21.7415298,
+  "tags": {
+    "name": "Kadžiai",
+    "place": "village",
+    "population": "21",
+    "wikidata": "Q12659158",
+    "wikipedia": "lt:Kadžiai (Plungė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206485,
+  "lat": 56.0468945,
+  "lon": 21.7601017,
+  "tags": {
+    "name": "Kentai",
+    "place": "village",
+    "population": "22",
+    "wikidata": "Q16456240",
+    "wikipedia": "lt:Kentai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206488,
+  "lat": 56.0441767,
+  "lon": 21.7376704,
+  "tags": {
+    "name": "Lygiosios",
+    "place": "village",
+    "population": "35",
+    "wikidata": "Q16459500",
+    "wikipedia": "lt:Lygiosios (Plungė)"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206494,
+  "lat": 56.0272759,
+  "lon": 21.7854269,
+  "tags": {
+    "name": "Pamedinčiai",
+    "place": "village",
+    "population": "22",
+    "wikidata": "Q16468605",
+    "wikipedia": "lt:Pamedinčiai"
+  }
+},
+{
+  "type": "node",
+  "id": 2469206496,
+  "lat": 56.0047397,
+  "lon": 21.7876663,
+  "tags": {
+    "name": "Stirbaičiai",
+    "place": "village",
+    "population": "55",
+    "wikidata": "Q10984444",
+    "wikipedia": "lt:Stirbaičiai (Plungė)"
+  }
+}
+
+  ]
+}

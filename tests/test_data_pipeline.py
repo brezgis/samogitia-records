@@ -363,3 +363,370 @@ class YearInference(unittest.TestCase):
         self.assertEqual(iy.word_year('Тысяча восемьсотъ пятьдесятъ девятаго года'), 1859)
         self.assertEqual(iy.word_year('Тысяча девятьсотъ третьяго года Января'), 1903)
         self.assertEqual(iy.digit_year('родившаяся 1867 года'), 1867)
+
+
+class RowsColumnsYearsMonths(unittest.TestCase):
+    """Columns out of step and page turns in assemble_drafts.py, the previous year's tail in
+    infer_years.py, and the month-order check of check_months.py (2026-11-16)."""
+
+    @staticmethod
+    def page(ad):
+        made, queue = [], []
+
+        def row(rid, scan, top, bottom, cells=None, **cols):
+            queue.append({'row_id': rid, 'scan': scan, 'page': 'L', 'focal_y': [top, bottom], **({'cells': cells} if cells else {})})
+            for cell, texts in cols.items():
+                x = {'baptism': 100, 'parents': 600, 'godparents': 1100}[cell]
+                for n, t in enumerate(texts):
+                    y = top + 10 + 60 * n if isinstance(t, str) else t[0]
+                    t = t if isinstance(t, str) else t[1]
+                    made.append(({'id': f'{rid}_{cell}_{n + 1:02}', 'row_id': rid, 'scan': scan, 'cell': cell,
+                                  'bbox': [x, y, x + 400, y + 50]}, t))
+
+        def run(**kw):
+            props, text_of = [p for p, _ in made], {p['id']: t for p, t in made}
+            by_row, _, _ = ad.reassign(queue, props, text_of, split_missed=True, text_fold=True, repair=True, **kw)
+            return {r: {c: ad.join_lines([text_of[p['id']] for p in ls if p['cell'] == c]) for c in ad.CELLS} for r, ls in by_row.items()}
+        return row, run
+
+    def test_entry_continues_over_the_page_turn(self):
+        ad = module('assemble_drafts')
+        row, run = self.page(ad)
+        row('1_A', 1, 500, 1000, baptism=['Тысяча восемсотъ пятьдесятъ семаго Года', 'Августа перваго дня Викаріемъ Кс. Іоанномъ Монке-'],
+            parents=['Крестьянъ Леонарда и Магдалены', 'дочь родившаяся 1 сего Августа'], godparents=['Воспріемниками были', 'Іосифъ Томашевски'])
+        row('2_A', 2, 200, 500, baptism=['вичемъ окрещенъ младенецъ именемъ Барбара', 'со всѣми обрядами таинства.'],
+            parents=['Салантовскаго Прихода въ деревнѣ Имбарехъ'], godparents=['-'])
+        row('2_B', 2, 500, 1000, baptism=['Тысяча восемсотъ пятьдесятъ семаго Года', 'Августа второго дня окрещенъ младенецъ именемъ Іозефъ',
+                                          'со всѣми обрядами таинства'],
+            parents=['Крестьянъ Михала и Регины'], godparents=['Воспріемниками были'])
+        row('3_A', 3, 200, 500, baptism=['окрещенъ младенецъ именемъ Янъ со всѣми обрядами'], parents=['Крестьянъ Яна и Анны'],
+            godparents=['Воспріемниками были'])
+        got = run()
+        self.assertEqual(ad.reassign.folded_across, [['2_A', '1_A']])
+        self.assertEqual(ad.reassign.continued, {'1_A': ['2_A']})
+        self.assertTrue(got['1_A']['baptism'].endswith('Монкевичемъ окрещенъ младенецъ именемъ Барбара со всѣми обрядами таинства.'))
+        self.assertTrue(got['1_A']['parents'].endswith('сего Августа Салантовскаго Прихода въ деревнѣ Имбарехъ'))
+        # 3_A has lost its opening, but the baptism above it is complete and it opens its other columns: kept
+        self.assertIn('3_A', got)
+        self.assertEqual(got['2_B']['baptism'].count('окрещенъ'), 1)
+
+    def test_right_page_one_column_off_is_refiled(self):
+        ad = module('assemble_drafts')
+        row, run = self.page(ad)
+        off = {'baptism': [982, 443, 2228, 1044], 'parents': [3072, 468, 3902, 1069], 'godparents': [3902, 468, 4782, 1069]}
+        ok = {'baptism': [1041, 420, 2309, 1000], 'parents': [2315, 480, 3180, 1060], 'godparents': [3180, 480, 4013, 1060]}
+        self.assertTrue(ad.shifted_right_page({'cells': off}))
+        self.assertFalse(ad.shifted_right_page({'cells': ok}))
+        self.assertFalse(ad.shifted_right_page({}))
+        row('A', 1, 400, 1000, cells=off, baptism=['Тысяча восемсотъ пятьдесятъ семаго Года', 'окрещенъ младенецъ именемъ Магдалена со всѣми обрядами'],
+            parents=['Воспріемниками были', 'Крестьянинъ Игнатій Суркисъ'], godparents=['-'])
+        got = run()
+        self.assertEqual(ad.reassign.shifted, ['A'])
+        self.assertEqual(got['A']['parents'], '')
+        self.assertEqual(got['A']['godparents'], 'Воспріемниками были Крестьянинъ Игнатій Суркисъ')
+
+    def test_columns_paired_by_openings_only_when_evenly_placed(self):
+        ad = module('assemble_drafts')
+        bap = ['Тысяча восемсотъ шестьдесятаго Года', 'окрещено дитя именемъ Іосифъ со всѣми обрядами Таинства']
+        for base, lower, paired in ((330, 330, True), (0, 300, False)):
+            row, run = self.page(ad)
+            # the right page's entries begin `base` px below their baptisms (`lower` for the third entry, a short
+            # row): its parents and godparents open in the layout row after it, which has no baptism opening
+            row('A', 1, 400, 1000, baptism=bap, parents=[(410 + base, 'Крестьянъ Яна и Анны')],
+                godparents=[(410 + base, 'Воспріемниками были Янъ')])
+            row('B', 1, 1000, 1600, baptism=bap, parents=[(1010 + base, 'Крестьянъ Петра и Евы')],
+                godparents=[(1010 + base, 'Воспріемниками были Петръ')])
+            row('C', 1, 1600, 1900, baptism=bap[:1])
+            row('C2', 1, 1900, 2500, baptism=[bap[1]], parents=[(1610 + lower, 'Крестьянъ Матеуша и Анны')],
+                godparents=[(1610 + lower, 'Воспріемниками были Матеушъ')])
+            row('D', 1, 2500, 3100, baptism=bap, parents=[(2510 + base, 'Крестьянъ Фомы и Розы')],
+                godparents=[(2510 + base, 'Воспріемниками были Фома')])
+            got = run()
+            if paired:
+                self.assertEqual(sorted(got), ['A', 'B', 'C', 'D'])
+                self.assertEqual(got['C']['parents'], 'Крестьянъ Матеуша и Анны')
+                self.assertEqual(got['C']['baptism'], ' '.join(bap))
+                self.assertEqual(ad.reassign.out_of_step, {})
+                self.assertIn('C', ad.reassign.paired_by_openings)
+            else:
+                # not one steady offset: the layout pairing stays, the side is flagged, the baptism is made whole
+                self.assertEqual(ad.reassign.paired_by_openings, [])
+                self.assertEqual(sorted(ad.reassign.out_of_step), ['A', 'B', 'C', 'C2', 'D'])
+                self.assertEqual(got['C']['baptism'], ' '.join(bap))
+                self.assertEqual(got['C2']['parents'], 'Крестьянъ Матеуша и Анны')
+                self.assertEqual(got['C2']['baptism'], '')
+
+    def test_twins_with_two_sets_of_godparents_are_not_out_of_step(self):
+        ad = module('assemble_drafts')
+        row, run = self.page(ad)
+        bap = ['Тысяча восемсотъ пятьдесятъ семаго Года', 'окрещены со всѣми обрядами Таинства']
+        row('A', 1, 400, 1000, baptism=bap, parents=['Крестьянъ Іозефа и Вероники', 'Сынъ и дочь родившіеся'],
+            godparents=['Воспріемниками были Филипъ', 'съ Аполоніею', 'Воспріемниками были дочери'])
+        row('B', 1, 1000, 1600, baptism=bap, parents=['Крестьянъ Петра и Евы'], godparents=['Воспріемниками были Петръ'])
+        run()
+        self.assertEqual(ad.reassign.out_of_step, {})
+
+    def test_child_sex_against_the_parents_column(self):
+        ad = module('assemble_drafts')
+        self.assertEqual(ad.child_sex('окрещенъ младенецъ именемъ Анна Со всѣми обрядами'), 'f')
+        self.assertEqual(ad.child_sex('окрещено дитя именемъ Казимиръ, со всѣми'), 'm')
+        self.assertIsNone(ad.child_sex('именемъ Антони Со всѣми'))                 # -и: not judged
+        self.assertIsNone(ad.child_sex('именемъ Марціян на, со всѣми'))           # a name the draft split
+        self.assertIsNone(ad.child_sex('именами Барбара Магдалена со всѣми'))      # two names
+        self.assertEqual(ad.parents_sex('законныхъ Супруговъ Сынъ родившійся 1857 года'), 'm')
+        self.assertEqual(ad.parents_sex('супруговъ дочь родившаяся'), 'f')
+        self.assertIsNone(ad.parents_sex('Супруговъ Сынъ и дочь родившіеся'))
+        self.assertTrue(ad.baptism_finished('именемъ Янъ со всѣми обрядами Таиму'))
+        self.assertFalse(ad.baptism_finished('Викарнымъ Ксендзомъ Францишкомъ Климовичемъ'))
+
+    def test_previous_years_tail_at_the_start_of_a_book(self):
+        iy = module('infer_years')
+        self.assertEqual(iy.word_year('Тысяча Восемсотъ Пятьдесятъ Ше- стаго Года Ноября'), 1856)
+        self.assertEqual(iy.word_year('Тысяча восемсотъ пятьдесятъ семаго Года Января'), 1857)
+        self.assertEqual(iy.word_year('Тысяча восемсотъ шестьдесятаго Года Января'), 1860)
+        self.assertEqual(iy.word_year('Тысяча восемьсотъ пятьдесятъ восьмаго года'), 1858)     # not "…сем…"
+        queue, preds = [], {}
+
+        def side(scan, texts):
+            for i, t in enumerate(texts, 1):
+                rid = f'{scan:04}_L{i}'
+                queue.append({'row_id': rid, 'scan': scan, 'page': 'L', 'row_index': i, 'focal_y': [500 * i, 500 * i + 500]})
+                preds[rid + '_b'] = {'id': rid + '_b', 'row_id': rid, 'cell': 'baptism', 'text': t}
+        y56, y57, y58 = ('Тысяча восемсотъ пятьдесятъ %s года' % w for w in ('шестаго', 'семаго', 'восьмаго'))
+        side(3, [y56, y56, 'Ноября двадцатаго дня', y56])                    # the old year's tail: 7 rows of 249
+        side(4, [y56, 'Тысяча восемсотъ Оятьдесятъ шестаго года', y57, y57])  # the turn falls inside this side
+        for scan in range(5, 35):
+            side(scan, [y57] * 4)
+        for scan in range(35, 65):
+            side(scan, [y58] * 4)
+        side(65, [y58])
+        iy.infer(queue, preds)
+        years = [q['register_year'] for q in queue]
+        self.assertEqual(years[:8], [1856] * 6 + [1857] * 2)
+        self.assertEqual((years.count(1856), years.count(1857), years.count(1858)), (6, 122, 121))
+        # one stray "1856" among 1857 rows is not a year of its own
+        queue2, preds2 = copy.deepcopy(queue[8:]), {k: v for k, v in preds.items() if int(k[:4]) >= 5}
+        preds2['0005_L1_b'] = dict(preds2['0005_L1_b'], text=y56)
+        iy.infer(queue2, preds2)
+        self.assertNotIn(1856, {q['register_year'] for q in queue2})
+
+    def test_month_order_fit(self):
+        cm = module('check_months')
+
+        def e(i, year, month, day=None, heading=None, birth=None, scan=None):
+            f = {'baptism_month': {'value': month}, 'baptism_day': {'value': day},
+                 'birth_month': {'value': birth and birth[0]}, 'birth_day': {'value': birth and birth[1]}}
+            return {'row_id': f'{scan or 1 + i // 5:04}_L{i % 5 + 1}', 'scan': scan or 1 + i // 5, 'page': 'L', 'register_year': year,
+                    'heading_month': heading, 'fields': f}
+        # "Іюля" read as "Іюня" inside July, an unread month, the year turn, and a heading against the reading
+        months = [6, 6, 7, 6, 7, 6, 7, None, 8, 12, 12, 1, 1]
+        es = [e(i, 1897 if i < 11 else 1898, m, day=i + 1, birth=(m, i + 1) if m else None) for i, m in enumerate(months)]
+        es[2]['heading_month'] = 7
+        rows, summary = cm.check(es)
+        self.assertEqual([r['fitted_month'] for r in rows], [6, 6, 7, 7, 7, 7, 7, 7, 8, 12, 12, 1, 1])
+        self.assertEqual([r['row_id'] for r in rows if 'month_differs' in r['flags']], [es[3]['row_id'], es[5]['row_id']])
+        self.assertEqual(summary['flags']['month_differs'], 2)
+        # the heading outweighs the entry's own month
+        es[2]['fields']['baptism_month']['value'] = 6
+        rows, _ = cm.check(es)
+        self.assertEqual(rows[2]['fitted_month'], 7)
+        self.assertIn('month_differs', rows[2]['flags'])
+        # births: later than the baptism, the month after (a misreading), long before; a scan where they all disagree
+        es = [e(0, 1857, 5, day=8, birth=(5, 9), scan=30), e(1, 1857, 5, day=9, birth=(6, 2), scan=31),
+              e(2, 1857, 5, day=11, birth=(5, 11), scan=31), e(3, 1857, 5, day=12, birth=(4, 30), scan=32),
+              e(4, 1857, 5, day=13, birth=(1, 3), scan=33)]
+        es += [e(5 + i, 1857, 11, day=18 + i, birth=(5, 1 + i), scan=34) for i in range(4)]
+        rows, summary = cm.check(es)
+        self.assertEqual([r['flags'] for r in rows[:5]], [['birth_after_baptism'], ['birth_after_baptism', 'birth_month_misread'], [], [],
+                                                         ['birth_long_before']])
+        self.assertEqual([d['scan'] for d in summary['scans_where_columns_disagree']], [34])
+        self.assertTrue(all('scan_columns_disagree' in r['flags'] for r in rows[5:]))
+
+
+class MonthTownshipFixesAndFieldTagger(unittest.TestCase):
+    """parse_entries.py: "Мая" inside other words, "волости" inside surnames; neural_parser/combine.py:
+    rules and tagger combined per field (synthetic spans: the tests need no model and no torch)."""
+    pe = module('parse_entries')
+
+    def parents(self, text, year=1898):
+        return self.pe.parse({'baptism': '', 'parents': text, 'godparents': '', 'register_year': year})
+
+    def test_may_is_not_read_inside_the_verb_or_another_month(self):
+        # "родивш-аяс-я" holds an "ая"; the real month is one letter off ("Іюмя" for "Іюня"/"Іюля")
+        f = self.parents('Крестьянъ Плунгянской волости Яна и Анны изъ Петкусовъ Стонкусовъ законныхъ супруговъ дочь '
+                         'родившаяся сего 1898 года Іюня 18 дня, въ м. Плунгянахъ')
+        self.assertEqual((f['birth_month'], f['birth_day']), (6, 18))
+        f = self.parents('Крестьянъ Яна и Анны урожденной Петковны Стонкусовъ законныхъ супруговъ дочь родившаяся '
+                         '1854 года Декабугя 22 дня въ Деревни Кулѣ Плунгянскаго прихода')
+        self.assertEqual((f['birth_month'], f['birth_day']), (12, 22))
+        b = self.pe.parse({'baptism': 'Тысяча восемьсотъ семьдесятаго года Наября пятага дня въ Плунгянскомъ Р.К. Костелѣ',
+                           'parents': '', 'godparents': ''})
+        self.assertEqual((b['baptism_month'], b['baptism_day']), (11, 5))
+        b = self.pe.parse({'baptism': 'Тысяча восемьсотъ шестаго года Мауста перваго дня въ Плунгянскомъ', 'parents': '', 'godparents': ''})
+        self.assertNotEqual(b['baptism_month'], 5)
+
+    def test_may_itself_is_still_read_exact_or_as_a_word_of_its_own(self):
+        for text, day in (('сынъ родившійся 1898 года Мая 19 дня въ деревнѣ Кулѣ', 19), ('сынъ родившійся 1886 года сая 6 дня въ деревни Кули', 6),
+                          ('дочь родившаяся 1857 Года Мася 2. дня въ Местечки Плунгянахъ', 2), ('сынъ родившійся 15 мая 1904 года въ дер. Кули', 15),
+                          ('сынъ родившійся 1892 года 28 каявъ дер. Кули', 28)):
+            f = self.parents(text)
+            self.assertEqual((f.get('birth_month'), f.get('birth_day')), (5, day), text)
+        b = self.pe.parse({'baptism': 'Тысяча восемьсотъ перваго года Ма семьнадцатаго дня въ Плунгянскомъ', 'parents': '', 'godparents': ''})
+        self.assertEqual((b['baptism_month'], b['baptism_day']), (5, 17))
+
+    def test_unreadable_month_keeps_the_day_and_gives_no_month(self):
+        f = self.parents('Крестьянъ Яна и Анны урожденной Петковны Стонкусовъ законныхъ супруговъ сынъ родившійся 1854 года Іюмья 22 дня '
+                         'въ Деревни Кулѣ Плунгянскаго прихода', 1854)
+        self.assertEqual((f.get('birth_month'), f.get('birth_day'), f.get('birth_date')), (None, 22, None))
+        b = self.pe.parse({'baptism': 'Тысяча девятьсотъ шестаго года Таромя четвертаго дня въ Плунгянскомъ Р. К. Костелѣ',
+                           'parents': '', 'godparents': ''})
+        self.assertEqual((b['baptism_month'], b['baptism_day'], b['baptism_date']), (None, 4, None))
+
+    def test_township_word_is_not_found_in_a_surname(self):
+        # older wording, no township: "Волонтовны" / "Воловскихъ" used to be taken for "волости"
+        f = self.parents('Крестьянъ Казимира и Барбары урожденной Самутовны Волонтовъ законныхъ Супруговъ сынъ родившійся '
+                         '1857 года Марта 5 дня въ деревни Жеймяхъ Салантовскаго Прихода', 1857)
+        self.assertIsNone(f['township'])
+        self.assertEqual((f['father'], f['mother'], f['maiden_and_surname']), ('Казимира', 'Барбары', 'Самутовны Волонтовъ'))
+        # later wording, "вол." misread: the surname after "изъ" is not the anchor either
+        f = self.parents('Крестьянъ Бернатовской вос. Игнатія и Антонины изъ Виркисовъ Воловскихъ закон. супруг. дочь '
+                         'родившаяся 26 Іюня 1902 года въ дер. Кули')
+        self.assertEqual((f['township'], f['father'], f['mother'], f['maiden_and_surname']),
+                         ('Бернатовской', 'Игнатія', 'Антонины', 'Виркисовъ Воловскихъ'))
+
+    def test_township_abbreviation_ends_before_the_fathers_name(self):
+        f = self.parents('Крестьянъ Плунгянской вол. Станислава и Анны изъ Салисовъ Даукшасовъ закон. супруг. дочь '
+                         'родившаяся 12 Марта 1902 г. въ дер. Кули')
+        self.assertEqual((f['township'], f['father'], f['birth_date']), ('Плунгянской', 'Станислава', '1898-03-12'))
+        f = self.parents('Крестьянъ Плунгянской волости Яна и Анны изъ Салисовъ Даукшасовъ законныхъ супруговъ сынъ')
+        self.assertEqual((f['township'], f['father'], f['mother']), ('Плунгянской', 'Яна', 'Анны'))
+
+    # ---- the combination
+    ENTRY = {'row_id': 'x', 'register_year': 1858,
+             'baptism': 'Тысяча восемсотъ пятьдесятъ осьмаго года Марта 5 дня въ Салантовскомъ Р.К. Костелѣ Кс. Іоанномъ Контримомъ '
+                        'окрещенъ младенецъ именемъ Іосифъ со всѣми обрядами таинства',
+             'parents': 'Крестьянъ Казимира и Барбары урожденной Самутовны Меш кисовъ законныхъ Супруговъ сынъ ромилея '
+                        'сего года Марта 3 дня въ деревни Жеймяхъ Салантовскаго Прихода',
+             'godparents': 'Воспріемниками были Крестьянинъ Іосифъ Самутисъ съ Анною Петра Можейки женою'}
+
+    def combine(self):
+        import sys
+        sys.path.insert(0, str(ROOT / 'pipeline' / 'neural_parser'))
+        sys.path.insert(0, str(ROOT / 'pipeline'))
+        import combine
+        return combine
+
+    def span(self, col, words, conf):
+        t = self.ENTRY[col]
+        s = t.index(words)
+        return {'s': s, 'e': s + len(words), 'conf': conf}
+
+    def tags(self, low=0.99):
+        return {'baptism': {'CHILD': self.span('baptism', 'Іосифъ', 0.99), 'PRIEST': self.span('baptism', 'Кс. Іоанномъ Контримомъ', 0.9)},
+                'parents': {'FATHER': self.span('parents', 'Казимира', 0.99), 'MOTHER': self.span('parents', 'Барбары', 0.99),
+                            'MAIDEN': self.span('parents', 'Самутовны', 0.98), 'SURNAME': self.span('parents', 'Меш кисовъ', 0.6),
+                            'TOWNSHIP': self.span('parents', 'Самутовны', 0.9), 'VILLAGE': self.span('parents', 'Жеймяхъ', low),
+                            'BIRTH_DATE': self.span('parents', 'сего года Марта 3 дня', 0.97)},
+                'godparents': {'GODFATHER': self.span('godparents', 'Іосифъ Самутисъ', 0.99), 'GODMOTHER': self.span('godparents', 'Анною', 0.95),
+                               'GM_STATUS': self.span('godparents', 'Петра Можейки женою', 0.95)}}
+
+    def test_agreement_tagger_and_threshold(self):
+        cb = self.combine()
+        f = cb.combine_entry(self.ENTRY, self.tags())['fields']
+        self.assertEqual((f['father']['value'], f['father']['by']), ('Казимира', 'both'))
+        self.assertEqual((f['child_name']['value'], f['child_name']['by']), ('Іосифъ', 'both'))
+        # the rules' last-word split gives "кисовъ"; the tagger has the whole divided surname, and the
+        # family surname is taken from 0.5 up
+        self.assertEqual((f['family_surname']['value'], f['family_surname']['by']), ('Меш кисовъ', 'tagger'))
+        self.assertEqual(f['family_surname']['alt'], {'value': 'кисовъ', 'by': 'rules'})
+        self.assertEqual(f['maiden_and_surname'], {'value': 'Самутовны Меш кисовъ', 'by': 'rules'})      # the old field is the rules' own
+        # a formula word trimmed: the rules keep "Крестьянинъ" before the godfather
+        self.assertEqual((f['godfather']['value'], f['godfather']['by']), ('Іосифъ Самутисъ', 'both'))
+        self.assertEqual(f['godmother']['value'], 'Анною')
+        self.assertEqual(f['godmother_status']['value'], 'Петра Можейки женою')
+        self.assertTrue(f['godparents']['value'].startswith('Крестьянинъ Іосифъ Самутисъ'))
+        # below the threshold the rules' value stays and the tagger's becomes the alternative
+        t = self.tags()
+        t['parents']['FATHER'] = self.span('parents', 'Барбары', 0.55)
+        f = cb.combine_entry(self.ENTRY, t)['fields']
+        self.assertEqual((f['father']['value'], f['father']['by'], f['father']['alt']['value']), ('Казимира', 'rules', 'Барбары'))
+        t['parents']['FATHER'] = self.span('parents', 'Барбары', 0.93)
+        f = cb.combine_entry(self.ENTRY, t)['fields']
+        self.assertEqual((f['father']['value'], f['father']['by'], f['father']['alt']), ('Барбары', 'tagger', {'value': 'Казимира', 'by': 'rules'}))
+
+    def test_township_dates_priest_and_missing_spans(self):
+        cb = self.combine()
+        out = cb.combine_entries([self.ENTRY], [self.tags()])[0]['fields']
+        # no "волости" in the text: no township, and the tagger's is not even an alternative
+        self.assertEqual(out['township'], {'value': None, 'by': 'none'})
+        # the rules find no "родивш..." (misread "ромилея"); the tagger's phrase is decoded with the rules' own tables
+        self.assertEqual((out['birth_month']['value'], out['birth_day']['value'], out['birth_day']['by']), (3, 3, 'tagger'))
+        self.assertEqual(out['birth_date']['value'], '1858-03-03')
+        self.assertEqual((out['baptism_date']['value'], out['baptism_date']['by']), ('1858-03-05', 'rules'))
+        self.assertEqual((out['priest']['value'], out['priest']['by']), ('Іоанномъ Контримомъ', 'both'))
+        t = self.tags()
+        t['baptism']['PRIEST'] = self.span('baptism', 'Контримомъ', 0.99)
+        self.assertEqual(cb.combine_entry(self.ENTRY, t, priest='rules')['fields']['priest']['value'], 'Іоанномъ Контримомъ')
+        # an entry without usable spans is the rules alone, with the new fields from the rules' own split
+        f = cb.combine_entry(self.ENTRY, None)['fields']
+        rules = self.pe.parse(self.ENTRY)
+        for k, v in rules.items():
+            self.assertEqual(f[k]['value'], v, k)
+        self.assertEqual((f['maiden_name']['value'], f['family_surname']['value'], f['family_surname']['by']), ('Самутовны Меш', 'кисовъ', 'rules'))
+        self.assertTrue(all(v['by'] in ('rules', 'none') for v in f.values()))
+
+    def test_spans_of_another_draft_version_are_refused(self):
+        import tempfile
+        cb = self.combine()
+        e = self.ENTRY
+        row = {'row_id': 'x', 'hash': {c: cb.text_hash(e[c]) for c in ('baptism', 'parents', 'godparents')},
+               'spans': [{'col': 'parents', 'field': 'FATHER', **self.span('parents', 'Казимира', 0.99)}]}
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / 'tagger_spans.json'
+            p.write_text(json.dumps({'model': 'm', 'entries': [row]}))
+            tags, info = cb.load_spans(p, [e])
+            self.assertEqual((info['stale'], tags[0]['parents']['FATHER']['s']), (0, e['parents'].index('Казимира')))
+            changed = dict(e, parents=e['parents'].replace('Казимира', 'Казиміра'))
+            tags, info = cb.load_spans(p, [changed, dict(e, row_id='y')])
+            self.assertEqual((info['stale'], tags), (2, [None, None]))
+
+    def test_every_field_keeps_value_and_readers_see_the_old_keys(self):
+        cb = self.combine()
+        f = cb.combine_entry(self.ENTRY, self.tags())['fields']
+        for k in list(self.pe.parse(self.ENTRY)) + ['maiden_name', 'family_surname', 'godfather', 'godmother', 'godmother_status']:
+            self.assertIn('value', f[k], k)
+            self.assertIn(f[k]['by'], ('rules', 'tagger', 'both', 'none'), k)
+        self.assertIsInstance(f['birth_month']['value'], int)
+        # reconcile_surnames.draft_surname reads the last word of the unchanged old field
+        rs = module('reconcile_surnames')
+        self.assertEqual(rs.draft_surname(f), 'кисовъ')
+
+    def test_day_digits_and_day_words_beside_a_misread_month(self):
+        # "13 Юня": the "3" is the day's second digit, not the month's first letter (the day used to be 1);
+        # "207юня", "100ктября": the digit written onto the name is its misread first letter
+        for text, date in (('дочь 13 Юня родилась въ деревни Кули', (6, 13)), ('сынъ родившійся 207юня 1905 года въ деревни Кули', (6, 20)),
+                           ('дочь родившаяся 100ктября 1900 г. въ деревни Кули', (10, 10)), ('сынъ родившійся 17 прѣля 1900 года въ дер. Кули', (4, 17))):
+            f = self.parents(text)
+            self.assertEqual((f.get('birth_month'), f.get('birth_day')), date, text)
+        day = lambda b: self.pe.parse({'baptism': b, 'parents': '', 'godparents': ''}).get('baptism_day')
+        # the unreadable month ran into the day, or the day's own words must not be dropped
+        self.assertEqual(day('Тысяча восемсотъ четвертаго года Іомядвадцатъ девятаго дня въ Плунгянскомъ'), 29)
+        self.assertEqual(day('Тысяча восемсотъ третьяго гада Масячетвер таго дня въ Плунгянскомъ'), 4)
+        self.assertEqual(day('Тысяча восемсотъ второго года Апрнъ го мя восмаго дня въ Плунгянскомъ'), 8)
+        self.assertIsNone(day('Тысяча восемсотъ второго года Ігоня двадезатъ мстаго дня въ Плунгянскомъ'))
+        self.assertEqual(day('Тысяча восемсотъ пятьдесятъ шестого года Декабря двадцать востого дня въ Салантовскомъ'), 28)
+
+    def test_the_combination_decodes_a_date_as_the_rules_do(self):
+        cb = self.combine()
+        from common import decode_date
+        # the experiment's decoder (kept for its day checks) finds "Мая" in other words; the strict one does not
+        self.assertEqual(decode_date('1854 года Іюмья 22 дня'), (5, 22))
+        self.assertEqual(decode_date('1854 года Іюмья 22 дня', strict=True), (None, None))
+        self.assertEqual(decode_date('Тысяча восемсотъ пятьдесятъ восьмаго года Наября пятаго дня', strict=True), (11, 5))
+        self.assertEqual(decode_date('10 Мая 1900 года', strict=True), (5, 10))
+        e = dict(self.ENTRY, parents=self.ENTRY['parents'].replace('сего года Марта 3 дня', 'сего года Іюмья 3 дня'))
+        t = self.tags()
+        t['parents']['BIRTH_DATE'] = {'s': e['parents'].index('сего года'), 'e': e['parents'].index('3 дня') + 5, 'conf': 0.99}
+        f = cb.combine_entry(e, t)['fields']
+        self.assertIsNone(f['birth_month']['value'])
+        self.assertNotIn('birth_date', {k for k, v in f.items() if v['value']})
