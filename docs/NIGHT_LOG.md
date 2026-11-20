@@ -569,3 +569,99 @@ translation, model training ... as you can"). Entries are appended as work compl
   December 1858 (no. 205), filed under 1859; probable unmarked twins 0049_L7/L8, 0039_L5/L6, 0040_L2/L3;
   the bishop (Maciej Wołonczewski) baptises in 0085_L5. Scan 111 checked against the page: the margin
   rows are right, the parents column there is only garbled.
+- **Salantai 1856–1862 on the site** (2026-11-19, late; not committed). New parish in site/library.json
+  (names in four languages as Anna gave them) and a book folder named as the Rietavas ones are,
+  `site/salantai-1856-1862` (not `book-…`): .gitignore has the matching rules, and
+  `make_pages_webp.py site/salantai-1856-1862` / `make_thumbs.py salantai-1856-1862` need the folder named
+  (their default is `site/book*`). 128 spreads, 670 entries placed (671 in the index: 0051_L6b, a split
+  row, has no cells), EN + LT. `build_book.py`: a row flagged `not_an_entry` in side_columns.json is left
+  out of spreads and index (0034_L3, 0102_L3); a `right_page_only` row gets no margin cell; Lithuanian
+  is taken when the parents cell has it although the baptism cell is empty (the five right-page-only
+  rows). The six Plungė books were rebuilt before and after these changes (surnames.json had changed):
+  same counts, and the same bytes before and after. Page images: 256 WebP, 36 MB, in
+  brezgis/samogita-records under pages/salantai-1517-1-1/, card updated; the book has "start": true.
+  Seen in the browser: entry over both pages with margin and bar, Lithuanian, seam scans 34 and 86,
+  the menu with three parishes, search in Salantai, images from Hugging Face (`?pages=hf`).
+  Not right: translated column headings on only 15 of 128 spreads (the layout's column list on the left
+  pages starts with false rules at x=1 and often ends at the baptism column); on a right-page-only row
+  (0034_L2) an empty leaf covers the left page's baptism cell of another entry; the cover cloth and
+  ribbon in library.json (1057426455, ukrinai) repeat a Rietavas book's cloth, all fourteen being taken.
+  Rebuild after the translations change:
+  `SAMOGITIA_BOOK=data/salantai-1517-1-1 BOOK_OUT=site/salantai-1856-1862 BOOK_MODEL=crnn-ru-v4 BOOK_YEARS=1856-1862 BOOK_TRANSLATIONS=translations/translations_v4_salantai1.json nice .venv/bin/python -I site/book/build_book.py && python3 site/make_library.py`
+  Also seen: on the seam scans only the five `right_page_only` rows are treated as halves; every other
+  row there is shown and indexed as one entry made of two (0086_L3: Józef baptised July 1860 beside
+  "Daughter of … born September 1860"; 0034_L4 found in search as "Kazimierz Romanovskii … Daughter of").
+  The empty leaf is on all five right-page-only rows (0025_L2, 0034_L2, 0034_L5, 0034_L7, 0081_L6). The
+  Russian margin cell gives no sex (sex_letter is empty in all 673 rows). All six Plungė books open in
+  headless Firefox; an address with `#s=20` and no `pick` opens on another scan in every book (app.js
+  untouched, not looked into).
+- **Plungė rows missing from the drafts** (2026-11-20; not committed). Anna found the first baptism of
+  January 1906 (book 1827/1/25, row 0202_L2) on the page but not on the site. Its text was in the
+  plunge-v6 draft after all, as pseudo-row 0202_L1b (made because row L2 starts with the end of the
+  previous entry and the heading "1906 годъ Январь"), and `build_book.py` places only rows that have
+  cells in line_proposals, which pseudo-rows never have. Re-keyed 0202_L1b to 0202_L2 in
+  year_draft_1906_plunge-v6.json/.csv and the translations file (field `restored` in the draft, `revised`
+  in the translation; parents and godparents re-translated from the page: Augustin, son of Augustin, and
+  Zenaida née Kiauleikis, Srebalis [?], born 29 Dec 1905, Stalgai [?]). Fields and surnames regenerated;
+  every other 1906 entry unchanged. Book 25: 2050 entries placed (was 2049), 2101 in the index.
+  The other 140 candidates in lost_rows_candidates.json: none is missing text. The top of every row was
+  looked at on the page; where the text went was found by matching names and the child's name against
+  the published rows of the same page side, about 45 of those matches read by eye. 102 are entries with
+  their own number whose text sits inside the record above; mostly that record holds two to four entries
+  (the translations already render them all), but some (0178_L2, 0191_R2, 0215_R2 in book 25) hold only
+  the tail of their own entry and the whole of the next, so that entry shows one row too high; where their
+  own opening lines went was not traced. 38 are rows that start in the middle of an entry already
+  published above. Decisions per row: /mnt/ssd240gb/anna/samogitia-htr/work/lost_rows_decisions.json.
+  Not fixed: the same pseudo-row problem hides 187 more entries that are in the drafts and the index but
+  on no spread (book 18: 39, 20: 10, 22: 12, 24: 99, 25: 27), among them 0017_L2b in book 18, which holds
+  entries 118 and 119 together. 0202_L1 (No. 406, 31 Dec 1905) is filed as 1906-12-31; 0014_L4 in book 20
+  (1854) holds the heading and entry No. 1 of 1855.
+- **Salantai translations: consistency and faults pass** (2026-11-19/20; not committed). The 17 translators'
+  outputs (translations_v4_salantai1.json, 671 entries; copy before the pass beside it as
+  `.before_consistency.json`) brought to one set of forms: 284 entries changed. English family and men's
+  surnames now take the Lithuanian base (90 forms, mostly chunks 1–3: Ventskus → Venckus, Voionchiov →
+  Voionč [?], plus [?] on 19 bare stems); Іо-/Іа-/Іу- surnames are Jo-/Ja-/Ju- in Lithuanian (56
+  replacements, 22 entries) and stay Io-/Ia-/Iu- in English (rule in glossary 7.1, my decision, flagged
+  for Anna); 119 English village forms follow the rule now in INSTRUCTIONS.md (table rows take the row's
+  one form, others the nominative plural only for a plain -ахъ/-яхъ). The garbled name Іервій / Дервій /
+  Зервій / Сервій / Беррій / Геррій is one word on six page images (Іержвій with ж in 1857, Іервій
+  later) and five of the nine children so named were baptised 7–23 April (St George's day): taken as
+  Jerzy / Jurgis [?] in 21 entries, a judgement; Два = Эва (Ewa / Ieva [?]); Лонъ = Леонъ. "итоговъ
+  Прихода" = "of the same parish" without [?] (0086_L3 image). Fourteen given names and two terms added
+  to glossary 11.4/11.5 (now with an English column). Priests were already uniform.
+  Data: 0054_L1 moved to the end of the 1858 entries/year-draft files (register_year 1858, dates
+  1858-12-21; tagger_spans_1859, month_check and queue_years still list it under 1859). 0056_L3: the
+  margin holds the mother's maiden name; side_columns now has margin_surname Рафаловъ (uncertain) and the
+  reading in margin_maiden_name. Margins of 16 rows looked at on the page with the parents column: 11
+  re-read (repairs.json now 21 items; three of them, 0037_L7, 0040_L6, 0054_L3, rest on the parents
+  column and stay uncertain), 5 left as they were (0057_L2 т/л, 0058_L4, 0101_L3 Ю/О, 0111_L2, and
+  0111_L3 С/Б, where the parents column turns out to repeat the margin word, not Осталисовъ). surnames.json regenerated: agree 336, margin 187, margin_only 99, conflict 45, draft_only 4,
+  none 2. All readings from the images are mine and unverified.
+- **Every drafted entry placed on its spread** (2026-11-20; not committed). `build_book.py` left out any
+  entry without line cells of its own: the pseudo-rows (`0202_L1b` etc., made when assembly splits one
+  layout row) and real rows missing a column (mostly pages where the layout found no godparents rule).
+  New `derive_geometry()`: a pseudo-row is cut out of its parent's lines (its own and those of folded
+  layout rows below it) at its own opening line (focal_y[0] + 8, from the year draft), with the parent's
+  x extents; the parent's cells are cut to end there; with no opening line of its own the band would be
+  split evenly (never needed). A real row missing a column takes its x from the same column on that page
+  side, else from the book's usual column offsets. Such entries carry `"placed": "split" | "split-parent"
+  | "derived"` in the spread JSON, and `sideFrom` when a folded row's margin reading is theirs (10).
+  Placed / index now: 1886–1890 1701/1701 (was 1662), 1849–1854 1515/1515 (1475), 1854–1857 790/790
+  (780), 1867–1874 2064/2064 (2052), 1896–1902 2582/2582 (2475), 1902–1907 2101/2101 (2050). Checked
+  against builds made just before with hashes: index.js identical in all six books; only spreads holding
+  derived rows differ (192 of 1368), and in them only by added entries and parents cut short (no other key
+  changed, no box grew); data.js only by those spreads' counts and month ranges. Every split entry's box
+  starts within 40 px of its opening line. Two-page forms need nothing special: the right-page cells are
+  cut at the left-page opening and the two bands agree to about 1% (book 20, eight spreads). Salantai
+  0051_L6b places too (dry run into the scratchpad; site/salantai-1856-1862 not rebuilt). Seen in Chrome
+  on the private display: 0202_L2, 0004_R1b and 0004_R1c (book 24: Nos. 87 and 88 framed exactly),
+  0017_L2b (book 18: both 118 and 119 under one leaf, as published), 0004_R1 in book 25 (godparents
+  column guessed at the cut page edge; its margin box overlaps the baptism leaf, as the layout there has
+  no margin rule).
+  Year of December entries filed at the head of the next year: register_year was taken from the page;
+  corrected in the record (and fields regenerated) for 0202_L1 in book 25 (No. 406, 31 Dec 1905), 0068_L1
+  in book 18 (No. 263, 31 Dec 1850), 0080_L1 in book 22 (No. 276, 26 Dec 1869), each checked on the page.
+  0202_L1's birth date stays wrong (1905-01-01: the "1 Январь" the parser read is the heading). Book 20's
+  0014_L4 is right as an 1854 record; the 1855 No. 1 inside it has no date of its own on the site.
+  Records holding two or more entries (153; 0017_L2b among them) are listed for later splitting in
+  /mnt/ssd240gb/anna/samogitia-htr/work/multi_entry_records.json.

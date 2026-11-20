@@ -417,9 +417,9 @@
   "margin_by": "second"
  },
  "0007_L5": {
-  "margin_surname": "Тенюшіовъ",
-  "margin_en": "Teniushiov",
-  "margin_lt": "Tenjušiov",
+  "margin_surname": "Бенюшіовъ",
+  "margin_en": "Beniushiov",
+  "margin_lt": "Benjušiov",
   "entry_no": "8",
   "boys_count": "5",
   "girls_count": "",
@@ -429,12 +429,19 @@
   "notes_ru": "",
   "notes_en": "",
   "notes_lt": "",
-  "uncertain": [
-   "margin_surname"
-  ],
+  "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_01), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_01), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Тенюшіовъ",
+   "margin_en": "Teniushiov",
+   "margin_lt": "Tenjušiov",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin and the parents column write the same capital Б (read Т in the strip); the family Бенюшіовъ, as in 0023_L2; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0008_L1": {
   "margin_surname": "Г[е?]дріовъ–",
@@ -2131,9 +2138,9 @@
   "read_by": "Claude Sonnet (chunk_03), single reading, unverified"
  },
  "0023_L2": {
-  "margin_surname": "Сенюшіовъ",
-  "margin_en": "Seniushiov",
-  "margin_lt": "Senjušiov",
+  "margin_surname": "Бенюшіовъ",
+  "margin_en": "Beniushiov",
+  "margin_lt": "Benjušiov",
   "entry_no": "125",
   "boys_count": "",
   "girls_count": "51",
@@ -2146,7 +2153,14 @@
   "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_03), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_03), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Сенюшіовъ",
+   "margin_en": "Seniushiov",
+   "margin_lt": "Senjušiov",
+   "uncertain": []
+  },
+  "repaired": "the margin and the parents column write the same capital Б (read С in the strip); the family Бенюшіовъ, as in 0007_L5; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0023_L3": {
   "margin_surname": "Норви[л?]іовъ",
@@ -3620,9 +3634,9 @@
   "read_by": "Claude Sonnet (chunk_05), single reading, unverified"
  },
  "0037_L7": {
-  "margin_surname": "Венцховъ",
-  "margin_en": "Ventskhov",
-  "margin_lt": "Vencchov",
+  "margin_surname": "Венцковъ",
+  "margin_en": "Ventskov",
+  "margin_lt": "Venckov",
   "entry_no": "83",
   "boys_count": "52",
   "girls_count": "",
@@ -3637,7 +3651,16 @@
   ],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_05), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_05), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Венцховъ",
+   "margin_en": "Ventskhov",
+   "margin_lt": "Vencchov",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin letter after ц is ambiguous (х or к on the page image); the parents column clearly has к (Венцковъ), and the same family is in 0040_L6, so the family name is taken as Венцковъ on the strength of the parents column; the margin letter itself stays doubtful; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0038_L2": {
   "margin_surname": "[В?]аш[н?]овной",
@@ -3997,9 +4020,9 @@
   "remark2": "The surname begins above the top of the strip; its first letter(s) are cut off."
  },
  "0040_L6": {
-  "margin_surname": "Венцховъ",
-  "margin_en": "Ventskhov",
-  "margin_lt": "Vencchov",
+  "margin_surname": "Венцковъ",
+  "margin_en": "Ventskov",
+  "margin_lt": "Venckov",
   "entry_no": "102",
   "boys_count": "",
   "girls_count": "50",
@@ -4014,7 +4037,16 @@
   ],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_05), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_05), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Венцховъ",
+   "margin_en": "Ventskhov",
+   "margin_lt": "Vencchov",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin letter after ц is ambiguous (х or к on the page image); the parents column clearly has к (Венцковъ), and the same family is in 0037_L7, so the family name is taken as Венцковъ on the strength of the parents column; the margin letter itself stays doubtful; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0040_L7": {
   "margin_surname": "Мо[з?]ейковъ",
@@ -4059,9 +4091,9 @@
   "margin_by": "second"
  },
  "0041_L2": {
-  "margin_surname": "Римкуювъ",
-  "margin_en": "Rimkuiuv",
-  "margin_lt": "Rimkujuv",
+  "margin_surname": "Римкусовъ",
+  "margin_en": "Rimkusov",
+  "margin_lt": "Rimkusov",
   "entry_no": "105",
   "boys_count": "59",
   "girls_count": "",
@@ -4072,14 +4104,26 @@
   "notes_en": "Unclear abbreviation 'G. v.' written small in the entry-number column; meaning not certain.",
   "notes_lt": "Neaiški santrumpa „G. v.“, parašyta smulkiai numerio skiltyje; reikšmė neaiški.",
   "uncertain": [
+   "margin_surname",
    "notes_en",
    "notes_lt",
    "notes_ru"
   ],
   "remark": "small note may belong to this entry or sit on the ruled line between 105 and 106",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_05), single reading, unverified; second reading Claude Opus (chunk_04)",
-  "margin_by": "both"
+  "read_by": "Claude Sonnet (chunk_05), single reading, unverified; second reading Claude Opus (chunk_04); repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "margin_by": "both",
+  "before_repair": {
+   "margin_surname": "Римкуювъ",
+   "margin_en": "Rimkuiuv",
+   "margin_lt": "Rimkujuv",
+   "uncertain": [
+    "notes_en",
+    "notes_lt",
+    "notes_ru"
+   ]
+  },
+  "repaired": "the parents column clearly reads Римкусовъ; in the margin the letters after Римку fit \"со\" as well as \"ю\", so the family name is taken as Римкусовъ; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0041_L3": {
   "margin_surname": "Кл[ю?]китовъ",
@@ -6092,9 +6136,9 @@
   "read_by": "Claude Sonnet (chunk_08), single reading, unverified"
  },
  "0054_L3": {
-  "margin_surname": "[Б?]утхевичевъ",
-  "margin_en": "[B?]utkhevichev",
-  "margin_lt": "[B?]utchevičev",
+  "margin_surname": "Буткевичевъ",
+  "margin_en": "Butkevichev",
+  "margin_lt": "Butkevičev",
   "entry_no": "2",
   "boys_count": "",
   "girls_count": "2",
@@ -6109,7 +6153,16 @@
   ],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_08), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_08), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "[Б?]утхевичевъ",
+   "margin_en": "[B?]utkhevichev",
+   "margin_lt": "[B?]utchevičev",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin and the parents column write the same word; the letter after т has the same shape in both, and к is taken from the parents column's reading (Буткевичевъ), х not excluded; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0054_L4": {
   "margin_surname": "Раз[ин?]овъ",
@@ -6288,9 +6341,9 @@
   "read_by": "Claude Sonnet (chunk_08), single reading, unverified"
  },
  "0056_L3": {
-  "margin_surname": "Скрынковскихъ",
-  "margin_en": "Skrynkovskikh",
-  "margin_lt": "Skrynkovskich",
+  "margin_surname": "Рафаловъ",
+  "margin_en": "Rafalov",
+  "margin_lt": "Rafalov",
   "entry_no": "12",
   "boys_count": "5",
   "girls_count": "",
@@ -6305,9 +6358,21 @@
   ],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_08), single reading, unverified; second reading Claude Opus (chunk_05)",
-  "margin_alt": "Скрыпковскихъ",
-  "margin_by": "second"
+  "read_by": "Claude Sonnet (chunk_08), single reading, unverified; second reading Claude Opus (chunk_05); repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "margin_alt": "",
+  "margin_by": "second",
+  "margin_maiden_name": "Скрынковскихъ (second reader: Скрыпковскихъ)",
+  "margin_holds": "mother's maiden name",
+  "before_repair": {
+   "margin_surname": "Скрынковскихъ",
+   "margin_en": "Skrynkovskikh",
+   "margin_lt": "Skrynkovskich",
+   "margin_alt": "Скрыпковскихъ",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin holds the mother's maiden name, not the family surname: it repeats the word after \"урожденной\" (Скрыпковскихъ / Скрынковскихъ, the page image shows the same word in both places), while the family surname written after \"законныхъ супруговъ\" is Рафаловъ (on the image \"Рафа-ліовъ\" across a line break) and both godparents are Рафалисъ. The margin reading is kept in margin_maiden_name; margin_surname now holds the family name from the parents column, marked uncertain, so that reconcile_surnames.py does not take the maiden name for the family surname; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0056_L4": {
   "margin_surname": "Тубыновъ",
@@ -9719,9 +9784,9 @@
   "margin_by": "both"
  },
  "0090_L5": {
-  "margin_surname": "Карбов[і?]цкихъ",
-  "margin_en": "Iapbnv[ia?]khizfshch",
-  "margin_lt": "Iapbnv[ia?]ciichshch",
+  "margin_surname": "Карбовскихъ",
+  "margin_en": "Karbovskikh",
+  "margin_lt": "Karbovskich",
   "entry_no": "161",
   "boys_count": "86",
   "girls_count": "",
@@ -9731,12 +9796,19 @@
   "notes_ru": "",
   "notes_en": "",
   "notes_lt": "",
-  "uncertain": [
-   "margin_surname"
-  ],
+  "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_13), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_13), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Карбов[і?]цкихъ",
+   "margin_en": "Iapbnv[ia?]khizfshch",
+   "margin_lt": "Iapbnv[ia?]ciichshch",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin reads Карбовскихъ, as the parents column does; the [і?]ц of the strip reading is the ск; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0090_L7": {
   "margin_surname": "Монстви[л?]овъ",
@@ -9782,9 +9854,9 @@
   "margin_by": "second"
  },
  "0091_L3": {
-  "margin_surname": "Довк[о?]итовъ",
-  "margin_en": "Dnvi[n?]zsnvshch",
-  "margin_lt": "Dnvi[n?]isnvshch",
+  "margin_surname": "Довконтовъ",
+  "margin_en": "Dovkontov",
+  "margin_lt": "Dovkontov",
   "entry_no": "164",
   "boys_count": "88",
   "girls_count": "",
@@ -9794,12 +9866,19 @@
   "notes_ru": "",
   "notes_en": "",
   "notes_lt": "",
-  "uncertain": [
-   "margin_surname"
-  ],
+  "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_13), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_13), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Довк[о?]итовъ",
+   "margin_en": "Dnvi[n?]zsnvshch",
+   "margin_lt": "Dnvi[n?]isnvshch",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin reads Довконтовъ (н, not и), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0091_L4": {
   "margin_surname": "Кнюкштовъ",
@@ -10484,9 +10563,9 @@
   "read_by": "Claude Sonnet (chunk_13), single reading, unverified"
  },
  "0098_L3": {
-  "margin_surname": "Стан[и?]совъ",
-  "margin_en": "Rsam[z?]rnvshch",
-  "margin_lt": "Rsam[i?]rnvshch",
+  "margin_surname": "Станюсовъ",
+  "margin_en": "Staniusov",
+  "margin_lt": "Stanjusov",
   "entry_no": "31",
   "boys_count": "17",
   "girls_count": "",
@@ -10496,12 +10575,19 @@
   "notes_ru": "",
   "notes_en": "",
   "notes_lt": "",
-  "uncertain": [
-   "margin_surname"
-  ],
+  "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_13), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_13), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "Стан[и?]совъ",
+   "margin_en": "Rsam[z?]rnvshch",
+   "margin_lt": "Rsam[i?]rnvshch",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin reads Станюсовъ (ю), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0098_L4": {
   "margin_surname": "Г[о?]цюсовъ",
@@ -12332,9 +12418,9 @@
   "read_by": "Claude Sonnet (chunk_16), single reading, unverified"
  },
  "0116_L2": {
-  "margin_surname": "Довк[и?]ттовъ",
-  "margin_en": "Dovk[i?]ttov",
-  "margin_lt": "Dovk[i?]ttov",
+  "margin_surname": "Довкинтовъ",
+  "margin_en": "Dovkintov",
+  "margin_lt": "Dovkintov",
   "entry_no": "162",
   "boys_count": "91",
   "girls_count": "",
@@ -12347,10 +12433,17 @@
   "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_16), single reading, unverified; second reading Claude Opus (chunk_09)",
+  "read_by": "Claude Sonnet (chunk_16), single reading, unverified; second reading Claude Opus (chunk_09); repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
   "margin_alt": "Довк[ш?]товъ",
   "margin_by": "second",
-  "remark2": "Middle of the surname: after Довк come strokes with overbars (т-marks); could be read итт or штт."
+  "remark2": "Middle of the surname: after Довк come strokes with overbars (т-marks); could be read итт or штт.",
+  "before_repair": {
+   "margin_surname": "Довк[и?]ттовъ",
+   "margin_en": "Dovk[i?]ttov",
+   "margin_lt": "Dovk[i?]ttov",
+   "uncertain": []
+  },
+  "repaired": "the margin reads Довкинтовъ (н, not a second т), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0116_L3": {
   "margin_surname": "Мартинкусовъ",
@@ -12966,9 +13059,9 @@
   "remark2": "A strip of tape lies across the number columns but does not hide the digits."
  },
  "0121_L9": {
-  "margin_surname": "С[и?]г[у?]лькисовъ",
-  "margin_en": "S[i?]g[u?]lkisov",
-  "margin_lt": "S[i?]g[u?]lkisov",
+  "margin_surname": "Смулькисовъ",
+  "margin_en": "Smulkisov",
+  "margin_lt": "Smulkisov",
   "entry_no": "27",
   "boys_count": "15",
   "girls_count": "",
@@ -12978,12 +13071,19 @@
   "notes_ru": "",
   "notes_en": "",
   "notes_lt": "",
-  "uncertain": [
-   "margin_surname"
-  ],
+  "uncertain": [],
   "remark": "",
   "sex_letter": "",
-  "read_by": "Claude Sonnet (chunk_17), single reading, unverified"
+  "read_by": "Claude Sonnet (chunk_17), single reading, unverified; repaired from the page image (Claude, consistency pass of 2026-11-19), unverified",
+  "before_repair": {
+   "margin_surname": "С[и?]г[у?]лькисовъ",
+   "margin_en": "S[i?]g[u?]lkisov",
+   "margin_lt": "S[i?]g[u?]lkisov",
+   "uncertain": [
+    "margin_surname"
+   ]
+  },
+  "repaired": "the margin reads Смулькисовъ, as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  },
  "0122_L2": {
   "margin_surname": "Дворіонасовъ",

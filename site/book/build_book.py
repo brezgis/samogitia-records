@@ -185,6 +185,137 @@ def reconcile_surname(r, sn):
     r["surEn"], r["surLt"] = sn["en"], sn["lt"]
     r["surQ"] = "?" in sn["margin_ru"] or sn["status"] == "conflict" or bool(tr_sur)
 
+SPLIT_TOL = 15   # px: a line whose centre lies this far above an entry's opening line still belongs to that entry
+
+def derive_geometry(per_scan, cells, line_boxes, skip, queue):
+    """Cell boxes for entries that have none of their own in the line proposals, so every entry in the
+    drafts can be placed. Returns (geom, kind, side_from):
+      geom      {(row, cell): bbox} for derived cells, and shrunk cells of the rows they were split from;
+      kind      {row: "split" | "split-parent" | "derived"}, written to the spread as "placed";
+      side_from {row: layout row} whose margin reading (side_columns.json) belongs to a split entry.
+    A pseudo-row "<row>b", "<row>c" (assemble_drafts.py: an entry start the layout merged into a row, or a
+    row folded into the one above) is cut out of its parent's lines at its own opening line (focal_y[0] + 8
+    is the top of that line), with the parent's x extents; the parent's cells are cut to end there. Its lines
+    are the parent's own and those of folded layout rows (rows with lines but no draft record) lying between
+    the parent and the next entry. Without an opening line of its own the parent's band is split evenly.
+    A real row missing a column gets that column's x extents from the other rows of its page side, or else
+    from the book's usual column offsets, and the y extents of its own other cells."""
+    geom, kind, side_from = {}, {}, {}
+    ext = lambda bs: [min(b[0] for b in bs), min(b[1] for b in bs), max(b[2] for b in bs), max(b[3] for b in bs)]
+    med = lambda v: sorted(v)[len(v) // 2] if v else None
+    # usual column offsets per page side: gap to the column before, and width
+    offs = defaultdict(lambda: defaultdict(list))
+    for recs in per_scan.values():
+        for row, e in recs.items():
+            have = [(row, c) in cells for c in CELLS]
+            for i, c in enumerate(CELLS):
+                if have[i]:
+                    b = cells[(row, c)]
+                    offs[e["page"]][c + "_w"].append(b[2] - b[0])
+                    if i and have[i - 1]:
+                        offs[e["page"]][c + "_gap"].append(b[0] - cells[(row, CELLS[i - 1])][2])
+    for scan, recs in per_scan.items():
+        for side in ("L", "R"):
+            here = {r: e for r, e in recs.items() if e["page"] == side and r not in skip}
+            # 1. real rows missing a column
+            for row, e in here.items():
+                if e.get("split_from") or all((row, c) in cells for c in CELLS):
+                    continue
+                own = [cells[(row, c)] for c in CELLS if (row, c) in cells]
+                fy = e.get("focal_y")
+                if own:
+                    y0, y1 = min(b[1] for b in own), max(b[3] for b in own)
+                elif fy and fy[1] - fy[0] > 40:
+                    y0, y1 = fy
+                else:
+                    continue
+                xs = {}
+                for c in CELLS:
+                    if (row, c) in cells:
+                        xs[c] = cells[(row, c)][0], cells[(row, c)][2]
+                        continue
+                    peers = [cells[(r, c)] for r in here if (r, c) in cells]
+                    if peers:
+                        xs[c] = med([b[0] for b in peers]), med([b[2] for b in peers])
+                for _ in range(2):            # chain from a neighbouring column, both ways
+                    for i, c in enumerate(CELLS):
+                        if c in xs:
+                            continue
+                        o = offs[side]
+                        if i and CELLS[i - 1] in xs and o[c + "_w"]:
+                            a = xs[CELLS[i - 1]][1] + med(o[c + "_gap"] or [0])
+                            xs[c] = a, a + med(o[c + "_w"])
+                        elif i + 1 < len(CELLS) and CELLS[i + 1] in xs and o[c + "_w"]:
+                            b = xs[CELLS[i + 1]][0] - med(o[CELLS[i + 1] + "_gap"] or [0])
+                            xs[c] = b - med(o[c + "_w"]), b
+                if len(xs) < len(CELLS):
+                    continue
+                for c in CELLS:
+                    if (row, c) not in cells:
+                        geom[(row, c)] = [int(xs[c][0]), int(y0), int(xs[c][1]), int(y1)]
+                kind[row] = "derived"
+            cell_of = lambda r, c: geom.get((r, c)) or cells.get((r, c))
+            top = lambda r: min((cell_of(r, c)[1] for c in CELLS if cell_of(r, c)), default=None) \
+                if any(cell_of(r, c) for c in CELLS) else (here[r].get("focal_y") or [None])[0]
+            # 2. pseudo-rows, cut out of their parent
+            kids = defaultdict(list)
+            for row, e in here.items():
+                if e.get("split_from") and e["split_from"] in here:
+                    kids[e["split_from"]].append(row)
+            ordinary = sorted((top(r), r) for r, e in here.items() if not e.get("split_from") and top(r) is not None)
+            for parent, ch in kids.items():
+                if not all(cell_of(parent, c) for c in CELLS):
+                    continue
+                p_top = top(parent)
+                nxt = next((t for t, r in ordinary if t > p_top + 20), None)
+                # lines of the parent and of folded layout rows between it and the next entry
+                folded = {r for (r, c) in line_boxes if r[:6] == parent[:6] and r[5:6] == side and r not in here and r not in skip}
+                region = {c: list(line_boxes.get((parent, c), [])) for c in CELLS}
+                for r in folded:
+                    for c in CELLS:
+                        for b in line_boxes.get((r, c), []):
+                            if b[1] >= p_top - SPLIT_TOL and (nxt is None or (b[1] + b[3]) / 2 < nxt - SPLIT_TOL):
+                                region[c].append(b)
+                lo = p_top
+                hi = max([b[3] for bs in region.values() for b in bs] + [cell_of(parent, c)[3] for c in CELLS])
+                if nxt is not None:
+                    hi = min(hi, nxt)
+                pf = (here[parent].get("focal_y") or [None])[0]
+                starts = sorted(((here[r].get("focal_y") or [None])[0], r) for r in ch)
+                if all(s is not None and s != pf and lo < s + 8 < hi for s, _ in starts):
+                    cuts = [s + 8 for s, _ in starts]
+                else:                                   # no opening line of their own: split evenly
+                    starts = sorted((r, r) for r in ch)
+                    n = len(ch) + 1
+                    cuts = [lo + (hi - lo) * (i + 1) / n for i in range(len(ch))]
+                bounds = [lo] + cuts + [hi]
+                for j, (_, r) in enumerate([(None, parent)] + starts):
+                    a, b = bounds[j], bounds[j + 1]
+                    for c in CELLS:
+                        pb = cell_of(parent, c)
+                        inside = [x for x in region[c] if (j == 0 or (x[1] + x[3]) / 2 >= a - SPLIT_TOL)
+                                  and (j == len(starts) or (x[1] + x[3]) / 2 < b - SPLIT_TOL)]
+                        if j == 0:                       # the parent: only ever cut short
+                            y1 = max((x[3] for x in inside), default=b)
+                            if pb[3] > y1:
+                                geom[(r, c)] = [pb[0], pb[1], pb[2], max(pb[1] + 10, int(min(y1, b)))]
+                                kind[r] = "split-parent"
+                        else:
+                            ys = (min(x[1] for x in inside), max(x[3] for x in inside)) if inside else (a, b)
+                            geom[(r, c)] = [pb[0], int(ys[0]), pb[2], int(ys[1])]
+                    if j:
+                        kind[r] = "split"
+                # a folded layout row holding this entry's start and no other's carries its margin reading
+                for s, r in starts:
+                    if s is None:
+                        continue
+                    for f in folded:
+                        q = queue.get(f)
+                        if q and q[0] <= s + 8 < q[1] and not (q[0] <= p_top < q[1]) \
+                                and sum(q[0] <= (t or -1) + 8 < q[1] for t, _ in starts) == 1:
+                            side_from[r] = f
+    return geom, kind, side_from
+
 def main(args):
     P = D / "processed"
     tp = P / TRANSLATIONS
@@ -193,25 +324,39 @@ def main(args):
     for f in sorted(OUT.glob("lt_*.json")):      # earlier hand-made Lithuanian drafts, keyed by row
         lt.update(json.loads(f.read_text()))
     for row, t in tr.items():                     # full EN/LT translations take precedence
-        if t.get("baptism_lt"):
+        if t.get("baptism_lt") or t.get("parents_lt"):   # (an entry with only its right-hand page has no baptism cell)
             lt[row] = {c: t.get(c + "_lt") or "" for c in CELLS} | {"issues": t.get("issues_lt") or "", "issues_ru": ""}
     side_path = P / "side_columns.json"            # printed columns 1-3 (margin surname, No., dates, notes)
     side_cols = json.loads(side_path.read_text()) if side_path.exists() else {}
-    cells = {}
+    cells, line_boxes = {}, defaultdict(list)
     for name in ("line_proposals_years.json", "line_proposals.json"):
         if not (D / "training" / name).exists():
             continue
         for x in json.loads((D / "training" / name).read_text()):
             bb = x.get("bbox_v1") or x["bbox"]
+            line_boxes[(x["row_id"], x["cell"])].append(list(bb))
             b = cells.setdefault((x["row_id"], x["cell"]), list(bb))
             b[0], b[1], b[2], b[3] = min(b[0], bb[0]), min(b[1], bb[1]), max(b[2], bb[2]), max(b[3], bb[3])
-    index = build_index(tr)
+    qp = P / "queue_years.json"
+    queue = {q["row_id"]: q["focal_y"] for q in json.loads(qp.read_text()) if q.get("focal_y")} if qp.exists() else {}
+    skip = {row for row, c in side_cols.items() if c.get("not_an_entry")}   # a layout row that holds no entry
+    index = build_index(tr, skip)
     by = {r["row"]: r for r in index}
     per_scan = defaultdict(dict)
     for year, name in YEARS:
         for e in json.loads((P / name).read_text())["entries"]:
             if year == 1888 or e["row_id"] not in per_scan[e["scan"]]:
                 per_scan[e["scan"]][e["row_id"]] = e
+    focal = {}                                     # focal_y is kept in the drafts, not in the fields files
+    for year, name in YEARS:
+        dp = P / name.replace("entries_", "year_draft_")
+        if dp.exists():
+            for e in json.loads(dp.read_text())["entries"]:
+                if year == 1888 or e["row_id"] not in focal:
+                    focal[e["row_id"]] = e.get("focal_y")
+    geo_in = {s: {r: {**e, "focal_y": focal.get(r)} for r, e in rows.items()} for s, rows in per_scan.items()}
+    derived, placed_kind, side_from = derive_geometry(geo_in, cells, line_boxes, skip, queue)
+    cells = {**cells, **derived}
     boxes_path = OUT / "page_boxes.json"
     boxes = json.loads(boxes_path.read_text()) if boxes_path.exists() else {}
     scans = sorted(int(p.stem) for p in (D / "pages").glob("*.jpg"))
@@ -233,7 +378,7 @@ def main(args):
         for row, e in per_scan.get(scan, {}).items():
             side = e["page"]
             x0, y0, x1, y1 = boxes[key][side]
-            if not all((row, c) in cells for c in CELLS):
+            if row in skip or not all((row, c) in cells for c in CELLS):
                 continue
             bx, cell_side = {}, {}
             for c in CELLS:
@@ -251,7 +396,9 @@ def main(args):
                 other = next(iter(cell_side.values()))
                 ys = [v for c, s in cell_side.items() if s == other for v in (bx[c][1], bx[c][3])]
                 band2 = {"side": other, "band": [min(ys), max(ys)]}
-            sc = side_cols.get(row)
+            sc = side_cols.get(row) or side_cols.get(side_from.get(row))
+            if sc and sc.get("right_page_only"):   # the facing left page is from another opening: its margin is not this entry's
+                sc = None
             lay = layout_cols(scan, side)
             sx0 = max(0.6, pct(lay[0], x0, x1)) if lay else 0.6
             sx1 = max(sx0 + 2, bx["baptism"][0] - 0.3)
@@ -285,7 +432,10 @@ def main(args):
                 "band": [bx["baptism"][1], bx["baptism"][3]], "cells": bx, "html": h,
                 **({"cellSide": cell_side, "band2": band2} if cell_side else {}),
                 "names": [n.split("->", 1) for n in names if "->" in n], "issues": issues,
-                "sideCols": sc, "sideBox": [round(sx0, 3), bx["baptism"][1], round(sx1, 3), bx["baptism"][3]] if sc else None})
+                "sideCols": sc, "sideBox": [round(sx0, 3), bx["baptism"][1], round(sx1, 3), bx["baptism"][3]] if sc else None,
+                # a box derived in derive_geometry(), not read from the entry's own lines
+                **({"placed": placed_kind[row]} if row in placed_kind else {}),
+                **({"sideFrom": side_from[row]} if row in side_from else {})})
         spread["entries"].sort(key=lambda en: (en["side"], en["band"][0]))
         spread["heads"] = {}
         for side in ("L", "R"):
@@ -316,13 +466,15 @@ def main(args):
         textiles(Path(args[args.index("--textiles") + 1]))
     print(len(scans), "spreads;", sum(m["n"] for m in manifest), "entries placed;", len(index), "in index")
 
-def build_index(tr):
+def build_index(tr, skip=()):
     """One compact search record per entry, every register year."""
     P = D / "processed"
     out = []
     surn = json.loads((P / "surnames.json").read_text()) if (P / "surnames.json").exists() else {}
     for year, name in YEARS:
         for e in json.loads((P / name).read_text())["entries"]:
+            if e["row_id"] in skip:
+                continue
             f = {k: v.get("value") for k, v in e["fields"].items()}
             y = e.get("register_year") or year
             born = f.get("birth_date")

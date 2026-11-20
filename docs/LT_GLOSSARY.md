@@ -630,6 +630,16 @@ Letter clusters are transliterated letter by letter: рж → rž (Андрже�
 дз → dz, дж → dž. Never write Polish "rz", "sz", "cz", "w", "ł" for a lay person
 ("Andrzejewski", "Przełgovska", "Wencevova" are wrong).
 
+**Surnames beginning Іо-, Іа-, Іу- (і before a vowel).** In Lithuanian the і is j: Іонкусъ →
+Jonkus, Іонутисъ → Jonutis, Іоцюсъ → Jocius, Іацковна → Jackovna (the same as я, ю at a word
+start). The English form keeps the letter-by-letter romanisation, Io- / Ia- / Iu- (Ionkus,
+Ionutis, Iocius), as the romanisation rule gives it; this is the one place where the English
+surname is not the Lithuanian base letter for letter. Surnames written with Я-, Ю- (Якштовъ,
+Юцисовъ) are J- in both languages (Jakšt [?], Jucis). Decided on 2026-11-19 by Claude as the
+session's assistant, after the Salantai translators split between Io- and Jo- in the Lithuanian;
+flagged for Anna, not reviewed by a native speaker. Given names are not affected (they follow
+section 6, or are transliterated with [?]).
+
 ### 7.2 Men: the single mechanical procedure
 
 **Step 1. Remove the Russian case ending to get the written base.**
@@ -1028,6 +1038,7 @@ The book has several clerks. The first (1856–1857) writes dates in words, "о�
 | Здѣшнихъ Прихожанъ (after the village, clerk of autumn 1857) | šios parapijos (proposed, not reviewed by a native speaker; "of the parishioners of this parish" says no more than "of this parish") |
 | Салантовскаго Прихода … здѣшняго Прихода (the parish named twice in one sentence) | Salantų parapijos, once |
 | въ мѣстечкѣ Салантахъ (also "Мѣстечки", "Мѣстечко", "Мистечки", "мостикъ Салантохъ", "въ Деревни мѣстечкѣ Салантахъ") | Salantų miestelyje (never "kaime" for the town, even where the clerk writes "въ Деревни" before it) |
+| въ мѣстечкѣ Салантахъ итоговъ Прихода / и тогожъ Прихода / того же Прихода (drafts also "итогохъ", "итоговъ" joined to the town) | Salantų miestelyje, tos pačios parapijos; English "in the town of Salantai, of the same parish", without [?]. The clerks of 1859–1862 write "итоговъ" as one word (seen on the page image of 0086_L3) in the place where other entries have "Здѣшняго Прихода"; it stands for "и того же Прихода". Fixed on 2026-11-19 (proposed, not reviewed by a native speaker) |
 | [X]скаго Прихода (another parish): Масядскаго, Плунгянскаго, Плотельскаго, Сядскаго | Mosėdžio parapijos, Plungės parapijos, Platelių parapijos, Sedos parapijos |
 | окрещенъ младенецъ / окрещено дитя, именемъ X | pakrikštijo kūdikį, vardu X (section 1) |
 | родившійся сего года Ноября … дня (no year in digits) | gimęs šių metų lapkričio … dieną (proposed, not reviewed by a native speaker; the year is not supplied) |
@@ -1182,37 +1193,63 @@ All proposed, not reviewed by a native speaker.
 | Титулярныхъ Совѣтниковъ (written in the plural for the parents) | Titulinio patarėjo [father, gen.] [surname, gen.] ir [mother, gen.], gim. …, teisėtų sutuoktinių sūnus | Template B: the rank is the father's (proposed, not reviewed by a native speaker) |
 | Капитанъ пограничной стражи (a witness, 0006_L2) | pasienio sargybos kapitonas | (proposed, not reviewed by a native speaker) |
 | дополненъ обрядъ Св. Крещенія надъ 16-лѣтнею дѣвицею … | as 8.4: "papildė krikštą 16 metų merginai, vardu X" | the only place where "merginai" replaces "kūdikiui": a girl of sixteen is not an infant (proposed, not reviewed by a native speaker) |
+| Губернскій Секретарь / Губернскаго Секретаря (a noble's civil rank) | gubernijos sekretorius / gubernijos sekretoriaus; English "provincial secretary" | 0077_L1, 0081_L7, 0085_L5 (proposed, not reviewed by a native speaker) |
+| Мыза / на Мызѣ X (a manor) | dvaras / X dvare; English "manor" ("on the Salantai manor") | 0016_L3 (proposed, not reviewed by a native speaker) |
 
 ### 11.5 Given names met in this book and missing from section 6
 
 All proposed, not reviewed by a native speaker. They are used like the names of section 6
 (standard form when the reading is plausibly that name, no [?] for the name itself).
 
-| Russian (spellings found) | Lithuanian nom. | gen. | Note (each: proposed, not reviewed by a native speaker) |
-|---|---|---|---|
-| Іозифатъ / Іозефатъ | Juozapatas | Juozapato | proposed, not reviewed by a native speaker |
-| Іозефата / Іозифата (woman; "Іозедатою") | Juozapota | Juozapotos | the form section 6 gives for Юзефа; proposed, not reviewed by a native speaker |
-| Каликстъ | Kalikstas | Kaliksto | proposed, not reviewed by a native speaker |
-| Луція / Люція | Liucija | Liucijos | proposed, not reviewed by a native speaker |
-| Мацей | Motiejus | Motiejaus | the same Lithuanian form as Матеушъ; proposed, not reviewed by a native speaker |
-| Дыонизій / Діонисій | Dionizas | Dionizo | proposed, not reviewed by a native speaker |
-| Фердынандъ / Фердинандъ | Ferdinandas | Ferdinando | proposed, not reviewed by a native speaker |
-| Арнольфъ | Arnulfas | Arnulfo | or Arnolfas, as written; proposed, not reviewed by a native speaker |
-| Филипъ / Филиппъ | Pilypas | Pilypo | proposed, not reviewed by a native speaker |
-| Леопольдъ | Leopoldas | Leopoldo | proposed, not reviewed by a native speaker |
-| Олимпія | Olimpija | Olimpijos | proposed, not reviewed by a native speaker |
-| Колумба | Kolumba | Kolumbos | proposed, not reviewed by a native speaker |
-| Пракседа | Prakseda | Praksedos | proposed, not reviewed by a native speaker |
-| Аполинара (woman) | Apolinara | Apolinaros | as written; the man's name Аполинаръ is Apolinaras (section 6); proposed, not reviewed by a native speaker |
-| Леокадія | Leokadija | Leokadijos | proposed, not reviewed by a native speaker |
-| Эмиліянна | Emilijona | Emilijonos | proposed, not reviewed by a native speaker |
-| Данѣлъ / Даніель | Danielius | Danieliaus | the form section 6 gives for Даніилъ; proposed, not reviewed by a native speaker |
+| Russian (spellings found) | Lithuanian nom. | gen. | English (Polish form) | Note (each: proposed, not reviewed by a native speaker) |
+|---|---|---|---|---|
+| Іозифатъ / Іозефатъ | Juozapatas | Juozapato | Józafat | proposed, not reviewed by a native speaker |
+| Іозефата / Іозифата (woman; "Іозедатою") | Juozapota | Juozapotos | Józefata | the form section 6 gives for Юзефа; proposed, not reviewed by a native speaker |
+| Каликстъ | Kalikstas | Kaliksto | Kalikst | proposed, not reviewed by a native speaker |
+| Луція / Люція | Liucija | Liucijos | Łucja | proposed, not reviewed by a native speaker |
+| Мацей | Motiejus | Motiejaus | Maciej | the same Lithuanian form as Матеушъ; proposed, not reviewed by a native speaker |
+| Дыонизій / Діонисій | Dionizas | Dionizo | Dionizy | proposed, not reviewed by a native speaker |
+| Фердынандъ / Фердинандъ | Ferdinandas | Ferdinando | Ferdynand | proposed, not reviewed by a native speaker |
+| Арнольфъ | Arnulfas | Arnulfo | Arnolf | or Arnolfas, as written; proposed, not reviewed by a native speaker |
+| Филипъ / Филиппъ | Pilypas | Pilypo | Filip | proposed, not reviewed by a native speaker |
+| Леопольдъ | Leopoldas | Leopoldo | Leopold | proposed, not reviewed by a native speaker |
+| Олимпія | Olimpija | Olimpijos | Olimpia | proposed, not reviewed by a native speaker |
+| Колумба | Kolumba | Kolumbos | Kolumba | proposed, not reviewed by a native speaker |
+| Пракседа | Prakseda | Praksedos | Prakseda | proposed, not reviewed by a native speaker |
+| Аполинара (woman) | Apolinara | Apolinaros | Apolinara | as written; the man's name Аполинаръ is Apolinaras (section 6); proposed, not reviewed by a native speaker |
+| Леокадія | Leokadija | Leokadijos | Leokadia | proposed, not reviewed by a native speaker |
+| Эмиліянна | Emilijona | Emilijonos | Emilianna | proposed, not reviewed by a native speaker |
+| Данѣлъ / Даніель | Danielius | Danieliaus | Daniel | the form section 6 gives for Даніилъ; proposed, not reviewed by a native speaker |
+| Саломея (Саломеи, Саломею, Саломе; drafts "Саломои", "Саломен") | Salomėja | Salomėjos | Salomea | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Дорота | Dorotėja | Dorotėjos | Dorota | added 2026-11-19; the Lithuanian form of Dorothea; proposed, not reviewed by a native speaker |
+| Кунигунда / Кунегунда (draft "Кунллундою") | Kunigunda | Kunigundos | Kunegunda | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Каролъ (Кароля) | Karolis | Karolio | Karol | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Кипріанъ / Ципріанъ (drafts "Цспріана", "Цопріянъ") | Kiprijonas | Kiprijono | Cyprian | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Амалія | Amalija | Amalijos | Amalia | added 2026-11-19 (not met in the drafts; listed beside Амелія so the two are not confused); proposed, not reviewed by a native speaker |
+| Амелія (Амеліи) | Amelija | Amelijos | Amelia | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Маркіанъ / Марціянъ (Марціяна) | Marcijonas | Marcijono | Marcjan | added 2026-11-19; the man's name beside Marcijona (section 6); proposed, not reviewed by a native speaker |
+| Абдонъ | Abdonas | Abdono | Abdon | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Фаустина (draft "Баустиною") | Faustina | Faustinos | Faustyna | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Робертъ | Robertas | Roberto | Robert | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Вильгельмина | Vilhelmina | Vilhelminos | Wilhelmina | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Ванда (draft "Банда") | Vanda | Vandos | Wanda | added 2026-11-19; proposed, not reviewed by a native speaker |
+| Ауксентій (draft "Ауксенціюма") | Auksentijus | Auksentijaus | Auksenty | added 2026-11-19; proposed, not reviewed by a native speaker |
 
 Spellings of this book for names already in section 6: Іозефъ, Іозифъ = Juozapas; Янъ =
 Jonas; Якубъ ("Якода", "Якуда") = Jokūbas; Катаржина ("Катартыны", "Каторжоны") = Kotryna;
 Марціянна = Marcijona; Францишекъ ("Францишокъ", "Вранцишкомъ") = Pranciškus; Казимержъ
 ("Казимертъ", "Казимерша") = Kazimieras; Іелена / Гелена = Elena; Домишекъ / Домишка is
 probably Dominykas, with [?].
+
+Garbled names settled from the page images on 2026-11-19 (Claude, unverified; flagged for
+Anna): the name drafted Іервій / Дервій / Зервій / Сервій / Беррій / Геррій (genitive
+Іервея, Дервего, Сервся, Ирвея) is one name: on the page images the 1857 clerk writes
+Іержвій, with ж (0014_L2), and the clerks of 1859–1862 Іервій (0067_L6, 0082_L4, 0103_L4,
+0116_L2, 0126_L5; the fourth letter looks like в). Five of the nine children so named were
+baptised between 7 and 23 April (St George's day is 23 April), the others in February, May,
+September and December. It is taken as Jurgis (English Jerzy), always with [?]; a judgement,
+not a certain reading. The name drafted Два / Двою / Двы is Эва (Ieva, English
+Ewa), with [?]. The name drafted Лонъ / Лона is Леонъ (Leonas, English Leon), with [?].
 
 ### 11.6 Open questions for this book
 

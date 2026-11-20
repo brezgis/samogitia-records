@@ -24,8 +24,8 @@
  "entries": [
   {
    "row_id": "0202_L1",
-   "register_year": 1906,
-   "register_year_status": "inferred_from_page_majority",
+   "register_year": 1905,
+   "register_year_status": "corrected_2026-11-20: entry No. 406 of 1905, baptised 31 December 1905 (year words \"пятаго\", margin No. 406), above the heading \"1906 годъ Январь\" on the first page of 1906 (Claude, checked on the page image)",
    "scan": 202,
    "page": "L",
    "split": "train",
@@ -49,7 +49,7 @@
    "boundary_warning": null
   },
   {
-   "row_id": "0202_L1b",
+   "row_id": "0202_L2",
    "register_year": 1906,
    "register_year_status": "inferred_from_page_majority",
    "scan": 202,
@@ -57,22 +57,23 @@
    "split": "train",
    "expected_entry_no": null,
    "hand_group": "unknown",
-   "image": "data/plunge-1827-1-25/processed/rows/0202_L1.jpg",
+   "image": "data/plunge-1827-1-25/processed/rows/0202_L2.jpg",
    "lines": 22,
    "lines_checked": 0,
    "lines_independent": 0,
    "lines_model": 22,
    "lines_rejected": 0,
    "boundary_snapped": null,
-   "split_from": "0202_L1",
+   "split_from": null,
    "focal_y": [
-    1287,
-    1296
+    957,
+    1950
    ],
    "baptism": "Тысяча девятьсотъ шестаго щода Января перваго дня въПлунгянскомъ Р.=К. при ходскомъ Костелѣ Ксендгомѣъ Купревичемъ окрещенъмла денецъ именемъ Авгу стынъ со вссами обрядами Таинства. -",
    "parents": "Крестьянъ Плуннян сой воости Августы но Августыно ва и. Зенанды ураждстна Кяу лейкисъ Фебамковъ зо конныхъ супруговъ сымъ родившійся 29 Декобря 1905 года въ деревни Стелгахъ сего прихода. -",
    "godparents": "Воспріемникам -быми Викентій Доротисъ съ Казитрог Кяулеймиео дицвюя -",
-   "boundary_warning": null
+   "boundary_warning": null,
+   "restored": "2026-11-19: this entry's text was already in the plunge-v6 draft, but under pseudo-row 0202_L1b (split out of 0202_L1 because layout row 0202_L2 begins with the previous entry's tail and the heading '1906 годъ Январь', so the row was folded as a fragment); the site cannot place pseudo-rows. Re-keyed to its layout row 0202_L2 after checking the page image; text unchanged (Claude, unverified)"
   },
   {
    "row_id": "0202_L3",

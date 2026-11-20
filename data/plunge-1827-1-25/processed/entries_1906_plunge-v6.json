@@ -17,7 +17,7 @@
  "entries": [
   {
    "row_id": "0202_L1",
-   "register_year": 1906,
+   "register_year": 1905,
    "scan": 202,
    "page": "L",
    "expected_entry_no": null,
@@ -106,13 +106,13 @@
      "by": "rules"
     },
     "baptism_date": {
-     "value": "1906-12-31",
+     "value": "1905-12-31",
      "source": "model",
      "by": "both",
      "conf": 0.9997
     },
     "birth_date": {
-     "value": "1906-01-01",
+     "value": "1905-01-01",
      "source": "model",
      "by": "rules"
     },
@@ -178,15 +178,15 @@
    }
   },
   {
-   "row_id": "0202_L1b",
+   "row_id": "0202_L2",
    "register_year": 1906,
    "scan": 202,
    "page": "L",
    "expected_entry_no": null,
    "hand_group": "unknown",
    "split": "train",
-   "image": "data/plunge-1827-1-25/processed/rows/0202_L1.jpg",
-   "split_from": "0202_L1",
+   "image": "data/plunge-1827-1-25/processed/rows/0202_L2.jpg",
+   "split_from": null,
    "heading": null,
    "heading_month": null,
    "fields": {

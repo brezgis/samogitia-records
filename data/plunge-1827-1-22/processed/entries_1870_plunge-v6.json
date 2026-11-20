@@ -17,7 +17,7 @@
  "entries": [
   {
    "row_id": "0080_L1",
-   "register_year": 1870,
+   "register_year": 1869,
    "scan": 80,
    "page": "L",
    "expected_entry_no": null,
@@ -103,13 +103,13 @@
      "by": "rules"
     },
     "baptism_date": {
-     "value": "1870-12-26",
+     "value": "1869-12-26",
      "source": "model",
      "by": "both",
      "conf": 1.0
     },
     "birth_date": {
-     "value": "1870-12-26",
+     "value": "1869-12-26",
      "source": "model",
      "by": "both",
      "conf": 0.9975

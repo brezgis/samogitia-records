@@ -230,6 +230,48 @@
      "ribbon": "taurage"
     }
    ]
+  },
+  {
+   "id": "salantai",
+   "names": {
+    "en": {
+     "name": "Salantai",
+     "county": "Telšiai"
+    },
+    "lt": {
+     "name": "Salantai",
+     "gen": "Salantų",
+     "countyGen": "Telšių"
+    },
+    "pl": {
+     "name": "Sałanty",
+     "loc": "Sałantach",
+     "lay": "leżały",
+     "countyLoc": "telszewskim"
+    },
+    "ru": {
+     "name": "Саланты",
+     "adjNom": "Салантовский",
+     "adjGen": "Салантовского",
+     "was": "входили",
+     "county": "Тельшевский"
+    }
+   },
+   "books": [
+    {
+     "dir": "salantai-1856-1862",
+     "years": [
+      1856,
+      1862
+     ],
+     "archive": "1517/1/1",
+     "data": "data/salantai-1517-1-1",
+     "scan": 40,
+     "cloth": "1057426455",
+     "ribbon": "ukrinai",
+     "start": true
+    }
+   ]
   }
  ],
  "cloths": {

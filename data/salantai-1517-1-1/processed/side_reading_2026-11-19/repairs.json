@@ -78,5 +78,107 @@
    "margin_surname": "Ленкусовъ"
   },
   "why": "the row boundary lies below the number line of entry 30, so the strip showed entry 31; read from the whole page (30, girls 16, 25/26); the parents column has the same surname"
+ },
+ {
+  "row": "0090_L5",
+  "set": {
+   "margin_surname": "Карбовскихъ"
+  },
+  "why": "the margin reads Карбовскихъ, as the parents column does; the [і?]ц of the strip reading is the ск; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0091_L3",
+  "set": {
+   "margin_surname": "Довконтовъ"
+  },
+  "why": "the margin reads Довконтовъ (н, not и), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0098_L3",
+  "set": {
+   "margin_surname": "Станюсовъ"
+  },
+  "why": "the margin reads Станюсовъ (ю), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0054_L3",
+  "set": {
+   "margin_surname": "Буткевичевъ"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the margin and the parents column write the same word; the letter after т has the same shape in both, and к is taken from the parents column's reading (Буткевичевъ), х not excluded; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0116_L2",
+  "set": {
+   "margin_surname": "Довкинтовъ"
+  },
+  "why": "the margin reads Довкинтовъ (н, not a second т), as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0121_L9",
+  "set": {
+   "margin_surname": "Смулькисовъ"
+  },
+  "why": "the margin reads Смулькисовъ, as the parents column does; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0041_L2",
+  "set": {
+   "margin_surname": "Римкусовъ"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the parents column clearly reads Римкусовъ; in the margin the letters after Римку fit \"со\" as well as \"ю\", so the family name is taken as Римкусовъ; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0037_L7",
+  "set": {
+   "margin_surname": "Венцковъ"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the margin letter after ц is ambiguous (х or к on the page image); the parents column clearly has к (Венцковъ), and the same family is in 0040_L6, so the family name is taken as Венцковъ on the strength of the parents column; the margin letter itself stays doubtful; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0040_L6",
+  "set": {
+   "margin_surname": "Венцковъ"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the margin letter after ц is ambiguous (х or к on the page image); the parents column clearly has к (Венцковъ), and the same family is in 0037_L7, so the family name is taken as Венцковъ on the strength of the parents column; the margin letter itself stays doubtful; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0007_L5",
+  "set": {
+   "margin_surname": "Бенюшіовъ"
+  },
+  "why": "the margin and the parents column write the same capital Б (read Т in the strip); the family Бенюшіовъ, as in 0023_L2; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0023_L2",
+  "set": {
+   "margin_surname": "Бенюшіовъ"
+  },
+  "why": "the margin and the parents column write the same capital Б (read С in the strip); the family Бенюшіовъ, as in 0007_L5; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
+ },
+ {
+  "row": "0056_L3",
+  "set": {
+   "margin_surname": "Рафаловъ",
+   "margin_alt": "",
+   "margin_maiden_name": "Скрынковскихъ (second reader: Скрыпковскихъ)",
+   "margin_holds": "mother's maiden name"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the margin holds the mother's maiden name, not the family surname: it repeats the word after \"урожденной\" (Скрыпковскихъ / Скрынковскихъ, the page image shows the same word in both places), while the family surname written after \"законныхъ супруговъ\" is Рафаловъ (on the image \"Рафа-ліовъ\" across a line break) and both godparents are Рафалисъ. The margin reading is kept in margin_maiden_name; margin_surname now holds the family name from the parents column, marked uncertain, so that reconcile_surnames.py does not take the maiden name for the family surname; read from the page image by Claude (consistency pass of 2026-11-19), unverified"
  }
 ]
