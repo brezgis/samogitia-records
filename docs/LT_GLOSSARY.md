@@ -640,8 +640,8 @@ Letter clusters are transliterated letter by letter: рж → rž (Андрже�
 | -цкій / -цкихъ / -цкаго | -ckis (gen. -ckio): Новицкихъ → Novickis |
 | -ичъ / -ича / -ичемъ / -ичей / -ичевъ / -ичовъ | -ičius (gen. -ičiaus): Мицкевичей → Mickevičius; Касперовичей → Kasperovičius; Кацевичовъ → Kacevičius |
 | -асъ / -аса / -асовъ | -as (gen. -o): Рамонасовъ → Ramonas |
-| -исъ / -иса / -исовъ | -is (gen. -io): Можейкисовъ → Možeikis |
-| -ысъ / -ыса / -ысовъ | -ys (gen. -io) |
+| -исъ / -иса / -исовъ | -is (gen. -io; after t and d the genitive is -čio and -džio: Symutis → Symučio, Gedgaudis → Gedgaudžio): Можейкисовъ → Možeikis |
+| -ысъ / -ыса / -ысовъ | -ys (gen. -io; -tys → -čio, -dys → -džio) |
 | -усъ / -уса / -усовъ | -us (gen. -aus): Шимкусовъ → Šimkus; Стонкуса → Stonkus |
 | -юсъ / -іусъ / -юсовъ / -іусовъ | -ius (gen. -iaus): Поціусовъ → Pocius; Кубиліусовъ → Kubilius |
 | -а / -ы / -ѣ of a man whose nominative ends in -а (Дрымба, Довгяла) | -a (gen. -os): "Antano Drymbos" |
@@ -1111,7 +1111,7 @@ villages; 288 spellings (327 entries) fall to none.
 **Settled** means: at least five entries, at least two of them at similarity 0.85 or more,
 and no second gazetteer village within 0.10. Only settled villages take the modern
 Lithuanian name, without [?]. This is a deliberate exception to principle 1 for this table
-only; it does not extend to any village that is not in it. A similarity is not an
+only (Anna agreed to it on 2026-11-19); it does not extend to any village that is not in it. A similarity is not an
 identification: nobody has checked these against a historical list of the parish.
 
 | Russian (locative as usually drafted; other spellings seen) | Entries (of them at similarity ≥ 0.85) | Modern village (OSM) | Write | Status |

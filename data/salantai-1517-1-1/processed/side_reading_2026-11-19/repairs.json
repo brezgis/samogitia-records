@@ -1,0 +1,82 @@
+[
+ {
+  "row": "0029_L3",
+  "set": {
+   "entry_no": "166"
+  },
+  "why": "the page has 166 (girls 69, 31/31); the strip reading repeated 165"
+ },
+ {
+  "row": "0051_L3",
+  "set": {
+   "entry_no": "186",
+   "boys_count": "",
+   "girls_count": "92",
+   "birth_day": "3",
+   "baptism_day": "3",
+   "sex": "F"
+  },
+  "why": "the page has 186, girls 92, 3/3; the reading had taken the number, boys count and days of entry 187 below"
+ },
+ {
+  "row": "0053_L3",
+  "set": {
+   "entry_no": "200",
+   "girls_count": "100"
+  },
+  "why": "the page has 200, girls 100, 28/28; the reading had the figures of entry 201 below"
+ },
+ {
+  "row": "0102_L4",
+  "copy_from": "0102_L3",
+  "why": "the layout put a row boundary inside entry 51: the strip of 0102_L3 (a row with no text) shows entry 51, whose text is in 0102_L4; the parents column of 0102_L4 has the same surname"
+ },
+ {
+  "row": "0102_L3",
+  "not_an_entry": "a row cut by a false rule inside entry 51; it has no text; its margin reading was moved to 0102_L4"
+ },
+ {
+  "row": "0034_L3",
+  "not_an_entry": "a row with no text on a scan whose two pages are from different openings"
+ },
+ {
+  "row": "0121_L2",
+  "set": {
+   "entry_no": "22"
+  },
+  "uncertain": [
+   "entry_no",
+   "margin_surname"
+  ],
+  "why": "continuation of entry 22, which begins at the foot of scan 120 where no row was cut: the number is inferred from 21 and 23 on either side, not read; only the end of the surname (\"…посовъ\") is on this page"
+ },
+ {
+  "row": "0121_L5",
+  "set": {
+   "entry_no": "24",
+   "boys_count": "",
+   "girls_count": "12",
+   "birth_day": "19",
+   "baptism_day": "19",
+   "sex": "F",
+   "margin_surname": "[Гри?]нтайтисовъ"
+  },
+  "uncertain": [
+   "margin_surname"
+  ],
+  "why": "the row boundary lies below the entry's number line, so the strip missed the figures; read from the whole page (24, girls 12, 19/19)"
+ },
+ {
+  "row": "0122_L5",
+  "set": {
+   "entry_no": "30",
+   "boys_count": "",
+   "girls_count": "16",
+   "birth_day": "25",
+   "baptism_day": "26",
+   "sex": "F",
+   "margin_surname": "Ленкусовъ"
+  },
+  "why": "the row boundary lies below the number line of entry 30, so the strip showed entry 31; read from the whole page (30, girls 16, 25/26); the parents column has the same surname"
+ }
+]

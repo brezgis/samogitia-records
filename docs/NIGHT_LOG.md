@@ -460,3 +460,112 @@ translation, model training ... as you can"). Entries are appended as work compl
   A handful of correct May readings in badly garbled text are now empty. Read by the agent on 40
   Salantai entries: 464 of 480 fields right as delimited in the draft (village 35 of 40). Tests: 50.
   Salantai re-parsed with the tagger on. Plungė entries files not regenerated.
+
+## 2026-11-19 (Anna: regenerate the Plungė entries; Salantai margin columns)
+- **Plungė entries re-parsed** with the current rules and the field tagger, from the drafts the published
+  books are built on (1886–90 plunge-v3 incl. 1888, 1827/1/18 v6, /20 v7, /22 v6, /24 v4, /25 v6). Re-parse
+  only: no re-assembly, same rows and the same text in all 10,753 entries, tagger spans stale 0
+  (new files processed/tagger_spans_*). Old -> new filled: father 1,926 -> 9,824; mother 1,926 -> 10,378;
+  birth date 1,680 -> 8,569; priest 4,687 -> 10,458; village 7,585 -> 9,916; baptism date 8,620 -> 9,113.
+  Emptied: 47 baptism dates (the ones looked at were a "May" guessed out of garbled text) and 17 townships
+  that were parents' names. surnames.json re-run (it was reproducible from the old files; "agree" 470 ->
+  2,999 of the six books). Site data rebuilt without images for all six books; translations untouched.
+  Not committed.
+- **Salantai margin strips.** `side_strips.py` SIDE_MODE=compact: one rotation (SIDE_ROT) and the upright
+  strip side by side, two entries per sheet at about 1100 x 1500 px (the "wide" sheets were 1100 x 8000
+  and reached a reader shrunk four times). Two faults fixed for the two-page form: the strip's right
+  edge is the row's baptism cell (counting rules stopped short of the number columns on 38 of 124
+  pages), and the strip runs 230 px past the row (surnames written downwards overrun into the next
+  row). Columns here: surname, No., count of boys, count of girls, birth day, baptism day.
+- **Pilot, one Sonnet and one Opus reader, the same 24 entries, blind** (on the sheets before the two
+  fixes: 6 strips empty, 1 cut): 73k and 89k tokens. On the 17 whole strips every number and the sex are
+  the same in both; the surname has the same letters in 12, differs by one letter in 5. Scans 25 and 86
+  (mismatched openings) show a margin family different from the draft's, as expected.
+- **Salantai margin columns read** (Anna approved: Sonnet for all, Opus second look where the parents
+  column does not confirm). Sonnet, 17 readers x 40 entries, blind, ~1.56M tokens: 673 entries, 670
+  surnames, 668 numbers. Opus, 10 readers, ~1.2M tokens, blind to the first reading, on 374 entries
+  (357 whose surname did not agree with the parents column, 17 with a crop remark) recut longer and
+  wider (SIDE_OVERRUN=420; sheets in /mnt/ssd240gb/anna/samogitia-htr/work/salantai-side2): the two
+  readings have the same letters in 150, differ in 224 (by one or two letters in most). Where they
+  differ and the parents column can tell, Opus is the closer 66 times, Sonnet 15, neither clearly 86.
+  `pipeline/merge_second_reading.py` settles each surname between the two readings and the parents
+  column (`margin_by`: both / second / first; the other reading kept as `margin_alt`).
+  `reconcile_surnames.py` now takes the tagger's family_surname where there is one (Plungė "agree"
+  2,999 -> 3,995 of 10,753). Salantai: parents column agrees with the margin 365; two readings agree
+  but the parents column does not 138; one or disputed reading 170. Sex known for 665, baptism day 663.
+  13 later notes, among them a consistory correction of a surname (1876) and four Lithuanian marriage
+  notes of 1921–1923. Raw chunks, prompt and the first reading are in
+  processed/side_reading_2026-11-19/. Not yet done: translations, site, Hugging Face.
+- Found by the readers (processed/side_reading_2026-11-19/row_checks.json): rows that are not entries
+  (only the tail of the previous surname, no numbers) or that share an entry number with their
+  neighbour, worst on scan 34; entry 33 of 1862 (scan 122) has no row of its own; on scan 125 the
+  baptism-day column is outside the strip (page layout). Birth and baptism day are the same number in
+  94% of entries, as the clerk wrote them; the margin's birth day equals the day parsed from the text
+  in 437 of 549, the baptism day in 594 of 622, the sex in 599 of 635.
+- **Repairs to the Salantai margin readings** (Anna: "let's repair stuff"; processed/side_reading_2026-11-19/
+  repairs.json, each row keeps `before_repair` and `repaired`). Looking at the whole left pages with the
+  row boundaries drawn: on scans 102, 121 and 122 the layout has a false rule inside an entry and misses
+  the true one, so a strip started below its entry's number line and showed the next entry; on scans
+  29, 51 and 53 a reader had taken the figures of the entry below. Corrected from the page image:
+  0029_L3 = 166, 0051_L3 = 186, 0053_L3 = 200, 0121_L5 = 24, 0122_L5 = 30 (the parents column confirms
+  the surname), 0102_L4 takes the reading filed under the empty row 0102_L3. 0121_L2 is the end of
+  entry 22, which begins at the foot of scan 120 where no row was cut (number inferred, text not
+  joined). Rows with no text marked `not_an_entry` (0102_L3, 0034_L3). On the scans whose pages are
+  from different openings, rows with text only on the right page no longer carry the left strip's
+  reading (`right_page_only`, the reading kept under `strip_shows`). After this no entry number repeats
+  or is skipped; the numbers restart at 4 and 5 after scans 79 and 92 (a leaf missing, as suspected).
+  **Do not re-run assemble_drafts.py on this book as run_book.sh does: it gives 679 entries, not the
+  committed 673 (the committed drafts came from a different invocation); I overwrote the drafts that
+  way on 2026-11-19 and restored them from git.** The layout rules on scans 102, 121, 122 are not fixed.
+- **The "mismatched" Salantai scans are seams where runs of leaves are missing, not single lost leaves.**
+  Entry numbers on the left page of each seam scan and of the scan after it: 16: 55 -> 89; 25: 141 -> 152;
+  34: 180 -> 64 (next year); 79: 129 -> 4 (next year); 81: 13 -> 78; 86: 102 -> 143; 92: 172 -> 5 (next
+  year); 112: 105 -> 147. Some 250 or more entries of 1856–1862 are not in the 128 scans (the archive
+  record lists 128 pages and all were downloaded). So the halves on a seam scan have no partner in this
+  file: they can be split into honest half-entries, not re-paired. Not checked: whether the missing
+  leaves are in another file (1517/1/2 onwards, years not yet read) or in the consistory's copy.
+- Translation started in the background: 3 Opus translators on the first 120 of 671 entries
+  (processed/translations/round_2026-11-19/: chunks with the margin reading, its support and warnings;
+  INSTRUCTIONS.md updated for glossary section 11).
+- **Where the missing Salantai leaves are not.** The archive records give the other Salantai files as
+  1862–1872 (1517/1/2), 1872–80, 1880–86, 1886–93, 1893–98, 1898–1902, 1902–08, 1908–14: none overlaps
+  1856–1862, so there is no second copy among the downloaded files. The pencilled folio numbers on the
+  right-hand pages jump at the seams: scan 15 is folio 14 and scan 16 folio 21 (33 entries missing);
+  scan 24 folio 29, scan 25 folio 32 (10 entries); scan 33 folio 40, scan 34 folio 57; scan 80 folio
+  117, scan 81 folio 131. So the leaves were in the book when it was foliated and are counted in its
+  foliation, but are not among the scans (about 5.5 entries per missing leaf, as on the leaves present).
+  Not looked at: the other four seams' folios, the last folio number, FamilySearch's film of the fond,
+  the consistory's duplicate.
+- Search for another copy of Salantai 1856–1862 (2026-11-19): epaveldas publishes exactly the 128 images
+  we have for 1517/1/1 (the record's own resource list); gen.wooyd.org's source list, Genmetrika's
+  births page and the FamilySearch wiki name no second copy; FamilySearch's catalogue needs a login and
+  was not searched; an epaveldas search across all holders timed out and then returned HTTP errors
+  (not retried). One unfollowed lead: gen.wooyd.org lists Salantai among parishes in the Vilnius
+  University Library collection on epaveldas (inventory in a linked spreadsheet, not opened).
+- Translator 001 (40 entries, 178k tokens): notes that English surname and village forms are not fixed by
+  the instructions (each translator chooses), that "-tis" surnames need "-čio" in the Lithuanian
+  genitive, that 0007_L5 counts as "confirmed" although margin and parents column differ in the first
+  letter (Тенюшіовъ / Бенюшіовъ), and that 0011_L1–L3 have empty parents columns (scan 11's known
+  template fault) without a warning.
+- Translators 002 and 003 back (185k tokens each; 120 entries translated in all, out_001–003, not merged).
+  `reconcile_surnames.py`: a margin and a parents-column surname that differ in the first letter no
+  longer count as agreeing (the Бенюшіовъ family was read Тенюшіовъ and Сенюшіовъ in the margin and
+  passed as confirmed). Open before the other 551 entries: one rule for English surname and village
+  forms; "-tis" -> "-čio" in the glossary; whether settled villages (11.3) keep modern names.
+- **Salantai translated, EN + LT** (Anna agreed the three rules: one English rule for surnames and villages,
+  modern names for the settled villages of 11.3, "-čio/-džio" spelled out in 7.2). 17 Opus translators
+  x 40 entries, about 3.3M tokens (about 4,900 per entry, glossary reading included): 671 entries, every
+  chunk parses with its rows in order and no Cyrillic in the translations; combined in
+  processed/translations/translations_v4_salantai1.json (not on the site, not on Hugging Face). 658 of
+  671 entries carry at least one [?], mostly bare stems from -овъ genitive plurals and garbled
+  godparents. Chunks 001–003 were made before the English rule.
+  To settle before publishing (from the translators' reports): English form of villages outside the
+  settled table (as drafted, or Russian nominative plural: translators differ); Іо- as "Io-" (7.1) or
+  "Jo-" (4.4); one garbled given name read Іервій / Дервій / Зервій (one translator: Jerzy [?]);
+  "итоговъ Прихода" after "въ мѣстечкѣ Салантахъ"; "Губернскій Секретарь"; given names missing from
+  the glossary (Саломея, Дорота, Кунигунда, Каролъ ...); margin surnames the translators think worse
+  than the parents column (0090_L5, 0091_L3, 0098_L3, 0054_L3, 0057_L2, 0058_L4, 0101_L3, 0116_L2,
+  0121_L9, 0041_L2, 0037_L7, 0040_L6); 0056_L3's margin holds the mother's maiden name; 0054_L1 is
+  December 1858 (no. 205), filed under 1859; probable unmarked twins 0049_L7/L8, 0039_L5/L6, 0040_L2/L3;
+  the bishop (Maciej Wołonczewski) baptises in 0085_L5. Scan 111 checked against the page: the margin
+  rows are right, the parents column there is only garbled.

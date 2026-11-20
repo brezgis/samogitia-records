@@ -77,6 +77,11 @@ def nominative(ru):
 
 
 def draft_surname(fields):
+    # with the field tagger on, the family surname is a field of its own (and more often right than
+    # the last word of the rules' "maiden name and surname"); a value in two words is not a surname
+    fam = (fields.get('family_surname') or {}).get('value') or ''
+    if letters(fam) and len(fam.split()) == 1:
+        return fam
     v = (fields.get('maiden_and_surname') or {}).get('value') or ''
     words = [w for w in v.split() if letters(w)]
     return words[-1] if len(words) > 1 else ''      # one word alone is the maiden name or a fragment
@@ -89,8 +94,8 @@ def reconcile(margin, draft, margin_uncertain):
         status = 'draft_only' if len(ds) >= 4 else 'none'
     elif len(ds) < 4:
         status = 'margin_only'
-    elif ms == ds or sim >= 0.8:
-        status = 'agree'
+    elif ms == ds or (sim >= 0.8 and ms[0] == ds[0]):
+        status = 'agree'             # a different first letter is not agreement (Тенюшіовъ / Бенюшіовъ: a misread capital)
     elif sim < 0.5 and len(ds) >= 0.7 * len(ms):
         status = 'conflict'
     else:

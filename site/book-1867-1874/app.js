@@ -185,7 +185,6 @@ const BOOKTEXT = (N => ({
 for (const k in BOOKTEXT) Object.assign(T[k], BOOKTEXT[k]);
 /* one look for every book: the Plungė bedspread on the cover, the Mažeikiai sash for a ribbon (museum numbers, for the credits) */
 const CLOTH = 'plunge', RIBBON = 'mazeikiai', LIMIS = { plunge: '1056757085', mazeikiai: '914006288' };
-const visit = { get: k => { try { return sessionStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { sessionStorage.setItem(k, v); } catch {} } };
 const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
 let lang = 'en';
 const t = () => T[lang];
@@ -203,6 +202,12 @@ function showDate(d, noYear) {
 /* the open spread */
 let S = null, pages = {}, byRow = {}, slip = null;
 let pinned = null, hovered = null;
+/* What render() last did, so that moving the pointer only touches what changes: each row's leaves
+   and bands (an entry of a two-page form has them on both pages), the row whose leaves are showing
+   (or all of them, reading the whole page), the band marked as held open, the rows whose leaves
+   have their text in the current language, and what the paper slip was last written for. */
+let rowLeaves = {}, rowBands = {}, lit = null, litAll = false, pressed = null, slipKey = '';
+const filled = new Set();
 const MARK = BK.dir === 'book' ? 'ribbon' : 'ribbon:' + BK.dir;      // each book keeps its own ribbon place
 let marked = (() => { try { return JSON.parse(store.get(MARK)) || null; } catch { return null; } })() || { row: BK.row || '', scan: BK.scan };
 const params = new URLSearchParams(location.hash.slice(1));
@@ -258,8 +263,9 @@ function paint(el, d, j = 0, n = 1) {
 let G = null;                 // layout of the open spread
 const shown = (e, l = lang) => e.html[l] ? l : e.html.en && l !== 'ru' ? 'en' : 'ru';
 
-function buildPages() {
+function buildPages(late) {      // late: the scans may not be here yet (the first spread, or a turn that would not wait)
   block.innerHTML = ''; pages = {}; byRow = {};
+  rowLeaves = {}; rowBands = {}; lit = null; litAll = false; pressed = null; slipKey = ''; filled.clear();
   G = layout(S);
   block.style.gridTemplateColumns = `${G.L.w}fr ${G.R.w}fr`;
   for (const side of ['L', 'R']) {
@@ -267,8 +273,24 @@ function buildPages() {
     const img = el('img'), src = S.pages[side].img;
     // a page image that fails to arrive is asked for again (three times) instead of leaving its caption
     img.onerror = () => { const n = +(img.dataset.retry || 0); if (n < 3) { img.dataset.retry = n + 1; setTimeout(() => { img.src = `${src}?retry=${n + 1}`; }, 500 * (n + 1)); } };
+    img.decoding = 'async'; if (late) img.fetchPriority = 'high';
     img.src = src; img.alt = side === 'L' ? 'Left-hand page of the register' : 'Right-hand page of the register'; img.draggable = false;
     if (g.slip) Object.assign(img.style, { left: g.x * 100 + '%', top: g.y * 100 + '%', width: g.fw * 100 + '%', height: g.fh * 100 + '%' });
+    // Until a late scan is here the page shows its small copy (the one the riffling leaves carry), or
+    // the empty ruled form the book opened with, never bare paper, and the scan comes up over it
+    // (as filmed; on warm paper what is under would show through, so there the scan just appears).
+    if (late && !g.slip && !img.complete && body.dataset.paper === 'film') {
+      p.classList.add('blank'); img.style.opacity = 0;
+      const bare = () => { p.classList.remove('blank'); p.style.background = ''; };
+      thumb(S.scan, side).then(d => { if (d && !d.slip && p.isConnected && p.classList.contains('blank')) p.style.background = `#fff url("${d.src}") 0 0/100% 100% no-repeat`; });
+      const come = () => {
+        img.style.opacity = '';
+        const a = reduced() ? null : img.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, easing: 'ease-out' });
+        a ? a.finished.then(bare, bare) : bare();
+      };
+      img.addEventListener('load', come, { once: true });
+      img.addEventListener('error', () => { img.style.opacity = ''; bare(); }, { once: true });
+    }
     p.append(img, el('div', 'tint'), el('div', 'fold'));
     for (const [cls, d] of [['out', side === 'L' ? -1 : 1], ['in', side === 'L' ? 1 : -1]]) {      // the page's edges turn it (see .pe in the page's styles)
       const b = el('button', 'pe ' + cls); b.type = 'button'; b.tabIndex = -1; b.setAttribute('aria-hidden', 'true'); b.onclick = () => edgeStep(d);
@@ -281,18 +303,18 @@ function buildPages() {
     const p = pages[e.side], b = el('button', 'band');
     b.type = 'button'; b.dataset.row = e.row; b.setAttribute('aria-pressed', 'false');
     b.style.top = e.band[0] + '%'; b.style.height = (e.band[1] - e.band[0]) + '%';
-    p.append(b);
+    p.append(b); rowBands[e.row] = [b]; rowLeaves[e.row] = [];
     if (e.band2 && pages[e.band2.side]) {          // two-page form: the entry continues on the facing page
       const b2 = b.cloneNode(false);
       b2.style.top = e.band2.band[0] + '%'; b2.style.height = (e.band2.band[1] - e.band2.band[0]) + '%';
-      pages[e.band2.side].append(b2);
+      pages[e.band2.side].append(b2); rowBands[e.row].push(b2);
     }
     const boxesFor = Object.assign({}, e.cells, e.sideBox ? { side: e.sideBox } : {});
     for (const c of Object.keys(boxesFor)) {
       const l = el('div', 'leaf' + (c === 'side' ? ' side' : '')); l.dataset.row = e.row; l.dataset.cell = c;
       const [x0, y0, x1, y1] = boxesFor[c];
       l.style.left = x0 + '%'; l.style.top = y0 + '%'; l.style.width = (x1 - x0) + '%'; l.style.minHeight = (y1 - y0) + '%';
-      (pages[e.cellSide && e.cellSide[c]] || p).append(l);
+      (pages[e.cellSide && e.cellSide[c]] || p).append(l); rowLeaves[e.row].push(l);
     }
   }
   for (const side of ['L', 'R']) {               // translated printed column headings at the top of the page
@@ -317,12 +339,20 @@ function buildPages() {
   slip = el('div', 'slip'); block.append(slip);
   fillLeaves();
 }
-function fillLeaves() {
-  block.querySelectorAll('.leaf[data-row]').forEach(l => { const e = byRow[l.dataset.row], s = shown(e), h = e.html[s];
-    l.lang = s; l.innerHTML = (h && h[l.dataset.cell]) || (e.html.ru[l.dataset.cell] || ''); });
+/* A row's leaves get their text the first time they are shown (and again after a change of language),
+   so a spread is laid out without the text of forty hidden leaves. */
+const drafts = root => root.querySelectorAll('[data-draft]').forEach(s => s.title = t().from + s.dataset.draft);
+function fillRow(row) {
+  if (filled.has(row)) return;
+  filled.add(row);
+  const e = byRow[row], s = shown(e), h = e.html[s];
+  for (const l of rowLeaves[row]) { l.lang = s; l.innerHTML = (h && h[l.dataset.cell]) || (e.html.ru[l.dataset.cell] || ''); drafts(l); }
+}
+function fillLeaves() {          // after a spread is built or the language changes
+  filled.clear();
+  if (litAll) for (const r in rowLeaves) fillRow(r); else if (lit) fillRow(lit);
   block.querySelectorAll('.leaf.head').forEach(l => { l.lang = lang; l.textContent = t().heads[l.dataset.head] || ''; });
-  block.querySelectorAll('[data-draft]').forEach(s => s.title = t().from + s.dataset.draft);
-  block.querySelectorAll('.band').forEach(b => b.setAttribute('aria-label', plain(fullName(byRow[b.dataset.row]))));
+  for (const r in rowBands) { const name = plain(fullName(byRow[r])); for (const b of rowBands[r]) b.setAttribute('aria-label', name); }
 }
 const fullName = e => lang === 'ru' || !e.child ? esc([e.childRu, e.surnameRu].filter(Boolean).join(' ') || t().noName)
   : esc(lang === 'pl' && e.childPl || e.child) + (e.surname ? ` <span class="${e.surnameQ ? 'u' : ''}">${esc(lang === 'lt' && e.surnameLt || lang === 'pl' && e.surnamePl || e.surname)}</span>` : '');
@@ -344,38 +374,45 @@ function sideHtml(e) {           // printed columns 1-3: margin surname, No., se
   const note = c.notes_ru ? `<p class="side-note">${L.sideNote}: ${esc(noteT || c.notes_ru)}</p>` : '';
   return `<p class="side">${[margin, bits.join(', ')].filter(Boolean).join(' · ')}</p>${note}`;
 }
-function render() {
+/* Show what is open. Called on every move from one row to another, so it only touches what changed:
+   the leaves of the row left and of the row entered, the band held open, the slip (in slip mode
+   only) and the desk (only when its entry changes). now: whatever closes, closes without lingering. */
+const setOn = (row, on) => { if (!rowLeaves[row]) return; if (on) fillRow(row); for (const l of rowLeaves[row]) l.classList.toggle('on', on); };
+function render(now) {
   if (!S) return;
-  const mode = body.dataset.read, cur = current(), L = t();
+  const mode = body.dataset.read, cur = current() || null, e = byRow[cur];
   book.classList.toggle('has-pick', !!cur);
-  block.querySelectorAll('.leaf[data-row]').forEach(l => l.classList.toggle('on', mode === 'every' ? true : mode === 'one' ? l.dataset.row === cur : false));
-  block.querySelectorAll('.band').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.row === pinned)));
-  const e = byRow[cur];
-  slip.classList.toggle('on', !!e);
-  const cap = $('#cap'), other = $('#ru');
-  if (e) {
-    const s = shown(e), h = e.html[s], issues = e.issues[lang] || (lang !== 'ru' && e.issues.en) || '';
-    const when = [e.date && `${L.bapt}: ${showDate(e.date)}`, e.born && `${L.born} ${showDate(e.born)}`].filter(Boolean).join(', ');
-    const note = s === lang ? '' : s === 'en' ? L.ltMissing : L.untranslated;
-    const title = `${e.n ? e.n + '. ' : ''}${fullName(e)}`;
-    slip.innerHTML = `<h2>${title}</h2><p class="when">${when}</p><p>${h.baptism}</p><p>${h.parents}</p><p>${h.godparents}</p>${sideHtml(e)}
-      <dl>${e.names.map(([ru, en]) => `<dt lang="ru">${esc(ru.trim())}</dt><dd>${esc(en.trim())}</dd>`).join('')}</dl><p class="note">${esc(issues)}</p>`;
-    slip.style.left = ((e.side === 'R' ? 0 : 50) + 3) + '%';
-    slip.style.top = Math.max(3, Math.min(e.band[0] - 6, 38)) + '%';
-    const here = marked.row === e.row;
-    cap.innerHTML = `<h2>${title}</h2><p>${[when, esc(issues)].filter(Boolean).join('. ')}</p>${note ? `<p>${note}</p>` : ''}
-      ${here ? `<p>${L.marks}</p>` : `<button type="button" id="mark">${L.move}</button>`}`;
-    const side = s === 'ru' ? (e.html.en ? 'en' : null) : 'ru';   // the desk shows the other side of the translation
-    other.lang = side || 'ru';
-    other.textContent = side ? ['baptism', 'parents', 'godparents'].map(c => plain(e.html[side][c])).join(' ') : '';
-    const m = $('#mark'); if (m) m.onclick = () => { marked = { row: e.row, scan: S.scan }; store.set(MARK, JSON.stringify(marked)); render(); };
-  } else {
-    other.textContent = '';
-    cap.innerHTML = !S.entries.length ? `<h2>${L.where(S.scan, SPREADS.length)}</h2><p>${L.nothing}</p>`
-      : mode === 'every' ? `<h2>${L.everyH}</h2><p>${L.everyP}</p>` : `<h2>${L.chooseH}</h2><p>${L.chooseP}</p>`;
+  if ((mode === 'every') !== litAll) { litAll = !litAll; lit = null; for (const r in rowLeaves) setOn(r, litAll); }
+  if (!litAll) {
+    const want = mode === 'one' && e ? cur : null;
+    if (want !== lit) { setOn(lit, false); setOn(want, true); lit = want; }
   }
+  if (pinned !== pressed) {
+    for (const r of [pressed, pinned]) for (const b of rowBands[r] || []) b.setAttribute('aria-pressed', String(r === pinned));
+    pressed = pinned;
+  }
+  drawSlip(mode === 'slip' ? e : null);
   $('.ribbon').classList.toggle('tucked', marked.scan !== S.scan);
-  syncDesk();
+  syncDesk(now);
+}
+/* the heading and the line under it, as the slip and the desk both give them */
+function heading(e) {
+  const L = t(), s = shown(e), issues = e.issues[lang] || (lang !== 'ru' && e.issues.en) || '';
+  const when = [e.date && `${L.bapt}: ${showDate(e.date)}`, e.born && `${L.born} ${showDate(e.born)}`].filter(Boolean).join(', ');
+  return { s, issues, when, title: `${e.n ? e.n + '. ' : ''}${fullName(e)}` };
+}
+function drawSlip(e) {
+  const key = e ? e.row + '|' + lang : '';
+  if (key === slipKey) return;
+  slipKey = key;
+  slip.classList.toggle('on', !!e);
+  if (!e) return;
+  const { s, issues, when, title } = heading(e), h = e.html[s];
+  slip.innerHTML = `<h2>${title}</h2><p class="when">${when}</p><p>${h.baptism}</p><p>${h.parents}</p><p>${h.godparents}</p>${sideHtml(e)}
+    <dl>${e.names.map(([ru, en]) => `<dt lang="ru">${esc(ru.trim())}</dt><dd>${esc(en.trim())}</dd>`).join('')}</dl><p class="note">${esc(issues)}</p>`;
+  drafts(slip);
+  slip.style.left = ((e.side === 'R' ? 0 : 50) + 3) + '%';
+  slip.style.top = Math.max(3, Math.min(e.band[0] - 6, 38)) + '%';
 }
 function chrome() {            // everything around the pages that depends on which spread is open
   const L = t(), i = SPREADS.findIndex(m => m.scan === S.scan), m = SPREADS[i];
@@ -409,6 +446,14 @@ function ready(src) {
     if (readied.size > 12) readied.delete(readied.keys().next().value);
   }
   return readied.get(src);
+}
+/* The same, for a turn about to be made: a picture got ready a while ago may have had its decoded
+   copy dropped since (the browser keeps those only for a time), so it is asked for again; this is
+   immediate when it is still there. */
+const fresh = src => ready(src).then(im => im.naturalWidth && im.decode ? im.decode().then(() => im, () => im) : im);
+/* get the spreads around the i-th ready: the next in the direction of travel (and the one after it), then the one behind */
+function near(i, ds) {
+  for (const d of ds) { const m = SPREADS[i + d]; if (m) loadSpread(m.scan).then(n => { ready(n.pages.L.img); ready(n.pages.R.img); }, () => {}); }
 }
 
 /* The turning leaf. A sheet of paper bends: it is cut into narrow vertical strips, each hinged on
@@ -460,7 +505,7 @@ function animateFlip(segs, fwd, opt, sheer) {
   segs.forEach((seg, k) => {
     if (sheer) {      // in the air the sheet lets the page under it show through, more toward its free edge
       const thin = 1 - .3 * (k / (n - 1)) ** 1.6;
-      for (const f of seg.querySelectorAll(':scope > .f')) anims.push(f.animate([{ opacity: 1 }, { opacity: thin, offset: .22 }, { opacity: thin, offset: .78 }, { opacity: 1 }], opt));
+      if (thin < .995) for (const f of seg.querySelectorAll(':scope > .f')) anims.push(f.animate([{ opacity: 1 }, { opacity: thin, offset: .22 }, { opacity: thin, offset: .78 }, { opacity: 1 }], opt));
     }
     anims.push(seg.querySelector('.front .shade').animate([{ opacity: 0 }, { opacity: .34, offset: .5 }, { opacity: .34 }], opt));
     anims.push(seg.querySelector('.rear .shade').animate([{ opacity: .3 }, { opacity: .3, offset: .5 }, { opacity: 0 }], opt));
@@ -488,7 +533,7 @@ async function turnLeaf(leaf) {
   await Promise.race([anims[0].finished.catch(() => {}), new Promise(res => setTimeout(res, TURN_MS + 500))]);
 }
 
-/* The opening. On a fresh visit (an address without a place in it) the book is found with the wind
+/* The opening. On every load of the page (see the end of this file) the book is found with the wind
    in it: a handful of leaves go over one after another, each slower than the last, and the book
    lies open at the spread chosen. The spread itself is already laid out underneath. The leaves
    show the pages before it, from small copies (img/thumbs, site/make_thumbs.py) asked for the
@@ -587,41 +632,76 @@ async function go(scan, row, quiet, opening) {
   scan = SPREADS[i].scan;
   if (S && S.scan === scan) { if (row && byRow[row]) pick(row, true); return; }
   turning = true;
-  const next = await loadSpread(scan);
-  if (S) await Promise.race([Promise.all([ready(next.pages.L.img), ready(next.pages.R.img)]), new Promise(res => setTimeout(res, 900))]);   // instant when the neighbour was got ready; the first spread is laid out at once and its scans fill in
+  hintOff();
+  const next = await loadSpread(scan).catch(() => null);
+  if (!next) { delete cache[scan]; turning = false; queued = 0; return; }      // the spread did not arrive: the book stays as it is and can be asked again
+  // instant when the neighbour was got ready; the first spread is laid out at once and its scans fill in
+  const here = !!S && await Promise.race([Promise.all([fresh(next.pages.L.img), fresh(next.pages.R.img)]).then(() => true), new Promise(res => setTimeout(res, 900, false))]);
   const dir = S ? Math.sign(scan - S.scan) : 0;
   const old = dir && !quiet && !reduced() && twoPages()
     ? Object.fromEntries(['L', 'R'].map(s => [s, { ...G[s], ...pageRect(s) }])) : null;
   let leaf;
   if (old) leaf = buildLeaf(old, next, dir);        // made from the outgoing spread's measurements, before the rebuild
-  S = next; pinned = row && S.entries.some(e => e.row === row) ? row : null; hovered = null;
-  buildPages(); render(); chrome();
+  S = next; pinned = row && !opening && S.entries.some(e => e.row === row) ? row : null; hovered = null;
+  buildPages(!here); stirred = false; lay = null; render(true); chrome();
+  if (dir) near(i, [dir]);                          // the spread after this one, asked for while the leaf is in the air
   if (leaf) {
     block.append(...leaf.nodes);                    // same task as the rebuild: the new spread never shows early
+    book.classList.add('turning');
     await turnLeaf(leaf);
     leaf.nodes.forEach(n => n.remove());
+    book.classList.remove('turning');
   }
-  if (opening) await riffle(opening);
+  if (opening) {                                    // an entry the address points at is held open once the leaves are down
+    await riffle(opening);
+    if (row && S === next && !pinned && byRow[row]) pinned = row;
+  }
   turning = false;
   if (pinned) pick(pinned, true);
-  for (const d of [1, -1]) { const m = SPREADS[i + d]; if (m) loadSpread(m.scan).then(n => { ready(n.pages.L.img); ready(n.pages.R.img); }); }
+  near(i, dir < 0 ? [-1, -2, 1] : [1, 2, -1]);
+  sayHint();
+  if (queued) { const d = queued; queued = 0; step(d); }
 }
-const step = d => { const i = SPREADS.findIndex(m => m.scan === S.scan) + d; if (SPREADS[i]) go(SPREADS[i].scan); };
+/* One page on. A second press while a leaf is still in the air is kept and turns the next leaf as
+   soon as this one is down (one press is kept, not a row of them). */
+let queued = 0;
+const step = d => {
+  if (!S) return;
+  if (turning) { if (!endRiffle) queued = d; return; }
+  const i = SPREADS.findIndex(m => m.scan === S.scan) + d; if (SPREADS[i]) go(SPREADS[i].scan);
+};
 function pick(row, focus) {
   pinned = row; hovered = null;
   book.dataset.show = byRow[row].side; syncTurn(); render(); chrome();
   const b = block.querySelector(`.band[data-row="${row}"]`); if (focus) b.focus({ preventScroll: true });
   b.scrollIntoView({ block: 'center', behavior: reduced() ? 'auto' : 'smooth' });
 }
-block.addEventListener('pointerover', ev => { const b = ev.target.closest('.band'); if (b && ev.pointerType === 'mouse') { hovered = b.dataset.row; render(); } });
-block.addEventListener('pointerleave', () => { hovered = null; render(); });
-block.addEventListener('click', ev => { const b = ev.target.closest('.band'); if (!b) return; pinned = pinned === b.dataset.row ? null : b.dataset.row; hovered = null; render(); chrome(); });
+/* A pointer that merely happens to lie on a row when a spread appears opens nothing: the browser
+   reports it as coming onto the row, but the reader has not moved. The first real movement does. */
+let stirred = false, lay = null;          // lay: where the pointer was first seen lying after the spread appeared
+const still = ev => { if (!lay) lay = [ev.screenX, ev.screenY]; return lay[0] === ev.screenX && lay[1] === ev.screenY; };
+document.addEventListener('pointermove', ev => {
+  if (stirred || ev.pointerType !== 'mouse' || still(ev)) return;
+  stirred = true;
+  const b = ev.target.closest && ev.target.closest('.band');
+  if (b && block.contains(b) && b.dataset.row !== hovered) { hovered = b.dataset.row; render(); }
+});
+block.addEventListener('pointerover', ev => {
+  if (ev.pointerType !== 'mouse' || (!stirred && still(ev))) return;
+  stirred = true;
+  const b = ev.target.closest('.band');
+  if (b && b.dataset.row !== hovered) { hovered = b.dataset.row; render(); }
+});
+/* Leaving the book lets the entry go, except onto the desk: the desk may have come up under the
+   pointer (a row low in the window), and it is where the entry's button is. */
+block.addEventListener('pointerleave', ev => { if (hovered && !desk.contains(ev.relatedTarget)) { hovered = null; render(); } });
+block.addEventListener('click', ev => { const b = ev.target.closest('.band'); if (!b) return; pinned = pinned === b.dataset.row ? null : b.dataset.row; hovered = null; render(!pinned); chrome(); });
 document.addEventListener('keydown', ev => {
   if (menuOpen() && ev.key !== 'Escape') return;   // the menu of books has the keys while it is open
-  const a = document.activeElement, typing = a && /INPUT|TEXTAREA/.test(a.tagName);
-  if (ev.key === 'Escape') { pinned = hovered = null; closeHits(); showMenu(false); render(); chrome(); }
-  if (!typing && ev.key === 'ArrowRight') step(1);
-  if (!typing && ev.key === 'ArrowLeft') step(-1);
+  const a = document.activeElement, typing = a && /INPUT|TEXTAREA|SELECT/.test(a.tagName);
+  if (ev.key === 'Escape') { pinned = hovered = null; closeHits(); showMenu(false); render(true); chrome(); }
+  // (the key is taken: a leaf in the air reaches past the window's edge, and the arrow would slide the whole page sideways)
+  if (!typing && !ev.altKey && !ev.metaKey && !ev.ctrlKey && (ev.key === 'ArrowRight' || ev.key === 'ArrowLeft')) { ev.preventDefault(); step(ev.key === 'ArrowRight' ? 1 : -1); }
   if ((ev.key === 'ArrowDown' || ev.key === 'ArrowUp') && a.classList.contains('band')) {
     const rows = S.entries.map(e => e.row), i = rows.indexOf(a.dataset.row) + (ev.key === 'ArrowDown' ? 1 : -1);
     if (rows[i]) { ev.preventDefault(); pick(rows[i], true); }
@@ -710,21 +790,73 @@ $('.pickwrap').addEventListener('keydown', ev => {          // Escape closes; th
 });
 addEventListener('pageshow', ev => { if (ev.persisted) showMenu(false); });   // Back from another book: the menu is not still open
 
-/* The desk under the book. It can be closed (it stays closed for the visit, until an entry is opened),
-   and with a mouse it steps aside by itself when the pointer has rested for a moment and no entry is
-   held open, and returns when the pointer moves. On touch it only closes by its button. */
-const desk = $('#desk');
-let deskClosed = visit.get('deskClosed') === '1', idle = null;
-const syncDesk = () => {
-  if (pinned && deskClosed) { deskClosed = false; visit.set('deskClosed', ''); }
-  desk.classList.toggle('closed', deskClosed);
-  if (pinned) desk.classList.remove('idle');
-};
-$('#deskX').onclick = () => { deskClosed = true; visit.set('deskClosed', '1'); pinned = hovered = null; render(); chrome(); };
-const rest = () => { if (!pinned && !desk.matches(':hover') && !desk.contains(document.activeElement)) desk.classList.add('idle'); };
-const stir = () => { desk.classList.remove('idle'); clearTimeout(idle); idle = setTimeout(rest, 1100); };
-document.addEventListener('pointermove', ev => { if (ev.pointerType === 'mouse') stir(); });
-if (matchMedia('(hover:hover) and (pointer:fine)').matches) stir();
+/* The desk under the book: what the open entry says. It is not there until an entry is under the
+   pointer or held open (a click, a tap, the keyboard); it then stays, at one height, while the
+   pointer goes from row to row, and steps down a moment after the pointer has left the book, or at
+   once on Escape, on its close button or when the held entry is let go. Closed by its button it
+   stays away until an entry is held open (or the page is loaded again). While nothing is open the
+   desk keeps the last entry's words, so it leaves as it was. */
+const desk = $('#desk'), cap = $('#cap'), hint = $('#hint'), LINGER = 1300;
+let deskClosed = false, deskKey = '', deskRow = null, leaving = null;
+function fillDesk(e) {
+  const here = marked.row === e.row, key = [S.scan, e.row, lang, here].join('|');
+  if (key === deskKey) return;
+  deskKey = key; deskRow = e.row;
+  const L = t(), { s, issues, when, title } = heading(e), other = $('#ru');
+  const note = s === lang ? '' : s === 'en' ? L.ltMissing : L.untranslated;
+  cap.innerHTML = `<h2>${title}</h2><p>${[when, esc(issues)].filter(Boolean).join('. ')}</p>${note ? `<p>${note}</p>` : ''}
+    ${here ? `<p>${L.marks}</p>` : `<button type="button" id="mark">${L.move}</button>`}`;
+  const side = s === 'ru' ? (e.html.en ? 'en' : null) : 'ru';   // the desk shows the other side of the translation
+  other.lang = side || 'ru';
+  other.textContent = side ? ['baptism', 'parents', 'godparents'].map(c => plain(e.html[side][c])).join(' ') : '';
+  if (deskScrolled) { desk.scrollTop = 0; deskScrolled = false; }   // (asked only when it was scrolled: setting it lays the page out)
+}
+let deskScrolled = false;
+desk.addEventListener('scroll', () => { deskScrolled = true; }, { passive: true });
+cap.addEventListener('click', ev => {              // the ribbon moves to the entry on the desk
+  if (ev.target.id !== 'mark' || !S || !byRow[deskRow]) return;
+  marked = { row: deskRow, scan: S.scan }; store.set(MARK, JSON.stringify(marked));
+  fillDesk(byRow[deskRow]); $('.ribbon').classList.toggle('tucked', marked.scan !== S.scan);
+});
+const stay = () => { clearTimeout(leaving); leaving = null; };
+function shutDesk() {
+  stay();
+  if (desk.contains(document.activeElement)) document.activeElement.blur();
+  desk.classList.remove('open');
+}
+const linger = () => { stay(); leaving = setTimeout(() => { if (!byRow[current()] && !desk.contains(document.activeElement)) shutDesk(); }, LINGER); };
+function syncDesk(now) {
+  const e = byRow[current()];
+  if (pinned && deskClosed) deskClosed = false;
+  stay();
+  if (e) hintOff(true);
+  if (e && !deskClosed) { fillDesk(e); desk.classList.add('open'); return; }
+  if (!desk.classList.contains('open')) return;
+  if (now || deskClosed) shutDesk(); else if (!desk.matches(':hover')) linger();
+}
+$('#deskX').onclick = () => { deskClosed = true; pinned = hovered = null; render(true); chrome(); };
+desk.addEventListener('pointerenter', stay);
+desk.addEventListener('pointerleave', ev => {      // back to the book: the entry is still open; anywhere else lets it go
+  if (hovered && !block.contains(ev.relatedTarget)) { hovered = null; render(); }
+  else if (!byRow[current()]) linger();
+});
+desk.addEventListener('focusout', () => { if (!byRow[current()] && desk.classList.contains('open')) linger(); });
+/* A word in passing where the desk will be: how to open an entry, for a reader who has not opened
+   one yet (once a visit, and never again after the first entry opened), or that the spread has none. */
+let hinted = store.get('hinted') === '1', told = false, hintT = null, hintOf = null;
+function hintOn(text, ms) {
+  hintOf = text; hint.textContent = text(); hint.classList.add('on');
+  clearTimeout(hintT); hintT = setTimeout(() => hint.classList.remove('on'), ms);
+}
+function hintOff(used) {
+  if (used && !hinted) { hinted = true; store.set('hinted', '1'); }
+  if (hint.classList.contains('on')) { clearTimeout(hintT); hint.classList.remove('on'); }
+}
+function sayHint() {             // when a spread has settled
+  if (!S || byRow[current()]) return;
+  if (!S.entries.length) hintOn(() => t().nothing, 4200);
+  else if (!hinted && !told) { told = true; hintOn(() => body.dataset.read === 'every' ? t().everyP : t().chooseP, 9000); }
+}
 const turn = $('#turn');
 const syncTurn = () => turn.textContent = book.dataset.show === 'R' ? t().showL : t().showR;
 turn.onclick = () => { book.dataset.show = book.dataset.show === 'R' ? 'L' : 'R'; syncTurn(); };
@@ -754,6 +886,7 @@ function setLang(l) {
   $('#deskX').setAttribute('aria-label', L.shelfX); $('#deskX').title = L.shelfX;
   drawMenu();
   if (S) { fillLeaves(); syncTurn(); render(); chrome(); }
+  if (hintOf && hint.classList.contains('on')) hint.textContent = hintOf();
   if ($('#q').value.trim() && !hits.hidden) runSearch();
 }
 document.querySelectorAll('input[name=lang]').forEach(r => r.addEventListener('change', () => setLang(r.value)));
@@ -888,18 +1021,24 @@ document.addEventListener('click', ev => { if (!ev.target.closest('.find')) clos
 
 lang = T[params.get('lang')] ? params.get('lang') : T[store.get('lang')] ? store.get('lang') : 'en';
 closeHits(); applyLook(); setLang(lang);
-// Open at a random spread that has entries (a link with #s=… still opens where it points; the
-// ribbon's tail leads back to the marked entry). Only an address without a place in it gets the
-// opening riffle; chrome() writes the place into the address, so a reload or the Back button
-// returns to the same spread, quietly.
+// The opening. Every load of the page plays the opening riffle and lands on a random spread that
+// has entries. A bare #s= in the address does not change that: it is only the place chrome() wrote
+// on an earlier visit (the ribbon's tail leads back to the marked entry). An address that points at
+// an entry (#pick=<row>, with or without #s=: a search hit in another book, a shared entry) riffles
+// to that entry's spread and holds the entry open when the last leaf is down. #q= and #books open
+// quietly, at #s= if there is one. Turning pages afterwards never riffles. (Narrow screens and
+// reduced motion: the same destinations, without the leaves.)
 const randomScan = () => { const full = SPREADS.filter(m => m.n > 0); return full.length ? full[Math.floor(Math.random() * full.length)].scan : 0; };
-const FRESH = !params.has('s') && !params.has('pick') && !params.has('q') && !params.has('books') && FREEZE == null;
-const WANT = +params.get('s') || randomScan() || marked.scan || BK.scan, FIRST = (SPREADS.find(m => m.scan === WANT) || SPREADS[0]).scan;
+const PICK = params.get('pick'), QUIET = params.has('q') || params.has('books') || FREEZE != null;
+const FRESH = !QUIET;
+const WANT = (PICK ? +params.get('s') || parseInt(PICK, 10) : QUIET ? +params.get('s') : 0) || randomScan() || marked.scan || BK.scan, FIRST = (SPREADS.find(m => m.scan === WANT) || SPREADS[0]).scan;
 const ROUTE = FRESH && innerWidth > 860 && !reduced() ? riffleRoute(FIRST) : FRESH ? [] : null;   // asks for the leaves' thumbnails now
 if (params.has('books')) showMenu(true);           // #books opens with the menu of books showing
-go(FIRST, params.get('pick'), true, ROUTE).then(() => {
+for (const s of ['L', 'R']) ready(pageSrc(`${pad(FIRST)}_${s}.jpg`));                 // the first spread's scans, asked for before its layout has come
+go(FIRST, PICK, true, ROUTE).then(() => {
   if (params.get('q')) { $('#q').value = params.get('q'); runSearch(); }
-  else setTimeout(() => loadSearch().catch(() => {}), 1200);                          // this book's search index, once the book is open
+  // this book's search index, once the book is open and the page has a quiet moment
+  else setTimeout(() => (window.requestIdleCallback || setTimeout)(() => loadSearch().catch(() => {}), { timeout: 4000 }), 1200);
   if (FREEZE != null) setTimeout(() => step(1), 700);
 });
 })();

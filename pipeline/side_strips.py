@@ -21,7 +21,11 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / os.environ.get('SAMOGITIA_BOOK', 'data/plunge-1886-1890')
 PER_SHEET = int(os.environ.get('SIDE_PER_SHEET', '4'))
-WIDE = os.environ.get('SIDE_MODE') == 'wide'   # see crop below
+WIDE = os.environ.get('SIDE_MODE') in ('wide', 'compact')   # see crop below
+# 'compact': like 'wide', but one rotation only (SIDE_ROT, default 90) at native size with the upright
+# strip beside it, so two entries make a sheet of about 1100 x 2000 px that a reader sees unshrunk
+COMPACT = os.environ.get('SIDE_MODE') == 'compact'
+ROT = int(os.environ.get('SIDE_ROT', '90'))
 BLOCK_W = 1100
 
 
@@ -70,6 +74,9 @@ def main():
             y1 = min(x for x in (e['focal_y'][1] + 40, nxt + 10 if nxt else None) if x)
             if y1 - y0 < 120:
                 y1 = y0 + 600
+            if COMPACT:
+                # a margin surname written downwards often runs past its own row into the next one
+                y1 = min(im.height, e['focal_y'][1] + int(os.environ.get('SIDE_OVERRUN', '230')))
             if WIDE:
                 # form-agnostic: everything from the side's outer edge to the first wide column
                 # (the baptism text column); rotated copy for sideways writing, upright for numbers
@@ -77,16 +84,35 @@ def main():
                 bx = min(wide) - (min(wide) - max(x for x in cols if x < min(wide))) if wide else cols[4]
                 bx = max(x for x in cols if x < min(wide)) if wide else cols[4]
                 left = max(0, cols[0] - 40)
-                strip = im.crop((left, y0, bx + 8, y1))
+                # two-page form (layout_spread.py): the row's own baptism cell says where the text column
+                # starts; counting rules fails where the page edge or the gutter adds rules of its own
+                cells = [r['cells']['baptism'][0] for r in pg.get('rows') or [] if r.get('cells', {}).get('baptism')]
+                if cells:
+                    bx = min(cells)
+                strip = im.crop((left, y0, bx + (60 if COMPACT else 8), y1))   # compact: the last day column whole
                 # sideways writing runs either way depending on book/page: show both rotations
                 r1, r2 = strip.rotate(90, expand=True), strip.rotate(-90, expand=True)
-                margin = Image.new('L', (max(r1.width, r2.width), r1.height + r2.height + 12), 160)
-                margin.paste(r1, (0, 0))
-                margin.paste(r2, (0, r1.height + 12))
+                if COMPACT:
+                    margin = strip.rotate(ROT, expand=True)
+                else:
+                    margin = Image.new('L', (max(r1.width, r2.width), r1.height + r2.height + 12), 160)
+                    margin.paste(r1, (0, 0))
+                    margin.paste(r2, (0, r1.height + 12))
                 nums = strip
             else:
                 margin = im.crop((cols[0] - 10, y0, cols[1] + 6, y1)).rotate(90, expand=True)
                 nums = im.crop((cols[1] - 6, y0, cols[4] + 8, y1))
+            if COMPACT:
+                # rotated strip on the left, upright strip on the right, both at the scan's own size
+                k = min(1.0, (BLOCK_W - 30) / (margin.width + nums.width))
+                margin = margin.resize((int(margin.width * k), int(margin.height * k)))
+                nums = nums.resize((int(nums.width * k), int(nums.height * k)))
+                blk = Image.new('L', (BLOCK_W, 60 + max(margin.height, nums.height) + 10), 255)
+                d = ImageDraw.Draw(blk)
+                blocks.append((e['row_id'] + (' (cols estimated)' if estimated else ''), blk, d))
+                blk.paste(margin, (10, 60))
+                blk.paste(nums, (20 + margin.width, 60))
+                continue
             mscale = min(1.6, (BLOCK_W - 20) / margin.width)
             margin = margin.resize((int(margin.width * mscale), int(margin.height * mscale)))
             # number/date columns at native resolution (x1.4), long side capped at 900 px

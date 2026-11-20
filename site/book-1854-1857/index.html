@@ -25,7 +25,7 @@
   --room:#1e2824; --room-ink:#e4e2d6; --room-soft:#9aa69e; --rule:rgba(228,226,214,.2); --field:#2a3631;
 }
 *{box-sizing:border-box}
-html{background:var(--room)}
+html{background:var(--room);overflow-x:clip}      /* a turning leaf reaches past the window's edge: no sideways scrolling for it */
 body{margin:0;color:var(--room-ink);font:400 15px/1.5 var(--sans);background:var(--room);
   padding:0 clamp(12px,2vw,36px) calc(32vh + 8vw);transition:background .3s,color .3s}
 button,input{font:inherit;color:inherit}
@@ -173,9 +173,9 @@ button,input{font:inherit;color:inherit}
 .seg .shade{position:absolute;inset:0;background:#1d140b;opacity:0;pointer-events:none}
 [data-paper="warm"] .seg>.f,[data-paper="warm"] .hold{background-color:var(--paper);background-blend-mode:multiply}
 /* the shadow the lifted leaf throws on the pages beside the spine */
-.cast{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:0}
-.cast.fwd{background:linear-gradient(to right,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
-.cast.back{background:linear-gradient(to left,transparent 22%,rgba(20,13,6,.22) 47%,rgba(20,13,6,.34) 50%,rgba(20,13,6,.12) 62%,transparent 80%)}
+.cast{position:absolute;top:0;bottom:0;width:58%;z-index:8;pointer-events:none;opacity:0}   /* only as wide as the shadow: from 22% to 80% across the book */
+.cast.fwd{left:22%;background:linear-gradient(to right,transparent,rgba(20,13,6,.22) 43.1%,rgba(20,13,6,.34) 48.3%,rgba(20,13,6,.12) 69%,transparent)}
+.cast.back{right:22%;background:linear-gradient(to left,transparent,rgba(20,13,6,.22) 43.1%,rgba(20,13,6,.34) 48.3%,rgba(20,13,6,.12) 69%,transparent)}
 /* The opening riffle (app.js: riffle): leaves that have no scan yet are an empty ruled form, the
    printed table of the register without its handwriting. */
 .seg>.f.blank,.hold.blank,.page.blank{background:#eceae3 0 0/100% 100% no-repeat}
@@ -205,6 +205,8 @@ button,input{font:inherit;color:inherit}
   -webkit-backdrop-filter:blur(.16cqw);backdrop-filter:blur(.16cqw);
   box-shadow:0 0 0 1px rgba(90,70,50,.16),0 .35cqw .7cqw -.3cqw rgba(40,26,14,.55);
   pointer-events:none;opacity:0;transform:translateY(.25cqw);transition:opacity .16s,transform .16s}
+/* while a leaf of the book is in the air the hidden leaves of text are out of the picture altogether */
+.book.turning .leaf:not(.on),.book.riffling .leaf:not(.on){display:none}
 .leaf.side{font-size:.86em;line-height:1.25}
 .leaf.head.narrow{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.72em;padding:.2cqw}
 .headzone{position:absolute;left:0;right:0;z-index:7;cursor:help}
@@ -241,9 +243,19 @@ button,input{font:inherit;color:inherit}
 /* the desk: what the open entry says, fixed under the book */
 .desk{position:fixed;z-index:60;left:0;right:0;bottom:0;background:var(--room);border-top:1px solid var(--rule);
   padding:14px clamp(12px,2vw,36px) 16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.1fr);gap:8px 40px;
-  align-items:start;max-height:32vh;overflow:auto;box-shadow:0 -18px 30px -26px rgba(0,0,0,.55)}
-.desk{transition:opacity .3s,visibility .3s}
-.desk.idle,.desk.closed,.desk:has(#cap:empty){opacity:0;visibility:hidden;pointer-events:none}   /* :empty: before the script has run */
+  align-items:start;height:min(32vh,216px);overflow:auto;box-shadow:0 -18px 30px -26px rgba(0,0,0,.55)}
+/* It is away until an entry is under the pointer or held open (app.js: syncDesk), comes up from the
+   edge, keeps one height whatever the entry says, and goes back down a little slower than it came. */
+.desk{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(14px);
+  transition:opacity .34s ease,transform .34s ease,visibility 0s .34s}
+.desk.open{opacity:1;visibility:visible;pointer-events:auto;transform:none;
+  transition:opacity .2s ease-out,transform .24s cubic-bezier(.2,.7,.3,1),visibility 0s}
+/* a word in passing where the desk will be: how to open an entry (once), or that a spread has none */
+.hint{position:fixed;z-index:59;left:50%;bottom:20px;margin:0;padding:7px 14px 8px;width:max-content;max-width:calc(100vw - 24px);
+  background:var(--field);border:1px solid var(--rule);border-radius:3px;font-size:13.5px;line-height:1.4;color:var(--room-soft);text-align:center;
+  box-shadow:0 12px 26px -18px rgba(0,0,0,.5);pointer-events:none;
+  opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:opacity .4s ease,transform .4s ease,visibility 0s .4s}
+.hint.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition-delay:0s}
 .desk .x{position:absolute;top:6px;right:clamp(8px,1.4vw,24px);margin:0;border:0;padding:2px 8px 4px;font-size:20px;line-height:1;color:var(--room-soft);border-radius:3px}
 .desk .x:hover{color:var(--room-ink);background:rgba(37,43,39,.08)}
 .desk .about{padding-right:18px}
@@ -305,7 +317,7 @@ button,input{font:inherit;color:inherit}
   .book[data-show="R"] .ribbon{right:auto;left:3cqw}
   .slip{position:fixed;left:8px!important;right:8px;top:auto!important;bottom:calc(38vh + 8px);width:auto;transform:none;max-height:52vh;overflow:auto;font-size:15px}
   .leaf{font-size:clamp(10px,2cqw,15px)}
-  .desk{grid-template-columns:1fr;max-height:34vh;padding-top:11px;padding-bottom:12px;gap:6px}
+  .desk{grid-template-columns:1fr;height:auto;max-height:34vh;padding-top:11px;padding-bottom:12px;gap:6px}
   .desk h2{font-size:21px}
   #key{display:none}                             /* the key to the marks waits until an entry is open */
   body:has(.book.has-pick) #key{display:block}
@@ -384,6 +396,7 @@ button,input{font:inherit;color:inherit}
     <p class="warn" id="warn"></p>
   </div>
 </aside>
+<p class="hint" id="hint" role="status"></p>
 
 <form class="tryon" id="tryon" hidden>
   <fieldset><legend>English</legend>
